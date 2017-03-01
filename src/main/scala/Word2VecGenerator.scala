@@ -68,11 +68,9 @@ object Word2VecGenerator {
     val reviewWordsPairs1: RDD[(String, Iterable[String])] = filteredTweets.mapValues(_.tweetText.split(" ").toIterable)
 
 
-     def wordFeatures(words: Iterable[String]): Iterable[Vector] = words.map(w => Try(word2vecModel.transform(w))).filter(_.isSuccess).map(x => x.get)
+    def wordFeatures(words: Iterable[String]): Iterable[Vector] = words.map(w => Try(word2vecModel.transform(w))).filter(_.isSuccess).map(x => x.get)
 
     def avgWordFeatures(wordFeatures: Iterable[Vector]): Vector = Vectors.fromBreeze(wordFeatures.map(_.toBreeze).reduceLeft((x,y) => x + y) / wordFeatures.size.toDouble)
-
-    def filterNullFeatures(wordFeatures: Iterable[Vector]): Iterable[Vector] = if (wordFeatures.isEmpty) wordFeatures.drop(1) else wordFeatures
 
     // Create feature vectors
     val wordFeaturePair = reviewWordsPairs1 mapValues wordFeatures
@@ -80,6 +78,10 @@ object Word2VecGenerator {
     //val nonNullValues = intermediateVectors.map(x => (!x._2.isEmpty, x) ).filter(_._1).map(v => v)
     val inter2 = wordFeaturePair.filter(!_._2.isEmpty)
     val avgWordFeaturesPair = inter2 mapValues avgWordFeatures
+    //inter 2 has 30 tweets. Each tweet has words, and each word is a [1 x 100] dimension vector.
+    val avgWordFeaturesPair1 = inter2.map(x => (x._2.map(_.toBreeze).reduceLeft((a,b) => (a+b)/x._2.size.toDouble)))
+    val avgWordFeaturesPair2 = avgWordFeaturesPair1.map(x => Vectors.fromBreeze(x))
+    //avgWordFeaturesPair1 contains 30 tweets, with each tweet is a [1x100] vector
     val featuresPair = avgWordFeaturesPair join samplePairs mapValues {
       case (features, Tweet(id, review, label)) => LabeledPoint(label.get, features)
     }
