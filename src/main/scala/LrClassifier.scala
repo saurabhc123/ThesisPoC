@@ -17,7 +17,7 @@ object LrClassifier {
     val conf = new SparkConf()
         .setMaster("local[*]")
         .setAppName("ThesisPoC")
-      val sc = new SparkContext(conf)
+    val sc = new SparkContext(conf)
     val trainingFileContent = sc.textFile(trainingFilename)
     val lrClassifier = new LogisticRegressionWithLBFGS()
     lrClassifier.optimizer.setConvergenceTol(0.01)

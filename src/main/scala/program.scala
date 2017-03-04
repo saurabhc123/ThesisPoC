@@ -1,7 +1,6 @@
 package main.scala
 
 import org.apache.log4j.{Level, Logger}
-import org.apache.spark.mllib.linalg.Word2VecGenerator
 
 /**
  * Created by saur6410 on 2/25/17.
@@ -16,7 +15,11 @@ object program extends App{
     println("Hello World!" + 11)
     //LrClassifier.main(args)
     //LrOnlineClassifier.main(args)
-    Word2VecGenerator.main(args)
-  }
+    //Word2VecGenerator.main(args)
+    //FPMDistinguishingWords.main(args)
+    WebServiceClient.main(args)
 
+    }
 }
+
+

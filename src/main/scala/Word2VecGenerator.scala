@@ -18,7 +18,7 @@ object Word2VecGenerator {
   def main(args: Array[String]): Unit = {
 
     val trainingFilename = "data/training/multi_class_lem"
-    val exportedVectors = "data/training/fire.vec"
+    val exportedVectors = "data/training/isaac.vec"
     val testFilename = "data/training/generated.vec"
 
     val conf = new SparkConf()
@@ -63,7 +63,7 @@ object Word2VecGenerator {
     println(word2vecModel.findSynonyms("shooting", 4))
 
 
-    val classLabel = 1.0
+    val classLabel = 3.0
     var filteredTweets = samplePairs.filter(x => x._2.label == Some(classLabel))
     val reviewWordsPairs1: RDD[(String, Iterable[String])] = filteredTweets.mapValues(_.tweetText.split(" ").toIterable)
 
