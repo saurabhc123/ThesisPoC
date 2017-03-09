@@ -31,7 +31,7 @@ object FPMDistinguishingWords {
     val transactions: RDD[Array[String]] = filteredTweets.map(s => s.tweetText.trim.split(' ').distinct)
 
     val fpg = new FPGrowth()
-      .setMinSupport(0.05)
+      .setMinSupport(0.1)
       .setNumPartitions(10)
     val model = fpg.run(transactions)
 

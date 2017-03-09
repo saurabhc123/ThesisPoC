@@ -16,8 +16,8 @@ object program extends App{
     //LrClassifier.main(args)
     //LrOnlineClassifier.main(args)
     //Word2VecGenerator.main(args)
-    //FPMDistinguishingWords.main(args)
-    WebServiceClient.main(args)
+    FPMDistinguishingWords.main(args)
+    //WebServiceClient.main(args)
 
     }
 }
