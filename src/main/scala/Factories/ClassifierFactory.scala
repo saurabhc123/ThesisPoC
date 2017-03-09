@@ -1,8 +1,9 @@
 package main.Factories
 
-import main.Factories.ClassifierType.ClassifierType
-import main.Implementations.ClassifierImpl.LogisticRegressionClassifier
+import Factories.ClassifierType
+import ClassifierType.ClassifierType
 import main.Interfaces.IClassifier
+import main.scala.Implementations.ClassifierImpl.LogisticRegressionClassifier
 
 /**
   * Created by ericrw96 on 2/2/17.
@@ -17,7 +18,4 @@ object ClassifierFactory {
 
 }
 
-object ClassifierType extends Enumeration{
-  type ClassifierType = Value
-  val LogisticRegression, SVM = Value
-}
+
