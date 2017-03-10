@@ -1,7 +1,7 @@
 package main.scala.Implementations.ClassifierImpl
 
+import Interfaces.{IClassifierModel, IClassifier}
 import main.Implementations.ClassifierImpl.LogisticRegressionClassifierModel
-import main.Interfaces.{IClassifier, IClassifierModel}
 import main.SparkContextManager
 import org.apache.spark.mllib.classification.{LogisticRegressionModel, LogisticRegressionWithLBFGS}
 import org.apache.spark.mllib.regression.LabeledPoint
