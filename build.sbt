@@ -18,4 +18,9 @@ lazy val PredictionEngine = (project in file("."))
         "org.apache.hbase" % "hbase-server" % "1.0.0-cdh5.5.1"
     )
 
+    libraryDependencies ++= Seq(
+        "edu.stanford.nlp" % "stanford-corenlp" % "3.4.1"
+        )
+
+
 )

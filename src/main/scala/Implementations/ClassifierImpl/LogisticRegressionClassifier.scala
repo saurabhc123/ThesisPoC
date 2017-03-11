@@ -1,10 +1,9 @@
-package main.Implementations.ClassifierImpl
+package main.scala.Implementations.ClassifierImpl
 
-import main.Interfaces.{IClassifier, IClassifierModel}
+import Interfaces.{IClassifierModel, IClassifier}
+import main.Implementations.ClassifierImpl.LogisticRegressionClassifierModel
 import main.SparkContextManager
-import org.apache.spark.SparkContext
 import org.apache.spark.mllib.classification.{LogisticRegressionModel, LogisticRegressionWithLBFGS}
-import org.apache.spark.mllib.linalg.Vector
 import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.rdd.RDD
 /**

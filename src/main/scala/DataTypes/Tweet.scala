@@ -2,6 +2,8 @@ package main.DataTypes
 
 import java.time.Instant
 
+import org.apache.spark.mllib.linalg.Vector
+import org.apache.spark.mllib.regression.LabeledPoint
 
 
 /**
@@ -9,4 +11,14 @@ import java.time.Instant
   * Created by Eric on 2/1/2017.
   */
 case class Tweet(identifier: String, text:String,
-                 label: Option[Double], time: Option[Instant] = None, judge: Option[String] = None, stock: Option[String] = None) {}
+                 label: Option[Double], time: Option[Instant] = None, judge: Option[String] = None, stock: Option[String] = None)
+{
+
+	def getWordVectors(text: String): Vector = ???
+
+	def transformToLabeledPoint() : LabeledPoint =
+	{
+		new LabeledPoint(this.label.get, getWordVectors(this.text))
+	}
+
+}

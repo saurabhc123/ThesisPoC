@@ -1,8 +1,9 @@
 package main.Implementations.ClassifierImpl
 
+import Interfaces.IClassifierModel
 import main.DataTypes.PredictionResult
-import main.Interfaces.IClassifierModel
 import main.SparkContextManager
+import main.scala.Implementations.ClassifierImpl.LogisticRegressionClassifier
 import org.apache.spark.mllib.classification.LogisticRegressionModel
 import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.rdd.RDD

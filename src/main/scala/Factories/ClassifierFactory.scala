@@ -1,13 +1,14 @@
 package main.Factories
 
-import main.Factories.ClassifierType.ClassifierType
-import main.Implementations.ClassifierImpl.LogisticRegressionClassifier
-import main.Interfaces.IClassifier
+import Factories.ClassifierType
+import ClassifierType.ClassifierType
+import Interfaces.IClassifier
+import main.scala.Implementations.ClassifierImpl.LogisticRegressionClassifier
 
 /**
   * Created by ericrw96 on 2/2/17.
   */
-object ClassifierFactory {
+class ClassifierFactory {
   def getClassifier(classifierType: ClassifierType): IClassifier = {
      classifierType match {
        case ClassifierType.LogisticRegression => new LogisticRegressionClassifier
@@ -17,7 +18,4 @@ object ClassifierFactory {
 
 }
 
-object ClassifierType extends Enumeration{
-  type ClassifierType = Value
-  val LogisticRegression, SVM = Value
-}
+

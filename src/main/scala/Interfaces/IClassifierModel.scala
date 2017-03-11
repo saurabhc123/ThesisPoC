@@ -1,4 +1,4 @@
-package main.Interfaces
+package Interfaces
 
 import main.DataTypes.PredictionResult
 import org.apache.spark.mllib.regression.LabeledPoint

@@ -1,4 +1,4 @@
-package main.Interfaces
+package Interfaces
 
 import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.rdd.RDD
@@ -9,4 +9,6 @@ trait IClassifier extends java.io.Serializable {
   def train(labels: RDD[LabeledPoint]): IClassifierModel
 
   def loadModel(): IClassifierModel
+
+
 }
