@@ -1,8 +1,5 @@
 package main.DataTypes
 
-import org.apache.spark.mllib.linalg.Vector
-import org.apache.spark.mllib.regression.LabeledPoint
-
 
 /**
   * This class will serve as the main way that data is transferred between each stage
@@ -12,11 +9,13 @@ case class Tweet(identifier: String, tweetText:String,
                  label: Option[Double])
 {
 
-	def getWordVectors(text: String): Vector = ???
+	/*def getFeatures(text: String, featureGenerator: IFeatureGenerator): Vector = {
+		featureGenerator.generateFeatures()
+	}
 
 	def transformToLabeledPoint() : LabeledPoint =
 	{
-		new LabeledPoint(this.label.get, getWordVectors(this.tweetText))
-	}
+		new LabeledPoint(this.label.get, getFeatures(this.tweetText))
+	}*/
 
 }

@@ -34,4 +34,8 @@ class WebServiceBasedWordVectorGenerator extends IFeatureGenerator{
 		val wv = parse(result).extract[WordVector]
 		new LabeledPoint(0.0, Vectors.dense(wv.vector))
 	}
+
+	override def generateFeature(tweet: Tweet): LabeledPoint = {
+		this.getWordVectorForSentence(tweet.tweetText)
+	}
 }

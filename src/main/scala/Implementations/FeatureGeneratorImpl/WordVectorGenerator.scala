@@ -95,9 +95,5 @@ class WordVectorGenerator extends IFeatureGenerator{
     }
   }
 
-
-
-
-
-
+  override def generateFeature(tweet: Tweet): LabeledPoint = ???
 }
