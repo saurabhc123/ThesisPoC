@@ -21,19 +21,19 @@ class WordVectorGenerator extends IFeatureGenerator{
 
     def cleanHtml(str: String) = str.replaceAll( """<(?!\/?a(?=>|\s.*>))\/?.*?>""", "")
 
-    def cleanTweetHtml(sample: Tweet) = sample copy (text = cleanHtml(sample.text))
+    def cleanTweetHtml(sample: Tweet) = sample copy (tweetText = cleanHtml(sample.tweetText))
 
     def cleanWord(str: String) = str.split(" ").map(_.trim.toLowerCase).filter(_.nonEmpty)
       .map(_.replaceAll("\\W", "")).reduceOption((x, y) => s"$x $y")
 
-    def wordOnlySample(sample: Tweet) = sample copy (text = cleanWord(sample.text).getOrElse(""))
+    def wordOnlySample(sample: Tweet) = sample copy (tweetText = cleanWord(sample.tweetText).getOrElse(""))
 
     val cleanTrainingTweets = tweets map cleanTweetHtml
 
     val wordOnlyTrainSample = cleanTrainingTweets map wordOnlySample
 
     val samplePairs = wordOnlyTrainSample.map(s => s.identifier -> s)
-    val reviewWordsPairs: RDD[(String, Iterable[String])] = samplePairs.mapValues(_.text.split(" ").toIterable)
+    val reviewWordsPairs: RDD[(String, Iterable[String])] = samplePairs.mapValues(_.tweetText.split(" ").toIterable)
 
     Model = new Word2Vec().fit(reviewWordsPairs.values)
   }
@@ -45,17 +45,17 @@ class WordVectorGenerator extends IFeatureGenerator{
     checkModel()
     def cleanHtml(str: String) = str.replaceAll( """<(?!\/?a(?=>|\s.*>))\/?.*?>""", "")
 
-    def cleanTweetHtml(sample: Tweet) = sample copy (text = cleanHtml(sample.text))
+    def cleanTweetHtml(sample: Tweet) = sample copy (tweetText = cleanHtml(sample.tweetText))
 
     def cleanWord(str: String) = str.split(" ").map(_.trim.toLowerCase).filter(_.nonEmpty)
       .map(_.replaceAll("\\W", "")).reduceOption((x, y) => s"$x $y")
 
-    def wordOnlySample(sample: Tweet) = sample copy (text = cleanWord(sample.text).getOrElse(""))
+    def wordOnlySample(sample: Tweet) = sample copy (tweetText = cleanWord(sample.tweetText).getOrElse(""))
 
     val cleanTrainingTweets = tweets map cleanTweetHtml
     val wordOnlyTrainSample = cleanTrainingTweets map wordOnlySample
     val samplePairs = wordOnlyTrainSample.map(s => s.identifier -> s)
-    val reviewWordsPairs = samplePairs.mapValues(_.text.split(" ").toIterable)
+    val reviewWordsPairs = samplePairs.mapValues(_.tweetText.split(" ").toIterable)
 
     def wordFeatures(words: Iterable[String]): Iterable[Vector] = words.map(w => Try(Model.transform(w)))
                                         .filter(_.isSuccess).map(x => x.get)
@@ -72,7 +72,7 @@ class WordVectorGenerator extends IFeatureGenerator{
     val inter2Train = wordFeaturePairTrain.filter(_._2.nonEmpty)
     val avgWordFeaturesPairTrain = inter2Train mapValues avgWordFeatures
     val featuresPairTrain = avgWordFeaturesPairTrain join samplePairs mapValues {
-      case (features, Tweet(id, tweetText, label,time,judge,stock)) => LabeledPoint(label.get, features)
+      case (features, Tweet(id, tweetText, label)) => LabeledPoint(label.get, features)
     }
     val trainingSet = featuresPairTrain.values
     trainingSet
@@ -95,9 +95,5 @@ class WordVectorGenerator extends IFeatureGenerator{
     }
   }
 
-
-
-
-
-
+  override def generateFeature(tweet: Tweet): LabeledPoint = ???
 }

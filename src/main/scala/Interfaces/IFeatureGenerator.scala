@@ -11,7 +11,8 @@ import org.apache.spark.rdd.RDD
   */
 trait IFeatureGenerator  extends java.io.Serializable {
 
-  def generateFeatures(tweets: RDD[Tweet], dataType: DataType): RDD[LabeledPoint]
+  def generateFeatures(tweets: RDD[Tweet], dataType: DataType = DataType.TRAINING): RDD[LabeledPoint]
+  def generateFeature(tweet: Tweet) : LabeledPoint
 
 }
 
