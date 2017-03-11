@@ -12,7 +12,7 @@ import scala.collection.immutable.HashSet
  */
 class FpmBasedDistinguishingWordsGenerator extends IDistinguishingWordsGenerator {
 	override def generateMostDistinguishingWords(tweets: RDD[Tweet]): Array[String] = {
-		val transactions: RDD[Array[String]] = tweets.map(s => s.text.trim.split(' ').distinct)
+		val transactions: RDD[Array[String]] = tweets.map(s => s.tweetText.trim.split(' ').distinct)
 
 		val fpg = new FPGrowth()
 			.setMinSupport(0.1)
