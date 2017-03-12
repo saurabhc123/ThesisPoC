@@ -9,4 +9,6 @@ import org.apache.spark.rdd.RDD
 trait IExperiment extends java.io.Serializable {
   def performExperiment(train:RDD[Tweet], validation:RDD[Tweet]) : Unit
 
+  def SetupAndRunExperiment() : Unit
+
 }

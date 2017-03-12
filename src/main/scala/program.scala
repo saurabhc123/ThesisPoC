@@ -1,6 +1,6 @@
 package main.scala
 
-import _root_.Factories.AuxiliaryDataRetrieverFactory
+import Utilities.ScratchPad
 import org.apache.log4j.{Level, Logger}
 
 /**
@@ -20,10 +20,16 @@ object program extends App {
 		//FPMDistinguishingWords.main(args)
 		//WebServiceClient.main(args)
 
-		val distinguishingWords = Array("storm", "isaac", "hurricane")
-		val auxDataRetriever = new AuxiliaryDataRetrieverFactory().getAuxiliaryDataRetriever()
+		//Code to test distinguishing words
+		/*val distinguishingWords = Array("storm", "isaac", "hurricane")
+		val auxDataRetriever = new AuxiliaryDataRetrieverFactory().getAuxiliaryDataRetriever("The auxiliaryfilename here")
 		val firstSet = auxDataRetriever.retrieveAuxiliaryData(distinguishingWords)
-		val secondSet = auxDataRetriever.retrieveAuxiliaryData(distinguishingWords)
+		val secondSet = auxDataRetriever.retrieveAuxiliaryData(distinguishingWords)*/
+
+		ScratchPad.Scratch()
+
+		//new AuxiliaryDataBasedExperiment().SetupAndRunExperiment()
+
 	}
 }
 

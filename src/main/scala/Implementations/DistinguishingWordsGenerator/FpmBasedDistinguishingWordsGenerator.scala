@@ -31,15 +31,15 @@ class FpmBasedDistinguishingWordsGenerator extends IDistinguishingWordsGenerator
 				}
 			}
 			)
-			println(itemset.items.mkString("[", ",", "]") + ", " + itemset.freq)
+			//println(itemset.items.mkString("[", ",", "]") + ", " + itemset.freq)
 		}
 
 		val minConfidence = 0.8
 		model.generateAssociationRules(minConfidence).collect().foreach { rule =>
-			println(
-				rule.antecedent.mkString("[", ",", "]")
-					+ " => " + rule.consequent.mkString("[", ",", "]")
-					+ ", " + rule.confidence)
+//			println(
+//				rule.antecedent.mkString("[", ",", "]")
+//					+ " => " + rule.consequent.mkString("[", ",", "]")
+//					+ ", " + rule.confidence)
 
 
 		}
