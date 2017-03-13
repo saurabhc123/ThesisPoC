@@ -1,6 +1,6 @@
 package main.scala
 
-import Utilities.ScratchPad
+import main.scala.Implementations.AuxiliaryDataBasedExperiment
 import org.apache.log4j.{Level, Logger}
 
 /**
@@ -26,9 +26,9 @@ object program extends App {
 		val firstSet = auxDataRetriever.retrieveAuxiliaryData(distinguishingWords)
 		val secondSet = auxDataRetriever.retrieveAuxiliaryData(distinguishingWords)*/
 
-		ScratchPad.Scratch()
+		//ScratchPad.Scratch()
 
-		//new AuxiliaryDataBasedExperiment().SetupAndRunExperiment()
+		new AuxiliaryDataBasedExperiment().SetupAndRunExperiment()
 
 	}
 }
