@@ -43,9 +43,6 @@ class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAux
 		{
 			auxiliaryMatches = tweetsContainingRelevantWords.take(numberOfTweetsToRetrieve)
 		}
-
-
-
 		FileBasedAuxiliaryDataRetriever.lastLineRead = auxiliaryMatches.last.identifier.toInt
 
 		sc.parallelize(auxiliaryMatches)
@@ -83,7 +80,7 @@ object FileBasedAuxiliaryDataRetriever
 		def toTweet(segments: Array[String]) = segments match {
 			case Array(label, tweetText) =>
 				counter += 1
-				Tweet(counter.toString, tweetText, Some(label.toDouble))
+				Tweet(counter.toString, tweetText, label.toDouble)
 		}
 
 		def cleanHtml(str: String) = str.replaceAll( """<(?!\/?a(?=>|\s.*>))\/?.*?>""", "")

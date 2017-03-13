@@ -21,21 +21,21 @@ class WebServiceBasedWordVectorGenerator extends IFeatureGenerator{
 
 	override def generateFeatures(tweets: RDD[Tweet], dataType: DataType): RDD[LabeledPoint] = {
 
-		tweets.map(tweet => this.getWordVectorForSentence(tweet.tweetText, tweet.label.get))
+		tweets.map(tweet => this.getWordVectorForSentence(tweet.tweetText, tweet.label))
 
 	}
 
 	def getWordVectorForSentence(sentence:String, label:Double):LabeledPoint =	{
 
 		implicit val formats = DefaultFormats
-		val sentence = URLEncoder.encode("Hello World", "utf-8").replaceAll("\\+", "%20");
-		val url = s"http://localhost:5000/getvector/$sentence"
+		val sentence1 = URLEncoder.encode(sentence, "utf-8").replaceAll("\\+", "%20");
+		val url = s"http://localhost:5000/getvector/$sentence1"
 		val result = scala.io.Source.fromURL(url).mkString
 		val wv = parse(result).extract[WordVector]
 		new LabeledPoint(label, Vectors.dense(wv.vector))
 	}
 
 	override def generateFeature(tweet: Tweet): LabeledPoint = {
-		this.getWordVectorForSentence(tweet.tweetText, tweet.label.get)
+		this.getWordVectorForSentence(tweet.tweetText, tweet.label)
 	}
 }

@@ -17,28 +17,32 @@ class CosineSimilarityBasedFilter {
 		val minSimilarityThreshold = 0.5
 		val trainTweetsFeatures = featureGenerator.generateFeatures(train)
 		val auxiliaryTweetsFeatures = auxiliary.map(aux => (aux, featureGenerator.generateFeature(aux)))
-		trainTweetsFeatures.cache()
-		auxiliaryTweetsFeatures.cache()
 
-		val bcTrain = sc.broadcast(trainTweetsFeatures)
+		val auxArray = auxiliaryTweetsFeatures.toLocalIterator
 
-		val auxSimilarityArray = new Array[Double](auxiliaryTweetsFeatures.count().toInt)
-		auxiliaryTweetsFeatures.foreach(auxTweet => {
-			val auxTweetSimilarity = bcTrain.value.map(tr =>
+		val auxTweetsSimilarities = auxArray.map(auxTweet => {
+			val auxTweetSimilarity = trainTweetsFeatures.map(tr =>
 				{
-					CosineSimilarity.cosineSimilarity(tr.features.toArray, auxTweet._2.features.toArray)
+					val cos_sim = CosineSimilarity.cosineSimilarity(tr.features.toArray, auxTweet._2.features.toArray)
+					cos_sim
 				})
 			val maxSimilarity = auxTweetSimilarity.max()
-			auxSimilarityArray(auxTweet._1.identifier.toInt) = maxSimilarity
-			//return maxSimilarity
+			//println(maxSimilarity)
+			(auxTweet,maxSimilarity)
 		})
 
-		val auxTweetsSimilarities = auxiliaryTweetsFeatures.map(auxTweet => (auxTweet, auxSimilarityArray(auxTweet._1.identifier.toInt)))
+		auxTweetsSimilarities.foreach(auxTweet => {
+			if(auxTweet._2 > minSimilarityThreshold)
+			{
+				auxTweet._1.x._1.label = 1.0
+			}
+			else{
+				auxTweet._1.x._1.label = 0.0
+			}
 
-		//val auxiliaryTweetsSimilarity =	auxiliaryTweetsFeatures.map(auxTweetVectorTuple => (auxTweetVectorTuple._1 ,trainTweetsFeatures.map(t =>  CosineSimilarity.cosineSimilarity(auxTweetVectorTuple._2.features.toArray, t.features.toArray))) )
-		val filteredTweets = auxTweetsSimilarities.filter(auxTweet => auxTweet._2 > minSimilarityThreshold)
-			.map(_._1)
+		}
+		)
 
-		filteredTweets.map(t => t._1)
+		sc.parallelize(auxTweetsSimilarities.map(t => t._1.x._1).toSeq)
 	}
 }

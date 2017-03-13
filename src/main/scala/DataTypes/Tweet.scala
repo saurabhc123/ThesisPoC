@@ -6,7 +6,7 @@ package main.DataTypes
   * Created by Eric on 2/1/2017.
   */
 case class Tweet(identifier: String, tweetText:String,
-                 label: Option[Double])
+                 var label: Double)
 {
 
 	/*def getFeatures(text: String, featureGenerator: IFeatureGenerator): Vector = {

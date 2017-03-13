@@ -35,20 +35,22 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 		var f1 = metricsCalculator.macroF1
 		val thresholdF1 = AuxiliaryDataBasedExperiment.thresholdF1
 		val auxiliaryThresholdExpectation = AuxiliaryDataBasedExperiment.auxiliaryThresholdExpectation
-
+		println(s"Initial F1={$f1}")
 
 
 		var distinguishingWordTweetCorpus = train
 		var numberOfIterations = 0
 		while (f1 < thresholdF1 && numberOfIterations < 5) {
 			//Get the most distinguishing words
-			val distinguishingWords = distinguishingWordGenerator.generateMostDistinguishingWords(distinguishingWordTweetCorpus.filter(t => t.label.get == 1.0))
+			val distinguishingWords = distinguishingWordGenerator.generateMostDistinguishingWords(distinguishingWordTweetCorpus.filter(t => t.label == 1.0))
 
 			//Retrieve auxiliary data by using most distinguishing words
 			val auxiliaryData = auxiliaryDataRetriever.retrieveAuxiliaryData(distinguishingWords)
 
 			//Filter based on cosine similarity
 			val filteredAuxiliaryData = new CosineSimilarityBasedFilter().filter(distinguishingWordTweetCorpus, auxiliaryData, featureGenerator)
+
+			println(filteredAuxiliaryData.count())
 
 			//train using training + auxiliary data
 			val fullData = train.union(filteredAuxiliaryData)
@@ -58,6 +60,7 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 			val auxiliaryPredictions = model.predict(featureGenerator.generateFeatures(validation, DataType.TRAINING))
 			val metrics = MetricsCalculator.GenerateClassifierMetrics(auxiliaryPredictions)
 			val auxF1 = metrics.macroF1
+			println(s"Aux F1 - Iteration-$numberOfIterations=$f1")
 
 			//if f1 is greater than aux threshold, add aux to the training data.
 			if ((auxF1 - f1) > auxiliaryThresholdExpectation) {
