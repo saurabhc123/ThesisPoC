@@ -9,11 +9,12 @@ import org.apache.spark.rdd.RDD
 /**
  * Created by saur6410 on 3/9/17.
  */
-class FileBasedAuxiliaryDataRetriever extends IAuxiliaryDataRetriever {
+class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAuxiliaryDataRetriever {
 
 
 	val numberOfTweetsToRetrieve = 10
 	//var lastLineRead = 0
+	FileBasedAuxiliaryDataRetriever._auxiliaryFileName = auxiliaryDataFilename
 
 	override def retrieveAuxiliaryData(distinguishingWords: Array[String]): RDD[Tweet] = {
 
@@ -42,9 +43,6 @@ class FileBasedAuxiliaryDataRetriever extends IAuxiliaryDataRetriever {
 		{
 			auxiliaryMatches = tweetsContainingRelevantWords.take(numberOfTweetsToRetrieve)
 		}
-
-
-
 		FileBasedAuxiliaryDataRetriever.lastLineRead = auxiliaryMatches.last.identifier.toInt
 
 		sc.parallelize(auxiliaryMatches)
@@ -64,7 +62,7 @@ class FileBasedAuxiliaryDataRetriever extends IAuxiliaryDataRetriever {
 object FileBasedAuxiliaryDataRetriever
 {
 	var lastLineRead = 0
-	val _auxiliaryFileName = "data/training/multi_class_lem"
+	var _auxiliaryFileName = "data/training/multi_class_lem"
 
 	var _auxiliaryTweets:RDD[Tweet] = null
 
@@ -82,7 +80,7 @@ object FileBasedAuxiliaryDataRetriever
 		def toTweet(segments: Array[String]) = segments match {
 			case Array(label, tweetText) =>
 				counter += 1
-				Tweet(counter.toString, tweetText, Some(label.toDouble))
+				Tweet(counter.toString, tweetText, label.toDouble)
 		}
 
 		def cleanHtml(str: String) = str.replaceAll( """<(?!\/?a(?=>|\s.*>))\/?.*?>""", "")

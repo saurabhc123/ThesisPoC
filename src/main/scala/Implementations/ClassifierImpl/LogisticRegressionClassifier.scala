@@ -29,7 +29,7 @@ class LogisticRegressionClassifier extends IClassifier{
     Model = LogisticRegressionModel.load(sc,filePath)
   }*/
   override def train(labels: RDD[LabeledPoint]): IClassifierModel = {
-    val num_labels = labels.map(x => x.label).distinct().count().toInt
+    val num_labels = 2//labels.map(x => x.label).distinct().count().toInt
     val lrClassifier = new LogisticRegressionWithLBFGS()
     new LogisticRegressionClassifierModel(lrClassifier.setNumClasses(num_labels).run(labels))
   }
