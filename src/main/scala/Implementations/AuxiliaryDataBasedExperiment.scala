@@ -66,8 +66,9 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 
 
 			//if f1 is greater than aux threshold, add aux to the training data.
-			if (true)//((auxF1 - f1) > auxiliaryThresholdExpectation)
+			if ((auxF1 - f1) > auxiliaryThresholdExpectation)
 			{
+				println(s"Adding ${filteredAuxiliaryData.count()} auxiliary tweets to the training data.")
 				f1 = auxF1
 				dataToTrainOn = fullData
 			}
@@ -88,9 +89,9 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 }
 
 object AuxiliaryDataBasedExperiment {
-	val minSimilarityThreshold = 0.7
-	val maxFpmWordsToPick = 20
-	val minFpmWordsDetected = 2
+	val minSimilarityThreshold = 0.6
+	val maxFpmWordsToPick = 30
+	val minFpmWordsDetected = 3
 
 	val thresholdF1 = 0.98
 	val auxiliaryThresholdExpectation = 0.01
