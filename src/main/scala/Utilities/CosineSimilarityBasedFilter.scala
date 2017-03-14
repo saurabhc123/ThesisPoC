@@ -4,6 +4,7 @@ package Utilities
 import main.DataTypes.Tweet
 import main.Interfaces.IFeatureGenerator
 import main.SparkContextManager
+import main.scala.Implementations.AuxiliaryDataBasedExperiment
 import org.apache.spark.rdd.RDD
 
 class CosineSimilarityBasedFilter {
@@ -14,11 +15,11 @@ class CosineSimilarityBasedFilter {
 
 		val sc = SparkContextManager.getContext
 
-		val minSimilarityThreshold = 0.5
+		val minSimilarityThreshold = AuxiliaryDataBasedExperiment.minSimilarityThreshold
 		val trainTweetsFeatures = featureGenerator.generateFeatures(train)
 		val auxiliaryTweetsFeatures = auxiliary.map(aux => (aux, featureGenerator.generateFeature(aux)))
 
-		val auxArray = auxiliaryTweetsFeatures.toLocalIterator
+		val auxArray = auxiliaryTweetsFeatures.collect()
 
 		val auxTweetsSimilarities = auxArray.map(auxTweet => {
 			val auxTweetSimilarity = trainTweetsFeatures.map(tr =>
@@ -27,7 +28,7 @@ class CosineSimilarityBasedFilter {
 					cos_sim
 				})
 			val maxSimilarity = auxTweetSimilarity.max()
-			//println(maxSimilarity)
+			println(s"$maxSimilarity|${auxTweet._1.tweetText}")
 			(auxTweet,maxSimilarity)
 		})
 

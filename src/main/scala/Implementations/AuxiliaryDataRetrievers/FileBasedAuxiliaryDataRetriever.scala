@@ -3,6 +3,7 @@ package Implementations.AuxiliaryDataRetrievers
 import main.DataTypes.Tweet
 import main.Interfaces.IAuxiliaryDataRetriever
 import main.SparkContextManager
+import main.scala.Implementations.AuxiliaryDataBasedExperiment
 import org.apache.spark.rdd.RDD
 
 
@@ -51,7 +52,7 @@ class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAux
 	def doesTweetContainsDistinguishingWords(tweetText:String, distinguishingWords: Array[String]) : Boolean = {
 
 		val intersectionResult = tweetText.split(" ").intersect(distinguishingWords)
-		if(intersectionResult.length > 1)
+		if(intersectionResult.length > AuxiliaryDataBasedExperiment.minFpmWordsDetected)
 			return true
 		return false
 

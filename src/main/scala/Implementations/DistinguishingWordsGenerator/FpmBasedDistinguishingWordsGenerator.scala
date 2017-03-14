@@ -2,6 +2,7 @@ package Implementations.DistinguishingWordsGenerator
 
 import Interfaces.IDistinguishingWordsGenerator
 import main.DataTypes.Tweet
+import main.scala.Implementations.AuxiliaryDataBasedExperiment
 import org.apache.spark.mllib.fpm.FPGrowth
 import org.apache.spark.rdd.RDD
 
@@ -44,6 +45,6 @@ class FpmBasedDistinguishingWordsGenerator extends IDistinguishingWordsGenerator
 
 		}
 		//ToDo: Get the top-k array of words
-		frequentWords.toArray
+		frequentWords.take(AuxiliaryDataBasedExperiment.maxFpmWordsToPick).toArray
 	}
 }
