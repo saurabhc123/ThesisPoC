@@ -91,7 +91,7 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 object AuxiliaryDataBasedExperiment {
 	val minSimilarityThreshold = 0.6
 	val maxFpmWordsToPick = 30
-	val minFpmWordsDetected = 3
+	val minFpmWordsDetected = 2
 
 	val thresholdF1 = 0.98
 	val auxiliaryThresholdExpectation = 0.01
