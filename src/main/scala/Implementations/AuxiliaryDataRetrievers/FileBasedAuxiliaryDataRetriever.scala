@@ -13,7 +13,6 @@ import org.apache.spark.rdd.RDD
 class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAuxiliaryDataRetriever {
 
 
-	val numberOfTweetsToRetrieve = 10
 	//var lastLineRead = 0
 	FileBasedAuxiliaryDataRetriever._auxiliaryFileName = auxiliaryDataFilename
 
@@ -25,7 +24,7 @@ class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAux
 
 		//Update the cursor for each step.
 		val tweetsContainingRelevantWords = auxiliaryTweets.filter(x => doesTweetContainsDistinguishingWords(x.tweetText, distinguishingWords)
-		&& x.identifier.toInt > FileBasedAuxiliaryDataRetriever.lastLineRead)
+		&& x.identifier.toInt > FpmAuxiliaryFilter.lastLineRead)
 
 		val tweetsCount = tweetsContainingRelevantWords.count()
 
@@ -36,15 +35,15 @@ class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAux
 
 		var auxiliaryMatches:Array[Tweet] = null
 		//Once the required number of tweets are retrieved, get the line number of the last tweet. Save it
-		if(tweetsCount < numberOfTweetsToRetrieve)
+		if(tweetsCount < FpmAuxiliaryFilter.numberOfTweetsToRetrieve)
 		{
 			auxiliaryMatches = tweetsContainingRelevantWords.take(tweetsCount.toInt)
 		}
 		else
 		{
-			auxiliaryMatches = tweetsContainingRelevantWords.take(numberOfTweetsToRetrieve)
+			auxiliaryMatches = tweetsContainingRelevantWords.take(FpmAuxiliaryFilter.numberOfTweetsToRetrieve)
 		}
-		FileBasedAuxiliaryDataRetriever.lastLineRead = auxiliaryMatches.last.identifier.toInt
+		FpmAuxiliaryFilter.lastLineRead = auxiliaryMatches.last.identifier.toInt
 
 		sc.parallelize(auxiliaryMatches)
 	}
@@ -52,7 +51,7 @@ class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAux
 	def doesTweetContainsDistinguishingWords(tweetText:String, distinguishingWords: Array[String]) : Boolean = {
 
 		val intersectionResult = tweetText.split(" ").intersect(distinguishingWords)
-		if(intersectionResult.length > AuxiliaryDataBasedExperiment.minFpmWordsDetected)
+		if(intersectionResult.length >= AuxiliaryDataBasedExperiment.minFpmWordsDetected)
 			return true
 		return false
 
@@ -62,7 +61,7 @@ class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAux
 
 object FileBasedAuxiliaryDataRetriever
 {
-	var lastLineRead = 0
+
 	var _auxiliaryFileName = "data/training/multi_class_lem"
 
 	var _auxiliaryTweets:RDD[Tweet] = null
@@ -73,15 +72,39 @@ object FileBasedAuxiliaryDataRetriever
 			return _auxiliaryTweets
 
 		val sc = SparkContextManager.getContext
-		val delimiter = ";"
-		val auxiliaryFileContent = sc.textFile(_auxiliaryFileName).map(l => l.split(delimiter))
+		val delimiter = AuxiliaryDataBasedExperiment.fileDelimiter
+		var auxiliaryFileContent = sc.textFile(_auxiliaryFileName).map(l => l.split(delimiter))
+		auxiliaryFileContent = auxiliaryFileContent.map(stringArrays => {
+			if(stringArrays.length > 2){
+				val resultArray = new Array[String](2)
+				resultArray(0) = stringArrays(0)
+				resultArray(1) = stringArrays(1) + stringArrays(2)
+				resultArray
+			}
+			else
+				stringArrays
+		})
 
 		var counter = 0
 
 		def toTweet(segments: Array[String]) = segments match {
+
 			case Array(label, tweetText) =>
+				try {
+					counter += 1
+					Tweet(counter.toString, tweetText, label.toDouble)
+				}
+				catch
+					{
+						case unknown => println(s"Issue with Tweet:${segments}, $counter")
+							Tweet(counter.toString, "", 0.0)
+					}
+			case _ =>
+			{
+				println(s"Issue with Tweet:${segments.array.deep.mkString(" ")}, $counter")
 				counter += 1
-				Tweet(counter.toString, tweetText, label.toDouble)
+				Tweet(counter.toString, "hello", 0.0)
+			}
 		}
 
 		def cleanHtml(str: String) = str.replaceAll( """<(?!\/?a(?=>|\s.*>))\/?.*?>""", "")

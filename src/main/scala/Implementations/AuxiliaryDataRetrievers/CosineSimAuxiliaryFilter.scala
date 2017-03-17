@@ -1,17 +1,22 @@
-package Utilities
+package Implementations.AuxiliaryDataRetrievers
 
-
+import Interfaces.IAuxiliaryDataFilter
+import Utilities.CosineSimilarity
 import main.DataTypes.Tweet
 import main.Interfaces.IFeatureGenerator
 import main.SparkContextManager
 import main.scala.Implementations.AuxiliaryDataBasedExperiment
 import org.apache.spark.rdd.RDD
 
-class CosineSimilarityBasedFilter {
+/**
+ * Created by saur6410 on 3/17/17.
+ */
+class CosineSimAuxiliaryFilter(trainingTweets: RDD[Tweet], featureGenerator:IFeatureGenerator) extends IAuxiliaryDataFilter {
+	override def filter(auxiliaryTweets: RDD[Tweet]): RDD[Tweet] = {
+		filterData(trainingTweets, auxiliaryTweets,featureGenerator)
+	}
 
-
-
-	def filter(train:RDD[Tweet], auxiliary:RDD[Tweet], featureGenerator: IFeatureGenerator):RDD[Tweet] = {
+	def filterData(train:RDD[Tweet], auxiliary:RDD[Tweet], featureGenerator: IFeatureGenerator):RDD[Tweet] = {
 
 		val sc = SparkContextManager.getContext
 
@@ -23,10 +28,10 @@ class CosineSimilarityBasedFilter {
 
 		val auxTweetsSimilarities = auxArray.map(auxTweet => {
 			val auxTweetSimilarity = trainTweetsFeatures.map(tr =>
-				{
-					val cos_sim = CosineSimilarity.cosineSimilarity(tr.features.toArray, auxTweet._2.features.toArray)
-					cos_sim
-				})
+			{
+				val cos_sim = CosineSimilarity.cosineSimilarity(tr.features.toArray, auxTweet._2.features.toArray)
+				cos_sim
+			})
 			val maxSimilarity = auxTweetSimilarity.max()
 			//println(s"$maxSimilarity|${auxTweet._1.tweetText}")
 			(auxTweet,maxSimilarity)

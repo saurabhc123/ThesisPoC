@@ -1,11 +1,13 @@
 package main.scala.Implementations
 
-import Factories.{AuxiliaryDataRetrieverFactory, ClassifierType, DistinguishingWordsGeneratorFactory}
-import Interfaces.{IDistinguishingWordsGenerator, IExperiment}
-import Utilities.{TweetsFileProcessor, CosineSimilarityBasedFilter, MetricsCalculator}
+import Factories._
+import Implementations.AuxiliaryDataRetrievers.FileBasedAuxiliaryDataRetriever
+import Interfaces.IExperiment
+import Utilities.{CleanTweet, MetricsCalculator, TweetsFileProcessor}
 import main.DataTypes.Tweet
 import main.Factories.ClassifierFactory
 import main.Interfaces.{DataType, IAuxiliaryDataRetriever}
+import main.SparkContextManager
 import main.scala.Factories.{FeatureGeneratorFactory, FeatureGeneratorType}
 import org.apache.spark.rdd.RDD
 
@@ -23,7 +25,6 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 		val classifierFactory = new ClassifierFactory()
 		val classifier = classifierFactory.getClassifier(ClassifierType.LogisticRegression)
 		val featureGenerator = FeatureGeneratorFactory.getFeatureGenerator(FeatureGeneratorType.WebServiceWord2Vec)
-		val distinguishingWordGenerator: IDistinguishingWordsGenerator = new DistinguishingWordsGeneratorFactory().getDistinguishingWordsGenerator()
 		val auxiliaryDataRetriever: IAuxiliaryDataRetriever = new AuxiliaryDataRetrieverFactory().getAuxiliaryDataRetriever(AuxiliaryDataBasedExperiment.auxiliaryDataFile)
 
 		//Train the classifier
@@ -39,18 +40,23 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 		println("Initial - ConfusionMatrix:")
 		println(s"${metricsCalculator.confusionMatrix}")
 
+
 		var dataToTrainOn = train
 		var numberOfIterations = 0
 		while (f1 < thresholdF1 && numberOfIterations < 5) {
 			//Get the most distinguishing words
-			val distinguishingWords = distinguishingWordGenerator.generateMostDistinguishingWords(dataToTrainOn.filter(t => t.label == 1.0))
+			val filterFactory = new AuxiliaryDataFilterFactory(dataToTrainOn, featureGenerator)
+			val fpmFilter = filterFactory.getAuxiliaryDataFilter(FilterType.FpmFilter)
+			val cosineSimFilter = filterFactory.getAuxiliaryDataFilter(FilterType.CosineSim)
 
+			val sourceAuxiliaryData = FileBasedAuxiliaryDataRetriever.readTweetsFromAuxiliaryFile()
 			//Retrieve auxiliary data by using most distinguishing words
-			val auxiliaryData = auxiliaryDataRetriever.retrieveAuxiliaryData(distinguishingWords)
+			val auxiliaryData = CleanTweet.clean(fpmFilter.filter(sourceAuxiliaryData), SparkContextManager.getContext)
 
 			//Filter based on cosine similarity
 			val positiveLabelTrainingData = dataToTrainOn.filter(trainingTweet => trainingTweet.label == 1.0)
-			val filteredAuxiliaryData = new CosineSimilarityBasedFilter().filter(positiveLabelTrainingData, auxiliaryData, featureGenerator)
+			val wmdBasedFilter = filterFactory.getAuxiliaryDataFilter(FilterType.Wmd)
+			val filteredAuxiliaryData = wmdBasedFilter.filter(auxiliaryData)
 
 			println(s"Retrieved ${filteredAuxiliaryData.count()} new auxiliary tweets.")
 			print(filteredAuxiliaryData.foreach(tweet => println(s"${tweet.label}|${tweet.tweetText}")))
@@ -81,23 +87,27 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 
 	override def SetupAndRunExperiment(): Unit = {
 
-		val trainingTweets = TweetsFileProcessor.LoadTweetsFromFile(AuxiliaryDataBasedExperiment.trainingDataFile)
-		val validationTweets = TweetsFileProcessor.LoadTweetsFromFile(AuxiliaryDataBasedExperiment.validationDataFile)
-		this.performExperiment(trainingTweets, validationTweets)
+		val trainingTweets = TweetsFileProcessor.LoadTweetsFromFile(AuxiliaryDataBasedExperiment.trainingDataFile, AuxiliaryDataBasedExperiment.fileDelimiter)
+		val validationTweets = TweetsFileProcessor.LoadTweetsFromFile(AuxiliaryDataBasedExperiment.validationDataFile, AuxiliaryDataBasedExperiment.fileDelimiter)
+		val cleanTrainingTweets = CleanTweet.clean(trainingTweets, SparkContextManager.getContext)
+		val cleanValidationTweets = CleanTweet.clean(validationTweets, SparkContextManager.getContext)
+		this.performExperiment(cleanTrainingTweets, cleanValidationTweets)
 
 	}
 }
 
 object AuxiliaryDataBasedExperiment {
-	val minSimilarityThreshold = 0.7
-	val maxFpmWordsToPick = 20
-	val minFpmWordsDetected = 3
+	val minSimilarityThreshold = 0.6
+	val minWmDistanceThreshold = 0.9
+	val maxFpmWordsToPick = 30
+	val minFpmWordsDetected = 2
 
 	val thresholdF1 = 0.98
 	val auxiliaryThresholdExpectation = 0.01
-	val trainingDataFile = "data/training/exp_training_data.txt"
-	val validationDataFile = "data/training/exp_validation_data.txt"
-	val auxiliaryDataFile = "data/training/multi_class_lem"
+	val fileDelimiter = ","
+	val trainingDataFile = "data/final/egypt_training_data.txt"
+	val validationDataFile = "data/final/egypt_validation_data.txt"
+	val auxiliaryDataFile = "data/final/egypt_auxiliary_data.txt"
 
 
 

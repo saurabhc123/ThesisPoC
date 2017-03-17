@@ -17,10 +17,11 @@
         "org.apache.hbase" % "hbase-server" % "1.0.0-cdh5.5.1"
     )
 
-    libraryDependencies ++= Seq(
-        "edu.stanford.nlp" % "stanford-corenlp" % "3.4.1",
-        "com.netaporter" %% "scala-uri" % "0.4.16"
-        )
+	 libraryDependencies ++= Seq(
+		 "edu.stanford.nlp" % "stanford-corenlp" % "3.2.0",
+		 "edu.stanford.nlp" % "stanford-corenlp" % "3.2.0" classifier "models",
+		 "com.netaporter" %% "scala-uri" % "0.4.16"
+	        )
 
 
 
