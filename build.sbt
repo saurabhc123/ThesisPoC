@@ -18,6 +18,9 @@
     )
 
     libraryDependencies ++= Seq(
-        "edu.stanford.nlp" % "stanford-corenlp" % "3.4.1"
+        "edu.stanford.nlp" % "stanford-corenlp" % "3.4.1",
+        "com.netaporter" %% "scala-uri" % "0.4.16"
         )
+
+
 
