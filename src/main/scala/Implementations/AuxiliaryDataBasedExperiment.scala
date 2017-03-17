@@ -3,7 +3,7 @@ package main.scala.Implementations
 import Factories._
 import Implementations.AuxiliaryDataRetrievers.FileBasedAuxiliaryDataRetriever
 import Interfaces.IExperiment
-import Utilities.{CleanTweet, CosineSimilarityBasedFilter, MetricsCalculator, TweetsFileProcessor}
+import Utilities.{CleanTweet, MetricsCalculator, TweetsFileProcessor}
 import main.DataTypes.Tweet
 import main.Factories.ClassifierFactory
 import main.Interfaces.{DataType, IAuxiliaryDataRetriever}
@@ -45,7 +45,7 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 		var numberOfIterations = 0
 		while (f1 < thresholdF1 && numberOfIterations < 5) {
 			//Get the most distinguishing words
-			val filterFactory = new AuxiliaryDataFilterFactory(dataToTrainOn)
+			val filterFactory = new AuxiliaryDataFilterFactory(dataToTrainOn, featureGenerator)
 			val fpmFilter = filterFactory.getAuxiliaryDataFilter(FilterType.FpmFilter)
 
 			val sourceAuxiliaryData = FileBasedAuxiliaryDataRetriever.readTweetsFromAuxiliaryFile()
@@ -54,7 +54,8 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 
 			//Filter based on cosine similarity
 			val positiveLabelTrainingData = dataToTrainOn.filter(trainingTweet => trainingTweet.label == 1.0)
-			val filteredAuxiliaryData = new CosineSimilarityBasedFilter().filter(positiveLabelTrainingData, auxiliaryData, featureGenerator)
+			val cosineSimilarityBasedFilter = filterFactory.getAuxiliaryDataFilter(FilterType.CosineSim)
+			val filteredAuxiliaryData = cosineSimilarityBasedFilter.filter(auxiliaryData)
 
 			println(s"Retrieved ${filteredAuxiliaryData.count()} new auxiliary tweets.")
 			print(filteredAuxiliaryData.foreach(tweet => println(s"${tweet.label}|${tweet.tweetText}")))
