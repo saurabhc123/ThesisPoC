@@ -1,5 +1,6 @@
 package org.apache.spark.mllib.linalg
 
+import main.DataTypes.Tweet
 import org.apache.spark.mllib.feature.Word2Vec
 import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.rdd.RDD
@@ -11,7 +12,7 @@ import scala.util.Try
  * Created by saur6410 on 2/26/17.
  */
 
-case class Tweet(id: String, tweetText: String, label: Option[Double] = None)
+
 
 object Word2VecGenerator {
 
@@ -29,7 +30,7 @@ object Word2VecGenerator {
 
     // To sample
     def toSample(segments: Array[String]) = segments match {
-      case Array(label, tweetText) => Tweet(java.util.UUID.randomUUID.toString , tweetText, Some(label.toDouble))
+      case Array(label, tweetText) => Tweet(java.util.UUID.randomUUID.toString , tweetText, label.toDouble)
     }
 
     val delimiter = ";"
@@ -52,7 +53,7 @@ object Word2VecGenerator {
     val wordOnlyTrainSample = cleanTrainSamples map wordOnlySample
 
     // Word2Vec
-    val samplePairs = wordOnlyTrainSample.map(s => s.id -> s).cache()
+    val samplePairs = wordOnlyTrainSample.map(s => s.identifier -> s).cache()
     val reviewWordsPairs: RDD[(String, Iterable[String])] = samplePairs.mapValues(_.tweetText.split(" ").toIterable)
     println("Start Training Word2Vec --->")
     val word2vecModel = new Word2Vec().fit(reviewWordsPairs.values)
@@ -83,7 +84,7 @@ object Word2VecGenerator {
     val avgWordFeaturesPair2 = avgWordFeaturesPair1.map(x => Vectors.fromBreeze(x))
     //avgWordFeaturesPair1 contains 30 tweets, with each tweet is a [1x100] vector
     val featuresPair = avgWordFeaturesPair join samplePairs mapValues {
-      case (features, Tweet(id, review, label)) => LabeledPoint(label.get, features)
+      case (features, Tweet(id, review, label)) => LabeledPoint(label, features)
     }
     val trainingSet = featuresPair.values
 
