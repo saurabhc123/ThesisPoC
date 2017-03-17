@@ -1,8 +1,9 @@
 package main.scala.Implementations
 
-import Factories.{AuxiliaryDataRetrieverFactory, ClassifierType, DistinguishingWordsGeneratorFactory}
-import Interfaces.{IDistinguishingWordsGenerator, IExperiment}
-import Utilities.{CleanTweet, TweetsFileProcessor, CosineSimilarityBasedFilter, MetricsCalculator}
+import Factories._
+import Implementations.AuxiliaryDataRetrievers.FileBasedAuxiliaryDataRetriever
+import Interfaces.IExperiment
+import Utilities.{CleanTweet, CosineSimilarityBasedFilter, MetricsCalculator, TweetsFileProcessor}
 import main.DataTypes.Tweet
 import main.Factories.ClassifierFactory
 import main.Interfaces.{DataType, IAuxiliaryDataRetriever}
@@ -24,7 +25,6 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 		val classifierFactory = new ClassifierFactory()
 		val classifier = classifierFactory.getClassifier(ClassifierType.LogisticRegression)
 		val featureGenerator = FeatureGeneratorFactory.getFeatureGenerator(FeatureGeneratorType.WebServiceWord2Vec)
-		val distinguishingWordGenerator: IDistinguishingWordsGenerator = new DistinguishingWordsGeneratorFactory().getDistinguishingWordsGenerator()
 		val auxiliaryDataRetriever: IAuxiliaryDataRetriever = new AuxiliaryDataRetrieverFactory().getAuxiliaryDataRetriever(AuxiliaryDataBasedExperiment.auxiliaryDataFile)
 
 		//Train the classifier
@@ -40,14 +40,17 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 		println("Initial - ConfusionMatrix:")
 		println(s"${metricsCalculator.confusionMatrix}")
 
+
 		var dataToTrainOn = train
 		var numberOfIterations = 0
 		while (f1 < thresholdF1 && numberOfIterations < 5) {
 			//Get the most distinguishing words
-			val distinguishingWords = distinguishingWordGenerator.generateMostDistinguishingWords(dataToTrainOn.filter(t => t.label == 1.0))
+			val filterFactory = new AuxiliaryDataFilterFactory(dataToTrainOn)
+			val fpmFilter = filterFactory.getAuxiliaryDataFilter(FilterType.FpmFilter)
 
+			val sourceAuxiliaryData = FileBasedAuxiliaryDataRetriever.readTweetsFromAuxiliaryFile()
 			//Retrieve auxiliary data by using most distinguishing words
-			val auxiliaryData = CleanTweet.clean(auxiliaryDataRetriever.retrieveAuxiliaryData(distinguishingWords), SparkContextManager.getContext)
+			val auxiliaryData = CleanTweet.clean(fpmFilter.filter(sourceAuxiliaryData), SparkContextManager.getContext)
 
 			//Filter based on cosine similarity
 			val positiveLabelTrainingData = dataToTrainOn.filter(trainingTweet => trainingTweet.label == 1.0)
@@ -92,7 +95,7 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 }
 
 object AuxiliaryDataBasedExperiment {
-	val minSimilarityThreshold = 0.7
+	val minSimilarityThreshold = 0.6
 	val maxFpmWordsToPick = 30
 	val minFpmWordsDetected = 0
 

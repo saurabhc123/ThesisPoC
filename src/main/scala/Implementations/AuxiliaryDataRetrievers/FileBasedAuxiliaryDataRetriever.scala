@@ -13,7 +13,6 @@ import org.apache.spark.rdd.RDD
 class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAuxiliaryDataRetriever {
 
 
-	val numberOfTweetsToRetrieve = 10
 	//var lastLineRead = 0
 	FileBasedAuxiliaryDataRetriever._auxiliaryFileName = auxiliaryDataFilename
 
@@ -25,7 +24,7 @@ class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAux
 
 		//Update the cursor for each step.
 		val tweetsContainingRelevantWords = auxiliaryTweets.filter(x => doesTweetContainsDistinguishingWords(x.tweetText, distinguishingWords)
-		&& x.identifier.toInt > FileBasedAuxiliaryDataRetriever.lastLineRead)
+		&& x.identifier.toInt > FpmAuxiliaryFilter.lastLineRead)
 
 		val tweetsCount = tweetsContainingRelevantWords.count()
 
@@ -36,15 +35,15 @@ class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAux
 
 		var auxiliaryMatches:Array[Tweet] = null
 		//Once the required number of tweets are retrieved, get the line number of the last tweet. Save it
-		if(tweetsCount < numberOfTweetsToRetrieve)
+		if(tweetsCount < FpmAuxiliaryFilter.numberOfTweetsToRetrieve)
 		{
 			auxiliaryMatches = tweetsContainingRelevantWords.take(tweetsCount.toInt)
 		}
 		else
 		{
-			auxiliaryMatches = tweetsContainingRelevantWords.take(numberOfTweetsToRetrieve)
+			auxiliaryMatches = tweetsContainingRelevantWords.take(FpmAuxiliaryFilter.numberOfTweetsToRetrieve)
 		}
-		FileBasedAuxiliaryDataRetriever.lastLineRead = auxiliaryMatches.last.identifier.toInt
+		FpmAuxiliaryFilter.lastLineRead = auxiliaryMatches.last.identifier.toInt
 
 		sc.parallelize(auxiliaryMatches)
 	}
@@ -52,7 +51,7 @@ class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAux
 	def doesTweetContainsDistinguishingWords(tweetText:String, distinguishingWords: Array[String]) : Boolean = {
 
 		val intersectionResult = tweetText.split(" ").intersect(distinguishingWords)
-		if(intersectionResult.length > AuxiliaryDataBasedExperiment.minFpmWordsDetected)
+		if(intersectionResult.length >= AuxiliaryDataBasedExperiment.minFpmWordsDetected)
 			return true
 		return false
 
@@ -62,7 +61,7 @@ class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAux
 
 object FileBasedAuxiliaryDataRetriever
 {
-	var lastLineRead = 0
+
 	var _auxiliaryFileName = "data/training/multi_class_lem"
 
 	var _auxiliaryTweets:RDD[Tweet] = null
