@@ -28,7 +28,7 @@ class CosineSimilarityBasedFilter {
 					cos_sim
 				})
 			val maxSimilarity = auxTweetSimilarity.max()
-			println(s"$maxSimilarity|${auxTweet._1.tweetText}")
+			//println(s"$maxSimilarity|${auxTweet._1.tweetText}")
 			(auxTweet,maxSimilarity)
 		})
 
