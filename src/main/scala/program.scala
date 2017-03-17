@@ -1,5 +1,6 @@
 package main.scala
 
+import main.SparkContextManager
 import main.scala.Implementations.AuxiliaryDataBasedExperiment
 import org.apache.log4j.{Level, Logger}
 
@@ -13,6 +14,10 @@ object program extends App {
 
 		Logger.getLogger("org").setLevel(Level.OFF)
 		Logger.getLogger("akka").setLevel(Level.OFF)
+		Logger.getLogger("logreg").setLevel(Level.OFF)
+		val sc = SparkContextManager.getContext
+		sc.setLogLevel("ERROR")
+
 		println("Hello World!" + 11)
 		//LrClassifier.main(args)
 		//LrOnlineClassifier.main(args)

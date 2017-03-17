@@ -36,39 +36,46 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 		val thresholdF1 = AuxiliaryDataBasedExperiment.thresholdF1
 		val auxiliaryThresholdExpectation = AuxiliaryDataBasedExperiment.auxiliaryThresholdExpectation
 		println(s"Initial F1={$f1}")
+		println("Initial - ConfusionMatrix:")
+		println(s"${metricsCalculator.confusionMatrix}")
 
-
-		var distinguishingWordTweetCorpus = train
+		var dataToTrainOn = train
 		var numberOfIterations = 0
 		while (f1 < thresholdF1 && numberOfIterations < 5) {
 			//Get the most distinguishing words
-			val distinguishingWords = distinguishingWordGenerator.generateMostDistinguishingWords(distinguishingWordTweetCorpus.filter(t => t.label == 1.0))
+			val distinguishingWords = distinguishingWordGenerator.generateMostDistinguishingWords(dataToTrainOn.filter(t => t.label == 1.0))
 
 			//Retrieve auxiliary data by using most distinguishing words
 			val auxiliaryData = auxiliaryDataRetriever.retrieveAuxiliaryData(distinguishingWords)
 
 			//Filter based on cosine similarity
-			val filteredAuxiliaryData = new CosineSimilarityBasedFilter().filter(distinguishingWordTweetCorpus, auxiliaryData, featureGenerator)
+			val positiveLabelTrainingData = dataToTrainOn.filter(trainingTweet => trainingTweet.label == 1.0)
+			val filteredAuxiliaryData = new CosineSimilarityBasedFilter().filter(positiveLabelTrainingData, auxiliaryData, featureGenerator)
 
-			println(filteredAuxiliaryData.count())
+			println(s"Retrieved ${filteredAuxiliaryData.count()} new auxiliary tweets.")
+			print(filteredAuxiliaryData.foreach(tweet => println(s"${tweet.label}|${tweet.tweetText}")))
 
 			//train using training + auxiliary data
-			val fullData = train.union(filteredAuxiliaryData)
+			val fullData = dataToTrainOn.union(filteredAuxiliaryData)
 			model = classifier.train(featureGenerator.generateFeatures(fullData, DataType.TRAINING))
 
 			//perform prediction on validation data
-			val auxiliaryPredictions = model.predict(featureGenerator.generateFeatures(validation, DataType.TRAINING))
-			val metrics = MetricsCalculator.GenerateClassifierMetrics(auxiliaryPredictions)
+			val validationDataPredictions = model.predict(featureGenerator.generateFeatures(validation, DataType.TRAINING))
+			val metrics = MetricsCalculator.GenerateClassifierMetrics(validationDataPredictions)
 			val auxF1 = metrics.macroF1
-			println(s"Aux F1 - Iteration-$numberOfIterations=$f1")
+
 
 			//if f1 is greater than aux threshold, add aux to the training data.
-			if ((auxF1 - f1) > auxiliaryThresholdExpectation) {
+			if ((auxF1 - f1) > auxiliaryThresholdExpectation)
+			{
+				println(s"Adding ${filteredAuxiliaryData.count()} auxiliary tweets to the training data.")
 				f1 = auxF1
-				distinguishingWordTweetCorpus = fullData
+				dataToTrainOn = fullData
 			}
 			numberOfIterations += 1
-
+			println(s"Aux F1 - Iteration-$numberOfIterations=$auxF1")
+			println("Aux F1 - ConfusionMatrix:")
+			println(s"${metrics.confusionMatrix}")
 		}
 	}
 
@@ -82,8 +89,12 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 }
 
 object AuxiliaryDataBasedExperiment {
-	val thresholdF1 = 0.95
-	val auxiliaryThresholdExpectation = 0.05
+	val minSimilarityThreshold = 0.7
+	val maxFpmWordsToPick = 20
+	val minFpmWordsDetected = 3
+
+	val thresholdF1 = 0.98
+	val auxiliaryThresholdExpectation = 0.01
 	val trainingDataFile = "data/training/exp_training_data.txt"
 	val validationDataFile = "data/training/exp_validation_data.txt"
 	val auxiliaryDataFile = "data/training/multi_class_lem"
