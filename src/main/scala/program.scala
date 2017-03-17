@@ -32,7 +32,6 @@ object program extends App {
 		val secondSet = auxDataRetriever.retrieveAuxiliaryData(distinguishingWords)*/
 
 		//ScratchPad.Scratch()
-
 		new AuxiliaryDataBasedExperiment().SetupAndRunExperiment()
 
 	}

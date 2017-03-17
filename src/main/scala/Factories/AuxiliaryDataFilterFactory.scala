@@ -1,7 +1,7 @@
 package Factories
 
 import Factories.FilterType.FilterType
-import Implementations.AuxiliaryDataRetrievers.{CosineSimAuxiliaryFilter, FpmAuxiliaryFilter}
+import Implementations.AuxiliaryDataRetrievers.{WmdAuxiliaryFilter, CosineSimAuxiliaryFilter, FpmAuxiliaryFilter}
 import Interfaces.IAuxiliaryDataFilter
 import main.DataTypes.Tweet
 import main.Interfaces.IFeatureGenerator
@@ -22,7 +22,9 @@ class AuxiliaryDataFilterFactory(trainingTweets: RDD[Tweet], featureGenerator:IF
 				val positiveTrainingTweets = trainingTweets.filter(trainingTweet => trainingTweet.label == 1.0)
 				new CosineSimAuxiliaryFilter(positiveTrainingTweets,featureGenerator)
 			}
-			case FilterType.Wmd => null
+			case FilterType.Wmd => {
+				new WmdAuxiliaryFilter(trainingTweets,featureGenerator)
+			}
 		}
 	}
 }
