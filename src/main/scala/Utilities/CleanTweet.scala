@@ -8,7 +8,6 @@ import edu.stanford.nlp.ling.CoreLabel
 import edu.stanford.nlp.pipeline.{Annotation, StanfordCoreNLP}
 import edu.stanford.nlp.util.CoreMap
 import main.DataTypes.Tweet
-import org.apache.log4j.{Level, Logger}
 import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD
 
@@ -81,17 +80,18 @@ object CleanTweet {
     true
   }
   def getCleanedTweets(tweets: RDD[String], sc: SparkContext) : RDD[String] = {
-    val oldStderr = System.err
-    System.setErr(new PrintStream(new OutputStream() {
-      override def write(i: Int): Unit = {}
-    }))
+
     val stopWords = sc.broadcast(
                               scala.io.Source.fromFile("data/stopwords.txt").getLines().toSet).value
     val cleaned_text = tweets.mapPartitions(it => {
+      val oldStderr = System.err
+      System.setErr(new PrintStream(new OutputStream() {
+        override def write(i: Int): Unit = {}
+      }))
       val pipeline = createNLPPipeline()
+      System.setErr(oldStderr)
       it.map(t => plainTextToLemmas(t,stopWords,pipeline).mkString(" "))
     })
-    System.setErr(oldStderr)
     cleaned_text
   }
 }
