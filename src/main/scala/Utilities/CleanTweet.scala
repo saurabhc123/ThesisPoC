@@ -1,5 +1,6 @@
 package Utilities
 
+import java.io.{OutputStream, PrintStream}
 import java.util.Properties
 
 import edu.stanford.nlp.ling.CoreAnnotations.{LemmaAnnotation, SentencesAnnotation, TokensAnnotation}
@@ -80,14 +81,18 @@ object CleanTweet {
     true
   }
   def getCleanedTweets(tweets: RDD[String], sc: SparkContext) : RDD[String] = {
-    val rootLogger = Logger.getRootLogger
-    rootLogger.setLevel(Level.OFF)
+    val oldStderr = System.err
+    System.setErr(new PrintStream(new OutputStream() {
+      override def write(i: Int): Unit = {}
+    }))
     val stopWords = sc.broadcast(
                               scala.io.Source.fromFile("data/stopwords.txt").getLines().toSet).value
-    tweets.mapPartitions(it => {
+    val cleaned_text = tweets.mapPartitions(it => {
       val pipeline = createNLPPipeline()
       it.map(t => plainTextToLemmas(t,stopWords,pipeline).mkString(" "))
     })
+    System.setErr(oldStderr)
+    cleaned_text
   }
 }
 
