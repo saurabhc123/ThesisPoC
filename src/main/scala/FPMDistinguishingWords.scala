@@ -17,7 +17,7 @@ object FPMDistinguishingWords {
 
 		//val data = sc.textFile("data/training/fpm.txt")
 
-		val trainingFileContent = sc.textFile("data/final/egypt_auxiliary_data.txt").map(l => l.split(','))
+		val trainingFileContent = sc.textFile("data/final/egypt_training_data.txt").map(l => l.split(','))
 
 		// To sample
 		def toSample(segments: Array[String]) = segments match {

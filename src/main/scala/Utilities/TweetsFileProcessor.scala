@@ -1,5 +1,7 @@
 package Utilities
 
+import java.util.UUID
+
 import main.DataTypes.Tweet
 import main.SparkContextManager
 import org.apache.spark.rdd.RDD
@@ -9,7 +11,7 @@ import org.apache.spark.rdd.RDD
  */
 object TweetsFileProcessor {
 
-	def LoadTweetsFromFile(filename:String, delimiter:String = ";"):RDD[Tweet] =
+	def LoadTweetsFromFile(filename:String, delimiter:String = ";", useUUID:Boolean = true):RDD[Tweet] =
 	{
 		val sc = SparkContextManager.getContext
 		var fileContent = sc.textFile(filename).map(l => l.split(delimiter))
@@ -30,7 +32,10 @@ object TweetsFileProcessor {
 			case Array(label, tweetText) =>
 				try {
 					counter += 1
-					Tweet(counter.toString, tweetText, label.toDouble)
+					if(!useUUID)
+						Tweet(counter.toString, tweetText, label.toDouble)
+					else
+						Tweet(UUID.randomUUID().toString, tweetText, label.toDouble)
 				}
 				catch
 					{

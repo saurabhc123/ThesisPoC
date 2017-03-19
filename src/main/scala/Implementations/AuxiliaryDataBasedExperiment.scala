@@ -24,7 +24,7 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 		//Get the classifier from the factory
 		val classifierFactory = new ClassifierFactory()
 		val classifier = classifierFactory.getClassifier(ClassifierType.LogisticRegression)
-		val featureGenerator = FeatureGeneratorFactory.getFeatureGenerator(FeatureGeneratorType.WebServiceWord2Vec)
+		val featureGenerator = FeatureGeneratorFactory.getFeatureGenerator(FeatureGeneratorType.Word2Vec)
 		val auxiliaryDataRetriever: IAuxiliaryDataRetriever = new AuxiliaryDataRetrieverFactory().getAuxiliaryDataRetriever(AuxiliaryDataBasedExperiment.auxiliaryDataFile)
 
 		//Train the classifier
@@ -100,7 +100,7 @@ object AuxiliaryDataBasedExperiment {
 	val minSimilarityThreshold = 0.6
 	val minWmDistanceThreshold = 0.9
 	val maxFpmWordsToPick = 30
-	val minFpmWordsDetected = 2
+	val minFpmWordsDetected = 1
 
 	val thresholdF1 = 0.98
 	val auxiliaryThresholdExpectation = 0.01

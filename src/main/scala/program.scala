@@ -14,7 +14,7 @@ object program extends App {
 
 		Logger.getLogger("org").setLevel(Level.OFF)
 		Logger.getLogger("akka").setLevel(Level.OFF)
-		Logger.getLogger("logreg").setLevel(Level.OFF)
+		Logger.getLogger("edu").setLevel(Level.OFF)
 		val sc = SparkContextManager.getContext
 		sc.setLogLevel("ERROR")
 
