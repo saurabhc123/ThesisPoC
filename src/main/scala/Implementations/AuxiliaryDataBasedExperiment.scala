@@ -44,7 +44,7 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 		var dataToTrainOn = train
 		var numberOfIterations = 0
 		while (f1 < thresholdF1 && numberOfIterations < 5) {
-			//Get the most distinguishing words
+			//Get tweets based on most distinguishing words with FPM
 			val filterFactory = new AuxiliaryDataFilterFactory(dataToTrainOn, featureGenerator)
 			val fpmFilter = filterFactory.getAuxiliaryDataFilter(FilterType.FpmFilter)
 			val cosineSimFilter = filterFactory.getAuxiliaryDataFilter(FilterType.CosineSim)

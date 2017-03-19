@@ -17,12 +17,12 @@ object FPMDistinguishingWords {
 
 		//val data = sc.textFile("data/training/fpm.txt")
 
-		val trainingFileContent = sc.textFile("data/final/egypt_auxiliary_data.txt").map(l => l.split(','))
+		val trainingFileContent = sc.textFile("data/final/egypt_auxiliary_data_clean.txt").map(l => l.split(','))
 
 		// To sample
 		def toSample(segments: Array[String]) = segments match {
 			case Array(label, tweetText) => Tweet(java.util.UUID.randomUUID.toString , tweetText, label.toDouble)
-			case _ => Tweet("0"," ", 0.0)
+			case _ => Tweet("0",segments(0), 0.0)
 		}
 
 		val trainSamples = trainingFileContent map toSample
@@ -33,7 +33,7 @@ object FPMDistinguishingWords {
 		val transactions: RDD[Array[String]] = filteredTweets.map(s => s.tweetText.trim.split(' ').distinct)
 
 		val fpg = new FPGrowth()
-			.setMinSupport(0.1)
+			.setMinSupport(0.01)
 			.setNumPartitions(10)
 		val model = fpg.run(transactions)
 
@@ -45,7 +45,7 @@ object FPMDistinguishingWords {
 				if(!frequentWords.contains(word))
 					{
 					frequentWords = frequentWords.+(word)
-					println(word)
+					//println(word)
 					}
 			}
 						)
@@ -55,15 +55,15 @@ object FPMDistinguishingWords {
 
 		println()
 
-		val minConfidence = 0.8
-		model.generateAssociationRules(minConfidence).collect().foreach { rule =>
-			println(
-				rule.antecedent.mkString("[", ",", "]")
-					+ " => " + rule.consequent .mkString("[", ",", "]")
-					+ ", " + rule.confidence)
-		}
-
-		frequentWords.foreach(println)
+//		val minConfidence = 0.8
+//		model.generateAssociationRules(minConfidence).collect().foreach { rule =>
+//			println(
+//				rule.antecedent.mkString("[", ",", "]")
+//					+ " => " + rule.consequent .mkString("[", ",", "]")
+//					+ ", " + rule.confidence)
+//		}
+//
+//		frequentWords.foreach(println)
 
 
 	}
