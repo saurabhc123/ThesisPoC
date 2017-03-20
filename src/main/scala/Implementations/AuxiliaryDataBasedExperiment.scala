@@ -43,11 +43,10 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 
 		var dataToTrainOn = train
 		var numberOfIterations = 0
-		while (f1 < thresholdF1 && numberOfIterations < 5) {
+		while (f1 < thresholdF1 && numberOfIterations < AuxiliaryDataBasedExperiment.maxDataRetrievalIterations) {
 			//Get tweets based on most distinguishing words with FPM
 			val filterFactory = new AuxiliaryDataFilterFactory(dataToTrainOn, featureGenerator)
 			val fpmFilter = filterFactory.getAuxiliaryDataFilter(FilterType.FpmFilter)
-			val cosineSimFilter = filterFactory.getAuxiliaryDataFilter(FilterType.CosineSim)
 
 			val sourceAuxiliaryData = FileBasedAuxiliaryDataRetriever.readTweetsFromAuxiliaryFile()
 			//Retrieve auxiliary data by using most distinguishing words
@@ -55,8 +54,9 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 
 			//Filter based on cosine similarity
 			val positiveLabelTrainingData = dataToTrainOn.filter(trainingTweet => trainingTweet.label == 1.0)
+			val cosineSimFilter = filterFactory.getAuxiliaryDataFilter(FilterType.CosineSim)
 			val wmdBasedFilter = filterFactory.getAuxiliaryDataFilter(FilterType.Wmd)
-			val filteredAuxiliaryData = wmdBasedFilter.filter(auxiliaryData)
+			val filteredAuxiliaryData = cosineSimFilter.filter(auxiliaryData)
 
 			println(s"Retrieved ${filteredAuxiliaryData.count()} new auxiliary tweets.")
 			print(filteredAuxiliaryData.foreach(tweet => println(s"${tweet.label}|${tweet.tweetText}")))
@@ -100,7 +100,9 @@ object AuxiliaryDataBasedExperiment {
 	val minSimilarityThreshold = 0.6
 	val minWmDistanceThreshold = 0.9
 	val maxFpmWordsToPick = 30
-	val minFpmWordsDetected = 2
+	val minFpmWordsDetected = 0
+	val refreshLocalWordVectors = false
+	val maxDataRetrievalIterations = 10
 
 	val thresholdF1 = 0.98
 	val auxiliaryThresholdExpectation = 0.01

@@ -9,6 +9,8 @@ import org.apache.spark.rdd.RDD
  */
 object TweetsFileProcessor {
 
+	//val missingWordVectorProcessor =
+
 	def LoadTweetsFromFile(filename:String, delimiter:String = ";"):RDD[Tweet] =
 	{
 		val sc = SparkContextManager.getContext
@@ -57,5 +59,11 @@ object TweetsFileProcessor {
 		val wordOnlyTweets = cleanTweets map wordOnlyTweet
 		wordOnlyTweets
 	}
+
+//	def validateAndReplaceWord(word:String, missingWordVectorProcessor: IMissingWordVectorProcessor):String = {
+//
+//		null
+//		//missingWordVectorProcessor.replaceMissingWords(word)
+//	}
 
 }

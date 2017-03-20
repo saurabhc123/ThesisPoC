@@ -1,5 +1,7 @@
-package main.scala
+package Implementations.FeatureGeneratorImpl
 
+
+import Interfaces.IReplacementWordProvider
 import Utilities.CleanTweet
 import main.DataTypes.Tweet
 import main.SparkContextManager
@@ -8,17 +10,41 @@ import org.apache.spark.rdd.RDD
 
 import scala.collection.immutable.HashSet
 
-object FPMDistinguishingWords {
+/**
+ * Created by saur6410 on 3/19/17.
+ */
+class FpmBasedMissingWordProvider extends IReplacementWordProvider{
+
+	override def replaceWord(missingWord: String): String = {
+
+		if(FpmBasedMissingWordProvider._frequentItemSets == null) {
+			FpmBasedMissingWordProvider.Init()
+		}
+		FpmBasedMissingWordProvider.getReplacementWord(missingWord)
+	}
+}
+
+
+object FpmBasedMissingWordProvider
+{
 
 	var _frequentItemSets: Array[(Array[String], Long)] = null
 
-	def findNearestWord(word: String): Unit = {
+	def getReplacementWord(missingWord: String):String = {
 
+		val set = _frequentItemSets.filter(fq => fq._1.contains(missingWord))
+		if(set.length < 1)
+			return ""
+		else {
+			val result = set.take(1)
+			val returnValue = result(0)._1.filter(w => w != missingWord)
+			val replacedValue = returnValue(returnValue.length - 1)
+			println(s"Replacing $missingWord with $replacedValue")
+			return replacedValue
+		}
 	}
 
-	def main(args: Array[String]): Unit = {
-
-
+	def Init() = {
 		val sc = SparkContextManager.getContext
 
 		val trainingFileContent = sc.textFile("data/final/egypt_auxiliary_data_clean.txt").map(l => l.split(','))
@@ -47,48 +73,23 @@ object FPMDistinguishingWords {
 
 			itemset.items.foreach(word => {
 				if(!frequentWords.contains(word))
-					{
+				{
 					frequentWords = frequentWords.+(word)
 					//println(word)
-					}
+				}
 			}
-						)
+			)
 
-			println(itemset.items.mkString("[", ",", "]") + ", " + itemset.freq)
+			//println(itemset.items.mkString("[", ",", "]") + ", " + itemset.freq)
 
 
 		}
 		val sortedValues = model.freqItemsets.collect().filter(f => f.items.length > 1).map(fq => (fq.items,fq.freq)).sortBy(p => -p._2)
 		_frequentItemSets = sortedValues
-
-
-
-
-		println(getReplacementWord("fukushima"))
-
-//		val minConfidence = 0.8
-//		model.generateAssociationRules(minConfidence).collect().foreach { rule =>
-//			println(
-//				rule.antecedent.mkString("[", ",", "]")
-//					+ " => " + rule.consequent .mkString("[", ",", "]")
-//					+ ", " + rule.confidence)
-//		}
-//
-//		frequentWords.foreach(println)
-
-
 	}
 
-	def getReplacementWord(word: String):String = {
 
-		val set = _frequentItemSets.filter(fq => fq._1.contains(word))
-		if(set.length < 1)
-			return ""
-		else {
-			val result = set.take(1)
-			val returnValue = result(0)._1.filter(w => w != word)
-			return returnValue(returnValue.length - 1)
-		}
-	}
 
 }
+
+

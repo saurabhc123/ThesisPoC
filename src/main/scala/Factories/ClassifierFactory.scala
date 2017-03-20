@@ -2,6 +2,7 @@ package main.Factories
 
 import Factories.ClassifierType
 import ClassifierType.ClassifierType
+import Implementations.ClassifierImpl.SvmClassifier
 import Interfaces.IClassifier
 import main.scala.Implementations.ClassifierImpl.LogisticRegressionClassifier
 
@@ -12,7 +13,7 @@ class ClassifierFactory {
   def getClassifier(classifierType: ClassifierType): IClassifier = {
      classifierType match {
        case ClassifierType.LogisticRegression => new LogisticRegressionClassifier
-       case ClassifierType.SVM => throw new NotImplementedError("The is no SVM as of now")
+       case ClassifierType.SVM => new SvmClassifier
      }
   }
 

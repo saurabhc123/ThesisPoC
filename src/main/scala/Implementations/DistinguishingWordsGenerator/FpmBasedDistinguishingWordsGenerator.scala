@@ -16,10 +16,10 @@ class FpmBasedDistinguishingWordsGenerator extends IDistinguishingWordsGenerator
 		val transactions: RDD[Array[String]] = tweets.map(s => s.tweetText.trim.split(' ').distinct)
 
 		val fpg = new FPGrowth()
-			.setMinSupport(0.1)
+			.setMinSupport(0.01)
 			.setNumPartitions(10)
 		val model = fpg.run(transactions)
-
+		val _model = model.freqItemsets
 		var frequentWords =  new HashSet[String]
 
 		model.freqItemsets.collect().foreach { itemset =>
@@ -35,16 +35,11 @@ class FpmBasedDistinguishingWordsGenerator extends IDistinguishingWordsGenerator
 			//println(itemset.items.mkString("[", ",", "]") + ", " + itemset.freq)
 		}
 
-		val minConfidence = 0.8
-		model.generateAssociationRules(minConfidence).collect().foreach { rule =>
-//			println(
-//				rule.antecedent.mkString("[", ",", "]")
-//					+ " => " + rule.consequent.mkString("[", ",", "]")
-//					+ ", " + rule.confidence)
-
-
-		}
-		//ToDo: Get the top-k array of words
 		frequentWords.take(AuxiliaryDataBasedExperiment.maxFpmWordsToPick).toArray
 	}
+}
+
+object FpmBasedDistinguishingWordsGenerator
+{
+	//val _model:FreqItemset[Item]
 }
