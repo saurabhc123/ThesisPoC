@@ -33,6 +33,7 @@ object program extends App {
 
 		//ScratchPad.Scratch()
 		new AuxiliaryDataBasedExperiment().SetupAndRunExperiment()
+		//GenerateCleanTweetStrings.GenerateCleanStrings("data/final/ebola_auxiliary_data.txt")
 
 	}
 }

@@ -10,7 +10,7 @@ import org.json4s.jackson.JsonMethods._
  * Created by ericrw96 on 3/17/17.
  */
 class Wmdistance{
-	val url = "http://localhost:5000/distance"
+	val url = "http://localhost:5000/file_model/distance"
 
 	def getSimilarities(first: String, second: String): Double = {
 		implicit val formats = DefaultFormats

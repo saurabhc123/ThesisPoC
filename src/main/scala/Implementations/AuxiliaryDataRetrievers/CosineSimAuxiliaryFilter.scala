@@ -32,8 +32,8 @@ class CosineSimAuxiliaryFilter(trainingTweets: RDD[Tweet], featureGenerator:IFea
 				val cos_sim = CosineSimilarity.cosineSimilarity(tr.features.toArray, auxTweet._2.features.toArray)
 				cos_sim
 			})
-			val maxSimilarity = auxTweetSimilarity.max()
-			//println(s"$maxSimilarity|${auxTweet._1.tweetText}")
+			val maxSimilarity = auxTweetSimilarity.max()//mean()
+			println(s"$maxSimilarity|${auxTweet._1.tweetText}")
 			(auxTweet,maxSimilarity)
 		})
 
