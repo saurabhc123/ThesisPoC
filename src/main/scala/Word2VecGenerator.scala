@@ -2,6 +2,7 @@ package org.apache.spark.mllib.linalg
 
 import main.DataTypes.Tweet
 import main.SparkContextManager
+import main.scala.Implementations.AuxiliaryDataBasedExperiment
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.mllib.feature.{Word2Vec, Word2VecModel}
 import org.apache.spark.rdd.RDD
@@ -40,7 +41,7 @@ object Word2VecGenerator {
 			if(similarWords.length == 0)
 				return returnValue
 			else
-				println(s"Replacing $word with ${similarWords(0)._1}")
+				println(s"Replacing $word with ${similarWords(0)._1}. Choices:${similarWords.map(s => s._1).deep.mkString("[", ",", "]")}")
 				return similarWords(0)._1
 		}
 		catch {
@@ -52,7 +53,7 @@ object Word2VecGenerator {
 
 
 	def Initialize(): Unit = {
-		val trainingFilename = "data/final/egypt_auxiliary_data_clean.txt"
+		val trainingFilename = AuxiliaryDataBasedExperiment.supplementedCleanAuxiliaryFile
 		val exportedVectors = "data/training/isaac1.vec"
 		val testFilename = "data/training/generated1.vec"
 

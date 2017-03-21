@@ -35,13 +35,13 @@ class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAux
 
 		var auxiliaryMatches:Array[Tweet] = null
 		//Once the required number of tweets are retrieved, get the line number of the last tweet. Save it
-		if(tweetsCount < FpmAuxiliaryFilter.numberOfTweetsToRetrieve)
+		if(tweetsCount < AuxiliaryDataBasedExperiment.maxAuxTweetsToAddEachIteration)
 		{
 			auxiliaryMatches = tweetsContainingRelevantWords.take(tweetsCount.toInt)
 		}
 		else
 		{
-			auxiliaryMatches = tweetsContainingRelevantWords.take(FpmAuxiliaryFilter.numberOfTweetsToRetrieve)
+			auxiliaryMatches = tweetsContainingRelevantWords.take(AuxiliaryDataBasedExperiment.maxAuxTweetsToAddEachIteration)
 		}
 		FpmAuxiliaryFilter.lastLineRead = auxiliaryMatches.last.identifier.toInt
 

@@ -87,6 +87,7 @@ object FPMDistinguishingWords {
 		else {
 			val result = set.take(1)
 			val returnValue = result(0)._1.filter(w => w != word)
+			println(s"Replacing $word with ${returnValue(returnValue.length - 1)}. Choices ${result.map(s => s._1.deep.mkString("[", ",", "]")).deep.mkString}")
 			return returnValue(returnValue.length - 1)
 		}
 	}

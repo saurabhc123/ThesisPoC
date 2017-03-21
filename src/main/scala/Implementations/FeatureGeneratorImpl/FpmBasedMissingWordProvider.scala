@@ -5,6 +5,7 @@ import Interfaces.IReplacementWordProvider
 import Utilities.CleanTweet
 import main.DataTypes.Tweet
 import main.SparkContextManager
+import main.scala.Implementations.AuxiliaryDataBasedExperiment
 import org.apache.spark.mllib.fpm.FPGrowth
 import org.apache.spark.rdd.RDD
 
@@ -39,7 +40,7 @@ object FpmBasedMissingWordProvider
 			val result = set.take(1)
 			val returnValue = result(0)._1.filter(w => w != missingWord)
 			val replacedValue = returnValue(returnValue.length - 1)
-			println(s"Replacing $missingWord with $replacedValue")
+			println(s"Replacing $missingWord with $replacedValue. Choices ${result.map(s => s._1.deep.mkString("[", ",", "]")).deep.mkString}.")
 			return replacedValue
 		}
 	}
@@ -47,7 +48,7 @@ object FpmBasedMissingWordProvider
 	def Init() = {
 		val sc = SparkContextManager.getContext
 
-		val trainingFileContent = sc.textFile("data/final/egypt_auxiliary_data_clean.txt").map(l => l.split(','))
+		val trainingFileContent = sc.textFile(AuxiliaryDataBasedExperiment.supplementedCleanAuxiliaryFile).map(l => l.split(','))
 
 		// To sample
 		def toSample(segments: Array[String]) = segments match {

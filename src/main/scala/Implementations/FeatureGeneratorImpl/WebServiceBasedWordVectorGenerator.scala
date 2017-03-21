@@ -27,14 +27,26 @@ class WebServiceBasedWordVectorGenerator extends IFeatureGenerator{
 
 	}
 
-	def getWordVectorForSentence(sentence:String, label:Double):LabeledPoint =	{
+	def getWordVectorForSentence(word:String, label:Double):LabeledPoint =	{
 
+		var sentence = word
+		if(sentence == null || sentence.length == 0 || sentence.trim.length == 0)
+			{
+				sentence = "UNKNOWN_TOKEN"
+				//new LabeledPoint(label, Vectors.dense(0))
+			}
 		implicit val formats = DefaultFormats
 		val sentence1 = URLEncoder.encode(sentence, "utf-8").replaceAll("\\+", "%20");
-		val url = s"http://localhost:5000/getvector/$sentence1"
-		val result = scala.io.Source.fromURL(url).mkString
-		val wv = parse(result).extract[WordVector]
-		new LabeledPoint(label, Vectors.dense(wv.vector))
+		val url = s"http://localhost:5000/file_model/getvector/$sentence1"
+		try {
+			val result = scala.io.Source.fromURL(url).mkString
+			val wv = parse(result).extract[WordVector]
+			new LabeledPoint(label, Vectors.dense(wv.vector))
+		}
+		catch {
+
+			case _ => return new LabeledPoint(label, Vectors.dense(0))
+		}
 	}
 
 	override def generateFeature(tweet: Tweet): LabeledPoint = {

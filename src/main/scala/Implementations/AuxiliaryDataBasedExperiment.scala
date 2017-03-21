@@ -43,7 +43,7 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 
 		var dataToTrainOn = train
 		var numberOfIterations = 0
-		while (f1 < thresholdF1 && numberOfIterations < AuxiliaryDataBasedExperiment.maxDataRetrievalIterations) {
+		while (f1 < thresholdF1 && numberOfIterations < AuxiliaryDataBasedExperiment.maxExperimentIterations) {
 			//Get tweets based on most distinguishing words with FPM
 			val filterFactory = new AuxiliaryDataFilterFactory(dataToTrainOn, featureGenerator)
 			val fpmFilter = filterFactory.getAuxiliaryDataFilter(FilterType.FpmFilter)
@@ -54,9 +54,8 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 
 			//Filter based on cosine similarity
 			val positiveLabelTrainingData = dataToTrainOn.filter(trainingTweet => trainingTweet.label == 1.0)
-			val cosineSimFilter = filterFactory.getAuxiliaryDataFilter(FilterType.CosineSim)
-			val wmdBasedFilter = filterFactory.getAuxiliaryDataFilter(FilterType.Wmd)
-			val filteredAuxiliaryData = cosineSimFilter.filter(auxiliaryData)
+			val filter = filterFactory.getAuxiliaryDataFilter(FilterType.CosineSim)
+			val filteredAuxiliaryData = filter.filter(auxiliaryData)
 
 			println(s"Retrieved ${filteredAuxiliaryData.count()} new auxiliary tweets.")
 			print(filteredAuxiliaryData.foreach(tweet => println(s"${tweet.label}|${tweet.tweetText}")))
@@ -98,11 +97,12 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 
 object AuxiliaryDataBasedExperiment {
 	val minSimilarityThreshold = 0.6
-	val minWmDistanceThreshold = 0.9
+	val minWmDistanceThreshold = 0.0199
 	val maxFpmWordsToPick = 30
-	val minFpmWordsDetected = 0
+	val minFpmWordsDetected = 1
 	val refreshLocalWordVectors = false
-	val maxDataRetrievalIterations = 10
+	val maxExperimentIterations = 10
+	val maxAuxTweetsToAddEachIteration = 10
 
 	val thresholdF1 = 0.98
 	val auxiliaryThresholdExpectation = 0.01
@@ -110,6 +110,8 @@ object AuxiliaryDataBasedExperiment {
 	val trainingDataFile = "data/final/egypt_training_data.txt"
 	val validationDataFile = "data/final/egypt_validation_data.txt"
 	val auxiliaryDataFile = "data/final/egypt_auxiliary_data.txt"
+	//val auxiliaryDataFile = "data/ebola.csv"
+	val supplementedCleanAuxiliaryFile = "data/final/egypt_auxiliary_data_clean.txt"
 
 
 
