@@ -2,6 +2,7 @@ package Implementations.ClassifierImpl
 
 import Interfaces.{IClassifier, IClassifierModel}
 import org.apache.spark.mllib.classification.SVMWithSGD
+import org.apache.spark.mllib.optimization.L1Updater
 import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.rdd.RDD
 
@@ -10,9 +11,15 @@ import org.apache.spark.rdd.RDD
  */
 class SvmClassifier extends IClassifier{
 	override def train(labels: RDD[LabeledPoint]): IClassifierModel = {
-		val num_labels = 2//labels.map(x => x.label).distinct().count().toInt
-		val model = SVMWithSGD.train(labels, 50)
-		new SvmClassifierModel(model)
+		val model =  new SVMWithSGD
+		model.optimizer.setNumIterations(200)
+		.setStepSize(20)
+		.setUpdater(new L1Updater)
+		.setRegParam(0.01)
+
+		val m = model.run(labels)
+		new SvmClassifierModel(m)
+
 	}
 
 	override def loadModel(): IClassifierModel = ???

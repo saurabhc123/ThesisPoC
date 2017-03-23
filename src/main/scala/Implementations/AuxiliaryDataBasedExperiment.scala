@@ -9,6 +9,7 @@ import main.Factories.ClassifierFactory
 import main.Interfaces.{DataType, IAuxiliaryDataRetriever}
 import main.SparkContextManager
 import main.scala.Factories.{FeatureGeneratorFactory, FeatureGeneratorType}
+import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.rdd.RDD
 
 /**
@@ -27,11 +28,13 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 		val featureGenerator = FeatureGeneratorFactory.getFeatureGenerator(FeatureGeneratorType.WebServiceWord2Vec)
 		val auxiliaryDataRetriever: IAuxiliaryDataRetriever = new AuxiliaryDataRetrieverFactory().getAuxiliaryDataRetriever(AuxiliaryDataBasedExperiment.auxiliaryDataFile)
 
+		val trainingFeatures: RDD[LabeledPoint] = featureGenerator.generateFeatures(train, DataType.TRAINING)
 		//Train the classifier
-		var model = classifier.train(featureGenerator.generateFeatures(train, DataType.TRAINING))
+		var model = classifier.train(trainingFeatures)
 
+		val validationFeatures: RDD[LabeledPoint] = featureGenerator.generateFeatures(validation, DataType.TEST)
 		//Perform Validation and get score
-		val predictions = model.predict(featureGenerator.generateFeatures(validation, DataType.TEST));
+		val predictions = model.predict(validationFeatures);
 		val metricsCalculator = MetricsCalculator.GenerateClassifierMetrics(predictions)
 		var f1 = metricsCalculator.macroF1
 		val thresholdF1 = AuxiliaryDataBasedExperiment.thresholdF1
