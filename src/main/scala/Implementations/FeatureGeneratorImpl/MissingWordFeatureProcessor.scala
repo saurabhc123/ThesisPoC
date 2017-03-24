@@ -5,7 +5,7 @@ import main.DataTypes.Tweet
 import main.scala.Factories.{FeatureGeneratorFactory, FeatureGeneratorType}
 import org.apache.spark.rdd.RDD
 
-import scala.collection.immutable.HashMap
+import scala.collection.immutable.{HashMap, HashSet}
 
 /**
  * Created by saur6410 on 3/19/17.
@@ -14,17 +14,9 @@ class MissingWordFeatureProcessor extends IMissingWordFeatureProcessor{
 	override def replaceMissingWords(tweets: RDD[Tweet]): RDD[Tweet] = ???
 
 	override def replaceMissingWords(tweet: Tweet): Tweet = {
+		val replacedText = tweet.tweetText.split(" ").map(word => MissingWordFeatureProcessor.getWord(word)).mkString(" ")
 
-		val featureGenerator = FeatureGeneratorFactory.getFeatureGenerator(FeatureGeneratorType.WebServiceWord2Vec)
-		var tweetText = tweet.tweetText
-		val tweetWordFeatureTuple = tweet.tweetText.split(" ").map(word => (word,featureGenerator.generateFeature( Tweet(tweet.identifier, word,tweet.label))))
-		//ToDo: Can be optimized further by checking a word against the dictionary and not getting its vectors
-		val missingFeaturesWord = tweetWordFeatureTuple.filter(missingVectorWord => missingVectorWord._2.features.numNonzeros == 0 )
-
-		//Replace the missing words with replacement words
-		missingFeaturesWord.foreach(missingWord => tweetText = tweetText.replace(missingWord._1, MissingWordFeatureProcessor.getMissingWord(missingWord._1)))
-
-		Tweet(tweet.identifier,tweetText,tweet.label)
+		Tweet(tweet.identifier,replacedText,tweet.label)
 		
 	}
 }
@@ -32,6 +24,7 @@ class MissingWordFeatureProcessor extends IMissingWordFeatureProcessor{
 object MissingWordFeatureProcessor
 {
 	var orphanedWords = new HashMap[String, String]
+	var presentWords = new HashSet[String]
 	val replacementWordProvider = new FpmBasedMissingWordProvider //new Word2VecBasedMissingWordProvider
 
 	def getMissingWord(missingWord: String): String = {
@@ -46,6 +39,21 @@ object MissingWordFeatureProcessor
 		val replacementWord = replacementWordProvider.replaceWord(missingWord)
 		orphanedWords += (missingWord -> replacementWord)
 		replacementWord
+
+	}
+
+	def getWord(word : String): String = {
+		if (presentWords.contains(word)){
+			return word
+		}
+		val featureGenerator = FeatureGeneratorFactory.getFeatureGenerator(FeatureGeneratorType.WebServiceWord2Vec)
+		val point = featureGenerator.generateFeature(Tweet("temp",word,0))
+		if(point.features.numNonzeros == 0){
+			return getMissingWord(word)
+		}
+		presentWords += word
+		word
+
 
 	}
 
