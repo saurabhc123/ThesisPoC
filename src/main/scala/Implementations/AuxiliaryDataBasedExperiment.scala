@@ -100,7 +100,7 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 
 object AuxiliaryDataBasedExperiment {
 	val minSimilarityThreshold = 0.6
-	val cosineSimilarityWindowSize= 0.2
+	val cosineSimilarityWindowSize= 0.1
 	val minWmDistanceThreshold = 0.0199
 	val maxFpmWordsToPick = 30
 	val minFpmWordsDetected = 0
@@ -111,7 +111,7 @@ object AuxiliaryDataBasedExperiment {
 	val thresholdF1 = 0.98
 	val auxiliaryThresholdExpectation = 0.01
 	val fileDelimiter = ","
-	val trainingDataFile = "data/final/egypt_auxiliary_data.txt"
+	val trainingDataFile = "data/final/egypt_training_data.txt"
 	val validationDataFile = "data/final/egypt_validation_data.txt"
 	val auxiliaryDataFile = "data/final/egypt_auxiliary_data.txt"
 	//val auxiliaryDataFile = "data/ebola.csv"
