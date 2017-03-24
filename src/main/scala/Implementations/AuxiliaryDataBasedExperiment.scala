@@ -68,7 +68,7 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 			model = classifier.train(featureGenerator.generateFeatures(fullData, DataType.TRAINING))
 
 			//perform prediction on validation data
-			val validationDataPredictions = model.predict(featureGenerator.generateFeatures(validation, DataType.TRAINING))
+			val validationDataPredictions = model.predict(validationFeatures)
 			val metrics = MetricsCalculator.GenerateClassifierMetrics(validationDataPredictions)
 			val auxF1 = metrics.macroF1
 
@@ -100,9 +100,10 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 
 object AuxiliaryDataBasedExperiment {
 	val minSimilarityThreshold = 0.6
+	val cosineSimilarityWindowSize= 0.2
 	val minWmDistanceThreshold = 0.0199
 	val maxFpmWordsToPick = 30
-	val minFpmWordsDetected = 1
+	val minFpmWordsDetected = 0
 	val refreshLocalWordVectors = false
 	val maxExperimentIterations = 10
 	val maxAuxTweetsToAddEachIteration = 10
@@ -110,7 +111,7 @@ object AuxiliaryDataBasedExperiment {
 	val thresholdF1 = 0.98
 	val auxiliaryThresholdExpectation = 0.01
 	val fileDelimiter = ","
-	val trainingDataFile = "data/final/egypt_training_data.txt"
+	val trainingDataFile = "data/final/egypt_auxiliary_data.txt"
 	val validationDataFile = "data/final/egypt_validation_data.txt"
 	val auxiliaryDataFile = "data/final/egypt_auxiliary_data.txt"
 	//val auxiliaryDataFile = "data/ebola.csv"

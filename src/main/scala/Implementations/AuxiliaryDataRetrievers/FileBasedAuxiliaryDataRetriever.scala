@@ -1,5 +1,6 @@
 package Implementations.AuxiliaryDataRetrievers
 
+import Utilities.CleanTweet
 import main.DataTypes.Tweet
 import main.Interfaces.IAuxiliaryDataRetriever
 import main.SparkContextManager
@@ -116,7 +117,7 @@ object FileBasedAuxiliaryDataRetriever
 		val trainSamples = auxiliaryFileContent map toTweet
 		val cleanTrainSamples = trainSamples map cleanSampleHtml
 		//FileBasedAuxiliaryDataRetriever.lastLineRead += counter
-		_auxiliaryTweets = cleanTrainSamples
+		_auxiliaryTweets = CleanTweet.clean(cleanTrainSamples, SparkContextManager.getContext)
 
 		_auxiliaryTweets
 	}

@@ -19,7 +19,7 @@ class AuxiliaryDataFilterFactory(trainingTweets: RDD[Tweet], featureGenerator:IF
 					filter
 				}
 			case FilterType.CosineSim => {
-				val positiveTrainingTweets = trainingTweets.filter(trainingTweet => trainingTweet.label == 1.0)
+				val positiveTrainingTweets = trainingTweets//.filter(trainingTweet => trainingTweet.label == 1.0)
 				new CosineSimAuxiliaryFilter(positiveTrainingTweets,featureGenerator)
 			}
 			case FilterType.Wmd => {
