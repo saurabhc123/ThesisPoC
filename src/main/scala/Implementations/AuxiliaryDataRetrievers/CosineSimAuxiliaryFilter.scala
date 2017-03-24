@@ -21,7 +21,8 @@ class CosineSimAuxiliaryFilter(trainingTweets: RDD[Tweet], featureGenerator:IFea
 		val sc = SparkContextManager.getContext
 
 		val minSimilarityThreshold = AuxiliaryDataBasedExperiment.minSimilarityThreshold
-		val trainTweetsFeatures = featureGenerator.generateFeatures(train)
+		//This is all the positve and negative training data.
+		val trainTweetsFeatures = featureGenerator.generateFeatures(train)//.filter(trainingTweet => trainingTweet.label == 1.0)
 		val auxiliaryTweetsFeatures = auxiliary.map(aux => (aux, featureGenerator.generateFeature(aux)))
 
 		val auxArray = auxiliaryTweetsFeatures.collect()
@@ -42,6 +43,10 @@ class CosineSimAuxiliaryFilter(trainingTweets: RDD[Tweet], featureGenerator:IFea
 			{
 				auxTweet._1.x._1.label = 1.0
 			}
+			else if(auxTweet._2 > minSimilarityThreshold - AuxiliaryDataBasedExperiment.cosineSimilarityWindowSize)
+			{
+				auxTweet._1.x._1.label = -1.0
+			}
 			else{
 				auxTweet._1.x._1.label = 0.0
 			}
@@ -49,6 +54,8 @@ class CosineSimAuxiliaryFilter(trainingTweets: RDD[Tweet], featureGenerator:IFea
 		}
 		)
 
-		sc.parallelize(auxTweetsSimilarities.map(t => t._1.x._1).toSeq)
+
+
+		sc.parallelize(auxTweetsSimilarities.map(t => t._1.x._1).filter(t => t.label != -1.0).toSeq)
 	}
 }

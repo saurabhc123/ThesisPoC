@@ -9,6 +9,7 @@ import main.Factories.ClassifierFactory
 import main.Interfaces.{DataType, IAuxiliaryDataRetriever}
 import main.SparkContextManager
 import main.scala.Factories.{FeatureGeneratorFactory, FeatureGeneratorType}
+import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.rdd.RDD
 
 /**
@@ -27,11 +28,13 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 		val featureGenerator = FeatureGeneratorFactory.getFeatureGenerator(FeatureGeneratorType.WebServiceWord2Vec)
 		val auxiliaryDataRetriever: IAuxiliaryDataRetriever = new AuxiliaryDataRetrieverFactory().getAuxiliaryDataRetriever(AuxiliaryDataBasedExperiment.auxiliaryDataFile)
 
+		val trainingFeatures: RDD[LabeledPoint] = featureGenerator.generateFeatures(train, DataType.TRAINING)
 		//Train the classifier
-		var model = classifier.train(featureGenerator.generateFeatures(train, DataType.TRAINING))
+		var model = classifier.train(trainingFeatures)
 
+		val validationFeatures: RDD[LabeledPoint] = featureGenerator.generateFeatures(validation, DataType.TEST)
 		//Perform Validation and get score
-		val predictions = model.predict(featureGenerator.generateFeatures(validation, DataType.TEST));
+		val predictions = model.predict(validationFeatures);
 		val metricsCalculator = MetricsCalculator.GenerateClassifierMetrics(predictions)
 		var f1 = metricsCalculator.macroF1
 		val thresholdF1 = AuxiliaryDataBasedExperiment.thresholdF1
@@ -65,7 +68,7 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 			model = classifier.train(featureGenerator.generateFeatures(fullData, DataType.TRAINING))
 
 			//perform prediction on validation data
-			val validationDataPredictions = model.predict(featureGenerator.generateFeatures(validation, DataType.TRAINING))
+			val validationDataPredictions = model.predict(validationFeatures)
 			val metrics = MetricsCalculator.GenerateClassifierMetrics(validationDataPredictions)
 			val auxF1 = metrics.macroF1
 
@@ -97,9 +100,10 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 
 object AuxiliaryDataBasedExperiment {
 	val minSimilarityThreshold = 0.6
+	val cosineSimilarityWindowSize= 0.2
 	val minWmDistanceThreshold = 0.0199
 	val maxFpmWordsToPick = 30
-	val minFpmWordsDetected = 1
+	val minFpmWordsDetected = 0
 	val refreshLocalWordVectors = false
 	val maxExperimentIterations = 10
 	val maxAuxTweetsToAddEachIteration = 10
@@ -107,7 +111,7 @@ object AuxiliaryDataBasedExperiment {
 	val thresholdF1 = 0.98
 	val auxiliaryThresholdExpectation = 0.01
 	val fileDelimiter = ","
-	val trainingDataFile = "data/final/egypt_training_data.txt"
+	val trainingDataFile = "data/final/egypt_auxiliary_data.txt"
 	val validationDataFile = "data/final/egypt_validation_data.txt"
 	val auxiliaryDataFile = "data/final/egypt_auxiliary_data.txt"
 	//val auxiliaryDataFile = "data/ebola.csv"

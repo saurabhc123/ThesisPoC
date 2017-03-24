@@ -37,7 +37,7 @@ class WebServiceBasedWordVectorGenerator extends IFeatureGenerator{
 			}
 		implicit val formats = DefaultFormats
 		val sentence1 = URLEncoder.encode(sentence, "utf-8").replaceAll("\\+", "%20");
-		val url = s"http://localhost:5000/file_model/getvector/$sentence1"
+		val url = s"http://localhost:5000/getvector/$sentence1"
 		try {
 			val result = scala.io.Source.fromURL(url).mkString
 			val wv = parse(result).extract[WordVector]
@@ -45,7 +45,11 @@ class WebServiceBasedWordVectorGenerator extends IFeatureGenerator{
 		}
 		catch {
 
-			case _ => return new LabeledPoint(label, Vectors.dense(0))
+			case _ => {
+				println("Some issues with retrieving word vectors.")
+				return new LabeledPoint(label, Vectors.dense(0))
+			}
+
 		}
 	}
 
