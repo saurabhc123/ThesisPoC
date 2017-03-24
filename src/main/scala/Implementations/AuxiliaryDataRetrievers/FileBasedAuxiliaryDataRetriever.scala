@@ -31,18 +31,18 @@ class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAux
 
 		if(tweetsCount == 0)
 		{
-			throw new Exception("No more auxiliary tweets to retrieve.")
+			throw new NoSuchElementException("No more auxiliary tweets to retrieve.")
 		}
 
 		var auxiliaryMatches:Array[Tweet] = null
 		//Once the required number of tweets are retrieved, get the line number of the last tweet. Save it
-		if(tweetsCount < AuxiliaryDataBasedExperiment.maxAuxTweetsToAddEachIteration)
+		if(tweetsCount < AuxiliaryDataBasedExperiment.tweetsToAddEachIteration)
 		{
 			auxiliaryMatches = tweetsContainingRelevantWords.take(tweetsCount.toInt)
 		}
 		else
 		{
-			auxiliaryMatches = tweetsContainingRelevantWords.take(AuxiliaryDataBasedExperiment.maxAuxTweetsToAddEachIteration)
+			auxiliaryMatches = tweetsContainingRelevantWords.take(AuxiliaryDataBasedExperiment.tweetsToAddEachIteration)
 		}
 		FpmAuxiliaryFilter.lastLineRead = auxiliaryMatches.last.identifier.toInt
 

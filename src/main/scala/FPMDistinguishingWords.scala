@@ -21,7 +21,7 @@ object FPMDistinguishingWords {
 
 		val sc = SparkContextManager.getContext
 
-		val trainingFileContent = sc.textFile("data/final/egypt_auxiliary_data_clean.txt").map(l => l.split(','))
+		val trainingFileContent = sc.textFile("data/final/ebola_auxiliary_data_clean.txt").map(l => l.split(','))
 
 		// To sample
 		def toSample(segments: Array[String]) = segments match {
