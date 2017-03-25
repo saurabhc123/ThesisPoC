@@ -41,13 +41,13 @@ class FpmAuxiliaryFilter(trainingTweets: RDD[Tweet]) extends IAuxiliaryDataFilte
 
 		var auxiliaryMatches:Array[Tweet] = null
 		//Once the required number of tweets are retrieved, get the line number of the last tweet. Save it
-		if(tweetsCount < AuxiliaryDataBasedExperiment.maxAuxTweetsToAddEachIteration)
+		if(tweetsCount < AuxiliaryDataBasedExperiment.tweetsToAddEachIteration)
 		{
 			auxiliaryMatches = tweetsContainingRelevantWords.take(tweetsCount.toInt)
 		}
 		else
 		{
-			auxiliaryMatches = tweetsContainingRelevantWords.take(AuxiliaryDataBasedExperiment.maxAuxTweetsToAddEachIteration)
+			auxiliaryMatches = tweetsContainingRelevantWords.take(AuxiliaryDataBasedExperiment.tweetsToAddEachIteration)
 		}
 		FpmAuxiliaryFilter.lastLineRead = auxiliaryMatches.last.identifier.toInt
 

@@ -6,3 +6,11 @@ package DataTypes
 case class WordVector(sentence: String, vector: Array[Double])
 
 case class WmdMetric(wmdDistance:Double)
+
+case class CnnPrediction(
+  actual: Double,
+  predicted: Double
+)
+
+
+

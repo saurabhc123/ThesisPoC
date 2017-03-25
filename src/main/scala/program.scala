@@ -32,6 +32,10 @@ object program extends App {
 		val secondSet = auxDataRetriever.retrieveAuxiliaryData(distinguishingWords)*/
 
 		//ScratchPad.Scratch()
+//		val classifier = new CnnClassifier()
+//		val model = classifier.train(null)
+//		val predictions = model.predict(null)
+
 		new AuxiliaryDataBasedExperiment().SetupAndRunExperiment()
 		//GenerateCleanTweetStrings.GenerateCleanStrings("data/final/ebola_auxiliary_data.txt")
 

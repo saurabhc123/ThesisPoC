@@ -13,6 +13,7 @@ import org.apache.spark.rdd.RDD
 
 import scala.collection.mutable.ListBuffer
 import scala.tools.nsc.interpreter.session.JIterator
+import util.control.Breaks._
 
 //import scala.collection.JavaConverters._
 import scala.collection.mutable.ArrayBuffer
@@ -59,9 +60,16 @@ object CleanTweet {
         t += tw
       }
       for (token <- t){
-        val lemma = token.get(classOf[LemmaAnnotation])
-        if (lemma.length > 2 && !stopWords.contains(lemma) && isOnlyLetters(lemma)) {
-          lemmas += lemma.toLowerCase
+        breakable
+        {
+          if (token == "ebola" || token == "ebolum") {
+            lemmas += "ebola"
+            break
+          }
+          val lemma = token.get(classOf[LemmaAnnotation])
+          if (lemma.length > 2 && !stopWords.contains(lemma) && isOnlyLetters(lemma)) {
+            lemmas += lemma.toLowerCase
+          }
         }
       }
     }

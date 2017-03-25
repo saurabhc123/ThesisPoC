@@ -22,7 +22,7 @@ class CosineSimAuxiliaryFilter(trainingTweets: RDD[Tweet], featureGenerator:IFea
 
 		val minSimilarityThreshold = AuxiliaryDataBasedExperiment.minSimilarityThreshold
 		//This is all the positve and negative training data.
-		val trainTweetsFeatures = featureGenerator.generateFeatures(train)//.filter(trainingTweet => trainingTweet.label == 1.0)
+		val trainTweetsFeatures = featureGenerator.generateFeatures(train).filter(trainingTweet => trainingTweet.label == 1.0)
 		val auxiliaryTweetsFeatures = auxiliary.map(aux => (aux, featureGenerator.generateFeature(aux)))
 
 		val auxArray = auxiliaryTweetsFeatures.collect()
@@ -33,7 +33,10 @@ class CosineSimAuxiliaryFilter(trainingTweets: RDD[Tweet], featureGenerator:IFea
 				val cos_sim = CosineSimilarity.cosineSimilarity(tr.features.toArray, auxTweet._2.features.toArray)
 				cos_sim
 			})
-			val maxSimilarity = auxTweetSimilarity.max()//mean()
+			var sim = auxTweetSimilarity.mean()
+			if(sim.equals(Double.NaN))
+				sim = 0.0
+			val maxSimilarity =  BigDecimal(sim).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble
 			println(s"$maxSimilarity|${auxTweet._1.tweetText}")
 			(auxTweet,maxSimilarity)
 		})
