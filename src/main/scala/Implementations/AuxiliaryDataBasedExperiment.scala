@@ -27,11 +27,23 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 		//********** FACTORY BASED INITIALIZATIONS ************
 		//Get the classifier from the factory
 		val classifierFactory = new ClassifierFactory()
-		val classifier = classifierFactory.getClassifier(ClassifierType.SVM)
+
+		val classifier = classifierFactory.getClassifier(AuxiliaryDataBasedExperiment.classifierType)
 		val featureGenerator = FeatureGeneratorFactory.getFeatureGenerator(FeatureGeneratorType.WebServiceWord2Vec)
 		val auxiliaryDataRetriever: IAuxiliaryDataRetriever = new AuxiliaryDataRetrieverFactory().getAuxiliaryDataRetriever(AuxiliaryDataBasedExperiment.auxiliaryDataFile)
 
 		val trainingFeatures: RDD[LabeledPoint] = featureGenerator.generateFeatures(train, DataType.TRAINING)
+
+		//***** Do this only for the CNN classifier
+		if(AuxiliaryDataBasedExperiment.classifierType == ClassifierType.Cnn){
+			//Generate the tweets at the folder using a UUID
+			val folderId = java.util.UUID.randomUUID.toString
+			writeData(train,folderId)
+			//Set the UUID as the REST parameter
+			AuxiliaryDataBasedExperiment.folderNameForCnnClassifier = folderId
+		}
+
+
 		//Train the classifier
 		var model = classifier.train(trainingFeatures)
 
@@ -71,6 +83,16 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 
 			//train using training + auxiliary data
 			val fullData = dataToTrainOn.union(filteredAuxiliaryData)
+
+			//***** Do this only for the CNN classifier
+			if(AuxiliaryDataBasedExperiment.classifierType == ClassifierType.Cnn){
+				//Generate the tweets at the folder using a UUID
+				val folderId = java.util.UUID.randomUUID.toString
+				writeData(fullData,folderId)
+				//Set the UUID as the REST parameter
+				AuxiliaryDataBasedExperiment.folderNameForCnnClassifier = folderId
+			}
+
 			model = classifier.train(featureGenerator.generateFeatures(fullData, DataType.TRAINING))
 
 			//perform prediction on validation data
@@ -96,12 +118,21 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 		}
 	}
 
+	def writeData(tweets: RDD[Tweet],filename:String) = {
+		tweets.map(tweet => tweet.label.toInt + "," + tweet.tweetText) .coalesce(1).saveAsTextFile("data/python/"+filename)
+
+	}
+
 	override def SetupAndRunExperiment(): Unit = {
 		println(AuxiliaryDataBasedExperiment.toString)
 		val trainingTweets = TweetsFileProcessor.LoadTweetsFromFile(AuxiliaryDataBasedExperiment.trainingDataFile, AuxiliaryDataBasedExperiment.fileDelimiter)
 		val validationTweets = TweetsFileProcessor.LoadTweetsFromFile(AuxiliaryDataBasedExperiment.validationDataFile, AuxiliaryDataBasedExperiment.fileDelimiter)
 		val cleanTrainingTweets = CleanTweet.clean(trainingTweets, SparkContextManager.getContext)
 		val cleanValidationTweets = CleanTweet.clean(validationTweets, SparkContextManager.getContext)
+
+//		writeData(cleanTrainingTweets,java.util.UUID.randomUUID.toString)
+//		writeData(cleanValidationTweets,"egypt_validation_data.txt")
+//		return
 
 		try {
 			this.performExperiment(cleanTrainingTweets, cleanValidationTweets)
@@ -131,12 +162,16 @@ object AuxiliaryDataBasedExperiment {
 	val thresholdF1 = 0.98
 	val auxiliaryThresholdExpectation = 0.01
 
+	val classifierType = ClassifierType.Cnn
+	var folderNameForCnnClassifier = ""
+
 	val fileDelimiter = ","
-	val trainingDataFile = "data/final/egypt_training_data.txt"
-	val validationDataFile = "data/final/egypt_validation_data.txt"
-	val auxiliaryDataFile = "data/final/egypt_auxiliary_data.txt"
-	//val auxiliaryDataFile = "data/ebola.csv"
-	val supplementedCleanAuxiliaryFile = "data/final/egypt_auxiliary_data_clean.txt"
+	val experimentSet = "egypt"
+	val trainingDataFile = s"data/final/${experimentSet}_training_data.txt"
+	val validationDataFile = s"data/final/${experimentSet}_validation_data.txt"
+	val auxiliaryDataFile = s"data/final/${experimentSet}_auxiliary_data.txt"
+	val supplementedCleanAuxiliaryFile = s"data/final/${experimentSet}_auxiliary_data_clean.txt"
+
 
 override def toString() = {
 
@@ -151,6 +186,8 @@ override def toString() = {
 	s"\tmaxExperimentIterations = $maxExperimentIterations\n" +
 	s"\tmaxAuxTweetsToAddEachIteration = $tweetsToAddEachIteration\n" +
 	s"\tthresholdF1 = $thresholdF1\n" +
+	s"\tclassifierType = $classifierType\n" +
+	s"\tfolderNameForCnnClassifier = $folderNameForCnnClassifier\n" +
 	s"\tauxiliaryThresholdExpectation = $auxiliaryThresholdExpectation\n" +
 	s"\tfileDelimiter = $fileDelimiter\n" +
 	s"\ttrainingDataFile = $trainingDataFile\n" +

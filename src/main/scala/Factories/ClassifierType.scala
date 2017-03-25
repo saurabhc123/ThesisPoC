@@ -5,5 +5,5 @@ package Factories
  */
 object ClassifierType extends Enumeration{
   type ClassifierType = Value
-  val LogisticRegression, SVM = Value
+  val LogisticRegression, SVM, Cnn = Value
 }

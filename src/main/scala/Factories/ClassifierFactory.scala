@@ -2,7 +2,7 @@ package main.Factories
 
 import Factories.ClassifierType
 import ClassifierType.ClassifierType
-import Implementations.ClassifierImpl.SvmClassifier
+import Implementations.ClassifierImpl.{CnnClassifier, SvmClassifier}
 import Interfaces.IClassifier
 import main.scala.Implementations.ClassifierImpl.LogisticRegressionClassifier
 
@@ -14,6 +14,7 @@ class ClassifierFactory {
      classifierType match {
        case ClassifierType.LogisticRegression => new LogisticRegressionClassifier
        case ClassifierType.SVM => new SvmClassifier
+       case ClassifierType.Cnn => new CnnClassifier
      }
   }
 
