@@ -127,7 +127,7 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 		println(AuxiliaryDataBasedExperiment.toString)
 		val trainingTweets = TweetsFileProcessor.LoadTweetsFromFile(AuxiliaryDataBasedExperiment.trainingDataFile, AuxiliaryDataBasedExperiment.fileDelimiter)
 		val validationTweets = TweetsFileProcessor.LoadTweetsFromFile(AuxiliaryDataBasedExperiment.validationDataFile, AuxiliaryDataBasedExperiment.fileDelimiter)
-		val cleanTrainingTweets = CleanTweet.clean(trainingTweets, SparkContextManager.getContext)
+		val cleanTrainingTweets = trainingTweets//CleanTweet.clean(trainingTweets, SparkContextManager.getContext)
 		val cleanValidationTweets = CleanTweet.clean(validationTweets, SparkContextManager.getContext)
 
 //		writeData(cleanTrainingTweets,java.util.UUID.randomUUID.toString)
@@ -148,8 +148,8 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 
 object AuxiliaryDataBasedExperiment {
 	val filterToUse = FilterType.CosineSim
-	val minSimilarityThreshold = 0.30
-	val cosineSimilarityWindowSize= 0.10
+	val minSimilarityThreshold = 0.55
+	val cosineSimilarityWindowSize= 0.15
 	val minWmDistanceThreshold = 0.0199
 
 	val maxFpmWordsToPick = 35
