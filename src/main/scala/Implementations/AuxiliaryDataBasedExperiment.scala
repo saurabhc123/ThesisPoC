@@ -127,7 +127,7 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 		println(AuxiliaryDataBasedExperiment.toString)
 		val trainingTweets = TweetsFileProcessor.LoadTweetsFromFile(AuxiliaryDataBasedExperiment.trainingDataFile, AuxiliaryDataBasedExperiment.fileDelimiter)
 		val validationTweets = TweetsFileProcessor.LoadTweetsFromFile(AuxiliaryDataBasedExperiment.validationDataFile, AuxiliaryDataBasedExperiment.fileDelimiter)
-		val cleanTrainingTweets = trainingTweets//CleanTweet.clean(trainingTweets, SparkContextManager.getContext)
+		val cleanTrainingTweets = CleanTweet.clean(trainingTweets, SparkContextManager.getContext)
 		val cleanValidationTweets = CleanTweet.clean(validationTweets, SparkContextManager.getContext)
 
 //		writeData(cleanTrainingTweets,java.util.UUID.randomUUID.toString)
@@ -148,16 +148,17 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 
 object AuxiliaryDataBasedExperiment {
 	val filterToUse = FilterType.CosineSim
-	val minSimilarityThreshold = 0.55
-	val cosineSimilarityWindowSize= 0.15
+	val minSimilarityThreshold = 0.50
+	val cosineSimilarityWindowSize= 0.20
 	val minWmDistanceThreshold = 0.0199
+	val webWord2VecBaseUri = s"http://localhost:5000/getvector/"
 
 	val maxFpmWordsToPick = 35
 	val minFpmWordsDetected = 0
 	val refreshLocalWordVectors = false
 
 	val maxExperimentIterations = 20
-	val tweetsToAddEachIteration = 10
+	val tweetsToAddEachIteration = 20
 
 	val thresholdF1 = 0.98
 	val auxiliaryThresholdExpectation = 0.01
@@ -170,7 +171,7 @@ object AuxiliaryDataBasedExperiment {
 	val trainingDataFile = s"data/final/${experimentSet}_training_data.txt"
 	val validationDataFile = s"data/final/${experimentSet}_validation_data.txt"
 	val auxiliaryDataFile = s"data/final/${experimentSet}_auxiliary_data.txt"
-	val supplementedCleanAuxiliaryFile = s"data/final/${experimentSet}_auxiliary_data_clean.txt"
+	val supplementedCleanAuxiliaryFile = s"data/final/${experimentSet}_auxiliary_data.txt"
 
 
 override def toString() = {
@@ -180,6 +181,7 @@ override def toString() = {
 	s"\tminSimilarityThreshold = $minSimilarityThreshold\n" +
 	s"\tcosineSimilarityWindowSize= $cosineSimilarityWindowSize\n" +
 	s"\tminWmDistanceThreshold = $minWmDistanceThreshold\n" +
+	s"\twebWord2VecBaseUri = $webWord2VecBaseUri\n" +
 	s"\tmaxFpmWordsToPick = $maxFpmWordsToPick\n" +
 	s"\tminFpmWordsDetected = $minFpmWordsDetected\n" +
 	s"\trefreshLocalWordVectors = $refreshLocalWordVectors\n" +

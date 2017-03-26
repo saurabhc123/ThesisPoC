@@ -6,6 +6,7 @@ import DataTypes.WordVector
 import main.DataTypes.Tweet
 import main.Interfaces.DataType.DataType
 import main.Interfaces.IFeatureGenerator
+import main.scala.Implementations.AuxiliaryDataBasedExperiment
 import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.rdd.RDD
@@ -37,7 +38,7 @@ class WebServiceBasedWordVectorGenerator extends IFeatureGenerator{
 			}
 		implicit val formats = DefaultFormats
 		val sentence1 = URLEncoder.encode(sentence, "utf-8").replaceAll("\\+", "%20");
-		val url = s"http://localhost:5000/file_model/getvector/$sentence1"
+		val url = AuxiliaryDataBasedExperiment.webWord2VecBaseUri + s"$sentence1"
 		try {
 			val result = scala.io.Source.fromURL(url).mkString
 			val wv = parse(result).extract[WordVector]
