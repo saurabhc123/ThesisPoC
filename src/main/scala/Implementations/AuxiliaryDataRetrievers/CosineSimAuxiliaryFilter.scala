@@ -21,7 +21,7 @@ class CosineSimAuxiliaryFilter(trainingTweets: RDD[Tweet], featureGenerator:IFea
 		val sc = SparkContextManager.getContext
 
 		val minSimilarityThreshold = AuxiliaryDataBasedExperiment.minSimilarityThreshold
-		//This is all the positve and negative training data.
+		//This is all the positive and negative training data.
 		val trainTweetsFeatures = featureGenerator.generateFeatures(train).filter(trainingTweet => trainingTweet.label == 1.0)
 		val auxiliaryTweetsFeatures = auxiliary.map(aux => (aux, featureGenerator.generateFeature(aux)))
 

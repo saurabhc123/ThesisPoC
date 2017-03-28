@@ -29,7 +29,7 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 		val classifierFactory = new ClassifierFactory()
 
 		val classifier = classifierFactory.getClassifier(AuxiliaryDataBasedExperiment.classifierType)
-		val featureGenerator = FeatureGeneratorFactory.getFeatureGenerator(FeatureGeneratorType.WebServiceWord2Vec)
+		val featureGenerator = FeatureGeneratorFactory.getFeatureGenerator(FeatureGeneratorType.Word2Vec)
 		val auxiliaryDataRetriever: IAuxiliaryDataRetriever = new AuxiliaryDataRetrieverFactory().getAuxiliaryDataRetriever(AuxiliaryDataBasedExperiment.auxiliaryDataFile)
 
 		val trainingFeatures: RDD[LabeledPoint] = featureGenerator.generateFeatures(train, DataType.TRAINING)
@@ -63,7 +63,9 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 
 
 		var dataToTrainOn = train
+		var featuresToTrainOn = trainingFeatures
 		var numberOfIterations = 0
+		var bestIteration = 0
 		while (f1 < thresholdF1 && numberOfIterations < AuxiliaryDataBasedExperiment.maxExperimentIterations) {
 			//Get tweets based on most distinguishing words with FPM
 			val filterFactory = new AuxiliaryDataFilterFactory(dataToTrainOn, featureGenerator)
@@ -82,6 +84,7 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 			print(filteredAuxiliaryData.foreach(tweet => println(s"${tweet.label}|${tweet.tweetText}")))
 
 			//train using training + auxiliary data
+			val auxiliaryDataFeatures = featureGenerator.generateFeatures(filteredAuxiliaryData, DataType.TRAINING)
 			val fullData = dataToTrainOn.union(filteredAuxiliaryData)
 
 			//***** Do this only for the CNN classifier
@@ -91,15 +94,19 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 				writeData(fullData,folderId)
 				//Set the UUID as the REST parameter
 				AuxiliaryDataBasedExperiment.folderNameForCnnClassifier = folderId
+				model = classifier.train(null)
 			}
-
-			model = classifier.train(featureGenerator.generateFeatures(fullData, DataType.TRAINING))
+			else{ //Only the other classifiers need these features.
+				val fullDataFeatures = trainingFeatures.union(auxiliaryDataFeatures)
+				model = classifier.train(fullDataFeatures)
+			}
 
 			//perform prediction on validation data
 			val validationDataPredictions = model.predict(validationFeatures)
 			val metrics = MetricsCalculator.GenerateClassifierMetrics(validationDataPredictions)
 			val auxF1 = metrics.macroF1
 
+			numberOfIterations += 1
 
 			//if f1 is greater than aux threshold, add aux to the training data.
 			if ((auxF1 - f1) > auxiliaryThresholdExpectation)
@@ -107,14 +114,15 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 				println(s"Adding ${filteredAuxiliaryData.count()} auxiliary tweets to the training data.")
 				f1 = auxF1
 				dataToTrainOn = fullData
+				bestIteration = numberOfIterations
 			}
-			numberOfIterations += 1
 			println(s"\nAux F1 - Iteration-$numberOfIterations=${BigDecimal(auxF1).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble}")
 			println(s"Precision=${BigDecimal(metrics.multiClassMetrics.precision(1.0)).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble}")
 			println(s"Recall=${BigDecimal(metrics.multiClassMetrics.recall(1.0)).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble}")
 
 			println("Aux F1 - ConfusionMatrix:")
-			println(s"${metrics.confusionMatrix}\n")
+			println(s"${metrics.confusionMatrix}")
+			println(s"\nBest F1 so far - ${BigDecimal(f1).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble} at iteration:$bestIteration\n\n")
 		}
 	}
 
@@ -125,8 +133,9 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 
 	override def SetupAndRunExperiment(): Unit = {
 		println(AuxiliaryDataBasedExperiment.toString)
-		val trainingTweets = TweetsFileProcessor.LoadTweetsFromFile(AuxiliaryDataBasedExperiment.trainingDataFile, AuxiliaryDataBasedExperiment.fileDelimiter)
-		val validationTweets = TweetsFileProcessor.LoadTweetsFromFile(AuxiliaryDataBasedExperiment.validationDataFile, AuxiliaryDataBasedExperiment.fileDelimiter)
+		val predictstart = System.currentTimeMillis()
+		val trainingTweets = TweetsFileProcessor.LoadTweetsFromFileNoCounter(AuxiliaryDataBasedExperiment.trainingDataFile, AuxiliaryDataBasedExperiment.fileDelimiter)
+		val validationTweets = TweetsFileProcessor.LoadTweetsFromFileNoCounter(AuxiliaryDataBasedExperiment.validationDataFile, AuxiliaryDataBasedExperiment.fileDelimiter)
 		val cleanTrainingTweets = CleanTweet.clean(trainingTweets, SparkContextManager.getContext)
 		val cleanValidationTweets = CleanTweet.clean(validationTweets, SparkContextManager.getContext)
 
@@ -143,14 +152,19 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 
 		}
 
+
+        val predict_stop = System.currentTimeMillis()
+        val predictTime = (predict_stop - predictstart) / (1000.0)
+		println(s"Total time taken for experiment:$predictTime seconds.")
+
 	}
 }
 
 object AuxiliaryDataBasedExperiment {
 	val filterToUse = FilterType.CosineSim
-	val minSimilarityThreshold = 0.50
-	val cosineSimilarityWindowSize= 0.20
-	val minWmDistanceThreshold = 0.0199
+	val minSimilarityThreshold = 0.25
+	val cosineSimilarityWindowSize= 0.15
+	val minWmDistanceThreshold = 0.49
 	val webWord2VecBaseUri = s"http://localhost:5000/getvector/"
 
 	val maxFpmWordsToPick = 35
@@ -163,11 +177,11 @@ object AuxiliaryDataBasedExperiment {
 	val thresholdF1 = 0.98
 	val auxiliaryThresholdExpectation = 0.01
 
-	val classifierType = ClassifierType.Cnn
+	val classifierType = ClassifierType.LogisticRegression
 	var folderNameForCnnClassifier = ""
 
 	val fileDelimiter = ","
-	val experimentSet = "egypt"
+	val experimentSet = "severeweather"
 	val trainingDataFile = s"data/final/${experimentSet}_training_data.txt"
 	val validationDataFile = s"data/final/${experimentSet}_validation_data.txt"
 	val auxiliaryDataFile = s"data/final/${experimentSet}_auxiliary_data.txt"

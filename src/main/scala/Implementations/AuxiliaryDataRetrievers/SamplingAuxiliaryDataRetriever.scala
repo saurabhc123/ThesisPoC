@@ -11,23 +11,23 @@ import org.apache.spark.rdd.RDD
 /**
  * Created by saur6410 on 3/9/17.
  */
-class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAuxiliaryDataRetriever {
+class SamplingAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAuxiliaryDataRetriever {
 
 
 	//var lastLineRead = 0
-	FileBasedAuxiliaryDataRetriever._auxiliaryFileName = auxiliaryDataFilename
+	SamplingAuxiliaryDataRetriever._auxiliaryFileName = auxiliaryDataFilename
 
 	override def retrieveAuxiliaryData(distinguishingWords: Array[String]): RDD[Tweet] = {
 
 		val sc = SparkContextManager.getContext
 		//Read the tweets from the file one by one.
-		val auxiliaryTweets = FileBasedAuxiliaryDataRetriever.readTweetsFromAuxiliaryFile()
+		val auxiliaryTweets = SamplingAuxiliaryDataRetriever.readTweetsFromAuxiliaryFile()
 
 		//Update the cursor for each step.
-		val tweetsContainingRelevantWords = auxiliaryTweets.filter(x => doesTweetContainsDistinguishingWords(x.tweetText, distinguishingWords)
-		&& x.identifier.toInt > FpmAuxiliaryFilter.lastLineRead)
+		val tweetsContainingRelevantWords = auxiliaryTweets.filter(x => doesTweetContainsDistinguishingWords(x.tweetText, distinguishingWords))
 
 		val tweetsCount = tweetsContainingRelevantWords.count()
+		val fractionToGet = AuxiliaryDataBasedExperiment.tweetsToAddEachIteration/tweetsCount
 
 		if(tweetsCount == 0)
 		{
@@ -35,17 +35,7 @@ class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAux
 		}
 
 		var auxiliaryMatches:Array[Tweet] = null
-		//Once the required number of tweets are retrieved, get the line number of the last tweet. Save it
-		if(tweetsCount < AuxiliaryDataBasedExperiment.tweetsToAddEachIteration)
-		{
-			auxiliaryMatches = tweetsContainingRelevantWords.take(tweetsCount.toInt)
-		}
-		else
-		{
-			auxiliaryMatches = tweetsContainingRelevantWords.take(AuxiliaryDataBasedExperiment.tweetsToAddEachIteration)
-		}
-		FpmAuxiliaryFilter.lastLineRead = auxiliaryMatches.last.identifier.toInt
-
+		auxiliaryMatches = tweetsContainingRelevantWords.sample(false, fractionToGet,0).collect()
 		sc.parallelize(auxiliaryMatches)
 	}
 
@@ -60,7 +50,7 @@ class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAux
 }
 
 
-object FileBasedAuxiliaryDataRetriever
+object SamplingAuxiliaryDataRetriever
 {
 
 	var _auxiliaryFileName = ""

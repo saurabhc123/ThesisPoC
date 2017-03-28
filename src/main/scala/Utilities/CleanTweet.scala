@@ -15,7 +15,7 @@ import scala.collection.mutable.ListBuffer
 import scala.tools.nsc.interpreter.session.JIterator
 import util.control.Breaks._
 
-//import scala.collection.JavaConverters._
+//import SamplingAuxiliaryDataRetriever.collection.JavaConverters._
 
 import scala.collection.mutable.ArrayBuffer
 

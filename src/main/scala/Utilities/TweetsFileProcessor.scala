@@ -60,6 +60,42 @@ object TweetsFileProcessor {
 		wordOnlyTweets
 	}
 
+
+	def LoadTweetsFromFileNoCounter(filename:String, delimiter:String = ";"):RDD[Tweet] =
+	{
+		val sc = SparkContextManager.getContext
+		var fileContent = sc.textFile(filename).map(l => l.split(delimiter))
+		fileContent = fileContent.map(stringArrays => {
+			if(stringArrays.length > 2){
+				val resultArray = new Array[String](2)
+				resultArray(0) = stringArrays(0)
+				resultArray(1) = stringArrays(1) + stringArrays(2)
+				resultArray
+			}
+			else
+				stringArrays
+		})
+
+		// To sample
+	    def toTweet(segments: Array[String]) = segments match {
+	      case Array(label, tweetText) => Tweet(java.util.UUID.randomUUID.toString, tweetText, label.toDouble)
+	    }
+
+		def cleanHtml(str: String) = str.replaceAll( """<(?!\/?a(?=>|\s.*>))\/?.*?>""", "")
+		def cleanTweetHtml(sample: Tweet) = sample copy (tweetText = cleanHtml(sample.tweetText))
+		// Words only
+		def cleanWord(str: String) = str.split(" ").map(_.trim.toLowerCase).filter(_.size > 0).map(_.replaceAll("\\W", "")).reduce((x, y) => s"$x $y")
+		def wordOnlyTweet(sample: Tweet) = sample copy (tweetText = cleanWord(sample.tweetText))
+
+		val fileTweets = fileContent map toTweet
+		val cleanTweets = fileTweets map cleanTweetHtml
+
+		val wordOnlyTweets = cleanTweets map wordOnlyTweet
+		wordOnlyTweets
+	}
+
+
+
 //	def validateAndReplaceWord(word:String, missingWordVectorProcessor: IMissingWordVectorProcessor):String = {
 //
 //		null
