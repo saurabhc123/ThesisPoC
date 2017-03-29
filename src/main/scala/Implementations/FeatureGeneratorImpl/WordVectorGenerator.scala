@@ -4,96 +4,96 @@ package main.Implementations.FeatureGeneratorImpl
 import main.DataTypes.Tweet
 import main.Interfaces.DataType._
 import main.Interfaces.IFeatureGenerator
+import main.SparkContextManager
+import main.scala.Implementations.AuxiliaryDataBasedExperiment
 import org.apache.spark.SparkContext
 import org.apache.spark.mllib.feature.{Word2Vec, Word2VecModel}
-import org.apache.spark.mllib.linalg.{Vector, VectorPub}
+import org.apache.spark.mllib.linalg.{Vectors, Vector, VectorPub}
 import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.rdd.RDD
 
 import scala.util.Try
+
 /**
-  * A feature generator for word vector generation
-  * Created by Eric on 2/2/2017.
-  */
-class WordVectorGenerator extends IFeatureGenerator{
-  var Model: Word2VecModel = _
-  def train(tweets: RDD[Tweet]): Unit = {
+ * A feature generator for word vector generation
+ * Created by Eric on 2/2/2017.
+ */
+class WordVectorGenerator extends IFeatureGenerator {
+	var model: Word2VecModel = _
 
-    def cleanHtml(str: String) = str.replaceAll( """<(?!\/?a(?=>|\s.*>))\/?.*?>""", "")
+	def InitModel() = {
+		val filename = AuxiliaryDataBasedExperiment.auxiliaryDataFile
+		val sc = SparkContextManager.getContext
+		val delimiter = AuxiliaryDataBasedExperiment.fileDelimiter
+		var fileContent = sc.textFile(filename).map(l => l.split(delimiter))
+		fileContent = fileContent.map(stringArrays => {
+			if (stringArrays.length > 2) {
+				val resultArray = new Array[String](2)
+				resultArray(0) = stringArrays(0)
+				resultArray(1) = stringArrays(1) + stringArrays(2)
+				resultArray
+			}
+			else {
+				stringArrays
+			}
+		})
 
-    def cleanTweetHtml(sample: Tweet) = sample copy (tweetText = cleanHtml(sample.tweetText))
+		val tweetSentences = fileContent.filter(record => record.length > 1) .map(t => t(1))
+		val sentences = tweetSentences.map(t => t.split(" ").toSeq)
+		model = new Word2Vec().setVectorSize(300).setMinCount(1).fit(sentences)
+	}
 
-    def cleanWord(str: String) = str.split(" ").map(_.trim.toLowerCase).filter(_.nonEmpty)
-      .map(_.replaceAll("\\W", "")).reduceOption((x, y) => s"$x $y")
+	def train(tweets: RDD[Tweet]): Unit = {
+		if (model == null)
+			InitModel()
+	}
 
-    def wordOnlySample(sample: Tweet) = sample copy (tweetText = cleanWord(sample.tweetText).getOrElse(""))
+	override def generateFeatures(tweets: RDD[Tweet], dataType: DataType): RDD[LabeledPoint] = {
+		if (dataType == TRAINING) {
+			train(tweets)
+		}
+		checkModel()
 
-    val cleanTrainingTweets = tweets map cleanTweetHtml
+		tweets.map(t => generateFeature(t))
 
-    val wordOnlyTrainSample = cleanTrainingTweets map wordOnlySample
-
-    val samplePairs = wordOnlyTrainSample.map(s => s.identifier -> s)
-    val reviewWordsPairs: RDD[(String, Iterable[String])] = samplePairs.mapValues(_.tweetText.split(" ").toIterable)
-
-    Model = new Word2Vec().fit(reviewWordsPairs.values)
-  }
-
-  override def generateFeatures(tweets: RDD[Tweet], dataType: DataType): RDD[LabeledPoint] = {
-    if (dataType == TRAINING){
-      train(tweets)
-    }
-    checkModel()
-    def cleanHtml(str: String) = str.replaceAll( """<(?!\/?a(?=>|\s.*>))\/?.*?>""", "")
-
-    def cleanTweetHtml(sample: Tweet) = sample copy (tweetText = cleanHtml(sample.tweetText))
-
-    def cleanWord(str: String) = str.split(" ").map(_.trim.toLowerCase).filter(_.nonEmpty)
-      .map(_.replaceAll("\\W", "")).reduceOption((x, y) => s"$x $y")
-
-    def wordOnlySample(sample: Tweet) = sample copy (tweetText = cleanWord(sample.tweetText).getOrElse(""))
-
-    val cleanTrainingTweets = tweets map cleanTweetHtml
-    val wordOnlyTrainSample = cleanTrainingTweets map wordOnlySample
-    val samplePairs = wordOnlyTrainSample.map(s => s.identifier -> s)
-    val reviewWordsPairs = samplePairs.mapValues(_.tweetText.split(" ").toIterable)
-
-    def wordFeatures(words: Iterable[String]): Iterable[Vector] = words.map(w => Try(Model.transform(w)))
-                                        .filter(_.isSuccess).map(x => x.get)
-
-    def avgWordFeatures(wordFeatures: Iterable[Vector]): Vector = VectorPub.BreezeVectorPublications(
-      wordFeatures.map(VectorPub.VectorPublications(_).toBreeze).reduceLeft((x, y) => x + y) / wordFeatures.size.toDouble)
-      .fromBreeze
-
-    def filterNullFeatures(wordFeatures: Iterable[Vector]): Iterable[Vector] =
-      if (wordFeatures.isEmpty) wordFeatures.drop(1) else wordFeatures
-
-    // Create feature vectors
-    val wordFeaturePairTrain = reviewWordsPairs mapValues wordFeatures
-    val inter2Train = wordFeaturePairTrain.filter(_._2.nonEmpty)
-    val avgWordFeaturesPairTrain = inter2Train mapValues avgWordFeatures
-    val featuresPairTrain = avgWordFeaturesPairTrain join samplePairs mapValues {
-      case (features, Tweet(id, tweetText, label)) => LabeledPoint(label, features)
-    }
-    val trainingSet = featuresPairTrain.values
-    trainingSet
-  }
+	}
 
 
+	def saveGenerator(filePath: String, sc: SparkContext): Unit = {
+		checkModel()
+		model.save(sc, filePath)
+	}
 
-  def saveGenerator(filePath: String, sc :SparkContext): Unit = {
-    checkModel()
-    Model.save(sc,filePath)
-  }
+	def loadGenerator(filePath: String, sc: SparkContext): Unit = {
+		model = Word2VecModel.load(sc, filePath)
+	}
 
-  def loadGenerator(filePath: String, sc: SparkContext): Unit = {
-    Model = Word2VecModel.load(sc,filePath)
-  }
+	def checkModel(): Unit = {
+		if (model == null) {
+			throw new IllegalStateException("Model has not been loaded or trained!")
+		}
+	}
 
-  def checkModel(): Unit = {
-    if (Model == null){
-      throw new IllegalStateException("Model has not been loaded or trained!")
-    }
-  }
+	override def generateFeature(tweet: Tweet): LabeledPoint =
+	{
+		if (model == null)
+			InitModel()
+		def avgWordFeatures(wordFeatures: Iterable[Vector]): Vector = VectorPub.BreezeVectorPublications(
+			wordFeatures.map(VectorPub.VectorPublications(_).toBreeze).reduceLeft((x, y) => x + y) / wordFeatures.size.toDouble)
+			.fromBreeze
 
-  override def generateFeature(tweet: Tweet): LabeledPoint = ???
+		try {
+			val vector = tweet.tweetText.split(" ").map(w => Try(model.transform(w))).filter(_.isSuccess).map(x => x.get)
+
+			val averagedVector = avgWordFeatures(vector.toIterable)
+
+			new LabeledPoint(tweet.label, averagedVector)
+		}
+		catch {
+			case _ => {
+				println(s"**********Omitting Tweet**********:${tweet.tweetText}")
+				return LabeledPoint(tweet.label, Vectors.dense(new Array[Double](300)))}
+		}
+
+	}
 }

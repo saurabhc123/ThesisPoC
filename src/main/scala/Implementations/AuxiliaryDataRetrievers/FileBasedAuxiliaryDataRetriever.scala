@@ -63,18 +63,70 @@ class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAux
 object FileBasedAuxiliaryDataRetriever
 {
 
-	var _auxiliaryFileName = "data/training/multi_class_lem"
+	var _auxiliaryFileName = ""
 
 	var _auxiliaryTweets:RDD[Tweet] = null
 
 	def readTweetsFromAuxiliaryFile() : RDD[Tweet] = {
 
-		if(_auxiliaryTweets != null)
-			return _auxiliaryTweets
+	if(_auxiliaryTweets != null)
+		return _auxiliaryTweets
+
+	val sc = SparkContextManager.getContext
+	val delimiter = AuxiliaryDataBasedExperiment.fileDelimiter
+	var auxiliaryFileContent = sc.textFile(_auxiliaryFileName).map(l => l.split(delimiter))
+	auxiliaryFileContent = auxiliaryFileContent.map(stringArrays => {
+		if(stringArrays.length > 2){
+			val resultArray = new Array[String](2)
+			resultArray(0) = stringArrays(0)
+			resultArray(1) = stringArrays(1) + stringArrays(2)
+			resultArray
+		}
+		else
+			stringArrays
+	})
+
+	var counter = 0
+
+	def toTweet(segments: Array[String]) = segments match {
+
+		case Array(label, tweetText) =>
+			try {
+				counter += 1
+				Tweet(counter.toString, tweetText, label.toDouble)
+			}
+			catch
+				{
+					case unknown => println(s"Issue with Tweet:${segments}, $counter")
+						Tweet(counter.toString, "", 0.0)
+				}
+		case _ =>
+		{
+			println(s"Issue with Tweet:${segments.array.deep.mkString(" ")}, $counter")
+			counter += 1
+			Tweet(counter.toString, "hello", 0.0)
+		}
+	}
+
+	def cleanHtml(str: String) = str.replaceAll( """<(?!\/?a(?=>|\s.*>))\/?.*?>""", "")
+	def cleanSampleHtml(sample: Tweet) = sample copy (tweetText = cleanHtml(sample.tweetText))
+	// Words only
+	def cleanWord(str: String) = str.split(" ").map(_.trim.toLowerCase).filter(_.size > 0).map(_.replaceAll("\\W", "")).reduce((x, y) => s"$x $y")
+	def wordOnlySample(sample: Tweet) = sample copy (tweetText = cleanWord(sample.tweetText))
+
+	val trainSamples = auxiliaryFileContent map toTweet
+	val cleanTrainSamples = trainSamples map cleanSampleHtml
+	//FileBasedAuxiliaryDataRetriever.lastLineRead += counter
+	_auxiliaryTweets = CleanTweet.clean(cleanTrainSamples, SparkContextManager.getContext)
+
+	_auxiliaryTweets
+}
+
+	def readTweetsFromFile(filename:String) : RDD[Tweet] = {
 
 		val sc = SparkContextManager.getContext
 		val delimiter = AuxiliaryDataBasedExperiment.fileDelimiter
-		var auxiliaryFileContent = sc.textFile(_auxiliaryFileName).map(l => l.split(delimiter))
+		var auxiliaryFileContent = sc.textFile(filename).map(l => l.split(delimiter))
 		auxiliaryFileContent = auxiliaryFileContent.map(stringArrays => {
 			if(stringArrays.length > 2){
 				val resultArray = new Array[String](2)
@@ -86,25 +138,21 @@ object FileBasedAuxiliaryDataRetriever
 				stringArrays
 		})
 
-		var counter = 0
-
 		def toTweet(segments: Array[String]) = segments match {
 
 			case Array(label, tweetText) =>
 				try {
-					counter += 1
-					Tweet(counter.toString, tweetText, label.toDouble)
+					Tweet(java.util.UUID.randomUUID.toString, tweetText, label.toDouble)
 				}
 				catch
 					{
-						case unknown => println(s"Issue with Tweet:${segments}, $counter")
-							Tweet(counter.toString, "", 0.0)
+						case unknown => println(s"Issue with Tweet:${segments}")
+							Tweet(java.util.UUID.randomUUID.toString, "", 0.0)
 					}
 			case _ =>
 			{
-				println(s"Issue with Tweet:${segments.array.deep.mkString(" ")}, $counter")
-				counter += 1
-				Tweet(counter.toString, "hello", 0.0)
+				println(s"Issue with Tweet:${segments.array.deep.mkString(" ")}")
+				Tweet(java.util.UUID.randomUUID.toString, "hello", 0.0)
 			}
 		}
 
@@ -116,10 +164,9 @@ object FileBasedAuxiliaryDataRetriever
 
 		val trainSamples = auxiliaryFileContent map toTweet
 		val cleanTrainSamples = trainSamples map cleanSampleHtml
-		//FileBasedAuxiliaryDataRetriever.lastLineRead += counter
-		_auxiliaryTweets = CleanTweet.clean(cleanTrainSamples, SparkContextManager.getContext)
+		val returnedTweets = CleanTweet.clean(cleanTrainSamples, SparkContextManager.getContext)
+		returnedTweets
 
-		_auxiliaryTweets
 	}
 
 }
