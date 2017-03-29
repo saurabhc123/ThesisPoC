@@ -18,9 +18,50 @@ import org.apache.spark.rdd.RDD
 /**
  * Created by saur6410 on 3/8/17.
  */
-class AuxiliaryDataBasedExperiment extends IExperiment {
+class AuxiliaryDataBasedExperiment(args: Array[String]) extends IExperiment {
+
+	def handleProgramArguments(): Unit =
+	{
+		val firstArgumentIndex = 1
+
+		//What word vectors
+		if(args.length > firstArgumentIndex)
+		{
+			if(args(firstArgumentIndex).toLowerCase() == "google")
+				AuxiliaryDataBasedExperiment.vectorType = "google"
+			else
+				AuxiliaryDataBasedExperiment.vectorType = "local"
+		}
+
+		//What classifier
+		if(args.length > firstArgumentIndex + 1) {
+			if(args(firstArgumentIndex + 1).toLowerCase() == "cnn")
+				AuxiliaryDataBasedExperiment.classifierType = ClassifierType.Cnn
+			else
+				AuxiliaryDataBasedExperiment.classifierType = ClassifierType.LogisticRegression
+		}
+		
+		//Cosine Similarity threshold and wall size
+		if(args.length > firstArgumentIndex + 2)
+		{
+			AuxiliaryDataBasedExperiment.minSimilarityThreshold = args(firstArgumentIndex + 2).toInt
+			AuxiliaryDataBasedExperiment.cosineSimilarityWindowSize =  AuxiliaryDataBasedExperiment.minSimilarityThreshold - 0.2
+		}
+
+		if(args.length > firstArgumentIndex + 3)
+			AuxiliaryDataBasedExperiment.cosineSimilarityWindowSize = args(firstArgumentIndex + 3).toInt
 
 
+		//Experiment Set name
+		if(args.length > firstArgumentIndex + 4)
+			AuxiliaryDataBasedExperiment.experimentSet = args(firstArgumentIndex + 4).toLowerCase()
+		
+		//Experiment Set number
+		if(args.length > firstArgumentIndex + 5)
+			AuxiliaryDataBasedExperiment.experimentSetNumber = args(firstArgumentIndex + 5)
+	}
+	
+	
 	override def performExperiment(train: RDD[Tweet], validation: RDD[Tweet]): Unit = {
 
 
@@ -164,8 +205,8 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 
 object AuxiliaryDataBasedExperiment {
 	val filterToUse = FilterType.CosineSim
-	val minSimilarityThreshold = 0.55
-	val cosineSimilarityWindowSize= 0.2
+	var minSimilarityThreshold = 0.59
+	var cosineSimilarityWindowSize= 0.23
 	val minWmDistanceThreshold = 0.49
 
 	val maxFpmWordsToPick = 35
@@ -178,17 +219,18 @@ object AuxiliaryDataBasedExperiment {
 	val thresholdF1 = 0.98
 	val auxiliaryThresholdExpectation = 0.01
 
-	val classifierType = ClassifierType.Cnn
+	var classifierType = ClassifierType.LogisticRegression
 	var folderNameForCnnClassifier = ""
 
-	val vectorType = "google"
+	var vectorType = "google"
 	var webWord2VecBaseUri : String = null
 	var cnnClassifierBaseUri : String = null
 
 
 	val fileDelimiter = ","
-	val experimentSet = "ebola"
-	val trainingDataFile = s"data/final/${experimentSet}_training_data3.txt"
+	var experimentSet = "ebola"
+	var experimentSetNumber = ""
+	val trainingDataFile = s"data/final/${experimentSet}_training_data$experimentSetNumber.txt"
 	val validationDataFile = s"data/final/${experimentSet}_validation_data.txt"
 	val auxiliaryDataFile = s"data/final/${experimentSet}_auxiliary_data.txt"
 	val supplementedCleanAuxiliaryFile = s"data/final/${experimentSet}_auxiliary_data.txt"

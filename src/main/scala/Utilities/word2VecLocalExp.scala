@@ -1,3 +1,5 @@
+package Utilities
+
 import Implementations.AuxiliaryDataRetrievers.FileBasedAuxiliaryDataRetriever
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.mllib.feature.Word2Vec

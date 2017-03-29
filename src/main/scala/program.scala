@@ -36,7 +36,7 @@ object program extends App {
 //		val model = classifier.train(null)
 //		val predictions = model.predict(null)
 
-		new AuxiliaryDataBasedExperiment().SetupAndRunExperiment()
+		new AuxiliaryDataBasedExperiment(args).SetupAndRunExperiment()
 		//GenerateCleanTweetStrings.GenerateCleanStrings("data/final/ebola_auxiliary_data.txt")
 
 	}
