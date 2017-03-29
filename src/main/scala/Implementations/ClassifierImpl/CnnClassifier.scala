@@ -15,7 +15,7 @@ class CnnClassifier extends IClassifier{
 	override def train(labels: RDD[LabeledPoint]): IClassifierModel = {
 		implicit val formats = DefaultFormats
 		val exportedFolderName = "egypt"
-		val url = s"http://localhost:5000/cnn_train_and_get_prediction_labels/${AuxiliaryDataBasedExperiment.folderNameForCnnClassifier}"
+		val url =  AuxiliaryDataBasedExperiment.cnnClassifierBaseUri + AuxiliaryDataBasedExperiment.folderNameForCnnClassifier
 		try {
 			println(s"Getting CNN classification labels from $url")
 			val result = scala.io.Source.fromURL(url).mkString

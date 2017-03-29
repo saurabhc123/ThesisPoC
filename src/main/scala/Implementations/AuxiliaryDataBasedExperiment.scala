@@ -29,7 +29,7 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 		val classifierFactory = new ClassifierFactory()
 
 		val classifier = classifierFactory.getClassifier(AuxiliaryDataBasedExperiment.classifierType)
-		val featureGenerator = FeatureGeneratorFactory.getFeatureGenerator(FeatureGeneratorType.Word2Vec)
+		val featureGenerator = FeatureGeneratorFactory.getFeatureGenerator(FeatureGeneratorType.WebServiceWord2Vec)
 		val auxiliaryDataRetriever: IAuxiliaryDataRetriever = new AuxiliaryDataRetrieverFactory().getAuxiliaryDataRetriever(AuxiliaryDataBasedExperiment.auxiliaryDataFile)
 
 		val trainingFeatures: RDD[LabeledPoint] = featureGenerator.generateFeatures(train, DataType.TRAINING)
@@ -111,10 +111,10 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 			//if f1 is greater than aux threshold, add aux to the training data.
 			if ((auxF1 - f1) > auxiliaryThresholdExpectation)
 			{
-				println(s"Adding ${filteredAuxiliaryData.count()} auxiliary tweets to the training data.")
 				f1 = auxF1
 				dataToTrainOn = fullData
 				bestIteration = numberOfIterations
+				println(s"Adding ${filteredAuxiliaryData.count()} auxiliary tweets to the training data.")
 			}
 			println(s"\nAux F1 - Iteration-$numberOfIterations=${BigDecimal(auxF1).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble}")
 			println(s"Precision=${BigDecimal(metrics.multiClassMetrics.precision(1.0)).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble}")
@@ -132,6 +132,7 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
 	}
 
 	override def SetupAndRunExperiment(): Unit = {
+		AuxiliaryDataBasedExperiment.setVectorType(AuxiliaryDataBasedExperiment.vectorType)
 		println(AuxiliaryDataBasedExperiment.toString)
 		val predictstart = System.currentTimeMillis()
 		val trainingTweets = TweetsFileProcessor.LoadTweetsFromFileNoCounter(AuxiliaryDataBasedExperiment.trainingDataFile, AuxiliaryDataBasedExperiment.fileDelimiter)
@@ -156,16 +157,16 @@ class AuxiliaryDataBasedExperiment extends IExperiment {
         val predict_stop = System.currentTimeMillis()
         val predictTime = (predict_stop - predictstart) / (1000.0)
 		println(s"Total time taken for experiment:$predictTime seconds.")
+		println("\t\t\t\t************* SAVE THE RESULTS ******************")
 
 	}
 }
 
 object AuxiliaryDataBasedExperiment {
 	val filterToUse = FilterType.CosineSim
-	val minSimilarityThreshold = 0.25
-	val cosineSimilarityWindowSize= 0.15
+	val minSimilarityThreshold = 0.55
+	val cosineSimilarityWindowSize= 0.2
 	val minWmDistanceThreshold = 0.49
-	val webWord2VecBaseUri = s"http://localhost:5000/getvector/"
 
 	val maxFpmWordsToPick = 35
 	val minFpmWordsDetected = 0
@@ -177,12 +178,17 @@ object AuxiliaryDataBasedExperiment {
 	val thresholdF1 = 0.98
 	val auxiliaryThresholdExpectation = 0.01
 
-	val classifierType = ClassifierType.LogisticRegression
+	val classifierType = ClassifierType.Cnn
 	var folderNameForCnnClassifier = ""
 
+	val vectorType = "google"
+	var webWord2VecBaseUri : String = null
+	var cnnClassifierBaseUri : String = null
+
+
 	val fileDelimiter = ","
-	val experimentSet = "severeweather"
-	val trainingDataFile = s"data/final/${experimentSet}_training_data.txt"
+	val experimentSet = "ebola"
+	val trainingDataFile = s"data/final/${experimentSet}_training_data3.txt"
 	val validationDataFile = s"data/final/${experimentSet}_validation_data.txt"
 	val auxiliaryDataFile = s"data/final/${experimentSet}_auxiliary_data.txt"
 	val supplementedCleanAuxiliaryFile = s"data/final/${experimentSet}_auxiliary_data.txt"
@@ -195,7 +201,9 @@ override def toString() = {
 	s"\tminSimilarityThreshold = $minSimilarityThreshold\n" +
 	s"\tcosineSimilarityWindowSize= $cosineSimilarityWindowSize\n" +
 	s"\tminWmDistanceThreshold = $minWmDistanceThreshold\n" +
+	s"\tvectorType= $vectorType\n" +
 	s"\twebWord2VecBaseUri = $webWord2VecBaseUri\n" +
+	s"\tcnnClassifierBaseUri = $cnnClassifierBaseUri\n" +
 	s"\tmaxFpmWordsToPick = $maxFpmWordsToPick\n" +
 	s"\tminFpmWordsDetected = $minFpmWordsDetected\n" +
 	s"\trefreshLocalWordVectors = $refreshLocalWordVectors\n" +
@@ -211,6 +219,18 @@ override def toString() = {
 	s"\tauxiliaryDataFile = $auxiliaryDataFile\n" +
 	s"\tsupplementedCleanAuxiliaryFile = $supplementedCleanAuxiliaryFile\n"+
 	"\n***************** Parameters used for EXPERIMENT *****************\n"
+}
+
+def setVectorType(vectorType:String): Unit ={
+	if(vectorType == "local"){
+		webWord2VecBaseUri = s"http://localhost:5000/file_model/getvector/"
+		cnnClassifierBaseUri = "http://localhost:5000/cnn_train_and_get_prediction_labels_local/"
+	}
+	else{
+		webWord2VecBaseUri = s"http://localhost:5000/getvector/"
+		cnnClassifierBaseUri = "http://localhost:5000/cnn_train_and_get_prediction_labels/"
+	}
+
 }
 
 }
