@@ -15,10 +15,11 @@ class CnnClassifier extends IClassifier{
 	override def train(labels: RDD[LabeledPoint]): IClassifierModel = {
 		implicit val formats = DefaultFormats
 		val exportedFolderName = "egypt"
-		val url =  AuxiliaryDataBasedExperiment.cnnClassifierBaseUri + AuxiliaryDataBasedExperiment.folderNameForCnnClassifier
+		val url =  AuxiliaryDataBasedExperiment.cnnClassifierBaseUri
 		try {
-			println(s"Getting CNN classification labels from $url")
-			val result = scala.io.Source.fromURL(url).mkString
+			val uri = url + s"?trainingFolder=${AuxiliaryDataBasedExperiment.folderNameForCnnClassifier}&ngram=${AuxiliaryDataBasedExperiment.cnnNgramValue}"
+			println(s"Getting CNN classification labels from $uri")
+			val result = scala.io.Source.fromURL(uri).mkString
 			val predictions = parse(result).extract[Array[CnnPrediction]]
 			CnnClassifier._predictions = predictions
 		}

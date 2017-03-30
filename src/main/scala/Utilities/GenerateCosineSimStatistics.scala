@@ -20,16 +20,26 @@ object GenerateCosineSimStatistics extends App {
 		Logger.getLogger("org").setLevel(Level.OFF)
 		Logger.getLogger("akka").setLevel(Level.OFF)
 		val sc = SparkContextManager.getContext
-		//sc.setLogLevel("ERROR")
+		sc.setLogLevel("ERROR")
 
-		val filename = "data/final/ebola_training_data.txt"
+		val filename = "data/final/egypt_training_data.txt"
 		FileBasedAuxiliaryDataRetriever._auxiliaryFileName = filename
 		AuxiliaryDataBasedExperiment.vectorType = s"google"
 		AuxiliaryDataBasedExperiment.setVectorType(AuxiliaryDataBasedExperiment.vectorType)
 		val tweets = FileBasedAuxiliaryDataRetriever.readTweetsFromFile(filename)
-		val (threshold, wallSize) = getCosineSimParametersForTweets(tweets)
-		print(threshold,wallSize)
+		var (threshold, wallSize) = getCosineSimParametersForTweets(tweets)
+//		print(threshold,wallSize)
+//		Reset()
+//		val (threshold1, wallSize1) = getCosineSimParametersForTweets(tweets)
+//		print(threshold1,wallSize1)
 
+
+	}
+
+	def Reset() = {
+		val uri = "http://localhost:5000/cnn_reset/winterstorm"
+		val result = scala.io.Source.fromURL(uri).mkString
+		print(result)
 	}
 
 	def getCosineSimParametersForTweets(tweets:RDD[Tweet]): (Double, Double) = {
@@ -67,7 +77,7 @@ object GenerateCosineSimStatistics extends App {
 			if(sim.equals(Double.NaN))
 				sim = 0.0
 			val meanSimilarity =  BigDecimal(sim).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble
-			println(s"*** Positive Tweet *** $meanSimilarity|${auxTweet._1.tweetText}")
+			//println(s"*** Positive Tweet *** $meanSimilarity|${auxTweet._1.tweetText}")
 			(auxTweet._1.tweetText, meanSimilarity)
 		})
 
@@ -78,14 +88,14 @@ object GenerateCosineSimStatistics extends App {
 			{
 				val cos_sim = CosineSimilarity.cosineSimilarity(tr._2.features.toArray, auxTweet._2.features.toArray)
 				negativeTweetText = tr._1.tweetText
-				println(s"*** Negative Tweet *** $negativeTweetText")
+				//println(s"*** Negative Tweet *** $negativeTweetText")
 				cos_sim
 			})
 			var sim = auxTweetSimilarity.mean()
 			if(sim.equals(Double.NaN))
 				sim = 0.0
 			val meanSimilarity =  BigDecimal(sim).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble
-			println(s"*** Negative Tweet Similarity*** $meanSimilarity")
+			//println(s"*** Negative Tweet Similarity*** $meanSimilarity")
 			(auxTweet._1.tweetText, meanSimilarity)
 		})
 
