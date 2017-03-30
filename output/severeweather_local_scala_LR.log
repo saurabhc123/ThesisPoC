@@ -1,0 +1,2630 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+17/03/27 19:27:32 INFO Remoting: Starting remoting
+17/03/27 19:27:33 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@172.30.203.32:55336]
+Hello World!11
+
+***************** Parameters used for EXPERIMENT *****************
+	filterToUse = CosineSim
+	minSimilarityThreshold = 0.4
+	cosineSimilarityWindowSize= 0.3
+	minWmDistanceThreshold = 0.49
+	webWord2VecBaseUri = http://localhost:5000/getvector/
+	maxFpmWordsToPick = 35
+	minFpmWordsDetected = 0
+	refreshLocalWordVectors = false
+	maxExperimentIterations = 20
+	maxAuxTweetsToAddEachIteration = 20
+	thresholdF1 = 0.98
+	classifierType = LogisticRegression
+	folderNameForCnnClassifier = 
+	auxiliaryThresholdExpectation = 0.01
+	fileDelimiter = ,
+	trainingDataFile = data/final/severeweather_training_data.txt
+	validationDataFile = data/final/severeweather_validation_data.txt
+	auxiliaryDataFile = data/final/severeweather_auxiliary_data.txt
+	supplementedCleanAuxiliaryFile = data/final/severeweather_auxiliary_data.txt
+
+***************** Parameters used for EXPERIMENT *****************
+
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+
+Initial F1=0.71
+Precision=0.83
+Recall=0.5
+Initial - ConfusionMatrix:
+47.0  4.0   
+20.0  20.0  
+
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.8|clinton matt bai first storm punish white mountain
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.83|winter weather storm warn go effect afternoon sunday
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.85|look window nice little snow plenty winter
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.85|winter storm titan good turn doe
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.37|occupywallstreet favorited information tweet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.66|bernie sander unite state verge become oligarchy occupy ows occupywallstreet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.64|spotlight shin palestinian collaborator occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|occupywallstreet new trinity church force cancel halloween fest occupy wall fox news
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.61|world focus russia nato buildup military asset near russia occupy ows occupywallstreet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.75|nyc forecast fri night mostly low temp get smart occupywallstreet sgp glennbeck
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.67|april day awareness political prisoner leonard peltier change topprog occupywallstreet ows occupy anarchist uspolitics
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|february day fight back mass surveillance occupyinfo owsinfo revolution anonymous
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.75|occupywallst need say gamergate politicise sociology occupywallstreet globalism
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.61|argentina investigate police action hospital protest occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.13|nyc forecast thu night low temp occupywallstreet tcot ocra
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.33|neworganizing see article member add context
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.65|obama unveil historic climate change plan cut carbon pollution occupy ows occupywallstreet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.13|nyc forecast sit night low temp occupywallstreet tpp
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.13|nyc forecast tue night low temp occupywallstreet teaparty ocra
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.8|five question face market occupy ows occupywallstreet occupyhq grassroots0winter storm warn union county il issue march cst march cst nw
+Retrieved 15 new auxiliary tweets.
+1.0|winter weather storm warn go effect afternoon sunday
+1.0|look window nice little snow plenty winter
+1.0|world focus russia nato buildup military asset near russia occupy ows occupywallstreet
+1.0|nyc forecast fri night mostly low temp get smart occupywallstreet sgp glennbeck
+1.0|spotlight shin palestinian collaborator occupy ows occupywallstreet occupyhq grassroots
+1.0|occupywallstreet new trinity church force cancel halloween fest occupy wall fox news
+1.0|occupywallst need say gamergate politicise sociology occupywallstreet globalism
+1.0|argentina investigate police action hospital protest occupy ows occupywallstreet occupyhq grassroots
+1.0|clinton matt bai first storm punish white mountain
+1.0|winter storm titan good turn doe
+1.0|bernie sander unite state verge become oligarchy occupy ows occupywallstreet
+1.0|obama unveil historic climate change plan cut carbon pollution occupy ows occupywallstreet
+1.0|five question face market occupy ows occupywallstreet occupyhq grassroots0winter storm warn union county il issue march cst march cst nw
+1.0|april day awareness political prisoner leonard peltier change topprog occupywallstreet ows occupy anarchist uspolitics
+1.0|february day fight back mass surveillance occupyinfo owsinfo revolution anonymous
+()**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+Adding 15 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-1=0.81
+Precision=0.85
+Recall=0.7
+Aux F1 - ConfusionMatrix:
+46.0  5.0   
+12.0  28.0  
+
+Best F1 so far - 0.81 at iteration:1
+
+
+[Stage 154:=======================================>                (7 + 3) / 10][Stage 154:============================================>           (8 + 2) / 10][Stage 154:==================================================>     (9 + 1) / 10]                                                                                **********Omitting Tweet**********:vofnhealth
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.83|zaydtariq winter michael
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.84|environment canada continue winter storm storm surge warn call cm risk
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.82|get winter storm watch least lol
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.81|new winter storm head toward east coast via
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.86|poconorecord winter storm warn extend wednesday
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.87|winter storm warn issue february cst february cst nw
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.86|reminder winter storm warn effect much missouri southern illinois include
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.85|winter storm cullman like never see
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.87|update winter storm warn effect cedar louisa muscatine county ia midnight iawx
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.86|winter storm warn monday
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.74|dec email ross pacific portion fence blow wind storm ten
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.86|another long night ahead ground crew work clean campus another winter please say
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.85|wkyc city cleveland prepare winter storm via wkyc
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.8|storm store bread milk egg lord know survive without french
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.84|take long way home snow storm could listen biggigantic winter chill nah
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.85|winter storm watch warn interior essex co middlesex co worcester co inland southern nh
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.81|major winter storm please like share get word storm
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|live dashcam fee storm one cbcnl news van carry zachgoudie storm
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.72|ebola blame rise malaria death west africa conversationedu
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|vofnhealth
+Retrieved 20 new auxiliary tweets.
+1.0|zaydtariq winter michael
+1.0|environment canada continue winter storm storm surge warn call cm risk
+1.0|live dashcam fee storm one cbcnl news van carry zachgoudie storm
+0.0|ebola blame rise malaria death west africa conversationedu
+0.0|vofnhealth
+1.0|winter storm cullman like never see
+1.0|update winter storm warn effect cedar louisa muscatine county ia midnight iawx
+1.0|winter storm warn monday
+1.0|dec email ross pacific portion fence blow wind storm ten
+1.0|another long night ahead ground crew work clean campus another winter please say
+1.0|wkyc city cleveland prepare winter storm via wkyc
+1.0|storm store bread milk egg lord know survive without french
+1.0|take long way home snow storm could listen biggigantic winter chill nah
+1.0|get winter storm watch least lol
+1.0|new winter storm head toward east coast via
+1.0|poconorecord winter storm warn extend wednesday
+1.0|winter storm warn issue february cst february cst nw
+1.0|reminder winter storm warn effect much missouri southern illinois include
+1.0|winter storm watch warn interior essex co middlesex co worcester co inland southern nh
+1.0|major winter storm please like share get word storm
+()**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:vofnhealth
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:vofnhealth
+**********Omitting Tweet**********:vofnhealth
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+
+Aux F1 - Iteration-2=0.71
+Precision=0.81
+Recall=0.53
+Aux F1 - ConfusionMatrix:
+46.0  5.0   
+19.0  21.0  
+
+Best F1 so far - 0.81 at iteration:1
+
+
+[Stage 253:============================================>           (8 + 2) / 10][Stage 253:==================================================>     (9 + 1) / 10]                                                                                **********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.71|pno ebola
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.71|shutdown laboratory sierra leone healthcare worker infect ebola
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.64|watch inspire short film kingsslp team work fight ebola sierra leone
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.15|ebola quarantine likely negative consequence say health official
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.54|algorithm spot ebola outbreak human johnpaul via fastcolabs
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.7|ebola liberian police shoot disperse west point protest death toll hit
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.84|talk take action good safe case point dont
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.73|inkrunirma everyone help ebola donate
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.47|shemarmoore stop ebola source help african get care directrelief link
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.54|real imaginary friend dailypost ebola via moondustwriter
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.66|ebola website owner website score big payday othertech
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.45|ebola path health
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.61|listen triplejhack today hear interview ebola richard record west africa
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.83|pet play open come play inside rvasnow winterstorm
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.87|harrystylesfacts win winterstorm wine killer karate move learn quickly easily take vicious
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.85|noaa image late noaa nw watch warn noreaster
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|poor woodpecker hide snow winterstorm bird snow itstoodamnearly
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.87|sentonywilliams septum announce service change due read winterstorm septum senahw
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|adorable little snow mouse run around pop burrow heavy snow winterstorm
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.86|bostonlogan cancel flight due winterstorm morning report jmonecn
+Retrieved 19 new auxiliary tweets.
+0.0|ebola liberian police shoot disperse west point protest death toll hit
+1.0|talk take action good safe case point dont
+0.0|inkrunirma everyone help ebola donate
+0.0|ebola website owner website score big payday othertech
+0.0|ebola path health
+1.0|noaa image late noaa nw watch warn noreaster
+1.0|poor woodpecker hide snow winterstorm bird snow itstoodamnearly
+0.0|listen triplejhack today hear interview ebola richard record west africa
+1.0|pet play open come play inside rvasnow winterstorm
+1.0|harrystylesfacts win winterstorm wine killer karate move learn quickly easily take vicious
+0.0|watch inspire short film kingsslp team work fight ebola sierra leone
+0.0|algorithm spot ebola outbreak human johnpaul via fastcolabs
+0.0|pno ebola
+0.0|shutdown laboratory sierra leone healthcare worker infect ebola
+1.0|shemarmoore stop ebola source help african get care directrelief link
+0.0|real imaginary friend dailypost ebola via moondustwriter
+1.0|sentonywilliams septum announce service change due read winterstorm septum senahw
+1.0|adorable little snow mouse run around pop burrow heavy snow winterstorm
+1.0|bostonlogan cancel flight due winterstorm morning report jmonecn
+()**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+Adding 19 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-3=0.9
+Precision=0.82
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+42.0  9.0   
+0.0   40.0  
+
+Best F1 so far - 0.9 at iteration:3
+
+
+[Stage 369:============================================>           (8 + 2) / 10][Stage 369:==================================================>     (9 + 1) / 10]                                                                                **********Omitting Tweet**********:swarm intelligence crisis boston quote tom
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.88|duke unc postpone due winterstorm accord mthompsonnr acc
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.82|local roof wind york creoconstruction emergency roof winterstorm
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.65|itg ebola many people head liberia liberia kenyaairways ebola
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.69|ebola ebola patient dr kent brantley recover discharge kent
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.39|nigerian man quarantine ebola hong kong nigerian man quarantine today hong kong
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.63|skynewsbreak petition whitehouse ban flight ebola affect sign
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.07|important change come global health security realm ebola must read
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.58|ebola exist low level intact rainforest emerge destroy bushmeat eat
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.67|ebola ebola still stand new dawn liberia
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.5|support need child lose one parent ebola ebolaresponse
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.7|alertnet philippine repatriate worker west africa ebola
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.85|ebola wsj number people affect ebola could rise next month warn
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.69|ebola train tonight mikeneel thank god always leave home wear condom scenesafe bsi ppe
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.46|fukushima worker kill accident cleanup halt reuters
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.11|touch taboo fukushima daiichi
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.11|fukushima macht sich auf neuen taifun gefasst
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.11|eigenlijk nu pa het grootste gevaar van fukushima voorbij
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.82|wtfukushima joke still fukushima april
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|swarm intelligence crisis boston quote tom
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.33|fukushima dailynews story via arevagroup fascaso tachitotec
+Retrieved 16 new auxiliary tweets.
+1.0|wtfukushima joke still fukushima april
+0.0|swarm intelligence crisis boston quote tom
+0.0|ebola train tonight mikeneel thank god always leave home wear condom scenesafe bsi ppe
+1.0|fukushima worker kill accident cleanup halt reuters
+0.0|alertnet philippine repatriate worker west africa ebola
+1.0|ebola wsj number people affect ebola could rise next month warn
+0.0|itg ebola many people head liberia liberia kenyaairways ebola
+0.0|ebola ebola patient dr kent brantley recover discharge kent
+0.0|nigerian man quarantine ebola hong kong nigerian man quarantine today hong kong
+0.0|skynewsbreak petition whitehouse ban flight ebola affect sign
+0.0|ebola ebola still stand new dawn liberia
+0.0|support need child lose one parent ebola ebolaresponse
+1.0|duke unc postpone due winterstorm accord mthompsonnr acc
+1.0|local roof wind york creoconstruction emergency roof winterstorm
+0.0|important change come global health security realm ebola must read
+0.0|ebola exist low level intact rainforest emerge destroy bushmeat eat
+()**********Omitting Tweet**********:swarm intelligence crisis boston quote tom
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:swarm intelligence crisis boston quote tom
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:swarm intelligence crisis boston quote tom
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+
+Aux F1 - Iteration-4=0.9
+Precision=0.82
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+42.0  9.0   
+0.0   40.0  
+
+Best F1 so far - 0.9 at iteration:3
+
+
+[Stage 470:==================================================>     (9 + 1) / 10]                                                                                **********Omitting Tweet**********:mostdangerous truescale problem face
+**********Omitting Tweet**********:haben den schlimmsten fall
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.12|fukushima year behind schedule fukushima
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.11|msmilkytheclown truth bomb twitterstorm fukushima truthbomb
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.37|expect press release tepco minute claim typhoon totally improve situation fukushima
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.63|nuclear fukushima go make live little long
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.11|fukushima tepco crisi non risolta contestata valutazione fatta da premier abe ad assemblea tutto
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.11|jepang protes kartun fukushima jepang protes kartun di koran perancis yang mengaitkan penunjukan olimpiade
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.06|dr peter kinesa fukushima radiation invest oil news yale bbc
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.56|jammeh tourism year affect ebola scare lgbt rhetoric human right record eu cut aid
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|haben den schlimmsten fall
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.88|need thyroid big deal get benghazi go
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|mostdangerous truescale problem face
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.39|jj abrams direct miss nigerian girl would aboard way fukushima alternate
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.11|rainwater fukushima plant repeatedly leak sea fukushima rainwater contain
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|huffingtonpost japan build ice wall stop nuclear reactor leak sound bite gameofthrones
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.19|japan tell tepco operator fukushima daiichi nuclear power plant activate new water treatment system next month nikkei
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.14|japanese robot work clean debris fukushima daiichi reactor
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.34|epa drop radiation detection equipt ocean foresee possible via fxnscitech
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.04|zutpetje na ruim jaar wanbeleid toegeven en de aarde fukushima hulp buitenland nodig
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.15|hypothyroidmom child thyroid cancer thyroid cancer suspect total find fukushima district summer
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.11|antiatom au fukushima im westlichen pazifik gefunden
+Retrieved 8 new auxiliary tweets.
+0.0|haben den schlimmsten fall
+0.0|huffingtonpost japan build ice wall stop nuclear reactor leak sound bite gameofthrones
+0.0|jammeh tourism year affect ebola scare lgbt rhetoric human right record eu cut aid
+1.0|nuclear fukushima go make live little long
+0.0|zutpetje na ruim jaar wanbeleid toegeven en de aarde fukushima hulp buitenland nodig
+1.0|need thyroid big deal get benghazi go
+0.0|dr peter kinesa fukushima radiation invest oil news yale bbc
+0.0|mostdangerous truescale problem face
+()**********Omitting Tweet**********:mostdangerous truescale problem face
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:haben den schlimmsten fall
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:mostdangerous truescale problem face
+**********Omitting Tweet**********:haben den schlimmsten fall
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:haben den schlimmsten fall
+**********Omitting Tweet**********:mostdangerous truescale problem face
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+
+Aux F1 - Iteration-5=0.9
+Precision=0.82
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+42.0  9.0   
+0.0   40.0  
+
+Best F1 so far - 0.9 at iteration:3
+
+
+[Stage 575:============================================>           (8 + 2) / 10][Stage 575:==================================================>     (9 + 1) / 10]                                                                                **********Omitting Tweet**********:xpertwirschaft doubt government would anything right solve anything
+**********Omitting Tweet**********:interview japanese novelist write
+**********Omitting Tweet**********:ff round upd usual suspect politibunny wtfukushima scoopit
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.8|sensimeliajah think go away fukushima wont go away aint thing make go away wakeup
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.11|fukushima fallout
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.11|prettyweirddude flower fukushima
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.07|andrew late fukushima disaster preventable study suggest exercise
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.04|encuentran margarita en alrededores de fukushima tecnologia
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.04|wtfukushima fukushima radiation map pacific could bolster climate science
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|ff round upd usual suspect politibunny wtfukushima scoopit
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.43|blog post increase cancer birth defect fukushima say un report
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.03|contender tokyo paula hancock report tokyo question fukushima nuclear
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.11|kebocoran radioaktif kembali terjadi di pltn fukushima kebocoran radioaktif kembali terdeteksi di
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.33|deform daisy fukushima via enjoy
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|interview japanese novelist write
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.11|jepang protes kartun fukushima jepang protes kartun di koran perancis yang mengaitkan penunjukan olimpiade
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.41|point kaplan markov robot ready tackle disaster machine replace dirty tough job milkeninstitute
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.43|rabbit hole popeye mid est fukushima update curb police militarization
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.16|rahul gandhi deja reza charles inworld conspiracy fukushima expose disinformers follow realdatill news
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.11|atomic energy team visit fukushima power plant international atomic energy agency team begin
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|xpertwirschaft doubt government would anything right solve anything
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.11|radioactive ocean impact fukushima pacific
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.03|luzsmellado ante de eclipsarme participo que rosell un autentico fukushima ni en caso de catastrofe radioactiva
+Retrieved 12 new auxiliary tweets.
+0.0|contender tokyo paula hancock report tokyo question fukushima nuclear
+0.0|xpertwirschaft doubt government would anything right solve anything
+0.0|luzsmellado ante de eclipsarme participo que rosell un autentico fukushima ni en caso de catastrofe radioactiva
+0.0|andrew late fukushima disaster preventable study suggest exercise
+0.0|encuentran margarita en alrededores de fukushima tecnologia
+0.0|wtfukushima fukushima radiation map pacific could bolster climate science
+1.0|sensimeliajah think go away fukushima wont go away aint thing make go away wakeup
+0.0|interview japanese novelist write
+1.0|point kaplan markov robot ready tackle disaster machine replace dirty tough job milkeninstitute
+0.0|ff round upd usual suspect politibunny wtfukushima scoopit
+1.0|blog post increase cancer birth defect fukushima say un report
+1.0|rabbit hole popeye mid est fukushima update curb police militarization
+()**********Omitting Tweet**********:ff round upd usual suspect politibunny wtfukushima scoopit
+**********Omitting Tweet**********:interview japanese novelist write
+**********Omitting Tweet**********:xpertwirschaft doubt government would anything right solve anything
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:interview japanese novelist write
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:ff round upd usual suspect politibunny wtfukushima scoopit
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:xpertwirschaft doubt government would anything right solve anything
+**********Omitting Tweet**********:interview japanese novelist write
+**********Omitting Tweet**********:ff round upd usual suspect politibunny wtfukushima scoopit
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:xpertwirschaft doubt government would anything right solve anything
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+
+Aux F1 - Iteration-6=0.81
+Precision=0.7
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+34.0  17.0  
+0.0   40.0  
+
+Best F1 so far - 0.9 at iteration:3
+
+
+[Stage 692:============================================>           (8 + 2) / 10][Stage 692:==================================================>     (9 + 1) / 10]                                                                                **********Omitting Tweet**********:finish second paper senior food fourpages thirtyminutes endingseniorfoodsright
+**********Omitting Tweet**********:nomypti roznamapatwarkhana roznamapatwarkhana roznamapatwarkhana roznamapatwarkhana
+**********Omitting Tweet**********:wait even offensive lmao
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.2|lucy occupy read share fukushima nuclear
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.24|fukushima industry mascot cause stir name
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.68|martin use high shit show
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.87|peringati tahun tsunami jepang adakan konser amal maret yang lalu gempa dan tsunami
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.87|dikasi tsunami seneng mpo retnohayuning akhirnya priok hujan jugaa
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.87|museum tsunami aceh aceh
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|wait even offensive lmao
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|nomypti roznamapatwarkhana roznamapatwarkhana roznamapatwarkhana roznamapatwarkhana
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.84|kenapa byk sgt eh jerawat tetiba naik nak tsunami hihi kelakar nya good night
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.74|cfr japan tsunami fukushima earthquake nazism zionism occupy nwo
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.87|misskrisbenten actual tsunami outside school
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.85|tsunami study find southern california risk
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.74|miguelcader para conocimiento general se descarta alerta de tsunami para costa argentina por terremoto en antartida
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.87|tankengliang najibrazak kesian india dan melayu yg vote depa nak dilabel tsunami hahaha
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.33|shehzadsiddiqui arjumand azhar right ary news
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.87|robertliefeld marvel go new look seriously duck cuz tsunami crush
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.86|niconicolettexx hot video preview niconicolettexx manyvids camgirl manyvids
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|finish second paper senior food fourpages thirtyminutes endingseniorfoodsright
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|state rank obesity
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.88|focus obesity school may encourage eat lead doctor warn
+Retrieved 17 new auxiliary tweets.
+0.0|finish second paper senior food fourpages thirtyminutes endingseniorfoodsright
+1.0|state rank obesity
+1.0|focus obesity school may encourage eat lead doctor warn
+1.0|robertliefeld marvel go new look seriously duck cuz tsunami crush
+1.0|niconicolettexx hot video preview niconicolettexx manyvids camgirl manyvids
+1.0|misskrisbenten actual tsunami outside school
+1.0|tsunami study find southern california risk
+1.0|kenapa byk sgt eh jerawat tetiba naik nak tsunami hihi kelakar nya good night
+1.0|cfr japan tsunami fukushima earthquake nazism zionism occupy nwo
+1.0|miguelcader para conocimiento general se descarta alerta de tsunami para costa argentina por terremoto en antartida
+1.0|tankengliang najibrazak kesian india dan melayu yg vote depa nak dilabel tsunami hahaha
+0.0|martin use high shit show
+1.0|peringati tahun tsunami jepang adakan konser amal maret yang lalu gempa dan tsunami
+0.0|wait even offensive lmao
+0.0|nomypti roznamapatwarkhana roznamapatwarkhana roznamapatwarkhana roznamapatwarkhana
+1.0|dikasi tsunami seneng mpo retnohayuning akhirnya priok hujan jugaa
+1.0|museum tsunami aceh aceh
+()**********Omitting Tweet**********:wait even offensive lmao
+**********Omitting Tweet**********:nomypti roznamapatwarkhana roznamapatwarkhana roznamapatwarkhana roznamapatwarkhana
+**********Omitting Tweet**********:finish second paper senior food fourpages thirtyminutes endingseniorfoodsright
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:wait even offensive lmao
+**********Omitting Tweet**********:nomypti roznamapatwarkhana roznamapatwarkhana roznamapatwarkhana roznamapatwarkhana
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:finish second paper senior food fourpages thirtyminutes endingseniorfoodsright
+**********Omitting Tweet**********:wait even offensive lmao
+**********Omitting Tweet**********:nomypti roznamapatwarkhana roznamapatwarkhana roznamapatwarkhana roznamapatwarkhana
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:finish second paper senior food fourpages thirtyminutes endingseniorfoodsright
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+
+Aux F1 - Iteration-7=0.81
+Precision=0.81
+Recall=0.75
+Aux F1 - ConfusionMatrix:
+44.0  7.0   
+10.0  30.0  
+
+Best F1 so far - 0.9 at iteration:3
+
+
+[Stage 787:============================================>           (8 + 2) / 10][Stage 787:==================================================>     (9 + 1) / 10]                                                                                **********Omitting Tweet**********:lose weight teal episode weight loss
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|drernieward national pet obesity survey result dog cat overweight obese accord
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.8|meet old friend suddenly realise go like time obesity
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.43|ayurvedicdiet plan personalise consult health problem obesity weight reduction diabetes arthritis stress
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.67|bad appetizer america health obesity nutrionalfacts
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.74|zestnutrition one disagree decision ama decision without
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.87|twinkie come know great country would anything jeopardize obesity
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.74|avertadisaster several healthy food drive come wale childhood obesity rat avertadisaster
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|lose weight teal episode weight loss
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.72|lenasiberian fat city obesity nyc nanny
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|googlenews opinion obesity market failure lithuaniatribune lithuaniatribune opinion obesity
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|weight loss program obesity chronic disease
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.86|average child consume calorie day
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.73|pretty sure ive eat obesity today alone
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|competitive food beverage policy find reduce childhood obesity policy adopt regulate
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|theobesitytrap belviq target fat mass spar lean diet obesity
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|kansa city home unironic camo hat dead tree obesity slow painful conversation stranger distant relative
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|damn childhood obesity ruin snack remember size
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.81|jefferson tell america danger mo say obesity great stick
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.49|walk work cut risk obesity
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.82|seriously every person see pic two right indiana obesity
+Retrieved 20 new auxiliary tweets.
+1.0|twinkie come know great country would anything jeopardize obesity
+1.0|avertadisaster several healthy food drive come wale childhood obesity rat avertadisaster
+1.0|pretty sure ive eat obesity today alone
+1.0|competitive food beverage policy find reduce childhood obesity policy adopt regulate
+1.0|theobesitytrap belviq target fat mass spar lean diet obesity
+0.0|lose weight teal episode weight loss
+1.0|lenasiberian fat city obesity nyc nanny
+1.0|googlenews opinion obesity market failure lithuaniatribune lithuaniatribune opinion obesity
+1.0|weight loss program obesity chronic disease
+1.0|average child consume calorie day
+1.0|drernieward national pet obesity survey result dog cat overweight obese accord
+1.0|meet old friend suddenly realise go like time obesity
+1.0|jefferson tell america danger mo say obesity great stick
+1.0|walk work cut risk obesity
+1.0|seriously every person see pic two right indiana obesity
+1.0|ayurvedicdiet plan personalise consult health problem obesity weight reduction diabetes arthritis stress
+1.0|bad appetizer america health obesity nutrionalfacts
+1.0|zestnutrition one disagree decision ama decision without
+1.0|kansa city home unironic camo hat dead tree obesity slow painful conversation stranger distant relative
+1.0|damn childhood obesity ruin snack remember size
+()**********Omitting Tweet**********:lose weight teal episode weight loss
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:lose weight teal episode weight loss
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:lose weight teal episode weight loss
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+
+Aux F1 - Iteration-8=0.87
+Precision=0.87
+Recall=0.83
+Aux F1 - ConfusionMatrix:
+46.0  5.0   
+7.0   33.0  
+
+Best F1 so far - 0.9 at iteration:3
+
+
+[Stage 890:============================================>           (8 + 2) / 10][Stage 890:==================================================>     (9 + 1) / 10]                                                                                **********Omitting Tweet**********:lack sleep increase risk heart disease diabetes
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.44|watch shepard smith compare obesity climate denial
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.43|nyc fast food worker oh shit obesity rate
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.51|cut food stamp hamper obesity fight via healthnewsfl
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.24|weigh obesity fight hartford business
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.84|peanut butter bacon milkshake please take moment silence pray obesity
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|deal childhood obesity
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|lack sleep increase risk heart disease diabetes
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|organicbabygift obesogens avoid chemical link child obesity
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.6|obesity poverty pride really make southern football south
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|toendobesity chelseaclinton offer tip battle childhood obesity
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.67|obesity link problem pregnancy pregnancyhealthproblems pregnancydiet via
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|lyrapro support ttmc support mio support teenage obesity
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.7|act love blog
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.47|nyphospital treat obesity need public health approach policy environmental change abcdrbchat
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.64|give antibiotic baby may lead obesity researcher claim mouse give antibiotic first
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.63|last week post article sit time kill seem
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|prioritize weight cost obesity disease accompany cost government
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|oldpicsarchive yet accord doctor obesity exist
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.68|view obesity report today
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.83|stevestfler son die due childhood fat kid eat
+Retrieved 19 new auxiliary tweets.
+1.0|cut food stamp hamper obesity fight via healthnewsfl
+1.0|peanut butter bacon milkshake please take moment silence pray obesity
+1.0|oldpicsarchive yet accord doctor obesity exist
+1.0|view obesity report today
+1.0|stevestfler son die due childhood fat kid eat
+1.0|last week post article sit time kill seem
+1.0|prioritize weight cost obesity disease accompany cost government
+1.0|watch shepard smith compare obesity climate denial
+1.0|nyc fast food worker oh shit obesity rate
+1.0|obesity poverty pride really make southern football south
+1.0|toendobesity chelseaclinton offer tip battle childhood obesity
+1.0|deal childhood obesity
+0.0|lack sleep increase risk heart disease diabetes
+1.0|organicbabygift obesogens avoid chemical link child obesity
+1.0|obesity link problem pregnancy pregnancyhealthproblems pregnancydiet via
+1.0|lyrapro support ttmc support mio support teenage obesity
+1.0|act love blog
+1.0|nyphospital treat obesity need public health approach policy environmental change abcdrbchat
+1.0|give antibiotic baby may lead obesity researcher claim mouse give antibiotic first
+()**********Omitting Tweet**********:lack sleep increase risk heart disease diabetes
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:lack sleep increase risk heart disease diabetes
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:lack sleep increase risk heart disease diabetes
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+
+Aux F1 - Iteration-9=0.88
+Precision=0.85
+Recall=0.88
+Aux F1 - ConfusionMatrix:
+45.0  6.0   
+5.0   35.0  
+
+Best F1 so far - 0.9 at iteration:3
+
+
+[Stage 997:============================================>           (8 + 2) / 10][Stage 997:==================================================>     (9 + 1) / 10]                                                                                **********Omitting Tweet**********:dig mission hill tho
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.52|baby owl sleep like study could help researcher understand function rem sleep obesity
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.12|twloha second big killer develop bet even mention disorder
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|therapeutic bacteria prevent obesity mouse study find
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|inflammation link obesity gum disease accord literature review journal general
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.74|live obesity world
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|hope alexis texas girl finally get obesity surgery
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.45|obesity overweight rat jump worldwide report find
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.88|study nyc good la cut obesity usa today nbc new yorkstudy nyc good la
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.66|eat much junk food cause
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|texas flood lagu yang sering kamu dengar
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|dig mission hill tho
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.83|alert acadia parish kplc flood warn issue january cst
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.75|georgian capital flood kill zoo animal escape several shoot dead georgia
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|spam simplysharita imma flood yall tl drake lyric fall asleep
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|ty sa flood bhest
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.84|news hard believe em may due flood fund
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.81|tbeckett nw flash flood warn henderson buncombe flood occur location avlnews hvlnews
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|open dey flood gate heaven let
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|texas flood show fuel rock club cardiff wls concert
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.79|problem email administration downtime bring flood help call follow
+Retrieved 19 new auxiliary tweets.
+1.0|georgian capital flood kill zoo animal escape several shoot dead georgia
+1.0|spam simplysharita imma flood yall tl drake lyric fall asleep
+1.0|ty sa flood bhest
+1.0|baby owl sleep like study could help researcher understand function rem sleep obesity
+1.0|therapeutic bacteria prevent obesity mouse study find
+1.0|open dey flood gate heaven let
+1.0|texas flood show fuel rock club cardiff wls concert
+1.0|problem email administration downtime bring flood help call follow
+1.0|inflammation link obesity gum disease accord literature review journal general
+1.0|live obesity world
+0.0|dig mission hill tho
+1.0|alert acadia parish kplc flood warn issue january cst
+1.0|hope alexis texas girl finally get obesity surgery
+1.0|obesity overweight rat jump worldwide report find
+1.0|study nyc good la cut obesity usa today nbc new yorkstudy nyc good la
+1.0|news hard believe em may due flood fund
+1.0|tbeckett nw flash flood warn henderson buncombe flood occur location avlnews hvlnews
+1.0|eat much junk food cause
+1.0|texas flood lagu yang sering kamu dengar
+()**********Omitting Tweet**********:dig mission hill tho
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:dig mission hill tho
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:dig mission hill tho
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+
+Aux F1 - Iteration-10=0.89
+Precision=0.8
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+41.0  10.0  
+0.0   40.0  
+
+Best F1 so far - 0.9 at iteration:3
+
+
+[Stage 1100:============================================>          (8 + 2) / 10][Stage 1100:=================================================>     (9 + 1) / 10]                                                                                **********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.71|flood yes know stop worry
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|house fire natomas homeowner find flood law sacramento
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|start flood tl
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.6|report healthy chesapeake bay worth billion year virginia
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.73|missouri valley flood victim ass damage
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.74|final snowfall flood fear late band wintry weather begin heavy
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.82|new areal flood warn pm mdt weld read
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|flood yung text ko sakanya tawag pa siya isang text
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.86|storm tree flood road across chicago area
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.79|national weather service issue flash flood warn lee hancock henderson mcdonough
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|thousand flood camp central african republic
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|dis lil cool bitch im fuckin ona marble flood
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|open flood gate heavan let
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.85|actually ok lately usually always flood thought love go wrong relationship
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|brunohlpires flood
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|westgate mfg fl pl flood flood light westgate mfg pl flood light
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|affilirovannyj market flood house business cash six easy step ebook
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|ibnlive assam flood every assam
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.8|flood advisory continue follow river sw low sycamore creek holt affect
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.85|lupefiasco talk bout flood
+Retrieved 20 new auxiliary tweets.
+1.0|flood yung text ko sakanya tawag pa siya isang text
+1.0|storm tree flood road across chicago area
+1.0|national weather service issue flash flood warn lee hancock henderson mcdonough
+1.0|thousand flood camp central african republic
+1.0|dis lil cool bitch im fuckin ona marble flood
+1.0|final snowfall flood fear late band wintry weather begin heavy
+1.0|new areal flood warn pm mdt weld read
+1.0|ibnlive assam flood every assam
+1.0|flood advisory continue follow river sw low sycamore creek holt affect
+1.0|lupefiasco talk bout flood
+1.0|westgate mfg fl pl flood flood light westgate mfg pl flood light
+1.0|affilirovannyj market flood house business cash six easy step ebook
+1.0|start flood tl
+1.0|report healthy chesapeake bay worth billion year virginia
+1.0|missouri valley flood victim ass damage
+1.0|flood yes know stop worry
+1.0|house fire natomas homeowner find flood law sacramento
+1.0|open flood gate heavan let
+1.0|actually ok lately usually always flood thought love go wrong relationship
+1.0|brunohlpires flood
+()**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+
+Aux F1 - Iteration-11=0.9
+Precision=0.82
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+42.0  9.0   
+0.0   40.0  
+
+Best F1 so far - 0.9 at iteration:3
+
+
+[Stage 1201:============================================>          (8 + 2) / 10][Stage 1201:=================================================>     (9 + 1) / 10]                                                                                **********Omitting Tweet**********:support biafra right save country stress refugee
+**********Omitting Tweet**********:wagas sa wechat hahahahahhahaaha
+**********Omitting Tweet**********:monaeltahawy female journalist savagely attack cairo egypt
+**********Omitting Tweet**********:tell baby shiiiieeet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.37|sandy new threat soar flood insurance via wsj
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|paniconaband flood msm
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.82|flash flood warn phone
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|wagas sa wechat hahahahahhahaaha
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.82|flash flood warn issue june edt june edt nw state college
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|support biafra right save country stress refugee
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.63|sumerian king list span year great flood
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|join worry flood
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.77|oomf use flood da iswearrrr
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|tell baby shiiiieeet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.86|bad news bird democracy gm crop flood eu unless meps vote via
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|flood aid spend slow labour
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|flood movie haha forget
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.82|road full idiot oahu flood advisory issue honolulupolice
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.8|lafuzzynoir come blood
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.71|tell secret give friend let good time flood
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|open flood gate pat
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|tolt river near carnation ft jan flood phase
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.27|match report tunis al ahly cafchampionsleague football soccer africa
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|monaeltahawy female journalist savagely attack cairo egypt
+Retrieved 19 new auxiliary tweets.
+0.0|tell baby shiiiieeet
+1.0|bad news bird democracy gm crop flood eu unless meps vote via
+1.0|flash flood warn phone
+0.0|wagas sa wechat hahahahahhahaaha
+0.0|sandy new threat soar flood insurance via wsj
+1.0|paniconaband flood msm
+1.0|lafuzzynoir come blood
+1.0|tell secret give friend let good time flood
+1.0|join worry flood
+1.0|oomf use flood da iswearrrr
+1.0|open flood gate pat
+1.0|tolt river near carnation ft jan flood phase
+0.0|monaeltahawy female journalist savagely attack cairo egypt
+1.0|flood aid spend slow labour
+1.0|flood movie haha forget
+1.0|road full idiot oahu flood advisory issue honolulupolice
+1.0|flash flood warn issue june edt june edt nw state college
+0.0|support biafra right save country stress refugee
+1.0|sumerian king list span year great flood
+()**********Omitting Tweet**********:support biafra right save country stress refugee
+**********Omitting Tweet**********:tell baby shiiiieeet
+**********Omitting Tweet**********:wagas sa wechat hahahahahhahaaha
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:monaeltahawy female journalist savagely attack cairo egypt
+**********Omitting Tweet**********:tell baby shiiiieeet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:wagas sa wechat hahahahahhahaaha
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:support biafra right save country stress refugee
+**********Omitting Tweet**********:monaeltahawy female journalist savagely attack cairo egypt
+**********Omitting Tweet**********:wagas sa wechat hahahahahhahaaha
+**********Omitting Tweet**********:tell baby shiiiieeet
+**********Omitting Tweet**********:support biafra right save country stress refugee
+**********Omitting Tweet**********:monaeltahawy female journalist savagely attack cairo egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+
+Aux F1 - Iteration-12=0.88
+Precision=0.78
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+40.0  11.0  
+0.0   40.0  
+
+Best F1 so far - 0.9 at iteration:3
+
+
+[Stage 1306:======================================>                (7 + 3) / 10][Stage 1306:============================================>          (8 + 2) / 10][Stage 1306:=================================================>     (9 + 1) / 10]**********Omitting Tweet**********:proud egyptian fb tahrir egypt
+**********Omitting Tweet**********:per ogni sorpresina di oggi dobbiamo sempre ringraziare tantawi per quella notte tragica cui sciolse il parlamento per egypt
+                                                                                **********Omitting Tweet**********:ibrahim eissa host hamdeen sabbahi tonight al qahera wal na egypt
+**********Omitting Tweet**********:egypt
+**********Omitting Tweet**********:egypt alien
+**********Omitting Tweet**********:another question head referendum committee hour leave round egypt
+**********Omitting Tweet**********:egypt salafists order coptic church land egypt salafist copt
+**********Omitting Tweet**********:egypt protest morsi power grab first flower arabspring shalom cohen
+**********Omitting Tweet**********:translate egypt clash alexandria phase referendum egyptian
+**********Omitting Tweet**********:ianinegypt scene outside presidential egypt
+**********Omitting Tweet**********:egypt islamist moron proudly present item threaten book christ cartridge
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|egypt alien
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|another question head referendum committee hour leave round egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|proud egyptian fb tahrir egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|per ogni sorpresina di oggi dobbiamo sempre ringraziare tantawi per quella notte tragica cui sciolse il parlamento per egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.73|photography update anti muslim brotherhood protest egypt mb ikhwan morsi
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.88|egypt fat black girl get spank big cock lol
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|ianinegypt scene outside presidential egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|egypt salafists order coptic church land egypt salafist copt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|translate egypt clash alexandria phase referendum egyptian
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|egypt protest morsi power grab first flower arabspring shalom cohen
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.72|eyeoncambodia egypt right obama egypt murder violation human right eh
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|brotherhood become psychiatrist via ahramonline morsi islamist salafists egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|miss summer weather sky instaweather instaweatherpro outdoors nature el dokki egypt day autumn
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|ibrahim eissa host hamdeen sabbahi tonight al qahera wal na egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.82|say gaddafi take state full tahrir egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.8|tt nilenewschannel greek president israel take gas oil resource
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.7|love hate egyptian
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|egypt islamist moron proudly present item threaten book christ cartridge
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|vote period extend due high turnout say sec lack egypt
+Retrieved 20 new auxiliary tweets.
+0.0|egypt
+0.0|egypt salafists order coptic church land egypt salafist copt
+0.0|translate egypt clash alexandria phase referendum egyptian
+0.0|egypt alien
+0.0|another question head referendum committee hour leave round egypt
+1.0|say gaddafi take state full tahrir egypt
+1.0|tt nilenewschannel greek president israel take gas oil resource
+1.0|brotherhood become psychiatrist via ahramonline morsi islamist salafists egypt
+1.0|miss summer weather sky instaweather instaweatherpro outdoors nature el dokki egypt day autumn
+0.0|ibrahim eissa host hamdeen sabbahi tonight al qahera wal na egypt
+0.0|egypt protest morsi power grab first flower arabspring shalom cohen
+0.0|eyeoncambodia egypt right obama egypt murder violation human right eh
+1.0|egypt fat black girl get spank big cock lol
+0.0|ianinegypt scene outside presidential egypt
+1.0|love hate egyptian
+0.0|egypt islamist moron proudly present item threaten book christ cartridge
+1.0|vote period extend due high turnout say sec lack egypt
+0.0|proud egyptian fb tahrir egypt
+0.0|per ogni sorpresina di oggi dobbiamo sempre ringraziare tantawi per quella notte tragica cui sciolse il parlamento per egypt
+1.0|photography update anti muslim brotherhood protest egypt mb ikhwan morsi
+()**********Omitting Tweet**********:egypt
+**********Omitting Tweet**********:egypt salafists order coptic church land egypt salafist copt
+**********Omitting Tweet**********:translate egypt clash alexandria phase referendum egyptian
+**********Omitting Tweet**********:egypt protest morsi power grab first flower arabspring shalom cohen
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:ianinegypt scene outside presidential egypt
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:ibrahim eissa host hamdeen sabbahi tonight al qahera wal na egypt
+**********Omitting Tweet**********:egypt alien
+**********Omitting Tweet**********:another question head referendum committee hour leave round egypt
+**********Omitting Tweet**********:egypt islamist moron proudly present item threaten book christ cartridge
+**********Omitting Tweet**********:proud egyptian fb tahrir egypt
+**********Omitting Tweet**********:per ogni sorpresina di oggi dobbiamo sempre ringraziare tantawi per quella notte tragica cui sciolse il parlamento per egypt
+**********Omitting Tweet**********:egypt
+**********Omitting Tweet**********:egypt salafists order coptic church land egypt salafist copt
+**********Omitting Tweet**********:ibrahim eissa host hamdeen sabbahi tonight al qahera wal na egypt
+**********Omitting Tweet**********:translate egypt clash alexandria phase referendum egyptian
+**********Omitting Tweet**********:egypt protest morsi power grab first flower arabspring shalom cohen
+**********Omitting Tweet**********:proud egyptian fb tahrir egypt
+**********Omitting Tweet**********:per ogni sorpresina di oggi dobbiamo sempre ringraziare tantawi per quella notte tragica cui sciolse il parlamento per egypt
+**********Omitting Tweet**********:ianinegypt scene outside presidential egypt
+**********Omitting Tweet**********:egypt alien
+**********Omitting Tweet**********:another question head referendum committee hour leave round egypt
+**********Omitting Tweet**********:egypt islamist moron proudly present item threaten book christ cartridge
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:egypt
+**********Omitting Tweet**********:egypt salafists order coptic church land egypt salafist copt
+**********Omitting Tweet**********:translate egypt clash alexandria phase referendum egyptian
+**********Omitting Tweet**********:ibrahim eissa host hamdeen sabbahi tonight al qahera wal na egypt
+**********Omitting Tweet**********:egypt protest morsi power grab first flower arabspring shalom cohen
+**********Omitting Tweet**********:egypt alien
+**********Omitting Tweet**********:another question head referendum committee hour leave round egypt
+**********Omitting Tweet**********:ianinegypt scene outside presidential egypt
+**********Omitting Tweet**********:proud egyptian fb tahrir egypt
+**********Omitting Tweet**********:per ogni sorpresina di oggi dobbiamo sempre ringraziare tantawi per quella notte tragica cui sciolse il parlamento per egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:egypt islamist moron proudly present item threaten book christ cartridge
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+
+Aux F1 - Iteration-13=0.89
+Precision=0.8
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+41.0  10.0  
+0.0   40.0  
+
+Best F1 so far - 0.9 at iteration:3
+
+
+[Stage 1403:============================================>          (8 + 2) / 10][Stage 1403:=================================================>     (9 + 1) / 10]                                                                                **********Omitting Tweet**********:muslim hq set ablaze office egypt ikhwan
+**********Omitting Tweet**********:egypt draw
+**********Omitting Tweet**********:antonywahba protest firework laser egypt palace
+**********Omitting Tweet**********:mt koertdebeuf baradei cnn ready national first postpone dialogue damoclese egypt
+**********Omitting Tweet**********:egypt semi retard
+**********Omitting Tweet**********:egypt little reason celebrate south first birthday
+**********Omitting Tweet**********:ankh british museum hieroglyphic egypt ankh
+**********Omitting Tweet**********:islamist egypt morsi tahrir auc
+**********Omitting Tweet**********:safarkhan art egypt november exhibition wael darwish pm till november
+**********Omitting Tweet**********:egypt footage wow nostalgia
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.8|shalandawilkers flagman egypt camel israel give terrorist
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|mt koertdebeuf baradei cnn ready national first postpone dialogue damoclese egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|egypt draw
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.68|egypt masr april leader quit constituent assembly sinai
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|antonywahba protest firework laser egypt palace
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|safarkhan art egypt november exhibition wael darwish pm till november
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|egypt footage wow nostalgia
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.7|egypt love much hahaha
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|egypt semi retard
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|egypt little reason celebrate south first birthday
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|muslim hq set ablaze office egypt ikhwan
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.87|morsy talk hand create presidential palace civil war egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|ankh british museum hieroglyphic egypt ankh
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|islamist egypt morsi tahrir auc
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.77|destruction heritage sit syria raise question cost democracy occupy ows occupywallstreet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.09|nyc forecast overnight partly low temp occupywallstreet tpp
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.29|nyc forecast afternoon high temp occupywallstreet tpp sgp
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.65|link city underwater year occupy ows occupywallstreet occupyhq grassroots usa
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|vietnamese lawyer face obstruction ahead trial occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.77|andrew curtin photo selfie occupy ows occupywallstreet occupyhq grassroots
+Retrieved 20 new auxiliary tweets.
+1.0|link city underwater year occupy ows occupywallstreet occupyhq grassroots usa
+1.0|vietnamese lawyer face obstruction ahead trial occupy ows occupywallstreet occupyhq grassroots
+1.0|andrew curtin photo selfie occupy ows occupywallstreet occupyhq grassroots
+0.0|nyc forecast overnight partly low temp occupywallstreet tpp
+0.0|nyc forecast afternoon high temp occupywallstreet tpp sgp
+0.0|ankh british museum hieroglyphic egypt ankh
+0.0|islamist egypt morsi tahrir auc
+1.0|destruction heritage sit syria raise question cost democracy occupy ows occupywallstreet
+0.0|muslim hq set ablaze office egypt ikhwan
+1.0|morsy talk hand create presidential palace civil war egypt
+1.0|egypt love much hahaha
+0.0|egypt semi retard
+0.0|egypt little reason celebrate south first birthday
+0.0|safarkhan art egypt november exhibition wael darwish pm till november
+0.0|egypt footage wow nostalgia
+1.0|shalandawilkers flagman egypt camel israel give terrorist
+0.0|mt koertdebeuf baradei cnn ready national first postpone dialogue damoclese egypt
+0.0|egypt draw
+1.0|egypt masr april leader quit constituent assembly sinai
+0.0|antonywahba protest firework laser egypt palace
+()**********Omitting Tweet**********:mt koertdebeuf baradei cnn ready national first postpone dialogue damoclese egypt
+**********Omitting Tweet**********:muslim hq set ablaze office egypt ikhwan
+**********Omitting Tweet**********:egypt semi retard
+**********Omitting Tweet**********:egypt little reason celebrate south first birthday
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:ankh british museum hieroglyphic egypt ankh
+**********Omitting Tweet**********:safarkhan art egypt november exhibition wael darwish pm till november
+**********Omitting Tweet**********:egypt footage wow nostalgia
+**********Omitting Tweet**********:islamist egypt morsi tahrir auc
+**********Omitting Tweet**********:egypt draw
+**********Omitting Tweet**********:antonywahba protest firework laser egypt palace
+**********Omitting Tweet**********:egypt draw
+**********Omitting Tweet**********:ankh british museum hieroglyphic egypt ankh
+**********Omitting Tweet**********:islamist egypt morsi tahrir auc
+**********Omitting Tweet**********:antonywahba protest firework laser egypt palace
+**********Omitting Tweet**********:muslim hq set ablaze office egypt ikhwan
+**********Omitting Tweet**********:mt koertdebeuf baradei cnn ready national first postpone dialogue damoclese egypt
+**********Omitting Tweet**********:safarkhan art egypt november exhibition wael darwish pm till november
+**********Omitting Tweet**********:egypt footage wow nostalgia
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:egypt semi retard
+**********Omitting Tweet**********:egypt little reason celebrate south first birthday
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:egypt draw
+**********Omitting Tweet**********:antonywahba protest firework laser egypt palace
+**********Omitting Tweet**********:ankh british museum hieroglyphic egypt ankh
+**********Omitting Tweet**********:muslim hq set ablaze office egypt ikhwan
+**********Omitting Tweet**********:islamist egypt morsi tahrir auc
+**********Omitting Tweet**********:safarkhan art egypt november exhibition wael darwish pm till november
+**********Omitting Tweet**********:egypt footage wow nostalgia
+**********Omitting Tweet**********:mt koertdebeuf baradei cnn ready national first postpone dialogue damoclese egypt
+**********Omitting Tweet**********:egypt semi retard
+**********Omitting Tweet**********:egypt little reason celebrate south first birthday
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+
+Aux F1 - Iteration-14=0.87
+Precision=0.77
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+39.0  12.0  
+0.0   40.0  
+
+Best F1 so far - 0.9 at iteration:3
+
+
+[Stage 1516:============================================>          (8 + 2) / 10][Stage 1516:=================================================>     (9 + 1) / 10]                                                                                **********Omitting Tweet**********:study economic inequality lead downfall civilization
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.04|nyc forecast wed night low temp occupywallstreet glennbeck tcot
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|alex schaefer burn bank occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|study economic inequality lead downfall civilization
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|dome special slideshow occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.75|cme break occupy ows occupywallstreet occupyhq
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.68|nyc forecast mon high temp get smart occupywallstreet sgp
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.86|preview death bin lade revisted nightly news video occupy ows occupywallstreet occupyhq
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|irs rule bitcoin property subject capital gain tax occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|confession juiced journalist occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.79|ows kitchen nostalgia submit
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.04|nyc forecast sit night partly low temp occupywallstreet tcot
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.04|nyc forecast fri night low temp occupywallstreet topprog glennbeck
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|israel gaza big picture occupy ows occupywallstreet occupyhq grassroots usa canada europe
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.04|nyc forecast sun night mostly low temp occupywallstreet tpp glennbeck
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|secretive turkish movement buy influence occupy ows occupywallstreet occupyhq grassroots usa
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.04|nyc forecast sit night mostly low temp occupywallstreet tcot tcot
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.29|nyc forecast afternoon high temp occupywallstreet tpp
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.81|buy custom nyc street sign may suggest
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.73|jesse jackson call symbolic protest clipper player occupy ows occupywallstreet occupyhq
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.82|brussels conference un stress need approach stabilize mali occupy ows occupywallstreet
+Retrieved 20 new auxiliary tweets.
+0.0|nyc forecast sit night partly low temp occupywallstreet tcot
+0.0|nyc forecast fri night low temp occupywallstreet topprog glennbeck
+1.0|buy custom nyc street sign may suggest
+1.0|jesse jackson call symbolic protest clipper player occupy ows occupywallstreet occupyhq
+1.0|brussels conference un stress need approach stabilize mali occupy ows occupywallstreet
+0.0|nyc forecast wed night low temp occupywallstreet glennbeck tcot
+1.0|alex schaefer burn bank occupy ows occupywallstreet occupyhq grassroots
+1.0|israel gaza big picture occupy ows occupywallstreet occupyhq grassroots usa canada europe
+0.0|nyc forecast sun night mostly low temp occupywallstreet tpp glennbeck
+1.0|secretive turkish movement buy influence occupy ows occupywallstreet occupyhq grassroots usa
+0.0|study economic inequality lead downfall civilization
+1.0|dome special slideshow occupy ows occupywallstreet occupyhq grassroots
+1.0|cme break occupy ows occupywallstreet occupyhq
+1.0|irs rule bitcoin property subject capital gain tax occupy ows occupywallstreet occupyhq grassroots
+1.0|confession juiced journalist occupy ows occupywallstreet occupyhq grassroots
+1.0|ows kitchen nostalgia submit
+0.0|nyc forecast sit night mostly low temp occupywallstreet tcot tcot
+0.0|nyc forecast afternoon high temp occupywallstreet tpp
+1.0|nyc forecast mon high temp get smart occupywallstreet sgp
+1.0|preview death bin lade revisted nightly news video occupy ows occupywallstreet occupyhq
+()**********Omitting Tweet**********:study economic inequality lead downfall civilization
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:study economic inequality lead downfall civilization
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:study economic inequality lead downfall civilization
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+
+Aux F1 - Iteration-15=0.81
+Precision=0.7
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+34.0  17.0  
+0.0   40.0  
+
+Best F1 so far - 0.9 at iteration:3
+
+
+[Stage 1635:============================================>          (8 + 2) / 10][Stage 1635:=================================================>     (9 + 1) / 10]                                                                                **********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|occupywallstreet give nypd perfect excuse crack elderly veteran
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.8|colombia justice peace law failure expert say occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.81|soil association disown say resign trustee occupy ows occupywallstreet occupyhq
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|cull human herd century occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|support brother sister occupygezi reoccupy zuccotti occupywallstreet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.79|may ga reid park occupy ows occupywallstreet occupyhq grassroots usa canada
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|unhcr urge prevent refugee expulsion uae occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.82|new corvette spytech record conversation video occupy ows occupywallstreet occupyhq grassroots usa
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|hilaryclinton run president hilary care olsx teamster occupywallstreet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.8|japan next economic domino occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|dear state department moral authority tell country treat protest occupywallstreet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|together jefferson airplane occupywallstreet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|politico rand paul marco rubio differ iraq action occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.73|nyc forecast fri night mostly low temp get smart occupywallstreet tlot tlot
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.84|banky bbc news occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.04|nyc forecast tue night low temp occupywallstreet teaparty
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|alliancebl give bank tab occupywallstreet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.69|ban kettle hairdryers help climate change occupy ows occupywallstreet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|fin fraud jp morgan agree pay record settle charge toxic mortgage occupywallstreet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.85|shooter moncton phone report part video occupy ows occupywallstreet occupyhq
+Retrieved 20 new auxiliary tweets.
+1.0|new corvette spytech record conversation video occupy ows occupywallstreet occupyhq grassroots usa
+1.0|hilaryclinton run president hilary care olsx teamster occupywallstreet
+1.0|japan next economic domino occupy ows occupywallstreet occupyhq grassroots
+0.0|nyc forecast tue night low temp occupywallstreet teaparty
+1.0|alliancebl give bank tab occupywallstreet
+1.0|dear state department moral authority tell country treat protest occupywallstreet
+1.0|together jefferson airplane occupywallstreet
+1.0|occupywallstreet give nypd perfect excuse crack elderly veteran
+1.0|colombia justice peace law failure expert say occupy ows occupywallstreet occupyhq grassroots
+1.0|ban kettle hairdryers help climate change occupy ows occupywallstreet
+1.0|fin fraud jp morgan agree pay record settle charge toxic mortgage occupywallstreet
+1.0|shooter moncton phone report part video occupy ows occupywallstreet occupyhq
+1.0|politico rand paul marco rubio differ iraq action occupy ows occupywallstreet occupyhq grassroots
+1.0|nyc forecast fri night mostly low temp get smart occupywallstreet tlot tlot
+1.0|banky bbc news occupy ows occupywallstreet occupyhq grassroots
+1.0|may ga reid park occupy ows occupywallstreet occupyhq grassroots usa canada
+1.0|unhcr urge prevent refugee expulsion uae occupy ows occupywallstreet occupyhq grassroots
+1.0|soil association disown say resign trustee occupy ows occupywallstreet occupyhq
+1.0|cull human herd century occupy ows occupywallstreet occupyhq grassroots
+1.0|support brother sister occupygezi reoccupy zuccotti occupywallstreet
+()**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+
+Aux F1 - Iteration-16=0.82
+Precision=0.71
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+35.0  16.0  
+0.0   40.0  
+
+Best F1 so far - 0.9 at iteration:3
+
+
+[Stage 1752:============================================>          (8 + 2) / 10][Stage 1752:=================================================>     (9 + 1) / 10]                                                                                **********Omitting Tweet**********:il movimento mondiale osservato anche da nel andremo micah white
+**********Omitting Tweet**********:maddowblog agenda reek radicalism turn notch
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.75|reason question investigate anniversary occupy ows occupywallstreet occupyhq
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|government privatization support inequality occupy ows opesr occupyhq
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.79|welcome back lobbyist obama save seat capitol hill occupy ows occupywallstreet occupyhq
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.8|surveillance camera soon read lip video occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|rand woman problem occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|unhcr condemn deadly attack homs collective shelter occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.68|nyc forecast wed high temp get smart occupywallstreet ocra teaparty
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|rat meat sell lamb china occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|gunfail ix occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.79|work poor welcome occupy ows occupywallstreet occupyhq grassroots usa canada
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.73|nyc forecast mon night low temp get smart occupywallstreet topprog glennbeck
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|maddowblog agenda reek radicalism turn notch
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.04|nyc forecast wed night low temp occupywallstreet sgp
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.75|green group accuse trash reputation overseas occupy ows occupywallstreet occupyhq
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.75|noamchomsky quote mymanatee ows occupywallstreet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|santa give present rich occupywallstreet perpetuatingpoverty
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|il movimento mondiale osservato anche da nel andremo micah white
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|texas appalachia put body line occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|shugdenlibrary dalai lama slave owner dalailama lamagate occupywallstreet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.75|include contradiction democracy centralism leadership lead ows occupywallstreet
+Retrieved 20 new auxiliary tweets.
+1.0|reason question investigate anniversary occupy ows occupywallstreet occupyhq
+1.0|government privatization support inequality occupy ows opesr occupyhq
+1.0|rat meat sell lamb china occupy ows occupywallstreet occupyhq grassroots
+1.0|gunfail ix occupy ows occupywallstreet occupyhq grassroots
+1.0|work poor welcome occupy ows occupywallstreet occupyhq grassroots usa canada
+1.0|nyc forecast mon night low temp get smart occupywallstreet topprog glennbeck
+0.0|maddowblog agenda reek radicalism turn notch
+1.0|texas appalachia put body line occupy ows occupywallstreet occupyhq grassroots
+1.0|shugdenlibrary dalai lama slave owner dalailama lamagate occupywallstreet
+1.0|include contradiction democracy centralism leadership lead ows occupywallstreet
+1.0|santa give present rich occupywallstreet perpetuatingpoverty
+0.0|il movimento mondiale osservato anche da nel andremo micah white
+1.0|welcome back lobbyist obama save seat capitol hill occupy ows occupywallstreet occupyhq
+1.0|surveillance camera soon read lip video occupy ows occupywallstreet occupyhq grassroots
+1.0|rand woman problem occupy ows occupywallstreet occupyhq grassroots
+0.0|nyc forecast wed night low temp occupywallstreet sgp
+1.0|green group accuse trash reputation overseas occupy ows occupywallstreet occupyhq
+1.0|noamchomsky quote mymanatee ows occupywallstreet
+1.0|unhcr condemn deadly attack homs collective shelter occupy ows occupywallstreet occupyhq grassroots
+1.0|nyc forecast wed high temp get smart occupywallstreet ocra teaparty
+()**********Omitting Tweet**********:maddowblog agenda reek radicalism turn notch
+**********Omitting Tweet**********:il movimento mondiale osservato anche da nel andremo micah white
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:maddowblog agenda reek radicalism turn notch
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:il movimento mondiale osservato anche da nel andremo micah white
+**********Omitting Tweet**********:maddowblog agenda reek radicalism turn notch
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:il movimento mondiale osservato anche da nel andremo micah white
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+
+Aux F1 - Iteration-17=0.82
+Precision=0.71
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+35.0  16.0  
+0.0   40.0  
+
+Best F1 so far - 0.9 at iteration:3
+
+
+[Stage 1871:=================================================>     (9 + 1) / 10]                                                                                **********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.85|global may day protest austerity death bangladeshi worker via youtube ows occupywallstreet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|decolonize pipeline resistance interview freda huson occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.04|nyc forecast thu night mostly low temp occupywallstreet tpp topprog
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|win mt gaypatriot occupywallstreet communist occupyhongkong
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.83|may day la schedule occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.48|kelly thomas verdict cop license murder filmthepolice anonfamily opsafewinter occupywallstreet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.75|hqoccupy sudanese trader kill south sudan ambush occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.04|nyc forecast wed night low temp occupywallstreet ocra topprog
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|iran two ahwazi arab men risk imminent execution occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|amateur activist occupy ows occupywallstreet occupyhq grassroots usa canada
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.29|nyc forecast sun high temp occupywallstreet tpp tpp
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.68|greek police arrest editor weekly magazine dissent ows occupygreece occupywallstreet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.84|news november occupy ows occupywallstreet occupyhq grassroots usa canada
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|malala receive liberty medal occupy ows occupywallstreet occupyhq grassroots usa canada
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|pentagon ready train syrian rebel occupy ows occupywallstreet occupyhq grassroots usa
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.04|nyc forecast wed night mostly low temp occupywallstreet tpp topprog
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.8|turkey withstand hostage ordeal say turkish pm occupy ows occupywallstreet occupyhq grassroots usa
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.77|hardliner impeach moderate minister green movement protest occupy ows occupywallstreet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.77|silent crisis bahrain opposition seek support international attention russia occupy ows occupywallstreet
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.73|celente world currency trouble occupy ows occupywallstreet occupyhq grassroots
+Retrieved 20 new auxiliary tweets.
+0.0|nyc forecast sun high temp occupywallstreet tpp tpp
+1.0|greek police arrest editor weekly magazine dissent ows occupygreece occupywallstreet
+1.0|hardliner impeach moderate minister green movement protest occupy ows occupywallstreet
+1.0|silent crisis bahrain opposition seek support international attention russia occupy ows occupywallstreet
+1.0|celente world currency trouble occupy ows occupywallstreet occupyhq grassroots
+1.0|global may day protest austerity death bangladeshi worker via youtube ows occupywallstreet
+1.0|decolonize pipeline resistance interview freda huson occupy ows occupywallstreet occupyhq grassroots
+1.0|kelly thomas verdict cop license murder filmthepolice anonfamily opsafewinter occupywallstreet
+1.0|hqoccupy sudanese trader kill south sudan ambush occupy ows occupywallstreet occupyhq grassroots
+1.0|news november occupy ows occupywallstreet occupyhq grassroots usa canada
+1.0|malala receive liberty medal occupy ows occupywallstreet occupyhq grassroots usa canada
+1.0|pentagon ready train syrian rebel occupy ows occupywallstreet occupyhq grassroots usa
+0.0|nyc forecast wed night mostly low temp occupywallstreet tpp topprog
+1.0|turkey withstand hostage ordeal say turkish pm occupy ows occupywallstreet occupyhq grassroots usa
+0.0|nyc forecast thu night mostly low temp occupywallstreet tpp topprog
+1.0|win mt gaypatriot occupywallstreet communist occupyhongkong
+1.0|may day la schedule occupy ows occupywallstreet occupyhq grassroots
+0.0|nyc forecast wed night low temp occupywallstreet ocra topprog
+1.0|iran two ahwazi arab men risk imminent execution occupy ows occupywallstreet occupyhq grassroots
+1.0|amateur activist occupy ows occupywallstreet occupyhq grassroots usa canada
+()**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+
+Aux F1 - Iteration-18=0.9
+Precision=0.82
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+42.0  9.0   
+0.0   40.0  
+
+Best F1 so far - 0.9 at iteration:3
+
+
+[Stage 1986:=================================================>     (9 + 1) / 10]                                                                                **********Omitting Tweet**********:sun truth europe
+**********Omitting Tweet**********:bbm pin add mufc manchesterunited bbmshare bbpins egypt blackberrypins blackberrymessenger dubai manchesterbbmpins
+**********Omitting Tweet**********:sumofmind sumofmind sumofmind archive sexually harass keep amman cairo egypt jordan sexu
+**********Omitting Tweet**********:egypt serious
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|return pluribus occupy opesr ows
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|bureau reclamation release additional flow avert klamath river fish occupy ows
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.04|nyc forecast mon night low temp occupywallstreet tlot sgp
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|phoenix last night cop kill unarm black man afraid prescription bottle occupy
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.04|nyc forecast mon night mostly low temp occupywallstreet topprog tcot
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.76|syria meet end solution occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.57|giovalenzi il natale vince su tutto capodanno nella grande happy new year
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.04|nyc forecast sit night low temp occupywallstreet ocra sgp
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.04|nyc forecast wed night mostly low temp occupywallstreet tpp
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|alle reden zur deutsche bank hauptversammlung frankfurt occupy ows
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.68|nyc forecast fri partly high temp get smart occupywallstreet tlot topprog
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.87|qe backfire dividend quest usurp growth cut research quantitative ease may make
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.78|crisis southern new part occupy ows occupywallstreet occupyhq grassroots
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.82|egypt wassssssuuuuuupppp ur horny watch lol
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.88|get egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|sumofmind sumofmind sumofmind archive sexually harass keep amman cairo egypt jordan sexu
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|egypt serious
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.43|egypt jordan work hard employ disable worker tahrir
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|sun truth europe
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|bbm pin add mufc manchesterunited bbmshare bbpins egypt blackberrypins blackberrymessenger dubai manchesterbbmpins
+Retrieved 20 new auxiliary tweets.
+1.0|crisis southern new part occupy ows occupywallstreet occupyhq grassroots
+1.0|egypt wassssssuuuuuupppp ur horny watch lol
+1.0|get egypt
+1.0|egypt jordan work hard employ disable worker tahrir
+0.0|sun truth europe
+0.0|bbm pin add mufc manchesterunited bbmshare bbpins egypt blackberrypins blackberrymessenger dubai manchesterbbmpins
+1.0|syria meet end solution occupy ows occupywallstreet occupyhq grassroots
+1.0|giovalenzi il natale vince su tutto capodanno nella grande happy new year
+1.0|return pluribus occupy opesr ows
+1.0|bureau reclamation release additional flow avert klamath river fish occupy ows
+1.0|nyc forecast fri partly high temp get smart occupywallstreet tlot topprog
+1.0|qe backfire dividend quest usurp growth cut research quantitative ease may make
+0.0|sumofmind sumofmind sumofmind archive sexually harass keep amman cairo egypt jordan sexu
+0.0|egypt serious
+0.0|nyc forecast mon night low temp occupywallstreet tlot sgp
+1.0|phoenix last night cop kill unarm black man afraid prescription bottle occupy
+0.0|nyc forecast mon night mostly low temp occupywallstreet topprog tcot
+0.0|nyc forecast sit night low temp occupywallstreet ocra sgp
+0.0|nyc forecast wed night mostly low temp occupywallstreet tpp
+1.0|alle reden zur deutsche bank hauptversammlung frankfurt occupy ows
+()**********Omitting Tweet**********:sumofmind sumofmind sumofmind archive sexually harass keep amman cairo egypt jordan sexu
+**********Omitting Tweet**********:egypt serious
+**********Omitting Tweet**********:sun truth europe
+**********Omitting Tweet**********:bbm pin add mufc manchesterunited bbmshare bbpins egypt blackberrypins blackberrymessenger dubai manchesterbbmpins
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:sun truth europe
+**********Omitting Tweet**********:sumofmind sumofmind sumofmind archive sexually harass keep amman cairo egypt jordan sexu
+**********Omitting Tweet**********:bbm pin add mufc manchesterunited bbmshare bbpins egypt blackberrypins blackberrymessenger dubai manchesterbbmpins
+**********Omitting Tweet**********:egypt serious
+**********Omitting Tweet**********:sumofmind sumofmind sumofmind archive sexually harass keep amman cairo egypt jordan sexu
+**********Omitting Tweet**********:egypt serious
+**********Omitting Tweet**********:sun truth europe
+**********Omitting Tweet**********:bbm pin add mufc manchesterunited bbmshare bbpins egypt blackberrypins blackberrymessenger dubai manchesterbbmpins
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+
+Aux F1 - Iteration-19=0.9
+Precision=0.82
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+42.0  9.0   
+0.0   40.0  
+
+Best F1 so far - 0.9 at iteration:3
+
+
+[Stage 2103:============================================>          (8 + 2) / 10][Stage 2103:=================================================>     (9 + 1) / 10]                                                                                **********Omitting Tweet**********:riiiiiposo morsi polipo itihadeya egypt os circondato da csf army
+**********Omitting Tweet**********:remember place kuwait egypt london lebanon syria instapic instaphoto instamood
+**********Omitting Tweet**********:egypt giggle rear end ofhttp
+**********Omitting Tweet**********:beautiful sunset cairo egypt
+**********Omitting Tweet**********:palestinianleadership overseasleadership hamas page iran mqmtelevision
+**********Omitting Tweet**********:egypt uae oxycodone liver toxicity buy tramadol glitter antique saudi ksa bhr
+**********Omitting Tweet**********:spanish court uphold decision hand salem spain egypt
+**********Omitting Tweet**********:egypt visit place
+**********Omitting Tweet**********:egypt condition cairo eg eet egyweather
+**********Omitting Tweet**********:egyindependent four egyptian activist gaza injure israeli fire convoy palestine egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.69|sharm el sheikh egypt weather fair sharm egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|riiiiiposo morsi polipo itihadeya egypt os circondato da csf army
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.69|alexandria egypt weather fair alexandria egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|egypt giggle rear end ofhttp
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.83|egypt masr uk move towards syria opposition sinai
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|spanish court uphold decision hand salem spain egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.72|usa russia fsa gain grind putin obama eu uk turkey lebanon egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|palestinianleadership overseasleadership hamas page iran mqmtelevision
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.87|askliam ok go sometime go egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|egypt uae oxycodone liver toxicity buy tramadol glitter antique saudi ksa bhr
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.86|notice tomorrow safar make egypt islam
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.86|egypt two son make cry
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|egypt visit place
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|egypt condition cairo eg eet egyweather
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|egyindependent four egyptian activist gaza injure israeli fire convoy palestine egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.77|egypt douche bag mousterbates pic alien lol
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|remember place kuwait egypt london lebanon syria instapic instaphoto instamood
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.33|break central bank governor resign post news aswat masriya egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+-0.72|mrsedky dear unite state bitch dictator morsi obama egypt politics tahrir
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+0.0|beautiful sunset cairo egypt
+Retrieved 19 new auxiliary tweets.
+1.0|egypt masr uk move towards syria opposition sinai
+0.0|spanish court uphold decision hand salem spain egypt
+0.0|usa russia fsa gain grind putin obama eu uk turkey lebanon egypt
+0.0|remember place kuwait egypt london lebanon syria instapic instaphoto instamood
+0.0|mrsedky dear unite state bitch dictator morsi obama egypt politics tahrir
+0.0|beautiful sunset cairo egypt
+0.0|egyindependent four egyptian activist gaza injure israeli fire convoy palestine egypt
+1.0|egypt douche bag mousterbates pic alien lol
+1.0|egypt two son make cry
+0.0|egypt visit place
+0.0|egypt condition cairo eg eet egyweather
+1.0|sharm el sheikh egypt weather fair sharm egypt
+0.0|riiiiiposo morsi polipo itihadeya egypt os circondato da csf army
+0.0|egypt uae oxycodone liver toxicity buy tramadol glitter antique saudi ksa bhr
+1.0|notice tomorrow safar make egypt islam
+0.0|palestinianleadership overseasleadership hamas page iran mqmtelevision
+1.0|askliam ok go sometime go egypt
+1.0|alexandria egypt weather fair alexandria egypt
+0.0|egypt giggle rear end ofhttp
+()**********Omitting Tweet**********:egypt visit place
+**********Omitting Tweet**********:egypt condition cairo eg eet egyweather
+**********Omitting Tweet**********:egypt uae oxycodone liver toxicity buy tramadol glitter antique saudi ksa bhr
+**********Omitting Tweet**********:egypt giggle rear end ofhttp
+**********Omitting Tweet**********:spanish court uphold decision hand salem spain egypt
+**********Omitting Tweet**********:riiiiiposo morsi polipo itihadeya egypt os circondato da csf army
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:egyindependent four egyptian activist gaza injure israeli fire convoy palestine egypt
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:remember place kuwait egypt london lebanon syria instapic instaphoto instamood
+**********Omitting Tweet**********:beautiful sunset cairo egypt
+**********Omitting Tweet**********:palestinianleadership overseasleadership hamas page iran mqmtelevision
+**********Omitting Tweet**********:riiiiiposo morsi polipo itihadeya egypt os circondato da csf army
+**********Omitting Tweet**********:egypt uae oxycodone liver toxicity buy tramadol glitter antique saudi ksa bhr
+**********Omitting Tweet**********:palestinianleadership overseasleadership hamas page iran mqmtelevision
+**********Omitting Tweet**********:egypt visit place
+**********Omitting Tweet**********:egypt condition cairo eg eet egyweather
+**********Omitting Tweet**********:spanish court uphold decision hand salem spain egypt
+**********Omitting Tweet**********:egypt giggle rear end ofhttp
+**********Omitting Tweet**********:egyindependent four egyptian activist gaza injure israeli fire convoy palestine egypt
+**********Omitting Tweet**********:remember place kuwait egypt london lebanon syria instapic instaphoto instamood
+**********Omitting Tweet**********:beautiful sunset cairo egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:palestinianleadership overseasleadership hamas page iran mqmtelevision
+**********Omitting Tweet**********:egypt uae oxycodone liver toxicity buy tramadol glitter antique saudi ksa bhr
+**********Omitting Tweet**********:egypt visit place
+**********Omitting Tweet**********:egypt condition cairo eg eet egyweather
+**********Omitting Tweet**********:riiiiiposo morsi polipo itihadeya egypt os circondato da csf army
+**********Omitting Tweet**********:egypt giggle rear end ofhttp
+**********Omitting Tweet**********:spanish court uphold decision hand salem spain egypt
+**********Omitting Tweet**********:valentinecarddd
+**********Omitting Tweet**********:egyindependent four egyptian activist gaza injure israeli fire convoy palestine egypt
+**********Omitting Tweet**********:remember place kuwait egypt london lebanon syria instapic instaphoto instamood
+**********Omitting Tweet**********:beautiful sunset cairo egypt
+**********Omitting Tweet**********:faz cera bota zagueiro fura bola finger
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+**********Omitting Tweet**********:accuse russian trial postpone indefinitely trial russian man irek sport
+**********Omitting Tweet**********:message leader islamic republic bbc
+**********Omitting Tweet**********:vofnafrica
+Adding 19 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-20=0.91
+Precision=0.83
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+43.0  8.0   
+0.0   40.0  
+
+Best F1 so far - 0.91 at iteration:20
+
+
+Total time taken for experiment:58.878 seconds.

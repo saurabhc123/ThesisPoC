@@ -1,0 +1,523 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+17/03/25 18:28:49 INFO Remoting: Starting remoting
+17/03/25 18:28:49 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@172.30.204.173:53100]
+Hello World!11
+
+***************** Parameters used for EXPERIMENT *****************
+	filterToUse = CosineSim
+	minSimilarityThreshold = 0.55
+	cosineSimilarityWindowSize= 0.15
+	minWmDistanceThreshold = 0.0199
+	maxFpmWordsToPick = 35
+	minFpmWordsDetected = 0
+	refreshLocalWordVectors = false
+	maxExperimentIterations = 20
+	maxAuxTweetsToAddEachIteration = 10
+	thresholdF1 = 0.98
+	classifierType = Cnn
+	folderNameForCnnClassifier = 
+	auxiliaryThresholdExpectation = 0.01
+	fileDelimiter = ,
+	trainingDataFile = data/final/egypt_training_data.txt
+	validationDataFile = data/final/egypt_validation_data.txt
+	auxiliaryDataFile = data/final/egypt_auxiliary_data.txt
+	supplementedCleanAuxiliaryFile = data/final/egypt_auxiliary_data_clean.txt
+
+***************** Parameters used for EXPERIMENT *****************
+
+
+Initial F1=0.47
+Precision=0.62
+Recall=1.0
+Initial - ConfusionMatrix:
+2.0  19.0  
+0.0  31.0  
+
+Adding annotator tokenize
+Adding annotator ssplit
+Adding annotator pos
+Adding annotator lemma
+0.44|match report tuni tunisium ahly egypt cafchampionsleague final football soccer africa
+0.53|female journalist savagely attack cairo egypt
+0.66|egypt alien syberium
+0.46|someone another question will head referendum committee now hour leave round egypt
+0.53|proud egyptian tahrir egypt
+0.66|per ognus sorpresina oggus dobbiamo sempre ringraziare tantawus per quellum notte tragica cuus sciolse parlamento per decreto egypt
+0.48|photography update anti muslim brotherhood protest egypt ikhwan morsus
+0.49|egypt fat black girl get spank big cock lol
+0.44|scene now outside presidential palace egypt
+0.51|egypt wtf real
+Retrieved 2 new auxiliary tweets.
+1.0|per ognus sorpresina oggus dobbiamo sempre ringraziare tantawus per quellum notte tragica cuus sciolse parlamento per decreto egypt
+1.0|egypt alien syberium
+()
+Aux F1 - Iteration-1=0.47
+Precision=0.62
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+2.0  19.0  
+0.0  31.0  
+
+0.6|egypt salafist order coptic church land egypt salafist copt
+0.45|translate egypt clash alexandrium phase referendum egyptian
+0.51|egypt protest morsus power grab first flower arabspring shalom cohen
+0.54|egypt right obama egypt murder christian violation human rights
+0.49|abused brotherhood become abuser psychiatrist via morsus islamist salafist egypt
+0.43|miss summer weather sky instaweather instaweatherpro outdoors nature dokkus egypt day autumn
+0.53|ibrahim eissa will host hamdeen sabbahus tonight qahera wal egypt
+0.44|say gaddafus ago take state media full control tahrir egypt
+0.4|greek president israel take egypt gas oil resource gov move
+0.47|love egypt hate egyptian
+Retrieved 2 new auxiliary tweets.
+0.0|greek president israel take egypt gas oil resource gov move
+1.0|egypt salafist order coptic church land egypt salafist copt
+()Adding 2 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-2=0.51
+Precision=0.63
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+3.0  18.0  
+0.0  31.0  
+
+0.54|egypt islamist moron proudly present item threaten egypt book christ cartridge alcohol pic arabeyya
+0.48|voting period extend due high turnout say sec read lack judge egypt
+0.5|flagman flagman egypt camel jockey israel give terrorist
+0.33|baradei cnn ready national dialogue first postpone referendum dialogue damoclese sword egypt
+0.54|egypt way draw can
+0.44|egypt masr april leader quit constituent assembly sinaus
+0.56|protest firework laser egypt palace
+0.3|safarkhan art egypt november exhibition vivid memory wael darwish november till november
+0.57|egypt footage wow nostalgia
+0.49|egypt love much hahaha
+Retrieved 4 new auxiliary tweets.
+1.0|egypt footage wow nostalgia
+0.0|baradei cnn ready national dialogue first postpone referendum dialogue damoclese sword egypt
+0.0|safarkhan art egypt november exhibition vivid memory wael darwish november till november
+1.0|protest firework laser egypt palace
+()
+Aux F1 - Iteration-3=0.51
+Precision=0.63
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+3.0  18.0  
+0.0  31.0  
+
+0.59|egypt can semi retard
+0.41|egypt little reason celebrate south sudan first birthday
+0.46|muslim brotherhood set ablaze office burn whoa egypt ikhwan
+0.41|morsy now talk hand create presidential palace civil war egypt
+0.67|ankh british museum hieroglyphic egypt ankh
+0.44|islamist egypt morsus tahrir auc muslimbrotherhood
+0.34|destruction heritage site syrium raise question cost democracy occupy occupywallstreet occu
+0.38|nyc forecast overnight partly cloudy low temp occupywallstreet tpp
+0.36|nyc forecast afternoon sunny high temp occupywallstreet tpp sgp
+0.44|link city will underwater year occupy occupywallstreet occupyhq grassroot usa
+Retrieved 5 new auxiliary tweets.
+1.0|ankh british museum hieroglyphic egypt ankh
+0.0|nyc forecast afternoon sunny high temp occupywallstreet tpp sgp
+0.0|nyc forecast overnight partly cloudy low temp occupywallstreet tpp
+0.0|destruction heritage site syrium raise question cost democracy occupy occupywallstreet occu
+1.0|egypt can semi retard
+()
+Aux F1 - Iteration-4=0.41
+Precision=0.6
+Recall=0.97
+Aux F1 - ConfusionMatrix:
+1.0  20.0  
+1.0  30.0  
+
+0.36|vietnamese dissident lawyer face obstruction ahead trial occupy occupywallstreet occupyhq grassroot
+0.37|andrew curtin photo selfie occupy occupywallstreet occupyhq grassroot
+0.41|nyc forecast wed night thunderstorm low temp occupywallstreet glennbeck tcot
+0.41|alex schaefer burn bank occupy occupywallstreet occupyhq grassroot
+0.2|study economic inequality will lead downfall civilization
+0.41|fishy dome special slideshow occupy occupywallstreet occupyhq grassroot
+0.41|cme break due technical issue occupy occupywallstreet occupyhq grassroot
+0.4|nyc forecast mon sunny high temp get smart occupywallstreet sgp
+0.41|preview death bin laden revisted nightly news video occupy occupywallstreet occupyhq
+0.39|rule bitcoin property subject capital gain tax occupy occupywallstreet occupyhq grassroot
+Retrieved 5 new auxiliary tweets.
+0.0|nyc forecast mon sunny high temp get smart occupywallstreet sgp
+0.0|rule bitcoin property subject capital gain tax occupy occupywallstreet occupyhq grassroot
+0.0|andrew curtin photo selfie occupy occupywallstreet occupyhq grassroot
+0.0|vietnamese dissident lawyer face obstruction ahead trial occupy occupywallstreet occupyhq grassroot
+0.0|study economic inequality will lead downfall civilization
+()
+Aux F1 - Iteration-5=0.46
+Precision=0.61
+Recall=0.97
+Aux F1 - ConfusionMatrix:
+2.0  19.0  
+1.0  30.0  
+
+0.39|confession juiced journalist occupy occupywallstreet occupyhq grassroot
+0.09|kitchen nostalgia submit link comment
+0.41|nyc forecast sit night partly cloudy low temp occupywallstreet tcot
+0.38|nyc forecast frus night rain low temp occupywallstreet topprog glennbeck
+0.43|israel gaza big picture occupy occupywallstreet occupyhq grassroot usa canada europe
+0.38|nyc forecast sun night mostly clear low temp occupywallstreet tpp glennbeck
+0.4|secretive turkish movement buy influence occupy occupywallstreet occupyhq grassroot usa
+0.4|nyc forecast sit night mostly cloudy low temp occupywallstreet tcot tcot
+0.37|nyc forecast afternoon sunny high temp occupywallstreet tpp
+0.36|can now buy custom nyc street sign dot may suggest occupywallstreet
+Retrieved 8 new auxiliary tweets.
+0.0|confession juiced journalist occupy occupywallstreet occupyhq grassroot
+0.0|nyc forecast sit night mostly cloudy low temp occupywallstreet tcot tcot
+0.0|nyc forecast afternoon sunny high temp occupywallstreet tpp
+0.0|secretive turkish movement buy influence occupy occupywallstreet occupyhq grassroot usa
+0.0|kitchen nostalgia submit link comment
+0.0|nyc forecast sun night mostly clear low temp occupywallstreet tpp glennbeck
+0.0|nyc forecast frus night rain low temp occupywallstreet topprog glennbeck
+0.0|can now buy custom nyc street sign dot may suggest occupywallstreet
+()Adding 8 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-6=0.56
+Precision=0.64
+Recall=0.94
+Aux F1 - ConfusionMatrix:
+5.0  16.0  
+2.0  29.0  
+
+0.43|jesse jackson call symbolic protest clipper player occupy occupywallstreet occupyhq
+0.33|brussels conference stress need approach stabilize malus occupy occupywallstreet
+0.2|occupywallstreet give nypd perfect excuse crack elderly veteran
+0.41|colombium justice peace law failure expert say occupy occupywallstreet occupyhq grassroot
+0.39|soil association disown word say resign trustee occupy occupywallstreet occupyhq grassro
+0.39|cull human herd century occupy occupywallstreet occupyhq grassroot
+0.26|support brother sister occupygezus reoccupy zuccottus occupywallstreet
+0.44|may will reid park occupy occupywallstreet occupyhq grassroot usa canada europe
+0.35|unhcr urge prevent refugee joournalist expulsion occupy occupywallstreet occupyhq grassroot
+0.46|new corvette spytech record conversation video occupy occupywallstreet occupyhq grassroot usa
+Retrieved 6 new auxiliary tweets.
+0.0|unhcr urge prevent refugee joournalist expulsion occupy occupywallstreet occupyhq grassroot
+0.0|support brother sister occupygezus reoccupy zuccottus occupywallstreet
+0.0|brussels conference stress need approach stabilize malus occupy occupywallstreet
+0.0|cull human herd century occupy occupywallstreet occupyhq grassroot
+0.0|soil association disown word say resign trustee occupy occupywallstreet occupyhq grassro
+0.0|occupywallstreet give nypd perfect excuse crack elderly veteran
+()
+Aux F1 - Iteration-7=0.53
+Precision=0.63
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+5.0  16.0  
+4.0  27.0  
+
+0.33|hilaryclinton run president hilary will care olsx teamster occupywallstreet
+0.4|japan next economic domino fall occupy occupywallstreet occupyhq grassroot
+0.33|dear state department moral authority tell country treat protest occupation occupywallstreet
+0.34|occupy together jefferson airplane occupywallstreet ocw
+0.37|politico rand paul marco rubio differ iraq action occupy occupywallstreet occupyhq grassroot usa
+0.41|nyc forecast frus night mostly cloudy low temp get smart occupywallstreet tlot tlot
+0.42|banky occupy nigerium bbc news occupy occupywallstreet occupyhq grassroot
+0.39|nyc forecast tue night rain low temp occupywallstreet teaparty
+0.32|give bank tab debt occupywallstreet
+0.38|will ban kettle hairdryer help climate change effort occupy occupywallstreet
+Retrieved 8 new auxiliary tweets.
+0.0|will ban kettle hairdryer help climate change effort occupy occupywallstreet
+0.0|give bank tab debt occupywallstreet
+0.0|politico rand paul marco rubio differ iraq action occupy occupywallstreet occupyhq grassroot usa
+0.0|nyc forecast tue night rain low temp occupywallstreet teaparty
+0.0|japan next economic domino fall occupy occupywallstreet occupyhq grassroot
+0.0|occupy together jefferson airplane occupywallstreet ocw
+0.0|dear state department moral authority tell country treat protest occupation occupywallstreet
+0.0|hilaryclinton run president hilary will care olsx teamster occupywallstreet
+()Adding 8 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-8=0.6
+Precision=0.67
+Recall=0.77
+Aux F1 - ConfusionMatrix:
+9.0  12.0  
+7.0  24.0  
+
+0.26|fine fraud morgan agree pay record settle charge toxic mortgage occupywallstreet
+0.44|shooter moncton canada phone report part video occupy occupywallstreet occupyhq grassroot
+0.39|reason question investigate anniversary occupy occupywallstreet occupyhq gra
+0.37|government privatization support inequality occupy opesr occupyhq
+0.36|welcome back lobbyist obama save seat capitol hill occupy occupywallstreet occupyhq grassro
+0.43|surveillance camera will soon read lip video occupy occupywallstreet occupyhq grassroot
+0.4|rand paul woman problem occupy occupywallstreet occupyhq grassroot
+0.41|unhcr condemn deadly attack hom collective shelter occupy occupywallstreet occupyhq grassroot
+0.39|nyc forecast wed thunderstorm high temp get smart occupywallstreet ocra teaparty
+0.39|rat meat sell lamb china occupy occupywallstreet occupyhq grassroot
+Retrieved 7 new auxiliary tweets.
+0.0|fine fraud morgan agree pay record settle charge toxic mortgage occupywallstreet
+0.0|reason question investigate anniversary occupy occupywallstreet occupyhq gra
+0.0|nyc forecast wed thunderstorm high temp get smart occupywallstreet ocra teaparty
+0.0|government privatization support inequality occupy opesr occupyhq
+0.0|rat meat sell lamb china occupy occupywallstreet occupyhq grassroot
+0.0|rand paul woman problem occupy occupywallstreet occupyhq grassroot
+0.0|welcome back lobbyist obama save seat capitol hill occupy occupywallstreet occupyhq grassro
+()Adding 7 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-9=0.62
+Precision=0.68
+Recall=0.81
+Aux F1 - ConfusionMatrix:
+9.0  12.0  
+6.0  25.0  
+
+0.41|gunfail occupy occupywallstreet occupyhq grassroot
+0.41|work poor welcome walmart occupy occupywallstreet occupyhq grassroot usa canada eur
+0.4|nyc forecast mon night thunderstorm low temp get smart occupywallstreet topprog glennbeck
+0.12|romney agenda reek radicalism turn notch
+0.39|nyc forecast wed night rain low temp occupywallstreet sgp
+0.38|green group accuse trash queensland reputation overseas occupy occupywallstreet occupyhq gras
+0.23|noamchomsky quote mymanatee occupywallstreet
+0.22|santa give present rich kid occupywallstreet perpetuatingpoverty
+0.16|movimento mondiale osservato anche occupywallstreet nel andremo oltre micah white
+0.4|texa appalachium put body line occupy occupywallstreet occupyhq grassroot
+Retrieved 8 new auxiliary tweets.
+0.0|nyc forecast mon night thunderstorm low temp get smart occupywallstreet topprog glennbeck
+0.0|romney agenda reek radicalism turn notch
+0.0|nyc forecast wed night rain low temp occupywallstreet sgp
+0.0|noamchomsky quote mymanatee occupywallstreet
+0.0|santa give present rich kid occupywallstreet perpetuatingpoverty
+0.0|movimento mondiale osservato anche occupywallstreet nel andremo oltre micah white
+0.0|green group accuse trash queensland reputation overseas occupy occupywallstreet occupyhq gras
+0.0|texa appalachium put body line occupy occupywallstreet occupyhq grassroot
+()Adding 8 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-10=0.66
+Precision=0.72
+Recall=0.74
+Aux F1 - ConfusionMatrix:
+12.0  9.0   
+8.0   23.0  
+
+0.26|dalaus lama slave owner dalailama lamagate occupywallstreet
+0.26|include contradiction democracy centralism leadership lead occupywallstreet
+0.38|global may day protest austerity death bangladeshi worker via occupywallstreet
+0.38|decolonize pipeline resistance interview freda huson occupy occupywallstreet occupyhq grassroot
+0.37|nyc forecast thu night mostly cloudy low temp occupywallstreet tpp topprog
+0.18|win funny occupywallstreet communist occupyhongkong
+0.42|may day schedule occupy occupywallstreet occupyhq grassroot
+0.24|kelly thoma verdict cop now license murder filmthepolice anonfamily opsafewinter occupywallstreet
+0.41|sudanese trader kill south sudan ambush occupy occupywallstreet occupyhq grassroot
+0.38|nyc forecast wed night thunderstorm low temp occupywallstreet ocra topprog
+Retrieved 8 new auxiliary tweets.
+0.0|decolonize pipeline resistance interview freda huson occupy occupywallstreet occupyhq grassroot
+0.0|dalaus lama slave owner dalailama lamagate occupywallstreet
+0.0|nyc forecast wed night thunderstorm low temp occupywallstreet ocra topprog
+0.0|nyc forecast thu night mostly cloudy low temp occupywallstreet tpp topprog
+0.0|global may day protest austerity death bangladeshi worker via occupywallstreet
+0.0|win funny occupywallstreet communist occupyhongkong
+0.0|kelly thoma verdict cop now license murder filmthepolice anonfamily opsafewinter occupywallstreet
+0.0|include contradiction democracy centralism leadership lead occupywallstreet
+()
+Aux F1 - Iteration-11=0.62
+Precision=0.68
+Recall=0.81
+Aux F1 - ConfusionMatrix:
+9.0  12.0  
+6.0  25.0  
+
+0.37|iran two ahwazus arab man risk imminent execution occupy occupywallstreet occupyhq grassroot
+0.42|amateur activist occupy occupywallstreet occupyhq grassroot usa canada
+0.33|nyc forecast sun snow high temp occupywallstreet tpp tpp
+0.2|greek police arrest editor weekly magazine dissent occupygreece occupywallstreet
+0.44|green news report november occupy occupywallstreet occupyhq grassroot usa canada
+0.4|malalum receive liberty medal occupy occupywallstreet occupyhq grassroot usa canada
+0.4|pentagon ready train syrian rebel occupy occupywallstreet occupyhq grassroot usa
+0.38|nyc forecast wed night mostly clear low temp occupywallstreet tpp topprog
+0.42|turkey withstand hostage ordeal say turkish occupy occupywallstreet occupyhq grassroot usa
+0.38|iran hardliner impeach moderate minister green movement protest occupy occupywallstreet
+Retrieved 7 new auxiliary tweets.
+0.0|iran two ahwazus arab man risk imminent execution occupy occupywallstreet occupyhq grassroot
+0.0|nyc forecast sun snow high temp occupywallstreet tpp tpp
+0.0|malalum receive liberty medal occupy occupywallstreet occupyhq grassroot usa canada
+0.0|pentagon ready train syrian rebel occupy occupywallstreet occupyhq grassroot usa
+0.0|greek police arrest editor weekly magazine dissent occupygreece occupywallstreet
+0.0|iran hardliner impeach moderate minister green movement protest occupy occupywallstreet
+0.0|nyc forecast wed night mostly clear low temp occupywallstreet tpp topprog
+()
+Aux F1 - Iteration-12=0.64
+Precision=0.69
+Recall=0.81
+Aux F1 - ConfusionMatrix:
+10.0  11.0  
+6.0   25.0  
+
+0.0|
+0.41|silent crisis bahrain opposition seek support international attention russium occupy occupywallstreet
+0.4|celente world currency trouble occupy occupywallstreet occupyhq grassroot
+0.25|return pluribus unum occupy opesr
+0.32|bureau reclamation release additional flow avert klamath river fish kill occupy occupywallstreet
+0.4|nyc forecast mon night overcast low temp occupywallstreet tlot sgp
+0.33|phoenix last night cop kill unarmed black man afraid prescription bottle occupy
+0.39|nyc forecast mon night mostly clear low temp occupywallstreet topprog tcot
+0.41|syrium meet end solution occupy occupywallstreet occupyhq grassroot
+0.33|natale vince tutto ahime occupywallstreet capodanno nellum grande melum happy new year
+Retrieved 8 new auxiliary tweets.
+0.0|return pluribus unum occupy opesr
+0.0|nyc forecast mon night mostly clear low temp occupywallstreet topprog tcot
+0.0|natale vince tutto ahime occupywallstreet capodanno nellum grande melum happy new year
+0.0|celente world currency trouble occupy occupywallstreet occupyhq grassroot
+0.0|phoenix last night cop kill unarmed black man afraid prescription bottle occupy
+0.0|
+0.0|nyc forecast mon night overcast low temp occupywallstreet tlot sgp
+0.0|bureau reclamation release additional flow avert klamath river fish kill occupy occupywallstreet
+()Adding 8 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-13=0.68
+Precision=0.71
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+10.0  11.0  
+4.0   27.0  
+
+0.37|nyc forecast sit night rain low temp occupywallstreet ocra sgp
+0.4|nyc forecast wed night mostly cloudy low temp occupywallstreet tpp
+0.34|alle reden zur deutsche bank hauptversammlung frankfurt occupy occupywallstreet
+0.39|nyc forecast frus partly cloudy high temp get smart occupywallstreet tlot topprog
+0.15|backfire dividend quest usurp growth cut research worldwide quantitative easing may make invest
+0.41|crisis viva southern europe new normal part occupy occupywallstreet occupyhq grassroot
+0.5|egypt wassssssuuuuuupppp people wazzuppp horny watch lol
+0.56|can get view egypt
+0.55|sumofmind archive sexually harass keep quiet amman cairo egypt jordan sexu
+0.55|egypt serious
+Retrieved 6 new auxiliary tweets.
+0.0|nyc forecast frus partly cloudy high temp get smart occupywallstreet tlot topprog
+0.0|backfire dividend quest usurp growth cut research worldwide quantitative easing may make invest
+1.0|can get view egypt
+0.0|nyc forecast wed night mostly cloudy low temp occupywallstreet tpp
+0.0|alle reden zur deutsche bank hauptversammlung frankfurt occupy occupywallstreet
+0.0|nyc forecast sit night rain low temp occupywallstreet ocra sgp
+()
+Aux F1 - Iteration-14=0.62
+Precision=0.68
+Recall=0.81
+Aux F1 - ConfusionMatrix:
+9.0  12.0  
+6.0  25.0  
+
+0.49|egypt jordan work hard employ disabled worker tahrir
+0.02|sun truth
+0.67|bbm pin add mufc manchesterunited bbmshare bbpin egypt blackberrypin blackberrymessenger dubaus manchesterbbmpin
+0.52|sharm sheikh egypt weather fair sharm egypt
+0.46|riiiiiposo morsus polipo dietro itihadeya egypt circondato csf army
+0.59|alexandrium egypt weather fair alexandrium egypt
+0.57|egypt giggling rear end ofhttp pogyph
+0.49|egypt masr move towards syrium opposition sinaus
+0.41|spanish court uphold decision hand salem spain egypt
+0.47|usa russium panic mode fsa gain ground pacing diplomacy putin obama turkey lebanon egypt
+Retrieved 4 new auxiliary tweets.
+0.0|sun truth
+1.0|egypt giggling rear end ofhttp pogyph
+1.0|bbm pin add mufc manchesterunited bbmshare bbpin egypt blackberrypin blackberrymessenger dubaus manchesterbbmpin
+1.0|alexandrium egypt weather fair alexandrium egypt
+()
+Aux F1 - Iteration-15=0.62
+Precision=0.68
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+8.0  13.0  
+4.0  27.0  
+
+0.49|palestinianleadership overseasleadership hama page iran egypt
+0.59|askliam can sometime egypt
+0.45|egypt oxycodone liver toxicity buy tramadol glitter just antique saudus ksa bhr
+0.49|notice tomorrow safar make beat egypt islam
+0.47|egypt two son make cry
+0.56|egypt visit place earth quick
+0.6|egypt condition cairo eet egyweather
+0.44|four egyptian activist gaza injure israeli fire convoy palestine egypt
+0.49|egypt douche bag mousterbate pic alien lol
+0.58|dob remember place egypt london lebanon syrium instapic instaphoto instamood
+Retrieved 4 new auxiliary tweets.
+1.0|askliam can sometime egypt
+1.0|dob remember place egypt london lebanon syrium instapic instaphoto instamood
+1.0|egypt condition cairo eet egyweather
+1.0|egypt visit place earth quick
+()
+Aux F1 - Iteration-16=0.59
+Precision=0.66
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+7.0  14.0  
+4.0  27.0  
+
+0.43|break central bank governor resign post news aswat masriya egypt
+0.46|dear unite state bitch dictator obama egypt politics tahrir
+0.6|thedrivehome beautiful sunset cairo egypt
+0.43|egypt can believe can back
+0.48|wasp date egypt insect rachidh nature photo
+0.4|egypt child try follow study buy nfl football jersey saudus ksa bhr
+0.34|chill beach class egypt alexandrium beach sunshine sand relax arabic egyptian
+0.55|cairo contagion lethargy political conundrum egyconstitution egypt
+0.54|must read egypt
+0.49|call egypt sway palestinian end hostility official say gazaunderattack
+Retrieved 3 new auxiliary tweets.
+0.0|chill beach class egypt alexandrium beach sunshine sand relax arabic egyptian
+0.0|egypt child try follow study buy nfl football jersey saudus ksa bhr
+1.0|thedrivehome beautiful sunset cairo egypt
+()
+Aux F1 - Iteration-17=0.65
+Precision=0.71
+Recall=0.77
+Aux F1 - ConfusionMatrix:
+11.0  10.0  
+7.0   24.0  
+
+0.45|tahrir just awe horizontal organization greed tyranny love egypt watchingandlearning
+0.5|egypt must forget street child write via poverty
+0.51|girl need spoil furniture offer egypt cairo
+0.49|yes constitution sake divine paedophilia egypt
+0.53|nothing make happier packed arrival hall cairo international airport tourism egypt backontopbitch
+0.36|mubarak sentence prison base knowledge event lack action prevent death morsus egypt
+0.51|elbaradeus moussa sabbahi press conf tgthr egypt
+0.4|groppus bear rovio swiss board ship egypt early country full opportunity http
+0.44|egypt flood wise leader time fill middle wide exhausting black hole lighten wait
+0.42|egypt live pastor turn church near tahrir field hospital say police firing tearga
+Retrieved 2 new auxiliary tweets.
+0.0|mubarak sentence prison base knowledge event lack action prevent death morsus egypt
+0.0|groppus bear rovio swiss board ship egypt early country full opportunity http
+()
+Aux F1 - Iteration-18=0.65
+Precision=0.76
+Recall=0.61
+Aux F1 - ConfusionMatrix:
+15.0  6.0   
+12.0  19.0  
+
+0.43|wow end thousand myth remember maspero massacre egypt
+0.43|esteem salafus know indecent sexual act car old now support egypt porn ban
+0.45|world eye egypt tomorrow constitutional referendum peace globalpolitic canpolus
+0.51|world australium urge ban cattle export egypt
+0.46|rightfully change policy towards egypt stand universal rights peo
+0.47|egypt masr egyptian stage mass rally sinaus
+0.46|thousand demonstrator front presidential palace singing national anthem egypt dne via
+0.41|anything interesting egypt today haha
+0.52|clash cairo egypt plunge deeper crisis afp video
+0.55|egypt country
+Retrieved 0 new auxiliary tweets.
+()
+Aux F1 - Iteration-19=0.67
+Precision=0.71
+Recall=0.81
+Aux F1 - ConfusionMatrix:
+11.0  10.0  
+6.0   25.0  
+
+0.44|shit happen especially egypt
+0.48|demonstration surround presidential palace tahrir cairo egypt morsus ikh
+0.49|can hear president will see soon auc marchtomorsus tuesday egypt
+0.51|must quite sight egypt presidential palace cairo tonight
+0.43|mom long time ago egypt time travel adventure
+0.46|follow new baby new update way foodiesinthehouse review egypt yallabreak
+0.52|egypt receive support presidency via
+0.56|egypt lord sexy
+0.44|egypt matt receive quit class regard publish stacyi photo
+0.45|first info website arab spring youth egypt tahrir bahrain syrium
+Retrieved 1 new auxiliary tweets.
+1.0|egypt lord sexy
+()
+Aux F1 - Iteration-20=0.59
+Precision=0.66
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+7.0  14.0  
+4.0  27.0  
+

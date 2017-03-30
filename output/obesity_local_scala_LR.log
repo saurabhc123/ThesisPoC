@@ -1,0 +1,1883 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+17/03/27 19:23:52 INFO Remoting: Starting remoting
+17/03/27 19:23:53 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@172.30.203.32:55272]
+Hello World!11
+
+***************** Parameters used for EXPERIMENT *****************
+	filterToUse = CosineSim
+	minSimilarityThreshold = 0.4
+	cosineSimilarityWindowSize= 0.3
+	minWmDistanceThreshold = 0.49
+	webWord2VecBaseUri = http://localhost:5000/getvector/
+	maxFpmWordsToPick = 35
+	minFpmWordsDetected = 0
+	refreshLocalWordVectors = false
+	maxExperimentIterations = 20
+	maxAuxTweetsToAddEachIteration = 20
+	thresholdF1 = 0.98
+	classifierType = LogisticRegression
+	folderNameForCnnClassifier = 
+	auxiliaryThresholdExpectation = 0.01
+	fileDelimiter = ,
+	trainingDataFile = data/final/obesity_training_data.txt
+	validationDataFile = data/final/obesity_validation_data.txt
+	auxiliaryDataFile = data/final/obesity_auxiliary_data.txt
+	supplementedCleanAuxiliaryFile = data/final/obesity_auxiliary_data.txt
+
+***************** Parameters used for EXPERIMENT *****************
+
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+
+Initial F1=0.87
+Precision=0.89
+Recall=0.81
+Initial - ConfusionMatrix:
+97.0  8.0   
+15.0  64.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+-0.75|hurricane sandy sleepover letsgetexposing randydole
+-0.51|hurricane sandy ct ny nj east coast state ass region deadly storm massive storm
+-0.84|drdaliah month hurricane sandy nj see baby
+-0.77|petsmart charity relief effort hurricane sandy ravage east coast last october leave
+-0.75|raf cover hurricane sign battle britain ace sandy sander dfc
+-0.89|love keep highlight star citizen hurricane nice unexpected bkcyclones
+-0.75|winkyboo list hurricane sandy donation drop location
+-0.81|sandy damage bike nyc
+-0.81|damn hurricane sandy ruin new york city dirty
+-0.86|look photo effect hurricane kalungkot
+-0.76|task force convene president obama late last year determine best rebuild hurricane
+-0.75|hurricane sandy view
+-0.75|hurricane sandy information file claim
+-0.75|hurricane sandy disrespect nigga swear
+-0.75|power hurricane sandy destroy also god bless
+-0.75|deadline set state buyout staten island neighborhood hit hurricane sandy statenisland
+-0.75|hurricane sandy
+-0.7|hurricane sandy probably best thing could happen obama right gonna aid shit reelection
+-0.8|update hurricane sandy video
+-0.84|thought everyone affect hurricane stay
+Retrieved 20 new auxiliary tweets.
+0.0|hurricane sandy sleepover letsgetexposing randydole
+0.0|hurricane sandy ct ny nj east coast state ass region deadly storm massive storm
+0.0|sandy damage bike nyc
+0.0|damn hurricane sandy ruin new york city dirty
+0.0|look photo effect hurricane kalungkot
+0.0|hurricane sandy information file claim
+0.0|hurricane sandy disrespect nigga swear
+0.0|power hurricane sandy destroy also god bless
+0.0|deadline set state buyout staten island neighborhood hit hurricane sandy statenisland
+0.0|hurricane sandy
+0.0|drdaliah month hurricane sandy nj see baby
+0.0|petsmart charity relief effort hurricane sandy ravage east coast last october leave
+0.0|raf cover hurricane sign battle britain ace sandy sander dfc
+0.0|love keep highlight star citizen hurricane nice unexpected bkcyclones
+0.0|winkyboo list hurricane sandy donation drop location
+0.0|hurricane sandy probably best thing could happen obama right gonna aid shit reelection
+0.0|update hurricane sandy video
+0.0|thought everyone affect hurricane stay
+0.0|task force convene president obama late last year determine best rebuild hurricane
+0.0|hurricane sandy view
+()**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+Adding 20 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-1=0.89
+Precision=0.93
+Recall=0.82
+Aux F1 - ConfusionMatrix:
+100.0  5.0   
+14.0   65.0  
+
+Best F1 so far - 0.89 at iteration:1
+
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+-0.83|street view car start map sandy damage
+-0.84|jayroduh hurricane hurricane
+-0.91|todayinthesky sure bad go outside hurricane airport day hurricane sandy yikes
+-0.79|elm look something hurricane sandy make
+-0.77|follower may affect hurricane sandy hope safety
+-0.76|hurricane sandy new jersey rebuild ahead thoughtful via huffingtonpost
+-0.82|watch live hurricane sandy cause partial crane collapse midtown manhattan
+-0.75|hamradionow hurricane sandy
+-0.85|climate change cause hurricane
+-0.88|go since hurricane sandy bet still look lmao
+-0.84|armanidope name hurricane gay name like name ish hurricane death megatron guarantee nigga evacuate like need
+-0.75|bill mckibben hurricane sandy climate change ever call
+-0.7|habitat plan chevrolet donation make real help hurricane sandy recovery
+-0.79|storm gain strength churn north hurricane sandy
+0.4|sougofollow maria remove photo
+-0.9|snooki say hurricane get
+-0.81|join effort help hurricane sandy see help
+-0.75|story behind new york hurricane sandy cover nahumg
+-0.8|hurricane sandy lol imagine hurricane
+-0.97|hurricane atlantic tropical weather outlook sandy
+Retrieved 19 new auxiliary tweets.
+0.0|todayinthesky sure bad go outside hurricane airport day hurricane sandy yikes
+0.0|elm look something hurricane sandy make
+0.0|story behind new york hurricane sandy cover nahumg
+0.0|hurricane sandy lol imagine hurricane
+0.0|hurricane atlantic tropical weather outlook sandy
+0.0|bill mckibben hurricane sandy climate change ever call
+0.0|habitat plan chevrolet donation make real help hurricane sandy recovery
+0.0|storm gain strength churn north hurricane sandy
+0.0|street view car start map sandy damage
+0.0|jayroduh hurricane hurricane
+0.0|hamradionow hurricane sandy
+0.0|climate change cause hurricane
+0.0|follower may affect hurricane sandy hope safety
+0.0|hurricane sandy new jersey rebuild ahead thoughtful via huffingtonpost
+0.0|watch live hurricane sandy cause partial crane collapse midtown manhattan
+0.0|snooki say hurricane get
+0.0|join effort help hurricane sandy see help
+0.0|go since hurricane sandy bet still look lmao
+0.0|armanidope name hurricane gay name like name ish hurricane death megatron guarantee nigga evacuate like need
+()**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+
+Aux F1 - Iteration-2=0.83
+Precision=0.79
+Recall=0.84
+Aux F1 - ConfusionMatrix:
+87.0  18.0  
+13.0  66.0  
+
+Best F1 so far - 0.89 at iteration:1
+
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+-0.87|davidcjacks hurricane sandy prediction bad expect
+-0.75|hurricane sandy destroy medical research hurricane sandy destroy medical research
+-0.75|even argue piss gonna hurricane sandy
+-0.93|update aac close class cancel tuesday october due hurricane stay safe monctopa
+-0.75|fire ravage jersey shore boardwalk rebuild hurricane sandy flame begin ice cream shop
+-0.94|roommate go hard tonight throw bed floor guy towel hurricane
+-0.8|roll call effect hurricane sandy family please like comment
+-0.75|hurricane sandy need piss right
+-0.75|fayobserver fort bragg soldier generate power hurricane sandy victim ocpa
+-0.74|weatherchannel evacuate irene sandy come family live new
+-0.9|think suffer loss hurricane thought
+-0.75|nubsanimalwatch allanimalrights animal rescue hurricane sandy october sandyaid
+-0.75|hurricane sandy afford keep kennel somewhere oregon mygirl
+-0.76|hurricane sandy really williams make whole thing
+-0.71|new jersey insurance industry show sign change wake hurricane sandy industry reform
+-0.71|ticket info announce massive hurricane sandy benefit msg paul mccartney kanye west bruce springsteen
+-0.82|go school otherwilljames amaze writer long island coast unexpected gift hurricane sandy
+-0.84|njdotcom bad hurricane sandy expect late njsandy
+-0.85|hurricane sandy tweet goin since yesterday still go
+-0.76|tlc great cake bos best show sweet help hurricane sandy cakebosskickoff cakebossbuddy tlc
+Retrieved 20 new auxiliary tweets.
+0.0|njdotcom bad hurricane sandy expect late njsandy
+0.0|hurricane sandy tweet goin since yesterday still go
+0.0|tlc great cake bos best show sweet help hurricane sandy cakebosskickoff cakebossbuddy tlc
+0.0|davidcjacks hurricane sandy prediction bad expect
+0.0|hurricane sandy destroy medical research hurricane sandy destroy medical research
+0.0|roommate go hard tonight throw bed floor guy towel hurricane
+0.0|roll call effect hurricane sandy family please like comment
+0.0|hurricane sandy need piss right
+0.0|fayobserver fort bragg soldier generate power hurricane sandy victim ocpa
+0.0|weatherchannel evacuate irene sandy come family live new
+0.0|ticket info announce massive hurricane sandy benefit msg paul mccartney kanye west bruce springsteen
+0.0|go school otherwilljames amaze writer long island coast unexpected gift hurricane sandy
+0.0|even argue piss gonna hurricane sandy
+0.0|update aac close class cancel tuesday october due hurricane stay safe monctopa
+0.0|fire ravage jersey shore boardwalk rebuild hurricane sandy flame begin ice cream shop
+0.0|think suffer loss hurricane thought
+0.0|nubsanimalwatch allanimalrights animal rescue hurricane sandy october sandyaid
+0.0|hurricane sandy afford keep kennel somewhere oregon mygirl
+0.0|hurricane sandy really williams make whole thing
+0.0|new jersey insurance industry show sign change wake hurricane sandy industry reform
+()**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+
+Aux F1 - Iteration-3=0.88
+Precision=0.9
+Recall=0.81
+Aux F1 - ConfusionMatrix:
+98.0  7.0   
+15.0  64.0  
+
+Best F1 so far - 0.89 at iteration:1
+
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+**********Omitting Tweet**********:usgs redoubt volcano alaska sm
+-0.75|hurricane sandy warm world end december
+-0.76|new art world ass impact hurricane sandy
+-0.76|new york aquarium devastate hurricane sandy donation page
+0.12|photo magnitude earthquake strike offshore northern california wednesday rattle
+0.22|urgent major earthquake spark tsunami warn pacific
+-0.01|jarrodcombs believe miss good happen get back doitagain
+0.28|shakingearth earthquake mb fiji region
+0.25|haiti earthquake relief fund canadian red cross say
+0.59|earthquake tremor peshawar along chitral low dir
+0.03|earthquake minute ago know wasnt trip
+0.08|earthquake rock mexico city mexicocity via ecanadanow
+0.23|din earthquake go
+0.0|usgs redoubt volcano alaska sm
+0.09|series small earthquake china may aftershock major quake way back
+0.32|havin homeroom shake like earthquake
+-0.15|download link tyga rack city bubble bubble reggaeton shake earthquake
+0.07|really think god warn get earthquake nvr see summer la like least recent year
+0.28|earthquake omg wtf
+0.28|earthquake dah map dawg
+-0.21|sismo nne burney california csismica
+Retrieved 12 new auxiliary tweets.
+0.0|usgs redoubt volcano alaska sm
+0.0|series small earthquake china may aftershock major quake way back
+0.0|really think god warn get earthquake nvr see summer la like least recent year
+0.0|sismo nne burney california csismica
+0.0|download link tyga rack city bubble bubble reggaeton shake earthquake
+1.0|earthquake tremor peshawar along chitral low dir
+0.0|earthquake minute ago know wasnt trip
+0.0|hurricane sandy warm world end december
+0.0|new art world ass impact hurricane sandy
+0.0|new york aquarium devastate hurricane sandy donation page
+0.0|earthquake rock mexico city mexicocity via ecanadanow
+0.0|jarrodcombs believe miss good happen get back doitagain
+()**********Omitting Tweet**********:usgs redoubt volcano alaska sm
+**********Omitting Tweet**********:usgs redoubt volcano alaska sm
+**********Omitting Tweet**********:usgs redoubt volcano alaska sm
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+
+Aux F1 - Iteration-4=0.9
+Precision=0.94
+Recall=0.82
+Aux F1 - ConfusionMatrix:
+101.0  4.0   
+14.0   65.0  
+
+Best F1 so far - 0.89 at iteration:1
+
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+**********Omitting Tweet**********:eartquake valdez alaska
+**********Omitting Tweet**********:sismo nne badger alaska usgs
+0.41|earthquake indonesian archipelago indonesia tual preliminary report earthquake
+0.07|deprem northern california january gmt earthquake
+0.74|fish eagle otter star late usgs geohealth newsletter
+0.0|sismo nne badger alaska usgs
+0.26|newearthquake earthquake near coast northern jul epicenter ago depth
+0.28|really thoight earthquake
+0.19|green earthquake alert depth indonesia utc people
+0.0|eartquake valdez alaska
+0.28|possible na maging parehas tayo sa earthquake would become
+-0.27|update dominique collier kcrungmc reggierankin bowncewithme
+0.26|ima get january january
+0.21|come intel chromebook flood best via
+-0.12|lol nerpp blame since know shes like last one im name lol
+0.31|ericalynnloper live asf
+-0.02|flood warn issue april cdt may cdt nw wxtx
+-0.02|unesco project flood management ayutthaya
+-0.05|flood warn issue september mdt september mdt nw national weather
+0.08|shv cancel flood warn rabbit creek kilgore
+-0.02|beaufort flood victim need send contact detail themimpa bank
+0.15|thing look inside carpet clean company
+Retrieved 12 new auxiliary tweets.
+1.0|earthquake indonesian archipelago indonesia tual preliminary report earthquake
+0.0|lol nerpp blame since know shes like last one im name lol
+0.0|eartquake valdez alaska
+0.0|update dominique collier kcrungmc reggierankin bowncewithme
+0.0|flood warn issue april cdt may cdt nw wxtx
+0.0|unesco project flood management ayutthaya
+0.0|flood warn issue september mdt september mdt nw national weather
+0.0|deprem northern california january gmt earthquake
+1.0|fish eagle otter star late usgs geohealth newsletter
+0.0|sismo nne badger alaska usgs
+0.0|shv cancel flood warn rabbit creek kilgore
+0.0|beaufort flood victim need send contact detail themimpa bank
+()**********Omitting Tweet**********:sismo nne badger alaska usgs
+**********Omitting Tweet**********:eartquake valdez alaska
+**********Omitting Tweet**********:sismo nne badger alaska usgs
+**********Omitting Tweet**********:eartquake valdez alaska
+**********Omitting Tweet**********:eartquake valdez alaska
+**********Omitting Tweet**********:sismo nne badger alaska usgs
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+
+Aux F1 - Iteration-5=0.81
+Precision=0.76
+Recall=0.82
+Aux F1 - ConfusionMatrix:
+84.0  21.0  
+14.0  65.0  
+
+Best F1 so far - 0.89 at iteration:1
+
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+**********Omitting Tweet**********:sweden socialdemokrat carlbildt defend mb crime
+**********Omitting Tweet**********:three men arrest swoop terrorpolice centrallondon
+0.1|cree lead work light bar spot flood suv atv boat truck lamp
+-0.02|flood
+-0.02|set straggler title deed inflooding healthfulness flood insurance yvulejq
+-0.02|badliontryhard flood ur house ur sweat
+0.08|surely day raya instagram flood colourful baju raya timeline
+0.31|flood fg release tackle food health crisis raise
+0.14|check story catoosa deputy save mother son
+0.01|mmda flood alert blumentrit towards ust direction knee passable light vehicle expect heavy
+0.05|new flood alert morning harper brook willow brook river start rise check detail
+-0.18|vikiwatsonflr garthbrooks amaliearena safety consideration normalize relation terrorism sponsor country
+-0.2|amybeccaaaron dorothyofisrael fionnmacky terrorism jew commit kill christian
+0.0|three men arrest swoop terrorpolice centrallondon
+0.0|sweden socialdemokrat carlbildt defend mb crime
+-0.23|uk men jail plan terrorism three british men include former police community support officer
+-0.18|mayor tower hamlet give mosque agree wiv terrorism dont give jack shit right
+-0.18|illuminazealia grammyless fucktyler terrorism child
+-0.02|travel abroad safely age terrorism via yahootravel
+-0.26|founder turkish school around world believe education antidote ignorance terrorism
+-0.42|sharemarket damage financial coal mine serious risk non violent protest ok
+0.35|love westgate come illuminati jah bless mbusii hakunambrrrrcha
+Retrieved 17 new auxiliary tweets.
+0.0|amybeccaaaron dorothyofisrael fionnmacky terrorism jew commit kill christian
+0.0|three men arrest swoop terrorpolice centrallondon
+0.0|travel abroad safely age terrorism via yahootravel
+0.0|founder turkish school around world believe education antidote ignorance terrorism
+0.0|sharemarket damage financial coal mine serious risk non violent protest ok
+0.0|set straggler title deed inflooding healthfulness flood insurance yvulejq
+0.0|badliontryhard flood ur house ur sweat
+0.0|new flood alert morning harper brook willow brook river start rise check detail
+0.0|vikiwatsonflr garthbrooks amaliearena safety consideration normalize relation terrorism sponsor country
+0.0|sweden socialdemokrat carlbildt defend mb crime
+0.0|uk men jail plan terrorism three british men include former police community support officer
+0.0|surely day raya instagram flood colourful baju raya timeline
+0.0|mmda flood alert blumentrit towards ust direction knee passable light vehicle expect heavy
+0.0|mayor tower hamlet give mosque agree wiv terrorism dont give jack shit right
+0.0|illuminazealia grammyless fucktyler terrorism child
+0.0|cree lead work light bar spot flood suv atv boat truck lamp
+0.0|flood
+()**********Omitting Tweet**********:three men arrest swoop terrorpolice centrallondon
+**********Omitting Tweet**********:sweden socialdemokrat carlbildt defend mb crime
+**********Omitting Tweet**********:three men arrest swoop terrorpolice centrallondon
+**********Omitting Tweet**********:sweden socialdemokrat carlbildt defend mb crime
+**********Omitting Tweet**********:sweden socialdemokrat carlbildt defend mb crime
+**********Omitting Tweet**********:three men arrest swoop terrorpolice centrallondon
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+
+Aux F1 - Iteration-6=0.89
+Precision=0.93
+Recall=0.82
+Aux F1 - ConfusionMatrix:
+100.0  5.0   
+14.0   65.0  
+
+Best F1 so far - 0.89 at iteration:1
+
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.0|georgegalloway
+-0.11|sign understand terrorism terrorist threat
+0.0|million violent muslim death fee cycle terrorism nbc news
+0.0|discover cruel fact behind illegalivorytrade
+-0.2|artmous ollyneville aarondarkwood le traffic great threat human terrorism
+0.17|go store buy cheese give five minute lecture cashier teenage fgp iwantmydamndonuts
+0.99|health soy protein cancer obesity cardiovascular disease
+0.41|take obesity issue ad campaign canada shine take obesity issue
+-0.25|jamieoliver please follow journey depression thank
+0.66|daughter argue heart attack go kill obesity go kill
+0.98|top story obesity big threat hunger obesity big health crisis globally hunger
+0.98|iffoodcouldtalkthen obesity could fight good
+0.96|know country pandemic obesity epidemic skinny jean twitterlesstom
+0.95|factsinyourface nowadays people die obesity
+0.49|watch horror movie reduce risk brain body tend burn calorie watch scary fact fuck
+0.96|check back resolution tip weightloss diet obesity health
+0.98|obesity low use cannabis user
+0.99|breathe problem child age year approximately ten obesity news
+0.45|little sleep big waistline
+0.96|viewpoint curb obesity viewpoint whether one simple solution
+Retrieved 19 new auxiliary tweets.
+0.0|georgegalloway
+0.0|sign understand terrorism terrorist threat
+1.0|check back resolution tip weightloss diet obesity health
+1.0|obesity low use cannabis user
+1.0|know country pandemic obesity epidemic skinny jean twitterlesstom
+1.0|factsinyourface nowadays people die obesity
+1.0|watch horror movie reduce risk brain body tend burn calorie watch scary fact fuck
+0.0|artmous ollyneville aarondarkwood le traffic great threat human terrorism
+1.0|health soy protein cancer obesity cardiovascular disease
+1.0|take obesity issue ad campaign canada shine take obesity issue
+1.0|breathe problem child age year approximately ten obesity news
+1.0|little sleep big waistline
+1.0|viewpoint curb obesity viewpoint whether one simple solution
+0.0|million violent muslim death fee cycle terrorism nbc news
+0.0|discover cruel fact behind illegalivorytrade
+0.0|jamieoliver please follow journey depression thank
+1.0|daughter argue heart attack go kill obesity go kill
+1.0|top story obesity big threat hunger obesity big health crisis globally hunger
+1.0|iffoodcouldtalkthen obesity could fight good
+()**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+Adding 19 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-7=0.92
+Precision=0.96
+Recall=0.86
+Aux F1 - ConfusionMatrix:
+102.0  3.0   
+11.0   68.0  
+
+Best F1 so far - 0.92 at iteration:7
+
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+**********Omitting Tweet**********:learn
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.2|terrific conversation today healthyweightcommitmentfoundation togethercounts
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.89|thank dare push im grateful sometimes wish die obesity
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.87|actual internal picture obesity computer
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.87|doctor chiropractic serve frontlines battle childhood obesity
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.89|breast cancer obesity link prostate cancer may vary race
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.88|triplecure cancer diabetes obesity
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.87|avert obesity type diabetes india beverage taxation
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.77|japan lift evacuation order fukushima town naraha government japan tokyo news
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.74|huge local hurdle restart nuclear reactor japan year reaction fukushima close
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.8|fukushima falsify cancer report expose
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.78|long ago tepco admit thousand gallon radioactive water flow pacific fukushima
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.6|pump cool damage reactor fukushima plant stop tokyo pump use cool tscent
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.78|news fukushima old remain nuclear plant shut
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.78|fukushima le journal est sorti de le unes via suretenucleaire
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.79|fukushima local resident say near point fukushima japan radiation green water
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.76|fukushima inside dangerous room world via time
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.0|learn
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.78|taiwan former taiwan president lee visit tokyo fukushima disaster area south china morning post
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.78|freaky fukushima friday reminder fish bioaccumulating radionuclides thatarcher
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.72|fukushima radiation level time high previously disco aquatic radiation plume report hit west coast
+Retrieved 19 new auxiliary tweets.
+1.0|doctor chiropractic serve frontlines battle childhood obesity
+1.0|breast cancer obesity link prostate cancer may vary race
+1.0|huge local hurdle restart nuclear reactor japan year reaction fukushima close
+1.0|fukushima falsify cancer report expose
+1.0|news fukushima old remain nuclear plant shut
+1.0|fukushima le journal est sorti de le unes via suretenucleaire
+1.0|fukushima local resident say near point fukushima japan radiation green water
+1.0|long ago tepco admit thousand gallon radioactive water flow pacific fukushima
+1.0|pump cool damage reactor fukushima plant stop tokyo pump use cool tscent
+1.0|triplecure cancer diabetes obesity
+1.0|avert obesity type diabetes india beverage taxation
+1.0|japan lift evacuation order fukushima town naraha government japan tokyo news
+1.0|taiwan former taiwan president lee visit tokyo fukushima disaster area south china morning post
+1.0|freaky fukushima friday reminder fish bioaccumulating radionuclides thatarcher
+1.0|fukushima radiation level time high previously disco aquatic radiation plume report hit west coast
+1.0|thank dare push im grateful sometimes wish die obesity
+1.0|actual internal picture obesity computer
+1.0|fukushima inside dangerous room world via time
+0.0|learn
+()**********Omitting Tweet**********:learn
+**********Omitting Tweet**********:learn
+**********Omitting Tweet**********:learn
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+
+Aux F1 - Iteration-8=0.79
+Precision=0.72
+Recall=0.82
+Aux F1 - ConfusionMatrix:
+80.0  25.0  
+14.0  65.0  
+
+Best F1 so far - 0.92 at iteration:7
+
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.76|dailymirror study show fukushima plutonium playground km nuclear plant savefukuchildren
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.74|fun game japan gov tepco fukushima clean close rid
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.78|fukushima ultima un plan experimental para contener fugas de agua radiactiva
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.8|year fukushima japan open big solar plant reach national milestone renewable energy
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.31|cidrap texas contact trace identify ebola fever monitor
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.7|say ebola case report guinea sierraleone last week drop low total yr
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.59|sapdevcenter could big data solution
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.41|tech ebola detect computer software nin computersoftware ebola flaggedoff health healthmap map
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.22|back home liberia stanford physician continue help fight ebola
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.31|gomerblog man claim catch ebola flu shoot
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.31|wereldgezondheidsorganisatie verzweeg uitbraak ebola twee maanden lang ebola
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.41|ebola case make stock market crash much would pandemic
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.45|ebola infect five new people every hour sierra leone figure show liberia worldnews sierraleone africa
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.27|ebola death toll surpass west africa glv
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.43|lesechos un robot pour lutter contre ebola
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.69|forget ebola fear people year die car accident terrible mass call
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.31|drama queen icebucketchallenge ebola joycetanks paris bath robe
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.52|low per caput medical workforce world produce new liberian drs kill ebola
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.3|itg ebola many people head liberia liberia kenyaairways ebola
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.31|ebola ebola patient dr kent brantley recover discharge kent
+Retrieved 12 new auxiliary tweets.
+1.0|tech ebola detect computer software nin computersoftware ebola flaggedoff health healthmap map
+1.0|lesechos un robot pour lutter contre ebola
+1.0|forget ebola fear people year die car accident terrible mass call
+1.0|low per caput medical workforce world produce new liberian drs kill ebola
+1.0|ebola case make stock market crash much would pandemic
+1.0|ebola infect five new people every hour sierra leone figure show liberia worldnews sierraleone africa
+1.0|say ebola case report guinea sierraleone last week drop low total yr
+1.0|sapdevcenter could big data solution
+1.0|year fukushima japan open big solar plant reach national milestone renewable energy
+1.0|dailymirror study show fukushima plutonium playground km nuclear plant savefukuchildren
+1.0|fun game japan gov tepco fukushima clean close rid
+1.0|fukushima ultima un plan experimental para contener fugas de agua radiactiva
+()**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+
+Aux F1 - Iteration-9=0.77
+Precision=0.67
+Recall=0.89
+Aux F1 - ConfusionMatrix:
+71.0  34.0  
+9.0   70.0  
+
+Best F1 so far - 0.92 at iteration:7
+
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.39|nigerian man quarantine ebola hong kong nigerian man quarantine today hong kong
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.32|skynewsbreak petition whitehouse ban flight ebola affect sign
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.48|important change come global health security realm ebola must read
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.4|ebola exist low level intact rainforest emerge destroy bushmeat eat
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.59|reaction see winter storm forecast pax scwx gawx
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.63|inyo national forest prepare weekend storm may implement winter closure road
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.67|nwsnewyorkny convert winter storm watch advisory admit uncertainty snow
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.32|winter storm warn issue march edt march edt nw wxny
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.33|winter storm warn penobscot county issue march edt march edt nw
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.65|resident deal power winter storm greensboro
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.54|markjweather winter storm warn heavy snow move northern ohio early sunday ohwx wews
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.64|winter look like feel like snow storm come
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.63|winter storm watch whole view area tomorrow night monday morning
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.56|chance go winter storm warn ice storm
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.38|winter storm warn issue january mst january mst nw wxid
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.6|call crazy start wonder whole winter storm call kid want snow
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.59|season winter chicago history
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.59|love still call winter storm yeah think weld brace
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.56|get ready second winter storm expect inch far top inch get last
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.5|winter storm warn early storm warn still bronx
+Retrieved 14 new auxiliary tweets.
+1.0|winter storm watch whole view area tomorrow night monday morning
+1.0|get ready second winter storm expect inch far top inch get last
+1.0|winter storm warn early storm warn still bronx
+1.0|season winter chicago history
+1.0|love still call winter storm yeah think weld brace
+1.0|reaction see winter storm forecast pax scwx gawx
+1.0|inyo national forest prepare weekend storm may implement winter closure road
+1.0|nwsnewyorkny convert winter storm watch advisory admit uncertainty snow
+1.0|resident deal power winter storm greensboro
+1.0|markjweather winter storm warn heavy snow move northern ohio early sunday ohwx wews
+1.0|winter look like feel like snow storm come
+1.0|chance go winter storm warn ice storm
+1.0|call crazy start wonder whole winter storm call kid want snow
+1.0|important change come global health security realm ebola must read
+()**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+
+Aux F1 - Iteration-10=0.83
+Precision=0.8
+Recall=0.82
+Aux F1 - ConfusionMatrix:
+89.0  16.0  
+14.0  65.0  
+
+Best F1 so far - 0.92 at iteration:7
+
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.6|britain track bumper fruit vegetable crop mild wet winter via skynews
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.61|update winter storm
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.38|winter storm warn issue february mst february mst nw wxmt
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.65|harsh winter storm across much usa mother government
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.6|haha yeah gonna rough winter like last yr storm bad next week apparently snow
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.65|winter storm postpone game northeast
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.24|winter storm warn issue april mdt april mdt nw wxsd
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.11|severe thunderstorm warn issue june edt june edt nw
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.06|severe weather statement issue july cdt july cdt nw severe
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.09|severe thunderstorm watch issue june cdt june cdt nw severe
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.01|severe weather weather service nashville cdt thu apr
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.1|heavy rain flood part florida alabama
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.11|current situation pink tornado watch yellow severe
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.09|severe thunderstorm warn issue july cdt july cdt nw wxne
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.09|nwsseveretstorm severe thunderstorm warn include ralph sd ludlow sd pm mdt
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.18|due threat strong severe storm today weekly noaa weather radio test move
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.08|weather alert nw issue severe thunderstorm warn part seek strong shelter risk
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.05|french teacher talk severe french class weather class
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.1|severe weather warn much bahamas via bahamas department
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.1|severe weather move wind tune whohd whoweather stream online get late
+Retrieved 15 new auxiliary tweets.
+0.0|severe weather warn much bahamas via bahamas department
+0.0|severe weather move wind tune whohd whoweather stream online get late
+0.0|weather alert nw issue severe thunderstorm warn part seek strong shelter risk
+0.0|french teacher talk severe french class weather class
+0.0|severe thunderstorm warn issue july cdt july cdt nw wxne
+0.0|nwsseveretstorm severe thunderstorm warn include ralph sd ludlow sd pm mdt
+0.0|severe weather weather service nashville cdt thu apr
+0.0|heavy rain flood part florida alabama
+1.0|haha yeah gonna rough winter like last yr storm bad next week apparently snow
+1.0|winter storm postpone game northeast
+0.0|severe weather statement issue july cdt july cdt nw severe
+0.0|severe thunderstorm watch issue june cdt june cdt nw severe
+1.0|britain track bumper fruit vegetable crop mild wet winter via skynews
+1.0|update winter storm
+1.0|harsh winter storm across much usa mother government
+()**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+
+Aux F1 - Iteration-11=0.8
+Precision=0.74
+Recall=0.81
+Aux F1 - ConfusionMatrix:
+83.0  22.0  
+15.0  64.0  
+
+Best F1 so far - 0.92 at iteration:7
+
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+**********Omitting Tweet**********:need vacation
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.7|twister possible plain tornado hail high wind may break central southern plain
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.1|severe weather warn cold snap strike via
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.06|check brand new severe weather go link start scroll
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.04|joecioffi severe weather threat afternoon local flood shower possible
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.12|severe thunderstorm warn pm cdt issue county
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.1|severe thunderstorm warn issue june cdt june cdt nw iawx
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.29|severe wx alert storm warn replace winter weather advisory
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.16|severe weather threaten midsection severe storm already take toll part michigan
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.05|brian study radar live air severe weather coverage monday take quietfun
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.2|advisory public storm warn signal capiz per severe weather bulletin issue dec rubyph
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.18|hoye kisi nay protest kia hai ya nai hamaray molve nai hain taliban inhon nay palay hoye hain muhammadmylife
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.0|need vacation
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.18|militer pakistan sebut heli jatuh karena kerusakan mesin bukan taliban
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.78|un mensaje para news
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.16|ayeshaspeaksnow mqm terrorist fund taliban without
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.11|one page
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.18|taliban chief demand foreign troop leave
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.09|nati esta enojada conmigo pero cabe ninguna le voy hablar la voy cargosiar jajaa la quiero una banda esta piba
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.18|kirtaner dzwooo americankevin naacp ill fuck taliban idgaf
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.2|troop tell ignore taliban bring rap young boy military base crime
+Retrieved 9 new auxiliary tweets.
+1.0|un mensaje para news
+0.0|nati esta enojada conmigo pero cabe ninguna le voy hablar la voy cargosiar jajaa la quiero una banda esta piba
+0.0|brian study radar live air severe weather coverage monday take quietfun
+0.0|severe thunderstorm warn issue june cdt june cdt nw iawx
+0.0|need vacation
+0.0|severe weather warn cold snap strike via
+0.0|joecioffi severe weather threat afternoon local flood shower possible
+0.0|check brand new severe weather go link start scroll
+1.0|twister possible plain tornado hail high wind may break central southern plain
+()**********Omitting Tweet**********:need vacation
+**********Omitting Tweet**********:need vacation
+**********Omitting Tweet**********:need vacation
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+
+Aux F1 - Iteration-12=0.8
+Precision=0.73
+Recall=0.86
+Aux F1 - ConfusionMatrix:
+80.0  25.0  
+11.0  68.0  
+
+Best F1 so far - 0.92 at iteration:7
+
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+**********Omitting Tweet**********:message leader islamic republic cia
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.18|religious extremism mischief dajjal antichrist isi taliban alshabab islam kyaapkopatahai
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.14|afghan team due pakistan discus revive taliban peace talk reuters
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.22|atiyajhs every day pressure increase raheel sharif cojco govt enjoy taliban bless
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.18|pasti akn btggjawab kes pengeboman antaranya alqaeda taliban dan
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.18|islamic militant group isi taliban bokoharam must recognise
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.24|teeveezalbundi get taliban boko haram hezbollah hamas findingthesense
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.16|hang taliban want blood small child
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.18|mischief isi daesh alqaeda aqap alshabab wahhabism saudiarabia taliban alshabab
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.0|message leader islamic republic cia
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.17|nathantimpano skynews way taliban say go dangerous everyone leave
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.64|new spokesman mujmash write fancifully draw attention deplorable
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.16|pakistan fight back taliban bullet proof
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.28|rednationrising dbargen lance look like taiban flag
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.22|new taliban leader move fast heal rift afghan insurgency
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.22|therealjuiceeee true feel always come good term
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.32|actually derby least car confederate flag top cheap general lee imitation one minion
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.33|watson cover general confederate flag
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.3|south carolina house vote remove confederate flag statehouse ground
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.39|cold truth black live matter past
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.53|fair foul kid cuss storm share fact confederate flag via bossip
+Retrieved 4 new auxiliary tweets.
+1.0|fair foul kid cuss storm share fact confederate flag via bossip
+0.0|message leader islamic republic cia
+1.0|new spokesman mujmash write fancifully draw attention deplorable
+0.0|therealjuiceeee true feel always come good term
+()**********Omitting Tweet**********:message leader islamic republic cia
+**********Omitting Tweet**********:message leader islamic republic cia
+**********Omitting Tweet**********:message leader islamic republic cia
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+
+Aux F1 - Iteration-13=0.74
+Precision=0.66
+Recall=0.85
+Aux F1 - ConfusionMatrix:
+70.0  35.0  
+12.0  67.0  
+
+Best F1 so far - 0.92 at iteration:7
+
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+**********Omitting Tweet**********:pair admit stab takeaway owner
+**********Omitting Tweet**********:dependentclause uhhhh
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.28|kkk hold sad confederate flag rally south carolina even though flag already go
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.28|heymanhustle wwe cmpunk come back punk lmao may even wave confederate flag lol
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.3|support confederate flag unfollow
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.3|drive home wife day truck confederate flag go say look hon
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.3|percent approve removal confederate flag
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.14|kid geom everytime see kid confederate flag hoodie feel obligate set fire
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.3|yelawolf defend confederate flag
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.0|dependentclause uhhhh
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.14|poll majority see confederate flag southern symbol
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.3|orchestrate takedown confederate flag sc raise national profile
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.3|saw confederate flag disappoint upset angry
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.27|whyiwouldmakeagreatpresident bring back confederate flag close border make every day
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.22|sup bro ur look great ah confederate flag belt buckle compliment
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.26|tearjerker must sc gop rep jenny horne say take confederate flag
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.39|supporter rally accuse flash knife gun black live matter
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.34|like youtube video kkk member confederate flag rally confront wear fubu shoe
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+-0.52|fitter edinburgh falkirk stirling today splashbacktuesday
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.31|festival draw people three day year organizer edinburgh
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.0|pair admit stab takeaway owner
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.58|edinburgh
+Retrieved 5 new auxiliary tweets.
+0.0|pair admit stab takeaway owner
+0.0|edinburgh
+0.0|festival draw people three day year organizer edinburgh
+0.0|dependentclause uhhhh
+0.0|fitter edinburgh falkirk stirling today splashbacktuesday
+()**********Omitting Tweet**********:dependentclause uhhhh
+**********Omitting Tweet**********:pair admit stab takeaway owner
+**********Omitting Tweet**********:dependentclause uhhhh
+**********Omitting Tweet**********:pair admit stab takeaway owner
+**********Omitting Tweet**********:pair admit stab takeaway owner
+**********Omitting Tweet**********:dependentclause uhhhh
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+
+Aux F1 - Iteration-14=0.89
+Precision=0.93
+Recall=0.82
+Aux F1 - ConfusionMatrix:
+100.0  5.0   
+14.0   65.0  
+
+Best F1 so far - 0.92 at iteration:7
+
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+**********Omitting Tweet**********:deserve christmas
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.45|aerlingus disenchant customer lose bag edinburgh dublin promise next
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.51|hello intercambio edinburgh scotland
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.43|super rich scot jim mellon address investor edinburgh first time say
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.2|harristweetride expect bring together stylish
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.52|market data analyst edinburgh competitive salary job job hire itjobs
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+-0.48|account job night auditor holiday inn edinburgh ihgjobs ihg hoteljobs job
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.3|chill pedaltrill expect get everything anything
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.04|susandalgety euanmccolm daily record call
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.52|heaven company libation tightfisted cover waggon lease good understand edinburgh kbxjxe
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.0|deserve christmas
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.49|edinburgh look forward tomorrow
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+-0.5|pay someone come edinburgh deal bin
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.58|annie mac corn exchange edinburgh saturday nov
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.49|edinburgh look gorgeous tonight
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+-0.54|junior cad technician edinburgh matchtech aerospace job
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.12|bad serial
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.27|get one tall flagpole flag
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.22|tomorrow land come see woodland creature waverley arch piano
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.57|job edinburgh senior solicitor edinburgh city centremy client lead scottish law firm edinburgh
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.07|thejealouslife boundaryldn selfridges trafalgarvista acehotel keep weather happy
+Retrieved 17 new auxiliary tweets.
+0.0|super rich scot jim mellon address investor edinburgh first time say
+0.0|market data analyst edinburgh competitive salary job job hire itjobs
+0.0|junior cad technician edinburgh matchtech aerospace job
+0.0|bad serial
+0.0|account job night auditor holiday inn edinburgh ihgjobs ihg hoteljobs job
+0.0|susandalgety euanmccolm daily record call
+0.0|annie mac corn exchange edinburgh saturday nov
+0.0|edinburgh look gorgeous tonight
+0.0|edinburgh look forward tomorrow
+0.0|pay someone come edinburgh deal bin
+0.0|heaven company libation tightfisted cover waggon lease good understand edinburgh kbxjxe
+0.0|deserve christmas
+0.0|tomorrow land come see woodland creature waverley arch piano
+0.0|job edinburgh senior solicitor edinburgh city centremy client lead scottish law firm edinburgh
+0.0|thejealouslife boundaryldn selfridges trafalgarvista acehotel keep weather happy
+0.0|aerlingus disenchant customer lose bag edinburgh dublin promise next
+0.0|hello intercambio edinburgh scotland
+()**********Omitting Tweet**********:deserve christmas
+**********Omitting Tweet**********:deserve christmas
+**********Omitting Tweet**********:deserve christmas
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+
+Aux F1 - Iteration-15=0.89
+Precision=0.93
+Recall=0.82
+Aux F1 - ConfusionMatrix:
+100.0  5.0   
+14.0   65.0  
+
+Best F1 so far - 0.92 at iteration:7
+
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+**********Omitting Tweet**********:deserve christmas
+**********Omitting Tweet**********:sealeswithakiss apology pas waste team investigate
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+-0.43|super rich scot jim mellon address investor edinburgh first time say
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.2|harristweetride expect bring together stylish
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.52|market data analyst edinburgh competitive salary job job hire itjobs
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.48|account job night auditor holiday inn edinburgh ihgjobs ihg hoteljobs job
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.3|chill pedaltrill expect get everything anything
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.04|susandalgety euanmccolm daily record call
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.52|heaven company libation tightfisted cover waggon lease good understand edinburgh kbxjxe
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.0|deserve christmas
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.49|edinburgh look forward tomorrow
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+-0.5|pay someone come edinburgh deal bin
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+-0.58|annie mac corn exchange edinburgh saturday nov
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.49|edinburgh look gorgeous tonight
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.54|junior cad technician edinburgh matchtech aerospace job
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.12|bad serial
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.27|get one tall flagpole flag
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.22|tomorrow land come see woodland creature waverley arch piano
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.53|robdeb hey play edinburgh wait see
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.0|sealeswithakiss apology pas waste team investigate
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+-0.4|want stop stoptober edinburgh hypnosis scotland
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+-0.11|know train busy get one bottom hit go justnotfun eastcoast edinburgh
+Retrieved 17 new auxiliary tweets.
+0.0|account job night auditor holiday inn edinburgh ihgjobs ihg hoteljobs job
+0.0|susandalgety euanmccolm daily record call
+0.0|junior cad technician edinburgh matchtech aerospace job
+0.0|bad serial
+0.0|annie mac corn exchange edinburgh saturday nov
+0.0|edinburgh look gorgeous tonight
+0.0|edinburgh look forward tomorrow
+0.0|pay someone come edinburgh deal bin
+0.0|heaven company libation tightfisted cover waggon lease good understand edinburgh kbxjxe
+0.0|deserve christmas
+0.0|super rich scot jim mellon address investor edinburgh first time say
+0.0|market data analyst edinburgh competitive salary job job hire itjobs
+0.0|sealeswithakiss apology pas waste team investigate
+0.0|want stop stoptober edinburgh hypnosis scotland
+0.0|know train busy get one bottom hit go justnotfun eastcoast edinburgh
+0.0|tomorrow land come see woodland creature waverley arch piano
+0.0|robdeb hey play edinburgh wait see
+()**********Omitting Tweet**********:deserve christmas
+**********Omitting Tweet**********:sealeswithakiss apology pas waste team investigate
+**********Omitting Tweet**********:deserve christmas
+**********Omitting Tweet**********:sealeswithakiss apology pas waste team investigate
+**********Omitting Tweet**********:deserve christmas
+**********Omitting Tweet**********:sealeswithakiss apology pas waste team investigate
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+
+Aux F1 - Iteration-16=0.88
+Precision=0.9
+Recall=0.82
+Aux F1 - ConfusionMatrix:
+98.0  7.0   
+14.0  65.0  
+
+Best F1 so far - 0.92 at iteration:7
+
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+**********Omitting Tweet**********:hello
+**********Omitting Tweet**********:hello
+**********Omitting Tweet**********:deserve christmas
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.3|chill pedaltrill expect get everything anything
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.04|susandalgety euanmccolm daily record call
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.52|heaven company libation tightfisted cover waggon lease good understand edinburgh kbxjxe
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.0|deserve christmas
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.49|edinburgh look forward tomorrow
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+-0.5|pay someone come edinburgh deal bin
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+-0.58|annie mac corn exchange edinburgh saturday nov
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.49|edinburgh look gorgeous tonight
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+-0.54|junior cad technician edinburgh matchtech aerospace job
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.12|bad serial
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.27|get one tall flagpole flag
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.22|tomorrow land come see woodland creature waverley arch piano
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.24|glasgowkings excellent really want see edinburgh get
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.58|pollen trend edinburgh edh unite kingdom
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.53|edinburgh job customer service executive edinburgh way sell property
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.53|well pubtheatre theatre edinburgh great see old face
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+-0.55|shuttle train weekend good understand edinburgh ydwfhfe
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.5|job scotland household clean edinburgh
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.0|hello
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.0|hello
+Retrieved 18 new auxiliary tweets.
+0.0|edinburgh look gorgeous tonight
+0.0|junior cad technician edinburgh matchtech aerospace job
+0.0|bad serial
+0.0|tomorrow land come see woodland creature waverley arch piano
+0.0|glasgowkings excellent really want see edinburgh get
+0.0|well pubtheatre theatre edinburgh great see old face
+0.0|shuttle train weekend good understand edinburgh ydwfhfe
+0.0|deserve christmas
+0.0|edinburgh look forward tomorrow
+0.0|susandalgety euanmccolm daily record call
+0.0|heaven company libation tightfisted cover waggon lease good understand edinburgh kbxjxe
+0.0|pay someone come edinburgh deal bin
+0.0|annie mac corn exchange edinburgh saturday nov
+0.0|job scotland household clean edinburgh
+0.0|hello
+0.0|hello
+0.0|pollen trend edinburgh edh unite kingdom
+0.0|edinburgh job customer service executive edinburgh way sell property
+()**********Omitting Tweet**********:deserve christmas
+**********Omitting Tweet**********:hello
+**********Omitting Tweet**********:hello
+**********Omitting Tweet**********:deserve christmas
+**********Omitting Tweet**********:hello
+**********Omitting Tweet**********:hello
+**********Omitting Tweet**********:deserve christmas
+**********Omitting Tweet**********:hello
+**********Omitting Tweet**********:hello
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+
+Aux F1 - Iteration-17=0.81
+Precision=0.76
+Recall=0.82
+Aux F1 - ConfusionMatrix:
+85.0  20.0  
+14.0  65.0  
+
+Best F1 so far - 0.92 at iteration:7
+
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+**********Omitting Tweet**********:hello
+**********Omitting Tweet**********:hello
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.54|junior cad technician edinburgh matchtech aerospace job
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+-0.12|bad serial
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.27|get one tall flagpole flag
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.22|tomorrow land come see woodland creature waverley arch piano
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.0|hello
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+**********Omitting Tweet**********:georgegalloway
+0.0|hello
+Retrieved 5 new auxiliary tweets.
+0.0|hello
+0.0|hello
+0.0|tomorrow land come see woodland creature waverley arch piano
+0.0|junior cad technician edinburgh matchtech aerospace job
+0.0|bad serial
+()**********Omitting Tweet**********:hello
+**********Omitting Tweet**********:hello
+**********Omitting Tweet**********:hello
+**********Omitting Tweet**********:hello
+**********Omitting Tweet**********:hello
+**********Omitting Tweet**********:hello
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+
+Aux F1 - Iteration-18=0.89
+Precision=0.93
+Recall=0.81
+Aux F1 - ConfusionMatrix:
+100.0  5.0   
+15.0   64.0  
+
+Best F1 so far - 0.92 at iteration:7
+
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+0.27|get one tall flagpole flag
+**********Omitting Tweet**********:georgegalloway
+**********Omitting Tweet**********:discover cruel fact behind illegalivorytrade
+-0.22|tomorrow land come see woodland creature waverley arch piano
+Retrieved 1 new auxiliary tweets.
+0.0|tomorrow land come see woodland creature waverley arch piano
+()**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+**********Omitting Tweet**********:bdo lag behind term
+**********Omitting Tweet**********:thing umno
+**********Omitting Tweet**********:mogelijk verband obesitas tijdens zwangerschap en grotere kans astma
+
+Aux F1 - Iteration-19=0.88
+Precision=0.9
+Recall=0.81
+Aux F1 - ConfusionMatrix:
+98.0  7.0   
+15.0  64.0  
+
+Best F1 so far - 0.92 at iteration:7
+
+
+Issue with Tweet:, 292
+Exception in thread "main" java.lang.Exception: No more auxiliary tweets to retrieve.
+	at Implementations.AuxiliaryDataRetrievers.FpmAuxiliaryFilter.retrieveAuxiliaryData(FpmAuxiliaryFilter.scala:39)
+	at Implementations.AuxiliaryDataRetrievers.FpmAuxiliaryFilter.filter(FpmAuxiliaryFilter.scala:21)
+	at main.scala.Implementations.AuxiliaryDataBasedExperiment.performExperiment(AuxiliaryDataBasedExperiment.scala:76)
+	at main.scala.Implementations.AuxiliaryDataBasedExperiment.SetupAndRunExperiment(AuxiliaryDataBasedExperiment.scala:147)
+	at main.scala.program$.main(program.scala:39)
+	at main.scala.program.main(program.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295

@@ -1,0 +1,315 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+17/03/26 18:44:57 INFO Remoting: Starting remoting
+17/03/26 18:44:57 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@172.30.204.242:53561]
+Hello World!11
+
+***************** Parameters used for EXPERIMENT *****************
+	filterToUse = CosineSim
+	minSimilarityThreshold = 0.14
+	cosineSimilarityWindowSize= 0.1
+	minWmDistanceThreshold = 0.49
+	webWord2VecBaseUri = http://localhost:5000/getvector/
+	maxFpmWordsToPick = 35
+	minFpmWordsDetected = 0
+	refreshLocalWordVectors = false
+	maxExperimentIterations = 20
+	maxAuxTweetsToAddEachIteration = 20
+	thresholdF1 = 0.98
+	classifierType = Cnn
+	folderNameForCnnClassifier = 
+	auxiliaryThresholdExpectation = 0.01
+	fileDelimiter = ,
+	trainingDataFile = data/final/severeweather_training_data.txt
+	validationDataFile = data/final/severeweather_validation_data.txt
+	auxiliaryDataFile = data/final/severeweather_auxiliary_data.txt
+	supplementedCleanAuxiliaryFile = data/final/severeweather_auxiliary_data.txt
+
+***************** Parameters used for EXPERIMENT *****************
+
+
+Initial F1=0.62
+Precision=0.55
+Recall=0.98
+Initial - ConfusionMatrix:
+19.0  32.0  
+1.0   39.0  
+
+[Stage 23:>                                                         (0 + 2) / 2]0.15|clinton matt bai first storm punish white mountain
+                                                                                0.23|winter weather storm warn go effect afternoon sunday
+0.14|look window nice little snow plenty winter
+0.21|winter storm titan good turn doe
+0.06|occupywallstreet favorited information tweet
+0.02|bernie sander unite state verge become oligarchy occupy ows occupywallstreet
+[Stage 43:=============================>                            (1 + 1) / 2]0.04|spotlight shin palestinian collaborator occupy ows occupywallstreet occupyhq grassroots
+                                                                                0.04|occupywallstreet new trinity church force cancel halloween fest occupy wall fox news
+0.06|world focus russia nato buildup military asset near russia occupy ows occupywallstreet
+0.11|nyc forecast fri night mostly low temp get smart occupywallstreet sgp glennbeck
+0.04|april day awareness political prisoner leonard peltier change topprog occupywallstreet ows occupy anarchist uspolitics
+0.02|february day fight back mass surveillance occupyinfo owsinfo revolution anonymous
+0.01|occupywallst need say gamergate politicise sociology occupywallstreet globalism
+0.07|argentina investigate police action hospital protest occupy ows occupywallstreet occupyhq grassroots
+[Stage 51:>                                                         (0 + 2) / 2]0.1|nyc forecast thu night low temp occupywallstreet tcot ocra
+                                                                                -0.01|neworganizing see article member add context
+0.06|obama unveil historic climate change plan cut carbon pollution occupy ows occupywallstreet
+0.11|nyc forecast sit night low temp occupywallstreet tpp
+0.09|nyc forecast tue night low temp occupywallstreet teaparty ocra
+0.14|five question face market occupy ows occupywallstreet occupyhq grassroots0winter storm warn union county il issue march cst march cst nw
+Retrieved 10 new auxiliary tweets.
+0.0|occupywallstreet new trinity church force cancel halloween fest occupy wall fox news
+1.0|winter storm titan good turn doe
+0.0|occupywallst need say gamergate politicise sociology occupywallstreet globalism
+0.0|neworganizing see article member add context
+0.0|february day fight back mass surveillance occupyinfo owsinfo revolution anonymous
+0.0|april day awareness political prisoner leonard peltier change topprog occupywallstreet ows occupy anarchist uspolitics
+1.0|winter weather storm warn go effect afternoon sunday
+1.0|clinton matt bai first storm punish white mountain
+0.0|bernie sander unite state verge become oligarchy occupy ows occupywallstreet
+0.0|spotlight shin palestinian collaborator occupy ows occupywallstreet occupyhq grassroots
+()
+Aux F1 - Iteration-1=0.36
+Precision=0.0
+Recall=0.0
+Aux F1 - ConfusionMatrix:
+51.0  0.0  
+40.0  0.0  
+
+0.04|zaydtariq winter michael
+0.27|environment canada continue winter storm storm surge warn call cm risk
+[Stage 84:>                                                         (0 + 2) / 2][Stage 84:=============================>                            (1 + 1) / 2]0.18|get winter storm watch least lol
+                                                                                0.24|new winter storm head toward east coast via
+0.24|poconorecord winter storm warn extend wednesday
+0.14|winter storm warn issue february cst february cst nw
+0.23|reminder winter storm warn effect much missouri southern illinois include
+0.16|winter storm cullman like never see
+0.16|update winter storm warn effect cedar louisa muscatine county ia midnight iawx
+[Stage 91:>                                                         (0 + 2) / 2]                                                                                0.27|winter storm warn monday
+0.1|dec email ross pacific portion fence blow wind storm ten
+0.11|another long night ahead ground crew work clean campus another winter please say
+0.15|wkyc city cleveland prepare winter storm via wkyc
+0.15|storm store bread milk egg lord know survive without french
+0.22|take long way home snow storm could listen biggigantic winter chill nah
+0.14|winter storm watch warn interior essex co middlesex co worcester co inland southern nh
+0.24|major winter storm please like share get word storm
+[Stage 99:>                                                         (0 + 2) / 2]0.19|live dashcam fee storm one cbcnl news van carry zachgoudie storm
+                                                                                0.03|ebola blame rise malaria death west africa conversationedu
+-0.07|vofnhealth
+Retrieved 16 new auxiliary tweets.
+1.0|storm store bread milk egg lord know survive without french
+1.0|take long way home snow storm could listen biggigantic winter chill nah
+0.0|ebola blame rise malaria death west africa conversationedu
+0.0|vofnhealth
+1.0|major winter storm please like share get word storm
+1.0|live dashcam fee storm one cbcnl news van carry zachgoudie storm
+1.0|get winter storm watch least lol
+1.0|new winter storm head toward east coast via
+1.0|poconorecord winter storm warn extend wednesday
+1.0|reminder winter storm warn effect much missouri southern illinois include
+1.0|winter storm warn monday
+1.0|wkyc city cleveland prepare winter storm via wkyc
+1.0|winter storm cullman like never see
+1.0|update winter storm warn effect cedar louisa muscatine county ia midnight iawx
+0.0|zaydtariq winter michael
+1.0|environment canada continue winter storm storm surge warn call cm risk
+()
+Aux F1 - Iteration-2=0.31
+Precision=0.44
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+0.0  51.0  
+0.0  40.0  
+
+-0.01|pno ebola
+0.02|shutdown laboratory sierra leone healthcare worker infect ebola
+0.04|watch inspire short film kingsslp team work fight ebola sierra leone
+0.06|ebola quarantine likely negative consequence say health official
+0.04|algorithm spot ebola outbreak human johnpaul via fastcolabs
+0.09|ebola liberian police shoot disperse west point protest death toll hit
+0.05|talk take action good safe case point dont
+0.01|inkrunirma everyone help ebola donate
+0.05|shemarmoore stop ebola source help african get care directrelief link
+0.1|real imaginary friend dailypost ebola via moondustwriter
+0.13|ebola website owner website score big payday othertech
+0.07|ebola path health
+[Stage 139:>                                                        (0 + 2) / 2][Stage 139:============================>                            (1 + 1) / 2]                                                                                -0.01|listen triplejhack today hear interview ebola richard record west africa
+0.19|pet play open come play inside rvasnow winterstorm
+0.21|harrystylesfacts win winterstorm wine killer karate move learn quickly easily take vicious
+0.1|noaa image late noaa nw watch warn noreaster
+0.3|poor woodpecker hide snow winterstorm bird snow itstoodamnearly
+0.12|sentonywilliams septum announce service change due read winterstorm septum senahw
+0.25|adorable little snow mouse run around pop burrow heavy snow winterstorm
+0.09|bostonlogan cancel flight due winterstorm morning report jmonecn
+Retrieved 10 new auxiliary tweets.
+0.0|watch inspire short film kingsslp team work fight ebola sierra leone
+1.0|pet play open come play inside rvasnow winterstorm
+1.0|poor woodpecker hide snow winterstorm bird snow itstoodamnearly
+1.0|adorable little snow mouse run around pop burrow heavy snow winterstorm
+1.0|harrystylesfacts win winterstorm wine killer karate move learn quickly easily take vicious
+0.0|listen triplejhack today hear interview ebola richard record west africa
+0.0|shutdown laboratory sierra leone healthcare worker infect ebola
+0.0|pno ebola
+0.0|algorithm spot ebola outbreak human johnpaul via fastcolabs
+0.0|inkrunirma everyone help ebola donate
+()
+Aux F1 - Iteration-3=0.36
+Precision=0.0
+Recall=0.0
+Aux F1 - ConfusionMatrix:
+51.0  0.0  
+40.0  0.0  
+
+[Stage 172:>                                                        (0 + 2) / 2]0.14|duke unc postpone due winterstorm accord mthompsonnr acc
+                                                                                0.13|local roof wind york creoconstruction emergency roof winterstorm
+0.09|itg ebola many people head liberia liberia kenyaairways ebola
+0.01|ebola ebola patient dr kent brantley recover discharge kent
+0.01|nigerian man quarantine ebola hong kong nigerian man quarantine today hong kong
+0.04|skynewsbreak petition whitehouse ban flight ebola affect sign
+0.07|important change come global health security realm ebola must read
+[Stage 179:>                                                        (0 + 2) / 2]                                                                                0.06|ebola exist low level intact rainforest emerge destroy bushmeat eat
+0.09|ebola ebola still stand new dawn liberia
+0.0|support need child lose one parent ebola ebolaresponse
+0.07|alertnet philippine repatriate worker west africa ebola
+0.13|ebola wsj number people affect ebola could rise next month warn
+0.03|ebola train tonight mikeneel thank god always leave home wear condom scenesafe bsi ppe
+0.05|fukushima worker kill accident cleanup halt reuters
+0.07|touch taboo fukushima daiichi
+0.02|fukushima macht sich auf neuen taifun gefasst
+-0.03|eigenlijk nu pa het grootste gevaar van fukushima voorbij
+0.09|wtfukushima joke still fukushima april
+-0.02|swarm intelligence crisis boston quote tom
+[Stage 191:>                                                        (0 + 2) / 2]                                                                                0.05|fukushima dailynews story via arevagroup fascaso tachitotec
+Retrieved 8 new auxiliary tweets.
+0.0|fukushima macht sich auf neuen taifun gefasst
+0.0|swarm intelligence crisis boston quote tom
+0.0|ebola train tonight mikeneel thank god always leave home wear condom scenesafe bsi ppe
+0.0|eigenlijk nu pa het grootste gevaar van fukushima voorbij
+0.0|support need child lose one parent ebola ebolaresponse
+0.0|nigerian man quarantine ebola hong kong nigerian man quarantine today hong kong
+0.0|ebola ebola patient dr kent brantley recover discharge kent
+0.0|skynewsbreak petition whitehouse ban flight ebola affect sign
+()
+Aux F1 - Iteration-4=0.36
+Precision=0.0
+Recall=0.0
+Aux F1 - ConfusionMatrix:
+51.0  0.0  
+40.0  0.0  
+
+0.11|fukushima year behind schedule fukushima
+0.07|msmilkytheclown truth bomb twitterstorm fukushima truthbomb
+0.03|expect press release tepco minute claim typhoon totally improve situation fukushima
+0.16|nuclear fukushima go make live little long
+0.06|fukushima tepco crisi non risolta contestata valutazione fatta da premier abe ad assemblea tutto
+0.17|jepang protes kartun fukushima jepang protes kartun di koran perancis yang mengaitkan penunjukan olimpiade
+[Stage 223:>                                                        (0 + 2) / 2][Stage 223:============================>                            (1 + 1) / 2]                                                                                0.07|dr peter kinesa fukushima radiation invest oil news yale bbc
+0.03|jammeh tourism year affect ebola scare lgbt rhetoric human right record eu cut aid
+-0.01|haben den schlimmsten fall
+0.05|need thyroid big deal get benghazi go
+-0.05|mostdangerous truescale problem face
+0.14|jj abrams direct miss nigerian girl would aboard way fukushima alternate
+0.09|rainwater fukushima plant repeatedly leak sea fukushima rainwater contain
+0.07|huffingtonpost japan build ice wall stop nuclear reactor leak sound bite gameofthrones
+[Stage 231:>                                                        (0 + 2) / 2]0.15|japan tell tepco operator fukushima daiichi nuclear power plant activate new water treatment system next month nikkei
+                                                                                0.02|japanese robot work clean debris fukushima daiichi reactor
+0.02|epa drop radiation detection equipt ocean foresee possible via fxnscitech
+0.05|zutpetje na ruim jaar wanbeleid toegeven en de aarde fukushima hulp buitenland nodig
+0.07|hypothyroidmom child thyroid cancer thyroid cancer suspect total find fukushima district summer
+0.03|antiatom au fukushima im westlichen pazifik gefunden
+Retrieved 10 new auxiliary tweets.
+1.0|nuclear fukushima go make live little long
+0.0|epa drop radiation detection equipt ocean foresee possible via fxnscitech
+0.0|antiatom au fukushima im westlichen pazifik gefunden
+1.0|jepang protes kartun fukushima jepang protes kartun di koran perancis yang mengaitkan penunjukan olimpiade
+1.0|japan tell tepco operator fukushima daiichi nuclear power plant activate new water treatment system next month nikkei
+0.0|japanese robot work clean debris fukushima daiichi reactor
+0.0|jammeh tourism year affect ebola scare lgbt rhetoric human right record eu cut aid
+0.0|haben den schlimmsten fall
+0.0|mostdangerous truescale problem face
+0.0|expect press release tepco minute claim typhoon totally improve situation fukushima
+()
+Aux F1 - Iteration-5=0.36
+Precision=0.0
+Recall=0.0
+Aux F1 - ConfusionMatrix:
+51.0  0.0  
+40.0  0.0  
+
+0.06|sensimeliajah think go away fukushima wont go away aint thing make go away wakeup
+0.03|fukushima fallout
+0.05|prettyweirddude flower fukushima
+0.06|andrew late fukushima disaster preventable study suggest exercise
+0.06|encuentran margarita en alrededores de fukushima tecnologia
+0.09|wtfukushima fukushima radiation map pacific could bolster climate science
+0.08|ff round upd usual suspect politibunny wtfukushima scoopit
+[Stage 270:>                                                        (0 + 2) / 2]                                                                                0.02|blog post increase cancer birth defect fukushima say un report
+0.02|contender tokyo paula hancock report tokyo question fukushima nuclear
+0.06|kebocoran radioaktif kembali terjadi di pltn fukushima kebocoran radioaktif kembali terdeteksi di
+0.07|thousand flood camp central african republic
+0.07|dis lil cool bitch im fuckin ona marble flood
+0.04|open flood gate heavan let
+0.08|actually ok lately usually always flood thought love go wrong relationship
+0.11|brunohlpires flood
+[Stage 278:>                                                        (0 + 2) / 2]0.13|westgate mfg fl pl flood flood light westgate mfg pl flood light
+                                                                                0.05|affilirovannyj market flood house business cash six easy step ebook
+0.06|ibnlive assam flood every assam
+0.17|flood advisory continue follow river sw low sycamore creek holt affect
+0.01|lupefiasco talk bout flood
+Retrieved 6 new auxiliary tweets.
+0.0|open flood gate heavan let
+0.0|contender tokyo paula hancock report tokyo question fukushima nuclear
+0.0|fukushima fallout
+0.0|lupefiasco talk bout flood
+0.0|blog post increase cancer birth defect fukushima say un report
+1.0|flood advisory continue follow river sw low sycamore creek holt affect
+()
+Aux F1 - Iteration-6=0.36
+Precision=0.0
+Recall=0.0
+Aux F1 - ConfusionMatrix:
+51.0  0.0  
+40.0  0.0  
+
+0.12|sandy new threat soar flood insurance via wsj
+0.12|paniconaband flood msm
+[Stage 311:>                                                        (0 + 2) / 2]0.15|flash flood warn phone
+                                                                                0.01|wagas sa wechat hahahahahhahaaha
+0.12|flash flood warn issue june edt june edt nw state college
+0.01|support biafra right save country stress refugee
+0.09|sumerian king list span year great flood
+0.13|join worry flood
+0.06|oomf use flood da iswearrrr
+-0.01|tell baby shiiiieeet
+[Stage 319:>                                                        (0 + 2) / 2]0.06|bad news bird democracy gm crop flood eu unless meps vote via
+                                                                                0.06|flood aid spend slow labour
+0.04|flood movie haha forget
+0.03|road full idiot oahu flood advisory issue honolulupolice
+0.06|lafuzzynoir come blood
+0.09|tell secret give friend let good time flood
+0.08|open flood gate pat
+0.05|tolt river near carnation ft jan flood phase
+Retrieved 6 new auxiliary tweets.
+0.0|support biafra right save country stress refugee
+1.0|flash flood warn phone
+0.0|road full idiot oahu flood advisory issue honolulupolice
+0.0|flood movie haha forget
+0.0|tell baby shiiiieeet
+0.0|wagas sa wechat hahahahahhahaaha
+()
+Aux F1 - Iteration-7=0.36
+Precision=0.0
+Recall=0.0
+Aux F1 - ConfusionMatrix:
+51.0  0.0  
+40.0  0.0  
+
+Exception in thread "main" java.lang.Exception: No more auxiliary tweets to retrieve.
+	at Implementations.AuxiliaryDataRetrievers.FpmAuxiliaryFilter.retrieveAuxiliaryData(FpmAuxiliaryFilter.scala:39)
+	at Implementations.AuxiliaryDataRetrievers.FpmAuxiliaryFilter.filter(FpmAuxiliaryFilter.scala:21)
+	at main.scala.Implementations.AuxiliaryDataBasedExperiment.performExperiment(AuxiliaryDataBasedExperiment.scala:74)
+	at main.scala.Implementations.AuxiliaryDataBasedExperiment.SetupAndRunExperiment(AuxiliaryDataBasedExperiment.scala:138)
+	at main.scala.program$.main(program.scala:39)
+	at main.scala.program.main(program.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)

@@ -1,0 +1,36 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+17/03/26 18:40:19 INFO Remoting: Starting remoting
+17/03/26 18:40:19 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@172.30.204.242:63862]
+Hello World!11
+
+***************** Parameters used for EXPERIMENT *****************
+	filterToUse = CosineSim
+	minSimilarityThreshold = 0.05
+	cosineSimilarityWindowSize= 0.04
+	minWmDistanceThreshold = 0.49
+	webWord2VecBaseUri = http://localhost:5000/file_model/getvector/
+	maxFpmWordsToPick = 35
+	minFpmWordsDetected = 0
+	refreshLocalWordVectors = false
+	maxExperimentIterations = 20
+	maxAuxTweetsToAddEachIteration = 20
+	thresholdF1 = 0.98
+	classifierType = Cnn
+	folderNameForCnnClassifier = 
+	auxiliaryThresholdExpectation = 0.01
+	fileDelimiter = ,
+	trainingDataFile = data/final/severeweather_training_data.txt
+	validationDataFile = data/final/severeweather_validation_data.txt
+	auxiliaryDataFile = data/final/severeweather_auxiliary_data.txt
+	supplementedCleanAuxiliaryFile = data/final/severeweather_auxiliary_data.txt
+
+***************** Parameters used for EXPERIMENT *****************
+
+
+Initial F1=0.99
+Precision=0.98
+Recall=1.0
+Initial - ConfusionMatrix:
+50.0  1.0   
+0.0   40.0  
+

@@ -1,0 +1,299 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+17/03/26 18:31:24 INFO Remoting: Starting remoting
+17/03/26 18:31:24 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@172.30.204.242:53141]
+Hello World!11
+
+***************** Parameters used for EXPERIMENT *****************
+	filterToUse = CosineSim
+	minSimilarityThreshold = 0.05
+	cosineSimilarityWindowSize= 0.04
+	minWmDistanceThreshold = 0.49
+	webWord2VecBaseUri = http://localhost:5000/file_model/getvector/
+	maxFpmWordsToPick = 35
+	minFpmWordsDetected = 0
+	refreshLocalWordVectors = false
+	maxExperimentIterations = 20
+	maxAuxTweetsToAddEachIteration = 20
+	thresholdF1 = 0.98
+	classifierType = Cnn
+	folderNameForCnnClassifier = 
+	auxiliaryThresholdExpectation = 0.01
+	fileDelimiter = ,
+	trainingDataFile = data/final/winterstorm_training_data.txt
+	validationDataFile = data/final/winterstorm_validation_data.txt
+	auxiliaryDataFile = data/final/winterstorm_auxiliary_data.txt
+	supplementedCleanAuxiliaryFile = data/final/winterstorm_auxiliary_data.txt
+
+***************** Parameters used for EXPERIMENT *****************
+
+
+Initial F1=0.81
+Precision=0.79
+Recall=0.96
+Initial - ConfusionMatrix:
+23.0  13.0  
+2.0   50.0  
+
+Issue with Tweet:, 114
+0.11|sea storm cloudy yesterday winter morning
+0.03|houstonpatsfans memo dictator forget shit storm
+0.09|winter storm watch issue cheyenne kit carson yuma county co cowx
+-0.03|difference year look like compare
+0.08|weather whiplash east coast go spring winter day
+0.05|winter storm wait bad
+0.12|winter storm watch portion area nh nhwx
+0.03|track storm
+0.24|wrong snowplow dummy kill injure winterstorm
+0.17|winter storm octavia ice storm carolinasgeorgiasnow snowandice winterstorm winterstormcentraloctavia
+0.22|winter storm bozeman forecast lakeeffectsnow pacificnorthwest winterstorm winterweatherforecast
+0.21|winter storm warn issue northeastgeorgiaupdates theupstate westernnorthcarolina winterstorm
+0.2|kid wish adult pray blow neighbor winterstorm minnesotaproblems
+0.21|wintr storm remus snow sock south midwest inch northcarolina snowreports stormremus winterstorm
+0.37|london winterstorm
+0.22|beantownguygreg summerville chsnews winterstorm
+[Stage 53:=============================>                            (1 + 1) / 2]                                                                                0.08|snow possible south midweek storm
+0.16|ap photo selection northeast snowstorm image northeastsnowstorm snow winterstorm
+0.11|visalia motorcross likesforlikes winterstorm michele secret formula book write course discover sh
+0.21|wake long nap snow yet another weekend kind winterstorm
+Retrieved 17 new auxiliary tweets.
+1.0|winter storm warn issue northeastgeorgiaupdates theupstate westernnorthcarolina winterstorm
+1.0|kid wish adult pray blow neighbor winterstorm minnesotaproblems
+1.0|winter storm watch portion area nh nhwx
+1.0|wrong snowplow dummy kill injure winterstorm
+1.0|winter storm octavia ice storm carolinasgeorgiasnow snowandice winterstorm winterstormcentraloctavia
+1.0|winter storm bozeman forecast lakeeffectsnow pacificnorthwest winterstorm winterweatherforecast
+0.0|difference year look like compare
+1.0|weather whiplash east coast go spring winter day
+1.0|ap photo selection northeast snowstorm image northeastsnowstorm snow winterstorm
+1.0|visalia motorcross likesforlikes winterstorm michele secret formula book write course discover sh
+1.0|wake long nap snow yet another weekend kind winterstorm
+1.0|beantownguygreg summerville chsnews winterstorm
+1.0|snow possible south midweek storm
+1.0|wintr storm remus snow sock south midwest inch northcarolina snowreports stormremus winterstorm
+1.0|london winterstorm
+1.0|sea storm cloudy yesterday winter morning
+1.0|winter storm watch issue cheyenne kit carson yuma county co cowx
+()
+Aux F1 - Iteration-1=0.61
+Precision=0.66
+Recall=0.98
+Aux F1 - ConfusionMatrix:
+10.0  26.0  
+1.0   51.0  
+
+Issue with Tweet:, 114
+0.18|winterstorm hat color one size fit newhampshireknits via etsy
+0.2|let enjoy sunshine warm temp mother nature smack ne ohio ohwx winterstorm vulcan
+0.19|winter snow storm strike usa plow clear church square park snow fall start winterstorm
+0.19|way mistresscarrie worcester winterstorm thearmyrocks sixstringsoldiers assignguy awesome
+0.2|church great spite winterstorm pastor ricky bring home
+[Stage 87:>                                                         (0 + 2) / 2]0.15|sunsetlovers follow winterstorm wine bassgitarre bass technik bassgitarre selbst bauen
+                                                                                0.2|airline cancel flight ahead monster storm flightcancellations winterstorm
+0.17|winterstorm halloweencostumes light interiorstyling guide swing trade stock swing trade free
+0.0|really think sham get past backwards move public health
+-0.02|aw new american patter tesco goiny send obesity level sky high peanutbutter marshmallow fat
+0.01|gonna die
+0.06|nh mobile fitness app aim beat obesity good
+0.02|krambam assume announce cure obesity let fat one
+0.02|unlimited supply chocolate milk would drink
+[Stage 96:>                                                         (0 + 2) / 2]0.03|obesity american epidemic worldwide concern
+                                                                                0.01|food addiction obesity first study world give answer
+0.04|obesity disease smh another outlet ppl claim
+0.04|mrcvsonline equine obesity rise accord new study publish equine veterinary journal
+0.05|uk news hide obesity epidemic
+0.01|healthy nutrition obesity major health problem giant fitness
+Retrieved 14 new auxiliary tweets.
+1.0|winterstorm hat color one size fit newhampshireknits via etsy
+0.0|food addiction obesity first study world give answer
+0.0|healthy nutrition obesity major health problem giant fitness
+1.0|sunsetlovers follow winterstorm wine bassgitarre bass technik bassgitarre selbst bauen
+1.0|airline cancel flight ahead monster storm flightcancellations winterstorm
+0.0|gonna die
+1.0|nh mobile fitness app aim beat obesity good
+1.0|let enjoy sunshine warm temp mother nature smack ne ohio ohwx winterstorm vulcan
+1.0|winter snow storm strike usa plow clear church square park snow fall start winterstorm
+1.0|winterstorm halloweencostumes light interiorstyling guide swing trade stock swing trade free
+1.0|way mistresscarrie worcester winterstorm thearmyrocks sixstringsoldiers assignguy awesome
+1.0|church great spite winterstorm pastor ricky bring home
+0.0|really think sham get past backwards move public health
+0.0|aw new american patter tesco goiny send obesity level sky high peanutbutter marshmallow fat
+()
+Aux F1 - Iteration-2=0.79
+Precision=0.76
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+20.0  16.0  
+0.0   52.0  
+
+Issue with Tweet:, 114
+0.11|nh show significant decrease pediatric obesity
+0.09|diet doc hormone diet weight loss plan reveal new obesity statist
+0.0|one man china briefcase replace
+-0.02|muhibshadan seem taliban try improve abduct passenger name daesh release late name
+0.0|message leader islamic republic alqaeda
+-0.02|pakistan afghanistan say taliban leader dead urge peace talk reuters hinduafghanistan say
+0.03|schulbrezel christian republican taliban evil sucker
+-0.05|cchristinefair binashah aishafsarwari ignore close tie pal army taliban
+0.02|jonnybraham mlkstudios taliban rule rural area afghanistan pakistan
+0.07|fecking green demented world wide drag stage praise taliban fighter kill
+0.02|need indian curry nan taliban taco
+0.03|zalmayx jamhoriat awr taliban alag alag cheezain waisay bhi haram khilafat zindabad
+-0.05|taliban force villager fee house instead lot
+-0.01|every day vindicate either fight taliban afghanistan inside india three year
+0.0|indonesiahealth pemerintah afghanistan konfirmasi kematian pemimpin taliban
+0.0|thetariqjameel peshawar bachoon qatiloun tehreek taliban pe lanat nahi bejhi hadeesen bachon ki quote krehe
+0.01|militarycourt announce death sentence terrorist taliban tauheed jesh mohammad aps attack safoora incident
+0.03|hoye kisi nay protest kia hai ya nai hamaray molve nai hain taliban inhon nay palay hoye hain muhammadmylife
+-0.03|need vacation
+-0.08|militer pakistan sebut heli jatuh karena kerusakan mesin bukan taliban
+Retrieved 15 new auxiliary tweets.
+0.0|muhibshadan seem taliban try improve abduct passenger name daesh release late name
+0.0|message leader islamic republic alqaeda
+0.0|thetariqjameel peshawar bachoon qatiloun tehreek taliban pe lanat nahi bejhi hadeesen bachon ki quote krehe
+0.0|militarycourt announce death sentence terrorist taliban tauheed jesh mohammad aps attack safoora incident
+0.0|need vacation
+0.0|militer pakistan sebut heli jatuh karena kerusakan mesin bukan taliban
+0.0|every day vindicate either fight taliban afghanistan inside india three year
+0.0|indonesiahealth pemerintah afghanistan konfirmasi kematian pemimpin taliban
+1.0|fecking green demented world wide drag stage praise taliban fighter kill
+0.0|taliban force villager fee house instead lot
+0.0|pakistan afghanistan say taliban leader dead urge peace talk reuters hinduafghanistan say
+0.0|cchristinefair binashah aishafsarwari ignore close tie pal army taliban
+1.0|diet doc hormone diet weight loss plan reveal new obesity statist
+0.0|one man china briefcase replace
+1.0|nh show significant decrease pediatric obesity
+()Adding 15 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-3=0.84
+Precision=0.98
+Recall=0.75
+Aux F1 - ConfusionMatrix:
+35.0  1.0   
+13.0  39.0  
+
+Issue with Tweet:, 114
+[Stage 173:=======================================>                (7 + 3) / 10]0.04|un mensaje para news
+                                                                                0.04|ayeshaspeaksnow mqm terrorist fund taliban without
+0.0|one page
+0.03|taliban chief demand foreign troop leave
+0.04|nati esta enojada conmigo pero cabe ninguna le voy hablar la voy cargosiar jajaa la quiero una banda esta piba
+0.04|kirtaner dzwooo americankevin naacp ill fuck taliban idgaf
+-0.06|troop tell ignore taliban bring rap young boy military base crime
+0.06|religious extremism mischief dajjal antichrist isi taliban alshabab islam kyaapkopatahai
+0.02|cityof baltimore become detroit lawsuit city bankrupt free rid baltimoreriots
+0.02|icantbreathe baltimoreriots sandrabland blacklivesmatter walterscott bodycameras accountability
+0.02|phxmosque baltimoreriots racism
+0.06|asaleahhh rft tripinatweet never show news baltimoreriots
+0.01|also good control watercannon baltimoreriots
+-0.03|white slavery america baltimore baltimoreriots baltimoreuprising ferguson
+0.04|lelandvittert foxnews shame leland police let baltimoreriots loot violence
+0.0|blackbusiness baltimoreriots
+0.03|sanddragger milk end baltimore baltimoreuprising baltimoreriots noshame
+0.02|hattiesburgshooting baltimoreriots
+-0.02|baltimoreriots baltimoreuprising baltimore baltimorelootcrew
+0.03|danegerus baltimoreriots prepare receive syrian feed help isi get apartment job
+Retrieved 8 new auxiliary tweets.
+1.0|religious extremism mischief dajjal antichrist isi taliban alshabab islam kyaapkopatahai
+0.0|troop tell ignore taliban bring rap young boy military base crime
+0.0|white slavery america baltimore baltimoreriots baltimoreuprising ferguson
+0.0|one page
+0.0|baltimoreriots baltimoreuprising baltimore baltimorelootcrew
+1.0|asaleahhh rft tripinatweet never show news baltimoreriots
+0.0|also good control watercannon baltimoreriots
+0.0|blackbusiness baltimoreriots
+()
+Aux F1 - Iteration-4=0.76
+Precision=1.0
+Recall=0.6
+Aux F1 - ConfusionMatrix:
+36.0  0.0   
+21.0  31.0  
+
+Issue with Tweet:, 114
+0.06|blysslyss confederate fuck flag bath find huge racist white ppl outlet idk
+-0.01|sick confederate flag bro
+0.04|ken burn confederate flag resistance civil
+0.05|son confederate veteran weigh confederate flag controversy christiansburg confederaterights
+-0.01|thank gm stand behind kidrock support decision fly confederate flag takeastand
+0.03|donnylumpkins goodbye confederate flag hello cool hope everybody great day
+0.03|notice confederate flag breakfast club realize john lennon
+0.01|sheila jackson lee use wrong confederate flag house floor protest
+0.06|rawstory watch south carolina republican jenny horne give impassioned speech confederate flag
+0.07|dear confederate flag supporter
+0.0|tothrive day need confederate
+-0.01|va governor ban confederate flag license plat get flag
+0.03|edinburgh rush hour joke move minute radio pish
+0.03|city region rival say murphy
+0.0|edcentrallib sir walter scott bear today old town edinburgh
+0.06|job edinburgh virtualisation project manager edinburgh job infrastructure project manager job
+0.03|hundred attend funeral edinburgh unidentified baby boy find dead
+0.05|actually buzz foo fighter edinburgh wish tomorrow next year
+0.04|edinburgh global undergraduate mathematics scholarship university edinburgh uk scholarship
+0.02|busy morning tribalgroup interest breakfast brief edinburgh oct
+Retrieved 10 new auxiliary tweets.
+0.0|sick confederate flag bro
+0.0|edcentrallib sir walter scott bear today old town edinburgh
+1.0|job edinburgh virtualisation project manager edinburgh job infrastructure project manager job
+0.0|va governor ban confederate flag license plat get flag
+0.0|tothrive day need confederate
+0.0|thank gm stand behind kidrock support decision fly confederate flag takeastand
+1.0|dear confederate flag supporter
+1.0|blysslyss confederate fuck flag bath find huge racist white ppl outlet idk
+0.0|sheila jackson lee use wrong confederate flag house floor protest
+1.0|rawstory watch south carolina republican jenny horne give impassioned speech confederate flag
+()Adding 10 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-5=0.92
+Precision=0.96
+Recall=0.9
+Aux F1 - ConfusionMatrix:
+34.0  2.0   
+5.0   47.0  
+
+Issue with Tweet:, 114
+Issue with Tweet:, 114
+0.04|stepram great response leafleting edinburgh south west snp joannaccherry today votesnp
+0.04|dispatchdemon txwx flash flood warn real uvalde county till aug pm cdt
+0.03|flash flood warn issue july pdt july pdt nw sandiego
+0.03|cree lead work light bar flood combo beam fog drive lamp suv
+0.03|human right impetus afghanistan occupy ows occupywallstreet occupyhq grassroots
+0.04|video glenn beck sponsor charge count criminal fraud occupy ows occupywallstreet
+0.02|march climate action set across country
+0.05|news orgs thrill meet eric holder occupy ows occupywallstreet occupyhq grassroots
+0.02|jora spalbar visit jivetsal preparation kalachakra occupy ows occupywallstreet occupyhq grassroots
+-0.01|really need study prove occupy ows occupywallstreet occupyhq
+0.02|drone strike kill five injure three pakistan occupy ows occupywallstreet occupyhq grassroots usa
+0.0|sarahpalinusa occupywallstreet watch scum fester sad burnouts choose
+0.02|gun group make nra look reasonable occupy ows occupywallstreet occupyhq grassroots
+0.04|send irs occupy ows occupywallstreet occupyhq grassroots usa canada
+0.02|protester occupy nyc hospital slat closure wall street journal occupy ows occupywallstreet
+0.07|death incentive make world go round video occupy ows occupywallstreet occupyhq grassroots
+0.03|occupywallstreet educational charity pr rightwing
+0.03|hqoccupy iraq population rack heavy burden decade conflict occupy ows occupywallstreet occupyhq grassroots
+0.01|hello
+Retrieved 4 new auxiliary tweets.
+0.0|really need study prove occupy ows occupywallstreet occupyhq
+0.0|hello
+1.0|death incentive make world go round video occupy ows occupywallstreet occupyhq grassroots
+0.0|sarahpalinusa occupywallstreet watch scum fester sad burnouts choose
+()
+Aux F1 - Iteration-6=0.86
+Precision=0.98
+Recall=0.79
+Aux F1 - ConfusionMatrix:
+35.0  1.0   
+11.0  41.0  
+
+Exception in thread "main" java.lang.Exception: No more auxiliary tweets to retrieve.
+Issue with Tweet:, 114
+	at Implementations.AuxiliaryDataRetrievers.FpmAuxiliaryFilter.retrieveAuxiliaryData(FpmAuxiliaryFilter.scala:39)
+	at Implementations.AuxiliaryDataRetrievers.FpmAuxiliaryFilter.filter(FpmAuxiliaryFilter.scala:21)
+	at main.scala.Implementations.AuxiliaryDataBasedExperiment.performExperiment(AuxiliaryDataBasedExperiment.scala:74)
+	at main.scala.Implementations.AuxiliaryDataBasedExperiment.SetupAndRunExperiment(AuxiliaryDataBasedExperiment.scala:138)
+	at main.scala.program$.main(program.scala:39)
+	at main.scala.program.main(program.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
