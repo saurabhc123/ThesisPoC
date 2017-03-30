@@ -22,7 +22,7 @@ class AuxiliaryDataBasedExperiment(args: Array[String]) extends IExperiment {
 
 	def handleProgramArguments(): Unit =
 	{
-		val firstArgumentIndex = 1
+		val firstArgumentIndex = 0
 
 		//What word vectors
 		if(args.length > firstArgumentIndex)
@@ -44,21 +44,34 @@ class AuxiliaryDataBasedExperiment(args: Array[String]) extends IExperiment {
 		//Cosine Similarity threshold and wall size
 		if(args.length > firstArgumentIndex + 2)
 		{
-			AuxiliaryDataBasedExperiment.minSimilarityThreshold = args(firstArgumentIndex + 2).toInt
+			AuxiliaryDataBasedExperiment.minSimilarityThreshold = args(firstArgumentIndex + 2).toDouble
 			AuxiliaryDataBasedExperiment.cosineSimilarityWindowSize =  AuxiliaryDataBasedExperiment.minSimilarityThreshold - 0.2
 		}
 
 		if(args.length > firstArgumentIndex + 3)
-			AuxiliaryDataBasedExperiment.cosineSimilarityWindowSize = args(firstArgumentIndex + 3).toInt
+			AuxiliaryDataBasedExperiment.cosineSimilarityWindowSize = args(firstArgumentIndex + 3).toDouble
 
+		if(args.length > firstArgumentIndex + 4)
+			AuxiliaryDataBasedExperiment.cnnNgramValue = args(firstArgumentIndex + 4).toInt
 
 		//Experiment Set name
-		if(args.length > firstArgumentIndex + 4)
-			AuxiliaryDataBasedExperiment.experimentSet = args(firstArgumentIndex + 4).toLowerCase()
+		if(args.length > firstArgumentIndex + 5)
+			AuxiliaryDataBasedExperiment.experimentSet = args(firstArgumentIndex + 5).toLowerCase()
 		
 		//Experiment Set number
-		if(args.length > firstArgumentIndex + 5)
+		if(args.length > firstArgumentIndex + 6)
 			AuxiliaryDataBasedExperiment.experimentSetNumber = args(firstArgumentIndex + 5)
+
+		AuxiliaryDataBasedExperiment.trainingDataFile = s"data/final/${AuxiliaryDataBasedExperiment.experimentSet}_training_data${AuxiliaryDataBasedExperiment.experimentSetNumber}.txt"
+		AuxiliaryDataBasedExperiment.validationDataFile = s"data/final/${AuxiliaryDataBasedExperiment.experimentSet}_validation_data.txt"
+		AuxiliaryDataBasedExperiment.auxiliaryDataFile = s"data/final/${AuxiliaryDataBasedExperiment.experimentSet}_auxiliary_data.txt"
+		AuxiliaryDataBasedExperiment.supplementedCleanAuxiliaryFile = s"data/final/${AuxiliaryDataBasedExperiment.experimentSet}_auxiliary_data.txt"
+	}
+
+	def Reset(experimentSet:String) = {
+		val uri = s"http://localhost:5000/cnn_reset/$experimentSet"
+		val result = scala.io.Source.fromURL(uri).mkString
+		print(result)
 	}
 	
 	
@@ -78,7 +91,7 @@ class AuxiliaryDataBasedExperiment(args: Array[String]) extends IExperiment {
 		//***** Do this only for the CNN classifier
 		if(AuxiliaryDataBasedExperiment.classifierType == ClassifierType.Cnn){
 			//Generate the tweets at the folder using a UUID
-			val folderId = java.util.UUID.randomUUID.toString
+			val folderId = java.util.UUID.randomUUID.toString + s"-${AuxiliaryDataBasedExperiment.experimentSet}-Iteration-0"
 			writeData(train,folderId)
 			//Set the UUID as the REST parameter
 			AuxiliaryDataBasedExperiment.folderNameForCnnClassifier = folderId
@@ -131,7 +144,7 @@ class AuxiliaryDataBasedExperiment(args: Array[String]) extends IExperiment {
 			//***** Do this only for the CNN classifier
 			if(AuxiliaryDataBasedExperiment.classifierType == ClassifierType.Cnn){
 				//Generate the tweets at the folder using a UUID
-				val folderId = java.util.UUID.randomUUID.toString
+				val folderId = java.util.UUID.randomUUID.toString + s"-${AuxiliaryDataBasedExperiment.experimentSet}-Iteration-${numberOfIterations + 1}"
 				writeData(fullData,folderId)
 				//Set the UUID as the REST parameter
 				AuxiliaryDataBasedExperiment.folderNameForCnnClassifier = folderId
@@ -173,6 +186,8 @@ class AuxiliaryDataBasedExperiment(args: Array[String]) extends IExperiment {
 	}
 
 	override def SetupAndRunExperiment(): Unit = {
+		handleProgramArguments()
+		Reset(AuxiliaryDataBasedExperiment.experimentSet)
 		AuxiliaryDataBasedExperiment.setVectorType(AuxiliaryDataBasedExperiment.vectorType)
 		println(AuxiliaryDataBasedExperiment.toString)
 		val predictstart = System.currentTimeMillis()
@@ -180,10 +195,6 @@ class AuxiliaryDataBasedExperiment(args: Array[String]) extends IExperiment {
 		val validationTweets = TweetsFileProcessor.LoadTweetsFromFileNoCounter(AuxiliaryDataBasedExperiment.validationDataFile, AuxiliaryDataBasedExperiment.fileDelimiter)
 		val cleanTrainingTweets = CleanTweet.clean(trainingTweets, SparkContextManager.getContext)
 		val cleanValidationTweets = CleanTweet.clean(validationTweets, SparkContextManager.getContext)
-
-//		writeData(cleanTrainingTweets,java.util.UUID.randomUUID.toString)
-//		writeData(cleanValidationTweets,"egypt_validation_data.txt")
-//		return
 
 		try {
 			this.performExperiment(cleanTrainingTweets, cleanValidationTweets)
@@ -219,21 +230,22 @@ object AuxiliaryDataBasedExperiment {
 	val thresholdF1 = 0.98
 	val auxiliaryThresholdExpectation = 0.01
 
-	var classifierType = ClassifierType.LogisticRegression
+	var classifierType = ClassifierType.Cnn
 	var folderNameForCnnClassifier = ""
 
-	var vectorType = "google"
+	var vectorType = "local"
 	var webWord2VecBaseUri : String = null
 	var cnnClassifierBaseUri : String = null
+	var cnnNgramValue = 1
 
 
 	val fileDelimiter = ","
-	var experimentSet = "ebola"
+	var experimentSet = "egypt"
 	var experimentSetNumber = ""
-	val trainingDataFile = s"data/final/${experimentSet}_training_data$experimentSetNumber.txt"
-	val validationDataFile = s"data/final/${experimentSet}_validation_data.txt"
-	val auxiliaryDataFile = s"data/final/${experimentSet}_auxiliary_data.txt"
-	val supplementedCleanAuxiliaryFile = s"data/final/${experimentSet}_auxiliary_data.txt"
+	var trainingDataFile = s"data/final/${experimentSet}_training_data$experimentSetNumber.txt"
+	var validationDataFile = s"data/final/${experimentSet}_validation_data.txt"
+	var auxiliaryDataFile = s"data/final/${experimentSet}_auxiliary_data.txt"
+	var supplementedCleanAuxiliaryFile = s"data/final/${experimentSet}_auxiliary_data.txt"
 
 
 override def toString() = {
@@ -256,6 +268,8 @@ override def toString() = {
 	s"\tfolderNameForCnnClassifier = $folderNameForCnnClassifier\n" +
 	s"\tauxiliaryThresholdExpectation = $auxiliaryThresholdExpectation\n" +
 	s"\tfileDelimiter = $fileDelimiter\n" +
+	s"\texperimentSet = $experimentSet\n" +
+	s"\texperimentSetNumber = $experimentSetNumber\n" +
 	s"\ttrainingDataFile = $trainingDataFile\n" +
 	s"\tvalidationDataFile = $validationDataFile\n" +
 	s"\tauxiliaryDataFile = $auxiliaryDataFile\n" +
@@ -266,11 +280,11 @@ override def toString() = {
 def setVectorType(vectorType:String): Unit ={
 	if(vectorType == "local"){
 		webWord2VecBaseUri = s"http://localhost:5000/file_model/getvector/"
-		cnnClassifierBaseUri = "http://localhost:5000/cnn_train_and_get_prediction_labels_local/"
+		cnnClassifierBaseUri = "http://localhost:5000/cnn_train_and_get_prediction_labels_local"
 	}
 	else{
 		webWord2VecBaseUri = s"http://localhost:5000/getvector/"
-		cnnClassifierBaseUri = "http://localhost:5000/cnn_train_and_get_prediction_labels/"
+		cnnClassifierBaseUri = "http://localhost:5000/cnn_train_and_get_prediction_labels"
 	}
 
 }

@@ -19,8 +19,7 @@
 
 	 libraryDependencies ++= Seq(
 		 "edu.stanford.nlp" % "stanford-corenlp" % "3.2.0",
-		 "edu.stanford.nlp" % "stanford-corenlp" % "3.2.0" classifier "models",
-		 "com.netaporter" %% "SamplingAuxiliaryDataRetriever-uri" % "0.4.16"
+		 "edu.stanford.nlp" % "stanford-corenlp" % "3.2.0" classifier "models"
 	        )
 
 
