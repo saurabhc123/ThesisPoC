@@ -1,0 +1,678 @@
+Hello World!11
+Reset successful
+***************** Parameters used for EXPERIMENT *****************
+	filterToUse = CosineSim
+	minSimilarityThreshold = 0.05
+	cosineSimilarityWindowSize= 0.04
+	minWmDistanceThreshold = 0.49
+	vectorType= local
+	webWord2VecBaseUri = http://localhost:5000/file_model/getvector/
+	cnnClassifierBaseUri = http://localhost:5000/cnn_train_and_get_prediction_labels_local
+	maxFpmWordsToPick = 35
+	minFpmWordsDetected = 0
+	refreshLocalWordVectors = false
+	maxExperimentIterations = 20
+	maxAuxTweetsToAddEachIteration = 20
+	thresholdF1 = 0.98
+	classifierType = LogisticRegression
+	folderNameForCnnClassifier = 
+	auxiliaryThresholdExpectation = 0.01
+	fileDelimiter = ,
+	experimentSet = winterstorm
+	experimentSetNumber = 3
+	trainingDataFile = data/final/winterstorm_training_data3.txt
+	validationDataFile = data/final/winterstorm_validation_data.txt
+	auxiliaryDataFile = data/final/winterstorm_auxiliary_data.txt
+	supplementedCleanAuxiliaryFile = data/final/winterstorm_auxiliary_data.txt
+
+***************** Parameters used for EXPERIMENT *****************
+
+
+Initial F1=0.88
+Precision=0.89
+Recall=0.92
+Initial - ConfusionMatrix:
+30.0  6.0   
+4.0   48.0  
+
+Issue with Tweet:, 257
+0.16|sea storm cloudy yesterday winter morning
+0.08|houstonpatsfans memo dictator forget shit storm
+0.13|winter storm watch issue cheyenne kit carson yuma county co cowx
+-0.03|difference year look like compare
+0.1|weather whiplash east coast go spring winter day
+0.14|winter storm wait bad
+0.18|winter storm watch portion area nh nhwx
+0.14|track storm
+0.23|wrong snowplow dummy kill injure winterstorm
+0.32|winter storm octavia ice storm carolinasgeorgiasnow snowandice winterstorm winterstormcentraloctavia
+0.29|winter storm bozeman forecast lakeeffectsnow pacificnorthwest winterstorm winterweatherforecast
+0.3|winter storm warn issue northeastgeorgiaupdates theupstate westernnorthcarolina winterstorm
+0.08|come along new excite sand art toddler time edinburgh parent
+0.0|service technician survey equipment edinburgh
+0.0|avg edinburgh meck cnty
+0.02|get go see wicked last night theatre playhouse
+0.02|love cool place visit photo heartstone scotland
+0.03|recruit sale ltd hire regional sale manager apply edinburgh job
+0.04|jobstoday senior commercial consultant edinburgh apply job
+0.02|want insight edinburgh comic silly time spin
+Retrieved 15 new auxiliary tweets.
+1.0|winter storm octavia ice storm carolinasgeorgiasnow snowandice winterstorm winterstormcentraloctavia
+1.0|winter storm bozeman forecast lakeeffectsnow pacificnorthwest winterstorm winterweatherforecast
+0.0|service technician survey equipment edinburgh
+0.0|avg edinburgh meck cnty
+1.0|track storm
+1.0|wrong snowplow dummy kill injure winterstorm
+1.0|houstonpatsfans memo dictator forget shit storm
+1.0|winter storm watch issue cheyenne kit carson yuma county co cowx
+1.0|sea storm cloudy yesterday winter morning
+1.0|winter storm warn issue northeastgeorgiaupdates theupstate westernnorthcarolina winterstorm
+1.0|come along new excite sand art toddler time edinburgh parent
+1.0|winter storm wait bad
+1.0|winter storm watch portion area nh nhwx
+0.0|difference year look like compare
+1.0|weather whiplash east coast go spring winter day
+()Adding 15 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-1=0.89
+Precision=0.88
+Recall=0.96
+Aux F1 - ConfusionMatrix:
+29.0  7.0   
+2.0   50.0  
+
+Best F1 so far - 0.89 at iteration:1
+
+
+Issue with Tweet:, 257
+0.09|job edinburgh senior operator sameday tnt return log back
+0.02|year edfringe somenews extra info come see
+0.06|phone sex honey kinky news edinburgh london birmingham inverness liverpool brighton
+0.04|professional pet portrait edinburgh pet photography ltd dog cat horse
+0.04|saw edinburgh snap chat story happy glasgow good enough fur world
+0.08|watch dundee star edinburgh capital unite kingdom elite league live stream
+0.01|great gig edinburgh ukfoofighters deserve glastofest
+0.02|handmadeburger one edinburgh
+0.04|edinburgh beer weekly craftbeer ukbeer
+0.05|edinburgh job fine din wait staff reed hospitality job description
+0.03|another great find edinburgh small impressive restaurant congrats gordon craig team achieve aa rosette
+0.04|ellen kent opera ballet international la traviata edinburgh
+0.13|kid wish adult pray blow neighbor winterstorm minnesotaproblems
+0.24|wintr storm remus snow sock south midwest inch northcarolina snowreports stormremus winterstorm
+0.23|london winterstorm
+0.12|beantownguygreg summerville chsnews winterstorm
+0.22|snow possible south midweek storm
+0.12|ap photo selection northeast snowstorm image northeastsnowstorm snow winterstorm
+0.03|visalia motorcross likesforlikes winterstorm michele secret formula book write course discover sh
+0.18|wake long nap snow yet another weekend kind winterstorm
+Retrieved 11 new auxiliary tweets.
+1.0|london winterstorm
+1.0|beantownguygreg summerville chsnews winterstorm
+1.0|snow possible south midweek storm
+1.0|ap photo selection northeast snowstorm image northeastsnowstorm snow winterstorm
+1.0|wake long nap snow yet another weekend kind winterstorm
+1.0|job edinburgh senior operator sameday tnt return log back
+1.0|watch dundee star edinburgh capital unite kingdom elite league live stream
+0.0|great gig edinburgh ukfoofighters deserve glastofest
+1.0|wintr storm remus snow sock south midwest inch northcarolina snowreports stormremus winterstorm
+1.0|kid wish adult pray blow neighbor winterstorm minnesotaproblems
+1.0|phone sex honey kinky news edinburgh london birmingham inverness liverpool brighton
+()
+Aux F1 - Iteration-2=0.83
+Precision=0.81
+Recall=0.96
+Aux F1 - ConfusionMatrix:
+24.0  12.0  
+2.0   50.0  
+
+Best F1 so far - 0.89 at iteration:1
+
+
+Issue with Tweet:, 257
+0.01|break medic need near al injury egypt
+0.03|vianney nsimbe time caf president hayatou friday go africa egypt
+0.0|oritperlov nervous nile minority fear end secularism egypt via spiegelonline
+-0.1|bahrain ksa kuwait uae oman qatar iraq syria egypt tunisia morroco libya yemen iran
+0.02|egypt democrat reid leave hospital crash tahrir
+0.0|sherinet alert egypt
+0.0|egypt court sentence atheist year imprisonment insult religion religion atheism freedomofexpression
+0.01|egypt make cry
+0.03|egyptian passport kaman bardo lazem el destor abl ah aw think egypt
+0.02|ajelive egypt president morsi appeal people evidence trust elect
+-0.03|morsi protect islamist hijack constitution egypt crisis morsi give army arrest power vote
+0.0|egypt photo gallery worshipper fill mosque courtyard start eid tahrir
+0.0|egypt realestate
+0.03|protester sing egypt national anthem march get close presidential palace
+0.07|new content pinterest board global economy financial egypt italy oil
+0.02|morsi speak egypt reminder similar speech bad
+0.0|breakingnews judge across egypt refuse oversee controversial constitutional referendum
+0.07|come back egypt
+0.01|difference mubarak morsi people get choose latter justsaying egypt
+0.0|egypt afghan presidential vote due april tahrir
+Retrieved 14 new auxiliary tweets.
+0.0|break medic need near al injury egypt
+0.0|egypt realestate
+1.0|new content pinterest board global economy financial egypt italy oil
+0.0|difference mubarak morsi people get choose latter justsaying egypt
+0.0|egypt afghan presidential vote due april tahrir
+0.0|egypt photo gallery worshipper fill mosque courtyard start eid tahrir
+0.0|egypt make cry
+0.0|morsi protect islamist hijack constitution egypt crisis morsi give army arrest power vote
+0.0|oritperlov nervous nile minority fear end secularism egypt via spiegelonline
+0.0|bahrain ksa kuwait uae oman qatar iraq syria egypt tunisia morroco libya yemen iran
+0.0|sherinet alert egypt
+0.0|egypt court sentence atheist year imprisonment insult religion religion atheism freedomofexpression
+0.0|breakingnews judge across egypt refuse oversee controversial constitutional referendum
+1.0|come back egypt
+()
+Aux F1 - Iteration-3=0.87
+Precision=0.89
+Recall=0.9
+Aux F1 - ConfusionMatrix:
+30.0  6.0   
+5.0   47.0  
+
+Best F1 so far - 0.89 at iteration:1
+
+
+Issue with Tweet:, 257
+0.0|seriously egypt alber saber hosni tell way tora
+-0.01|hamadeabdulla history ottoman woman turkey egypt uae bahrain saudi oman qatar kuwait
+0.02|bahrain pathetic see show low alwefaq egypt gcc kuwait ksa uk usa
+0.1|winterstorm hat color one size fit newhampshireknits via etsy
+0.11|let enjoy sunshine warm temp mother nature smack ne ohio ohwx winterstorm vulcan
+0.27|winter snow storm strike usa plow clear church square park snow fall start winterstorm
+0.15|way mistresscarrie worcester winterstorm thearmyrocks sixstringsoldiers assignguy awesome
+0.09|church great spite winterstorm pastor ricky bring home
+0.11|sunsetlovers follow winterstorm wine bassgitarre bass technik bassgitarre selbst bauen
+0.19|airline cancel flight ahead monster storm flightcancellations winterstorm
+0.09|winterstorm halloweencostumes light interiorstyling guide swing trade stock swing trade free
+0.1|really think sham get past backwards move public health
+0.0|aw new american patter tesco goiny send obesity level sky high peanutbutter marshmallow fat
+-0.01|gonna die
+0.09|nh mobile fitness app aim beat obesity good
+0.02|krambam assume announce cure obesity let fat one
+0.03|unlimited supply chocolate milk would drink
+0.01|obesity american epidemic worldwide concern
+0.0|food addiction obesity first study world give answer
+0.0|obesity disease smh another outlet ppl claim
+Retrieved 17 new auxiliary tweets.
+1.0|winter snow storm strike usa plow clear church square park snow fall start winterstorm
+1.0|way mistresscarrie worcester winterstorm thearmyrocks sixstringsoldiers assignguy awesome
+0.0|seriously egypt alber saber hosni tell way tora
+0.0|hamadeabdulla history ottoman woman turkey egypt uae bahrain saudi oman qatar kuwait
+0.0|gonna die
+1.0|nh mobile fitness app aim beat obesity good
+1.0|church great spite winterstorm pastor ricky bring home
+1.0|sunsetlovers follow winterstorm wine bassgitarre bass technik bassgitarre selbst bauen
+1.0|really think sham get past backwards move public health
+0.0|aw new american patter tesco goiny send obesity level sky high peanutbutter marshmallow fat
+1.0|winterstorm hat color one size fit newhampshireknits via etsy
+1.0|let enjoy sunshine warm temp mother nature smack ne ohio ohwx winterstorm vulcan
+0.0|obesity american epidemic worldwide concern
+0.0|food addiction obesity first study world give answer
+0.0|obesity disease smh another outlet ppl claim
+1.0|airline cancel flight ahead monster storm flightcancellations winterstorm
+1.0|winterstorm halloweencostumes light interiorstyling guide swing trade stock swing trade free
+()
+Aux F1 - Iteration-4=0.77
+Precision=0.79
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+24.0  12.0  
+7.0   45.0  
+
+Best F1 so far - 0.89 at iteration:1
+
+
+Issue with Tweet:, 257
+0.09|mrcvsonline equine obesity rise accord new study publish equine veterinary journal
+0.04|uk news hide obesity epidemic
+0.04|healthy nutrition obesity major health problem giant fitness
+0.08|nh show significant decrease pediatric obesity
+0.06|diet doc hormone diet weight loss plan reveal new obesity statist
+-0.02|one man china briefcase replace
+-0.02|muhibshadan seem taliban try improve abduct passenger name daesh release late name
+0.0|message leader islamic republic alqaeda
+-0.01|pakistan afghanistan say taliban leader dead urge peace talk reuters hinduafghanistan say
+0.02|schulbrezel christian republican taliban evil sucker
+-0.04|cchristinefair binashah aishafsarwari ignore close tie pal army taliban
+0.01|jonnybraham mlkstudios taliban rule rural area afghanistan pakistan
+0.06|fecking green demented world wide drag stage praise taliban fighter kill
+-0.01|need indian curry nan taliban taco
+-0.02|zalmayx jamhoriat awr taliban alag alag cheezain waisay bhi haram khilafat zindabad
+-0.06|taliban force villager fee house instead lot
+0.24|winterstorm heatwave preparedness find need know winter
+0.2|freeze rain fall winterstorm
+0.3|dallas dallasweather winterstorm
+0.02|iran dismiss terrorism accusation late iranusterrorism
+Retrieved 16 new auxiliary tweets.
+0.0|need indian curry nan taliban taco
+0.0|zalmayx jamhoriat awr taliban alag alag cheezain waisay bhi haram khilafat zindabad
+0.0|pakistan afghanistan say taliban leader dead urge peace talk reuters hinduafghanistan say
+0.0|cchristinefair binashah aishafsarwari ignore close tie pal army taliban
+1.0|mrcvsonline equine obesity rise accord new study publish equine veterinary journal
+1.0|nh show significant decrease pediatric obesity
+0.0|muhibshadan seem taliban try improve abduct passenger name daesh release late name
+0.0|message leader islamic republic alqaeda
+0.0|jonnybraham mlkstudios taliban rule rural area afghanistan pakistan
+1.0|fecking green demented world wide drag stage praise taliban fighter kill
+0.0|taliban force villager fee house instead lot
+1.0|winterstorm heatwave preparedness find need know winter
+1.0|diet doc hormone diet weight loss plan reveal new obesity statist
+0.0|one man china briefcase replace
+1.0|freeze rain fall winterstorm
+1.0|dallas dallasweather winterstorm
+()
+Aux F1 - Iteration-5=0.87
+Precision=0.87
+Recall=0.92
+Aux F1 - ConfusionMatrix:
+29.0  7.0   
+4.0   48.0  
+
+Best F1 so far - 0.89 at iteration:1
+
+
+Issue with Tweet:, 257
+0.03|activist post former cia agent charge terrorism murder drone strike news via activistpost
+0.0|ur logic skew seem start hear terrorism post recent paper terrorism motivate factor
+0.07|glenn amaze pie chart nyt say make first
+0.03|break news french police hunt man stab soldier
+-0.02|iraq displace find restriction refuge via almonitor
+0.0|arrest moroccan editor face terrorism investigation
+0.02|kelliwardaz azcentral scheuer school neocon shill senjohnmccain terrorism motivation
+0.04|ridiculousness dangerroom urban exploration help terrorism counterterrorism agency warn
+0.01|ap break police say shoot capitol isolate incident congress
+-0.01|distinguish one type islamic jihadic terrorism isi bokoharam
+-0.03|leethurman wire terrorism base pretty sure find white male terrorism lead charge
+0.03|florida police run terrorism drill sovereign citizen gun sight shock drillcrazy
+0.03|surprise lesson palestinian jew suicide bomb find tennesee high school textbook
+0.3|lakeeffectsnow snowscenes winterstorm wintr storm bozeman forecast snow ice oregon idaho rockies
+0.19|winterstorm pax stick inside today check open visit open job
+-0.01|javeednusrat sir great column merely pressure tactic sami influence taliban afghanistan know
+-0.03|smeetsfrans chnoella noordkaapfujin maar je kan niet al de taliban eisen dat vrouwen die zichzelf graag naakt fotograferen dat niet doen
+0.01|push come ultimatum mullah omar isi gain afg pak army perforce side ana
+0.0|afghan army take taliban first solo offensive via
+-0.02|taliban death derail peace effort
+Retrieved 14 new auxiliary tweets.
+1.0|lakeeffectsnow snowscenes winterstorm wintr storm bozeman forecast snow ice oregon idaho rockies
+0.0|ur logic skew seem start hear terrorism post recent paper terrorism motivate factor
+0.0|afghan army take taliban first solo offensive via
+0.0|taliban death derail peace effort
+1.0|glenn amaze pie chart nyt say make first
+0.0|iraq displace find restriction refuge via almonitor
+1.0|winterstorm pax stick inside today check open visit open job
+0.0|javeednusrat sir great column merely pressure tactic sami influence taliban afghanistan know
+0.0|distinguish one type islamic jihadic terrorism isi bokoharam
+0.0|leethurman wire terrorism base pretty sure find white male terrorism lead charge
+0.0|arrest moroccan editor face terrorism investigation
+0.0|ap break police say shoot capitol isolate incident congress
+0.0|smeetsfrans chnoella noordkaapfujin maar je kan niet al de taliban eisen dat vrouwen die zichzelf graag naakt fotograferen dat niet doen
+0.0|push come ultimatum mullah omar isi gain afg pak army perforce side ana
+()Adding 14 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-6=0.93
+Precision=0.94
+Recall=0.94
+Aux F1 - ConfusionMatrix:
+33.0  3.0   
+3.0   49.0  
+
+Best F1 so far - 0.93 at iteration:6
+
+
+Issue with Tweet:, 257
+-0.02|death taliban leader roil afghan politics
+0.02|local resident government official see evacuate taliban close afghanistan
+0.01|berghdal say torture taliban captor army bowe bergdahl say torture repeatedly
+-0.01|travesty utter evil taliban nation especially
+0.05|equality message
+-0.01|afghan taliban right activist
+0.05|taliban new supreme leader criticize low quality project pledge support
+0.0|taliban say leadership struggle resolve
+0.01|british library turn taliban archive uk terror law library decline offer archive
+0.01|taliban bunuh tentara afghanistan beberapa dipancung kelompok gerilyawan membunuh tentara
+0.16|crazy winterstorm wind blow hard kind scary lol much rain pacoima ca
+0.0|wonder road check traffic camera head
+-0.01|baltimore baltimoreriots baltimoreuprising blacklivesmatter
+0.01|nathan bedford forest father kkk proud baltimoreriots democrat control since
+0.01|trewhonesty arrestmade funnyvines funny racisminamerica racism baltimoreriots
+0.03|isi fighter supporter hijack baltimoreriots twitter hashtag discus race issue urge attack policeman
+0.02|ampersandalways maybe blacklivesmatter seem like ferguson baltimoreriots whine factory
+0.0|cgpb baltimoreriots blackrage loot curfew incendiary thuggery destruction gangrelated blackpanthers
+0.06|wkyc breloverdict dream think cleveland different ferguson baltimoreriots go bad
+0.03|prediction charge connection death freddiegray resident accept renew baltimoreriots
+Retrieved 14 new auxiliary tweets.
+0.0|british library turn taliban archive uk terror law library decline offer archive
+0.0|taliban bunuh tentara afghanistan beberapa dipancung kelompok gerilyawan membunuh tentara
+0.0|cgpb baltimoreriots blackrage loot curfew incendiary thuggery destruction gangrelated blackpanthers
+1.0|wkyc breloverdict dream think cleveland different ferguson baltimoreriots go bad
+0.0|nathan bedford forest father kkk proud baltimoreriots democrat control since
+0.0|trewhonesty arrestmade funnyvines funny racisminamerica racism baltimoreriots
+0.0|death taliban leader roil afghan politics
+0.0|wonder road check traffic camera head
+0.0|baltimore baltimoreriots baltimoreuprising blacklivesmatter
+1.0|crazy winterstorm wind blow hard kind scary lol much rain pacoima ca
+0.0|afghan taliban right activist
+0.0|taliban say leadership struggle resolve
+0.0|berghdal say torture taliban captor army bowe bergdahl say torture repeatedly
+0.0|travesty utter evil taliban nation especially
+()
+Aux F1 - Iteration-7=0.88
+Precision=0.86
+Recall=0.96
+Aux F1 - ConfusionMatrix:
+28.0  8.0   
+2.0   50.0  
+
+Best F1 so far - 0.93 at iteration:6
+
+
+Issue with Tweet:, 257
+0.02|retiredfirecapt course set narrative city baltimoreriots globalwarming cause loot
+0.03|darrelanderson baltimoreriots congrats madam socialist take year destroy city well
+0.0|spread baltimoreriots baltimoreuprising freddiegray blacklivesmatter
+0.01|baltimoreriots come soon
+0.22|please advise moncton branch delay open due weather winterstorm
+0.1|sportsday beauty winterstorm wine beauty feast day perfect skin hot niche compreh
+0.02|every day vindicate either fight taliban afghanistan inside india three year
+-0.02|indonesiahealth pemerintah afghanistan konfirmasi kematian pemimpin taliban
+0.04|thetariqjameel peshawar bachoon qatiloun tehreek taliban pe lanat nahi bejhi hadeesen bachon ki quote krehe
+0.01|militarycourt announce death sentence terrorist taliban tauheed jesh mohammad aps attack safoora incident
+0.02|hoye kisi nay protest kia hai ya nai hamaray molve nai hain taliban inhon nay palay hoye hain muhammadmylife
+-0.03|need vacation
+-0.02|militer pakistan sebut heli jatuh karena kerusakan mesin bukan taliban
+0.04|un mensaje para news
+-0.03|ayeshaspeaksnow mqm terrorist fund taliban without
+-0.01|one page
+0.0|taliban chief demand foreign troop leave
+0.02|nati esta enojada conmigo pero cabe ninguna le voy hablar la voy cargosiar jajaa la quiero una banda esta piba
+0.02|kirtaner dzwooo americankevin naacp ill fuck taliban idgaf
+-0.04|troop tell ignore taliban bring rap young boy military base crime
+Retrieved 12 new auxiliary tweets.
+0.0|need vacation
+1.0|sportsday beauty winterstorm wine beauty feast day perfect skin hot niche compreh
+0.0|baltimoreriots come soon
+1.0|please advise moncton branch delay open due weather winterstorm
+0.0|one page
+0.0|spread baltimoreriots baltimoreuprising freddiegray blacklivesmatter
+0.0|militer pakistan sebut heli jatuh karena kerusakan mesin bukan taliban
+0.0|ayeshaspeaksnow mqm terrorist fund taliban without
+0.0|indonesiahealth pemerintah afghanistan konfirmasi kematian pemimpin taliban
+0.0|militarycourt announce death sentence terrorist taliban tauheed jesh mohammad aps attack safoora incident
+0.0|taliban chief demand foreign troop leave
+0.0|troop tell ignore taliban bring rap young boy military base crime
+()
+Aux F1 - Iteration-8=0.86
+Precision=0.88
+Recall=0.88
+Aux F1 - ConfusionMatrix:
+30.0  6.0   
+6.0   46.0  
+
+Best F1 so far - 0.93 at iteration:6
+
+
+Issue with Tweet:, 257
+0.01|religious extremism mischief dajjal antichrist isi taliban alshabab islam kyaapkopatahai
+-0.01|cityof baltimore become detroit lawsuit city bankrupt free rid baltimoreriots
+0.02|icantbreathe baltimoreriots sandrabland blacklivesmatter walterscott bodycameras accountability
+-0.02|phxmosque baltimoreriots racism
+0.02|asaleahhh rft tripinatweet never show news baltimoreriots
+0.02|also good control watercannon baltimoreriots
+0.01|white slavery america baltimore baltimoreriots baltimoreuprising ferguson
+0.06|lelandvittert foxnews shame leland police let baltimoreriots loot violence
+0.01|blackbusiness baltimoreriots
+0.04|sanddragger milk end baltimore baltimoreuprising baltimoreriots noshame
+-0.01|hattiesburgshooting baltimoreriots
+0.0|baltimoreriots baltimoreuprising baltimore baltimorelootcrew
+0.08|danegerus baltimoreriots prepare receive syrian feed help isi get apartment job
+0.03|blysslyss confederate fuck flag bath find huge racist white ppl outlet idk
+0.01|sick confederate flag bro
+0.01|ken burn confederate flag resistance civil
+0.02|son confederate veteran weigh confederate flag controversy christiansburg confederaterights
+-0.02|thank gm stand behind kidrock support decision fly confederate flag takeastand
+0.03|donnylumpkins goodbye confederate flag hello cool hope everybody great day
+0.01|notice confederate flag breakfast club realize john lennon
+Retrieved 13 new auxiliary tweets.
+0.0|white slavery america baltimore baltimoreriots baltimoreuprising ferguson
+0.0|hattiesburgshooting baltimoreriots
+0.0|baltimoreriots baltimoreuprising baltimore baltimorelootcrew
+1.0|lelandvittert foxnews shame leland police let baltimoreriots loot violence
+0.0|blackbusiness baltimoreriots
+1.0|danegerus baltimoreriots prepare receive syrian feed help isi get apartment job
+0.0|sick confederate flag bro
+0.0|ken burn confederate flag resistance civil
+0.0|cityof baltimore become detroit lawsuit city bankrupt free rid baltimoreriots
+0.0|phxmosque baltimoreriots racism
+0.0|thank gm stand behind kidrock support decision fly confederate flag takeastand
+0.0|notice confederate flag breakfast club realize john lennon
+0.0|religious extremism mischief dajjal antichrist isi taliban alshabab islam kyaapkopatahai
+()
+Aux F1 - Iteration-9=0.9
+Precision=0.96
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+34.0  2.0   
+7.0   45.0  
+
+Best F1 so far - 0.93 at iteration:6
+
+
+Issue with Tweet:, 257
+0.06|sheila jackson lee use wrong confederate flag house floor protest
+0.05|rawstory watch south carolina republican jenny horne give impassioned speech confederate flag
+0.04|dear confederate flag supporter
+-0.01|tothrive day need confederate
+0.13|nw weather winterstorm exit northeast warm weather move eastern
+0.38|winter storm nika watch warn colorado maine centralstates snowfallforecast winterstorm
+0.24|inside butstillworkin winterstorm whoneedbeatz
+0.21|caltrans gear another mountain winterstorm vvdailypress
+0.29|snow tire winter wonderland like winter winterstorm snow ottawa
+0.06|iansireland carerclare ruthdavidsonmsp outside light hubby job tomorrow afternoon
+0.04|september john menzies bookshop prince street doctorwho
+0.02|woman strike car
+0.01|rock gannet colony world large bass rock firth forth large colony
+0.0|letyouknow woman rob knifepoint attack woman rob knifepoint
+0.11|new scot geographer royal appoint
+0.04|aw would see co uni edinburgh id glasgow cumbernauld edinburgh time haha
+0.0|jouwbaan vacature software engineer quality
+0.03|look light light sunset edinburgh scotland liveandloveeverywhere
+-0.01|thank edinchamber divinoed great network fab food service edinburgh network italian
+0.4|winter storm midwesterners expect winter storm winterstorm
+Retrieved 14 new auxiliary tweets.
+0.0|tothrive day need confederate
+1.0|nw weather winterstorm exit northeast warm weather move eastern
+0.0|thank edinchamber divinoed great network fab food service edinburgh network italian
+1.0|winter storm midwesterners expect winter storm winterstorm
+1.0|iansireland carerclare ruthdavidsonmsp outside light hubby job tomorrow afternoon
+1.0|sheila jackson lee use wrong confederate flag house floor protest
+1.0|caltrans gear another mountain winterstorm vvdailypress
+1.0|snow tire winter wonderland like winter winterstorm snow ottawa
+1.0|winter storm nika watch warn colorado maine centralstates snowfallforecast winterstorm
+1.0|inside butstillworkin winterstorm whoneedbeatz
+0.0|rock gannet colony world large bass rock firth forth large colony
+0.0|letyouknow woman rob knifepoint attack woman rob knifepoint
+1.0|new scot geographer royal appoint
+0.0|jouwbaan vacature software engineer quality
+()
+Aux F1 - Iteration-10=0.89
+Precision=0.91
+Recall=0.92
+Aux F1 - ConfusionMatrix:
+31.0  5.0   
+4.0   48.0  
+
+Best F1 so far - 0.93 at iteration:6
+
+
+Issue with Tweet:, 257
+0.2|fly la vega new maybe ethan miller getty due winterstorm
+0.25|warren candy astronomy winterstorm balance body chemistry unleash abundant energy spe
+0.25|traffic ban weird see street nyc juno winter winterstorm
+0.02|va governor ban confederate flag license plat get flag
+0.03|edinburgh rush hour joke move minute radio pish
+0.04|city region rival say murphy
+0.02|edcentrallib sir walter scott bear today old town edinburgh
+0.06|job edinburgh virtualisation project manager edinburgh job infrastructure project manager job
+0.03|hundred attend funeral edinburgh unidentified baby boy find dead
+0.05|actually buzz foo fighter edinburgh wish tomorrow next year
+0.06|edinburgh global undergraduate mathematics scholarship university edinburgh uk scholarship
+0.01|busy morning tribalgroup interest breakfast brief edinburgh oct
+0.05|stepram great response leafleting edinburgh south west snp joannaccherry today votesnp
+0.05|dispatchdemon txwx flash flood warn real uvalde county till aug pm cdt
+0.01|flash flood warn issue july pdt july pdt nw sandiego
+0.03|cree lead work light bar flood combo beam fog drive lamp suv
+0.22|graphic detail winterstorm total sleet freezingrain arkansas via nwslittlerock arwx
+0.2|update snow ahead rockies plain midwest accumulatingsnow weatherchannel winterstorm
+0.09|winterstorm musicaltheatre demilovatoedit bestoftheday carp fish secret bible carp fish book
+0.23|blizzard hit central head northeast blizzardwarning metropolitanareas winterstorm winterstormwarning
+Retrieved 11 new auxiliary tweets.
+1.0|edinburgh global undergraduate mathematics scholarship university edinburgh uk scholarship
+1.0|update snow ahead rockies plain midwest accumulatingsnow weatherchannel winterstorm
+1.0|winterstorm musicaltheatre demilovatoedit bestoftheday carp fish secret bible carp fish book
+1.0|blizzard hit central head northeast blizzardwarning metropolitanareas winterstorm winterstormwarning
+0.0|flash flood warn issue july pdt july pdt nw sandiego
+1.0|graphic detail winterstorm total sleet freezingrain arkansas via nwslittlerock arwx
+1.0|fly la vega new maybe ethan miller getty due winterstorm
+1.0|warren candy astronomy winterstorm balance body chemistry unleash abundant energy spe
+0.0|busy morning tribalgroup interest breakfast brief edinburgh oct
+1.0|traffic ban weird see street nyc juno winter winterstorm
+1.0|job edinburgh virtualisation project manager edinburgh job infrastructure project manager job
+()
+Aux F1 - Iteration-11=0.7
+Precision=0.76
+Recall=0.73
+Aux F1 - ConfusionMatrix:
+24.0  12.0  
+14.0  38.0  
+
+Best F1 so far - 0.93 at iteration:6
+
+
+Issue with Tweet:, 257
+-0.01|bolsa de paris fecha em alta de
+0.03|new film chronicle float school bangladesh via educationweek wsugen edchat
+0.03|bloody hell bus drive boatonwheels
+0.0|vamonosla need water supply dry year well good flood also need price
+0.03|problem flood life drown teach swim rise let nothing hold
+0.01|flood advisory issue march edt march edt nw
+0.05|flood warn issue july cdt july cdt nw wxil
+0.0|well phone guess miss flood christmas text
+0.02|questionerr feel nooo
+0.01|earthquake quake strike offshore near vandenberg air force base
+0.06|seriously hate people tweet boston bomb sichuan earthquake sake get retweet
+0.0|earthquake russell good news series episode bbc one via youtube
+0.01|earthquake earthquake bismarck sea nov utc
+0.04|death toll philippine earthquake top cbs news
+0.05|bloody hell delhi earthquake
+0.02|quake eastern coast japan
+0.01|earthquake iquique chile tuesday december utcmonday december
+0.01|usgs nne camalu mexico earthquake tremor
+-0.04|ene bunobogu indonesia jst earthquake sismo jishin
+0.28|wintr storm titan forecast snow ice spread east monday forecastsnow winterstorm winterstormtitan
+Retrieved 12 new auxiliary tweets.
+0.0|bolsa de paris fecha em alta de
+0.0|ene bunobogu indonesia jst earthquake sismo jishin
+1.0|wintr storm titan forecast snow ice spread east monday forecastsnow winterstorm winterstormtitan
+0.0|earthquake russell good news series episode bbc one via youtube
+0.0|vamonosla need water supply dry year well good flood also need price
+0.0|flood advisory issue march edt march edt nw
+0.0|earthquake earthquake bismarck sea nov utc
+0.0|earthquake iquique chile tuesday december utcmonday december
+0.0|usgs nne camalu mexico earthquake tremor
+0.0|well phone guess miss flood christmas text
+0.0|earthquake quake strike offshore near vandenberg air force base
+1.0|seriously hate people tweet boston bomb sichuan earthquake sake get retweet
+()
+Aux F1 - Iteration-12=0.84
+Precision=0.87
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+29.0  7.0   
+7.0   45.0  
+
+Best F1 so far - 0.93 at iteration:6
+
+
+Issue with Tweet:, 257
+0.19|boston break record snowy day winterstorm bossnow snowday
+0.16|novembernight morningmist winterstorm glaze work well contemporary color
+0.02|quick reminder facebook full racist garbage include weird defense confederate
+0.01|saw like men freeway come take flag confederate flag impeach obama sign texas merica
+0.04|fairlyfemme like someone believe confederate flag gonna give fuck say theyre still gonna believe
+0.02|gun shop team zimmerman sell confederate flag sound like contest winner outrageous fake
+0.01|drive past lift flag
+0.02|confederate flag rally since
+-0.03|snare band support confederate flag im pretty sure donald trump need quit
+0.04|kid park lot get trouble confederate flag sticker let people want gosh
+0.05|say like people think ban confederate flag would magically end racism
+0.0|quakefactor island hawaii hawaii sunday july utcsaturday earthquake quake
+-0.02|earthquakenews earthquake ryukyu island japan
+0.06|last quake aftershock say dear earthquake know love nepal want keep visit plz small
+0.0|thank lcbo help raise money earthquake
+0.03|prayforboholandcebu intensity earthquake record lahat ng timbal sa bohol pray ur
+0.0|alone nuh feel nuh earthquake lastnight
+0.0|death toll guatemala earthquake many still shake continue aftershock count myfoxla
+0.18|winterstorm dc expect additional inch start nw
+0.19|mbta service bus end mbta winterstorm
+Retrieved 13 new auxiliary tweets.
+0.0|snare band support confederate flag im pretty sure donald trump need quit
+0.0|quakefactor island hawaii hawaii sunday july utcsaturday earthquake quake
+1.0|winterstorm dc expect additional inch start nw
+1.0|mbta service bus end mbta winterstorm
+0.0|earthquakenews earthquake ryukyu island japan
+1.0|last quake aftershock say dear earthquake know love nepal want keep visit plz small
+0.0|alone nuh feel nuh earthquake lastnight
+0.0|death toll guatemala earthquake many still shake continue aftershock count myfoxla
+0.0|drive past lift flag
+1.0|boston break record snowy day winterstorm bossnow snowday
+1.0|novembernight morningmist winterstorm glaze work well contemporary color
+0.0|saw like men freeway come take flag confederate flag impeach obama sign texas merica
+0.0|thank lcbo help raise money earthquake
+()
+Aux F1 - Iteration-13=0.83
+Precision=0.84
+Recall=0.9
+Aux F1 - ConfusionMatrix:
+27.0  9.0   
+5.0   47.0  
+
+Best F1 so far - 0.93 at iteration:6
+
+
+Issue with Tweet:, 257
+Issue with Tweet:, 257
+0.04|kid park lot get trouble confederate flag sticker let people want gosh
+0.05|say like people think ban confederate flag would magically end racism
+0.03|man make flower bloom cnn ireport philaflowershow drewbecher
+0.18|potential major winterstorm hit sunday night monday ffxstorm
+0.1|problem wiz wanna know many snap send kid tomorrow winterstorm
+0.17|winterstorm cause damage preventative tip severeweather
+0.12|snowstorm mottola puglia italy snowstorm winterstorm mottola
+0.3|sdge outage stay safe winterstorm safety
+0.12|winterstorm tip bring furry friend pet prep tip
+0.23|snow yet worcester check icicle apartment quincy masnow necn winterstorm
+-0.02|hello
+Retrieved 8 new auxiliary tweets.
+1.0|snowstorm mottola puglia italy snowstorm winterstorm mottola
+1.0|snow yet worcester check icicle apartment quincy masnow necn winterstorm
+1.0|winterstorm tip bring furry friend pet prep tip
+1.0|winterstorm cause damage preventative tip severeweather
+1.0|problem wiz wanna know many snap send kid tomorrow winterstorm
+1.0|potential major winterstorm hit sunday night monday ffxstorm
+1.0|sdge outage stay safe winterstorm safety
+0.0|hello
+()
+Aux F1 - Iteration-14=0.82
+Precision=0.85
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+28.0  8.0   
+7.0   45.0  
+
+Best F1 so far - 0.93 at iteration:6
+
+
+Issue with Tweet:, 257

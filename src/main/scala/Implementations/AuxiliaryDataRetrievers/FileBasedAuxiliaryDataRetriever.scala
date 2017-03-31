@@ -1,5 +1,7 @@
 package Implementations.AuxiliaryDataRetrievers
 
+import java.time.{ZonedDateTime, ZoneOffset}
+
 import Utilities.CleanTweet
 import main.DataTypes.Tweet
 import main.Interfaces.IAuxiliaryDataRetriever
@@ -31,6 +33,10 @@ class FileBasedAuxiliaryDataRetriever(auxiliaryDataFilename:String) extends IAux
 
 		if(tweetsCount == 0)
 		{
+			val istOffset = ZoneOffset.ofHoursMinutesSeconds(-4, 0, 0)
+			// time representation in EST
+			val zonedDateTimeIst = ZonedDateTime.now(istOffset)
+			println(s"Ending experiment at $zonedDateTimeIst")
 			throw new NoSuchElementException("No more auxiliary tweets to retrieve.")
 		}
 
