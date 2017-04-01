@@ -22,9 +22,9 @@ object GenerateCosineSimStatistics extends App {
 		val sc = SparkContextManager.getContext
 		sc.setLogLevel("ERROR")
 		AuxiliaryDataBasedExperiment.experimentSet = "egypt"
-		val filename = s"data/final/${AuxiliaryDataBasedExperiment.experimentSet}_training_data3.txt"
+		val filename = s"data/final/${AuxiliaryDataBasedExperiment.experimentSet}_training_data1.txt"
 		FileBasedAuxiliaryDataRetriever._auxiliaryFileName = filename
-		AuxiliaryDataBasedExperiment.vectorType = s"local"
+		AuxiliaryDataBasedExperiment.vectorType = s"google"
 		Reset()
 		AuxiliaryDataBasedExperiment.setVectorType(AuxiliaryDataBasedExperiment.vectorType)
 		val tweets = FileBasedAuxiliaryDataRetriever.readTweetsFromFile(filename)
