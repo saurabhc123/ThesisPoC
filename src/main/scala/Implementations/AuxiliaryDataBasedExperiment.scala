@@ -225,7 +225,7 @@ object AuxiliaryDataBasedExperiment {
 	val refreshLocalWordVectors = false
 
 	val maxExperimentIterations = 20
-	val tweetsToAddEachIteration = 20
+	var tweetsToAddEachIteration = 20
 
 	val thresholdF1 = 0.98
 	val auxiliaryThresholdExpectation = 0.01
@@ -240,7 +240,7 @@ object AuxiliaryDataBasedExperiment {
 
 
 	val fileDelimiter = ","
-	var experimentSet = "severeweather"
+	var experimentSet = "egypt"
 	var experimentSetNumber = ""
 	var trainingDataFile = s"data/final/${experimentSet}_training_data$experimentSetNumber.txt"
 	var validationDataFile = s"data/final/${experimentSet}_validation_data.txt"

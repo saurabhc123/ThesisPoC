@@ -1,6 +1,9 @@
 package Utilities
 
-import java.time.{ZoneOffset, ZonedDateTime}
+import Implementations.AuxiliaryDataRetrievers.FileBasedAuxiliaryDataRetriever
+import main.SparkContextManager
+import main.scala.Implementations.AuxiliaryDataBasedExperiment
+import org.apache.log4j.{Level, Logger}
 
 /**
  * Created by saur6410 on 3/12/17.
@@ -10,12 +13,26 @@ object ScratchPad extends App {
 	override def main(args: Array[String]) {
 		{
 
-			val istOffset = ZoneOffset.ofHoursMinutesSeconds(-4, 0, 0)
+			Logger.getLogger("org").setLevel(Level.OFF)
+			Logger.getLogger("akka").setLevel(Level.OFF)
+			Logger.getLogger("logreg").setLevel(Level.OFF)
+			val sc = SparkContextManager.getContext
+			sc.setLogLevel("ERROR")
 
-			// time representation in EST
-			val zonedDateTimeIst = ZonedDateTime.now(istOffset)
-
-			println(zonedDateTimeIst)
+			AuxiliaryDataBasedExperiment.experimentSet = "winterstorm"
+			AuxiliaryDataBasedExperiment.tweetsToAddEachIteration = 40
+			val auxiliaryDataFile = s"data/final/${AuxiliaryDataBasedExperiment.experimentSet}_auxiliary_data.txt"
+			FileBasedAuxiliaryDataRetriever._auxiliaryFileName = auxiliaryDataFile
+			print(auxiliaryDataFile)
+			var totalCount:Long = 0
+			print(s"Initial Tweet Count:${FileBasedAuxiliaryDataRetriever.readTweetsFromAuxiliaryFile().count()}")
+			while(true) {
+				val sourceAuxiliaryData = new FileBasedAuxiliaryDataRetriever(auxiliaryDataFile).retrieveAuxiliaryData(new Array[String](0))
+				println(s"Retrieved ${sourceAuxiliaryData.count()} new auxiliary tweets.")
+				totalCount = totalCount + sourceAuxiliaryData.count()
+				print(s"TotalCount:$totalCount")
+				//print(sourceAuxiliaryData.foreach(tweet => println(s"${tweet.label}|${tweet.tweetText}")))
+			}
 
 			//		val sc = SparkContextManager.getContext
 			//		val bookpair = Array(1,2,3,4,5)
