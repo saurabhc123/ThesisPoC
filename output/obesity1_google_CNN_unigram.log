@@ -1,0 +1,933 @@
+Starting experiment at 2017-04-01T22:49:05.572-04:00
+Reset successful
+***************** Parameters used for EXPERIMENT *****************
+	filterToUse = CosineSim
+	minSimilarityThreshold = 0.5
+	cosineSimilarityWindowSize= 0.25
+	minWmDistanceThreshold = 0.49
+	vectorType= google
+	webWord2VecBaseUri = http://localhost:5000/getvector/
+	cnnClassifierBaseUri = http://localhost:5000/cnn_train_and_get_prediction_labels
+	maxFpmWordsToPick = 35
+	minFpmWordsDetected = 0
+	refreshLocalWordVectors = false
+	maxExperimentIterations = 20
+	maxAuxTweetsToAddEachIteration = 20
+	thresholdF1 = 0.98
+	classifierType = Cnn
+	folderNameForCnnClassifier = 
+	auxiliaryThresholdExpectation = 0.01
+	fileDelimiter = ,
+	experimentSet = obesity
+	experimentSetNumber = 1
+	trainingDataFile = data/final/obesity_training_data1.txt
+	validationDataFile = data/final/obesity_validation_data.txt
+	auxiliaryDataFile = data/final/obesity_auxiliary_data.txt
+	supplementedCleanAuxiliaryFile = data/final/obesity_auxiliary_data.txt
+
+***************** Parameters used for EXPERIMENT *****************
+
+Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=790bd11e-557a-4e61-b05b-75f3bc2ec2fb-obesity-Iteration-0&ngram=1
+
+Initial F1=0.94
+Precision=0.99
+Recall=0.89
+Initial - ConfusionMatrix:
+104.0  1.0   
+9.0    70.0  
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+Replacing fukushima with nuclear. Choices [nuclear,fukushima].
+0.22|hurricane sandy sleepover letsgetexposing randydole
+0.29|hurricane sandy ct ny nj east coast state ass region deadly storm massive storm
+0.32|drdaliah month hurricane sandy nj see baby
+0.3|petsmart charity relief effort hurricane sandy ravage east coast last october leave
+0.28|raf cover hurricane sign battle britain ace sandy sander dfc
+0.33|love keep highlight star citizen hurricane nice unexpected bkcyclones
+0.26|winkyboo list hurricane sandy donation drop location
+0.25|sandy damage bike nyc
+0.3|damn hurricane sandy ruin new york city dirty
+0.27|look photo effect hurricane kalungkot
+0.32|task force convene president obama late last year determine best rebuild hurricane
+0.21|hurricane sandy view
+0.24|hurricane sandy information file claim
+0.26|hurricane sandy disrespect nigga swear
+0.27|power hurricane sandy destroy also god bless
+0.27|deadline set state buyout staten island neighborhood hit hurricane sandy statenisland
+0.17|hurricane sandy
+0.37|hurricane sandy probably best thing could happen obama right gonna aid shit reelection
+0.23|update hurricane sandy video
+0.37|thought everyone affect hurricane stay
+Retrieved 6 new auxiliary tweets.
+0.0|update hurricane sandy video
+0.0|sandy damage bike nyc
+0.0|hurricane sandy
+0.0|hurricane sandy information file claim
+0.0|hurricane sandy view
+0.0|hurricane sandy sleepover letsgetexposing randydole
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=e063cc9b-c756-472f-b704-5640fa82a2d5-obesity-Iteration-1&ngram=1
+
+Aux F1 - Iteration-1=0.95
+Precision=1.0
+Recall=0.89
+Aux F1 - ConfusionMatrix:
+105.0  0.0   
+9.0    70.0  
+
+Best F1 so far - 0.94 at iteration:0
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.27|street view car start map sandy damage
+0.17|jayroduh hurricane hurricane
+0.33|todayinthesky sure bad go outside hurricane airport day hurricane sandy yikes
+0.33|elm look something hurricane sandy make
+0.37|follower may affect hurricane sandy hope safety
+0.29|hurricane sandy new jersey rebuild ahead thoughtful via huffingtonpost
+0.31|watch live hurricane sandy cause partial crane collapse midtown manhattan
+0.17|hamradionow hurricane sandy
+0.34|climate change cause hurricane
+0.34|go since hurricane sandy bet still look lmao
+0.35|armanidope name hurricane gay name like name ish hurricane death megatron guarantee nigga evacuate like need
+0.33|bill mckibben hurricane sandy climate change ever call
+0.37|habitat plan chevrolet donation make real help hurricane sandy recovery
+0.26|storm gain strength churn north hurricane sandy
+0.18|sougofollow maria remove photo
+0.36|snooki say hurricane get
+0.32|join effort help hurricane sandy see help
+0.29|story behind new york hurricane sandy cover nahumg
+0.28|hurricane sandy lol imagine hurricane
+0.22|hurricane atlantic tropical weather outlook sandy
+Retrieved 4 new auxiliary tweets.
+0.0|hurricane atlantic tropical weather outlook sandy
+0.0|sougofollow maria remove photo
+0.0|jayroduh hurricane hurricane
+0.0|hamradionow hurricane sandy
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=d305c1d4-0b45-4470-8f8b-5651149e689e-obesity-Iteration-2&ngram=1
+
+Aux F1 - Iteration-2=0.94
+Precision=0.99
+Recall=0.89
+Aux F1 - ConfusionMatrix:
+104.0  1.0   
+9.0    70.0  
+
+Best F1 so far - 0.94 at iteration:0
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.28|davidcjacks hurricane sandy prediction bad expect
+0.36|hurricane sandy destroy medical research hurricane sandy destroy medical research
+0.31|even argue piss gonna hurricane sandy
+0.29|update aac close class cancel tuesday october due hurricane stay safe monctopa
+0.29|fire ravage jersey shore boardwalk rebuild hurricane sandy flame begin ice cream shop
+0.32|roommate go hard tonight throw bed floor guy towel hurricane
+0.33|roll call effect hurricane sandy family please like comment
+0.3|hurricane sandy need piss right
+0.25|fayobserver fort bragg soldier generate power hurricane sandy victim ocpa
+0.29|weatherchannel evacuate irene sandy come family live new
+0.37|think suffer loss hurricane thought
+0.25|nubsanimalwatch allanimalrights animal rescue hurricane sandy october sandyaid
+0.31|hurricane sandy afford keep kennel somewhere oregon mygirl
+0.33|hurricane sandy really williams make whole thing
+0.37|new jersey insurance industry show sign change wake hurricane sandy industry reform
+0.3|ticket info announce massive hurricane sandy benefit msg paul mccartney kanye west bruce springsteen
+0.32|go school otherwilljames amaze writer long island coast unexpected gift hurricane sandy
+0.27|njdotcom bad hurricane sandy expect late njsandy
+0.32|hurricane sandy tweet goin since yesterday still go
+0.31|tlc great cake bos best show sweet help hurricane sandy cakebosskickoff cakebossbuddy tlc
+Retrieved 2 new auxiliary tweets.
+0.0|fayobserver fort bragg soldier generate power hurricane sandy victim ocpa
+0.0|nubsanimalwatch allanimalrights animal rescue hurricane sandy october sandyaid
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=e9572063-ab8c-4a5e-8c32-cbf40c61e9cc-obesity-Iteration-3&ngram=1
+
+Aux F1 - Iteration-3=0.94
+Precision=0.99
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+104.0  1.0   
+10.0   69.0  
+
+Best F1 so far - 0.94 at iteration:0
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.25|hurricane sandy warm world end december
+0.34|new art world ass impact hurricane sandy
+0.32|new york aquarium devastate hurricane sandy donation page
+0.26|photo magnitude earthquake strike offshore northern california wednesday rattle
+0.3|urgent major earthquake spark tsunami warn pacific
+0.33|jarrodcombs believe miss good happen get back doitagain
+0.17|shakingearth earthquake mb fiji region
+0.31|haiti earthquake relief fund canadian red cross say
+0.2|earthquake tremor peshawar along chitral low dir
+0.27|earthquake minute ago know wasnt trip
+0.22|earthquake rock mexico city mexicocity via ecanadanow
+0.24|din earthquake go
+0.18|usgs redoubt volcano alaska sm
+0.3|series small earthquake china may aftershock major quake way back
+0.31|havin homeroom shake like earthquake
+0.31|download link tyga rack city bubble bubble reggaeton shake earthquake
+0.38|really think god warn get earthquake nvr see summer la like least recent year
+0.21|earthquake omg wtf
+0.22|earthquake dah map dawg
+0.12|sismo nne burney california csismica
+Retrieved 9 new auxiliary tweets.
+0.0|hurricane sandy warm world end december
+0.0|earthquake rock mexico city mexicocity via ecanadanow
+0.0|earthquake omg wtf
+0.0|usgs redoubt volcano alaska sm
+0.0|din earthquake go
+0.0|earthquake tremor peshawar along chitral low dir
+0.0|shakingearth earthquake mb fiji region
+0.0|earthquake dah map dawg
+0.0|sismo nne burney california csismica
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=6f6fc184-b93e-472b-be41-6416928554f5-obesity-Iteration-4&ngram=1
+
+Aux F1 - Iteration-4=0.94
+Precision=0.99
+Recall=0.89
+Aux F1 - ConfusionMatrix:
+104.0  1.0   
+9.0    70.0  
+
+Best F1 so far - 0.94 at iteration:0
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.25|earthquake indonesian archipelago indonesia tual preliminary report earthquake
+0.17|deprem northern california january gmt earthquake
+0.26|fish eagle otter star late usgs geohealth newsletter
+0.18|sismo nne badger alaska usgs
+0.21|newearthquake earthquake near coast northern jul epicenter ago depth
+0.28|really thoight earthquake
+0.29|green earthquake alert depth indonesia utc people
+0.24|eartquake valdez alaska
+0.24|possible na maging parehas tayo sa earthquake would become
+0.09|update dominique collier kcrungmc reggierankin bowncewithme
+0.22|ima get january january
+0.28|come intel chromebook flood best via
+0.32|lol nerpp blame since know shes like last one im name lol
+0.18|ericalynnloper live asf
+0.29|flood warn issue april cdt may cdt nw wxtx
+0.21|unesco project flood management ayutthaya
+0.31|flood warn issue september mdt september mdt nw national weather
+0.28|shv cancel flood warn rabbit creek kilgore
+0.29|beaufort flood victim need send contact detail themimpa bank
+0.28|thing look inside carpet clean company
+Retrieved 10 new auxiliary tweets.
+0.0|ima get january january
+0.0|possible na maging parehas tayo sa earthquake would become
+0.0|deprem northern california january gmt earthquake
+0.0|newearthquake earthquake near coast northern jul epicenter ago depth
+0.0|eartquake valdez alaska
+0.0|update dominique collier kcrungmc reggierankin bowncewithme
+0.0|ericalynnloper live asf
+0.0|unesco project flood management ayutthaya
+0.0|earthquake indonesian archipelago indonesia tual preliminary report earthquake
+0.0|sismo nne badger alaska usgs
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=322e895d-68f3-42d5-8752-c1a630e6e791-obesity-Iteration-5&ngram=1
+
+Aux F1 - Iteration-5=0.94
+Precision=1.0
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+105.0  0.0   
+10.0   69.0  
+
+Best F1 so far - 0.94 at iteration:0
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.26|cree lead work light bar spot flood suv atv boat truck lamp
+0.16|flood
+0.33|set straggler title deed inflooding healthfulness flood insurance yvulejq
+0.25|badliontryhard flood ur house ur sweat
+0.26|surely day raya instagram flood colourful baju raya timeline
+0.46|flood fg release tackle food health crisis raise
+0.27|check story catoosa deputy save mother son
+0.28|mmda flood alert blumentrit towards ust direction knee passable light vehicle expect heavy
+0.29|new flood alert morning harper brook willow brook river start rise check detail
+0.35|vikiwatsonflr garthbrooks amaliearena safety consideration normalize relation terrorism sponsor country
+0.31|amybeccaaaron dorothyofisrael fionnmacky terrorism jew commit kill christian
+0.21|three men arrest swoop terrorpolice centrallondon
+0.27|sweden socialdemokrat carlbildt defend mb crime
+0.33|uk men jail plan terrorism three british men include former police community support officer
+0.36|mayor tower hamlet give mosque agree wiv terrorism dont give jack shit right
+0.31|illuminazealia grammyless fucktyler terrorism child
+0.29|travel abroad safely age terrorism via yahootravel
+0.4|founder turkish school around world believe education antidote ignorance terrorism
+0.38|sharemarket damage financial coal mine serious risk non violent protest ok
+0.25|love westgate come illuminati jah bless mbusii hakunambrrrrcha
+Retrieved 4 new auxiliary tweets.
+0.0|badliontryhard flood ur house ur sweat
+0.0|flood
+0.0|love westgate come illuminati jah bless mbusii hakunambrrrrcha
+0.0|three men arrest swoop terrorpolice centrallondon
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=b737f248-caaf-4446-b1a5-3b08e4b7bce1-obesity-Iteration-6&ngram=1
+
+Aux F1 - Iteration-6=0.94
+Precision=1.0
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+105.0  0.0   
+10.0   69.0  
+
+Best F1 so far - 0.94 at iteration:0
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.0|georgegalloway
+0.33|sign understand terrorism terrorist threat
+0.36|million violent muslim death fee cycle terrorism nbc news
+0.27|discover cruel fact behind illegalivorytrade
+0.35|artmous ollyneville aarondarkwood le traffic great threat human terrorism
+0.35|go store buy cheese give five minute lecture cashier teenage fgp iwantmydamndonuts
+0.59|health soy protein cancer obesity cardiovascular disease
+0.55|take obesity issue ad campaign canada shine take obesity issue
+0.33|jamieoliver please follow journey depression thank
+0.48|daughter argue heart attack go kill obesity go kill
+0.59|top story obesity big threat hunger obesity big health crisis globally hunger
+0.5|iffoodcouldtalkthen obesity could fight good
+0.58|know country pandemic obesity epidemic skinny jean twitterlesstom
+0.48|factsinyourface nowadays people die obesity
+0.45|watch horror movie reduce risk brain body tend burn calorie watch scary fact fuck
+0.54|check back resolution tip weightloss diet obesity health
+0.44|obesity low use cannabis user
+0.47|breathe problem child age year approximately ten obesity news
+0.38|little sleep big waistline
+0.42|viewpoint curb obesity viewpoint whether one simple solution
+Retrieved 6 new auxiliary tweets.
+1.0|top story obesity big threat hunger obesity big health crisis globally hunger
+0.0|georgegalloway
+1.0|know country pandemic obesity epidemic skinny jean twitterlesstom
+1.0|health soy protein cancer obesity cardiovascular disease
+1.0|take obesity issue ad campaign canada shine take obesity issue
+1.0|check back resolution tip weightloss diet obesity health
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=28272a72-8214-4e32-b30d-487ecf657517-obesity-Iteration-7&ngram=1
+
+Aux F1 - Iteration-7=0.95
+Precision=0.99
+Recall=0.9
+Aux F1 - ConfusionMatrix:
+104.0  1.0   
+8.0    71.0  
+
+Best F1 so far - 0.94 at iteration:0
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.25|terrific conversation today healthyweightcommitmentfoundation togethercounts
+0.43|thank dare push im grateful sometimes wish die obesity
+0.4|actual internal picture obesity computer
+0.51|doctor chiropractic serve frontlines battle childhood obesity
+0.54|breast cancer obesity link prostate cancer may vary race
+0.57|triplecure cancer diabetes obesity
+0.55|avert obesity type diabetes india beverage taxation
+0.29|japan lift evacuation order fukushima town naraha government japan tokyo news
+0.31|huge local hurdle restart nuclear reactor japan year reaction fukushima close
+0.37|fukushima falsify cancer report expose
+0.27|long ago tepco admit thousand gallon radioactive water flow pacific fukushima
+0.3|pump cool damage reactor fukushima plant stop tokyo pump use cool tscent
+0.26|news fukushima old remain nuclear plant shut
+0.14|fukushima le journal est sorti de le unes via suretenucleaire
+0.32|fukushima local resident say near point fukushima japan radiation green water
+0.26|fukushima inside dangerous room world via time
+0.17|learn
+0.22|taiwan former taiwan president lee visit tokyo fukushima disaster area south china morning post
+0.29|freaky fukushima friday reminder fish bioaccumulating radionuclides thatarcher
+0.33|fukushima radiation level time high previously disco aquatic radiation plume report hit west coast
+Retrieved 8 new auxiliary tweets.
+1.0|breast cancer obesity link prostate cancer may vary race
+0.0|taiwan former taiwan president lee visit tokyo fukushima disaster area south china morning post
+0.0|fukushima le journal est sorti de le unes via suretenucleaire
+1.0|doctor chiropractic serve frontlines battle childhood obesity
+0.0|terrific conversation today healthyweightcommitmentfoundation togethercounts
+1.0|avert obesity type diabetes india beverage taxation
+1.0|triplecure cancer diabetes obesity
+0.0|learn
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=1b672a08-63ad-4af8-9be9-8d2b3e982b29-obesity-Iteration-8&ngram=1
+Adding 8 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-8=0.96
+Precision=0.99
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+104.0  1.0   
+7.0    72.0  
+
+Best F1 so far - 0.96 at iteration:8
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.28|dailymirror study show fukushima plutonium playground km nuclear plant savefukuchildren
+0.31|fun game japan gov tepco fukushima clean close rid
+0.16|fukushima ultima un plan experimental para contener fugas de agua radiactiva
+0.31|year fukushima japan open big solar plant reach national milestone renewable energy
+0.29|cidrap texas contact trace identify ebola fever monitor
+0.3|say ebola case report guinea sierraleone last week drop low total yr
+0.25|sapdevcenter could big data solution
+0.35|tech ebola detect computer software nin computersoftware ebola flaggedoff health healthmap map
+0.38|back home liberia stanford physician continue help fight ebola
+0.32|gomerblog man claim catch ebola flu shoot
+0.19|wereldgezondheidsorganisatie verzweeg uitbraak ebola twee maanden lang ebola
+0.39|ebola case make stock market crash much would pandemic
+0.34|ebola infect five new people every hour sierra leone figure show liberia worldnews sierraleone africa
+0.32|ebola death toll surpass west africa glv
+0.21|lesechos un robot pour lutter contre ebola
+0.37|forget ebola fear people year die car accident terrible mass call
+0.22|drama queen icebucketchallenge ebola joycetanks paris bath robe
+0.4|low per caput medical workforce world produce new liberian drs kill ebola
+0.31|itg ebola many people head liberia liberia kenyaairways ebola
+0.31|ebola ebola patient dr kent brantley recover discharge kent
+Retrieved 5 new auxiliary tweets.
+0.0|sapdevcenter could big data solution
+0.0|fukushima ultima un plan experimental para contener fugas de agua radiactiva
+0.0|drama queen icebucketchallenge ebola joycetanks paris bath robe
+0.0|wereldgezondheidsorganisatie verzweeg uitbraak ebola twee maanden lang ebola
+0.0|lesechos un robot pour lutter contre ebola
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=a63dac31-acfc-45c7-8677-8da4fad42e99-obesity-Iteration-9&ngram=1
+
+Aux F1 - Iteration-9=0.94
+Precision=1.0
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+105.0  0.0   
+10.0   69.0  
+
+Best F1 so far - 0.96 at iteration:8
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.22|nigerian man quarantine ebola hong kong nigerian man quarantine today hong kong
+0.34|skynewsbreak petition whitehouse ban flight ebola affect sign
+0.44|important change come global health security realm ebola must read
+0.35|ebola exist low level intact rainforest emerge destroy bushmeat eat
+0.27|reaction see winter storm forecast pax scwx gawx
+0.31|inyo national forest prepare weekend storm may implement winter closure road
+0.28|nwsnewyorkny convert winter storm watch advisory admit uncertainty snow
+0.22|winter storm warn issue march edt march edt nw wxny
+0.24|winter storm warn penobscot county issue march edt march edt nw
+0.25|resident deal power winter storm greensboro
+0.27|markjweather winter storm warn heavy snow move northern ohio early sunday ohwx wews
+0.3|winter look like feel like snow storm come
+0.25|winter storm watch whole view area tomorrow night monday morning
+0.28|chance go winter storm warn ice storm
+0.23|winter storm warn issue january mst january mst nw wxid
+0.32|call crazy start wonder whole winter storm call kid want snow
+0.22|season winter chicago history
+0.32|love still call winter storm yeah think weld brace
+0.28|get ready second winter storm expect inch far top inch get last
+0.27|winter storm warn early storm warn still bronx
+Retrieved 7 new auxiliary tweets.
+0.0|winter storm warn issue january mst january mst nw wxid
+0.0|nigerian man quarantine ebola hong kong nigerian man quarantine today hong kong
+0.0|winter storm warn issue march edt march edt nw wxny
+0.0|winter storm warn penobscot county issue march edt march edt nw
+0.0|season winter chicago history
+0.0|resident deal power winter storm greensboro
+0.0|winter storm watch whole view area tomorrow night monday morning
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=3de0cecf-17d6-4e69-86c1-4cf89ca03edf-obesity-Iteration-10&ngram=1
+
+Aux F1 - Iteration-10=0.95
+Precision=1.0
+Recall=0.9
+Aux F1 - ConfusionMatrix:
+105.0  0.0   
+8.0    71.0  
+
+Best F1 so far - 0.96 at iteration:8
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.28|britain track bumper fruit vegetable crop mild wet winter via skynews
+0.19|update winter storm
+0.22|winter storm warn issue february mst february mst nw wxmt
+0.32|harsh winter storm across much usa mother government
+0.28|haha yeah gonna rough winter like last yr storm bad next week apparently snow
+0.23|winter storm postpone game northeast
+0.25|winter storm warn issue april mdt april mdt nw wxsd
+0.22|severe thunderstorm warn issue june edt june edt nw
+0.26|severe weather statement issue july cdt july cdt nw severe
+0.27|severe thunderstorm watch issue june cdt june cdt nw severe
+0.21|severe weather weather service nashville cdt thu apr
+0.22|heavy rain flood part florida alabama
+0.3|current situation pink tornado watch yellow severe
+0.25|severe thunderstorm warn issue july cdt july cdt nw wxne
+0.3|nwsseveretstorm severe thunderstorm warn include ralph sd ludlow sd pm mdt
+0.29|due threat strong severe storm today weekly noaa weather radio test move
+0.36|weather alert nw issue severe thunderstorm warn part seek strong shelter risk
+0.27|french teacher talk severe french class weather class
+0.28|severe weather warn much bahamas via bahamas department
+0.27|severe weather move wind tune whohd whoweather stream online get late
+Retrieved 8 new auxiliary tweets.
+0.0|severe weather weather service nashville cdt thu apr
+0.0|severe thunderstorm warn issue july cdt july cdt nw wxne
+0.0|heavy rain flood part florida alabama
+0.0|severe thunderstorm warn issue june edt june edt nw
+0.0|winter storm warn issue april mdt april mdt nw wxsd
+0.0|winter storm warn issue february mst february mst nw wxmt
+0.0|winter storm postpone game northeast
+0.0|update winter storm
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=ec6b0e21-63c3-43f0-8408-f24407847ecf-obesity-Iteration-11&ngram=1
+
+Aux F1 - Iteration-11=0.95
+Precision=1.0
+Recall=0.89
+Aux F1 - ConfusionMatrix:
+105.0  0.0   
+9.0    70.0  
+
+Best F1 so far - 0.96 at iteration:8
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.28|twister possible plain tornado hail high wind may break central southern plain
+0.26|severe weather warn cold snap strike via
+0.33|check brand new severe weather go link start scroll
+0.28|joecioffi severe weather threat afternoon local flood shower possible
+0.31|severe thunderstorm warn pm cdt issue county
+0.26|severe thunderstorm warn issue june cdt june cdt nw iawx
+0.28|severe wx alert storm warn replace winter weather advisory
+0.33|severe weather threaten midsection severe storm already take toll part michigan
+0.34|brian study radar live air severe weather coverage monday take quietfun
+0.31|advisory public storm warn signal capiz per severe weather bulletin issue dec rubyph
+0.16|hoye kisi nay protest kia hai ya nai hamaray molve nai hain taliban inhon nay palay hoye hain muhammadmylife
+0.24|need vacation
+0.18|militer pakistan sebut heli jatuh karena kerusakan mesin bukan taliban
+0.18|un mensaje para news
+0.26|ayeshaspeaksnow mqm terrorist fund taliban without
+0.22|one page
+0.24|taliban chief demand foreign troop leave
+0.11|nati esta enojada conmigo pero cabe ninguna le voy hablar la voy cargosiar jajaa la quiero una banda esta piba
+0.26|kirtaner dzwooo americankevin naacp ill fuck taliban idgaf
+0.37|troop tell ignore taliban bring rap young boy military base crime
+Retrieved 7 new auxiliary tweets.
+0.0|militer pakistan sebut heli jatuh karena kerusakan mesin bukan taliban
+0.0|one page
+0.0|nati esta enojada conmigo pero cabe ninguna le voy hablar la voy cargosiar jajaa la quiero una banda esta piba
+0.0|un mensaje para news
+0.0|taliban chief demand foreign troop leave
+0.0|need vacation
+0.0|hoye kisi nay protest kia hai ya nai hamaray molve nai hain taliban inhon nay palay hoye hain muhammadmylife
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=7f9b302c-b5ff-42b3-a758-2973d05871f7-obesity-Iteration-12&ngram=1
+
+Aux F1 - Iteration-12=0.95
+Precision=1.0
+Recall=0.89
+Aux F1 - ConfusionMatrix:
+105.0  0.0   
+9.0    70.0  
+
+Best F1 so far - 0.96 at iteration:8
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.26|religious extremism mischief dajjal antichrist isi taliban alshabab islam kyaapkopatahai
+0.27|afghan team due pakistan discus revive taliban peace talk reuters
+0.32|atiyajhs every day pressure increase raheel sharif cojco govt enjoy taliban bless
+0.16|pasti akn btggjawab kes pengeboman antaranya alqaeda taliban dan
+0.23|islamic militant group isi taliban bokoharam must recognise
+0.23|teeveezalbundi get taliban boko haram hezbollah hamas findingthesense
+0.37|hang taliban want blood small child
+0.17|mischief isi daesh alqaeda aqap alshabab wahhabism saudiarabia taliban alshabab
+0.2|message leader islamic republic cia
+0.33|nathantimpano skynews way taliban say go dangerous everyone leave
+0.25|new spokesman mujmash write fancifully draw attention deplorable
+0.27|pakistan fight back taliban bullet proof
+0.23|rednationrising dbargen lance look like taiban flag
+0.3|new taliban leader move fast heal rift afghan insurgency
+0.31|therealjuiceeee true feel always come good term
+0.29|actually derby least car confederate flag top cheap general lee imitation one minion
+0.22|watson cover general confederate flag
+0.26|south carolina house vote remove confederate flag statehouse ground
+0.3|cold truth black live matter past
+0.29|fair foul kid cuss storm share fact confederate flag via bossip
+Retrieved 8 new auxiliary tweets.
+0.0|teeveezalbundi get taliban boko haram hezbollah hamas findingthesense
+0.0|new spokesman mujmash write fancifully draw attention deplorable
+0.0|pasti akn btggjawab kes pengeboman antaranya alqaeda taliban dan
+0.0|mischief isi daesh alqaeda aqap alshabab wahhabism saudiarabia taliban alshabab
+0.0|islamic militant group isi taliban bokoharam must recognise
+0.0|rednationrising dbargen lance look like taiban flag
+0.0|message leader islamic republic cia
+0.0|watson cover general confederate flag
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=1367fb9e-a7ad-4c6d-b19f-80824f19cfb0-obesity-Iteration-13&ngram=1
+
+Aux F1 - Iteration-13=0.95
+Precision=1.0
+Recall=0.89
+Aux F1 - ConfusionMatrix:
+105.0  0.0   
+9.0    70.0  
+
+Best F1 so far - 0.96 at iteration:8
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.31|kkk hold sad confederate flag rally south carolina even though flag already go
+0.31|heymanhustle wwe cmpunk come back punk lmao may even wave confederate flag lol
+0.25|support confederate flag unfollow
+0.33|drive home wife day truck confederate flag go say look hon
+0.24|percent approve removal confederate flag
+0.33|kid geom everytime see kid confederate flag hoodie feel obligate set fire
+0.18|yelawolf defend confederate flag
+0.14|dependentclause uhhhh
+0.26|poll majority see confederate flag southern symbol
+0.29|orchestrate takedown confederate flag sc raise national profile
+0.2|saw confederate flag disappoint upset angry
+0.3|whyiwouldmakeagreatpresident bring back confederate flag close border make every day
+0.29|sup bro ur look great ah confederate flag belt buckle compliment
+0.33|tearjerker must sc gop rep jenny horne say take confederate flag
+0.29|supporter rally accuse flash knife gun black live matter
+0.31|like youtube video kkk member confederate flag rally confront wear fubu shoe
+0.18|fitter edinburgh falkirk stirling today splashbacktuesday
+0.24|festival draw people three day year organizer edinburgh
+0.19|pair admit stab takeaway owner
+0.06|edinburgh
+Retrieved 9 new auxiliary tweets.
+0.0|festival draw people three day year organizer edinburgh
+0.0|dependentclause uhhhh
+0.0|support confederate flag unfollow
+0.0|saw confederate flag disappoint upset angry
+0.0|pair admit stab takeaway owner
+0.0|edinburgh
+0.0|fitter edinburgh falkirk stirling today splashbacktuesday
+0.0|percent approve removal confederate flag
+0.0|yelawolf defend confederate flag
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=655c74d8-9ffd-4fde-96c3-76351b2d5724-obesity-Iteration-14&ngram=1
+
+Aux F1 - Iteration-14=0.95
+Precision=1.0
+Recall=0.89
+Aux F1 - ConfusionMatrix:
+105.0  0.0   
+9.0    70.0  
+
+Best F1 so far - 0.96 at iteration:8
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.28|aerlingus disenchant customer lose bag edinburgh dublin promise next
+0.14|hello intercambio edinburgh scotland
+0.29|super rich scot jim mellon address investor edinburgh first time say
+0.23|harristweetride expect bring together stylish
+0.25|market data analyst edinburgh competitive salary job job hire itjobs
+0.22|account job night auditor holiday inn edinburgh ihgjobs ihg hoteljobs job
+0.28|chill pedaltrill expect get everything anything
+0.21|susandalgety euanmccolm daily record call
+0.27|heaven company libation tightfisted cover waggon lease good understand edinburgh kbxjxe
+0.19|deserve christmas
+0.22|edinburgh look forward tomorrow
+0.28|pay someone come edinburgh deal bin
+0.2|annie mac corn exchange edinburgh saturday nov
+0.23|edinburgh look gorgeous tonight
+0.19|junior cad technician edinburgh matchtech aerospace job
+0.17|bad serial
+0.26|get one tall flagpole flag
+0.3|tomorrow land come see woodland creature waverley arch piano
+0.1|din edinburgh scotland via taranoland
+0.24|mate home scotland say take pic edinburgh wrongtatts
+Retrieved 13 new auxiliary tweets.
+0.0|susandalgety euanmccolm daily record call
+0.0|deserve christmas
+0.0|junior cad technician edinburgh matchtech aerospace job
+0.0|bad serial
+0.0|hello intercambio edinburgh scotland
+0.0|edinburgh look forward tomorrow
+0.0|annie mac corn exchange edinburgh saturday nov
+0.0|din edinburgh scotland via taranoland
+0.0|mate home scotland say take pic edinburgh wrongtatts
+0.0|edinburgh look gorgeous tonight
+0.0|account job night auditor holiday inn edinburgh ihgjobs ihg hoteljobs job
+0.0|harristweetride expect bring together stylish
+0.0|market data analyst edinburgh competitive salary job job hire itjobs
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=21c31da1-1a96-4138-9bd8-edb4d2cc3423-obesity-Iteration-15&ngram=1
+
+Aux F1 - Iteration-15=0.95
+Precision=1.0
+Recall=0.89
+Aux F1 - ConfusionMatrix:
+105.0  0.0   
+9.0    70.0  
+
+Best F1 so far - 0.96 at iteration:8
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.21|anniversary bear comiston rd edinburgh name donald william gray ancestry
+0.23|hurricane sandy attention whore
+0.23|billion sandy billion katrina almost aid
+0.28|survivor tree hurricane irene superstorm one memorial
+0.27|dark water year hurricane sandy new york time new york time dark water year
+0.28|solar company seek way build oasis electricity hurricane sandy wipe power area
+0.31|jakeamadorr hurricane sandy account start repeat long funny unfollowing
+0.3|see album post jersey shore still reel effect hurricane
+0.29|frankenstorm hurricane sandy space big vid discovery news
+0.23|hurricane sandy apple ipad mspmentor
+0.28|watch live president obama deliver statement hurricane sandy barack obama schedule
+0.34|thought prayer affect hurricane sad
+0.23|vdem mcdonnell request federal emergency assistance response hurricane sandy vasandy sandy
+0.32|delta extend customer ability change travel plan affect hurricane sandy
+0.22|watch perform hurricane sandy
+0.25|dear hurricane sandy wel newyork kindly wash dirt da street fill makeitfast bye
+0.28|roosevelt island youth program garden still look great hurricane sandy pas th roosevelt island
+0.16|hurricane sandy photo via newyorker
+0.35|destruction hurricane sandy law could come critical time new york bloomberg
+0.24|hurricane sandy rare nyse nasdaq close monday damage storm forbes ibnlivehurricane sandy rare
+Retrieved 9 new auxiliary tweets.
+0.0|hurricane sandy attention whore
+0.0|watch perform hurricane sandy
+0.0|hurricane sandy apple ipad mspmentor
+0.0|dear hurricane sandy wel newyork kindly wash dirt da street fill makeitfast bye
+0.0|hurricane sandy photo via newyorker
+0.0|hurricane sandy rare nyse nasdaq close monday damage storm forbes ibnlivehurricane sandy rare
+0.0|anniversary bear comiston rd edinburgh name donald william gray ancestry
+0.0|vdem mcdonnell request federal emergency assistance response hurricane sandy vasandy sandy
+0.0|billion sandy billion katrina almost aid
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=356b3cad-64a3-4af5-81ca-b49b2dda5017-obesity-Iteration-16&ngram=1
+
+Aux F1 - Iteration-16=0.95
+Precision=1.0
+Recall=0.89
+Aux F1 - ConfusionMatrix:
+105.0  0.0   
+9.0    70.0  
+
+Best F1 so far - 0.96 at iteration:8
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.24|halloween hurricane sandy wreck shit
+0.24|fish catch fence hurricane
+0.25|lifelivenets harvardbiz morning advantage high cost hurricane sandy
+0.29|call hurricane sandy slut blow everything use picture sandy cheek original
+0.2|new earthquake southern california wednesday april utcwednesday april
+0.2|mag depth km utc pm offshore northern california emsc info
+0.28|feel medium blow earthquake proportion tiny
+0.09|sismo ne mucuchies venezuela utc
+0.22|eartquake mammoth lake california
+0.17|kay mahuman jud ka ana imong earthquake cgeg dhaa
+0.19|magnitude ese talkeetna alaska
+0.33|read earthquake strong change brain
+0.08|jordanjansen rock
+0.27|earthquake preliminary magnitude hit eastern japan saturday tsunami warn forex
+0.26|im wait next earthquake happen
+0.27|major tremor minor felt sharjah ceiling lamp everything firmly bolt shake pretty
+0.27|ii know earthquake
+0.16|selama di aceh aku ga pernah soalnya pa lagi tidur felt
+0.36|tsunami earthquake soon bitch want die young
+0.2|new head cera white male
+Retrieved 12 new auxiliary tweets.
+0.0|eartquake mammoth lake california
+0.0|selama di aceh aku ga pernah soalnya pa lagi tidur felt
+0.0|new head cera white male
+0.0|new earthquake southern california wednesday april utcwednesday april
+0.0|mag depth km utc pm offshore northern california emsc info
+0.0|sismo ne mucuchies venezuela utc
+0.0|jordanjansen rock
+0.0|halloween hurricane sandy wreck shit
+0.0|fish catch fence hurricane
+0.0|lifelivenets harvardbiz morning advantage high cost hurricane sandy
+0.0|kay mahuman jud ka ana imong earthquake cgeg dhaa
+0.0|magnitude ese talkeetna alaska
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=f67f67da-c29b-422b-a563-546c1f84f2fa-obesity-Iteration-17&ngram=1
+
+Aux F1 - Iteration-17=0.95
+Precision=1.0
+Recall=0.89
+Aux F1 - ConfusionMatrix:
+105.0  0.0   
+9.0    70.0  
+
+Best F1 so far - 0.96 at iteration:8
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.19|display recent earthquake near eastern sichuan magnitude
+0.28|npr news order release fmr egypt prez mubarak strong earthquake shake mexico word yet damage
+0.22|opisrael dead terrorism since december
+0.24|opisrael dead terrorism since july
+0.22|anonymous ops new frontier protest
+0.27|pls vigil wednesday ministry interior say terrorism hezbollah
+0.34|way leave try explain away terrorism say look
+0.22|opisrael dead terrorism since december
+0.28|gmtalba execute people two day report afp quote justice ministry
+0.33|spend morning configure server raspberry talk cyber terrorism
+0.32|kiddcaptain abcnews murder environ staff cause amount act terrorism
+0.37|new prime vow fight corruption terrorism via foxnews time well
+0.4|carnojoe know terrorist get weapon america fight war terrorism isnt time take
+0.23|heysmm bomb civilian stop work jisforjeeda juchemane
+0.24|austrian police arrest terrorist suspect austrian police arrest couple seek germany suspicion terrorism
+0.31|yes terrorism
+0.33|ok nurse home worker claim joke behead charge terrorism act
+0.39|dighsx lol good call talk terrorism get scar think hand data nsa precaution
+0.34|teach talk yr old apartheid state terrorism frgn plcy
+0.28|vaidyalingamput victoryfornamo colonelsharotri sambitswaraj good channel channel make aware abt terrorism
+Retrieved 7 new auxiliary tweets.
+0.0|opisrael dead terrorism since december
+0.0|heysmm bomb civilian stop work jisforjeeda juchemane
+0.0|display recent earthquake near eastern sichuan magnitude
+0.0|opisrael dead terrorism since december
+0.0|anonymous ops new frontier protest
+0.0|austrian police arrest terrorist suspect austrian police arrest couple seek germany suspicion terrorism
+0.0|opisrael dead terrorism since july
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=bf947dc1-f6f1-4f81-a796-195d2fc872eb-obesity-Iteration-18&ngram=1
+
+Aux F1 - Iteration-18=0.94
+Precision=1.0
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+105.0  0.0   
+10.0   69.0  
+
+Best F1 so far - 0.96 at iteration:8
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.19|anysub charlesfrith define
+0.24|russia nato hold vigilant sky exercise russian nato unit simulate
+0.39|still believe candidate republican debate say best way end global terrorism pure military action
+0.33|terrorism tool use government achieve political
+0.34|islamist terrorist follow wahhabi ideology root cause global malikishaq solution
+0.35|okay normal israel invade muslim something automatically consider terrorism
+0.35|never admit want support terrorism disrespect people freedom
+0.57|obesity infertility weight affect conception obesity infertility weight affect
+0.41|mt participaction many way take stand agaist childhood inactivity ymcastrongkids
+0.31|love whitneyhouston heffer tub much biggie die cocaineisapowerfuldrug
+0.43|dec coulthard way past obesity
+0.31|seriously think average promote
+0.51|european regulator recommend approve gsk injectable asthma drug obesity
+0.53|die obesity bye fat
+0.44|diet fitness best weight loss diet plan avoid redsox getfit
+0.25|bojangles aid life except
+0.55|list gastrectomy cancer fundo sleeve gastrectomy wt obesity pt see physician surgeon
+0.47|news obesity bristolmyers squibb celldex therapeutic announce clinical trial collaboration evaluate
+0.58|san francisco proposal tax sugary soda pop drink reduce obesity health diabetes
+0.44|caramel color contain worrisome level carcinogenic chemical accord watchdog group obesity
+Retrieved 8 new auxiliary tweets.
+1.0|list gastrectomy cancer fundo sleeve gastrectomy wt obesity pt see physician surgeon
+1.0|obesity infertility weight affect conception obesity infertility weight affect
+1.0|european regulator recommend approve gsk injectable asthma drug obesity
+1.0|die obesity bye fat
+0.0|anysub charlesfrith define
+0.0|bojangles aid life except
+0.0|russia nato hold vigilant sky exercise russian nato unit simulate
+1.0|san francisco proposal tax sugary soda pop drink reduce obesity health diabetes
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=c7c51ee6-fdf1-47ad-8818-78cdc28cc163-obesity-Iteration-19&ngram=1
+
+Aux F1 - Iteration-19=0.95
+Precision=1.0
+Recall=0.89
+Aux F1 - ConfusionMatrix:
+105.0  0.0   
+9.0    70.0  
+
+Best F1 so far - 0.96 at iteration:8
+
+
+Issue with Tweet External:, 597
+Issue with Tweet External:, 598
+Issue with Tweet External:, 599
+Issue with Tweet External:, 600
+0.29|sit play xbox month time lead soopermexican fasonk bayareagn forrespect
+0.53|cannot believe obesity consider obesity decision lifestyle choice takecontrolofyourhealth
+0.49|shout obesity
+0.5|reason obesity
+0.49|bariatric surgery patient best tip part obesity via healthcentral
+0.47|political root american obesity
+0.52|weightloss obesity prove weighty strain economy cost trillion year new study please
+0.48|coca cola cure obesity exercise drink coke cocacolaobese
+0.41|pupil cookery lesson obesity call
+0.49|allthewaymayhem like could get snack obesity always issue
+0.49|water mealtime drink say child public health england pose new guideline cut sugar
+0.54|childhood obesity
+0.48|fat people intent justify morbid obesity invent something call
+0.59|health fitness obesity control obesity one big problem
+0.45|portion size cat could share one extra large meal satisfy obesity fat america
+0.36|gym teacher might go philippine week help tsunami victim
+0.14|esto si una tsunami tormenta de arena jajajajaj de la
+0.16|encanta la cancion que estoy tsunami
+0.23|geo lil tryna bring
+0.25|thestephmidolo like tsunami tide
+Retrieved 8 new auxiliary tweets.
+1.0|childhood obesity
+0.0|thestephmidolo like tsunami tide
+0.0|esto si una tsunami tormenta de arena jajajajaj de la
+0.0|geo lil tryna bring
+1.0|cannot believe obesity consider obesity decision lifestyle choice takecontrolofyourhealth
+0.0|encanta la cancion que estoy tsunami
+1.0|health fitness obesity control obesity one big problem
+1.0|weightloss obesity prove weighty strain economy cost trillion year new study please
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=d121fd1a-80cb-48d1-9aae-962e7679981a-obesity-Iteration-20&ngram=1
+
+Aux F1 - Iteration-20=0.95
+Precision=1.0
+Recall=0.89
+Aux F1 - ConfusionMatrix:
+105.0  0.0   
+9.0    70.0  
+
+Best F1 so far - 0.96 at iteration:8
+
+
+Total time taken for experiment:1838.765 seconds.
+				************* SAVE THE RESULTS ******************
+Ending experiment at 2017-04-01T22:49:05.572-04:00

@@ -23,7 +23,7 @@ object program extends App {
 		val istOffset = ZoneOffset.ofHoursMinutesSeconds(-4, 0, 0)
 
 		// time representation in EST
-		val zonedDateTimeIst = ZonedDateTime.now(istOffset)
+		var zonedDateTimeIst = ZonedDateTime.now(istOffset)
 
 		println(s"Starting experiment at $zonedDateTimeIst")
 		//LrClassifier.main(args)
@@ -45,6 +45,7 @@ object program extends App {
 
 		new AuxiliaryDataBasedExperiment(args).SetupAndRunExperiment()
 		//GenerateCleanTweetStrings.GenerateCleanStrings("data/final/ebola_auxiliary_data.txt")
+		zonedDateTimeIst = ZonedDateTime.now(istOffset)
 		println(s"Ending experiment at $zonedDateTimeIst")
 
 	}
