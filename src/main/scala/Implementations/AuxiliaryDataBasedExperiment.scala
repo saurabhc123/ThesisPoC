@@ -188,7 +188,7 @@ class AuxiliaryDataBasedExperiment(args: Array[String]) extends IExperiment {
 		handleProgramArguments()
 		Reset(AuxiliaryDataBasedExperiment.experimentSet)
 		AuxiliaryDataBasedExperiment.setVectorType(AuxiliaryDataBasedExperiment.vectorType)
-		AuxiliaryDataBasedExperiment.setCosineFilteringParameters()
+		//AuxiliaryDataBasedExperiment.setCosineFilteringParameters()
 		println(AuxiliaryDataBasedExperiment.toString)
 		val predictstart = System.currentTimeMillis()
 		val trainingTweets = TweetsFileProcessor.LoadTweetsFromFileNoCounter(AuxiliaryDataBasedExperiment.trainingDataFile, AuxiliaryDataBasedExperiment.fileDelimiter)

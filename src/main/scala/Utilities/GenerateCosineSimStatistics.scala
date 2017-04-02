@@ -21,20 +21,36 @@ object GenerateCosineSimStatistics extends App {
 		Logger.getLogger("akka").setLevel(Level.OFF)
 		val sc = SparkContextManager.getContext
 		sc.setLogLevel("ERROR")
-		AuxiliaryDataBasedExperiment.experimentSet = "egypt"
-		val filename = s"data/final/${AuxiliaryDataBasedExperiment.experimentSet}_training_data1.txt"
-		FileBasedAuxiliaryDataRetriever._auxiliaryFileName = filename
-		AuxiliaryDataBasedExperiment.vectorType = s"google"
-		Reset()
-		AuxiliaryDataBasedExperiment.setVectorType(AuxiliaryDataBasedExperiment.vectorType)
-		val tweets = FileBasedAuxiliaryDataRetriever.readTweetsFromFile(filename)
-		var (threshold, wallSize) = getCosineSimParametersForTweets(tweets)
-		print(threshold,wallSize)
+		AuxiliaryDataBasedExperiment.experimentSet = "ebola"
+		AuxiliaryDataBasedExperiment.vectorType = s"local"
+		GetData(0)
+		GetData(1)
+		GetData(2)
+		GetData(3)
 //		Reset()
 //		val (threshold1, wallSize1) = getCosineSimParametersForTweets(tweets)
 //		print(threshold1,wallSize1)
 
 
+	}
+
+	def GetData(experimentSetNumber:Int): Unit = {
+
+		if(experimentSetNumber == 0)
+			{
+				AuxiliaryDataBasedExperiment.experimentSetNumber == ""
+			}
+		else
+			{
+				AuxiliaryDataBasedExperiment.experimentSetNumber = experimentSetNumber.toString
+			}
+		val filename = s"data/final/${AuxiliaryDataBasedExperiment.experimentSet}_training_data${AuxiliaryDataBasedExperiment.experimentSetNumber}.txt"
+		FileBasedAuxiliaryDataRetriever._auxiliaryFileName = filename
+		Reset()
+		AuxiliaryDataBasedExperiment.setVectorType(AuxiliaryDataBasedExperiment.vectorType)
+		val tweets = FileBasedAuxiliaryDataRetriever.readTweetsFromFile(filename)
+		var (threshold, wallSize) = getCosineSimParametersForTweets(tweets)
+		print(threshold, wallSize)
 	}
 
 	def Reset() = {
