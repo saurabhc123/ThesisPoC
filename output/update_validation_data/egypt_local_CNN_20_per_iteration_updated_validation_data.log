@@ -1,0 +1,185 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+17/03/26 00:13:43 INFO Remoting: Starting remoting
+17/03/26 00:13:43 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@172.30.204.173:49537]
+Hello World!11
+
+***************** Parameters used for EXPERIMENT *****************
+	filterToUse = CosineSim
+	minSimilarityThreshold = 0.35
+	cosineSimilarityWindowSize= 0.2
+	minWmDistanceThreshold = 0.0199
+	maxFpmWordsToPick = 35
+	minFpmWordsDetected = 0
+	refreshLocalWordVectors = false
+	maxExperimentIterations = 20
+	maxAuxTweetsToAddEachIteration = 20
+	thresholdF1 = 0.98
+	classifierType = Cnn
+	folderNameForCnnClassifier = 
+	auxiliaryThresholdExpectation = 0.01
+	fileDelimiter = ,
+	trainingDataFile = data/final/egypt_training_data.txt
+	validationDataFile = data/final/egypt_validation_data.txt
+	auxiliaryDataFile = data/final/egypt_auxiliary_data.txt
+	supplementedCleanAuxiliaryFile = data/final/egypt_auxiliary_data.txt
+
+***************** Parameters used for EXPERIMENT *****************
+
+
+Initial F1=0.88
+Precision=1.0
+Recall=0.83
+Initial - ConfusionMatrix:
+12.0  0.0   
+4.0   19.0  
+
+[Stage 23:>                                                         (0 + 2) / 2]                                                                                0.13|match report tunis al ahly cafchampionsleague football soccer africa
+0.37|monaeltahawy female journalist savagely attack cairo egypt
+0.43|egypt alien
+0.3|another question head referendum committee hour leave round egypt
+0.44|proud egyptian fb tahrir egypt
+0.2|per ogni sorpresina di oggi dobbiamo sempre ringraziare tantawi per quella notte tragica cui sciolse il parlamento per egypt
+0.39|photography update anti muslim brotherhood protest egypt mb ikhwan morsi
+0.39|egypt fat black girl get spank big cock lol
+0.43|ianinegypt scene outside presidential egypt
+0.53|egypt
+0.42|egypt salafists order coptic church land egypt salafist copt
+0.4|translate egypt clash alexandria phase referendum egyptian
+0.38|egypt protest morsi power grab first flower arabspring shalom cohen
+0.42|eyeoncambodia egypt right obama egypt murder violation human right eh
+0.43|brotherhood become psychiatrist via ahramonline morsi islamist salafists egypt
+0.3|miss summer weather sky instaweather instaweatherpro outdoors nature el dokki egypt day autumn
+0.27|ibrahim eissa host hamdeen sabbahi tonight al qahera wal na egypt
+0.42|say gaddafi take state full tahrir egypt
+0.07|tt nilenewschannel greek president israel take gas oil resource
+0.11|love hate egyptian
+Retrieved 16 new auxiliary tweets.
+1.0|egypt alien
+1.0|proud egyptian fb tahrir egypt
+1.0|brotherhood become psychiatrist via ahramonline morsi islamist salafists egypt
+1.0|say gaddafi take state full tahrir egypt
+1.0|ianinegypt scene outside presidential egypt
+1.0|egypt
+0.0|match report tunis al ahly cafchampionsleague football soccer africa
+1.0|monaeltahawy female journalist savagely attack cairo egypt
+1.0|photography update anti muslim brotherhood protest egypt mb ikhwan morsi
+1.0|egypt fat black girl get spank big cock lol
+1.0|egypt protest morsi power grab first flower arabspring shalom cohen
+1.0|eyeoncambodia egypt right obama egypt murder violation human right eh
+0.0|tt nilenewschannel greek president israel take gas oil resource
+0.0|love hate egyptian
+1.0|egypt salafists order coptic church land egypt salafist copt
+1.0|translate egypt clash alexandria phase referendum egyptian
+()Adding 16 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-1=0.94
+Precision=1.0
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+12.0  0.0   
+2.0   21.0  
+
+[Stage 83:=============================================>           (8 + 2) / 10]                                                                                0.31|egypt islamist moron proudly present item threaten book christ cartridge
+0.43|vote period extend due high turnout say sec lack egypt
+0.42|shalandawilkers flagman egypt camel israel give terrorist
+0.29|mt koertdebeuf baradei cnn ready national first postpone dialogue damoclese egypt
+0.53|egypt draw
+0.4|egypt masr april leader quit constituent assembly sinai
+0.48|antonywahba protest firework laser egypt palace
+0.31|safarkhan art egypt november exhibition wael darwish pm till november
+0.43|egypt footage wow nostalgia
+0.42|egypt love much hahaha
+0.46|egypt semi retard
+0.37|egypt little reason celebrate south first birthday
+0.41|muslim hq set ablaze office egypt ikhwan
+0.38|morsy talk hand create presidential palace civil war egypt
+0.31|ankh british museum hieroglyphic egypt ankh
+0.52|islamist egypt morsi tahrir auc
+0.32|destruction heritage sit syria raise question cost democracy occupy ows occupywallstreet
+0.27|nyc forecast overnight partly low temp occupywallstreet tpp
+0.26|nyc forecast afternoon high temp occupywallstreet tpp sgp
+0.35|link city underwater year occupy ows occupywallstreet occupyhq grassroots usa
+Retrieved 12 new auxiliary tweets.
+1.0|egypt love much hahaha
+1.0|vote period extend due high turnout say sec lack egypt
+1.0|morsy talk hand create presidential palace civil war egypt
+1.0|islamist egypt morsi tahrir auc
+1.0|egypt masr april leader quit constituent assembly sinai
+1.0|muslim hq set ablaze office egypt ikhwan
+1.0|egypt semi retard
+1.0|egypt little reason celebrate south first birthday
+1.0|antonywahba protest firework laser egypt palace
+1.0|egypt footage wow nostalgia
+1.0|shalandawilkers flagman egypt camel israel give terrorist
+1.0|egypt draw
+()
+Aux F1 - Iteration-2=0.91
+Precision=1.0
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+12.0  0.0   
+3.0   20.0  
+
+0.31|vietnamese lawyer face obstruction ahead trial occupy ows occupywallstreet occupyhq grassroots
+0.31|andrew curtin photo selfie occupy ows occupywallstreet occupyhq grassroots
+0.31|nyc forecast wed night low temp occupywallstreet glennbeck tcot
+0.31|alex schaefer burn bank occupy ows occupywallstreet occupyhq grassroots
+0.06|study economic inequality lead downfall civilization
+0.32|dome special slideshow occupy ows occupywallstreet occupyhq grassroots
+0.33|cme break occupy ows occupywallstreet occupyhq
+0.34|nyc forecast mon high temp get smart occupywallstreet sgp
+0.34|preview death bin lade revisted nightly news video occupy ows occupywallstreet occupyhq
+0.3|irs rule bitcoin property subject capital gain tax occupy ows occupywallstreet occupyhq grassroots
+0.31|confession juiced journalist occupy ows occupywallstreet occupyhq grassroots
+0.16|ows kitchen nostalgia submit
+0.29|nyc forecast sit night partly low temp occupywallstreet tcot
+0.3|nyc forecast fri night low temp occupywallstreet topprog glennbeck
+0.36|israel gaza big picture occupy ows occupywallstreet occupyhq grassroots usa canada europe
+0.28|nyc forecast sun night mostly low temp occupywallstreet tpp glennbeck
+0.34|secretive turkish movement buy influence occupy ows occupywallstreet occupyhq grassroots usa
+0.28|nyc forecast sit night mostly low temp occupywallstreet tcot tcot
+0.26|nyc forecast afternoon high temp occupywallstreet tpp
+0.17|buy custom nyc street sign may suggest
+Retrieved 2 new auxiliary tweets.
+0.0|study economic inequality lead downfall civilization
+1.0|israel gaza big picture occupy ows occupywallstreet occupyhq grassroots usa canada europe
+()
+Aux F1 - Iteration-3=0.91
+Precision=1.0
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+12.0  0.0   
+3.0   20.0  
+
+0.32|jesse jackson call symbolic protest clipper player occupy ows occupywallstreet occupyhq
+0.24|brussels conference un stress need approach stabilize mali occupy ows occupywallstreet
+0.14|occupywallstreet give nypd perfect excuse crack elderly veteran
+0.35|colombia justice peace law failure expert say occupy ows occupywallstreet occupyhq grassroots
+0.35|soil association disown say resign trustee occupy ows occupywallstreet occupyhq
+0.33|cull human herd century occupy ows occupywallstreet occupyhq grassroots
+0.16|support brother sister occupygezi reoccupy zuccotti occupywallstreet
+0.32|may ga reid park occupy ows occupywallstreet occupyhq grassroots usa canada
+0.29|unhcr urge prevent refugee expulsion uae occupy ows occupywallstreet occupyhq grassroots
+0.37|new corvette spytech record conversation video occupy ows occupywallstreet occupyhq grassroots usa
+0.22|hilaryclinton run president hilary care olsx teamster occupywallstreet
+0.29|japan next economic domino occupy ows occupywallstreet occupyhq grassroots
+0.26|dear state department moral authority tell country treat protest occupywallstreet
+0.18|together jefferson airplane occupywallstreet
+0.29|politico rand paul marco rubio differ iraq action occupy ows occupywallstreet occupyhq grassroots
+0.34|nyc forecast fri night mostly low temp get smart occupywallstreet tlot tlot
+0.35|banky bbc news occupy ows occupywallstreet occupyhq grassroots
+0.29|nyc forecast tue night low temp occupywallstreet teaparty
+0.24|alliancebl give bank tab occupywallstreet
+0.28|ban kettle hairdryers help climate change occupy ows occupywallstreet
+Retrieved 2 new auxiliary tweets.
+1.0|new corvette spytech record conversation video occupy ows occupywallstreet occupyhq grassroots usa
+0.0|occupywallstreet give nypd perfect excuse crack elderly veteran
+()Adding 2 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-4=1.0
+Precision=1.0
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+12.0  0.0   
+0.0   23.0  
+

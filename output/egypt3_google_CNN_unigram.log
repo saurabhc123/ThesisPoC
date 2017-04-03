@@ -1,0 +1,879 @@
+Starting experiment at 2017-04-02T16:41:55.333-04:00
+Reset successful
+***************** Parameters used for EXPERIMENT *****************
+	filterToUse = CosineSim
+	minSimilarityThreshold = 0.55
+	cosineSimilarityWindowSize= 0.2
+	minWmDistanceThreshold = 0.49
+	vectorType= google
+	webWord2VecBaseUri = http://localhost:5000/getvector/
+	cnnClassifierBaseUri = http://localhost:5000/cnn_train_and_get_prediction_labels
+	maxFpmWordsToPick = 35
+	minFpmWordsDetected = 0
+	refreshLocalWordVectors = false
+	maxExperimentIterations = 20
+	maxAuxTweetsToAddEachIteration = 20
+	thresholdF1 = 0.98
+	classifierType = Cnn
+	folderNameForCnnClassifier = 
+	auxiliaryThresholdExpectation = 0.01
+	fileDelimiter = ,
+	experimentSet = egypt
+	experimentSetNumber = 3
+	trainingDataFile = data/final/egypt_training_data3.txt
+	validationDataFile = data/final/egypt_validation_data.txt
+	auxiliaryDataFile = data/final/egypt_auxiliary_data.txt
+	supplementedCleanAuxiliaryFile = data/final/egypt_auxiliary_data.txt
+
+***************** Parameters used for EXPERIMENT *****************
+
+Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=69aa8675-1668-4d76-9bf1-3efca6a1003f-egypt-Iteration-0&ngram=1
+
+Initial F1=0.83
+Precision=0.87
+Recall=0.87
+Initial - ConfusionMatrix:
+12.0  3.0   
+3.0   20.0  
+
+Replacing occupywallstreet with ows. Choices [ows,occupywallstreet].
+Replacing sinai with egypt. Choices [sinai,egypt].
+Replacing morsi with egypt. Choices [morsi,egypt].
+Replacing liberia with ebola. Choices [liberia,ebola].
+Replacing fukushima with nuclear. Choices [nuclear,fukushima].
+Replacing occupyhq with occupy. Choices [occupyhq,occupy].
+0.4|match report tunis al ahly cafchampionsleague football soccer africa
+0.56|monaeltahawy female journalist savagely attack cairo egypt
+0.57|egypt alien
+0.46|another question head referendum committee hour leave round egypt
+0.63|proud egyptian fb tahrir egypt
+0.38|per ogni sorpresina di oggi dobbiamo sempre ringraziare tantawi per quella notte tragica cui sciolse il parlamento per egypt
+0.61|photography update anti muslim brotherhood protest egypt mb ikhwan morsi
+0.47|egypt fat black girl get spank big cock lol
+0.54|ianinegypt scene outside presidential egypt
+0.65|egypt
+0.66|egypt salafists order coptic church land egypt salafist copt
+0.6|translate egypt clash alexandria phase referendum egyptian
+0.58|egypt protest morsi power grab first flower arabspring shalom cohen
+0.61|eyeoncambodia egypt right obama egypt murder violation human right eh
+0.59|brotherhood become psychiatrist via ahramonline morsi islamist salafists egypt
+0.38|miss summer weather sky instaweather instaweatherpro outdoors nature el dokki egypt day autumn
+0.58|ibrahim eissa host hamdeen sabbahi tonight al qahera wal na egypt
+0.65|say gaddafi take state full tahrir egypt
+0.46|tt nilenewschannel greek president israel take gas oil resource
+0.43|love hate egyptian
+Retrieved 12 new auxiliary tweets.
+1.0|egypt alien
+1.0|egypt protest morsi power grab first flower arabspring shalom cohen
+1.0|proud egyptian fb tahrir egypt
+1.0|eyeoncambodia egypt right obama egypt murder violation human right eh
+1.0|brotherhood become psychiatrist via ahramonline morsi islamist salafists egypt
+1.0|translate egypt clash alexandria phase referendum egyptian
+1.0|photography update anti muslim brotherhood protest egypt mb ikhwan morsi
+1.0|monaeltahawy female journalist savagely attack cairo egypt
+1.0|egypt
+1.0|egypt salafists order coptic church land egypt salafist copt
+1.0|ibrahim eissa host hamdeen sabbahi tonight al qahera wal na egypt
+1.0|say gaddafi take state full tahrir egypt
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=0a70dea2-d319-4abc-8955-51d6e0147fff-egypt-Iteration-1&ngram=1
+
+Aux F1 - Iteration-1=0.8
+Precision=0.81
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+10.0  5.0   
+2.0   21.0  
+
+Best F1 so far - 0.83 at iteration:0
+
+
+0.6|egypt islamist moron proudly present item threaten book christ cartridge
+0.43|vote period extend due high turnout say sec lack egypt
+0.58|shalandawilkers flagman egypt camel israel give terrorist
+0.52|mt koertdebeuf baradei cnn ready national first postpone dialogue damoclese egypt
+0.54|egypt draw
+0.55|egypt masr april leader quit constituent assembly sinai
+0.52|antonywahba protest firework laser egypt palace
+0.48|safarkhan art egypt november exhibition wael darwish pm till november
+0.47|egypt footage wow nostalgia
+0.53|egypt love much hahaha
+0.51|egypt semi retard
+0.41|egypt little reason celebrate south first birthday
+0.57|muslim hq set ablaze office egypt ikhwan
+0.56|morsy talk hand create presidential palace civil war egypt
+0.54|ankh british museum hieroglyphic egypt ankh
+0.64|islamist egypt morsi tahrir auc
+0.53|destruction heritage sit syria raise question cost democracy occupy ows occupywallstreet
+0.27|nyc forecast overnight partly low temp occupywallstreet tpp
+0.24|nyc forecast afternoon high temp occupywallstreet tpp sgp
+0.49|link city underwater year occupy ows occupywallstreet occupyhq grassroots usa
+Retrieved 7 new auxiliary tweets.
+1.0|morsy talk hand create presidential palace civil war egypt
+1.0|muslim hq set ablaze office egypt ikhwan
+1.0|islamist egypt morsi tahrir auc
+0.0|nyc forecast afternoon high temp occupywallstreet tpp sgp
+0.0|nyc forecast overnight partly low temp occupywallstreet tpp
+1.0|egypt islamist moron proudly present item threaten book christ cartridge
+1.0|shalandawilkers flagman egypt camel israel give terrorist
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=2fdeafb3-116e-4c18-b099-89390f0410bf-egypt-Iteration-2&ngram=1
+Adding 7 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-2=0.86
+Precision=0.88
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+12.0  3.0   
+2.0   21.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+Replacing tpp with temp. Choices [tpp,temp].
+0.41|vietnamese lawyer face obstruction ahead trial occupy ows occupywallstreet occupyhq grassroots
+0.46|andrew curtin photo selfie occupy ows occupywallstreet occupyhq grassroots
+0.3|nyc forecast wed night low temp occupywallstreet glennbeck tcot
+0.47|alex schaefer burn bank occupy ows occupywallstreet occupyhq grassroots
+0.27|study economic inequality lead downfall civilization
+0.38|dome special slideshow occupy ows occupywallstreet occupyhq grassroots
+0.39|cme break occupy ows occupywallstreet occupyhq
+0.34|nyc forecast mon high temp get smart occupywallstreet sgp
+0.42|preview death bin lade revisted nightly news video occupy ows occupywallstreet occupyhq
+0.38|irs rule bitcoin property subject capital gain tax occupy ows occupywallstreet occupyhq grassroots
+0.38|confession juiced journalist occupy ows occupywallstreet occupyhq grassroots
+0.31|ows kitchen nostalgia submit
+0.31|nyc forecast sit night partly low temp occupywallstreet tcot
+0.33|nyc forecast fri night low temp occupywallstreet topprog glennbeck
+0.59|israel gaza big picture occupy ows occupywallstreet occupyhq grassroots usa canada europe
+0.28|nyc forecast sun night mostly low temp occupywallstreet tpp glennbeck
+0.5|secretive turkish movement buy influence occupy ows occupywallstreet occupyhq grassroots usa
+0.3|nyc forecast sit night mostly low temp occupywallstreet tcot tcot
+0.24|nyc forecast afternoon high temp occupywallstreet tpp
+0.36|buy custom nyc street sign may suggest
+Retrieved 10 new auxiliary tweets.
+0.0|nyc forecast sit night mostly low temp occupywallstreet tcot tcot
+0.0|nyc forecast afternoon high temp occupywallstreet tpp
+0.0|ows kitchen nostalgia submit
+0.0|nyc forecast sit night partly low temp occupywallstreet tcot
+1.0|israel gaza big picture occupy ows occupywallstreet occupyhq grassroots usa canada europe
+0.0|nyc forecast fri night low temp occupywallstreet topprog glennbeck
+0.0|nyc forecast sun night mostly low temp occupywallstreet tpp glennbeck
+0.0|nyc forecast wed night low temp occupywallstreet glennbeck tcot
+0.0|nyc forecast mon high temp get smart occupywallstreet sgp
+0.0|study economic inequality lead downfall civilization
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=469a01fc-be18-4aca-930a-41bbbbb7e646-egypt-Iteration-3&ngram=1
+
+Aux F1 - Iteration-3=0.86
+Precision=0.88
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+12.0  3.0   
+2.0   21.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+0.51|jesse jackson call symbolic protest clipper player occupy ows occupywallstreet occupyhq
+0.44|brussels conference un stress need approach stabilize mali occupy ows occupywallstreet
+0.22|occupywallstreet give nypd perfect excuse crack elderly veteran
+0.5|colombia justice peace law failure expert say occupy ows occupywallstreet occupyhq grassroots
+0.37|soil association disown say resign trustee occupy ows occupywallstreet occupyhq
+0.37|cull human herd century occupy ows occupywallstreet occupyhq grassroots
+0.22|support brother sister occupygezi reoccupy zuccotti occupywallstreet
+0.52|may ga reid park occupy ows occupywallstreet occupyhq grassroots usa canada
+0.5|unhcr urge prevent refugee expulsion uae occupy ows occupywallstreet occupyhq grassroots
+0.45|new corvette spytech record conversation video occupy ows occupywallstreet occupyhq grassroots usa
+0.31|hilaryclinton run president hilary care olsx teamster occupywallstreet
+0.45|japan next economic domino occupy ows occupywallstreet occupyhq grassroots
+0.41|dear state department moral authority tell country treat protest occupywallstreet
+0.38|together jefferson airplane occupywallstreet
+0.55|politico rand paul marco rubio differ iraq action occupy ows occupywallstreet occupyhq grassroots
+0.33|nyc forecast fri night mostly low temp get smart occupywallstreet tlot tlot
+0.45|banky bbc news occupy ows occupywallstreet occupyhq grassroots
+0.41|nyc forecast tue night low temp occupywallstreet teaparty
+0.22|alliancebl give bank tab occupywallstreet
+0.34|ban kettle hairdryers help climate change occupy ows occupywallstreet
+Retrieved 6 new auxiliary tweets.
+0.0|hilaryclinton run president hilary care olsx teamster occupywallstreet
+0.0|ban kettle hairdryers help climate change occupy ows occupywallstreet
+0.0|occupywallstreet give nypd perfect excuse crack elderly veteran
+0.0|nyc forecast fri night mostly low temp get smart occupywallstreet tlot tlot
+0.0|support brother sister occupygezi reoccupy zuccotti occupywallstreet
+0.0|alliancebl give bank tab occupywallstreet
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=c65cc3aa-dac4-403f-9874-4f9ead5be6fe-egypt-Iteration-4&ngram=1
+
+Aux F1 - Iteration-4=0.83
+Precision=0.87
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+12.0  3.0   
+3.0   20.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+0.37|fin fraud jp morgan agree pay record settle charge toxic mortgage occupywallstreet
+0.33|shooter moncton phone report part video occupy ows occupywallstreet occupyhq
+0.37|reason question investigate anniversary occupy ows occupywallstreet occupyhq
+0.39|government privatization support inequality occupy ows opesr occupyhq
+0.42|welcome back lobbyist obama save seat capitol hill occupy ows occupywallstreet occupyhq
+0.39|surveillance camera soon read lip video occupy ows occupywallstreet occupyhq grassroots
+0.39|rand woman problem occupy ows occupywallstreet occupyhq grassroots
+0.43|unhcr condemn deadly attack homs collective shelter occupy ows occupywallstreet occupyhq grassroots
+0.39|nyc forecast wed high temp get smart occupywallstreet ocra teaparty
+0.39|rat meat sell lamb china occupy ows occupywallstreet occupyhq grassroots
+0.38|gunfail ix occupy ows occupywallstreet occupyhq grassroots
+0.46|work poor welcome occupy ows occupywallstreet occupyhq grassroots usa canada
+0.34|nyc forecast mon night low temp get smart occupywallstreet topprog glennbeck
+0.31|maddowblog agenda reek radicalism turn notch
+0.3|nyc forecast wed night low temp occupywallstreet sgp
+0.31|green group accuse trash reputation overseas occupy ows occupywallstreet occupyhq
+0.32|noamchomsky quote mymanatee ows occupywallstreet
+0.33|santa give present rich occupywallstreet perpetuatingpoverty
+0.34|il movimento mondiale osservato anche da nel andremo micah white
+0.41|texas appalachia put body line occupy ows occupywallstreet occupyhq grassroots
+Retrieved 8 new auxiliary tweets.
+0.0|santa give present rich occupywallstreet perpetuatingpoverty
+0.0|nyc forecast mon night low temp get smart occupywallstreet topprog glennbeck
+0.0|maddowblog agenda reek radicalism turn notch
+0.0|shooter moncton phone report part video occupy ows occupywallstreet occupyhq
+0.0|il movimento mondiale osservato anche da nel andremo micah white
+0.0|nyc forecast wed night low temp occupywallstreet sgp
+0.0|green group accuse trash reputation overseas occupy ows occupywallstreet occupyhq
+0.0|noamchomsky quote mymanatee ows occupywallstreet
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=daadebfb-bb83-4a92-891e-156cd3664a58-egypt-Iteration-5&ngram=1
+
+Aux F1 - Iteration-5=0.83
+Precision=0.87
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+12.0  3.0   
+3.0   20.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+0.25|shugdenlibrary dalai lama slave owner dalailama lamagate occupywallstreet
+0.36|include contradiction democracy centralism leadership lead ows occupywallstreet
+0.45|global may day protest austerity death bangladeshi worker via youtube ows occupywallstreet
+0.37|decolonize pipeline resistance interview freda huson occupy ows occupywallstreet occupyhq grassroots
+0.32|nyc forecast thu night mostly low temp occupywallstreet tpp topprog
+0.25|win mt gaypatriot occupywallstreet communist occupyhongkong
+0.38|may day la schedule occupy ows occupywallstreet occupyhq grassroots
+0.37|kelly thomas verdict cop license murder filmthepolice anonfamily opsafewinter occupywallstreet
+0.46|hqoccupy sudanese trader kill south sudan ambush occupy ows occupywallstreet occupyhq grassroots
+0.3|nyc forecast wed night low temp occupywallstreet ocra topprog
+0.52|iran two ahwazi arab men risk imminent execution occupy ows occupywallstreet occupyhq grassroots
+0.47|amateur activist occupy ows occupywallstreet occupyhq grassroots usa canada
+0.28|nyc forecast sun high temp occupywallstreet tpp tpp
+0.34|greek police arrest editor weekly magazine dissent ows occupygreece occupywallstreet
+0.51|news november occupy ows occupywallstreet occupyhq grassroots usa canada
+0.49|malala receive liberty medal occupy ows occupywallstreet occupyhq grassroots usa canada
+0.59|pentagon ready train syrian rebel occupy ows occupywallstreet occupyhq grassroots usa
+0.29|nyc forecast wed night mostly low temp occupywallstreet tpp topprog
+0.55|turkey withstand hostage ordeal say turkish pm occupy ows occupywallstreet occupyhq grassroots usa
+0.44|hardliner impeach moderate minister green movement protest occupy ows occupywallstreet
+Retrieved 8 new auxiliary tweets.
+0.0|greek police arrest editor weekly magazine dissent ows occupygreece occupywallstreet
+0.0|nyc forecast thu night mostly low temp occupywallstreet tpp topprog
+0.0|nyc forecast wed night mostly low temp occupywallstreet tpp topprog
+0.0|win mt gaypatriot occupywallstreet communist occupyhongkong
+0.0|nyc forecast sun high temp occupywallstreet tpp tpp
+0.0|shugdenlibrary dalai lama slave owner dalailama lamagate occupywallstreet
+1.0|pentagon ready train syrian rebel occupy ows occupywallstreet occupyhq grassroots usa
+0.0|nyc forecast wed night low temp occupywallstreet ocra topprog
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=7ffcc864-e6be-4e6c-a6ff-4da84032f675-egypt-Iteration-6&ngram=1
+
+Aux F1 - Iteration-6=0.83
+Precision=0.87
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+12.0  3.0   
+3.0   20.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+0.48|silent crisis bahrain opposition seek support international attention russia occupy ows occupywallstreet
+0.4|celente world currency trouble occupy ows occupywallstreet occupyhq grassroots
+0.34|return pluribus occupy opesr ows
+0.33|bureau reclamation release additional flow avert klamath river fish occupy ows
+0.33|nyc forecast mon night low temp occupywallstreet tlot sgp
+0.38|phoenix last night cop kill unarm black man afraid prescription bottle occupy
+0.32|nyc forecast mon night mostly low temp occupywallstreet topprog tcot
+0.47|syria meet end solution occupy ows occupywallstreet occupyhq grassroots
+0.37|giovalenzi il natale vince su tutto capodanno nella grande happy new year
+0.31|nyc forecast sit night low temp occupywallstreet ocra sgp
+0.29|nyc forecast wed night mostly low temp occupywallstreet tpp
+0.39|alle reden zur deutsche bank hauptversammlung frankfurt occupy ows
+0.33|nyc forecast fri partly high temp get smart occupywallstreet tlot topprog
+0.21|qe backfire dividend quest usurp growth cut research quantitative ease may make
+0.38|crisis southern new part occupy ows occupywallstreet occupyhq grassroots
+0.56|egypt wassssssuuuuuupppp ur horny watch lol
+0.57|get egypt
+0.6|sumofmind sumofmind sumofmind archive sexually harass keep amman cairo egypt jordan sexu
+0.52|egypt serious
+0.54|egypt jordan work hard employ disable worker tahrir
+Retrieved 11 new auxiliary tweets.
+0.0|nyc forecast wed night mostly low temp occupywallstreet tpp
+0.0|bureau reclamation release additional flow avert klamath river fish occupy ows
+1.0|egypt wassssssuuuuuupppp ur horny watch lol
+1.0|get egypt
+1.0|sumofmind sumofmind sumofmind archive sexually harass keep amman cairo egypt jordan sexu
+0.0|nyc forecast fri partly high temp get smart occupywallstreet tlot topprog
+0.0|qe backfire dividend quest usurp growth cut research quantitative ease may make
+0.0|nyc forecast sit night low temp occupywallstreet ocra sgp
+0.0|nyc forecast mon night low temp occupywallstreet tlot sgp
+0.0|nyc forecast mon night mostly low temp occupywallstreet topprog tcot
+0.0|return pluribus occupy opesr ows
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=316a7880-aa42-495c-bbd8-62d0abdebf25-egypt-Iteration-7&ngram=1
+
+Aux F1 - Iteration-7=0.86
+Precision=0.88
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+12.0  3.0   
+2.0   21.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+0.38|sun truth europe
+0.55|bbm pin add mufc manchesterunited bbmshare bbpins egypt blackberrypins blackberrymessenger dubai manchesterbbmpins
+0.61|sharm el sheikh egypt weather fair sharm egypt
+0.6|riiiiiposo morsi polipo itihadeya egypt os circondato da csf army
+0.58|alexandria egypt weather fair alexandria egypt
+0.46|egypt giggle rear end ofhttp
+0.63|egypt masr uk move towards syria opposition sinai
+0.57|spanish court uphold decision hand salem spain egypt
+0.59|usa russia fsa gain grind putin obama eu uk turkey lebanon egypt
+0.55|palestinianleadership overseasleadership hamas page iran mqmtelevision
+0.47|askliam ok go sometime go egypt
+0.5|egypt uae oxycodone liver toxicity buy tramadol glitter antique saudi ksa bhr
+0.58|notice tomorrow safar make egypt islam
+0.46|egypt two son make cry
+0.5|egypt visit place
+0.61|egypt condition cairo eg eet egyweather
+0.65|egyindependent four egyptian activist gaza injure israeli fire convoy palestine egypt
+0.53|egypt douche bag mousterbates pic alien lol
+0.63|remember place kuwait egypt london lebanon syria instapic instaphoto instamood
+0.47|break central bank governor resign post news aswat masriya egypt
+Retrieved 10 new auxiliary tweets.
+1.0|egypt masr uk move towards syria opposition sinai
+1.0|spanish court uphold decision hand salem spain egypt
+1.0|alexandria egypt weather fair alexandria egypt
+1.0|egyindependent four egyptian activist gaza injure israeli fire convoy palestine egypt
+1.0|remember place kuwait egypt london lebanon syria instapic instaphoto instamood
+1.0|notice tomorrow safar make egypt islam
+1.0|egypt condition cairo eg eet egyweather
+1.0|usa russia fsa gain grind putin obama eu uk turkey lebanon egypt
+1.0|sharm el sheikh egypt weather fair sharm egypt
+1.0|riiiiiposo morsi polipo itihadeya egypt os circondato da csf army
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=01bf9ad2-378e-43d5-be11-674ce9ec9165-egypt-Iteration-8&ngram=1
+
+Aux F1 - Iteration-8=0.8
+Precision=0.81
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+10.0  5.0   
+2.0   21.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+0.65|mrsedky dear unite state bitch dictator morsi obama egypt politics tahrir
+0.57|beautiful sunset cairo egypt
+0.52|egypt believe back
+0.41|rachidh wasp date egypt insect rachidh nature photo
+0.57|egypt uae child try ok follow study buy nfl football jersey saudi ksa bhr
+0.48|chill beach class egypt alexandria beach sunshine sand relax arabic egyptian
+0.57|cairo contagion lethargy political egyconstitution egypt
+0.27|must read
+0.57|call egypt sway palestinian end hostility official say gazaunderattack
+0.55|tahrir awe horizontal greed love egypt watchingandlearning
+0.51|pitapolicy egypt must forget street child write via lamamaksosa poverty
+0.57|girl need furniture offer egypt cairo
+0.41|dioscorusboles yes constitution sake divine
+0.53|nothing make happy pack arrival hall cairo international tourism egypt backontopbitches
+0.5|ikhwanweb mubarak sentence prison base knowledge event lack action prevent egypt
+0.5|rawyarageh elbaradei moussa sabbahi press conf tgthr egypt
+0.45|karshaf groppi bear rovio swiss board ship egypt early country full opportunity
+0.4|egypt flood wise time fill middle wide exhaust black hole lighten wait
+0.49|egypt live pastor turn church near tahrir field hospital say police fire teargas
+0.5|wow end thousand myth remember maspero egypt
+Retrieved 7 new auxiliary tweets.
+1.0|beautiful sunset cairo egypt
+1.0|egypt uae child try ok follow study buy nfl football jersey saudi ksa bhr
+1.0|mrsedky dear unite state bitch dictator morsi obama egypt politics tahrir
+0.0|must read
+1.0|call egypt sway palestinian end hostility official say gazaunderattack
+1.0|cairo contagion lethargy political egyconstitution egypt
+1.0|girl need furniture offer egypt cairo
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=a937cafb-26eb-4497-bb20-0635f8d95658-egypt-Iteration-9&ngram=1
+
+Aux F1 - Iteration-9=0.8
+Precision=0.81
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+10.0  5.0   
+2.0   21.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+0.51|monaeltahawy esteem salafi know sexual car old support egypt porn ban ht
+0.54|sventruenorth eye egypt constitutional peace globalpolitics canpoli
+0.5|etribune australia urge ban cattle export egypt
+0.55|mt eu rightfully change policy towards egypt stand universal right peo
+0.59|egypt masr egyptian stage mass rally sinai
+0.55|dailynewsegypt thousand demonstrator front presidential palace sing national egypt dne via
+0.5|anything interest go egypt
+0.55|mt clash cairo egypt plunge deep crisis afp video
+0.58|egypt country
+0.34|shit
+0.65|demonstration surround presidential palace tahrir cairo egypt morsi ikh
+0.58|hear mr see auc marchtomorsi tuesday egypt
+0.6|matthewjbell must quite sight egypt presidential palace cairo
+0.36|long time egypt time travel
+0.34|yallabreak follow new baby yscoreboard new update foodiesinthehouse review egypt yallabreak
+0.53|egypt receive bn eu presidency via ahramonline
+0.58|egypt lord
+0.47|egypt matt receive quit class regard publish stacyis photo
+0.63|first info website arab spring youth egypt tahrir bahrain syria
+0.4|lorion syria go offline prepare since saw happen rev medium center
+Retrieved 9 new auxiliary tweets.
+1.0|egypt masr egyptian stage mass rally sinai
+1.0|demonstration surround presidential palace tahrir cairo egypt morsi ikh
+1.0|hear mr see auc marchtomorsi tuesday egypt
+1.0|egypt lord
+1.0|first info website arab spring youth egypt tahrir bahrain syria
+1.0|matthewjbell must quite sight egypt presidential palace cairo
+0.0|yallabreak follow new baby yscoreboard new update foodiesinthehouse review egypt yallabreak
+0.0|shit
+1.0|egypt country
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=370159fb-e724-4d5e-ab2f-5b019fdc04b2-egypt-Iteration-10&ngram=1
+
+Aux F1 - Iteration-10=0.86
+Precision=0.88
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+12.0  3.0   
+2.0   21.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+0.65|egypt masr israel hammer hamas gaza offensive sinai
+0.5|baradei dont respect pole make people decide wheather constitution good bad egypt news
+0.53|egypt mull arm sinai bedouin security force
+0.35|adamakary azza best ice cream egypt icecream bahary vanilla awesome
+0.54|egypt salafi front establish new political party call promote islamist interest via ahramonline
+0.2|triplem go back welcome
+0.54|yes mb militia yes yes care egyptian old news fact egypt
+0.49|martyr mostafa abdullah age die suez gunshot egypt
+0.47|weak people ear return replace pg article egypt mursi
+0.55|ya gonna visit egypt
+0.51|ghazalairshad dostoor party security line anticipation arrival tahrir moment egypt
+0.52|egypt absolutely draw
+0.54|fresh clash erupt egypt president morsy via cnn
+0.45|egypt launch ppp project build port qena assiut sohag
+0.61|hamas meshaal say israel must stop war first accept hamas condition include lift blockade gaza egypt gazaunderattack
+0.44|ppl chant know nothing chant bunch terrorist
+0.62|clash outside egypt presidential palace cairo
+0.44|medium accreditation much trouble get egypt referendum
+0.56|xarabic egypt republican guard say demonstrator must evacuate area around presidential palace pm
+0.39|calm storm storm egypt
+Retrieved 6 new auxiliary tweets.
+1.0|clash outside egypt presidential palace cairo
+0.0|adamakary azza best ice cream egypt icecream bahary vanilla awesome
+0.0|triplem go back welcome
+1.0|xarabic egypt republican guard say demonstrator must evacuate area around presidential palace pm
+1.0|egypt masr israel hammer hamas gaza offensive sinai
+1.0|hamas meshaal say israel must stop war first accept hamas condition include lift blockade gaza egypt gazaunderattack
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=50c73e70-4d5a-4dab-9383-65b261207269-egypt-Iteration-11&ngram=1
+
+Aux F1 - Iteration-11=0.8
+Precision=0.81
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+10.0  5.0   
+2.0   21.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+0.56|egypt totally
+0.44|ashrafkhalil two different tahrir prayer group follow different imam different egypt
+0.48|egypt masr senior state department official remove sinai
+0.45|know fix every problem egypt morsi fuckoff
+0.49|microsoft window launch event live blogging via texnomic egypt
+0.64|egypt
+0.45|amaheer probably reason egypt morsi mb many hashtags trend
+0.3|good ahramonline internet user increase pct facebook user reach mln report
+0.51|wluml blog nihalsaad endsh vaw egypt harassment feminism
+0.65|ship carry iranian weapon money seize offshore yemen iran arab bbc yemen gcc canada cnn egypt
+0.6|kalnaga national outrage bloodshed peaceful egyptian oppose dictator one morsi must court egypt
+0.64|itsbeco egypt voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno
+0.55|egypt two police officer assault lead jan revolution activist nac tahrir
+0.4|egypt uae premarin prescription cost buy generic premarin online premarin buy premarin
+0.64|alarabiya egypt palestine tie eye israel say khartoum aid gaza arm smuggle via egypt
+0.56|samar dahmash arabvoicesspeak live ontveg check watch egypt jo jordan usa
+0.44|egypt find pay hour sexual intercourse sit problem beside
+0.56|egypt merkel defend austerity cut portugal masr
+0.56|fifa rank ivorycoast algeria mali ghana zambia egypt tunisia centralafrican gabon nigeria
+0.65|egypt tahrir scaf
+Retrieved 11 new auxiliary tweets.
+0.0|good ahramonline internet user increase pct facebook user reach mln report
+1.0|ship carry iranian weapon money seize offshore yemen iran arab bbc yemen gcc canada cnn egypt
+1.0|itsbeco egypt voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno
+1.0|egypt
+1.0|egypt totally
+1.0|kalnaga national outrage bloodshed peaceful egyptian oppose dictator one morsi must court egypt
+1.0|egypt merkel defend austerity cut portugal masr
+1.0|alarabiya egypt palestine tie eye israel say khartoum aid gaza arm smuggle via egypt
+1.0|samar dahmash arabvoicesspeak live ontveg check watch egypt jo jordan usa
+1.0|fifa rank ivorycoast algeria mali ghana zambia egypt tunisia centralafrican gabon nigeria
+1.0|egypt tahrir scaf
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=3b257f8b-9c2c-41c0-9517-36fddb26e955-egypt-Iteration-12&ngram=1
+
+Aux F1 - Iteration-12=0.8
+Precision=0.81
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+10.0  5.0   
+2.0   21.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+0.36|get mid november still nowhere close get cold time soon egypt weather winter morsydamnyou
+0.52|egypt arrest within day opposition back mubarak day religious form
+0.37|sky cloud weather thismoment chase rainwall rain come huge sea aboker alexandria egypt
+0.6|proud people egypt fight freedom egypt
+0.48|nytjim egypt tank deploy presidential palace barb wire string separate protester
+0.66|standforislam rule rightly guide umar egypt syria palestine pakistan indonesia
+0.6|fbnpc alqaeda benghazi iran egypt saudiarabia africa libya iraq pakistan lnyhbt omg
+0.29|camel balcony camel park alaa
+0.45|egypt anyone ever make
+0.37|bloody night atlantic
+0.54|beltrew historic person convoy gaza end mohamed mahmoud
+0.46|washinstitute lawlessness sinai feed gaza conflict yaari
+0.64|hentai black kuwait saudi syria sex ksa egypt bahrain
+0.54|egypt must keep outlook policy steady imf loan review reuters egypt
+0.53|egypt concert
+0.47|desperate people sth believe far go defense belief find egypt
+0.47|egyindependent pm govt prepare law strict sexual harassment penalty egypt endsh
+0.52|egypt odds reelection intrade bet site rise course tahrir
+0.63|usa support regime kill people name egypt tahrir
+0.65|egypt tahrir scaf
+Retrieved 7 new auxiliary tweets.
+0.0|camel balcony camel park alaa
+1.0|usa support regime kill people name egypt tahrir
+1.0|fbnpc alqaeda benghazi iran egypt saudiarabia africa libya iraq pakistan lnyhbt omg
+1.0|egypt tahrir scaf
+1.0|standforislam rule rightly guide umar egypt syria palestine pakistan indonesia
+1.0|proud people egypt fight freedom egypt
+1.0|hentai black kuwait saudi syria sex ksa egypt bahrain
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=5b54df27-c8ff-49b7-b167-10cbf9e21709-egypt-Iteration-13&ngram=1
+
+Aux F1 - Iteration-13=0.86
+Precision=0.88
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+12.0  3.0   
+2.0   21.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+0.63|israeli enter egypt attack gaza
+0.64|buddy concur publicly kill tcot obama israel egypt islam
+0.64|egypt
+0.47|state department spokeswoman victoria nuland expect discus situation egypt watch live
+0.44|egypt serious doubt whether morsi control presidency
+0.4|egypt potential become split state along line mass internal
+0.62|cairo syria cairo egypt damascus solidarity cairo syria cairo
+0.59|hammametsou egyptian really vote via ahramonline egypt
+0.62|parade kuwait saudi sandy sex ksa egypt bahrain
+0.47|ahramonlinearts egypt underground musician leave negotiation table sour rouelshimi via ahramonline
+0.5|people listen much egypt
+0.44|egypt eu aid billion loan way commit billion way le power
+0.56|analysis egypt prove peace role survive arab spring reuters
+0.49|coward politician west condone massacre people tahrir square appeasement
+0.65|karen cheerleader humiliate kuwait saudi syria sex ksa egypt bahrain
+0.52|perrymarvan pick troll egypt
+0.57|either morsi thug put military cairo fight dare syria tango
+0.48|aelmassry egypt court preacher khaledabdullah ban broadcast day sheeesh
+0.52|egypt perform
+0.43|egypt referendum nsoliman design voteno need print house print free please please
+Retrieved 9 new auxiliary tweets.
+1.0|israeli enter egypt attack gaza
+1.0|analysis egypt prove peace role survive arab spring reuters
+1.0|cairo syria cairo egypt damascus solidarity cairo syria cairo
+1.0|hammametsou egyptian really vote via ahramonline egypt
+1.0|buddy concur publicly kill tcot obama israel egypt islam
+1.0|parade kuwait saudi sandy sex ksa egypt bahrain
+1.0|karen cheerleader humiliate kuwait saudi syria sex ksa egypt bahrain
+1.0|either morsi thug put military cairo fight dare syria tango
+1.0|egypt
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=8bb72fc4-f0ca-4e4e-831c-e83716d3464c-egypt-Iteration-14&ngram=1
+
+Aux F1 - Iteration-14=0.83
+Precision=0.84
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+11.0  4.0   
+2.0   21.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+0.42|morning tweepes rabena yostor today egypt morsy
+0.58|egypt masr official promise fail halt china protest
+0.44|assume stay power face believe morsi egypt
+0.49|think egypt good take care transportation rather porn sit wala eh
+0.56|joekaldas love egypt
+0.59|dictatorship fuck depress morsi egypt
+0.63|egypt israeli foreign minister lieberman resign masr
+0.42|one person constituent assembly even remotely close represent egypt
+0.6|pray peace israel lord let beat brake egypt
+0.63|egypt clash lebanese army syrian rebel break border tahrir
+0.38|egypt attitude toward grow hostile despite support lynndebate
+0.49|egypt damn reason personally like woman
+0.52|egypt partner cant believe
+0.4|saharazizlaw return inspire trip egypt earlaegypt mmabrouk
+0.49|rhreid ap news egypt ask imf delay loan due turmoil
+0.54|morsi egypt opinion become dictator marijuana peace democracy gothp
+0.54|egypt leak britney toe rofl
+0.52|irish say mistake goat beard fine replace goat ikhwan egypt iran
+0.52|people friend tatto egypt illuminati freemason wallpaper instanesia iphonesia instaworld
+0.5|miss old egypt menak lelah ya morsy
+Retrieved 6 new auxiliary tweets.
+1.0|pray peace israel lord let beat brake egypt
+1.0|egypt clash lebanese army syrian rebel break border tahrir
+1.0|joekaldas love egypt
+1.0|egypt masr official promise fail halt china protest
+1.0|dictatorship fuck depress morsi egypt
+1.0|egypt israeli foreign minister lieberman resign masr
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=0d3641d6-c003-4e9f-994c-e68852cc11b3-egypt-Iteration-15&ngram=1
+
+Aux F1 - Iteration-15=0.8
+Precision=0.81
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+10.0  5.0   
+2.0   21.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+0.58|south african constitution several clause outlaw death prolly pas justathought egypt
+0.58|egyptian court stop work protest morsi move via cbsnews poli egypt uspoli
+0.62|ikhwan say copt protest yeah islamist bad egypt
+0.43|new poll put president approval rat egypt morsi
+0.43|egypt make cry pray get well soon
+0.5|cleric warn egypt may lose bln qatari investment people vote constitution tandem post
+0.56|unconfirmed beltrew name kill tonight outside presidential palace hahellyer emadeffat myrnaemad rip egypt
+0.51|photo near palace moneloky epic egypt
+0.51|egypt romney supporter resort stunt crazy
+0.6|kareemlailah aljazeera correspondent report clash tahrir cairo egypt
+0.5|morsi allow ok stop commit egypt
+0.24|critic wonder morsy next strongman
+0.5|mask gunman attack opposition protester crowd gather rally egypt tahrir
+0.52|ajelive speech azhar preacher occasion eid morsi call syria regime halt bloodshed
+0.43|ap egypt top court decide whether disband panel draft new constitution
+0.43|egypt try kind upon photographic camera
+0.56|egypt drink lol ye
+0.52|forensics investigation egypt determine bullet shoot protestors come muslim brotherhood member
+0.53|salam alaykom prayer time luxor city dhuhr pray luxor egypt
+0.6|war islam new liberalism egypt
+Retrieved 8 new auxiliary tweets.
+1.0|egyptian court stop work protest morsi move via cbsnews poli egypt uspoli
+1.0|war islam new liberalism egypt
+1.0|unconfirmed beltrew name kill tonight outside presidential palace hahellyer emadeffat myrnaemad rip egypt
+1.0|ikhwan say copt protest yeah islamist bad egypt
+1.0|kareemlailah aljazeera correspondent report clash tahrir cairo egypt
+0.0|critic wonder morsy next strongman
+1.0|south african constitution several clause outlaw death prolly pas justathought egypt
+1.0|egypt drink lol ye
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=c7f463fb-f1cf-4024-b035-62fb0d80c2c2-egypt-Iteration-16&ngram=1
+
+Aux F1 - Iteration-16=0.86
+Precision=0.88
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+12.0  3.0   
+2.0   21.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+0.63|obama thank egypt world leader hail hamas truce via telegraph gaza mursi
+0.58|holiness dalai lama speak abt middle east peace watch live webcast syria egypt dalailama
+0.47|egypt uae strategy healthy balance might diet household good saudi ksa bhr
+0.51|bennu tell basta project scan day night egypt
+0.62|protest march tahrir egypt dailynewsegypt cairo morsi mohamedmahmoud csf moi via acarvin
+0.52|minorityrights christian woman hair forcibly cut metro egypt minority mrg
+0.56|islamist march support president egypt
+0.58|alexandria egypt weather fair alexandria egypt
+0.59|egypt masr turkey consider deployment missile syria border
+0.41|flyegyptair hr flight delay far official announcement egypt egyptair board today fail
+0.51|morsi go batshit crazy egypt
+0.6|aleikhemshalom prosyriana fight palestine europe africa america egypt
+0.65|egyptian tahrir egypt morsi
+0.43|cairowire coptic presidential assistant decide resign presidential team hold urgent meet egypt
+0.57|egyptian stage mass morsi rally tahrir square egypt news
+0.45|egypt defender hegazy miss action month fiorentina via ahramonline football soccer seriea italy
+0.6|salam alaykom prayer time cairo city maghrib pray cairo egypt
+0.44|pic take camera little saturation edit mobile egypt
+0.39|egypt love rate murder career give early heart
+0.5|huge famous series shop mall egypt name albanian omar effendi arnaut
+Retrieved 10 new auxiliary tweets.
+1.0|protest march tahrir egypt dailynewsegypt cairo morsi mohamedmahmoud csf moi via acarvin
+1.0|egyptian tahrir egypt morsi
+1.0|holiness dalai lama speak abt middle east peace watch live webcast syria egypt dalailama
+1.0|islamist march support president egypt
+1.0|alexandria egypt weather fair alexandria egypt
+1.0|egypt masr turkey consider deployment missile syria border
+1.0|obama thank egypt world leader hail hamas truce via telegraph gaza mursi
+1.0|aleikhemshalom prosyriana fight palestine europe africa america egypt
+1.0|egyptian stage mass morsi rally tahrir square egypt news
+1.0|salam alaykom prayer time cairo city maghrib pray cairo egypt
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=24320907-824b-4ee5-aa81-7346c135077e-egypt-Iteration-17&ngram=1
+
+Aux F1 - Iteration-17=0.83
+Precision=0.84
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+11.0  4.0   
+2.0   21.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+0.36|make noise make noise effective healthy twitter egypt
+0.4|yusuralbahrani right organization rule saber sign religious dictatorship
+0.37|think copy indian well
+0.5|rosanwo grind action virtually bibi insist test new gaza israel
+0.64|egypt
+0.57|tool use internet disaster war syria egypt indyvote
+0.56|corruption mb egypt egyptbusiness egypt slip corruption index
+0.53|arminvanbuuren please forget egypt
+0.51|ever see display last time north america egypt mummy pacificsciencecenter
+0.63|egypt egyptian death storm ministry say masr
+0.49|egypt know make cry laughter omfg emphasis ahahahahahaha
+0.35|arabic judge high council say meet morsi message accurate
+0.48|clash get bad protester low number trap mb thug egypt
+0.68|egypt masr islamist protest cairo call islamic law sinai
+0.54|johannesburg via youtube un gaza palestine
+0.58|egypt stop depart plan damascus syria
+0.45|egypt dwindle option
+0.41|sultanalqassemi el baradei constitution end dustbin history
+0.53|ihavealwayswanted country clean egypt
+0.57|year citizen medium protest expose gov screen qasr al aini wall egypt
+Retrieved 8 new auxiliary tweets.
+1.0|tool use internet disaster war syria egypt indyvote
+1.0|corruption mb egypt egyptbusiness egypt slip corruption index
+1.0|egypt egyptian death storm ministry say masr
+1.0|egypt masr islamist protest cairo call islamic law sinai
+0.0|arabic judge high council say meet morsi message accurate
+1.0|year citizen medium protest expose gov screen qasr al aini wall egypt
+1.0|egypt stop depart plan damascus syria
+1.0|egypt
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=6fc60e42-c1b2-41d9-8b0a-be7f876b2cba-egypt-Iteration-18&ngram=1
+
+Aux F1 - Iteration-18=0.86
+Precision=0.88
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+12.0  3.0   
+2.0   21.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+0.56|egypt democracy always possible still chomskyauc tahrir
+0.43|morsy prefer defend muslim brotherhood offer compromise sake
+0.47|need maze salim constitutional declaration also cannot repeal egypt
+0.52|aymondo come tear motherfucker egypt
+0.57|egypt therefore
+0.64|egypt
+0.66|egypt cairo court examine case mubarak pardon tahrir
+0.59|yep eg syria egypt afiyanesss ibnfaqih people die right take muslimvote yallachange
+0.47|break medic need near al injury egypt
+0.57|vianney nsimbe time caf president hayatou friday go africa egypt
+0.54|oritperlov nervous nile minority fear end secularism egypt via spiegelonline
+0.62|bahrain ksa kuwait uae oman qatar iraq syria egypt tunisia morroco libya yemen iran
+0.62|egypt democrat reid leave hospital crash tahrir
+0.53|sherinet alert egypt
+0.45|egypt court sentence atheist year imprisonment insult religion religion atheism freedomofexpression
+0.53|egypt make cry
+0.6|egyptian passport kaman bardo lazem el destor abl ah aw think egypt
+0.43|ajelive egypt president morsi appeal people evidence trust elect
+0.58|morsi protect islamist hijack constitution egypt crisis morsi give army arrest power vote
+0.55|egypt photo gallery worshipper fill mosque courtyard start eid tahrir
+Retrieved 10 new auxiliary tweets.
+1.0|egypt cairo court examine case mubarak pardon tahrir
+1.0|yep eg syria egypt afiyanesss ibnfaqih people die right take muslimvote yallachange
+1.0|egypt democrat reid leave hospital crash tahrir
+1.0|bahrain ksa kuwait uae oman qatar iraq syria egypt tunisia morroco libya yemen iran
+1.0|egypt democracy always possible still chomskyauc tahrir
+1.0|egypt
+1.0|egypt therefore
+1.0|egyptian passport kaman bardo lazem el destor abl ah aw think egypt
+1.0|morsi protect islamist hijack constitution egypt crisis morsi give army arrest power vote
+1.0|vianney nsimbe time caf president hayatou friday go africa egypt
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=ba1f98e0-d9cc-47f7-9bf5-43884c33c029-egypt-Iteration-19&ngram=1
+
+Aux F1 - Iteration-19=0.86
+Precision=0.88
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+12.0  3.0   
+2.0   21.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+0.54|egypt realestate
+0.52|protester sing egypt national anthem march get close presidential palace
+0.45|new content pinterest board global economy financial egypt italy oil
+0.45|morsi speak egypt reminder similar speech bad
+0.49|breakingnews judge across egypt refuse oversee controversial constitutional referendum
+0.48|come back egypt
+0.53|difference mubarak morsi people get choose latter justsaying egypt
+0.63|egypt afghan presidential vote due april tahrir
+0.54|seriously egypt alber saber hosni tell way tora
+0.61|hamadeabdulla history ottoman woman turkey egypt uae bahrain saudi oman qatar kuwait
+0.6|bahrain pathetic see show low alwefaq egypt gcc kuwait ksa uk usa
+0.49|egypt brother lose bet french kiss mom lolll
+0.61|prime minister egypt plan long egypt gaza
+0.6|egypt masr iraqi kill suspect sectarian attack sinai
+0.6|norshek feel sympathy towards gaza leave morsi egypt gaza
+0.48|egypt uneducated rural inhabitant desire serfdom beat something worship step
+0.61|chant tahrir egypt arabic
+0.5|constitution pas yet transitional constitution even intend egypt
+0.48|anyone keep log many chief pm oust since jan egypt
+0.51|egypt feature person utilise
+Retrieved 7 new auxiliary tweets.
+1.0|bahrain pathetic see show low alwefaq egypt gcc kuwait ksa uk usa
+1.0|norshek feel sympathy towards gaza leave morsi egypt gaza
+1.0|egypt afghan presidential vote due april tahrir
+1.0|egypt masr iraqi kill suspect sectarian attack sinai
+1.0|prime minister egypt plan long egypt gaza
+1.0|chant tahrir egypt arabic
+1.0|hamadeabdulla history ottoman woman turkey egypt uae bahrain saudi oman qatar kuwait
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=d638c2a5-432b-40d8-a818-55dc852a83cf-egypt-Iteration-20&ngram=1
+
+Aux F1 - Iteration-20=0.8
+Precision=0.81
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+10.0  5.0   
+2.0   21.0  
+
+Best F1 so far - 0.86 at iteration:2
+
+
+Total time taken for experiment:1439.629 seconds.
+				************* SAVE THE RESULTS ******************
+Ending experiment at 2017-04-02T17:05:54.995-04:00

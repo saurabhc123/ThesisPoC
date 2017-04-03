@@ -21,14 +21,12 @@ object GenerateCosineSimStatistics extends App {
 		Logger.getLogger("akka").setLevel(Level.OFF)
 		val sc = SparkContextManager.getContext
 		sc.setLogLevel("ERROR")
-
-		val filename = "data/final/egypt_training_data.txt"
-		FileBasedAuxiliaryDataRetriever._auxiliaryFileName = filename
-		AuxiliaryDataBasedExperiment.vectorType = s"google"
-		AuxiliaryDataBasedExperiment.setVectorType(AuxiliaryDataBasedExperiment.vectorType)
-		val tweets = FileBasedAuxiliaryDataRetriever.readTweetsFromFile(filename)
-		var (threshold, wallSize) = getCosineSimParametersForTweets(tweets)
-//		print(threshold,wallSize)
+		AuxiliaryDataBasedExperiment.experimentSet = "ebola"
+		AuxiliaryDataBasedExperiment.vectorType = s"local"
+		GetData(0)
+		GetData(1)
+		GetData(2)
+		GetData(3)
 //		Reset()
 //		val (threshold1, wallSize1) = getCosineSimParametersForTweets(tweets)
 //		print(threshold1,wallSize1)
@@ -36,8 +34,27 @@ object GenerateCosineSimStatistics extends App {
 
 	}
 
+	def GetData(experimentSetNumber:Int): Unit = {
+
+		if(experimentSetNumber == 0)
+			{
+				AuxiliaryDataBasedExperiment.experimentSetNumber == ""
+			}
+		else
+			{
+				AuxiliaryDataBasedExperiment.experimentSetNumber = experimentSetNumber.toString
+			}
+		val filename = s"data/final/${AuxiliaryDataBasedExperiment.experimentSet}_training_data${AuxiliaryDataBasedExperiment.experimentSetNumber}.txt"
+		FileBasedAuxiliaryDataRetriever._auxiliaryFileName = filename
+		Reset()
+		AuxiliaryDataBasedExperiment.setVectorType(AuxiliaryDataBasedExperiment.vectorType)
+		val tweets = FileBasedAuxiliaryDataRetriever.readTweetsFromFile(filename)
+		var (threshold, wallSize) = getCosineSimParametersForTweets(tweets)
+		print(threshold, wallSize)
+	}
+
 	def Reset() = {
-		val uri = "http://localhost:5000/cnn_reset/winterstorm"
+		val uri = s"http://localhost:5000/cnn_reset/${AuxiliaryDataBasedExperiment.experimentSet}"
 		val result = scala.io.Source.fromURL(uri).mkString
 		print(result)
 	}
@@ -77,7 +94,7 @@ object GenerateCosineSimStatistics extends App {
 			if(sim.equals(Double.NaN))
 				sim = 0.0
 			val meanSimilarity =  BigDecimal(sim).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble
-			//println(s"*** Positive Tweet *** $meanSimilarity|${auxTweet._1.tweetText}")
+			println(s"*** Positive Tweet *** $meanSimilarity|${auxTweet._1.tweetText}")
 			(auxTweet._1.tweetText, meanSimilarity)
 		})
 
@@ -95,7 +112,7 @@ object GenerateCosineSimStatistics extends App {
 			if(sim.equals(Double.NaN))
 				sim = 0.0
 			val meanSimilarity =  BigDecimal(sim).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble
-			//println(s"*** Negative Tweet Similarity*** $meanSimilarity")
+			println(s"*** Negative Tweet Similarity*** $meanSimilarity")
 			(auxTweet._1.tweetText, meanSimilarity)
 		})
 

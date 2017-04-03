@@ -1,0 +1,770 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+17/03/26 19:40:28 INFO Remoting: Starting remoting
+17/03/26 19:40:28 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@172.30.204.242:62977]
+Hello World!11
+
+***************** Parameters used for EXPERIMENT *****************
+	filterToUse = CosineSim
+	minSimilarityThreshold = 0.45
+	cosineSimilarityWindowSize= 0.2
+	minWmDistanceThreshold = 0.49
+	webWord2VecBaseUri = http://localhost:5000/getvector/
+	maxFpmWordsToPick = 35
+	minFpmWordsDetected = 0
+	refreshLocalWordVectors = false
+	maxExperimentIterations = 20
+	maxAuxTweetsToAddEachIteration = 20
+	thresholdF1 = 0.98
+	classifierType = Cnn
+	folderNameForCnnClassifier = 
+	auxiliaryThresholdExpectation = 0.01
+	fileDelimiter = ,
+	trainingDataFile = data/final/obesity_training_data.txt
+	validationDataFile = data/final/obesity_validation_data.txt
+	auxiliaryDataFile = data/final/obesity_auxiliary_data.txt
+	supplementedCleanAuxiliaryFile = data/final/obesity_auxiliary_data.txt
+
+***************** Parameters used for EXPERIMENT *****************
+
+
+Initial F1=0.96
+Precision=0.99
+Recall=0.91
+Initial - ConfusionMatrix:
+104.0  1.0   
+7.0    72.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+[Stage 22:>                                                         (0 + 8) / 8][Stage 22:=====================>                                    (3 + 5) / 8][Stage 22:====================================>                     (5 + 3) / 8][Stage 22:==================================================>       (7 + 1) / 8]                                                                                [Stage 23:>                                                         (0 + 2) / 2]                                                                                0.22|hurricane sandy sleepover letsgetexposing randydole
+[Stage 38:>                                                         (0 + 2) / 2]0.3|hurricane sandy ct ny nj east coast state ass region deadly storm massive storm
+                                                                                [Stage 39:>                                                         (0 + 2) / 2]                                                                                0.34|drdaliah month hurricane sandy nj see baby
+[Stage 40:>                                                         (0 + 2) / 2]                                                                                0.31|petsmart charity relief effort hurricane sandy ravage east coast last october leave
+[Stage 41:>                                                         (0 + 2) / 2]0.25|raf cover hurricane sign battle britain ace sandy sander dfc
+                                                                                [Stage 42:>                                                         (0 + 2) / 2]0.39|love keep highlight star citizen hurricane nice unexpected bkcyclones
+                                                                                [Stage 43:>                                                         (0 + 2) / 2]0.34|winkyboo list hurricane sandy donation drop location
+                                                                                [Stage 44:>                                                         (0 + 2) / 2]0.25|sandy damage bike nyc
+                                                                                [Stage 45:>                                                         (0 + 2) / 2]                                                                                0.34|damn hurricane sandy ruin new york city dirty
+[Stage 46:>                                                         (0 + 2) / 2]0.29|look photo effect hurricane kalungkot
+                                                                                [Stage 47:>                                                         (0 + 2) / 2]0.37|task force convene president obama late last year determine best rebuild hurricane
+                                                                                [Stage 48:>                                                         (0 + 2) / 2]0.24|hurricane sandy view
+                                                                                [Stage 49:>                                                         (0 + 2) / 2]0.28|hurricane sandy information file claim
+                                                                                [Stage 50:>                                                         (0 + 2) / 2]                                                                                0.26|hurricane sandy disrespect nigga swear
+[Stage 51:>                                                         (0 + 2) / 2]                                                                                0.35|power hurricane sandy destroy also god bless
+[Stage 52:>                                                         (0 + 2) / 2]0.31|deadline set state buyout staten island neighborhood hit hurricane sandy statenisland
+                                                                                [Stage 53:>                                                         (0 + 2) / 2]0.18|hurricane sandy
+                                                                                [Stage 54:>                                                         (0 + 2) / 2]                                                                                0.43|hurricane sandy probably best thing could happen obama right gonna aid shit reelection
+[Stage 55:>                                                         (0 + 2) / 2]                                                                                0.27|update hurricane sandy video
+[Stage 56:>                                                         (0 + 2) / 2]                                                                                0.42|thought everyone affect hurricane stay
+Retrieved 5 new auxiliary tweets.
+0.0|sandy damage bike nyc
+0.0|raf cover hurricane sign battle britain ace sandy sander dfc
+0.0|hurricane sandy
+0.0|hurricane sandy sleepover letsgetexposing randydole
+0.0|hurricane sandy view
+()
+Aux F1 - Iteration-1=0.96
+Precision=0.99
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+104.0  1.0   
+7.0    72.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+[Stage 81:>                                                         (0 + 8) / 8][Stage 81:==============>                                           (2 + 6) / 8][Stage 81:====================================>                     (5 + 3) / 8]                                                                                [Stage 82:>                                                         (0 + 2) / 2]0.32|street view car start map sandy damage
+                                                                                [Stage 83:>                                                         (0 + 2) / 2]0.17|jayroduh hurricane hurricane
+                                                                                [Stage 84:>                                                         (0 + 2) / 2]0.4|todayinthesky sure bad go outside hurricane airport day hurricane sandy yikes
+                                                                                [Stage 85:>                                                         (0 + 2) / 2]0.39|elm look something hurricane sandy make
+                                                                                0.44|follower may affect hurricane sandy hope safety
+[Stage 87:>                                                         (0 + 2) / 2]                                                                                0.33|hurricane sandy new jersey rebuild ahead thoughtful via huffingtonpost
+[Stage 88:>                                                         (0 + 2) / 2]                                                                                0.36|watch live hurricane sandy cause partial crane collapse midtown manhattan
+[Stage 89:>                                                         (0 + 2) / 2]0.18|hamradionow hurricane sandy
+                                                                                [Stage 90:>                                                         (0 + 2) / 2]                                                                                0.39|climate change cause hurricane
+[Stage 91:>                                                         (0 + 2) / 2]0.37|go since hurricane sandy bet still look lmao
+                                                                                [Stage 92:>                                                         (0 + 2) / 2]0.41|armanidope name hurricane gay name like name ish hurricane death megatron guarantee nigga evacuate like need
+                                                                                [Stage 93:>                                                         (0 + 2) / 2]                                                                                0.4|bill mckibben hurricane sandy climate change ever call
+[Stage 94:>                                                         (0 + 2) / 2]0.45|habitat plan chevrolet donation make real help hurricane sandy recovery
+                                                                                [Stage 95:>                                                         (0 + 2) / 2]0.33|storm gain strength churn north hurricane sandy
+                                                                                0.17|sougofollow maria remove photo
+[Stage 97:>                                                         (0 + 2) / 2]0.37|snooki say hurricane get
+                                                                                [Stage 98:>                                                         (0 + 2) / 2]                                                                                0.39|join effort help hurricane sandy see help
+[Stage 99:>                                                         (0 + 2) / 2]                                                                                0.31|story behind new york hurricane sandy cover nahumg
+[Stage 100:>                                                        (0 + 2) / 2]0.28|hurricane sandy lol imagine hurricane
+                                                                                [Stage 101:>                                                        (0 + 2) / 2]                                                                                0.25|hurricane atlantic tropical weather outlook sandy
+Retrieved 4 new auxiliary tweets.
+0.0|hamradionow hurricane sandy
+0.0|jayroduh hurricane hurricane
+0.0|sougofollow maria remove photo
+0.0|hurricane atlantic tropical weather outlook sandy
+()
+Aux F1 - Iteration-2=0.95
+Precision=0.97
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+103.0  2.0   
+7.0    72.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+[Stage 126:>                                                        (0 + 8) / 8][Stage 126:=======>                                                 (1 + 7) / 8][Stage 126:==============>                                          (2 + 6) / 8][Stage 126:============================>                            (4 + 4) / 8][Stage 126:=================================================>       (7 + 1) / 8]                                                                                [Stage 127:============================>                            (1 + 1) / 2]0.36|davidcjacks hurricane sandy prediction bad expect
+                                                                                [Stage 128:>                                                        (0 + 2) / 2]0.4|hurricane sandy destroy medical research hurricane sandy destroy medical research
+                                                                                [Stage 129:============================>                            (1 + 1) / 2]0.35|even argue piss gonna hurricane sandy
+                                                                                [Stage 130:>                                                        (0 + 2) / 2]                                                                                0.34|update aac close class cancel tuesday october due hurricane stay safe monctopa
+[Stage 131:>                                                        (0 + 2) / 2]0.32|fire ravage jersey shore boardwalk rebuild hurricane sandy flame begin ice cream shop
+                                                                                [Stage 132:>                                                        (0 + 2) / 2]0.35|roommate go hard tonight throw bed floor guy towel hurricane
+                                                                                [Stage 133:>                                                        (0 + 2) / 2]                                                                                0.42|roll call effect hurricane sandy family please like comment
+[Stage 134:>                                                        (0 + 2) / 2]0.37|hurricane sandy need piss right
+                                                                                [Stage 135:>                                                        (0 + 2) / 2]0.31|fayobserver fort bragg soldier generate power hurricane sandy victim ocpa
+                                                                                [Stage 136:>                                                        (0 + 2) / 2]0.34|weatherchannel evacuate irene sandy come family live new
+                                                                                [Stage 137:>                                                        (0 + 2) / 2]0.45|think suffer loss hurricane thought
+                                                                                [Stage 138:>                                                        (0 + 2) / 2]                                                                                0.26|nubsanimalwatch allanimalrights animal rescue hurricane sandy october sandyaid
+[Stage 139:>                                                        (0 + 2) / 2]0.36|hurricane sandy afford keep kennel somewhere oregon mygirl
+                                                                                [Stage 140:>                                                        (0 + 2) / 2]                                                                                0.39|hurricane sandy really williams make whole thing
+[Stage 141:>                                                        (0 + 2) / 2]0.42|new jersey insurance industry show sign change wake hurricane sandy industry reform
+                                                                                [Stage 142:>                                                        (0 + 2) / 2]0.3|ticket info announce massive hurricane sandy benefit msg paul mccartney kanye west bruce springsteen
+                                                                                [Stage 143:>                                                        (0 + 2) / 2]0.35|go school otherwilljames amaze writer long island coast unexpected gift hurricane sandy
+                                                                                [Stage 144:>                                                        (0 + 2) / 2]0.36|njdotcom bad hurricane sandy expect late njsandy
+                                                                                [Stage 145:>                                                        (0 + 2) / 2]0.34|hurricane sandy tweet goin since yesterday still go
+                                                                                [Stage 146:>                                                        (0 + 2) / 2]0.36|tlc great cake bos best show sweet help hurricane sandy cakebosskickoff cakebossbuddy tlc
+                                                                                Retrieved 0 new auxiliary tweets.
+()
+Aux F1 - Iteration-3=0.96
+Precision=0.99
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+104.0  1.0   
+7.0    72.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+[Stage 171:>                                                        (0 + 8) / 8][Stage 171:=======>                                                 (1 + 7) / 8][Stage 171:==============>                                          (2 + 6) / 8][Stage 171:=================================================>       (7 + 1) / 8]                                                                                [Stage 172:>                                                        (0 + 2) / 2]                                                                                0.28|hurricane sandy warm world end december
+[Stage 173:>                                                        (0 + 2) / 2]0.38|new art world ass impact hurricane sandy
+                                                                                [Stage 174:>                                                        (0 + 2) / 2]0.36|new york aquarium devastate hurricane sandy donation page
+                                                                                [Stage 175:>                                                        (0 + 2) / 2]                                                                                0.24|photo magnitude earthquake strike offshore northern california wednesday rattle
+[Stage 176:>                                                        (0 + 2) / 2]0.31|urgent major earthquake spark tsunami warn pacific
+                                                                                [Stage 177:>                                                        (0 + 2) / 2]0.41|jarrodcombs believe miss good happen get back doitagain
+                                                                                [Stage 178:>                                                        (0 + 2) / 2]0.15|shakingearth earthquake mb fiji region
+                                                                                [Stage 179:>                                                        (0 + 2) / 2]0.32|haiti earthquake relief fund canadian red cross say
+                                                                                [Stage 180:>                                                        (0 + 2) / 2]0.22|earthquake tremor peshawar along chitral low dir
+                                                                                [Stage 181:>                                                        (0 + 2) / 2]                                                                                0.28|earthquake minute ago know wasnt trip
+[Stage 182:>                                                        (0 + 2) / 2]0.22|earthquake rock mexico city mexicocity via ecanadanow
+                                                                                [Stage 183:>                                                        (0 + 2) / 2]0.22|din earthquake go
+                                                                                [Stage 184:>                                                        (0 + 2) / 2]0.13|usgs redoubt volcano alaska sm
+                                                                                [Stage 185:>                                                        (0 + 2) / 2]0.38|series small earthquake china may aftershock major quake way back
+                                                                                [Stage 186:>                                                        (0 + 2) / 2]                                                                                0.35|havin homeroom shake like earthquake
+[Stage 187:>                                                        (0 + 2) / 2]                                                                                0.33|download link tyga rack city bubble bubble reggaeton shake earthquake
+[Stage 188:>                                                        (0 + 2) / 2]                                                                                0.44|really think god warn get earthquake nvr see summer la like least recent year
+[Stage 189:>                                                        (0 + 2) / 2]                                                                                0.16|earthquake omg wtf
+[Stage 190:>                                                        (0 + 2) / 2]                                                                                0.2|earthquake dah map dawg
+[Stage 191:>                                                        (0 + 2) / 2]0.05|sismo nne burney california csismica
+                                                                                Retrieved 9 new auxiliary tweets.
+0.0|din earthquake go
+0.0|photo magnitude earthquake strike offshore northern california wednesday rattle
+0.0|shakingearth earthquake mb fiji region
+0.0|earthquake dah map dawg
+0.0|sismo nne burney california csismica
+0.0|earthquake rock mexico city mexicocity via ecanadanow
+0.0|earthquake omg wtf
+0.0|earthquake tremor peshawar along chitral low dir
+0.0|usgs redoubt volcano alaska sm
+()
+Aux F1 - Iteration-4=0.94
+Precision=0.99
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+104.0  1.0   
+10.0   69.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+[Stage 216:>                                                        (0 + 8) / 8][Stage 216:=======>                                                 (1 + 7) / 8][Stage 216:==============>                                          (2 + 6) / 8][Stage 216:=====================>                                   (3 + 5) / 8][Stage 216:============================>                            (4 + 4) / 8][Stage 216:==========================================>              (6 + 2) / 8][Stage 216:=================================================>       (7 + 1) / 8]                                                                                [Stage 217:>                                                        (0 + 2) / 2]0.21|earthquake indonesian archipelago indonesia tual preliminary report earthquake
+                                                                                [Stage 218:>                                                        (0 + 2) / 2]0.12|deprem northern california january gmt earthquake
+                                                                                [Stage 219:>                                                        (0 + 2) / 2][Stage 219:============================>                            (1 + 1) / 2]0.28|fish eagle otter star late usgs geohealth newsletter
+                                                                                [Stage 220:>                                                        (0 + 2) / 2]0.14|sismo nne badger alaska usgs
+                                                                                [Stage 221:>                                                        (0 + 2) / 2]0.2|newearthquake earthquake near coast northern jul epicenter ago depth
+                                                                                [Stage 222:>                                                        (0 + 2) / 2]0.3|really thoight earthquake
+                                                                                [Stage 223:>                                                        (0 + 2) / 2]0.27|green earthquake alert depth indonesia utc people
+                                                                                [Stage 224:>                                                        (0 + 2) / 2]0.2|eartquake valdez alaska
+                                                                                [Stage 225:>                                                        (0 + 2) / 2]                                                                                0.25|possible na maging parehas tayo sa earthquake would become
+[Stage 226:>                                                        (0 + 2) / 2]0.12|update dominique collier kcrungmc reggierankin bowncewithme
+                                                                                [Stage 227:>                                                        (0 + 2) / 2]0.16|ima get january january
+                                                                                [Stage 228:>                                                        (0 + 2) / 2]                                                                                0.33|come intel chromebook flood best via
+[Stage 229:>                                                        (0 + 2) / 2]0.36|lol nerpp blame since know shes like last one im name lol
+                                                                                [Stage 230:>                                                        (0 + 2) / 2]0.19|ericalynnloper live asf
+                                                                                [Stage 231:>                                                        (0 + 2) / 2]0.28|flood warn issue april cdt may cdt nw wxtx
+                                                                                [Stage 232:>                                                        (0 + 2) / 2]                                                                                0.25|unesco project flood management ayutthaya
+[Stage 233:>                                                        (0 + 2) / 2]0.27|flood warn issue september mdt september mdt nw national weather
+                                                                                [Stage 234:>                                                        (0 + 2) / 2]0.3|shv cancel flood warn rabbit creek kilgore
+                                                                                [Stage 235:>                                                        (0 + 2) / 2]                                                                                0.37|beaufort flood victim need send contact detail themimpa bank
+[Stage 236:>                                                        (0 + 2) / 2]                                                                                0.37|thing look inside carpet clean company
+Retrieved 10 new auxiliary tweets.
+0.0|earthquake indonesian archipelago indonesia tual preliminary report earthquake
+0.0|ericalynnloper live asf
+0.0|unesco project flood management ayutthaya
+0.0|newearthquake earthquake near coast northern jul epicenter ago depth
+0.0|eartquake valdez alaska
+0.0|possible na maging parehas tayo sa earthquake would become
+0.0|ima get january january
+0.0|update dominique collier kcrungmc reggierankin bowncewithme
+0.0|deprem northern california january gmt earthquake
+0.0|sismo nne badger alaska usgs
+()
+Aux F1 - Iteration-5=0.91
+Precision=1.0
+Recall=0.8
+Aux F1 - ConfusionMatrix:
+105.0  0.0   
+16.0   63.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+[Stage 261:>                                                        (0 + 8) / 8][Stage 261:=======>                                                 (1 + 7) / 8][Stage 261:============================>                            (4 + 4) / 8][Stage 261:===================================>                     (5 + 3) / 8][Stage 261:==========================================>              (6 + 2) / 8][Stage 261:=================================================>       (7 + 1) / 8]                                                                                [Stage 262:>                                                        (0 + 2) / 2]0.29|cree lead work light bar spot flood suv atv boat truck lamp
+                                                                                [Stage 263:>                                                        (0 + 2) / 2]                                                                                0.16|flood
+[Stage 264:>                                                        (0 + 2) / 2]0.37|set straggler title deed inflooding healthfulness flood insurance yvulejq
+                                                                                [Stage 265:>                                                        (0 + 2) / 2]0.23|badliontryhard flood ur house ur sweat
+                                                                                [Stage 266:>                                                        (0 + 2) / 2]                                                                                0.26|surely day raya instagram flood colourful baju raya timeline
+[Stage 267:>                                                        (0 + 2) / 2]                                                                                0.45|flood fg release tackle food health crisis raise
+[Stage 268:>                                                        (0 + 2) / 2]0.26|check story catoosa deputy save mother son
+                                                                                [Stage 269:>                                                        (0 + 2) / 2]0.35|mmda flood alert blumentrit towards ust direction knee passable light vehicle expect heavy
+                                                                                [Stage 270:>                                                        (0 + 2) / 2]                                                                                0.31|new flood alert morning harper brook willow brook river start rise check detail
+[Stage 271:>                                                        (0 + 2) / 2]0.37|vikiwatsonflr garthbrooks amaliearena safety consideration normalize relation terrorism sponsor country
+                                                                                [Stage 272:>                                                        (0 + 2) / 2]                                                                                0.26|amybeccaaaron dorothyofisrael fionnmacky terrorism jew commit kill christian
+[Stage 273:>                                                        (0 + 2) / 2]0.23|three men arrest swoop terrorpolice centrallondon
+                                                                                [Stage 274:>                                                        (0 + 2) / 2]0.23|sweden socialdemokrat carlbildt defend mb crime
+                                                                                [Stage 275:>                                                        (0 + 2) / 2]0.38|uk men jail plan terrorism three british men include former police community support officer
+                                                                                [Stage 276:>                                                        (0 + 2) / 2]                                                                                0.37|mayor tower hamlet give mosque agree wiv terrorism dont give jack shit right
+[Stage 277:>                                                        (0 + 2) / 2]0.28|illuminazealia grammyless fucktyler terrorism child
+                                                                                [Stage 278:>                                                        (0 + 2) / 2]0.34|travel abroad safely age terrorism via yahootravel
+                                                                                [Stage 279:>                                                        (0 + 2) / 2]                                                                                0.43|founder turkish school around world believe education antidote ignorance terrorism
+[Stage 280:>                                                        (0 + 2) / 2]0.43|sharemarket damage financial coal mine serious risk non violent protest ok
+                                                                                [Stage 281:>                                                        (0 + 2) / 2]                                                                                0.23|love westgate come illuminati jah bless mbusii hakunambrrrrcha
+Retrieved 5 new auxiliary tweets.
+0.0|three men arrest swoop terrorpolice centrallondon
+0.0|love westgate come illuminati jah bless mbusii hakunambrrrrcha
+0.0|flood
+0.0|sweden socialdemokrat carlbildt defend mb crime
+0.0|badliontryhard flood ur house ur sweat
+()
+Aux F1 - Iteration-6=0.94
+Precision=1.0
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+105.0  0.0   
+10.0   69.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+[Stage 306:=====================>                                   (3 + 5) / 8][Stage 306:==========================================>              (6 + 2) / 8]                                                                                [Stage 307:>                                                        (0 + 2) / 2]0.0|georgegalloway
+                                                                                [Stage 308:>                                                        (0 + 2) / 2]                                                                                0.32|sign understand terrorism terrorist threat
+[Stage 309:>                                                        (0 + 2) / 2]0.37|million violent muslim death fee cycle terrorism nbc news
+                                                                                [Stage 310:>                                                        (0 + 2) / 2]                                                                                0.32|discover cruel fact behind illegalivorytrade
+[Stage 311:>                                                        (0 + 2) / 2]                                                                                0.36|artmous ollyneville aarondarkwood le traffic great threat human terrorism
+[Stage 312:>                                                        (0 + 2) / 2][Stage 312:============================>                            (1 + 1) / 2]                                                                                0.4|go store buy cheese give five minute lecture cashier teenage fgp iwantmydamndonuts
+[Stage 313:>                                                        (0 + 2) / 2]                                                                                0.55|health soy protein cancer obesity cardiovascular disease
+[Stage 314:>                                                        (0 + 2) / 2]0.51|take obesity issue ad campaign canada shine take obesity issue
+                                                                                [Stage 315:>                                                        (0 + 2) / 2]                                                                                0.37|jamieoliver please follow journey depression thank
+[Stage 316:>                                                        (0 + 2) / 2]0.46|daughter argue heart attack go kill obesity go kill
+                                                                                [Stage 317:>                                                        (0 + 2) / 2]                                                                                0.58|top story obesity big threat hunger obesity big health crisis globally hunger
+[Stage 318:>                                                        (0 + 2) / 2]0.59|iffoodcouldtalkthen obesity could fight good
+                                                                                [Stage 319:>                                                        (0 + 2) / 2]0.53|know country pandemic obesity epidemic skinny jean twitterlesstom
+                                                                                [Stage 320:>                                                        (0 + 2) / 2]0.51|factsinyourface nowadays people die obesity
+                                                                                [Stage 321:>                                                        (0 + 2) / 2]                                                                                0.51|watch horror movie reduce risk brain body tend burn calorie watch scary fact fuck
+[Stage 322:>                                                        (0 + 2) / 2]0.59|check back resolution tip weightloss diet obesity health
+                                                                                [Stage 323:>                                                        (0 + 2) / 2]                                                                                0.51|obesity low use cannabis user
+[Stage 324:>                                                        (0 + 2) / 2]                                                                                0.54|breathe problem child age year approximately ten obesity news
+[Stage 325:>                                                        (0 + 2) / 2]                                                                                0.46|little sleep big waistline
+[Stage 326:>                                                        (0 + 2) / 2]                                                                                0.5|viewpoint curb obesity viewpoint whether one simple solution
+Retrieved 14 new auxiliary tweets.
+1.0|watch horror movie reduce risk brain body tend burn calorie watch scary fact fuck
+1.0|check back resolution tip weightloss diet obesity health
+1.0|factsinyourface nowadays people die obesity
+1.0|little sleep big waistline
+1.0|viewpoint curb obesity viewpoint whether one simple solution
+1.0|health soy protein cancer obesity cardiovascular disease
+1.0|take obesity issue ad campaign canada shine take obesity issue
+1.0|iffoodcouldtalkthen obesity could fight good
+1.0|know country pandemic obesity epidemic skinny jean twitterlesstom
+1.0|daughter argue heart attack go kill obesity go kill
+1.0|top story obesity big threat hunger obesity big health crisis globally hunger
+1.0|obesity low use cannabis user
+1.0|breathe problem child age year approximately ten obesity news
+0.0|georgegalloway
+()
+Aux F1 - Iteration-7=0.93
+Precision=0.88
+Recall=0.99
+Aux F1 - ConfusionMatrix:
+94.0  11.0  
+1.0   78.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+[Stage 351:>                                                        (0 + 8) / 8][Stage 351:=======>                                                 (1 + 7) / 8][Stage 351:==========================================>              (6 + 2) / 8][Stage 351:=================================================>       (7 + 1) / 8]                                                                                [Stage 352:>                                                        (0 + 2) / 2]                                                                                0.29|terrific conversation today healthyweightcommitmentfoundation togethercounts
+[Stage 353:>                                                        (0 + 2) / 2]0.46|thank dare push im grateful sometimes wish die obesity
+                                                                                [Stage 354:>                                                        (0 + 2) / 2]0.47|actual internal picture obesity computer
+                                                                                [Stage 355:>                                                        (0 + 2) / 2]0.49|doctor chiropractic serve frontlines battle childhood obesity
+                                                                                [Stage 356:>                                                        (0 + 2) / 2]0.54|breast cancer obesity link prostate cancer may vary race
+                                                                                [Stage 357:>                                                        (0 + 2) / 2]0.53|triplecure cancer diabetes obesity
+                                                                                [Stage 358:>                                                        (0 + 2) / 2]                                                                                0.57|avert obesity type diabetes india beverage taxation
+[Stage 359:>                                                        (0 + 2) / 2]0.29|japan lift evacuation order fukushima town naraha government japan tokyo news
+                                                                                [Stage 360:>                                                        (0 + 2) / 2]0.35|huge local hurdle restart nuclear reactor japan year reaction fukushima close
+                                                                                [Stage 361:>                                                        (0 + 2) / 2]0.35|fukushima falsify cancer report expose
+                                                                                [Stage 362:>                                                        (0 + 2) / 2]0.33|long ago tepco admit thousand gallon radioactive water flow pacific fukushima
+                                                                                [Stage 363:>                                                        (0 + 2) / 2]                                                                                0.35|pump cool damage reactor fukushima plant stop tokyo pump use cool tscent
+[Stage 364:>                                                        (0 + 2) / 2]                                                                                0.29|news fukushima old remain nuclear plant shut
+[Stage 365:>                                                        (0 + 2) / 2]                                                                                0.12|fukushima le journal est sorti de le unes via suretenucleaire
+[Stage 366:>                                                        (0 + 2) / 2]0.36|fukushima local resident say near point fukushima japan radiation green water
+                                                                                [Stage 367:>                                                        (0 + 2) / 2][Stage 367:============================>                            (1 + 1) / 2]                                                                                0.35|fukushima inside dangerous room world via time
+[Stage 368:>                                                        (0 + 2) / 2]                                                                                0.23|learn
+[Stage 369:>                                                        (0 + 2) / 2]0.22|taiwan former taiwan president lee visit tokyo fukushima disaster area south china morning post
+                                                                                [Stage 370:>                                                        (0 + 2) / 2]                                                                                0.29|freaky fukushima friday reminder fish bioaccumulating radionuclides thatarcher
+[Stage 371:>                                                        (0 + 2) / 2]0.38|fukushima radiation level time high previously disco aquatic radiation plume report hit west coast
+                                                                                Retrieved 9 new auxiliary tweets.
+1.0|thank dare push im grateful sometimes wish die obesity
+1.0|avert obesity type diabetes india beverage taxation
+0.0|fukushima le journal est sorti de le unes via suretenucleaire
+1.0|doctor chiropractic serve frontlines battle childhood obesity
+0.0|learn
+0.0|taiwan former taiwan president lee visit tokyo fukushima disaster area south china morning post
+1.0|actual internal picture obesity computer
+1.0|breast cancer obesity link prostate cancer may vary race
+1.0|triplecure cancer diabetes obesity
+()
+Aux F1 - Iteration-8=0.95
+Precision=1.0
+Recall=0.9
+Aux F1 - ConfusionMatrix:
+105.0  0.0   
+8.0    71.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+[Stage 396:>                                                        (0 + 8) / 8][Stage 396:=======>                                                 (1 + 7) / 8][Stage 396:==============>                                          (2 + 6) / 8][Stage 396:=====================>                                   (3 + 5) / 8][Stage 396:============================>                            (4 + 4) / 8][Stage 396:==========================================>              (6 + 2) / 8][Stage 396:=================================================>       (7 + 1) / 8]                                                                                0.3|dailymirror study show fukushima plutonium playground km nuclear plant savefukuchildren
+[Stage 397:>                                                        (0 + 2) / 2]                                                                                [Stage 398:>                                                        (0 + 2) / 2]0.38|fun game japan gov tepco fukushima clean close rid
+                                                                                [Stage 399:>                                                        (0 + 2) / 2]0.17|fukushima ultima un plan experimental para contener fugas de agua radiactiva
+                                                                                [Stage 400:>                                                        (0 + 2) / 2]0.38|year fukushima japan open big solar plant reach national milestone renewable energy
+                                                                                [Stage 401:>                                                        (0 + 2) / 2]0.31|cidrap texas contact trace identify ebola fever monitor
+                                                                                [Stage 402:>                                                        (0 + 2) / 2]0.4|say ebola case report guinea sierraleone last week drop low total yr
+                                                                                [Stage 403:>                                                        (0 + 2) / 2]0.39|sapdevcenter could big data solution
+                                                                                [Stage 404:>                                                        (0 + 2) / 2]                                                                                0.36|tech ebola detect computer software nin computersoftware ebola flaggedoff health healthmap map
+[Stage 405:>                                                        (0 + 2) / 2]0.44|back home liberia stanford physician continue help fight ebola
+                                                                                [Stage 406:>                                                        (0 + 2) / 2]                                                                                0.33|gomerblog man claim catch ebola flu shoot
+[Stage 407:>                                                        (0 + 2) / 2]0.15|wereldgezondheidsorganisatie verzweeg uitbraak ebola twee maanden lang ebola
+                                                                                [Stage 408:>                                                        (0 + 2) / 2]0.47|ebola case make stock market crash much would pandemic
+                                                                                [Stage 409:>                                                        (0 + 2) / 2]0.4|ebola infect five new people every hour sierra leone figure show liberia worldnews sierraleone africa
+                                                                                [Stage 410:>                                                        (0 + 2) / 2]0.31|ebola death toll surpass west africa glv
+                                                                                [Stage 411:>                                                        (0 + 2) / 2]                                                                                0.21|lesechos un robot pour lutter contre ebola
+[Stage 412:>                                                        (0 + 2) / 2]0.43|forget ebola fear people year die car accident terrible mass call
+                                                                                [Stage 413:>                                                        (0 + 2) / 2]0.19|drama queen icebucketchallenge ebola joycetanks paris bath robe
+                                                                                [Stage 414:>                                                        (0 + 2) / 2]0.47|low per caput medical workforce world produce new liberian drs kill ebola
+                                                                                [Stage 415:>                                                        (0 + 2) / 2]0.33|itg ebola many people head liberia liberia kenyaairways ebola
+                                                                                [Stage 416:>                                                        (0 + 2) / 2]0.27|ebola ebola patient dr kent brantley recover discharge kent
+                                                                                Retrieved 6 new auxiliary tweets.
+0.0|fukushima ultima un plan experimental para contener fugas de agua radiactiva
+1.0|low per caput medical workforce world produce new liberian drs kill ebola
+0.0|drama queen icebucketchallenge ebola joycetanks paris bath robe
+0.0|lesechos un robot pour lutter contre ebola
+1.0|ebola case make stock market crash much would pandemic
+0.0|wereldgezondheidsorganisatie verzweeg uitbraak ebola twee maanden lang ebola
+()
+Aux F1 - Iteration-9=0.95
+Precision=0.96
+Recall=0.92
+Aux F1 - ConfusionMatrix:
+102.0  3.0   
+6.0    73.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+[Stage 441:>                                                        (0 + 8) / 8][Stage 441:=====================>                                   (3 + 5) / 8][Stage 441:============================>                            (4 + 4) / 8][Stage 441:===================================>                     (5 + 3) / 8][Stage 441:==========================================>              (6 + 2) / 8]                                                                                [Stage 442:>                                                        (0 + 2) / 2]                                                                                0.2|nigerian man quarantine ebola hong kong nigerian man quarantine today hong kong
+[Stage 443:>                                                        (0 + 2) / 2]                                                                                0.35|skynewsbreak petition whitehouse ban flight ebola affect sign
+[Stage 444:>                                                        (0 + 2) / 2]                                                                                0.52|important change come global health security realm ebola must read
+[Stage 445:>                                                        (0 + 2) / 2]0.42|ebola exist low level intact rainforest emerge destroy bushmeat eat
+                                                                                [Stage 446:>                                                        (0 + 2) / 2]                                                                                0.33|reaction see winter storm forecast pax scwx gawx
+[Stage 447:>                                                        (0 + 2) / 2]                                                                                0.37|inyo national forest prepare weekend storm may implement winter closure road
+[Stage 448:>                                                        (0 + 2) / 2]                                                                                0.34|nwsnewyorkny convert winter storm watch advisory admit uncertainty snow
+[Stage 449:>                                                        (0 + 2) / 2]0.21|winter storm warn issue march edt march edt nw wxny
+                                                                                [Stage 450:>                                                        (0 + 2) / 2]0.24|winter storm warn penobscot county issue march edt march edt nw
+                                                                                [Stage 451:>                                                        (0 + 2) / 2]0.31|resident deal power winter storm greensboro
+                                                                                [Stage 452:>                                                        (0 + 2) / 2]                                                                                0.32|markjweather winter storm warn heavy snow move northern ohio early sunday ohwx wews
+0.4|winter look like feel like snow storm come
+[Stage 454:>                                                        (0 + 2) / 2]0.31|winter storm watch whole view area tomorrow night monday morning
+                                                                                [Stage 455:>                                                        (0 + 2) / 2]0.32|chance go winter storm warn ice storm
+                                                                                [Stage 456:>                                                        (0 + 2) / 2]0.2|winter storm warn issue january mst january mst nw wxid
+                                                                                [Stage 457:>                                                        (0 + 2) / 2][Stage 457:============================>                            (1 + 1) / 2]                                                                                0.43|call crazy start wonder whole winter storm call kid want snow
+[Stage 458:>                                                        (0 + 2) / 2]                                                                                0.24|season winter chicago history
+[Stage 459:>                                                        (0 + 2) / 2]0.4|love still call winter storm yeah think weld brace
+                                                                                [Stage 460:>                                                        (0 + 2) / 2]0.37|get ready second winter storm expect inch far top inch get last
+                                                                                0.33|winter storm warn early storm warn still bronx
+Retrieved 6 new auxiliary tweets.
+0.0|nigerian man quarantine ebola hong kong nigerian man quarantine today hong kong
+0.0|season winter chicago history
+0.0|winter storm warn issue january mst january mst nw wxid
+0.0|winter storm warn issue march edt march edt nw wxny
+1.0|important change come global health security realm ebola must read
+0.0|winter storm warn penobscot county issue march edt march edt nw
+()
+Aux F1 - Iteration-10=0.95
+Precision=0.96
+Recall=0.92
+Aux F1 - ConfusionMatrix:
+102.0  3.0   
+6.0    73.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+[Stage 486:=======>                                                 (1 + 7) / 8][Stage 486:==============>                                          (2 + 6) / 8][Stage 486:=====================>                                   (3 + 5) / 8][Stage 486:===================================>                     (5 + 3) / 8][Stage 486:==========================================>              (6 + 2) / 8][Stage 486:=================================================>       (7 + 1) / 8]                                                                                [Stage 487:>                                                        (0 + 2) / 2]0.35|britain track bumper fruit vegetable crop mild wet winter via skynews
+                                                                                [Stage 488:>                                                        (0 + 2) / 2]0.22|update winter storm
+[Stage 488:============================>                            (1 + 1) / 2]                                                                                [Stage 489:>                                                        (0 + 2) / 2]0.19|winter storm warn issue february mst february mst nw wxmt
+                                                                                [Stage 490:>                                                        (0 + 2) / 2]0.37|harsh winter storm across much usa mother government
+                                                                                [Stage 491:>                                                        (0 + 2) / 2]0.38|haha yeah gonna rough winter like last yr storm bad next week apparently snow
+                                                                                [Stage 492:>                                                        (0 + 2) / 2]0.25|winter storm postpone game northeast
+                                                                                [Stage 493:>                                                        (0 + 2) / 2]                                                                                0.24|winter storm warn issue april mdt april mdt nw wxsd
+[Stage 494:>                                                        (0 + 2) / 2]0.17|severe thunderstorm warn issue june edt june edt nw
+                                                                                [Stage 495:>                                                        (0 + 2) / 2]                                                                                0.25|severe weather statement issue july cdt july cdt nw severe
+[Stage 496:>                                                        (0 + 2) / 2]0.25|severe thunderstorm watch issue june cdt june cdt nw severe
+                                                                                [Stage 497:>                                                        (0 + 2) / 2]0.21|severe weather weather service nashville cdt thu apr
+                                                                                [Stage 498:>                                                        (0 + 2) / 2]0.26|heavy rain flood part florida alabama
+                                                                                [Stage 499:>                                                        (0 + 2) / 2]                                                                                0.36|current situation pink tornado watch yellow severe
+[Stage 500:>                                                        (0 + 2) / 2]                                                                                0.23|severe thunderstorm warn issue july cdt july cdt nw wxne
+[Stage 501:>                                                        (0 + 2) / 2]0.31|nwsseveretstorm severe thunderstorm warn include ralph sd ludlow sd pm mdt
+                                                                                [Stage 502:>                                                        (0 + 2) / 2]                                                                                0.38|due threat strong severe storm today weekly noaa weather radio test move
+[Stage 503:>                                                        (0 + 2) / 2]                                                                                0.43|weather alert nw issue severe thunderstorm warn part seek strong shelter risk
+[Stage 504:>                                                        (0 + 2) / 2]0.35|french teacher talk severe french class weather class
+                                                                                [Stage 505:>                                                        (0 + 2) / 2]0.34|severe weather warn much bahamas via bahamas department
+                                                                                [Stage 506:>                                                        (0 + 2) / 2]0.36|severe weather move wind tune whohd whoweather stream online get late
+                                                                                Retrieved 9 new auxiliary tweets.
+0.0|severe weather statement issue july cdt july cdt nw severe
+0.0|severe weather weather service nashville cdt thu apr
+0.0|severe thunderstorm warn issue july cdt july cdt nw wxne
+0.0|winter storm warn issue april mdt april mdt nw wxsd
+0.0|winter storm warn issue february mst february mst nw wxmt
+0.0|severe thunderstorm warn issue june edt june edt nw
+0.0|severe thunderstorm watch issue june cdt june cdt nw severe
+0.0|update winter storm
+0.0|winter storm postpone game northeast
+()
+Aux F1 - Iteration-11=0.95
+Precision=0.97
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+103.0  2.0   
+7.0    72.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+[Stage 531:>                                                        (0 + 8) / 8][Stage 531:=======>                                                 (1 + 7) / 8][Stage 531:=====================>                                   (3 + 5) / 8][Stage 531:==========================================>              (6 + 2) / 8][Stage 531:=================================================>       (7 + 1) / 8]                                                                                [Stage 532:>                                                        (0 + 2) / 2]                                                                                0.36|twister possible plain tornado hail high wind may break central southern plain
+[Stage 533:>                                                        (0 + 2) / 2]0.33|severe weather warn cold snap strike via
+                                                                                [Stage 534:>                                                        (0 + 2) / 2]                                                                                0.39|check brand new severe weather go link start scroll
+[Stage 535:>                                                        (0 + 2) / 2]0.34|joecioffi severe weather threat afternoon local flood shower possible
+                                                                                [Stage 536:>                                                        (0 + 2) / 2]                                                                                0.33|severe thunderstorm warn pm cdt issue county
+[Stage 537:>                                                        (0 + 2) / 2]0.22|severe thunderstorm warn issue june cdt june cdt nw iawx
+                                                                                [Stage 538:>                                                        (0 + 2) / 2]0.33|severe wx alert storm warn replace winter weather advisory
+                                                                                [Stage 539:>                                                        (0 + 2) / 2]0.41|severe weather threaten midsection severe storm already take toll part michigan
+                                                                                [Stage 540:>                                                        (0 + 2) / 2]                                                                                0.38|brian study radar live air severe weather coverage monday take quietfun
+[Stage 541:>                                                        (0 + 2) / 2]                                                                                0.38|advisory public storm warn signal capiz per severe weather bulletin issue dec rubyph
+[Stage 542:>                                                        (0 + 2) / 2]                                                                                0.12|hoye kisi nay protest kia hai ya nai hamaray molve nai hain taliban inhon nay palay hoye hain muhammadmylife
+[Stage 543:>                                                        (0 + 2) / 2]0.33|need vacation
+                                                                                [Stage 544:>                                                        (0 + 2) / 2]0.12|militer pakistan sebut heli jatuh karena kerusakan mesin bukan taliban
+                                                                                [Stage 545:>                                                        (0 + 2) / 2]0.19|un mensaje para news
+                                                                                [Stage 546:>                                                        (0 + 2) / 2]                                                                                0.28|ayeshaspeaksnow mqm terrorist fund taliban without
+[Stage 547:>                                                        (0 + 2) / 2]0.3|one page
+                                                                                [Stage 548:>                                                        (0 + 2) / 2]                                                                                0.27|taliban chief demand foreign troop leave
+[Stage 549:>                                                        (0 + 2) / 2]0.07|nati esta enojada conmigo pero cabe ninguna le voy hablar la voy cargosiar jajaa la quiero una banda esta piba
+                                                                                [Stage 550:>                                                        (0 + 2) / 2]                                                                                0.23|kirtaner dzwooo americankevin naacp ill fuck taliban idgaf
+[Stage 551:>                                                        (0 + 2) / 2]                                                                                0.39|troop tell ignore taliban bring rap young boy military base crime
+Retrieved 6 new auxiliary tweets.
+0.0|hoye kisi nay protest kia hai ya nai hamaray molve nai hain taliban inhon nay palay hoye hain muhammadmylife
+0.0|kirtaner dzwooo americankevin naacp ill fuck taliban idgaf
+0.0|nati esta enojada conmigo pero cabe ninguna le voy hablar la voy cargosiar jajaa la quiero una banda esta piba
+0.0|un mensaje para news
+0.0|militer pakistan sebut heli jatuh karena kerusakan mesin bukan taliban
+0.0|severe thunderstorm warn issue june cdt june cdt nw iawx
+()
+Aux F1 - Iteration-12=0.94
+Precision=0.99
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+104.0  1.0   
+10.0   69.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+[Stage 576:>                                                        (0 + 8) / 8][Stage 576:=======>                                                 (1 + 7) / 8][Stage 576:============================>                            (4 + 4) / 8][Stage 576:===================================>                     (5 + 3) / 8][Stage 576:=================================================>       (7 + 1) / 8]                                                                                [Stage 577:>                                                        (0 + 2) / 2]0.19|religious extremism mischief dajjal antichrist isi taliban alshabab islam kyaapkopatahai
+                                                                                [Stage 578:>                                                        (0 + 2) / 2]                                                                                0.28|afghan team due pakistan discus revive taliban peace talk reuters
+[Stage 579:>                                                        (0 + 2) / 2]0.39|atiyajhs every day pressure increase raheel sharif cojco govt enjoy taliban bless
+                                                                                [Stage 580:>                                                        (0 + 2) / 2]0.09|pasti akn btggjawab kes pengeboman antaranya alqaeda taliban dan
+                                                                                [Stage 581:>                                                        (0 + 2) / 2]0.25|islamic militant group isi taliban bokoharam must recognise
+                                                                                [Stage 582:>                                                        (0 + 2) / 2]0.23|teeveezalbundi get taliban boko haram hezbollah hamas findingthesense
+                                                                                [Stage 583:>                                                        (0 + 2) / 2]                                                                                0.43|hang taliban want blood small child
+0.13|mischief isi daesh alqaeda aqap alshabab wahhabism saudiarabia taliban alshabab
+[Stage 585:>                                                        (0 + 2) / 2]                                                                                0.17|message leader islamic republic cia
+[Stage 586:>                                                        (0 + 2) / 2]0.4|nathantimpano skynews way taliban say go dangerous everyone leave
+                                                                                [Stage 587:>                                                        (0 + 2) / 2]                                                                                0.36|new spokesman mujmash write fancifully draw attention deplorable
+[Stage 588:>                                                        (0 + 2) / 2]0.27|pakistan fight back taliban bullet proof
+                                                                                [Stage 589:>                                                        (0 + 2) / 2]                                                                                0.3|rednationrising dbargen lance look like taiban flag
+[Stage 590:>                                                        (0 + 2) / 2]0.3|new taliban leader move fast heal rift afghan insurgency
+                                                                                [Stage 591:>                                                        (0 + 2) / 2]0.43|therealjuiceeee true feel always come good term
+                                                                                [Stage 592:>                                                        (0 + 2) / 2]0.38|actually derby least car confederate flag top cheap general lee imitation one minion
+                                                                                [Stage 593:>                                                        (0 + 2) / 2]0.25|watson cover general confederate flag
+                                                                                [Stage 594:>                                                        (0 + 2) / 2]0.3|south carolina house vote remove confederate flag statehouse ground
+                                                                                [Stage 595:>                                                        (0 + 2) / 2]                                                                                0.36|cold truth black live matter past
+[Stage 596:>                                                        (0 + 2) / 2]                                                                                0.4|fair foul kid cuss storm share fact confederate flag via bossip
+Retrieved 7 new auxiliary tweets.
+0.0|teeveezalbundi get taliban boko haram hezbollah hamas findingthesense
+0.0|pasti akn btggjawab kes pengeboman antaranya alqaeda taliban dan
+0.0|message leader islamic republic cia
+0.0|mischief isi daesh alqaeda aqap alshabab wahhabism saudiarabia taliban alshabab
+0.0|watson cover general confederate flag
+0.0|islamic militant group isi taliban bokoharam must recognise
+0.0|religious extremism mischief dajjal antichrist isi taliban alshabab islam kyaapkopatahai
+()
+Aux F1 - Iteration-13=0.93
+Precision=0.99
+Recall=0.85
+Aux F1 - ConfusionMatrix:
+104.0  1.0   
+12.0   67.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+[Stage 621:>                                                        (0 + 8) / 8][Stage 621:=======>                                                 (1 + 7) / 8][Stage 621:=====================>                                   (3 + 5) / 8][Stage 621:============================>                            (4 + 4) / 8]                                                                                [Stage 622:>                                                        (0 + 2) / 2]0.37|kkk hold sad confederate flag rally south carolina even though flag already go
+                                                                                [Stage 623:>                                                        (0 + 2) / 2]0.37|heymanhustle wwe cmpunk come back punk lmao may even wave confederate flag lol
+                                                                                [Stage 624:>                                                        (0 + 2) / 2]                                                                                0.29|support confederate flag unfollow
+[Stage 625:>                                                        (0 + 2) / 2]0.39|drive home wife day truck confederate flag go say look hon
+                                                                                [Stage 626:>                                                        (0 + 2) / 2]                                                                                0.31|percent approve removal confederate flag
+[Stage 627:>                                                        (0 + 2) / 2]                                                                                0.38|kid geom everytime see kid confederate flag hoodie feel obligate set fire
+[Stage 628:>                                                        (0 + 2) / 2]0.2|yelawolf defend confederate flag
+                                                                                [Stage 629:>                                                        (0 + 2) / 2]0.15|dependentclause uhhhh
+                                                                                [Stage 630:>                                                        (0 + 2) / 2]0.32|poll majority see confederate flag southern symbol
+                                                                                [Stage 631:>                                                        (0 + 2) / 2]0.32|orchestrate takedown confederate flag sc raise national profile
+                                                                                [Stage 632:>                                                        (0 + 2) / 2]0.27|saw confederate flag disappoint upset angry
+                                                                                [Stage 633:>                                                        (0 + 2) / 2]0.4|whyiwouldmakeagreatpresident bring back confederate flag close border make every day
+                                                                                [Stage 634:>                                                        (0 + 2) / 2]                                                                                0.31|sup bro ur look great ah confederate flag belt buckle compliment
+[Stage 635:>                                                        (0 + 2) / 2]0.35|tearjerker must sc gop rep jenny horne say take confederate flag
+                                                                                [Stage 636:>                                                        (0 + 2) / 2]0.33|supporter rally accuse flash knife gun black live matter
+                                                                                0.34|like youtube video kkk member confederate flag rally confront wear fubu shoe
+[Stage 638:>                                                        (0 + 2) / 2]0.21|fitter edinburgh falkirk stirling today splashbacktuesday
+                                                                                [Stage 639:>                                                        (0 + 2) / 2]                                                                                0.31|festival draw people three day year organizer edinburgh
+[Stage 640:>                                                        (0 + 2) / 2]                                                                                0.25|pair admit stab takeaway owner
+[Stage 641:>                                                        (0 + 2) / 2]0.03|edinburgh
+                                                                                Retrieved 5 new auxiliary tweets.
+0.0|fitter edinburgh falkirk stirling today splashbacktuesday
+0.0|edinburgh
+0.0|yelawolf defend confederate flag
+0.0|pair admit stab takeaway owner
+0.0|dependentclause uhhhh
+()
+Aux F1 - Iteration-14=0.93
+Precision=0.99
+Recall=0.86
+Aux F1 - ConfusionMatrix:
+104.0  1.0   
+11.0   68.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+[Stage 667:>                                                        (0 + 8) / 8][Stage 667:=======>                                                 (1 + 7) / 8][Stage 667:============================>                            (4 + 4) / 8][Stage 667:==========================================>              (6 + 2) / 8][Stage 667:=================================================>       (7 + 1) / 8]                                                                                [Stage 668:>                                                        (0 + 2) / 2]                                                                                0.34|aerlingus disenchant customer lose bag edinburgh dublin promise next
+[Stage 669:>                                                        (0 + 2) / 2]                                                                                0.12|hello intercambio edinburgh scotland
+[Stage 670:>                                                        (0 + 2) / 2]0.35|super rich scot jim mellon address investor edinburgh first time say
+                                                                                [Stage 671:>                                                        (0 + 2) / 2]0.32|harristweetride expect bring together stylish
+                                                                                [Stage 672:>                                                        (0 + 2) / 2]0.34|market data analyst edinburgh competitive salary job job hire itjobs
+                                                                                [Stage 673:>                                                        (0 + 2) / 2]0.28|account job night auditor holiday inn edinburgh ihgjobs ihg hoteljobs job
+                                                                                [Stage 674:>                                                        (0 + 2) / 2]0.38|chill pedaltrill expect get everything anything
+                                                                                [Stage 675:>                                                        (0 + 2) / 2]                                                                                0.32|susandalgety euanmccolm daily record call
+[Stage 676:>                                                        (0 + 2) / 2]                                                                                0.38|heaven company libation tightfisted cover waggon lease good understand edinburgh kbxjxe
+[Stage 677:>                                                        (0 + 2) / 2]                                                                                0.23|deserve christmas
+[Stage 678:>                                                        (0 + 2) / 2]0.25|edinburgh look forward tomorrow
+                                                                                [Stage 679:>                                                        (0 + 2) / 2]0.37|pay someone come edinburgh deal bin
+                                                                                [Stage 680:>                                                        (0 + 2) / 2]                                                                                0.18|annie mac corn exchange edinburgh saturday nov
+[Stage 681:>                                                        (0 + 2) / 2]                                                                                0.24|edinburgh look gorgeous tonight
+[Stage 682:>                                                        (0 + 2) / 2]0.22|junior cad technician edinburgh matchtech aerospace job
+                                                                                [Stage 683:>                                                        (0 + 2) / 2]                                                                                0.26|bad serial
+[Stage 684:>                                                        (0 + 2) / 2]0.33|get one tall flagpole flag
+                                                                                [Stage 685:>                                                        (0 + 2) / 2]                                                                                0.34|tomorrow land come see woodland creature waverley arch piano
+[Stage 686:>                                                        (0 + 2) / 2]                                                                                0.25|job edinburgh senior solicitor edinburgh city centremy client lead scottish law firm edinburgh
+[Stage 687:>                                                        (0 + 2) / 2]                                                                                0.32|thejealouslife boundaryldn selfridges trafalgarvista acehotel keep weather happy
+Retrieved 7 new auxiliary tweets.
+0.0|edinburgh look forward tomorrow
+0.0|junior cad technician edinburgh matchtech aerospace job
+0.0|job edinburgh senior solicitor edinburgh city centremy client lead scottish law firm edinburgh
+0.0|deserve christmas
+0.0|hello intercambio edinburgh scotland
+0.0|annie mac corn exchange edinburgh saturday nov
+0.0|edinburgh look gorgeous tonight
+()
+Aux F1 - Iteration-15=0.93
+Precision=0.99
+Recall=0.86
+Aux F1 - ConfusionMatrix:
+104.0  1.0   
+11.0   68.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+[Stage 713:>                                                        (0 + 8) / 8][Stage 713:=======>                                                 (1 + 7) / 8][Stage 713:==============>                                          (2 + 6) / 8][Stage 713:============================>                            (4 + 4) / 8][Stage 713:===================================>                     (5 + 3) / 8]                                                                                [Stage 714:>                                                        (0 + 2) / 2]                                                                                0.35|super rich scot jim mellon address investor edinburgh first time say
+[Stage 715:>                                                        (0 + 2) / 2]                                                                                0.32|harristweetride expect bring together stylish
+[Stage 716:>                                                        (0 + 2) / 2]                                                                                0.34|market data analyst edinburgh competitive salary job job hire itjobs
+[Stage 717:>                                                        (0 + 2) / 2]0.28|account job night auditor holiday inn edinburgh ihgjobs ihg hoteljobs job
+                                                                                [Stage 718:>                                                        (0 + 2) / 2]                                                                                0.38|chill pedaltrill expect get everything anything
+[Stage 719:>                                                        (0 + 2) / 2]                                                                                0.32|susandalgety euanmccolm daily record call
+[Stage 720:>                                                        (0 + 2) / 2]                                                                                0.38|heaven company libation tightfisted cover waggon lease good understand edinburgh kbxjxe
+[Stage 721:>                                                        (0 + 2) / 2]0.23|deserve christmas
+                                                                                [Stage 722:>                                                        (0 + 2) / 2]0.25|edinburgh look forward tomorrow
+                                                                                [Stage 723:>                                                        (0 + 2) / 2]                                                                                0.37|pay someone come edinburgh deal bin
+[Stage 724:>                                                        (0 + 2) / 2]0.18|annie mac corn exchange edinburgh saturday nov
+                                                                                [Stage 725:>                                                        (0 + 2) / 2]0.24|edinburgh look gorgeous tonight
+                                                                                [Stage 726:>                                                        (0 + 2) / 2]                                                                                0.22|junior cad technician edinburgh matchtech aerospace job
+[Stage 727:>                                                        (0 + 2) / 2]                                                                                0.26|bad serial
+[Stage 728:>                                                        (0 + 2) / 2]0.33|get one tall flagpole flag
+                                                                                [Stage 729:>                                                        (0 + 2) / 2]0.34|tomorrow land come see woodland creature waverley arch piano
+                                                                                [Stage 730:>                                                        (0 + 2) / 2]0.3|robdeb hey play edinburgh wait see
+[Stage 730:=========================================================(2 + 0) / 2]                                                                                [Stage 731:>                                                        (0 + 2) / 2]0.27|sealeswithakiss apology pas waste team investigate
+                                                                                [Stage 732:>                                                        (0 + 2) / 2]                                                                                0.32|want stop stoptober edinburgh hypnosis scotland
+[Stage 733:>                                                        (0 + 2) / 2]                                                                                0.39|know train busy get one bottom hit go justnotfun eastcoast edinburgh
+Retrieved 5 new auxiliary tweets.
+0.0|deserve christmas
+0.0|edinburgh look forward tomorrow
+0.0|junior cad technician edinburgh matchtech aerospace job
+0.0|edinburgh look gorgeous tonight
+0.0|annie mac corn exchange edinburgh saturday nov
+()
+Aux F1 - Iteration-16=0.94
+Precision=0.99
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+104.0  1.0   
+10.0   69.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+[Stage 759:>                                                        (0 + 8) / 8][Stage 759:=======>                                                 (1 + 7) / 8][Stage 759:=====================>                                   (3 + 5) / 8][Stage 759:============================>                            (4 + 4) / 8]                                                                                [Stage 760:>                                                        (0 + 2) / 2]0.38|chill pedaltrill expect get everything anything
+                                                                                [Stage 761:>                                                        (0 + 2) / 2]0.32|susandalgety euanmccolm daily record call
+                                                                                [Stage 762:>                                                        (0 + 2) / 2]0.38|heaven company libation tightfisted cover waggon lease good understand edinburgh kbxjxe
+[Stage 762:============================>                            (1 + 1) / 2]                                                                                [Stage 763:>                                                        (0 + 2) / 2]0.23|deserve christmas
+                                                                                [Stage 764:>                                                        (0 + 2) / 2]0.25|edinburgh look forward tomorrow
+                                                                                [Stage 765:>                                                        (0 + 2) / 2]0.37|pay someone come edinburgh deal bin
+                                                                                [Stage 766:>                                                        (0 + 2) / 2]0.18|annie mac corn exchange edinburgh saturday nov
+                                                                                [Stage 767:>                                                        (0 + 2) / 2]0.24|edinburgh look gorgeous tonight
+                                                                                [Stage 768:>                                                        (0 + 2) / 2]0.22|junior cad technician edinburgh matchtech aerospace job
+                                                                                [Stage 769:>                                                        (0 + 2) / 2]0.26|bad serial
+                                                                                [Stage 770:>                                                        (0 + 2) / 2]                                                                                0.33|get one tall flagpole flag
+[Stage 771:>                                                        (0 + 2) / 2]0.34|tomorrow land come see woodland creature waverley arch piano
+                                                                                [Stage 772:>                                                        (0 + 2) / 2]                                                                                0.39|glasgowkings excellent really want see edinburgh get
+[Stage 773:>                                                        (0 + 2) / 2]0.29|pollen trend edinburgh edh unite kingdom
+                                                                                [Stage 774:>                                                        (0 + 2) / 2]                                                                                0.3|edinburgh job customer service executive edinburgh way sell property
+[Stage 775:>                                                        (0 + 2) / 2]0.36|well pubtheatre theatre edinburgh great see old face
+                                                                                [Stage 776:>                                                        (0 + 2) / 2]0.35|shuttle train weekend good understand edinburgh ydwfhfe
+                                                                                [Stage 777:>                                                        (0 + 2) / 2]0.26|job scotland household clean edinburgh
+                                                                                [Stage 778:>                                                        (0 + 2) / 2]                                                                                0.13|hello
+0.13|hello
+Retrieved 7 new auxiliary tweets.
+0.0|edinburgh look forward tomorrow
+0.0|junior cad technician edinburgh matchtech aerospace job
+0.0|edinburgh look gorgeous tonight
+0.0|hello
+0.0|hello
+0.0|deserve christmas
+0.0|annie mac corn exchange edinburgh saturday nov
+()
+Aux F1 - Iteration-17=0.91
+Precision=0.98
+Recall=0.82
+Aux F1 - ConfusionMatrix:
+104.0  1.0   
+14.0   65.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+[Stage 806:>                                                        (0 + 2) / 2]                                                                                0.22|junior cad technician edinburgh matchtech aerospace job
+[Stage 807:>                                                        (0 + 2) / 2]0.26|bad serial
+                                                                                [Stage 808:>                                                        (0 + 2) / 2]0.33|get one tall flagpole flag
+                                                                                [Stage 809:>                                                        (0 + 2) / 2]0.34|tomorrow land come see woodland creature waverley arch piano
+                                                                                [Stage 810:>                                                        (0 + 2) / 2]0.13|hello
+                                                                                [Stage 811:>                                                        (0 + 2) / 2]                                                                                0.13|hello
+Retrieved 3 new auxiliary tweets.
+0.0|hello
+0.0|junior cad technician edinburgh matchtech aerospace job
+0.0|hello
+()
+Aux F1 - Iteration-18=0.94
+Precision=0.99
+Recall=0.89
+Aux F1 - ConfusionMatrix:
+104.0  1.0   
+9.0    70.0  
+
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295
+[Stage 837:>                                                        (0 + 2) / 2]                                                                                0.33|get one tall flagpole flag
+[Stage 838:>                                                        (0 + 2) / 2]0.34|tomorrow land come see woodland creature waverley arch piano
+                                                                                Retrieved 0 new auxiliary tweets.
+()
+Aux F1 - Iteration-19=0.96
+Precision=0.99
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+104.0  1.0   
+7.0    72.0  
+
+Exception in thread "main" java.lang.Exception: No more auxiliary tweets to retrieve.
+	at Implementations.AuxiliaryDataRetrievers.FpmAuxiliaryFilter.retrieveAuxiliaryData(FpmAuxiliaryFilter.scala:39)
+	at Implementations.AuxiliaryDataRetrievers.FpmAuxiliaryFilter.filter(FpmAuxiliaryFilter.scala:21)
+	at main.scala.Implementations.AuxiliaryDataBasedExperiment.performExperiment(AuxiliaryDataBasedExperiment.scala:74)
+	at main.scala.Implementations.AuxiliaryDataBasedExperiment.SetupAndRunExperiment(AuxiliaryDataBasedExperiment.scala:138)
+	at main.scala.program$.main(program.scala:39)
+	at main.scala.program.main(program.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Issue with Tweet:, 292
+Issue with Tweet:, 293
+Issue with Tweet:, 294
+Issue with Tweet:, 295

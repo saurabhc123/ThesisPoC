@@ -1,0 +1,776 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+17/03/28 20:48:21 INFO Remoting: Starting remoting
+17/03/28 20:48:22 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@172.30.202.188:51550]
+Hello World!11
+
+***************** Parameters used for EXPERIMENT *****************
+	filterToUse = CosineSim
+	minSimilarityThreshold = 0.5
+	cosineSimilarityWindowSize= 0.2
+	minWmDistanceThreshold = 0.49
+	webWord2VecBaseUri = http://localhost:5000/getvector/
+	maxFpmWordsToPick = 35
+	minFpmWordsDetected = 0
+	refreshLocalWordVectors = false
+	maxExperimentIterations = 20
+	maxAuxTweetsToAddEachIteration = 20
+	thresholdF1 = 0.98
+	classifierType = Cnn
+	folderNameForCnnClassifier = 
+	auxiliaryThresholdExpectation = 0.01
+	fileDelimiter = ,
+	trainingDataFile = data/final/egypt_training_data.txt
+	validationDataFile = data/final/egypt_validation_data.txt
+	auxiliaryDataFile = data/final/egypt_auxiliary_data.txt
+	supplementedCleanAuxiliaryFile = data/final/egypt_auxiliary_data.txt
+
+***************** Parameters used for EXPERIMENT *****************
+
+Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/27347e1a-a070-4195-893f-dd0d41f7f5e3
+
+Initial F1=0.88
+Precision=0.85
+Recall=1.0
+Initial - ConfusionMatrix:
+11.0  4.0   
+0.0   23.0  
+
+[Stage 22:>                                                         (0 + 8) / 8][Stage 22:=======>                                                  (1 + 7) / 8][Stage 22:==============>                                           (2 + 6) / 8][Stage 22:=====================>                                    (3 + 5) / 8][Stage 22:=============================>                            (4 + 4) / 8]                                                                                Replacing fukushima with nuclear. Choices [nuclear,fukushima].
+[Stage 23:>                                                         (0 + 2) / 2]0.32|match report tunis al ahly cafchampionsleague football soccer africa
+[Stage 23:=============================>                            (1 + 1) / 2]                                                                                [Stage 38:>                                                         (0 + 2) / 2][Stage 38:=============================>                            (1 + 1) / 2]                                                                                0.42|monaeltahawy female journalist savagely attack cairo egypt
+[Stage 39:>                                                         (0 + 2) / 2][Stage 39:=============================>                            (1 + 1) / 2]                                                                                0.42|egypt alien
+[Stage 40:>                                                         (0 + 2) / 2][Stage 40:=============================>                            (1 + 1) / 2]0.45|another question head referendum committee hour leave round egypt
+                                                                                [Stage 41:>                                                         (0 + 2) / 2][Stage 41:=============================>                            (1 + 1) / 2]                                                                                0.49|proud egyptian fb tahrir egypt
+[Stage 42:>                                                         (0 + 2) / 2][Stage 42:=============================>                            (1 + 1) / 2]0.27|per ogni sorpresina di oggi dobbiamo sempre ringraziare tantawi per quella notte tragica cui sciolse il parlamento per egypt
+                                                                                [Stage 43:>                                                         (0 + 2) / 2][Stage 43:=============================>                            (1 + 1) / 2]                                                                                0.53|photography update anti muslim brotherhood protest egypt mb ikhwan morsi
+[Stage 44:>                                                         (0 + 2) / 2][Stage 44:=============================>                            (1 + 1) / 2]0.43|egypt fat black girl get spank big cock lol
+                                                                                [Stage 45:>                                                         (0 + 2) / 2][Stage 45:=============================>                            (1 + 1) / 2]0.47|ianinegypt scene outside presidential egypt
+                                                                                [Stage 46:>                                                         (0 + 2) / 2][Stage 46:=============================>                            (1 + 1) / 2]0.45|egypt
+                                                                                [Stage 47:>                                                         (0 + 2) / 2][Stage 47:=============================>                            (1 + 1) / 2]0.51|egypt salafists order coptic church land egypt salafist copt
+                                                                                [Stage 48:>                                                         (0 + 2) / 2][Stage 48:=============================>                            (1 + 1) / 2]0.5|translate egypt clash alexandria phase referendum egyptian
+                                                                                [Stage 49:>                                                         (0 + 2) / 2][Stage 49:=============================>                            (1 + 1) / 2]0.5|egypt protest morsi power grab first flower arabspring shalom cohen
+                                                                                [Stage 50:>                                                         (0 + 2) / 2][Stage 50:=============================>                            (1 + 1) / 2]0.51|eyeoncambodia egypt right obama egypt murder violation human right eh
+                                                                                [Stage 51:>                                                         (0 + 2) / 2][Stage 51:=============================>                            (1 + 1) / 2]0.5|brotherhood become psychiatrist via ahramonline morsi islamist salafists egypt
+                                                                                [Stage 52:>                                                         (0 + 2) / 2][Stage 52:=============================>                            (1 + 1) / 2]                                                                                0.34|miss summer weather sky instaweather instaweatherpro outdoors nature el dokki egypt day autumn
+[Stage 53:>                                                         (0 + 2) / 2][Stage 53:=============================>                            (1 + 1) / 2]0.4|ibrahim eissa host hamdeen sabbahi tonight al qahera wal na egypt
+                                                                                [Stage 54:>                                                         (0 + 2) / 2][Stage 54:=============================>                            (1 + 1) / 2]                                                                                0.55|say gaddafi take state full tahrir egypt
+[Stage 55:>                                                         (0 + 2) / 2][Stage 55:=============================>                            (1 + 1) / 2]                                                                                0.38|tt nilenewschannel greek president israel take gas oil resource
+[Stage 56:>                                                         (0 + 2) / 2][Stage 56:=============================>                            (1 + 1) / 2]0.38|love hate egyptian
+                                                                                Retrieved 5 new auxiliary tweets.
+1.0|egypt salafists order coptic church land egypt salafist copt
+1.0|say gaddafi take state full tahrir egypt
+1.0|photography update anti muslim brotherhood protest egypt mb ikhwan morsi
+1.0|eyeoncambodia egypt right obama egypt murder violation human right eh
+0.0|per ogni sorpresina di oggi dobbiamo sempre ringraziare tantawi per quella notte tragica cui sciolse il parlamento per egypt
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/a5757df3-96ba-4f2f-a5a6-82dcb259de83
+
+Aux F1 - Iteration-1=0.88
+Precision=0.85
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+11.0  4.0   
+0.0   23.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 81:>                                                         (0 + 8) / 8][Stage 81:=======>                                                  (1 + 7) / 8][Stage 81:===========================================>              (6 + 2) / 8][Stage 81:==================================================>       (7 + 1) / 8]                                                                                [Stage 82:>                                                         (0 + 2) / 2][Stage 82:=============================>                            (1 + 1) / 2]                                                                                0.52|egypt islamist moron proudly present item threaten book christ cartridge
+[Stage 83:>                                                         (0 + 2) / 2][Stage 83:=============================>                            (1 + 1) / 2]                                                                                0.43|vote period extend due high turnout say sec lack egypt
+[Stage 84:>                                                         (0 + 2) / 2][Stage 84:=============================>                            (1 + 1) / 2]0.46|shalandawilkers flagman egypt camel israel give terrorist
+                                                                                [Stage 85:>                                                         (0 + 2) / 2][Stage 85:=============================>                            (1 + 1) / 2]                                                                                0.46|mt koertdebeuf baradei cnn ready national first postpone dialogue damoclese egypt
+[Stage 86:>                                                         (0 + 2) / 2][Stage 86:=============================>                            (1 + 1) / 2]                                                                                0.43|egypt draw
+[Stage 87:>                                                         (0 + 2) / 2][Stage 87:=============================>                            (1 + 1) / 2]                                                                                0.47|egypt masr april leader quit constituent assembly sinai
+[Stage 88:>                                                         (0 + 2) / 2][Stage 88:=============================>                            (1 + 1) / 2]0.44|antonywahba protest firework laser egypt palace
+                                                                                [Stage 89:>                                                         (0 + 2) / 2][Stage 89:=============================>                            (1 + 1) / 2]0.38|safarkhan art egypt november exhibition wael darwish pm till november
+                                                                                [Stage 90:>                                                         (0 + 2) / 2][Stage 90:=============================>                            (1 + 1) / 2]                                                                                0.39|egypt footage wow nostalgia
+[Stage 91:>                                                         (0 + 2) / 2][Stage 91:=============================>                            (1 + 1) / 2]                                                                                0.43|egypt love much hahaha
+[Stage 92:>                                                         (0 + 2) / 2][Stage 92:=============================>                            (1 + 1) / 2]0.38|egypt semi retard
+                                                                                [Stage 93:>                                                         (0 + 2) / 2][Stage 93:=============================>                            (1 + 1) / 2]0.41|egypt little reason celebrate south first birthday
+                                                                                [Stage 94:>                                                         (0 + 2) / 2][Stage 94:=============================>                            (1 + 1) / 2]0.47|muslim hq set ablaze office egypt ikhwan
+                                                                                [Stage 95:>                                                         (0 + 2) / 2][Stage 95:=============================>                            (1 + 1) / 2]                                                                                0.51|morsy talk hand create presidential palace civil war egypt
+[Stage 96:>                                                         (0 + 2) / 2][Stage 96:=============================>                            (1 + 1) / 2]0.39|ankh british museum hieroglyphic egypt ankh
+                                                                                [Stage 97:>                                                         (0 + 2) / 2][Stage 97:=============================>                            (1 + 1) / 2]0.48|islamist egypt morsi tahrir auc
+                                                                                [Stage 98:>                                                         (0 + 2) / 2][Stage 98:=============================>                            (1 + 1) / 2]0.47|destruction heritage sit syria raise question cost democracy occupy ows occupywallstreet
+                                                                                [Stage 99:>                                                         (0 + 2) / 2][Stage 99:=============================>                            (1 + 1) / 2]                                                                                0.28|nyc forecast overnight partly low temp occupywallstreet tpp
+[Stage 100:>                                                        (0 + 2) / 2][Stage 100:============================>                            (1 + 1) / 2]0.26|nyc forecast afternoon high temp occupywallstreet tpp sgp
+                                                                                [Stage 101:>                                                        (0 + 2) / 2][Stage 101:============================>                            (1 + 1) / 2]0.43|link city underwater year occupy ows occupywallstreet occupyhq grassroots usa
+                                                                                Retrieved 4 new auxiliary tweets.
+1.0|egypt islamist moron proudly present item threaten book christ cartridge
+0.0|nyc forecast overnight partly low temp occupywallstreet tpp
+1.0|morsy talk hand create presidential palace civil war egypt
+0.0|nyc forecast afternoon high temp occupywallstreet tpp sgp
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/83fc04a9-0e50-4072-b820-ec3cc2a9d819
+
+Aux F1 - Iteration-2=0.86
+Precision=0.85
+Recall=0.96
+Aux F1 - ConfusionMatrix:
+11.0  4.0   
+1.0   22.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 126:>                                                        (0 + 8) / 8][Stage 126:=======>                                                 (1 + 7) / 8][Stage 126:==============>                                          (2 + 6) / 8][Stage 126:=====================>                                   (3 + 5) / 8][Stage 126:============================>                            (4 + 4) / 8][Stage 126:==========================================>              (6 + 2) / 8][Stage 126:=================================================>       (7 + 1) / 8]                                                                                [Stage 127:>                                                        (0 + 2) / 2][Stage 127:============================>                            (1 + 1) / 2]                                                                                0.4|vietnamese lawyer face obstruction ahead trial occupy ows occupywallstreet occupyhq grassroots
+[Stage 128:>                                                        (0 + 2) / 2][Stage 128:============================>                            (1 + 1) / 2]                                                                                0.39|andrew curtin photo selfie occupy ows occupywallstreet occupyhq grassroots
+[Stage 129:>                                                        (0 + 2) / 2][Stage 129:============================>                            (1 + 1) / 2]0.3|nyc forecast wed night low temp occupywallstreet glennbeck tcot
+                                                                                [Stage 130:>                                                        (0 + 2) / 2][Stage 130:============================>                            (1 + 1) / 2]0.4|alex schaefer burn bank occupy ows occupywallstreet occupyhq grassroots
+                                                                                [Stage 131:>                                                        (0 + 2) / 2][Stage 131:============================>                            (1 + 1) / 2]0.29|study economic inequality lead downfall civilization
+                                                                                [Stage 132:>                                                        (0 + 2) / 2][Stage 132:============================>                            (1 + 1) / 2]0.35|dome special slideshow occupy ows occupywallstreet occupyhq grassroots
+                                                                                [Stage 133:>                                                        (0 + 2) / 2][Stage 133:============================>                            (1 + 1) / 2]                                                                                0.33|cme break occupy ows occupywallstreet occupyhq
+[Stage 134:>                                                        (0 + 2) / 2][Stage 134:============================>                            (1 + 1) / 2]                                                                                0.33|nyc forecast mon high temp get smart occupywallstreet sgp
+[Stage 135:>                                                        (0 + 2) / 2][Stage 135:============================>                            (1 + 1) / 2]                                                                                0.38|preview death bin lade revisted nightly news video occupy ows occupywallstreet occupyhq
+[Stage 136:>                                                        (0 + 2) / 2][Stage 136:============================>                            (1 + 1) / 2]                                                                                0.36|irs rule bitcoin property subject capital gain tax occupy ows occupywallstreet occupyhq grassroots
+[Stage 137:>                                                        (0 + 2) / 2][Stage 137:============================>                            (1 + 1) / 2]0.36|confession juiced journalist occupy ows occupywallstreet occupyhq grassroots
+                                                                                [Stage 138:>                                                        (0 + 2) / 2][Stage 138:============================>                            (1 + 1) / 2]0.27|ows kitchen nostalgia submit
+                                                                                [Stage 139:>                                                        (0 + 2) / 2][Stage 139:============================>                            (1 + 1) / 2]                                                                                0.33|nyc forecast sit night partly low temp occupywallstreet tcot
+[Stage 140:>                                                        (0 + 2) / 2][Stage 140:============================>                            (1 + 1) / 2]0.3|nyc forecast fri night low temp occupywallstreet topprog glennbeck
+                                                                                [Stage 141:>                                                        (0 + 2) / 2][Stage 141:============================>                            (1 + 1) / 2]0.46|israel gaza big picture occupy ows occupywallstreet occupyhq grassroots usa canada europe
+                                                                                [Stage 142:>                                                        (0 + 2) / 2][Stage 142:============================>                            (1 + 1) / 2]0.28|nyc forecast sun night mostly low temp occupywallstreet tpp glennbeck
+                                                                                [Stage 143:>                                                        (0 + 2) / 2][Stage 143:============================>                            (1 + 1) / 2]                                                                                0.45|secretive turkish movement buy influence occupy ows occupywallstreet occupyhq grassroots usa
+[Stage 144:>                                                        (0 + 2) / 2][Stage 144:============================>                            (1 + 1) / 2]                                                                                0.32|nyc forecast sit night mostly low temp occupywallstreet tcot tcot
+[Stage 145:>                                                        (0 + 2) / 2][Stage 145:============================>                            (1 + 1) / 2]                                                                                0.26|nyc forecast afternoon high temp occupywallstreet tpp
+[Stage 146:>                                                        (0 + 2) / 2][Stage 146:============================>                            (1 + 1) / 2]                                                                                0.37|buy custom nyc street sign may suggest
+Retrieved 6 new auxiliary tweets.
+0.0|study economic inequality lead downfall civilization
+0.0|ows kitchen nostalgia submit
+0.0|nyc forecast afternoon high temp occupywallstreet tpp
+0.0|nyc forecast fri night low temp occupywallstreet topprog glennbeck
+0.0|nyc forecast wed night low temp occupywallstreet glennbeck tcot
+0.0|nyc forecast sun night mostly low temp occupywallstreet tpp glennbeck
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/7e2c9171-8780-47e5-b78b-c1a3a7175e6c
+
+Aux F1 - Iteration-3=0.89
+Precision=0.95
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+14.0  1.0   
+3.0   20.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 171:>                                                        (0 + 8) / 8][Stage 171:=======>                                                 (1 + 7) / 8][Stage 171:==============>                                          (2 + 6) / 8][Stage 171:=====================>                                   (3 + 5) / 8][Stage 171:============================>                            (4 + 4) / 8][Stage 171:===================================>                     (5 + 3) / 8][Stage 171:==========================================>              (6 + 2) / 8][Stage 171:=================================================>       (7 + 1) / 8]                                                                                [Stage 172:>                                                        (0 + 2) / 2][Stage 172:============================>                            (1 + 1) / 2]                                                                                0.47|jesse jackson call symbolic protest clipper player occupy ows occupywallstreet occupyhq
+[Stage 173:>                                                        (0 + 2) / 2][Stage 173:============================>                            (1 + 1) / 2]                                                                                0.37|brussels conference un stress need approach stabilize mali occupy ows occupywallstreet
+[Stage 174:>                                                        (0 + 2) / 2][Stage 174:============================>                            (1 + 1) / 2]                                                                                0.28|occupywallstreet give nypd perfect excuse crack elderly veteran
+[Stage 175:>                                                        (0 + 2) / 2][Stage 175:============================>                            (1 + 1) / 2]                                                                                0.46|colombia justice peace law failure expert say occupy ows occupywallstreet occupyhq grassroots
+[Stage 176:>                                                        (0 + 2) / 2][Stage 176:============================>                            (1 + 1) / 2]0.34|soil association disown say resign trustee occupy ows occupywallstreet occupyhq
+                                                                                [Stage 177:>                                                        (0 + 2) / 2][Stage 177:============================>                            (1 + 1) / 2]0.34|cull human herd century occupy ows occupywallstreet occupyhq grassroots
+                                                                                [Stage 178:>                                                        (0 + 2) / 2][Stage 178:============================>                            (1 + 1) / 2]0.22|support brother sister occupygezi reoccupy zuccotti occupywallstreet
+                                                                                [Stage 179:>                                                        (0 + 2) / 2][Stage 179:============================>                            (1 + 1) / 2]0.4|may ga reid park occupy ows occupywallstreet occupyhq grassroots usa canada
+                                                                                [Stage 180:>                                                        (0 + 2) / 2][Stage 180:============================>                            (1 + 1) / 2]0.45|unhcr urge prevent refugee expulsion uae occupy ows occupywallstreet occupyhq grassroots
+                                                                                [Stage 181:>                                                        (0 + 2) / 2][Stage 181:============================>                            (1 + 1) / 2]                                                                                0.43|new corvette spytech record conversation video occupy ows occupywallstreet occupyhq grassroots usa
+[Stage 182:>                                                        (0 + 2) / 2][Stage 182:============================>                            (1 + 1) / 2]                                                                                0.32|hilaryclinton run president hilary care olsx teamster occupywallstreet
+[Stage 183:>                                                        (0 + 2) / 2][Stage 183:============================>                            (1 + 1) / 2]                                                                                0.4|japan next economic domino occupy ows occupywallstreet occupyhq grassroots
+[Stage 184:>                                                        (0 + 2) / 2][Stage 184:============================>                            (1 + 1) / 2]                                                                                0.42|dear state department moral authority tell country treat protest occupywallstreet
+[Stage 185:>                                                        (0 + 2) / 2][Stage 185:============================>                            (1 + 1) / 2]                                                                                0.32|together jefferson airplane occupywallstreet
+[Stage 186:>                                                        (0 + 2) / 2][Stage 186:============================>                            (1 + 1) / 2]                                                                                0.44|politico rand paul marco rubio differ iraq action occupy ows occupywallstreet occupyhq grassroots
+[Stage 187:>                                                        (0 + 2) / 2][Stage 187:============================>                            (1 + 1) / 2]0.34|nyc forecast fri night mostly low temp get smart occupywallstreet tlot tlot
+                                                                                [Stage 188:>                                                        (0 + 2) / 2][Stage 188:============================>                            (1 + 1) / 2]                                                                                0.38|banky bbc news occupy ows occupywallstreet occupyhq grassroots
+[Stage 189:>                                                        (0 + 2) / 2][Stage 189:============================>                            (1 + 1) / 2]                                                                                0.38|nyc forecast tue night low temp occupywallstreet teaparty
+[Stage 190:>                                                        (0 + 2) / 2][Stage 190:============================>                            (1 + 1) / 2]                                                                                0.24|alliancebl give bank tab occupywallstreet
+[Stage 191:>                                                        (0 + 2) / 2][Stage 191:============================>                            (1 + 1) / 2]0.34|ban kettle hairdryers help climate change occupy ows occupywallstreet
+                                                                                Retrieved 3 new auxiliary tweets.
+0.0|support brother sister occupygezi reoccupy zuccotti occupywallstreet
+0.0|alliancebl give bank tab occupywallstreet
+0.0|occupywallstreet give nypd perfect excuse crack elderly veteran
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/40a65b00-6cf5-46eb-8f06-f3692828e167
+
+Aux F1 - Iteration-4=0.8
+Precision=0.83
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+11.0  4.0   
+3.0   20.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 216:>                                                        (0 + 8) / 8][Stage 216:=======>                                                 (1 + 7) / 8][Stage 216:==============>                                          (2 + 6) / 8][Stage 216:=====================>                                   (3 + 5) / 8][Stage 216:============================>                            (4 + 4) / 8][Stage 216:===================================>                     (5 + 3) / 8][Stage 216:==========================================>              (6 + 2) / 8][Stage 216:=================================================>       (7 + 1) / 8]                                                                                [Stage 217:>                                                        (0 + 2) / 2][Stage 217:============================>                            (1 + 1) / 2]0.36|fin fraud jp morgan agree pay record settle charge toxic mortgage occupywallstreet
+                                                                                [Stage 218:>                                                        (0 + 2) / 2][Stage 218:============================>                            (1 + 1) / 2]                                                                                0.35|shooter moncton phone report part video occupy ows occupywallstreet occupyhq
+[Stage 219:>                                                        (0 + 2) / 2][Stage 219:============================>                            (1 + 1) / 2]0.36|reason question investigate anniversary occupy ows occupywallstreet occupyhq
+                                                                                [Stage 220:>                                                        (0 + 2) / 2][Stage 220:============================>                            (1 + 1) / 2]                                                                                0.36|government privatization support inequality occupy ows opesr occupyhq
+[Stage 221:>                                                        (0 + 2) / 2][Stage 221:============================>                            (1 + 1) / 2]                                                                                0.4|welcome back lobbyist obama save seat capitol hill occupy ows occupywallstreet occupyhq
+[Stage 222:>                                                        (0 + 2) / 2][Stage 222:============================>                            (1 + 1) / 2]0.41|surveillance camera soon read lip video occupy ows occupywallstreet occupyhq grassroots
+                                                                                [Stage 223:>                                                        (0 + 2) / 2][Stage 223:============================>                            (1 + 1) / 2]                                                                                0.37|rand woman problem occupy ows occupywallstreet occupyhq grassroots
+[Stage 224:>                                                        (0 + 2) / 2][Stage 224:============================>                            (1 + 1) / 2]0.42|unhcr condemn deadly attack homs collective shelter occupy ows occupywallstreet occupyhq grassroots
+                                                                                [Stage 225:>                                                        (0 + 2) / 2][Stage 225:============================>                            (1 + 1) / 2]                                                                                0.39|nyc forecast wed high temp get smart occupywallstreet ocra teaparty
+[Stage 226:>                                                        (0 + 2) / 2][Stage 226:============================>                            (1 + 1) / 2]                                                                                0.34|rat meat sell lamb china occupy ows occupywallstreet occupyhq grassroots
+[Stage 227:>                                                        (0 + 2) / 2][Stage 227:============================>                            (1 + 1) / 2]0.3|gunfail ix occupy ows occupywallstreet occupyhq grassroots
+                                                                                [Stage 228:>                                                        (0 + 2) / 2][Stage 228:============================>                            (1 + 1) / 2]0.41|work poor welcome occupy ows occupywallstreet occupyhq grassroots usa canada
+                                                                                [Stage 229:>                                                        (0 + 2) / 2][Stage 229:============================>                            (1 + 1) / 2]0.34|nyc forecast mon night low temp get smart occupywallstreet topprog glennbeck
+                                                                                [Stage 230:>                                                        (0 + 2) / 2][Stage 230:============================>                            (1 + 1) / 2]0.33|maddowblog agenda reek radicalism turn notch
+                                                                                [Stage 231:>                                                        (0 + 2) / 2][Stage 231:============================>                            (1 + 1) / 2]                                                                                0.3|nyc forecast wed night low temp occupywallstreet sgp
+[Stage 232:>                                                        (0 + 2) / 2][Stage 232:============================>                            (1 + 1) / 2]0.31|green group accuse trash reputation overseas occupy ows occupywallstreet occupyhq
+                                                                                [Stage 233:>                                                        (0 + 2) / 2][Stage 233:============================>                            (1 + 1) / 2]0.25|noamchomsky quote mymanatee ows occupywallstreet
+                                                                                [Stage 234:>                                                        (0 + 2) / 2][Stage 234:============================>                            (1 + 1) / 2]0.3|santa give present rich occupywallstreet perpetuatingpoverty
+                                                                                [Stage 235:>                                                        (0 + 2) / 2][Stage 235:============================>                            (1 + 1) / 2]                                                                                0.22|il movimento mondiale osservato anche da nel andremo micah white
+[Stage 236:>                                                        (0 + 2) / 2][Stage 236:============================>                            (1 + 1) / 2]0.38|texas appalachia put body line occupy ows occupywallstreet occupyhq grassroots
+                                                                                Retrieved 5 new auxiliary tweets.
+0.0|noamchomsky quote mymanatee ows occupywallstreet
+0.0|il movimento mondiale osservato anche da nel andremo micah white
+0.0|gunfail ix occupy ows occupywallstreet occupyhq grassroots
+0.0|nyc forecast wed night low temp occupywallstreet sgp
+0.0|santa give present rich occupywallstreet perpetuatingpoverty
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/5031bc32-0784-4900-8f2c-08e97b55d072
+
+Aux F1 - Iteration-5=0.8
+Precision=0.83
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+11.0  4.0   
+3.0   20.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 261:>                                                        (0 + 8) / 8][Stage 261:=======>                                                 (1 + 7) / 8][Stage 261:==============>                                          (2 + 6) / 8][Stage 261:=====================>                                   (3 + 5) / 8][Stage 261:============================>                            (4 + 4) / 8][Stage 261:===================================>                     (5 + 3) / 8][Stage 261:==========================================>              (6 + 2) / 8][Stage 261:=================================================>       (7 + 1) / 8]                                                                                [Stage 262:>                                                        (0 + 2) / 2][Stage 262:============================>                            (1 + 1) / 2]                                                                                0.19|shugdenlibrary dalai lama slave owner dalailama lamagate occupywallstreet
+[Stage 263:>                                                        (0 + 2) / 2][Stage 263:============================>                            (1 + 1) / 2]0.33|include contradiction democracy centralism leadership lead ows occupywallstreet
+                                                                                [Stage 264:>                                                        (0 + 2) / 2][Stage 264:============================>                            (1 + 1) / 2]                                                                                0.48|global may day protest austerity death bangladeshi worker via youtube ows occupywallstreet
+[Stage 265:>                                                        (0 + 2) / 2][Stage 265:============================>                            (1 + 1) / 2]0.37|decolonize pipeline resistance interview freda huson occupy ows occupywallstreet occupyhq grassroots
+                                                                                [Stage 266:>                                                        (0 + 2) / 2][Stage 266:============================>                            (1 + 1) / 2]0.29|nyc forecast thu night mostly low temp occupywallstreet tpp topprog
+                                                                                [Stage 267:>                                                        (0 + 2) / 2][Stage 267:============================>                            (1 + 1) / 2]                                                                                0.26|win mt gaypatriot occupywallstreet communist occupyhongkong
+[Stage 268:>                                                        (0 + 2) / 2][Stage 268:============================>                            (1 + 1) / 2]                                                                                0.38|may day la schedule occupy ows occupywallstreet occupyhq grassroots
+[Stage 269:>                                                        (0 + 2) / 2][Stage 269:============================>                            (1 + 1) / 2]0.32|kelly thomas verdict cop license murder filmthepolice anonfamily opsafewinter occupywallstreet
+                                                                                [Stage 270:>                                                        (0 + 2) / 2][Stage 270:============================>                            (1 + 1) / 2]                                                                                0.41|hqoccupy sudanese trader kill south sudan ambush occupy ows occupywallstreet occupyhq grassroots
+[Stage 271:>                                                        (0 + 2) / 2][Stage 271:============================>                            (1 + 1) / 2]                                                                                0.3|nyc forecast wed night low temp occupywallstreet ocra topprog
+[Stage 272:>                                                        (0 + 2) / 2][Stage 272:============================>                            (1 + 1) / 2]0.46|iran two ahwazi arab men risk imminent execution occupy ows occupywallstreet occupyhq grassroots
+                                                                                [Stage 273:>                                                        (0 + 2) / 2][Stage 273:============================>                            (1 + 1) / 2]                                                                                0.39|amateur activist occupy ows occupywallstreet occupyhq grassroots usa canada
+[Stage 274:>                                                        (0 + 2) / 2][Stage 274:============================>                            (1 + 1) / 2]                                                                                0.26|nyc forecast sun high temp occupywallstreet tpp tpp
+[Stage 275:>                                                        (0 + 2) / 2][Stage 275:============================>                            (1 + 1) / 2]0.34|greek police arrest editor weekly magazine dissent ows occupygreece occupywallstreet
+                                                                                [Stage 276:>                                                        (0 + 2) / 2][Stage 276:============================>                            (1 + 1) / 2]0.41|news november occupy ows occupywallstreet occupyhq grassroots usa canada
+                                                                                [Stage 277:>                                                        (0 + 2) / 2][Stage 277:============================>                            (1 + 1) / 2]0.42|malala receive liberty medal occupy ows occupywallstreet occupyhq grassroots usa canada
+                                                                                [Stage 278:>                                                        (0 + 2) / 2][Stage 278:============================>                            (1 + 1) / 2]                                                                                0.48|pentagon ready train syrian rebel occupy ows occupywallstreet occupyhq grassroots usa
+[Stage 279:>                                                        (0 + 2) / 2][Stage 279:============================>                            (1 + 1) / 2]                                                                                0.3|nyc forecast wed night mostly low temp occupywallstreet tpp topprog
+[Stage 280:>                                                        (0 + 2) / 2][Stage 280:============================>                            (1 + 1) / 2]0.49|turkey withstand hostage ordeal say turkish pm occupy ows occupywallstreet occupyhq grassroots usa
+                                                                                [Stage 281:>                                                        (0 + 2) / 2][Stage 281:============================>                            (1 + 1) / 2]                                                                                0.43|hardliner impeach moderate minister green movement protest occupy ows occupywallstreet
+Retrieved 6 new auxiliary tweets.
+0.0|nyc forecast thu night mostly low temp occupywallstreet tpp topprog
+0.0|nyc forecast wed night low temp occupywallstreet ocra topprog
+0.0|nyc forecast sun high temp occupywallstreet tpp tpp
+0.0|nyc forecast wed night mostly low temp occupywallstreet tpp topprog
+0.0|shugdenlibrary dalai lama slave owner dalailama lamagate occupywallstreet
+0.0|win mt gaypatriot occupywallstreet communist occupyhongkong
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/5abfdd8c-9835-47bc-9ad0-1da0f0398c6b
+
+Aux F1 - Iteration-6=0.86
+Precision=0.91
+Recall=0.87
+Aux F1 - ConfusionMatrix:
+13.0  2.0   
+3.0   20.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 306:>                                                        (0 + 8) / 8][Stage 306:=======>                                                 (1 + 7) / 8][Stage 306:=====================>                                   (3 + 5) / 8][Stage 306:============================>                            (4 + 4) / 8][Stage 306:==========================================>              (6 + 2) / 8][Stage 306:=================================================>       (7 + 1) / 8]                                                                                [Stage 307:>                                                        (0 + 2) / 2][Stage 307:============================>                            (1 + 1) / 2]                                                                                0.45|silent crisis bahrain opposition seek support international attention russia occupy ows occupywallstreet
+[Stage 308:>                                                        (0 + 2) / 2][Stage 308:============================>                            (1 + 1) / 2]0.38|celente world currency trouble occupy ows occupywallstreet occupyhq grassroots
+                                                                                [Stage 309:>                                                        (0 + 2) / 2][Stage 309:============================>                            (1 + 1) / 2]0.25|return pluribus occupy opesr ows
+                                                                                [Stage 310:>                                                        (0 + 2) / 2][Stage 310:============================>                            (1 + 1) / 2]                                                                                0.31|bureau reclamation release additional flow avert klamath river fish occupy ows
+[Stage 311:>                                                        (0 + 2) / 2][Stage 311:============================>                            (1 + 1) / 2]0.3|nyc forecast mon night low temp occupywallstreet tlot sgp
+                                                                                [Stage 312:>                                                        (0 + 2) / 2][Stage 312:============================>                            (1 + 1) / 2]                                                                                0.39|phoenix last night cop kill unarm black man afraid prescription bottle occupy
+[Stage 313:>                                                        (0 + 2) / 2][Stage 313:============================>                            (1 + 1) / 2]                                                                                0.3|nyc forecast mon night mostly low temp occupywallstreet topprog tcot
+[Stage 314:>                                                        (0 + 2) / 2][Stage 314:============================>                            (1 + 1) / 2]                                                                                0.43|syria meet end solution occupy ows occupywallstreet occupyhq grassroots
+[Stage 315:>                                                        (0 + 2) / 2][Stage 315:============================>                            (1 + 1) / 2]                                                                                0.29|giovalenzi il natale vince su tutto capodanno nella grande happy new year
+[Stage 316:>                                                        (0 + 2) / 2][Stage 316:============================>                            (1 + 1) / 2]                                                                                0.32|nyc forecast sit night low temp occupywallstreet ocra sgp
+[Stage 317:>                                                        (0 + 2) / 2][Stage 317:============================>                            (1 + 1) / 2]                                                                                0.3|nyc forecast wed night mostly low temp occupywallstreet tpp
+[Stage 318:>                                                        (0 + 2) / 2][Stage 318:============================>                            (1 + 1) / 2]                                                                                0.25|alle reden zur deutsche bank hauptversammlung frankfurt occupy ows
+[Stage 319:>                                                        (0 + 2) / 2][Stage 319:============================>                            (1 + 1) / 2]0.34|nyc forecast fri partly high temp get smart occupywallstreet tlot topprog
+                                                                                [Stage 320:>                                                        (0 + 2) / 2][Stage 320:============================>                            (1 + 1) / 2]                                                                                0.28|qe backfire dividend quest usurp growth cut research quantitative ease may make
+[Stage 321:>                                                        (0 + 2) / 2][Stage 321:============================>                            (1 + 1) / 2]0.38|crisis southern new part occupy ows occupywallstreet occupyhq grassroots
+                                                                                [Stage 322:>                                                        (0 + 2) / 2][Stage 322:============================>                            (1 + 1) / 2]0.44|egypt wassssssuuuuuupppp ur horny watch lol
+                                                                                [Stage 323:>                                                        (0 + 2) / 2][Stage 323:============================>                            (1 + 1) / 2]0.49|get egypt
+                                                                                [Stage 324:>                                                        (0 + 2) / 2][Stage 324:============================>                            (1 + 1) / 2]0.45|sumofmind sumofmind sumofmind archive sexually harass keep amman cairo egypt jordan sexu
+                                                                                [Stage 325:>                                                        (0 + 2) / 2][Stage 325:============================>                            (1 + 1) / 2]                                                                                0.43|egypt serious
+[Stage 326:>                                                        (0 + 2) / 2][Stage 326:============================>                            (1 + 1) / 2]0.47|egypt jordan work hard employ disable worker tahrir
+                                                                                Retrieved 7 new auxiliary tweets.
+0.0|nyc forecast mon night low temp occupywallstreet tlot sgp
+0.0|giovalenzi il natale vince su tutto capodanno nella grande happy new year
+0.0|qe backfire dividend quest usurp growth cut research quantitative ease may make
+0.0|return pluribus occupy opesr ows
+0.0|nyc forecast mon night mostly low temp occupywallstreet topprog tcot
+0.0|alle reden zur deutsche bank hauptversammlung frankfurt occupy ows
+0.0|nyc forecast wed night mostly low temp occupywallstreet tpp
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/ddc77e8e-0138-40aa-a26e-09f615f87a3e
+
+Aux F1 - Iteration-7=0.84
+Precision=0.95
+Recall=0.78
+Aux F1 - ConfusionMatrix:
+14.0  1.0   
+5.0   18.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 351:>                                                        (0 + 8) / 8][Stage 351:=======>                                                 (1 + 7) / 8][Stage 351:==============>                                          (2 + 6) / 8][Stage 351:=====================>                                   (3 + 5) / 8][Stage 351:============================>                            (4 + 4) / 8][Stage 351:==========================================>              (6 + 2) / 8][Stage 351:=================================================>       (7 + 1) / 8]                                                                                [Stage 352:>                                                        (0 + 2) / 2][Stage 352:============================>                            (1 + 1) / 2]                                                                                0.32|sun truth europe
+[Stage 353:>                                                        (0 + 2) / 2][Stage 353:============================>                            (1 + 1) / 2]0.43|bbm pin add mufc manchesterunited bbmshare bbpins egypt blackberrypins blackberrymessenger dubai manchesterbbmpins
+                                                                                [Stage 354:>                                                        (0 + 2) / 2][Stage 354:============================>                            (1 + 1) / 2]0.44|sharm el sheikh egypt weather fair sharm egypt
+                                                                                [Stage 355:>                                                        (0 + 2) / 2][Stage 355:============================>                            (1 + 1) / 2]0.41|riiiiiposo morsi polipo itihadeya egypt os circondato da csf army
+                                                                                [Stage 356:>                                                        (0 + 2) / 2][Stage 356:============================>                            (1 + 1) / 2]                                                                                0.45|alexandria egypt weather fair alexandria egypt
+[Stage 357:>                                                        (0 + 2) / 2][Stage 357:============================>                            (1 + 1) / 2]0.38|egypt giggle rear end ofhttp
+                                                                                [Stage 358:>                                                        (0 + 2) / 2][Stage 358:============================>                            (1 + 1) / 2]0.53|egypt masr uk move towards syria opposition sinai
+                                                                                [Stage 359:>                                                        (0 + 2) / 2][Stage 359:============================>                            (1 + 1) / 2]0.45|spanish court uphold decision hand salem spain egypt
+                                                                                [Stage 360:>                                                        (0 + 2) / 2][Stage 360:============================>                            (1 + 1) / 2]                                                                                0.45|usa russia fsa gain grind putin obama eu uk turkey lebanon egypt
+[Stage 361:>                                                        (0 + 2) / 2][Stage 361:============================>                            (1 + 1) / 2]0.43|palestinianleadership overseasleadership hamas page iran mqmtelevision
+                                                                                [Stage 362:>                                                        (0 + 2) / 2][Stage 362:============================>                            (1 + 1) / 2]                                                                                0.43|askliam ok go sometime go egypt
+[Stage 363:>                                                        (0 + 2) / 2][Stage 363:============================>                            (1 + 1) / 2]                                                                                0.37|egypt uae oxycodone liver toxicity buy tramadol glitter antique saudi ksa bhr
+[Stage 364:>                                                        (0 + 2) / 2][Stage 364:============================>                            (1 + 1) / 2]                                                                                0.48|notice tomorrow safar make egypt islam
+[Stage 365:>                                                        (0 + 2) / 2][Stage 365:============================>                            (1 + 1) / 2]0.43|egypt two son make cry
+                                                                                [Stage 366:>                                                        (0 + 2) / 2][Stage 366:============================>                            (1 + 1) / 2]                                                                                0.42|egypt visit place
+[Stage 367:>                                                        (0 + 2) / 2][Stage 367:============================>                            (1 + 1) / 2]0.42|egypt condition cairo eg eet egyweather
+                                                                                [Stage 368:>                                                        (0 + 2) / 2][Stage 368:============================>                            (1 + 1) / 2]0.5|egyindependent four egyptian activist gaza injure israeli fire convoy palestine egypt
+                                                                                [Stage 369:>                                                        (0 + 2) / 2][Stage 369:============================>                            (1 + 1) / 2]                                                                                0.42|egypt douche bag mousterbates pic alien lol
+[Stage 370:>                                                        (0 + 2) / 2][Stage 370:============================>                            (1 + 1) / 2]                                                                                0.48|remember place kuwait egypt london lebanon syria instapic instaphoto instamood
+[Stage 371:>                                                        (0 + 2) / 2][Stage 371:============================>                            (1 + 1) / 2]0.43|break central bank governor resign post news aswat masriya egypt
+                                                                                Retrieved 1 new auxiliary tweets.
+1.0|egypt masr uk move towards syria opposition sinai
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/ccf0f2c7-8dbb-4481-a676-fc17ec337659
+
+Aux F1 - Iteration-8=0.88
+Precision=0.85
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+11.0  4.0   
+0.0   23.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 396:>                                                        (0 + 8) / 8][Stage 396:=======>                                                 (1 + 7) / 8][Stage 396:==============>                                          (2 + 6) / 8][Stage 396:============================>                            (4 + 4) / 8][Stage 396:===================================>                     (5 + 3) / 8][Stage 396:==========================================>              (6 + 2) / 8]                                                                                [Stage 397:>                                                        (0 + 2) / 2][Stage 397:============================>                            (1 + 1) / 2]                                                                                0.55|mrsedky dear unite state bitch dictator morsi obama egypt politics tahrir
+[Stage 398:>                                                        (0 + 2) / 2][Stage 398:============================>                            (1 + 1) / 2]                                                                                0.43|beautiful sunset cairo egypt
+[Stage 399:>                                                        (0 + 2) / 2][Stage 399:============================>                            (1 + 1) / 2]0.47|egypt believe back
+                                                                                [Stage 400:>                                                        (0 + 2) / 2][Stage 400:============================>                            (1 + 1) / 2]0.35|rachidh wasp date egypt insect rachidh nature photo
+                                                                                [Stage 401:>                                                        (0 + 2) / 2][Stage 401:============================>                            (1 + 1) / 2]                                                                                0.48|egypt uae child try ok follow study buy nfl football jersey saudi ksa bhr
+[Stage 402:>                                                        (0 + 2) / 2][Stage 402:============================>                            (1 + 1) / 2]0.39|chill beach class egypt alexandria beach sunshine sand relax arabic egyptian
+                                                                                [Stage 403:>                                                        (0 + 2) / 2][Stage 403:============================>                            (1 + 1) / 2]                                                                                0.46|cairo contagion lethargy political egyconstitution egypt
+[Stage 404:>                                                        (0 + 2) / 2][Stage 404:============================>                            (1 + 1) / 2]0.28|must read
+                                                                                [Stage 405:>                                                        (0 + 2) / 2][Stage 405:============================>                            (1 + 1) / 2]                                                                                0.54|call egypt sway palestinian end hostility official say gazaunderattack
+[Stage 406:>                                                        (0 + 2) / 2][Stage 406:============================>                            (1 + 1) / 2]                                                                                0.46|tahrir awe horizontal greed love egypt watchingandlearning
+[Stage 407:>                                                        (0 + 2) / 2][Stage 407:============================>                            (1 + 1) / 2]0.49|pitapolicy egypt must forget street child write via lamamaksosa poverty
+                                                                                [Stage 408:>                                                        (0 + 2) / 2][Stage 408:============================>                            (1 + 1) / 2]                                                                                0.45|girl need furniture offer egypt cairo
+[Stage 409:>                                                        (0 + 2) / 2][Stage 409:============================>                            (1 + 1) / 2]0.38|dioscorusboles yes constitution sake divine
+                                                                                [Stage 410:>                                                        (0 + 2) / 2][Stage 410:============================>                            (1 + 1) / 2]                                                                                0.47|nothing make happy pack arrival hall cairo international tourism egypt backontopbitches
+[Stage 411:>                                                        (0 + 2) / 2][Stage 411:============================>                            (1 + 1) / 2]0.47|ikhwanweb mubarak sentence prison base knowledge event lack action prevent egypt
+                                                                                [Stage 412:>                                                        (0 + 2) / 2][Stage 412:============================>                            (1 + 1) / 2]                                                                                0.39|rawyarageh elbaradei moussa sabbahi press conf tgthr egypt
+[Stage 413:>                                                        (0 + 2) / 2][Stage 413:============================>                            (1 + 1) / 2]                                                                                0.42|karshaf groppi bear rovio swiss board ship egypt early country full opportunity
+[Stage 414:>                                                        (0 + 2) / 2][Stage 414:============================>                            (1 + 1) / 2]                                                                                0.39|egypt flood wise time fill middle wide exhaust black hole lighten wait
+[Stage 415:>                                                        (0 + 2) / 2][Stage 415:============================>                            (1 + 1) / 2]                                                                                0.47|egypt live pastor turn church near tahrir field hospital say police fire teargas
+[Stage 416:>                                                        (0 + 2) / 2][Stage 416:============================>                            (1 + 1) / 2]0.45|wow end thousand myth remember maspero egypt
+                                                                                Retrieved 3 new auxiliary tweets.
+1.0|mrsedky dear unite state bitch dictator morsi obama egypt politics tahrir
+0.0|must read
+1.0|call egypt sway palestinian end hostility official say gazaunderattack
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/0fb6534d-5aac-4ffc-9d69-608d3007b67d
+
+Aux F1 - Iteration-9=0.85
+Precision=0.82
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+10.0  5.0   
+0.0   23.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 441:>                                                        (0 + 8) / 8][Stage 441:=======>                                                 (1 + 7) / 8][Stage 441:============================>                            (4 + 4) / 8][Stage 441:===================================>                     (5 + 3) / 8][Stage 441:=================================================>       (7 + 1) / 8]                                                                                [Stage 442:>                                                        (0 + 2) / 2][Stage 442:============================>                            (1 + 1) / 2]                                                                                0.47|monaeltahawy esteem salafi know sexual car old support egypt porn ban ht
+[Stage 443:>                                                        (0 + 2) / 2][Stage 443:============================>                            (1 + 1) / 2]0.45|sventruenorth eye egypt constitutional peace globalpolitics canpoli
+                                                                                [Stage 444:>                                                        (0 + 2) / 2][Stage 444:============================>                            (1 + 1) / 2]                                                                                0.42|etribune australia urge ban cattle export egypt
+[Stage 445:>                                                        (0 + 2) / 2][Stage 445:============================>                            (1 + 1) / 2]0.49|mt eu rightfully change policy towards egypt stand universal right peo
+                                                                                [Stage 446:>                                                        (0 + 2) / 2][Stage 446:============================>                            (1 + 1) / 2]0.51|egypt masr egyptian stage mass rally sinai
+                                                                                [Stage 447:>                                                        (0 + 2) / 2][Stage 447:============================>                            (1 + 1) / 2]                                                                                0.51|dailynewsegypt thousand demonstrator front presidential palace sing national egypt dne via
+[Stage 448:>                                                        (0 + 2) / 2][Stage 448:============================>                            (1 + 1) / 2]                                                                                0.45|anything interest go egypt
+[Stage 449:>                                                        (0 + 2) / 2][Stage 449:============================>                            (1 + 1) / 2]                                                                                0.48|mt clash cairo egypt plunge deep crisis afp video
+[Stage 450:>                                                        (0 + 2) / 2][Stage 450:============================>                            (1 + 1) / 2]0.45|egypt country
+                                                                                [Stage 451:>                                                        (0 + 2) / 2][Stage 451:============================>                            (1 + 1) / 2]                                                                                0.3|shit
+[Stage 452:>                                                        (0 + 2) / 2][Stage 452:============================>                            (1 + 1) / 2]0.53|demonstration surround presidential palace tahrir cairo egypt morsi ikh
+                                                                                [Stage 453:>                                                        (0 + 2) / 2][Stage 453:============================>                            (1 + 1) / 2]                                                                                0.46|hear mr see auc marchtomorsi tuesday egypt
+[Stage 454:>                                                        (0 + 2) / 2][Stage 454:============================>                            (1 + 1) / 2]                                                                                0.5|matthewjbell must quite sight egypt presidential palace cairo
+[Stage 455:>                                                        (0 + 2) / 2][Stage 455:============================>                            (1 + 1) / 2]0.35|long time egypt time travel
+                                                                                [Stage 456:>                                                        (0 + 2) / 2][Stage 456:============================>                            (1 + 1) / 2]                                                                                0.33|yallabreak follow new baby yscoreboard new update foodiesinthehouse review egypt yallabreak
+[Stage 457:>                                                        (0 + 2) / 2][Stage 457:============================>                            (1 + 1) / 2]0.45|egypt receive bn eu presidency via ahramonline
+                                                                                [Stage 458:>                                                        (0 + 2) / 2][Stage 458:============================>                            (1 + 1) / 2]0.41|egypt lord
+                                                                                [Stage 459:>                                                        (0 + 2) / 2][Stage 459:============================>                            (1 + 1) / 2]                                                                                0.43|egypt matt receive quit class regard publish stacyis photo
+[Stage 460:>                                                        (0 + 2) / 2][Stage 460:============================>                            (1 + 1) / 2]0.51|first info website arab spring youth egypt tahrir bahrain syria
+                                                                                [Stage 461:>                                                        (0 + 2) / 2][Stage 461:============================>                            (1 + 1) / 2]                                                                                0.41|lorion syria go offline prepare since saw happen rev medium center
+Retrieved 5 new auxiliary tweets.
+1.0|demonstration surround presidential palace tahrir cairo egypt morsi ikh
+0.0|shit
+1.0|dailynewsegypt thousand demonstrator front presidential palace sing national egypt dne via
+1.0|egypt masr egyptian stage mass rally sinai
+1.0|first info website arab spring youth egypt tahrir bahrain syria
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/3365d8e0-834f-4c6c-8972-0da5b1ac8d39
+
+Aux F1 - Iteration-10=0.88
+Precision=0.85
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+11.0  4.0   
+0.0   23.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 486:>                                                        (0 + 8) / 8][Stage 486:=======>                                                 (1 + 7) / 8][Stage 486:==============>                                          (2 + 6) / 8][Stage 486:=====================>                                   (3 + 5) / 8][Stage 486:===================================>                     (5 + 3) / 8]                                                                                [Stage 487:>                                                        (0 + 2) / 2][Stage 487:============================>                            (1 + 1) / 2]0.49|egypt masr israel hammer hamas gaza offensive sinai
+                                                                                [Stage 488:>                                                        (0 + 2) / 2][Stage 488:============================>                            (1 + 1) / 2]0.49|baradei dont respect pole make people decide wheather constitution good bad egypt news
+                                                                                [Stage 489:>                                                        (0 + 2) / 2][Stage 489:============================>                            (1 + 1) / 2]                                                                                0.43|egypt mull arm sinai bedouin security force
+[Stage 490:>                                                        (0 + 2) / 2][Stage 490:============================>                            (1 + 1) / 2]0.31|adamakary azza best ice cream egypt icecream bahary vanilla awesome
+                                                                                [Stage 491:>                                                        (0 + 2) / 2][Stage 491:============================>                            (1 + 1) / 2]                                                                                0.53|egypt salafi front establish new political party call promote islamist interest via ahramonline
+[Stage 492:>                                                        (0 + 2) / 2][Stage 492:============================>                            (1 + 1) / 2]0.26|triplem go back welcome
+                                                                                [Stage 493:>                                                        (0 + 2) / 2][Stage 493:============================>                            (1 + 1) / 2]                                                                                0.48|yes mb militia yes yes care egyptian old news fact egypt
+[Stage 494:>                                                        (0 + 2) / 2][Stage 494:============================>                            (1 + 1) / 2]0.42|martyr mostafa abdullah age die suez gunshot egypt
+                                                                                [Stage 495:>                                                        (0 + 2) / 2][Stage 495:============================>                            (1 + 1) / 2]                                                                                0.42|weak people ear return replace pg article egypt mursi
+[Stage 496:>                                                        (0 + 2) / 2][Stage 496:============================>                            (1 + 1) / 2]0.45|ya gonna visit egypt
+                                                                                [Stage 497:>                                                        (0 + 2) / 2][Stage 497:============================>                            (1 + 1) / 2]                                                                                0.47|ghazalairshad dostoor party security line anticipation arrival tahrir moment egypt
+[Stage 498:>                                                        (0 + 2) / 2][Stage 498:============================>                            (1 + 1) / 2]0.45|egypt absolutely draw
+                                                                                [Stage 499:>                                                        (0 + 2) / 2][Stage 499:============================>                            (1 + 1) / 2]                                                                                0.49|fresh clash erupt egypt president morsy via cnn
+[Stage 500:>                                                        (0 + 2) / 2][Stage 500:============================>                            (1 + 1) / 2]0.38|egypt launch ppp project build port qena assiut sohag
+                                                                                [Stage 501:>                                                        (0 + 2) / 2][Stage 501:============================>                            (1 + 1) / 2]                                                                                0.52|hamas meshaal say israel must stop war first accept hamas condition include lift blockade gaza egypt gazaunderattack
+[Stage 502:>                                                        (0 + 2) / 2][Stage 502:============================>                            (1 + 1) / 2]0.42|ppl chant know nothing chant bunch terrorist
+                                                                                [Stage 503:>                                                        (0 + 2) / 2][Stage 503:============================>                            (1 + 1) / 2]                                                                                0.5|clash outside egypt presidential palace cairo
+[Stage 504:>                                                        (0 + 2) / 2][Stage 504:============================>                            (1 + 1) / 2]                                                                                0.45|medium accreditation much trouble get egypt referendum
+[Stage 505:>                                                        (0 + 2) / 2][Stage 505:============================>                            (1 + 1) / 2]0.52|xarabic egypt republican guard say demonstrator must evacuate area around presidential palace pm
+                                                                                [Stage 506:>                                                        (0 + 2) / 2][Stage 506:============================>                            (1 + 1) / 2]                                                                                0.34|calm storm storm egypt
+Retrieved 4 new auxiliary tweets.
+1.0|hamas meshaal say israel must stop war first accept hamas condition include lift blockade gaza egypt gazaunderattack
+0.0|triplem go back welcome
+1.0|egypt salafi front establish new political party call promote islamist interest via ahramonline
+1.0|xarabic egypt republican guard say demonstrator must evacuate area around presidential palace pm
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/6b010a83-f372-4e0e-9cf0-07db6e00f549
+
+Aux F1 - Iteration-11=0.88
+Precision=0.85
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+11.0  4.0   
+0.0   23.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 531:>                                                        (0 + 8) / 8][Stage 531:=======>                                                 (1 + 7) / 8][Stage 531:==============>                                          (2 + 6) / 8][Stage 531:============================>                            (4 + 4) / 8][Stage 531:==========================================>              (6 + 2) / 8][Stage 531:=================================================>       (7 + 1) / 8]                                                                                [Stage 532:>                                                        (0 + 2) / 2][Stage 532:============================>                            (1 + 1) / 2]0.42|egypt totally
+                                                                                [Stage 533:>                                                        (0 + 2) / 2][Stage 533:============================>                            (1 + 1) / 2]0.42|ashrafkhalil two different tahrir prayer group follow different imam different egypt
+                                                                                [Stage 534:>                                                        (0 + 2) / 2][Stage 534:============================>                            (1 + 1) / 2]0.41|egypt masr senior state department official remove sinai
+                                                                                [Stage 535:>                                                        (0 + 2) / 2][Stage 535:============================>                            (1 + 1) / 2]0.44|know fix every problem egypt morsi fuckoff
+                                                                                [Stage 536:>                                                        (0 + 2) / 2][Stage 536:============================>                            (1 + 1) / 2]0.46|microsoft window launch event live blogging via texnomic egypt
+                                                                                [Stage 537:>                                                        (0 + 2) / 2][Stage 537:============================>                            (1 + 1) / 2]                                                                                0.45|egypt
+[Stage 538:>                                                        (0 + 2) / 2][Stage 538:============================>                            (1 + 1) / 2]                                                                                0.44|amaheer probably reason egypt morsi mb many hashtags trend
+[Stage 539:>                                                        (0 + 2) / 2][Stage 539:============================>                            (1 + 1) / 2]0.35|good ahramonline internet user increase pct facebook user reach mln report
+                                                                                [Stage 540:>                                                        (0 + 2) / 2][Stage 540:============================>                            (1 + 1) / 2]                                                                                0.43|wluml blog nihalsaad endsh vaw egypt harassment feminism
+[Stage 541:>                                                        (0 + 2) / 2][Stage 541:============================>                            (1 + 1) / 2]                                                                                0.5|ship carry iranian weapon money seize offshore yemen iran arab bbc yemen gcc canada cnn egypt
+[Stage 542:>                                                        (0 + 2) / 2][Stage 542:============================>                            (1 + 1) / 2]                                                                                0.56|kalnaga national outrage bloodshed peaceful egyptian oppose dictator one morsi must court egypt
+[Stage 543:>                                                        (0 + 2) / 2][Stage 543:============================>                            (1 + 1) / 2]0.45|itsbeco egypt voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno voteno
+                                                                                [Stage 544:>                                                        (0 + 2) / 2][Stage 544:============================>                            (1 + 1) / 2]0.48|egypt two police officer assault lead jan revolution activist nac tahrir
+                                                                                [Stage 545:>                                                        (0 + 2) / 2][Stage 545:============================>                            (1 + 1) / 2]0.32|egypt uae premarin prescription cost buy generic premarin online premarin buy premarin
+                                                                                [Stage 546:>                                                        (0 + 2) / 2][Stage 546:============================>                            (1 + 1) / 2]0.52|alarabiya egypt palestine tie eye israel say khartoum aid gaza arm smuggle via egypt
+                                                                                [Stage 547:>                                                        (0 + 2) / 2][Stage 547:============================>                            (1 + 1) / 2]                                                                                0.45|samar dahmash arabvoicesspeak live ontveg check watch egypt jo jordan usa
+[Stage 548:>                                                        (0 + 2) / 2][Stage 548:============================>                            (1 + 1) / 2]                                                                                0.43|egypt find pay hour sexual intercourse sit problem beside
+[Stage 549:>                                                        (0 + 2) / 2][Stage 549:============================>                            (1 + 1) / 2]                                                                                0.45|egypt merkel defend austerity cut portugal masr
+[Stage 550:>                                                        (0 + 2) / 2][Stage 550:============================>                            (1 + 1) / 2]0.4|fifa rank ivorycoast algeria mali ghana zambia egypt tunisia centralafrican gabon nigeria
+                                                                                [Stage 551:>                                                        (0 + 2) / 2][Stage 551:============================>                            (1 + 1) / 2]                                                                                0.49|egypt tahrir scaf
+Retrieved 2 new auxiliary tweets.
+1.0|kalnaga national outrage bloodshed peaceful egyptian oppose dictator one morsi must court egypt
+1.0|alarabiya egypt palestine tie eye israel say khartoum aid gaza arm smuggle via egypt
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/82d8e747-c54c-4e52-96ab-c71f32132a76
+
+Aux F1 - Iteration-12=0.88
+Precision=0.85
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+11.0  4.0   
+0.0   23.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 576:>                                                        (0 + 8) / 8][Stage 576:=======>                                                 (1 + 7) / 8][Stage 576:=====================>                                   (3 + 5) / 8][Stage 576:============================>                            (4 + 4) / 8][Stage 576:=================================================>       (7 + 1) / 8]                                                                                [Stage 577:>                                                        (0 + 2) / 2][Stage 577:============================>                            (1 + 1) / 2]0.39|get mid november still nowhere close get cold time soon egypt weather winter morsydamnyou
+                                                                                [Stage 578:>                                                        (0 + 2) / 2][Stage 578:============================>                            (1 + 1) / 2]0.53|egypt arrest within day opposition back mubarak day religious form
+                                                                                [Stage 579:>                                                        (0 + 2) / 2][Stage 579:============================>                            (1 + 1) / 2]0.36|sky cloud weather thismoment chase rainwall rain come huge sea aboker alexandria egypt
+                                                                                [Stage 580:>                                                        (0 + 2) / 2][Stage 580:============================>                            (1 + 1) / 2]0.52|proud people egypt fight freedom egypt
+                                                                                [Stage 581:>                                                        (0 + 2) / 2][Stage 581:============================>                            (1 + 1) / 2]0.44|nytjim egypt tank deploy presidential palace barb wire string separate protester
+                                                                                [Stage 582:>                                                        (0 + 2) / 2][Stage 582:============================>                            (1 + 1) / 2]                                                                                0.49|standforislam rule rightly guide umar egypt syria palestine pakistan indonesia
+[Stage 583:>                                                        (0 + 2) / 2][Stage 583:============================>                            (1 + 1) / 2]0.43|fbnpc alqaeda benghazi iran egypt saudiarabia africa libya iraq pakistan lnyhbt omg
+                                                                                [Stage 584:>                                                        (0 + 2) / 2][Stage 584:============================>                            (1 + 1) / 2]                                                                                0.24|camel balcony camel park alaa
+[Stage 585:>                                                        (0 + 2) / 2][Stage 585:============================>                            (1 + 1) / 2]                                                                                0.41|egypt anyone ever make
+[Stage 586:>                                                        (0 + 2) / 2][Stage 586:============================>                            (1 + 1) / 2]0.35|bloody night atlantic
+                                                                                [Stage 587:>                                                        (0 + 2) / 2][Stage 587:============================>                            (1 + 1) / 2]                                                                                0.45|beltrew historic person convoy gaza end mohamed mahmoud
+[Stage 588:>                                                        (0 + 2) / 2][Stage 588:============================>                            (1 + 1) / 2]0.38|washinstitute lawlessness sinai feed gaza conflict yaari
+                                                                                [Stage 589:>                                                        (0 + 2) / 2][Stage 589:============================>                            (1 + 1) / 2]0.46|hentai black kuwait saudi syria sex ksa egypt bahrain
+                                                                                [Stage 590:>                                                        (0 + 2) / 2][Stage 590:============================>                            (1 + 1) / 2]                                                                                0.46|egypt must keep outlook policy steady imf loan review reuters egypt
+[Stage 591:>                                                        (0 + 2) / 2][Stage 591:============================>                            (1 + 1) / 2]0.4|egypt concert
+                                                                                [Stage 592:>                                                        (0 + 2) / 2][Stage 592:============================>                            (1 + 1) / 2]                                                                                0.46|desperate people sth believe far go defense belief find egypt
+[Stage 593:>                                                        (0 + 2) / 2][Stage 593:============================>                            (1 + 1) / 2]0.42|egyindependent pm govt prepare law strict sexual harassment penalty egypt endsh
+                                                                                [Stage 594:>                                                        (0 + 2) / 2][Stage 594:============================>                            (1 + 1) / 2]0.5|egypt odds reelection intrade bet site rise course tahrir
+                                                                                [Stage 595:>                                                        (0 + 2) / 2][Stage 595:============================>                            (1 + 1) / 2]0.55|usa support regime kill people name egypt tahrir
+                                                                                [Stage 596:>                                                        (0 + 2) / 2][Stage 596:============================>                            (1 + 1) / 2]0.49|egypt tahrir scaf
+                                                                                Retrieved 4 new auxiliary tweets.
+1.0|egypt arrest within day opposition back mubarak day religious form
+0.0|camel balcony camel park alaa
+1.0|usa support regime kill people name egypt tahrir
+1.0|proud people egypt fight freedom egypt
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/3a1c4229-b68c-4eec-9a59-d30b6c7dd8ef
+
+Aux F1 - Iteration-13=0.88
+Precision=0.85
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+11.0  4.0   
+0.0   23.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 621:>                                                        (0 + 8) / 8][Stage 621:==============>                                          (2 + 6) / 8][Stage 621:============================>                            (4 + 4) / 8][Stage 621:===================================>                     (5 + 3) / 8][Stage 621:==========================================>              (6 + 2) / 8][Stage 621:=================================================>       (7 + 1) / 8]                                                                                [Stage 622:>                                                        (0 + 2) / 2][Stage 622:============================>                            (1 + 1) / 2]0.46|israeli enter egypt attack gaza
+                                                                                [Stage 623:>                                                        (0 + 2) / 2][Stage 623:============================>                            (1 + 1) / 2]                                                                                0.51|buddy concur publicly kill tcot obama israel egypt islam
+[Stage 624:>                                                        (0 + 2) / 2][Stage 624:============================>                            (1 + 1) / 2]                                                                                0.45|egypt
+[Stage 625:>                                                        (0 + 2) / 2][Stage 625:============================>                            (1 + 1) / 2]0.44|state department spokeswoman victoria nuland expect discus situation egypt watch live
+                                                                                [Stage 626:>                                                        (0 + 2) / 2][Stage 626:============================>                            (1 + 1) / 2]0.43|egypt serious doubt whether morsi control presidency
+                                                                                [Stage 627:>                                                        (0 + 2) / 2][Stage 627:============================>                            (1 + 1) / 2]0.39|egypt potential become split state along line mass internal
+                                                                                [Stage 628:>                                                        (0 + 2) / 2][Stage 628:============================>                            (1 + 1) / 2]0.44|cairo syria cairo egypt damascus solidarity cairo syria cairo
+                                                                                [Stage 629:>                                                        (0 + 2) / 2][Stage 629:============================>                            (1 + 1) / 2]                                                                                0.55|hammametsou egyptian really vote via ahramonline egypt
+[Stage 630:>                                                        (0 + 2) / 2][Stage 630:============================>                            (1 + 1) / 2]0.45|parade kuwait saudi sandy sex ksa egypt bahrain
+                                                                                [Stage 631:>                                                        (0 + 2) / 2][Stage 631:============================>                            (1 + 1) / 2]                                                                                0.47|ahramonlinearts egypt underground musician leave negotiation table sour rouelshimi via ahramonline
+[Stage 632:>                                                        (0 + 2) / 2][Stage 632:============================>                            (1 + 1) / 2]                                                                                0.45|people listen much egypt
+[Stage 633:>                                                        (0 + 2) / 2][Stage 633:============================>                            (1 + 1) / 2]0.39|egypt eu aid billion loan way commit billion way le power
+                                                                                [Stage 634:>                                                        (0 + 2) / 2][Stage 634:============================>                            (1 + 1) / 2]                                                                                0.49|analysis egypt prove peace role survive arab spring reuters
+[Stage 635:>                                                        (0 + 2) / 2][Stage 635:============================>                            (1 + 1) / 2]                                                                                0.47|coward politician west condone massacre people tahrir square appeasement
+[Stage 636:>                                                        (0 + 2) / 2][Stage 636:============================>                            (1 + 1) / 2]                                                                                0.48|karen cheerleader humiliate kuwait saudi syria sex ksa egypt bahrain
+[Stage 637:>                                                        (0 + 2) / 2][Stage 637:============================>                            (1 + 1) / 2]0.44|perrymarvan pick troll egypt
+                                                                                [Stage 638:>                                                        (0 + 2) / 2][Stage 638:============================>                            (1 + 1) / 2]                                                                                0.51|either morsi thug put military cairo fight dare syria tango
+[Stage 639:>                                                        (0 + 2) / 2][Stage 639:============================>                            (1 + 1) / 2]                                                                                0.44|aelmassry egypt court preacher khaledabdullah ban broadcast day sheeesh
+[Stage 640:>                                                        (0 + 2) / 2][Stage 640:============================>                            (1 + 1) / 2]0.39|egypt perform
+                                                                                [Stage 641:>                                                        (0 + 2) / 2][Stage 641:============================>                            (1 + 1) / 2]0.41|egypt referendum nsoliman design voteno need print house print free please please
+                                                                                Retrieved 3 new auxiliary tweets.
+1.0|hammametsou egyptian really vote via ahramonline egypt
+1.0|buddy concur publicly kill tcot obama israel egypt islam
+1.0|either morsi thug put military cairo fight dare syria tango
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/30e07847-abe5-4c9f-8b34-870b2d679fc6
+
+Aux F1 - Iteration-14=0.85
+Precision=0.82
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+10.0  5.0   
+0.0   23.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 666:>                                                        (0 + 8) / 8][Stage 666:=====================>                                   (3 + 5) / 8][Stage 666:============================>                            (4 + 4) / 8][Stage 666:===================================>                     (5 + 3) / 8][Stage 666:==========================================>              (6 + 2) / 8][Stage 666:=================================================>       (7 + 1) / 8]                                                                                [Stage 667:>                                                        (0 + 2) / 2][Stage 667:============================>                            (1 + 1) / 2]0.38|morning tweepes rabena yostor today egypt morsy
+                                                                                [Stage 668:>                                                        (0 + 2) / 2][Stage 668:============================>                            (1 + 1) / 2]                                                                                0.53|egypt masr official promise fail halt china protest
+[Stage 669:>                                                        (0 + 2) / 2][Stage 669:============================>                            (1 + 1) / 2]0.43|assume stay power face believe morsi egypt
+                                                                                [Stage 670:>                                                        (0 + 2) / 2][Stage 670:============================>                            (1 + 1) / 2]0.46|think egypt good take care transportation rather porn sit wala eh
+                                                                                [Stage 671:>                                                        (0 + 2) / 2][Stage 671:============================>                            (1 + 1) / 2]                                                                                0.44|joekaldas love egypt
+[Stage 672:>                                                        (0 + 2) / 2][Stage 672:============================>                            (1 + 1) / 2]0.49|dictatorship fuck depress morsi egypt
+                                                                                [Stage 673:>                                                        (0 + 2) / 2][Stage 673:============================>                            (1 + 1) / 2]0.49|egypt israeli foreign minister lieberman resign masr
+                                                                                [Stage 674:>                                                        (0 + 2) / 2][Stage 674:============================>                            (1 + 1) / 2]0.44|one person constituent assembly even remotely close represent egypt
+                                                                                [Stage 675:>                                                        (0 + 2) / 2][Stage 675:============================>                            (1 + 1) / 2]0.49|pray peace israel lord let beat brake egypt
+                                                                                [Stage 676:>                                                        (0 + 2) / 2][Stage 676:============================>                            (1 + 1) / 2]                                                                                0.51|egypt clash lebanese army syrian rebel break border tahrir
+[Stage 677:>                                                        (0 + 2) / 2][Stage 677:============================>                            (1 + 1) / 2]                                                                                0.37|egypt attitude toward grow hostile despite support lynndebate
+[Stage 678:>                                                        (0 + 2) / 2][Stage 678:============================>                            (1 + 1) / 2]                                                                                0.46|egypt damn reason personally like woman
+[Stage 679:>                                                        (0 + 2) / 2][Stage 679:============================>                            (1 + 1) / 2]0.45|egypt partner cant believe
+                                                                                [Stage 680:>                                                        (0 + 2) / 2][Stage 680:============================>                            (1 + 1) / 2]                                                                                0.37|saharazizlaw return inspire trip egypt earlaegypt mmabrouk
+[Stage 681:>                                                        (0 + 2) / 2][Stage 681:============================>                            (1 + 1) / 2]                                                                                0.43|rhreid ap news egypt ask imf delay loan due turmoil
+[Stage 682:>                                                        (0 + 2) / 2][Stage 682:============================>                            (1 + 1) / 2]0.47|morsi egypt opinion become dictator marijuana peace democracy gothp
+                                                                                [Stage 683:>                                                        (0 + 2) / 2][Stage 683:============================>                            (1 + 1) / 2]0.43|egypt leak britney toe rofl
+                                                                                [Stage 684:>                                                        (0 + 2) / 2][Stage 684:============================>                            (1 + 1) / 2]0.44|irish say mistake goat beard fine replace goat ikhwan egypt iran
+                                                                                [Stage 685:>                                                        (0 + 2) / 2][Stage 685:============================>                            (1 + 1) / 2]                                                                                0.43|people friend tatto egypt illuminati freemason wallpaper instanesia iphonesia instaworld
+[Stage 686:>                                                        (0 + 2) / 2][Stage 686:============================>                            (1 + 1) / 2]0.41|miss old egypt menak lelah ya morsy
+                                                                                Retrieved 2 new auxiliary tweets.
+1.0|egypt masr official promise fail halt china protest
+1.0|egypt clash lebanese army syrian rebel break border tahrir
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/4a9b0dbd-5a5d-4014-9cc4-d0369fb06ad9
+
+Aux F1 - Iteration-15=0.88
+Precision=0.85
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+11.0  4.0   
+0.0   23.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 711:>                                                        (0 + 8) / 8][Stage 711:=======>                                                 (1 + 7) / 8][Stage 711:==============>                                          (2 + 6) / 8][Stage 711:=====================>                                   (3 + 5) / 8][Stage 711:=================================================>       (7 + 1) / 8]                                                                                [Stage 712:>                                                        (0 + 2) / 2][Stage 712:============================>                            (1 + 1) / 2]0.48|south african constitution several clause outlaw death prolly pas justathought egypt
+                                                                                [Stage 713:>                                                        (0 + 2) / 2][Stage 713:============================>                            (1 + 1) / 2]0.55|egyptian court stop work protest morsi move via cbsnews poli egypt uspoli
+                                                                                [Stage 714:>                                                        (0 + 2) / 2][Stage 714:============================>                            (1 + 1) / 2]0.56|ikhwan say copt protest yeah islamist bad egypt
+                                                                                [Stage 715:>                                                        (0 + 2) / 2][Stage 715:============================>                            (1 + 1) / 2]                                                                                0.43|new poll put president approval rat egypt morsi
+[Stage 716:>                                                        (0 + 2) / 2][Stage 716:============================>                            (1 + 1) / 2]0.44|egypt make cry pray get well soon
+                                                                                [Stage 717:>                                                        (0 + 2) / 2][Stage 717:============================>                            (1 + 1) / 2]0.5|cleric warn egypt may lose bln qatari investment people vote constitution tandem post
+                                                                                [Stage 718:>                                                        (0 + 2) / 2][Stage 718:============================>                            (1 + 1) / 2]0.51|unconfirmed beltrew name kill tonight outside presidential palace hahellyer emadeffat myrnaemad rip egypt
+                                                                                [Stage 719:>                                                        (0 + 2) / 2][Stage 719:============================>                            (1 + 1) / 2]                                                                                0.44|photo near palace moneloky epic egypt
+[Stage 720:>                                                        (0 + 2) / 2][Stage 720:============================>                            (1 + 1) / 2]0.46|egypt romney supporter resort stunt crazy
+                                                                                [Stage 721:>                                                        (0 + 2) / 2][Stage 721:============================>                            (1 + 1) / 2]0.48|kareemlailah aljazeera correspondent report clash tahrir cairo egypt
+                                                                                [Stage 722:>                                                        (0 + 2) / 2][Stage 722:============================>                            (1 + 1) / 2]0.45|morsi allow ok stop commit egypt
+                                                                                [Stage 723:>                                                        (0 + 2) / 2][Stage 723:============================>                            (1 + 1) / 2]                                                                                0.28|critic wonder morsy next strongman
+[Stage 724:>                                                        (0 + 2) / 2][Stage 724:============================>                            (1 + 1) / 2]                                                                                0.48|mask gunman attack opposition protester crowd gather rally egypt tahrir
+[Stage 725:>                                                        (0 + 2) / 2][Stage 725:============================>                            (1 + 1) / 2]                                                                                0.48|ajelive speech azhar preacher occasion eid morsi call syria regime halt bloodshed
+[Stage 726:>                                                        (0 + 2) / 2][Stage 726:============================>                            (1 + 1) / 2]                                                                                0.41|ap egypt top court decide whether disband panel draft new constitution
+[Stage 727:>                                                        (0 + 2) / 2][Stage 727:============================>                            (1 + 1) / 2]                                                                                0.41|egypt try kind upon photographic camera
+[Stage 728:>                                                        (0 + 2) / 2][Stage 728:============================>                            (1 + 1) / 2]0.42|egypt drink lol ye
+                                                                                [Stage 729:>                                                        (0 + 2) / 2][Stage 729:============================>                            (1 + 1) / 2]                                                                                0.49|forensics investigation egypt determine bullet shoot protestors come muslim brotherhood member
+[Stage 730:>                                                        (0 + 2) / 2][Stage 730:============================>                            (1 + 1) / 2]0.45|salam alaykom prayer time luxor city dhuhr pray luxor egypt
+                                                                                [Stage 731:>                                                        (0 + 2) / 2][Stage 731:============================>                            (1 + 1) / 2]                                                                                0.48|war islam new liberalism egypt
+Retrieved 4 new auxiliary tweets.
+1.0|unconfirmed beltrew name kill tonight outside presidential palace hahellyer emadeffat myrnaemad rip egypt
+1.0|ikhwan say copt protest yeah islamist bad egypt
+1.0|egyptian court stop work protest morsi move via cbsnews poli egypt uspoli
+0.0|critic wonder morsy next strongman
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/d4a85614-dc1d-4fb9-919e-052c7760622e
+
+Aux F1 - Iteration-16=0.86
+Precision=0.85
+Recall=0.96
+Aux F1 - ConfusionMatrix:
+11.0  4.0   
+1.0   22.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 757:>                                                        (0 + 8) / 8][Stage 757:=======>                                                 (1 + 7) / 8][Stage 757:==============>                                          (2 + 6) / 8][Stage 757:=====================>                                   (3 + 5) / 8][Stage 757:============================>                            (4 + 4) / 8][Stage 757:===================================>                     (5 + 3) / 8][Stage 757:=================================================>       (7 + 1) / 8]                                                                                [Stage 758:>                                                        (0 + 2) / 2][Stage 758:============================>                            (1 + 1) / 2]0.52|obama thank egypt world leader hail hamas truce via telegraph gaza mursi
+                                                                                [Stage 759:>                                                        (0 + 2) / 2][Stage 759:============================>                            (1 + 1) / 2]                                                                                0.5|holiness dalai lama speak abt middle east peace watch live webcast syria egypt dalailama
+[Stage 760:>                                                        (0 + 2) / 2][Stage 760:============================>                            (1 + 1) / 2]0.4|egypt uae strategy healthy balance might diet household good saudi ksa bhr
+                                                                                [Stage 761:>                                                        (0 + 2) / 2][Stage 761:============================>                            (1 + 1) / 2]0.48|bennu tell basta project scan day night egypt
+                                                                                [Stage 762:>                                                        (0 + 2) / 2][Stage 762:============================>                            (1 + 1) / 2]                                                                                0.52|protest march tahrir egypt dailynewsegypt cairo morsi mohamedmahmoud csf moi via acarvin
+[Stage 763:>                                                        (0 + 2) / 2][Stage 763:============================>                            (1 + 1) / 2]0.43|minorityrights christian woman hair forcibly cut metro egypt minority mrg
+                                                                                [Stage 764:>                                                        (0 + 2) / 2][Stage 764:============================>                            (1 + 1) / 2]0.5|islamist march support president egypt
+                                                                                [Stage 765:>                                                        (0 + 2) / 2][Stage 765:============================>                            (1 + 1) / 2]0.45|alexandria egypt weather fair alexandria egypt
+                                                                                [Stage 766:>                                                        (0 + 2) / 2][Stage 766:============================>                            (1 + 1) / 2]                                                                                0.48|egypt masr turkey consider deployment missile syria border
+[Stage 767:>                                                        (0 + 2) / 2][Stage 767:============================>                            (1 + 1) / 2]0.41|flyegyptair hr flight delay far official announcement egypt egyptair board today fail
+                                                                                [Stage 768:>                                                        (0 + 2) / 2][Stage 768:============================>                            (1 + 1) / 2]                                                                                0.45|morsi go batshit crazy egypt
+[Stage 769:>                                                        (0 + 2) / 2][Stage 769:============================>                            (1 + 1) / 2]                                                                                0.45|aleikhemshalom prosyriana fight palestine europe africa america egypt
+[Stage 770:>                                                        (0 + 2) / 2][Stage 770:============================>                            (1 + 1) / 2]                                                                                0.48|egyptian tahrir egypt morsi
+[Stage 771:>                                                        (0 + 2) / 2][Stage 771:============================>                            (1 + 1) / 2]0.42|cairowire coptic presidential assistant decide resign presidential team hold urgent meet egypt
+                                                                                [Stage 772:>                                                        (0 + 2) / 2][Stage 772:============================>                            (1 + 1) / 2]                                                                                0.5|egyptian stage mass morsi rally tahrir square egypt news
+[Stage 773:>                                                        (0 + 2) / 2][Stage 773:============================>                            (1 + 1) / 2]                                                                                0.41|egypt defender hegazy miss action month fiorentina via ahramonline football soccer seriea italy
+[Stage 774:>                                                        (0 + 2) / 2][Stage 774:============================>                            (1 + 1) / 2]                                                                                0.47|salam alaykom prayer time cairo city maghrib pray cairo egypt
+[Stage 775:>                                                        (0 + 2) / 2][Stage 775:============================>                            (1 + 1) / 2]                                                                                0.41|pic take camera little saturation edit mobile egypt
+[Stage 776:>                                                        (0 + 2) / 2][Stage 776:============================>                            (1 + 1) / 2]0.39|egypt love rate murder career give early heart
+                                                                                [Stage 777:>                                                        (0 + 2) / 2][Stage 777:============================>                            (1 + 1) / 2]0.29|happen fukushima responsible mass animal
+                                                                                Retrieved 3 new auxiliary tweets.
+1.0|obama thank egypt world leader hail hamas truce via telegraph gaza mursi
+0.0|happen fukushima responsible mass animal
+1.0|protest march tahrir egypt dailynewsegypt cairo morsi mohamedmahmoud csf moi via acarvin
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/86da6a03-5b6a-4a1e-96f0-3622df61d51a
+
+Aux F1 - Iteration-17=0.86
+Precision=0.85
+Recall=0.96
+Aux F1 - ConfusionMatrix:
+11.0  4.0   
+1.0   22.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 803:>                                                        (0 + 8) / 8][Stage 803:=======>                                                 (1 + 7) / 8][Stage 803:==============>                                          (2 + 6) / 8][Stage 803:=====================>                                   (3 + 5) / 8][Stage 803:============================>                            (4 + 4) / 8][Stage 803:==========================================>              (6 + 2) / 8][Stage 803:=================================================>       (7 + 1) / 8]                                                                                [Stage 804:>                                                        (0 + 2) / 2][Stage 804:============================>                            (1 + 1) / 2]0.5|holiness dalai lama speak abt middle east peace watch live webcast syria egypt dalailama
+                                                                                [Stage 805:>                                                        (0 + 2) / 2][Stage 805:============================>                            (1 + 1) / 2]                                                                                0.4|egypt uae strategy healthy balance might diet household good saudi ksa bhr
+[Stage 806:>                                                        (0 + 2) / 2][Stage 806:============================>                            (1 + 1) / 2]                                                                                0.48|bennu tell basta project scan day night egypt
+[Stage 807:>                                                        (0 + 2) / 2][Stage 807:============================>                            (1 + 1) / 2]0.52|protest march tahrir egypt dailynewsegypt cairo morsi mohamedmahmoud csf moi via acarvin
+                                                                                [Stage 808:>                                                        (0 + 2) / 2][Stage 808:============================>                            (1 + 1) / 2]0.43|minorityrights christian woman hair forcibly cut metro egypt minority mrg
+                                                                                [Stage 809:>                                                        (0 + 2) / 2][Stage 809:============================>                            (1 + 1) / 2]0.5|islamist march support president egypt
+                                                                                [Stage 810:>                                                        (0 + 2) / 2][Stage 810:============================>                            (1 + 1) / 2]0.45|alexandria egypt weather fair alexandria egypt
+                                                                                [Stage 811:>                                                        (0 + 2) / 2][Stage 811:============================>                            (1 + 1) / 2]0.48|egypt masr turkey consider deployment missile syria border
+                                                                                [Stage 812:>                                                        (0 + 2) / 2][Stage 812:============================>                            (1 + 1) / 2]0.41|flyegyptair hr flight delay far official announcement egypt egyptair board today fail
+                                                                                [Stage 813:>                                                        (0 + 2) / 2][Stage 813:============================>                            (1 + 1) / 2]0.45|morsi go batshit crazy egypt
+                                                                                [Stage 814:>                                                        (0 + 2) / 2][Stage 814:============================>                            (1 + 1) / 2]                                                                                0.45|aleikhemshalom prosyriana fight palestine europe africa america egypt
+[Stage 815:>                                                        (0 + 2) / 2][Stage 815:============================>                            (1 + 1) / 2]0.48|egyptian tahrir egypt morsi
+                                                                                [Stage 816:>                                                        (0 + 2) / 2][Stage 816:============================>                            (1 + 1) / 2]0.42|cairowire coptic presidential assistant decide resign presidential team hold urgent meet egypt
+                                                                                [Stage 817:>                                                        (0 + 2) / 2][Stage 817:============================>                            (1 + 1) / 2]0.5|egyptian stage mass morsi rally tahrir square egypt news
+                                                                                [Stage 818:>                                                        (0 + 2) / 2][Stage 818:============================>                            (1 + 1) / 2]                                                                                0.41|egypt defender hegazy miss action month fiorentina via ahramonline football soccer seriea italy
+[Stage 819:>                                                        (0 + 2) / 2][Stage 819:============================>                            (1 + 1) / 2]0.47|salam alaykom prayer time cairo city maghrib pray cairo egypt
+                                                                                [Stage 820:>                                                        (0 + 2) / 2][Stage 820:============================>                            (1 + 1) / 2]0.41|pic take camera little saturation edit mobile egypt
+                                                                                [Stage 821:>                                                        (0 + 2) / 2][Stage 821:============================>                            (1 + 1) / 2]                                                                                0.39|egypt love rate murder career give early heart
+[Stage 822:>                                                        (0 + 2) / 2][Stage 822:============================>                            (1 + 1) / 2]0.24|fukushima una bomba radioattiva fuori mondo tempo reale
+                                                                                [Stage 823:>                                                        (0 + 2) / 2][Stage 823:============================>                            (1 + 1) / 2]                                                                                0.29|scientist want fukushima everywhere throughout
+Retrieved 3 new auxiliary tweets.
+0.0|fukushima una bomba radioattiva fuori mondo tempo reale
+1.0|protest march tahrir egypt dailynewsegypt cairo morsi mohamedmahmoud csf moi via acarvin
+0.0|scientist want fukushima everywhere throughout
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/0a5f2b42-4980-40d5-80c8-4519df14e17a
+
+Aux F1 - Iteration-18=0.86
+Precision=0.85
+Recall=0.96
+Aux F1 - ConfusionMatrix:
+11.0  4.0   
+1.0   22.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 849:>                                                        (0 + 8) / 8][Stage 849:=======>                                                 (1 + 7) / 8][Stage 849:==============>                                          (2 + 6) / 8][Stage 849:=====================>                                   (3 + 5) / 8][Stage 849:============================>                            (4 + 4) / 8][Stage 849:===================================>                     (5 + 3) / 8][Stage 849:=================================================>       (7 + 1) / 8]                                                                                [Stage 850:>                                                        (0 + 2) / 2][Stage 850:============================>                            (1 + 1) / 2]                                                                                0.48|bennu tell basta project scan day night egypt
+[Stage 851:>                                                        (0 + 2) / 2][Stage 851:============================>                            (1 + 1) / 2]0.52|protest march tahrir egypt dailynewsegypt cairo morsi mohamedmahmoud csf moi via acarvin
+                                                                                [Stage 852:>                                                        (0 + 2) / 2][Stage 852:============================>                            (1 + 1) / 2]                                                                                0.43|minorityrights christian woman hair forcibly cut metro egypt minority mrg
+[Stage 853:>                                                        (0 + 2) / 2][Stage 853:============================>                            (1 + 1) / 2]0.5|islamist march support president egypt
+                                                                                [Stage 854:>                                                        (0 + 2) / 2][Stage 854:============================>                            (1 + 1) / 2]0.45|alexandria egypt weather fair alexandria egypt
+                                                                                [Stage 855:>                                                        (0 + 2) / 2][Stage 855:============================>                            (1 + 1) / 2]0.48|egypt masr turkey consider deployment missile syria border
+                                                                                [Stage 856:>                                                        (0 + 2) / 2][Stage 856:============================>                            (1 + 1) / 2]0.41|flyegyptair hr flight delay far official announcement egypt egyptair board today fail
+                                                                                [Stage 857:>                                                        (0 + 2) / 2][Stage 857:============================>                            (1 + 1) / 2]0.45|morsi go batshit crazy egypt
+                                                                                [Stage 858:>                                                        (0 + 2) / 2][Stage 858:============================>                            (1 + 1) / 2]0.45|aleikhemshalom prosyriana fight palestine europe africa america egypt
+                                                                                [Stage 859:>                                                        (0 + 2) / 2][Stage 859:============================>                            (1 + 1) / 2]                                                                                0.48|egyptian tahrir egypt morsi
+[Stage 860:>                                                        (0 + 2) / 2][Stage 860:============================>                            (1 + 1) / 2]0.42|cairowire coptic presidential assistant decide resign presidential team hold urgent meet egypt
+                                                                                [Stage 861:>                                                        (0 + 2) / 2][Stage 861:============================>                            (1 + 1) / 2]                                                                                0.5|egyptian stage mass morsi rally tahrir square egypt news
+[Stage 862:>                                                        (0 + 2) / 2][Stage 862:============================>                            (1 + 1) / 2]0.41|egypt defender hegazy miss action month fiorentina via ahramonline football soccer seriea italy
+                                                                                [Stage 863:>                                                        (0 + 2) / 2][Stage 863:============================>                            (1 + 1) / 2]                                                                                0.47|salam alaykom prayer time cairo city maghrib pray cairo egypt
+[Stage 864:>                                                        (0 + 2) / 2][Stage 864:============================>                            (1 + 1) / 2]0.41|pic take camera little saturation edit mobile egypt
+                                                                                [Stage 865:>                                                        (0 + 2) / 2][Stage 865:============================>                            (1 + 1) / 2]0.39|egypt love rate murder career give early heart
+                                                                                [Stage 866:>                                                        (0 + 2) / 2][Stage 866:============================>                            (1 + 1) / 2]0.24|read fukushima itk
+                                                                                [Stage 867:>                                                        (0 + 2) / 2][Stage 867:============================>                            (1 + 1) / 2]                                                                                0.36|fukushima daiichi operator handle shutdown say govern party guardian
+[Stage 868:>                                                        (0 + 2) / 2][Stage 868:============================>                            (1 + 1) / 2]                                                                                0.0|fodeo negada fodeo
+[Stage 869:>                                                        (0 + 2) / 2][Stage 869:============================>                            (1 + 1) / 2]                                                                                0.38|really hope people get message fukushima go away get bad make
+Retrieved 3 new auxiliary tweets.
+0.0|read fukushima itk
+0.0|fodeo negada fodeo
+1.0|protest march tahrir egypt dailynewsegypt cairo morsi mohamedmahmoud csf moi via acarvin
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/0521ff1b-5a44-4170-afce-110abe9031ed
+
+Aux F1 - Iteration-19=0.86
+Precision=0.88
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+12.0  3.0   
+2.0   21.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+[Stage 895:>                                                        (0 + 8) / 8][Stage 895:=======>                                                 (1 + 7) / 8][Stage 895:=====================>                                   (3 + 5) / 8][Stage 895:============================>                            (4 + 4) / 8][Stage 895:===================================>                     (5 + 3) / 8]                                                                                [Stage 896:>                                                        (0 + 2) / 2][Stage 896:============================>                            (1 + 1) / 2]                                                                                0.45|alexandria egypt weather fair alexandria egypt
+[Stage 897:>                                                        (0 + 2) / 2][Stage 897:============================>                            (1 + 1) / 2]                                                                                0.48|egypt masr turkey consider deployment missile syria border
+[Stage 898:>                                                        (0 + 2) / 2][Stage 898:============================>                            (1 + 1) / 2]                                                                                0.41|flyegyptair hr flight delay far official announcement egypt egyptair board today fail
+[Stage 899:>                                                        (0 + 2) / 2][Stage 899:============================>                            (1 + 1) / 2]                                                                                0.45|morsi go batshit crazy egypt
+[Stage 900:>                                                        (0 + 2) / 2][Stage 900:============================>                            (1 + 1) / 2]0.45|aleikhemshalom prosyriana fight palestine europe africa america egypt
+                                                                                [Stage 901:>                                                        (0 + 2) / 2][Stage 901:============================>                            (1 + 1) / 2]                                                                                0.48|egyptian tahrir egypt morsi
+[Stage 902:>                                                        (0 + 2) / 2][Stage 902:============================>                            (1 + 1) / 2]                                                                                0.42|cairowire coptic presidential assistant decide resign presidential team hold urgent meet egypt
+[Stage 903:>                                                        (0 + 2) / 2][Stage 903:============================>                            (1 + 1) / 2]                                                                                0.5|egyptian stage mass morsi rally tahrir square egypt news
+[Stage 904:>                                                        (0 + 2) / 2][Stage 904:============================>                            (1 + 1) / 2]                                                                                0.41|egypt defender hegazy miss action month fiorentina via ahramonline football soccer seriea italy
+[Stage 905:>                                                        (0 + 2) / 2][Stage 905:============================>                            (1 + 1) / 2]                                                                                0.47|salam alaykom prayer time cairo city maghrib pray cairo egypt
+[Stage 906:>                                                        (0 + 2) / 2][Stage 906:============================>                            (1 + 1) / 2]0.41|pic take camera little saturation edit mobile egypt
+                                                                                [Stage 907:>                                                        (0 + 2) / 2][Stage 907:============================>                            (1 + 1) / 2]0.39|egypt love rate murder career give early heart
+                                                                                [Stage 908:>                                                        (0 + 2) / 2][Stage 908:============================>                            (1 + 1) / 2]                                                                                0.27|rebharms stop iaea
+[Stage 909:>                                                        (0 + 2) / 2][Stage 909:============================>                            (1 + 1) / 2]0.36|like youtube video fukushima san francisco human mural
+                                                                                [Stage 910:>                                                        (0 + 2) / 2][Stage 910:============================>                            (1 + 1) / 2]                                                                                0.35|turner horror get ride fukushima fuck doom tepco
+[Stage 911:>                                                        (0 + 2) / 2][Stage 911:============================>                            (1 + 1) / 2]0.38|fukushima diary washington via youtube
+                                                                                [Stage 912:>                                                        (0 + 2) / 2][Stage 912:============================>                            (1 + 1) / 2]                                                                                0.34|secretnews forecast show fukushima get eye wall typhoon wipha meteorology japan
+[Stage 913:>                                                        (0 + 2) / 2][Stage 913:============================>                            (1 + 1) / 2]0.21|inicia tepco paso clave para desmantelar central de fukushima elmundo
+                                                                                [Stage 914:>                                                        (0 + 2) / 2][Stage 914:============================>                            (1 + 1) / 2]0.27|abductee tell comet ison impact fukushima disaster
+                                                                                [Stage 915:>                                                        (0 + 2) / 2][Stage 915:============================>                            (1 + 1) / 2]                                                                                0.33|conspiracy theory jesse category hurricane aim
+Retrieved 3 new auxiliary tweets.
+0.0|abductee tell comet ison impact fukushima disaster
+0.0|rebharms stop iaea
+0.0|inicia tepco paso clave para desmantelar central de fukushima elmundo
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels/ca73122d-87a9-4f0b-8804-f4dbbb7c41e3
+
+Aux F1 - Iteration-20=0.86
+Precision=0.88
+Recall=0.91
+Aux F1 - ConfusionMatrix:
+12.0  3.0   
+2.0   21.0  
+
+Best F1 so far - 0.88 at iteration:0
+
+
+Total time taken for experiment:1526.104 seconds.
+				************* SAVE THE RESULTS ******************

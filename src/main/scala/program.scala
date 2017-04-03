@@ -1,5 +1,7 @@
 package main.scala
 
+import java.time.{ZonedDateTime, ZoneOffset}
+
 import main.SparkContextManager
 import main.scala.Implementations.AuxiliaryDataBasedExperiment
 import org.apache.log4j.{Level, Logger}
@@ -18,7 +20,12 @@ object program extends App {
 		val sc = SparkContextManager.getContext
 		sc.setLogLevel("ERROR")
 
-		println("Hello World!" + 11)
+		val istOffset = ZoneOffset.ofHoursMinutesSeconds(-4, 0, 0)
+
+		// time representation in EST
+		var zonedDateTimeIst = ZonedDateTime.now(istOffset)
+
+		println(s"Starting experiment at $zonedDateTimeIst")
 		//LrClassifier.main(args)
 		//LrOnlineClassifier.main(args)
 		//Word2VecGenerator.main(args)
@@ -38,6 +45,8 @@ object program extends App {
 
 		new AuxiliaryDataBasedExperiment(args).SetupAndRunExperiment()
 		//GenerateCleanTweetStrings.GenerateCleanStrings("data/final/ebola_auxiliary_data.txt")
+		zonedDateTimeIst = ZonedDateTime.now(istOffset)
+		println(s"Ending experiment at $zonedDateTimeIst")
 
 	}
 }

@@ -1,0 +1,938 @@
+Starting experiment at 2017-04-03T01:32:17.237-04:00
+Reset successful
+***************** Parameters used for EXPERIMENT *****************
+	filterToUse = CosineSim
+	minSimilarityThreshold = 0.45
+	cosineSimilarityWindowSize= 0.2
+	minWmDistanceThreshold = 0.49
+	vectorType= local
+	webWord2VecBaseUri = http://localhost:5000/file_model/getvector/
+	cnnClassifierBaseUri = http://localhost:5000/cnn_train_and_get_prediction_labels_local
+	maxFpmWordsToPick = 35
+	minFpmWordsDetected = 0
+	refreshLocalWordVectors = false
+	maxExperimentIterations = 20
+	maxAuxTweetsToAddEachIteration = 20
+	thresholdF1 = 0.98
+	classifierType = LogisticRegression
+	folderNameForCnnClassifier = 
+	auxiliaryThresholdExpectation = 0.01
+	fileDelimiter = ,
+	experimentSet = ebola
+	experimentSetNumber = 2
+	trainingDataFile = data/final/ebola_training_data2.txt
+	validationDataFile = data/final/ebola_validation_data.txt
+	auxiliaryDataFile = data/final/ebola_auxiliary_data.txt
+	supplementedCleanAuxiliaryFile = data/final/ebola_auxiliary_data.txt
+
+***************** Parameters used for EXPERIMENT *****************
+
+
+Initial F1=0.86
+Precision=0.8
+Recall=0.96
+Initial - ConfusionMatrix:
+20.0  6.0   
+1.0   24.0  
+
+0.1|air radioaktif fukushima bocor lagi pekerja terpapar air radioaktif fukushima
+0.24|fukushima rod get close still fire create chain ows
+0.25|csmonitor tokyo electric say earthquake fukushima damage trouble nuclear plant
+0.25|new spot find fukushima plant health
+0.28|tour fukushima daiichi nuclear power plant via youtube
+0.19|festival plan saturday child fukushima fukushima kid welcome festival
+0.19|map share facebook regard radiation spread across pacific
+0.15|petition address single important issue planet right radiation
+0.17|extraen peligrosas barras de combustible de la accidentada central nuclear de fukushima
+0.05|wieder atomstrom erzeugen antiakw
+0.18|disaster spiral control fukushima prime minister ask global help alternet
+0.17|ozawa japanese bureaucrat fukushima
+0.21|perspective chernobyl fukushima health effect learn eastern theatomicage
+0.29|fukushima radiation hit west coast fukushima
+0.15|reality december fukushima fuel melt unprecedented
+0.06|god help big consequence
+0.19|live world watcher spreaker current event fukushima japan news
+0.37|liberia record ebola death despite declare ebola
+0.25|hunger kill ebola consider significant problem since rich people die
+0.04|southafrica allow entry arrive country
+Retrieved 17 new auxiliary tweets.
+0.0|csmonitor tokyo electric say earthquake fukushima damage trouble nuclear plant
+0.0|air radioaktif fukushima bocor lagi pekerja terpapar air radioaktif fukushima
+0.0|reality december fukushima fuel melt unprecedented
+0.0|new spot find fukushima plant health
+0.0|god help big consequence
+0.0|fukushima rod get close still fire create chain ows
+0.0|live world watcher spreaker current event fukushima japan news
+0.0|hunger kill ebola consider significant problem since rich people die
+0.0|southafrica allow entry arrive country
+0.0|wieder atomstrom erzeugen antiakw
+0.0|disaster spiral control fukushima prime minister ask global help alternet
+0.0|festival plan saturday child fukushima fukushima kid welcome festival
+0.0|map share facebook regard radiation spread across pacific
+0.0|petition address single important issue planet right radiation
+0.0|extraen peligrosas barras de combustible de la accidentada central nuclear de fukushima
+0.0|ozawa japanese bureaucrat fukushima
+0.0|perspective chernobyl fukushima health effect learn eastern theatomicage
+()
+Aux F1 - Iteration-1=0.78
+Precision=0.82
+Recall=0.72
+Aux F1 - ConfusionMatrix:
+22.0  4.0   
+7.0   18.0  
+
+Best F1 so far - 0.86 at iteration:0
+
+
+0.24|ebola threat real allow african conference nyc risky stupid addthis
+0.21|ebola diagnose texas first case find cc higherlifefdn
+0.31|front page news mean important ebola
+0.37|un get medical food aid gaza earth anyone think could west ebola
+0.37|fkr ebola
+0.3|egomaniakos nobody count run also mean number come ebola
+0.26|un vaccin possible contre le virus ebola
+0.17|fajr daily story via yogageneration
+0.2|tritium level rise fukushima groundwater nuclear
+0.2|japan raise severity radioactive leak nuke plant china daily scoopit
+0.12|welp look like cali trip outta question think video
+0.15|georgemonbiot sorry seem come across lot worry info fukushima calm carry type
+0.23|storage tank fukushima daiichi nuclear power plant leak gallon contaminate water
+0.22|elite coverup protest ourwallstreet fukushima show people power think
+0.25|late leak fukushima plant contaminate worker tokyo six worker fukushima nuclear plant
+0.18|sailor response fukushima emergency result cancer
+0.32|mali ebola free health minister say day without new case
+0.21|msgubot frieden keep lie ebola transmission low possibility spread
+0.29|aidindanger great news ebola
+0.34|article un hold emergency ebola meet ebola afrika un security council hold article
+Retrieved 12 new auxiliary tweets.
+0.0|tritium level rise fukushima groundwater nuclear
+0.0|ebola threat real allow african conference nyc risky stupid addthis
+0.0|ebola diagnose texas first case find cc higherlifefdn
+0.0|fajr daily story via yogageneration
+0.0|georgemonbiot sorry seem come across lot worry info fukushima calm carry type
+0.0|japan raise severity radioactive leak nuke plant china daily scoopit
+0.0|welp look like cali trip outta question think video
+0.0|storage tank fukushima daiichi nuclear power plant leak gallon contaminate water
+0.0|elite coverup protest ourwallstreet fukushima show people power think
+0.0|late leak fukushima plant contaminate worker tokyo six worker fukushima nuclear plant
+0.0|sailor response fukushima emergency result cancer
+0.0|msgubot frieden keep lie ebola transmission low possibility spread
+()
+Aux F1 - Iteration-2=0.7
+Precision=0.75
+Recall=0.6
+Aux F1 - ConfusionMatrix:
+21.0  5.0   
+10.0  15.0  
+
+Best F1 so far - 0.86 at iteration:0
+
+
+-0.02|aabb learn ocular complication
+0.33|panic ebola expert michaelsteuer say
+0.44|hard hit ebola ebola eboflip
+0.27|culturalxplorer decide safe enough travel via katieaune ebola ttot
+0.17|japan remove fukushima fuel rod
+0.18|fukushima descubren fuga de casi toneladas de agua contaminada cuba
+0.18|take close look radioactive leak fukushima japan impact worldview wbez
+0.1|denuncian por negligencia la operadora de fukushima ciudadanos japoneses presentan madero tampico
+0.13|ocean boil coast japan runaway core fukushima wonder
+0.09|msnnow radioactive cloud expect reach
+0.17|nacional descubren una nueva fuga de cuatro toneladas de agua radiactiva en fukushima
+0.26|well point know never get see guess good thing bucket fukushima
+0.22|fukishima watch bad ever forget one know fish get
+0.14|satu harapan pltn fukushima tidak terpengaruh gempa
+0.22|fukushima worker
+0.15|super excite haiyan join thingmonk see fukushima geiger counter
+0.2|fukushima operator start dangerous
+0.21|ghana disinformation president put shoe fukushima follow realdatill news
+0.2|fukushima plant brace
+0.19|well make feel warm fuzzy omarzaidmd real fukushima danger blog
+Retrieved 16 new auxiliary tweets.
+0.0|denuncian por negligencia la operadora de fukushima ciudadanos japoneses presentan madero tampico
+0.0|ocean boil coast japan runaway core fukushima wonder
+0.0|fukushima worker
+0.0|super excite haiyan join thingmonk see fukushima geiger counter
+0.0|fukushima plant brace
+0.0|well make feel warm fuzzy omarzaidmd real fukushima danger blog
+0.0|fukushima operator start dangerous
+0.0|ghana disinformation president put shoe fukushima follow realdatill news
+0.0|fukishima watch bad ever forget one know fish get
+0.0|satu harapan pltn fukushima tidak terpengaruh gempa
+0.0|fukushima descubren fuga de casi toneladas de agua contaminada cuba
+0.0|take close look radioactive leak fukushima japan impact worldview wbez
+0.0|msnnow radioactive cloud expect reach
+0.0|nacional descubren una nueva fuga de cuatro toneladas de agua radiactiva en fukushima
+0.0|aabb learn ocular complication
+0.0|japan remove fukushima fuel rod
+()Adding 16 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-3=0.88
+Precision=0.83
+Recall=0.96
+Aux F1 - ConfusionMatrix:
+21.0  5.0   
+1.0   24.0  
+
+Best F1 so far - 0.88 at iteration:3
+
+
+0.24|nuclear radiation effect fukushima update fukushima
+0.18|remove regulatead area fukushima
+0.25|fukushima radiation reach coast safe level nrc say bloomberg via bloombergnow
+0.23|guardian fukushima worker low morale plague health woe say insider shit
+0.16|japan issue warn fukushima leak
+0.19|mt richardjwood tepco plan dump radioactive water store fukushima ocean instead contain
+0.13|happen fukushima responsible mass animal
+0.15|fukushima una bomba radioattiva fuori mondo tempo reale
+0.13|scientist want fukushima everywhere throughout
+0.21|read fukushima itk
+0.19|fukushima daiichi operator handle shutdown say govern party guardian
+0.05|fodeo negada fodeo
+0.25|really hope people get message fukushima go away get bad make
+0.08|rebharms stop iaea
+0.17|japan remove fukushima fuel rod
+0.15|tokyo host olympics feature meter fukushima nuclear puddle jump new olympic gold medal
+0.22|jellyfish baby birth defect nuclear radiation fukushima nonuke radiation
+0.16|comienza retirarse el combustible gastado del reactor de fukushima
+0.19|sunday close fukushima tepco allhandsondeck
+0.28|japan work massive project keep damage fukushima nuclear plant leak
+Retrieved 19 new auxiliary tweets.
+0.0|nuclear radiation effect fukushima update fukushima
+0.0|remove regulatead area fukushima
+0.0|japan issue warn fukushima leak
+0.0|mt richardjwood tepco plan dump radioactive water store fukushima ocean instead contain
+0.0|happen fukushima responsible mass animal
+0.0|fukushima radiation reach coast safe level nrc say bloomberg via bloombergnow
+0.0|guardian fukushima worker low morale plague health woe say insider shit
+0.0|fukushima una bomba radioattiva fuori mondo tempo reale
+0.0|scientist want fukushima everywhere throughout
+0.0|jellyfish baby birth defect nuclear radiation fukushima nonuke radiation
+0.0|comienza retirarse el combustible gastado del reactor de fukushima
+0.0|sunday close fukushima tepco allhandsondeck
+0.0|japan remove fukushima fuel rod
+0.0|tokyo host olympics feature meter fukushima nuclear puddle jump new olympic gold medal
+0.0|read fukushima itk
+0.0|fukushima daiichi operator handle shutdown say govern party guardian
+0.0|fodeo negada fodeo
+0.0|really hope people get message fukushima go away get bad make
+0.0|rebharms stop iaea
+()
+Aux F1 - Iteration-4=0.82
+Precision=0.81
+Recall=0.84
+Aux F1 - ConfusionMatrix:
+21.0  5.0   
+4.0   21.0  
+
+Best F1 so far - 0.88 at iteration:3
+
+
+0.19|hotosm please sign share petition crisis let voice
+0.14|like youtube video fukushima san francisco human mural
+0.21|turner horror get ride fukushima fuck doom tepco
+0.24|fukushima diary washington via youtube
+0.26|secretnews forecast show fukushima get eye wall typhoon wipha meteorology japan
+0.15|inicia tepco paso clave para desmantelar central de fukushima elmundo
+0.16|abductee tell comet ison impact fukushima disaster
+-0.05|conspiracy theory jesse category hurricane aim
+0.23|water piece nuclear fuel come ocean floor fukushima tokyo professor
+0.14|fukushima lay cloud prepare rain toxic poison upon reality
+0.12|mrvop fukushima begin fuel rod removal
+0.23|verbalstrahl fukushima erdbeben
+0.21|coyotesings fukushima first time core nuclear reactor ever fukushima three
+0.29|sign west coast absolutely fry nuclear radiation fukushima via
+0.21|cbsphilly cbsnews earthquake hit fukushima
+0.23|typhoon stoke fear cripple fukushima nuclear plant australian via sharethis
+0.22|fukushima day eat pacific ocean fish via trueactivist
+0.13|pray someone somewhere take global
+0.14|massive radioactive steam detect fukushima reactor
+0.16|fukushima come clean editorial unthinkable think britain plan new generation
+Retrieved 18 new auxiliary tweets.
+0.0|inicia tepco paso clave para desmantelar central de fukushima elmundo
+0.0|abductee tell comet ison impact fukushima disaster
+0.0|typhoon stoke fear cripple fukushima nuclear plant australian via sharethis
+0.0|fukushima day eat pacific ocean fish via trueactivist
+0.0|conspiracy theory jesse category hurricane aim
+0.0|water piece nuclear fuel come ocean floor fukushima tokyo professor
+0.0|fukushima lay cloud prepare rain toxic poison upon reality
+0.0|turner horror get ride fukushima fuck doom tepco
+0.0|fukushima diary washington via youtube
+0.0|hotosm please sign share petition crisis let voice
+0.0|like youtube video fukushima san francisco human mural
+0.0|mrvop fukushima begin fuel rod removal
+0.0|verbalstrahl fukushima erdbeben
+0.0|coyotesings fukushima first time core nuclear reactor ever fukushima three
+0.0|cbsphilly cbsnews earthquake hit fukushima
+0.0|pray someone somewhere take global
+0.0|massive radioactive steam detect fukushima reactor
+0.0|fukushima come clean editorial unthinkable think britain plan new generation
+()
+Aux F1 - Iteration-5=0.88
+Precision=0.83
+Recall=0.96
+Aux F1 - ConfusionMatrix:
+21.0  5.0   
+1.0   24.0  
+
+Best F1 so far - 0.88 at iteration:3
+
+
+0.21|fukushima harm commerce russia reject radioactive japanese car via healthranger
+0.23|japan brace tepco prepare critical phase fukushima youtube news
+0.13|durch atomkatastrophe transatlantisches via youtube
+0.17|fukushima business usual nuclear turkey purchase new
+0.17|hay nuevas fugas radiactivas en fukushima muy interesante
+0.2|fukushima say combine read outside
+0.14|terremoto fukushima forte scossa vicino alla centrale niente danni
+0.19|worry california toxic water hit fukushima dilute enough
+0.17|magnitude earthquake shake tokyo halt train nerve fray fukushima
+0.13|crisis unit demand global common dream
+0.25|abe tell lie world radioactive contamination water fukushima nuclear power plant
+0.16|energy cost keep japan focus nuclear abc news economy
+0.22|fukushima worker order cover detection device downplay radiation level jg vibe fukushima
+0.26|earthquake hit fukushima via usatoday
+0.14|fukushima official hang ask potassium iodide purchase
+0.21|los color de fukushima yorokobuyorokobu
+0.19|jasonbermas fallout researcher fukushima bad case scenario could result billion death letshopenot
+0.04|onomen ngono ya mbh ibukne mbah kinjeng jangkrikk gusmanriyad kok os mbah kupu haha loh eman
+0.2|hurt especially japan pas need embarrass let world fukushima
+0.22|soar radiation fukushima groundwater common dream
+Retrieved 19 new auxiliary tweets.
+0.0|fukushima harm commerce russia reject radioactive japanese car via healthranger
+0.0|japan brace tepco prepare critical phase fukushima youtube news
+0.0|durch atomkatastrophe transatlantisches via youtube
+0.0|fukushima business usual nuclear turkey purchase new
+0.0|onomen ngono ya mbh ibukne mbah kinjeng jangkrikk gusmanriyad kok os mbah kupu haha loh eman
+0.0|hurt especially japan pas need embarrass let world fukushima
+0.0|soar radiation fukushima groundwater common dream
+0.0|hay nuevas fugas radiactivas en fukushima muy interesante
+0.0|fukushima say combine read outside
+0.0|terremoto fukushima forte scossa vicino alla centrale niente danni
+0.0|crisis unit demand global common dream
+0.0|abe tell lie world radioactive contamination water fukushima nuclear power plant
+0.0|los color de fukushima yorokobuyorokobu
+0.0|jasonbermas fallout researcher fukushima bad case scenario could result billion death letshopenot
+0.0|worry california toxic water hit fukushima dilute enough
+0.0|magnitude earthquake shake tokyo halt train nerve fray fukushima
+0.0|energy cost keep japan focus nuclear abc news economy
+0.0|fukushima worker order cover detection device downplay radiation level jg vibe fukushima
+0.0|fukushima official hang ask potassium iodide purchase
+()
+Aux F1 - Iteration-6=0.84
+Precision=0.84
+Recall=0.84
+Aux F1 - ConfusionMatrix:
+22.0  4.0   
+4.0   21.0  
+
+Best F1 so far - 0.88 at iteration:3
+
+
+0.16|scocosse fukushima pa de poursuite criminelle contre le dirigeants de tepco
+0.21|tepco verliest controle fukushima
+0.22|fukushima coast earthquake jpquake
+0.24|fukushima npp accident nuclear disaster even one die acute radiation sickness via exskf
+0.15|expertos internacionales analizan la radiactividad del mar en fukushima
+0.15|photo urajiri odaka city fukushima
+0.24|fukushima failure decontamination system stop function article fukushima nuclear
+0.21|fukushima release enough radioactive shit pacific ocean put know wtf
+0.1|break live fukushima adventure serial trespasserbroken live fukushimathe first photothe
+0.24|check date pr effort fukushima nuclear crisis separate fact fiction via youtube
+0.17|mind unleash fukushima state emergency leak
+0.23|japan protest french fukushima toon
+0.25|fukushima nuclear disaster warn world say power company bos via guardian
+0.09|gafe rajoy dice los temores sobre fukushima son infundados detecta una fuga quesequede
+0.22|connect dot fukushima year nuclear fukushima faq frequently ask
+0.18|tell un secgen world expert must oversee fukushima decommission irresponsible
+0.19|nycjim horrible radioactivity fukushima poison world time face
+0.2|fukushima world fuel melt
+0.24|abe go make nuclear power plant disaster fukushima please forget
+0.28|fukushima threaten tell obama redirect new nuke plant
+Retrieved 19 new auxiliary tweets.
+0.0|nycjim horrible radioactivity fukushima poison world time face
+0.0|fukushima world fuel melt
+0.0|abe go make nuclear power plant disaster fukushima please forget
+0.0|check date pr effort fukushima nuclear crisis separate fact fiction via youtube
+0.0|mind unleash fukushima state emergency leak
+0.0|fukushima release enough radioactive shit pacific ocean put know wtf
+0.0|break live fukushima adventure serial trespasserbroken live fukushimathe first photothe
+0.0|japan protest french fukushima toon
+0.0|fukushima nuclear disaster warn world say power company bos via guardian
+0.0|gafe rajoy dice los temores sobre fukushima son infundados detecta una fuga quesequede
+0.0|fukushima coast earthquake jpquake
+0.0|fukushima npp accident nuclear disaster even one die acute radiation sickness via exskf
+0.0|connect dot fukushima year nuclear fukushima faq frequently ask
+0.0|tell un secgen world expert must oversee fukushima decommission irresponsible
+0.0|scocosse fukushima pa de poursuite criminelle contre le dirigeants de tepco
+0.0|tepco verliest controle fukushima
+0.0|expertos internacionales analizan la radiactividad del mar en fukushima
+0.0|photo urajiri odaka city fukushima
+0.0|fukushima failure decontamination system stop function article fukushima nuclear
+()
+Aux F1 - Iteration-7=0.88
+Precision=0.83
+Recall=0.96
+Aux F1 - ConfusionMatrix:
+21.0  5.0   
+1.0   24.0  
+
+Best F1 so far - 0.88 at iteration:3
+
+
+0.05|paul mycological remediation respon
+0.28|fukushima suffer another setback tokyo operator cripple fukushima nuclear plant say
+0.24|number one concern humanity radioactivity level find fukushima plant well ajw asahi shimbun
+0.19|dot earth blog fukushima radiation pose california risk
+0.17|fukushima break news warn pacific genocide typhoon kevin
+0.19|removal fuel rod begin fukushima daiichi nuclear plant
+0.21|world action fukushima harvey wasserman via
+-0.04|pcv pressure suddenly decrease half reason verify
+0.14|ewdolan fukushima nuclear evacuation zone photo available online
+0.18|fukushima disaster advocate argue safe nuclear power none
+0.22|fukushima radiation hit west coast hit felt canadian mexican citizen
+0.21|question fukushima fish think
+0.2|fukushima industry make unfortunate brand choice via qz
+0.26|record radiation fukushima detect via sharethis
+0.16|fukushima japan bad enuf also go spray chemtrails ty etoujyuuroku
+0.17|post edit fukushima syria cyrus
+0.27|drhcaldicott fukushima new normal nuclear via conversationedu
+0.14|msm tell death climatewarning climate global kxl fracking
+0.02|human mural ocean beach san francisco
+0.21|bbc news fukushima leak bad lead
+Retrieved 17 new auxiliary tweets.
+0.0|fukushima japan bad enuf also go spray chemtrails ty etoujyuuroku
+0.0|post edit fukushima syria cyrus
+0.0|removal fuel rod begin fukushima daiichi nuclear plant
+0.0|world action fukushima harvey wasserman via
+0.0|fukushima disaster advocate argue safe nuclear power none
+0.0|fukushima radiation hit west coast hit felt canadian mexican citizen
+0.0|paul mycological remediation respon
+0.0|number one concern humanity radioactivity level find fukushima plant well ajw asahi shimbun
+0.0|question fukushima fish think
+0.0|fukushima industry make unfortunate brand choice via qz
+0.0|msm tell death climatewarning climate global kxl fracking
+0.0|human mural ocean beach san francisco
+0.0|dot earth blog fukushima radiation pose california risk
+0.0|pcv pressure suddenly decrease half reason verify
+0.0|fukushima break news warn pacific genocide typhoon kevin
+0.0|bbc news fukushima leak bad lead
+0.0|ewdolan fukushima nuclear evacuation zone photo available online
+()
+Aux F1 - Iteration-8=0.82
+Precision=0.81
+Recall=0.84
+Aux F1 - ConfusionMatrix:
+21.0  5.0   
+4.0   21.0  
+
+Best F1 so far - 0.88 at iteration:3
+
+
+0.2|japan marine expert fukushima radioactive tank may already empty pacific ocean
+0.12|tokyo governor slam fukushima coverage eve olympics vote
+0.18|enenews mislead public inaccurate information fukushima
+0.02|enough
+0.15|fukushima fish unsafe human ok pacific whale witness incredible suffer shameonus
+0.19|next fukushima responsibility
+0.16|apaajanews kebocoran reaktor nuklir fukushima memburuk
+0.22|scion iq japan spend store radioactive fukushima watch hot girl
+0.24|fukushima
+0.14|anyone else worry fukushima genuinely japansfucked
+0.16|la empresas japonesas contratan indigentes para limpiar la zona del desastre nuclear de fukushima
+0.19|massive expensive untested wall ice keep fukushima via huffpostcanada
+0.23|fukushima leak problem nuclear
+0.22|fukushima reactor well water seawall thousand via yutakatheblues
+0.23|new think fukushima wake shun get
+0.27|fukushima news decontamination iaea via youtube
+0.19|tornades entre fukushima et tokyo
+0.19|lawsonbulk fukushima fishery resume trial fish sample prove safe japan time
+0.18|giappone prima turbina eolica davanti alle coste di fukushima via newsrepublic
+0.19|epkyrosis demand global fukushima hit critical mass harvey wasserman
+Retrieved 19 new auxiliary tweets.
+0.0|fukushima fish unsafe human ok pacific whale witness incredible suffer shameonus
+0.0|next fukushima responsibility
+0.0|apaajanews kebocoran reaktor nuklir fukushima memburuk
+0.0|massive expensive untested wall ice keep fukushima via huffpostcanada
+0.0|fukushima leak problem nuclear
+0.0|fukushima reactor well water seawall thousand via yutakatheblues
+0.0|new think fukushima wake shun get
+0.0|tornades entre fukushima et tokyo
+0.0|scion iq japan spend store radioactive fukushima watch hot girl
+0.0|fukushima
+0.0|enenews mislead public inaccurate information fukushima
+0.0|enough
+0.0|japan marine expert fukushima radioactive tank may already empty pacific ocean
+0.0|tokyo governor slam fukushima coverage eve olympics vote
+0.0|anyone else worry fukushima genuinely japansfucked
+0.0|la empresas japonesas contratan indigentes para limpiar la zona del desastre nuclear de fukushima
+0.0|lawsonbulk fukushima fishery resume trial fish sample prove safe japan time
+0.0|giappone prima turbina eolica davanti alle coste di fukushima via newsrepublic
+0.0|epkyrosis demand global fukushima hit critical mass harvey wasserman
+()
+Aux F1 - Iteration-9=0.86
+Precision=0.82
+Recall=0.92
+Aux F1 - ConfusionMatrix:
+21.0  5.0   
+2.0   23.0  
+
+Best F1 so far - 0.88 at iteration:3
+
+
+0.25|radiation level spike fukushima plant radiation read near tank hold toxic water
+0.17|bos jimcameron save pandora pull big gun pressure real cleanup fukushima savethepacific
+0.16|may concern situation
+0.24|japan radiation read spike fukushima nuclear plant bring company contaminate
+0.06|fafafava amo esta noticia trucha
+0.19|japan steuert auf fukushima zu via welt
+0.18|report fukushima overwhelm radioactive water asiapacific
+0.29|fukushima get two year situation stricken nuclear power plant
+0.19|fukushima mutate sea
+0.25|fukushima story via akaider goldhardshell
+0.17|gaat nog raar worden daar fukushima en dus de rest van de
+0.15|refuelrefire marwhoa play japan fukushima squidcocks thats uniform
+0.19|accord pour surveiller fukushima et tchernobyl de science technologie
+0.21|japan touch others fukushima water crisis
+0.15|aaalrightythen world community must take charge fukushima moveon environnement worldhealth nucular
+0.29|annoyedgamer rate fukushima radiation spread also get king ghidorah mothra rodan whole lot
+0.26|fukushima usa prepare nuclear kill
+0.17|current fukushima exclusion zone map via safecast
+0.22|official japan admit ton radioactive water fukushima enter pacific ocean
+0.16|fukushima kid yumi kikuchi fairewinds energy education
+Retrieved 17 new auxiliary tweets.
+0.0|radiation level spike fukushima plant radiation read near tank hold toxic water
+0.0|bos jimcameron save pandora pull big gun pressure real cleanup fukushima savethepacific
+0.0|current fukushima exclusion zone map via safecast
+0.0|official japan admit ton radioactive water fukushima enter pacific ocean
+0.0|fukushima kid yumi kikuchi fairewinds energy education
+0.0|japan touch others fukushima water crisis
+0.0|aaalrightythen world community must take charge fukushima moveon environnement worldhealth nucular
+0.0|fafafava amo esta noticia trucha
+0.0|japan steuert auf fukushima zu via welt
+0.0|refuelrefire marwhoa play japan fukushima squidcocks thats uniform
+0.0|accord pour surveiller fukushima et tchernobyl de science technologie
+0.0|fukushima story via akaider goldhardshell
+0.0|gaat nog raar worden daar fukushima en dus de rest van de
+0.0|report fukushima overwhelm radioactive water asiapacific
+0.0|fukushima mutate sea
+0.0|may concern situation
+0.0|japan radiation read spike fukushima nuclear plant bring company contaminate
+()
+Aux F1 - Iteration-10=0.88
+Precision=0.83
+Recall=0.96
+Aux F1 - ConfusionMatrix:
+21.0  5.0   
+1.0   24.0  
+
+Best F1 so far - 0.88 at iteration:3
+
+
+0.15|fukushima aktuell mangel lagertanks behindert grundwasserarbeiten japan
+0.16|minute video show everything need know
+0.15|pierrejparent freelancemother fukushima yet need independent task force take
+0.15|sendyrenave fukushima collaboration heal perfecture earthquake ago
+0.15|power reactor rarely demolish rather abandon watchfully leave chernobyl
+0.17|us ronald reagan sailor report cancer fukushima rescue mission
+0.25|japan spend million fix fukushima nuclear crisis tokyo japan set pledge
+0.19|japan pm step deal fukushima
+0.15|terrify secret fukushima
+0.18|de la embajada keicho fukushima pasando por san francisco javier con visita solidaria fukushima
+0.09|ockham fukushima niemand dood en toch het zo laten vol voor nucleair
+0.14|giappone allerta tifone verso fukushima mondo via
+0.0|baby two head bear
+0.25|destruction heritage sit syria raise question cost democracy occupy ows occupywallstreet
+0.27|nyc forecast overnight partly low temp occupywallstreet tpp
+0.26|nyc forecast afternoon high temp occupywallstreet tpp sgp
+0.27|link city underwater year occupy ows occupywallstreet occupyhq grassroots usa
+0.25|vietnamese lawyer face obstruction ahead trial occupy ows occupywallstreet occupyhq grassroots
+0.26|andrew curtin photo selfie occupy ows occupywallstreet occupyhq grassroots
+0.27|nyc forecast wed night low temp occupywallstreet glennbeck tcot
+Retrieved 15 new auxiliary tweets.
+0.0|us ronald reagan sailor report cancer fukushima rescue mission
+0.0|japan spend million fix fukushima nuclear crisis tokyo japan set pledge
+0.0|de la embajada keicho fukushima pasando por san francisco javier con visita solidaria fukushima
+0.0|ockham fukushima niemand dood en toch het zo laten vol voor nucleair
+0.0|japan pm step deal fukushima
+0.0|terrify secret fukushima
+0.0|minute video show everything need know
+0.0|pierrejparent freelancemother fukushima yet need independent task force take
+0.0|sendyrenave fukushima collaboration heal perfecture earthquake ago
+0.0|power reactor rarely demolish rather abandon watchfully leave chernobyl
+0.0|giappone allerta tifone verso fukushima mondo via
+0.0|baby two head bear
+0.0|destruction heritage sit syria raise question cost democracy occupy ows occupywallstreet
+0.0|vietnamese lawyer face obstruction ahead trial occupy ows occupywallstreet occupyhq grassroots
+0.0|fukushima aktuell mangel lagertanks behindert grundwasserarbeiten japan
+()
+Aux F1 - Iteration-11=0.8
+Precision=0.8
+Recall=0.8
+Aux F1 - ConfusionMatrix:
+21.0  5.0   
+5.0   20.0  
+
+Best F1 so far - 0.88 at iteration:3
+
+
+0.28|alex schaefer burn bank occupy ows occupywallstreet occupyhq grassroots
+0.02|study economic inequality lead downfall civilization
+0.26|dome special slideshow occupy ows occupywallstreet occupyhq grassroots
+0.27|cme break occupy ows occupywallstreet occupyhq
+0.31|nyc forecast mon high temp get smart occupywallstreet sgp
+0.29|preview death bin lade revisted nightly news video occupy ows occupywallstreet occupyhq
+0.27|irs rule bitcoin property subject capital gain tax occupy ows occupywallstreet occupyhq grassroots
+0.28|confession juiced journalist occupy ows occupywallstreet occupyhq grassroots
+0.16|ows kitchen nostalgia submit
+0.28|nyc forecast sit night partly low temp occupywallstreet tcot
+0.26|nyc forecast fri night low temp occupywallstreet topprog glennbeck
+0.28|israel gaza big picture occupy ows occupywallstreet occupyhq grassroots usa canada europe
+0.28|nyc forecast sun night mostly low temp occupywallstreet tpp glennbeck
+0.29|secretive turkish movement buy influence occupy ows occupywallstreet occupyhq grassroots usa
+0.27|nyc forecast sit night mostly low temp occupywallstreet tcot tcot
+0.27|nyc forecast afternoon high temp occupywallstreet tpp
+0.19|buy custom nyc street sign may suggest
+0.26|jesse jackson call symbolic protest clipper player occupy ows occupywallstreet occupyhq
+0.27|brussels conference un stress need approach stabilize mali occupy ows occupywallstreet
+0.18|occupywallstreet give nypd perfect excuse crack elderly veteran
+Retrieved 4 new auxiliary tweets.
+0.0|occupywallstreet give nypd perfect excuse crack elderly veteran
+0.0|buy custom nyc street sign may suggest
+0.0|study economic inequality lead downfall civilization
+0.0|ows kitchen nostalgia submit
+()
+Aux F1 - Iteration-12=0.88
+Precision=0.85
+Recall=0.92
+Aux F1 - ConfusionMatrix:
+22.0  4.0   
+2.0   23.0  
+
+Best F1 so far - 0.88 at iteration:3
+
+
+0.29|colombia justice peace law failure expert say occupy ows occupywallstreet occupyhq grassroots
+0.29|soil association disown say resign trustee occupy ows occupywallstreet occupyhq
+0.26|cull human herd century occupy ows occupywallstreet occupyhq grassroots
+0.17|support brother sister occupygezi reoccupy zuccotti occupywallstreet
+0.3|may ga reid park occupy ows occupywallstreet occupyhq grassroots usa canada
+0.25|unhcr urge prevent refugee expulsion uae occupy ows occupywallstreet occupyhq grassroots
+0.29|new corvette spytech record conversation video occupy ows occupywallstreet occupyhq grassroots usa
+0.2|hilaryclinton run president hilary care olsx teamster occupywallstreet
+0.29|japan next economic domino occupy ows occupywallstreet occupyhq grassroots
+0.25|dear state department moral authority tell country treat protest occupywallstreet
+0.15|together jefferson airplane occupywallstreet
+0.28|politico rand paul marco rubio differ iraq action occupy ows occupywallstreet occupyhq grassroots
+0.31|nyc forecast fri night mostly low temp get smart occupywallstreet tlot tlot
+0.32|banky bbc news occupy ows occupywallstreet occupyhq grassroots
+0.27|nyc forecast tue night low temp occupywallstreet teaparty
+0.22|alliancebl give bank tab occupywallstreet
+0.23|ban kettle hairdryers help climate change occupy ows occupywallstreet
+0.15|fin fraud jp morgan agree pay record settle charge toxic mortgage occupywallstreet
+0.27|shooter moncton phone report part video occupy ows occupywallstreet occupyhq
+0.3|reason question investigate anniversary occupy ows occupywallstreet occupyhq
+Retrieved 8 new auxiliary tweets.
+0.0|fin fraud jp morgan agree pay record settle charge toxic mortgage occupywallstreet
+0.0|unhcr urge prevent refugee expulsion uae occupy ows occupywallstreet occupyhq grassroots
+0.0|dear state department moral authority tell country treat protest occupywallstreet
+0.0|support brother sister occupygezi reoccupy zuccotti occupywallstreet
+0.0|alliancebl give bank tab occupywallstreet
+0.0|together jefferson airplane occupywallstreet
+0.0|ban kettle hairdryers help climate change occupy ows occupywallstreet
+0.0|hilaryclinton run president hilary care olsx teamster occupywallstreet
+()
+Aux F1 - Iteration-13=0.84
+Precision=0.84
+Recall=0.84
+Aux F1 - ConfusionMatrix:
+22.0  4.0   
+4.0   21.0  
+
+Best F1 so far - 0.88 at iteration:3
+
+
+0.2|government privatization support inequality occupy ows opesr occupyhq
+0.27|welcome back lobbyist obama save seat capitol hill occupy ows occupywallstreet occupyhq
+0.28|surveillance camera soon read lip video occupy ows occupywallstreet occupyhq grassroots
+0.28|rand woman problem occupy ows occupywallstreet occupyhq grassroots
+0.29|unhcr condemn deadly attack homs collective shelter occupy ows occupywallstreet occupyhq grassroots
+0.31|nyc forecast wed high temp get smart occupywallstreet ocra teaparty
+0.25|rat meat sell lamb china occupy ows occupywallstreet occupyhq grassroots
+0.28|gunfail ix occupy ows occupywallstreet occupyhq grassroots
+0.32|work poor welcome occupy ows occupywallstreet occupyhq grassroots usa canada
+0.3|nyc forecast mon night low temp get smart occupywallstreet topprog glennbeck
+0.08|maddowblog agenda reek radicalism turn notch
+0.27|nyc forecast wed night low temp occupywallstreet sgp
+0.24|green group accuse trash reputation overseas occupy ows occupywallstreet occupyhq
+0.19|noamchomsky quote mymanatee ows occupywallstreet
+0.23|santa give present rich occupywallstreet perpetuatingpoverty
+0.0|il movimento mondiale osservato anche da nel andremo micah white
+0.29|texas appalachia put body line occupy ows occupywallstreet occupyhq grassroots
+0.2|shugdenlibrary dalai lama slave owner dalailama lamagate occupywallstreet
+0.19|include contradiction democracy centralism leadership lead ows occupywallstreet
+0.26|global may day protest austerity death bangladeshi worker via youtube ows occupywallstreet
+Retrieved 9 new auxiliary tweets.
+0.0|government privatization support inequality occupy ows opesr occupyhq
+0.0|shugdenlibrary dalai lama slave owner dalailama lamagate occupywallstreet
+0.0|include contradiction democracy centralism leadership lead ows occupywallstreet
+0.0|noamchomsky quote mymanatee ows occupywallstreet
+0.0|green group accuse trash reputation overseas occupy ows occupywallstreet occupyhq
+0.0|maddowblog agenda reek radicalism turn notch
+0.0|santa give present rich occupywallstreet perpetuatingpoverty
+0.0|rat meat sell lamb china occupy ows occupywallstreet occupyhq grassroots
+0.0|il movimento mondiale osservato anche da nel andremo micah white
+()
+Aux F1 - Iteration-14=0.86
+Precision=0.82
+Recall=0.92
+Aux F1 - ConfusionMatrix:
+21.0  5.0   
+2.0   23.0  
+
+Best F1 so far - 0.88 at iteration:3
+
+
+0.27|decolonize pipeline resistance interview freda huson occupy ows occupywallstreet occupyhq grassroots
+0.27|nyc forecast thu night mostly low temp occupywallstreet tpp topprog
+0.21|win mt gaypatriot occupywallstreet communist occupyhongkong
+0.29|may day la schedule occupy ows occupywallstreet occupyhq grassroots
+0.13|kelly thomas verdict cop license murder filmthepolice anonfamily opsafewinter occupywallstreet
+0.27|hqoccupy sudanese trader kill south sudan ambush occupy ows occupywallstreet occupyhq grassroots
+0.25|nyc forecast wed night low temp occupywallstreet ocra topprog
+0.29|iran two ahwazi arab men risk imminent execution occupy ows occupywallstreet occupyhq grassroots
+0.28|amateur activist occupy ows occupywallstreet occupyhq grassroots usa canada
+0.25|nyc forecast sun high temp occupywallstreet tpp tpp
+0.19|greek police arrest editor weekly magazine dissent ows occupygreece occupywallstreet
+0.29|news november occupy ows occupywallstreet occupyhq grassroots usa canada
+0.27|malala receive liberty medal occupy ows occupywallstreet occupyhq grassroots usa canada
+0.28|pentagon ready train syrian rebel occupy ows occupywallstreet occupyhq grassroots usa
+0.28|nyc forecast wed night mostly low temp occupywallstreet tpp topprog
+0.28|turkey withstand hostage ordeal say turkish pm occupy ows occupywallstreet occupyhq grassroots usa
+0.25|hardliner impeach moderate minister green movement protest occupy ows occupywallstreet
+0.25|silent crisis bahrain opposition seek support international attention russia occupy ows occupywallstreet
+0.26|celente world currency trouble occupy ows occupywallstreet occupyhq grassroots
+0.17|return pluribus occupy opesr ows
+Retrieved 8 new auxiliary tweets.
+0.0|nyc forecast wed night low temp occupywallstreet ocra topprog
+0.0|silent crisis bahrain opposition seek support international attention russia occupy ows occupywallstreet
+0.0|kelly thomas verdict cop license murder filmthepolice anonfamily opsafewinter occupywallstreet
+0.0|win mt gaypatriot occupywallstreet communist occupyhongkong
+0.0|return pluribus occupy opesr ows
+0.0|nyc forecast sun high temp occupywallstreet tpp tpp
+0.0|hardliner impeach moderate minister green movement protest occupy ows occupywallstreet
+0.0|greek police arrest editor weekly magazine dissent ows occupygreece occupywallstreet
+()
+Aux F1 - Iteration-15=0.88
+Precision=0.85
+Recall=0.92
+Aux F1 - ConfusionMatrix:
+22.0  4.0   
+2.0   23.0  
+
+Best F1 so far - 0.88 at iteration:3
+
+
+0.14|bureau reclamation release additional flow avert klamath river fish occupy ows
+0.27|nyc forecast mon night low temp occupywallstreet tlot sgp
+0.24|phoenix last night cop kill unarm black man afraid prescription bottle occupy
+0.27|nyc forecast mon night mostly low temp occupywallstreet topprog tcot
+0.29|syria meet end solution occupy ows occupywallstreet occupyhq grassroots
+0.07|giovalenzi il natale vince su tutto capodanno nella grande happy new year
+0.26|nyc forecast sit night low temp occupywallstreet ocra sgp
+0.29|nyc forecast wed night mostly low temp occupywallstreet tpp
+0.21|alle reden zur deutsche bank hauptversammlung frankfurt occupy ows
+0.3|nyc forecast fri partly high temp get smart occupywallstreet tlot topprog
+0.07|qe backfire dividend quest usurp growth cut research quantitative ease may make
+0.29|crisis southern new part occupy ows occupywallstreet occupyhq grassroots
+0.23|occupywallstreet penney store close via huffpostbiz
+0.26|one bad thing pet fish occupy ows occupywallstreet occupyhq
+0.25|vadodara zoo special conducive environment animal summer occupy ows occupywallstreet occupyhq
+0.28|nyc forecast sit night low temp occupywallstreet glennbeck
+0.26|mexico new grave find hunt miss student occupy ows occupywallstreet occupyhq grassroots usa
+0.29|nyc forecast sit partly high temp occupywallstreet tlot
+0.27|german spy agency geopolitical consequence oil boom occupy ows occupywallstreet occupyhq grassroots
+0.26|nyc forecast fri high temp occupywallstreet glennbeck tpp
+Retrieved 7 new auxiliary tweets.
+0.0|occupywallstreet penney store close via huffpostbiz
+0.0|giovalenzi il natale vince su tutto capodanno nella grande happy new year
+0.0|bureau reclamation release additional flow avert klamath river fish occupy ows
+0.0|phoenix last night cop kill unarm black man afraid prescription bottle occupy
+0.0|vadodara zoo special conducive environment animal summer occupy ows occupywallstreet occupyhq
+0.0|qe backfire dividend quest usurp growth cut research quantitative ease may make
+0.0|alle reden zur deutsche bank hauptversammlung frankfurt occupy ows
+()
+Aux F1 - Iteration-16=0.74
+Precision=0.77
+Recall=0.68
+Aux F1 - ConfusionMatrix:
+21.0  5.0   
+8.0   17.0  
+
+Best F1 so far - 0.88 at iteration:3
+
+
+0.27|hitchhiker save woman racist kook occupy ows occupywallstreet occupyhq grassroots
+0.29|ensure bad outcome cyprus tell world occupy ows occupywallstreet occupyhq grassroots
+0.21|tell congress bank must fix mistake credit report occupywallstreet nyc ohio
+0.24|twelve civilian kill coalition airstrike syria occupy ows occupywallstreet occupyhq grassroots
+0.25|dotcom greenwald assange snowden target new zealand occupy ows occupywallstreet occupyhq grassroots
+0.24|happy year anniversary occupywallstreet
+0.3|israeli rocket strike near ap office gaza city occupy ows occupywallstreet occupyhq grassroots usa
+0.22|member raid osama bin lade compound testify bradley via youtube ows occupywallstreet
+0.28|un racism religious intolerance rise west europe occupy ows occupywallstreet occupyhq grassroots
+0.28|untold story rape vietnam war occupy ows occupywallstreet occupyhq grassroots
+0.29|imf chief question corruption probe occupy ows occupywallstreet occupyhq grassroots usa
+0.32|boy get diagnose autism shot occupy ows occupywallstreet occupyhq grassroots usa
+0.29|nyc forecast wed night low temp occupywallstreet tcot teaparty
+0.22|occupysandiego declaration solidarity occupywallst occupywallstreet occupywallstnyc oo
+0.0|hurricane sandy coney island occupywallstreetpics
+0.25|nyc forecast tue night low temp occupywallstreet sgp glennbeck
+0.27|social justice camp teen occupy ows occupywallstreet occupyhq grassroots
+0.3|nyc forecast fri partly high temp time ows get smart occupywallstreet tpp ocra
+0.27|euromaidan portrait photo selfie occupy ows occupywallstreet occupyhq grassroots
+0.29|net benefit northern occupy ows occupywallstreet occupyhq grassroots usa
+Retrieved 8 new auxiliary tweets.
+0.0|dotcom greenwald assange snowden target new zealand occupy ows occupywallstreet occupyhq grassroots
+0.0|twelve civilian kill coalition airstrike syria occupy ows occupywallstreet occupyhq grassroots
+0.0|tell congress bank must fix mistake credit report occupywallstreet nyc ohio
+0.0|member raid osama bin lade compound testify bradley via youtube ows occupywallstreet
+0.0|occupysandiego declaration solidarity occupywallst occupywallstreet occupywallstnyc oo
+0.0|happy year anniversary occupywallstreet
+0.0|hurricane sandy coney island occupywallstreetpics
+0.0|nyc forecast tue night low temp occupywallstreet sgp glennbeck
+()
+Aux F1 - Iteration-17=0.84
+Precision=0.84
+Recall=0.84
+Aux F1 - ConfusionMatrix:
+22.0  4.0   
+4.0   21.0  
+
+Best F1 so far - 0.88 at iteration:3
+
+
+0.3|dignity occupy ows occupywallstreet occupyhq grassroots
+0.24|opposition call vote recount turkish election occupy ows occupywallstreet occupyhq grassroots
+0.24|keystone xl opponent could learn gay right movement occupy ows occupywallstreet occupyhq
+0.26|mike rivero really happen radio show friday may occupy ows occupywallstreet occupyhq
+0.26|fedex charge traffic drug web pharmacy occupy ows occupywallstreet occupyhq grassroots
+0.18|occupywallstreet conservative government approve new mortgage law ignore key demand
+0.15|freeleonardpeltier release political anonymous occupywallstreet
+0.23|islamist unleash assault iraqi city weapon occupy ows occupywallstreet occupyhq
+0.14|produce mobile apps occupywallstreet
+0.28|didga cat take parkour new level occupy ows occupywallstreet occupyhq grassroots
+0.2|occupywallstreet protest evolution endorse atheist
+0.29|boycott immigration detention canada occupy ows occupywallstreet occupyhq grassroots usa
+0.18|thought second anniversary occupywallstreet
+0.26|greenwald blame hostage occupy ows occupywallstreet occupyhq grassroots usa canada europe
+0.32|get sue chamber commerce occupy ows occupywallstreet occupyhq grassroots
+0.29|iraq pm say isil plot attack ny paris metro occupy ows occupywallstreet occupyhq grassroots
+0.26|restate support campaign occupy ows occupywallstreet occupyhq
+0.23|photo nomadnewyork post photo occupywallstreet strikedebt occupywallstreet ows
+0.26|nyc forecast fri night low temp occupywallstreet tpp tpp
+0.21|informationszentrum asyl und migration brief note februar occupy ows occupywallstreet
+Retrieved 10 new auxiliary tweets.
+0.0|occupywallstreet protest evolution endorse atheist
+0.0|freeleonardpeltier release political anonymous occupywallstreet
+0.0|islamist unleash assault iraqi city weapon occupy ows occupywallstreet occupyhq
+0.0|thought second anniversary occupywallstreet
+0.0|occupywallstreet conservative government approve new mortgage law ignore key demand
+0.0|photo nomadnewyork post photo occupywallstreet strikedebt occupywallstreet ows
+0.0|informationszentrum asyl und migration brief note februar occupy ows occupywallstreet
+0.0|keystone xl opponent could learn gay right movement occupy ows occupywallstreet occupyhq
+0.0|produce mobile apps occupywallstreet
+0.0|opposition call vote recount turkish election occupy ows occupywallstreet occupyhq grassroots
+()Adding 10 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-18=0.9
+Precision=0.86
+Recall=0.96
+Aux F1 - ConfusionMatrix:
+22.0  4.0   
+1.0   24.0  
+
+Best F1 so far - 0.9 at iteration:18
+
+
+0.21|occupy increasingly occupy opesr ows
+0.29|detain istanbul gezi protest anniversary occupy ows occupywallstreet occupyhq grassroots usa
+0.23|ghost milton friedman materialize chicago endorse price carbon occupy ows occupywallstreet
+0.25|nyc forecast tue night low temp occupywallstreet sgp
+0.04|mass protest november occupyinfo owsinfo revolution anonymous
+0.28|chinese dream occupy center stage chinadaily usa occupy ows occupywallstreet occupyhq grassroots
+0.28|eritrea eritrean flee repression say un rapporteur occupy ows occupywallstreet occupyhq grassroots
+0.08|occupywallstreet america monopoly game coworker make interest analogy america today like
+0.31|urgent need surveillance reform occupy ows occupywallstreet occupyhq grassroots
+0.23|australian government report outline dismantle welfare system occupy ows occupywallstreet occupyhq
+0.27|hope see independent palestine state palestinian youth activist occupy ows occupywallstreet
+0.23|nyc forecast tue high temp occupywallstreet glennbeck ocra
+0.27|hide agenda behind rise terrorist video occupy ows occupywallstreet occupyhq
+0.29|euromaidan photo selfie occupy ows occupywallstreet occupyhq grassroots
+0.27|study public mass shoot cr occupy ows occupywallstreet occupyhq grassroots
+0.27|nyc forecast tue night mostly low temp occupywallstreet glennbeck
+0.27|minneapolis strike debt occupywallstreet anniversary via youtube strikedebt debtburn
+0.32|nyc forecast thu high temp time ows get smart occupywallstreet tlot sgp
+0.27|call cruelty christmas occupy ows occupywallstreet occupyhq grassroots
+0.24|terrorism stealth petrochemical occupy ows occupywallstreet occupyhq grassroots
+Retrieved 8 new auxiliary tweets.
+0.0|mass protest november occupyinfo owsinfo revolution anonymous
+0.0|occupywallstreet america monopoly game coworker make interest analogy america today like
+0.0|terrorism stealth petrochemical occupy ows occupywallstreet occupyhq grassroots
+0.0|occupy increasingly occupy opesr ows
+0.0|australian government report outline dismantle welfare system occupy ows occupywallstreet occupyhq
+0.0|nyc forecast tue night low temp occupywallstreet sgp
+0.0|nyc forecast tue high temp occupywallstreet glennbeck ocra
+0.0|ghost milton friedman materialize chicago endorse price carbon occupy ows occupywallstreet
+()
+Aux F1 - Iteration-19=0.82
+Precision=0.81
+Recall=0.84
+Aux F1 - ConfusionMatrix:
+21.0  5.0   
+4.0   21.0  
+
+Best F1 so far - 0.9 at iteration:18
+
+
+0.27|nyc forecast thu high temp occupywallstreet tpp
+0.34|saudi arabia finance terror video occupy ows occupywallstreet occupyhq grassroots usa
+0.3|quote day stone tablet defeat nsa occupy ows occupywallstreet occupyhq grassroots usa
+0.31|wave protest malaysian election result occupy ows occupywallstreet occupyhq grassroots
+0.27|nyc forecast thu high temp occupywallstreet tcot
+0.28|newsletter occupy ows occupywallstreet occupyhq grassroots usa canada europe protest
+0.11|ows big scam history mankind end feed talk thing
+0.31|nyc forecast wed high temp time ows get smart occupywallstreet sgp topprog
+0.3|nyc forecast mon high temp get smart occupywallstreet glennbeck tpp
+0.27|ukraine news medium must allow cover crimea crisis freely occupy ows occupywallstreet occupyhq
+0.28|nyc forecast martin luther king jr day partly high temp occupywallstreet teaparty sgp
+0.03|judge approve million settlement uc davis pepper spray lawsuit
+0.32|nyc forecast fri night mostly low temp get smart occupywallstreet teaparty
+0.21|june break news iraqi pm welcome syria air strike border cross occupy ows occupywallstreet
+0.15|occupywallstreet stay strong stay center stay love ows
+0.16|remove board trustee wgbh via forecastfacts occupywallstreet occupyamerica
+0.27|american financial reform bank without wall street occupy ows occupywallstreet occupyhq
+0.18|meet greedy big business rip taxpayer occupywallstreet raisethewage
+0.26|nyc forecast wed night low temp occupywallstreet ocra
+0.3|citizen journalism put radar mainstream news occupy ows occupywallstreet occupyhq grassroots
+Retrieved 6 new auxiliary tweets.
+0.0|ows big scam history mankind end feed talk thing
+0.0|judge approve million settlement uc davis pepper spray lawsuit
+0.0|remove board trustee wgbh via forecastfacts occupywallstreet occupyamerica
+0.0|meet greedy big business rip taxpayer occupywallstreet raisethewage
+0.0|occupywallstreet stay strong stay center stay love ows
+0.0|june break news iraqi pm welcome syria air strike border cross occupy ows occupywallstreet
+()
+Aux F1 - Iteration-20=0.9
+Precision=0.86
+Recall=0.96
+Aux F1 - ConfusionMatrix:
+22.0  4.0   
+1.0   24.0  
+
+Best F1 so far - 0.9 at iteration:18
+
+
+Total time taken for experiment:907.435 seconds.
+				************* SAVE THE RESULTS ******************
+Ending experiment at 2017-04-03T01:47:24.707-04:00

@@ -47,7 +47,7 @@ class WebServiceBasedWordVectorGenerator extends IFeatureGenerator{
 		catch {
 
 			case _ => {
-				println("Some issues with retrieving word vectors.")
+				println(s"Some issues with retrieving word vectors.{$sentence1}")
 				return new LabeledPoint(label, Vectors.dense(0))
 			}
 
