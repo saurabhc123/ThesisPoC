@@ -86,6 +86,7 @@ class AuxiliaryDataBasedExperiment(args: Array[String]) extends IExperiment {
 		val auxiliaryDataRetriever: IAuxiliaryDataRetriever = new AuxiliaryDataRetrieverFactory().getAuxiliaryDataRetriever(AuxiliaryDataBasedExperiment.auxiliaryDataFile)
 
 		val trainingFeatures: RDD[LabeledPoint] = featureGenerator.generateFeatures(train, DataType.TRAINING)
+		trainingFeatures.cache()
 
 		//***** Do this only for the CNN classifier
 		if (AuxiliaryDataBasedExperiment.classifierType == ClassifierType.Cnn) {
@@ -101,6 +102,7 @@ class AuxiliaryDataBasedExperiment(args: Array[String]) extends IExperiment {
 		var model = classifier.train(trainingFeatures)
 
 		val validationFeatures: RDD[LabeledPoint] = featureGenerator.generateFeatures(validation, DataType.TEST)
+		validationFeatures.cache()
 		//Perform Validation and get score
 		val predictions = model.predict(validationFeatures);
 		val metricsCalculator = MetricsCalculator.GenerateClassifierMetrics(predictions)
