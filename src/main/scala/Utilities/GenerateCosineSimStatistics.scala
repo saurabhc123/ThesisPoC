@@ -21,12 +21,12 @@ object GenerateCosineSimStatistics extends App {
 		Logger.getLogger("akka").setLevel(Level.OFF)
 		val sc = SparkContextManager.getContext
 		sc.setLogLevel("ERROR")
-		AuxiliaryDataBasedExperiment.experimentSet = "ebola"
+		AuxiliaryDataBasedExperiment.experimentSet = "greece"
 		AuxiliaryDataBasedExperiment.vectorType = s"local"
 		GetData(0)
-		GetData(1)
-		GetData(2)
-		GetData(3)
+//		GetData(1)
+//		GetData(2)
+//		GetData(3)
 //		Reset()
 //		val (threshold1, wallSize1) = getCosineSimParametersForTweets(tweets)
 //		print(threshold1,wallSize1)
