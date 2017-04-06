@@ -26,7 +26,11 @@ def filter_stopwords(words):
 
 def clean_file(lem, name):
     with open(name) as f:
-        new_sents = filter(lambda x: len(x[1].split()) > 0, [(line.split(',')[0] ,clean_sent(lem, line.split(',')[1].strip())) for line in f.readlines()])
+        fileLines = f.readlines()
+        #print(len(fileLines))
+        lineContents = [(line.split(',')[0] ,clean_sent(lem, line.split(',')[1].strip())) for line in fileLines]
+        #print(len(lineContents))
+        new_sents = filter(lambda x: len(x[1].split()) > 0, lineContents )
     for lab,sent in new_sents:
         print(str(lab) + "," + str(sent))
 
@@ -41,4 +45,4 @@ def clean_file_with_no_labels(lem, name):
 #print(clean_sent(wordnet_lemmatizer,
 #                 'Ozawa Ichiro(3):\x0A such as Japanese Bureaucrat and Massmedia.\x0A\x0ASee(Japanese);\x0A1)http://t.co/Goiij1CxE2\x0A2)http://t.co/cKfRcI8Tkb\x0A\x0A#Fukushima'))
 
-clean_file(wordnet_lemmatizer,"obesity_training_data3.txt")
+clean_file(wordnet_lemmatizer,"env.txt")
