@@ -21,8 +21,8 @@ object GenerateCosineSimStatistics extends App {
 		Logger.getLogger("akka").setLevel(Level.OFF)
 		val sc = SparkContextManager.getContext
 		sc.setLogLevel("ERROR")
-		AuxiliaryDataBasedExperiment.experimentSet = "greece"
-		AuxiliaryDataBasedExperiment.vectorType = s"local"
+		AuxiliaryDataBasedExperiment.experimentSet = "environment"
+		AuxiliaryDataBasedExperiment.vectorType = s"google"
 		GetData(0)
 //		GetData(1)
 //		GetData(2)

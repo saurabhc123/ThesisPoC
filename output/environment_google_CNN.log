@@ -1,0 +1,834 @@
+Starting experiment at 2017-04-08T15:51:22.214-04:00
+Reset successful
+***************** Parameters used for EXPERIMENT *****************
+	filterToUse = CosineSim
+	minSimilarityThreshold = 0.55
+	cosineSimilarityWindowSize= 0.2
+	minWmDistanceThreshold = 0.49
+	vectorType= google
+	webWord2VecBaseUri = http://localhost:5000/getvector/
+	cnnClassifierBaseUri = http://localhost:5000/cnn_train_and_get_prediction_labels
+	maxFpmWordsToPick = 35
+	minFpmWordsDetected = 0
+	refreshLocalWordVectors = false
+	maxExperimentIterations = 20
+	maxAuxTweetsToAddEachIteration = 20
+	thresholdF1 = 0.98
+	classifierType = Cnn
+	folderNameForCnnClassifier = 
+	auxiliaryThresholdExpectation = 0.01
+	fileDelimiter = ,
+	experimentSet = environment
+	experimentSetNumber = 
+	trainingDataFile = data/final/environment_training_data.txt
+	validationDataFile = data/final/environment_validation_data.txt
+	auxiliaryDataFile = data/final/environment_auxiliary_data.txt
+	supplementedCleanAuxiliaryFile = data/final/environment_auxiliary_data.txt
+
+***************** Parameters used for EXPERIMENT *****************
+
+Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=98cd2940-c502-41bd-9c76-be08447a154a-environment-Iteration-0&ngram=1
+
+Initial F1=0.66
+Precision=0.63
+Recall=0.63
+Initial - ConfusionMatrix:
+16.0  7.0   
+7.0   12.0  
+
+0.53|oreohulahoop like reach maximum population billion lifetime food environment
+0.35|epa need gun ammo armor protect via sharethis
+0.31|un scientist criticise uk government renewableenergy policy
+0.25|toyotamotorcorp mull launch fuel lexus nikkei via reuters
+0.36|ourcarbon san francisco deal sea level wall restore
+0.55|american taxpayer dollar use protect environment mar important stuff
+0.44|sandiegocounty control tech environment health science california careerarc latino black ushcc
+0.45|pa think deface countryside amuse way protester make respect
+0.45|world pas crucial global warm limit expert warn
+0.47|global shift towards vegan diet vital save world hunger fuel poverty bad impact
+0.54|jebbush bro really fuck iraq create toxic environment abroad
+0.33|vegaslager human drive sixth mass extinction guardian
+0.0|magpasikatvhongryan
+0.4|uk solar power industry propose emergency plan save renewables
+0.36|welcome joanne new librarian bioscience psychology sport
+0.4|blog farrellandclark change dynamic student facility accommodation
+0.45|haringeycouncil know get vast majority bulky household item collect
+0.47|deirdrekent coral reef worth four time much uk economy find
+0.33|ship lade nuclear waste head australia despite safety concern
+0.51|depend lot factor mood environment etc
+Retrieved 6 new auxiliary tweets.
+0.0|epa need gun ammo armor protect via sharethis
+0.0|un scientist criticise uk government renewableenergy policy
+0.0|toyotamotorcorp mull launch fuel lexus nikkei via reuters
+0.0|ship lade nuclear waste head australia despite safety concern
+0.0|vegaslager human drive sixth mass extinction guardian
+0.0|magpasikatvhongryan
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=9bcc0edf-5a9b-4b40-a644-9b6675655fda-environment-Iteration-1&ngram=1
+
+Aux F1 - Iteration-1=0.56
+Precision=0.53
+Recall=0.42
+Aux F1 - ConfusionMatrix:
+16.0  7.0  
+11.0  8.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.45|solar impulse plane start pacific ocean cross power sun water environment green
+0.5|fallacious process could never succeed even subsidy lax regulation tax break
+0.1|adozioni nel mondo animale
+0.54|guardian crowdsources tip fight carbon footprint climate change expert environment
+0.34|average bike steal day dublin say bike theft group whatmatters
+0.54|worldwellnessus lisa kamen help lose ability control environment lifecoach
+0.35|maxjulivn rise bloom fix change
+0.41|congressional skeptic global warm demand record climate scientist
+0.46|vegan care vegan care environment world child live
+0.47|money environment via sharethis agw climatechange
+0.33|bat save billion dollar year via motherjones
+0.53|right whitewater get plenty stuff like environment
+0.55|still want sort point click visual novel environment puzzle also character growth
+0.16|exomars preference oxia planum
+0.47|yall know environment cover ab
+0.44|activity map make stable
+0.54|like kampung environment definitely calm beautiful say subang always heart
+0.39|scientist say dramatic worldwide coral bleach event underway
+0.41|oil company deny joint climate pledge lip service
+0.34|viral cat video warm planet via guardian
+Retrieved 6 new auxiliary tweets.
+0.0|average bike steal day dublin say bike theft group whatmatters
+0.0|maxjulivn rise bloom fix change
+0.0|exomars preference oxia planum
+0.0|bat save billion dollar year via motherjones
+0.0|adozioni nel mondo animale
+0.0|viral cat video warm planet via guardian
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=03cd1711-65ce-465a-9589-40bb84a50ecf-environment-Iteration-2&ngram=1
+
+Aux F1 - Iteration-2=0.58
+Precision=0.56
+Recall=0.47
+Aux F1 - ConfusionMatrix:
+16.0  7.0  
+10.0  9.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.34|make green graphene energy turbine windpower
+0.43|sander hold oil company responsible lie climate change
+0.45|good see north east combine authority still run finger
+0.33|iwfbuckley people follow instinct lala land ayn rand stateless
+0.53|green environment crunch climate talk halt start rappler rapplercrunch wild planet earth
+0.52|apple launch clean energy program china reduce environmental impact supplier environment
+0.49|like big question climate change
+0.55|cash question dominate climate talk environment
+0.23|wildlife photographer year winner picture
+0.46|president defend wildlife environment congressional
+0.42|well go telegraph intention lock go target rich
+0.51|tedcruz climate change really
+0.49|easy follow tutorial outline everything need know business
+0.46|environment desert storm card stock lb cover smooth recycle per package
+0.49|climate change could triple amazon drought study find ounw
+0.58|coachosterman want create environment let coach
+0.52|colorado spill heighten debate future old mine water environment green
+0.45|world pas crucial global warm limit expert warn
+0.29|people raise
+0.56|iaeaorg put atom work environment sustainable development globalgoals
+Retrieved 6 new auxiliary tweets.
+0.0|iwfbuckley people follow instinct lala land ayn rand stateless
+0.0|wildlife photographer year winner picture
+1.0|iaeaorg put atom work environment sustainable development globalgoals
+0.0|people raise
+0.0|make green graphene energy turbine windpower
+1.0|coachosterman want create environment let coach
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=290272bb-8a48-42f9-a525-b1dc440b7e2e-environment-Iteration-3&ngram=1
+
+Aux F1 - Iteration-3=0.61
+Precision=0.59
+Recall=0.53
+Aux F1 - ConfusionMatrix:
+16.0  7.0   
+9.0   10.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.37|bioheatfuel gsbiofuels carbon pollution good bad ugly denial
+0.21|forbid fruit transgenic papaya thailand
+0.45|amazon hit back nyt report work environment
+0.57|partnership fail create sound environment celebrate open ogp
+0.46|yazoodrinks bottle price nothing environment
+0.31|professor neil ormerod acu speak school sustainability
+0.26|insane photo believe photoshopped
+0.48|wonder trudeau mean energy may want
+0.57|enjoy environment book pnfmg whenever need
+0.59|really enjoy environment friendly staff calm think would also good place groupon happycustomer
+0.33|correa prepare ideological battle via euractiv
+0.46|wolf introduce want know read gatekeeper kaysexton
+0.29|enter win gogo squeez fruit pouch prize pack worth giveaway
+0.31|look
+0.3|sneeze monkey upturned face weird specie animal
+0.54|davidguetta come sunburngoa whole environment fill pop sunburnfestival
+0.45|karnataka minister forest ecology environment ramanath rai order immediate clean via
+0.46|nature environment daily story via ucsusa tritag sfbaywildlife
+0.42|agree office great show jim pam fall love dysfunctional work
+0.3|allanmargolin csmonitor outdated political one specious
+Retrieved 11 new auxiliary tweets.
+1.0|partnership fail create sound environment celebrate open ogp
+1.0|really enjoy environment friendly staff calm think would also good place groupon happycustomer
+0.0|sneeze monkey upturned face weird specie animal
+0.0|allanmargolin csmonitor outdated political one specious
+0.0|look
+0.0|professor neil ormerod acu speak school sustainability
+0.0|insane photo believe photoshopped
+0.0|correa prepare ideological battle via euractiv
+0.0|enter win gogo squeez fruit pouch prize pack worth giveaway
+0.0|forbid fruit transgenic papaya thailand
+1.0|enjoy environment book pnfmg whenever need
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=b6d4b5f7-0fbd-4899-9991-3edd43996dc1-environment-Iteration-4&ngram=1
+
+Aux F1 - Iteration-4=0.64
+Precision=0.61
+Recall=0.58
+Aux F1 - ConfusionMatrix:
+16.0  7.0   
+8.0   11.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.51|would like meet local business relax network join shout social next friday eastzeast
+0.41|wastewater water environment canada polqc
+0.35|climatechange heighten risk naturaldisaster
+0.33|large windfarm set connect remote kenya grid keepitintheground
+0.32|dribbblebest environment brad hansen dribbble tech design webdesign ux ui
+0.47|lilbthebasedgod people le affluent lot kid yes affluent consumer fuck environment
+0.35|mauritius gourmet rice point bright future sustainable rice farm
+0.37|country stop global keepitintheground
+0.44|leader today create engage calipercorp
+0.25|shersustainable gm crop proposal vote european parliament
+0.35|diesel car emit four time toxic pollution bus data reveal
+0.28|marine conservationist claim japanese fisherman dump dolphin corps sea
+0.54|environment shape change environment change attitude toward
+0.48|justavian tillman student rob barber reflect create inclusive respectful environment black
+0.46|civicjob environment america fellowship early application due post work boston
+0.49|natural gas lead clean environment richardgearl
+0.18|joshgroban orphan baby owl oakley surrogate monstermash duet partner
+0.34|apple announce dramatic new solar plan china solar
+0.49|photo melt snow patch may reveal artifact culture history environment arctic
+0.19|camden late night end date november
+Retrieved 10 new auxiliary tweets.
+0.0|large windfarm set connect remote kenya grid keepitintheground
+0.0|mauritius gourmet rice point bright future sustainable rice farm
+0.0|shersustainable gm crop proposal vote european parliament
+0.0|climatechange heighten risk naturaldisaster
+0.0|apple announce dramatic new solar plan china solar
+0.0|camden late night end date november
+0.0|marine conservationist claim japanese fisherman dump dolphin corps sea
+0.0|joshgroban orphan baby owl oakley surrogate monstermash duet partner
+0.0|diesel car emit four time toxic pollution bus data reveal
+0.0|dribbblebest environment brad hansen dribbble tech design webdesign ux ui
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=ad34f560-849e-462b-adc8-c2cc224d0a99-environment-Iteration-5&ngram=1
+
+Aux F1 - Iteration-5=0.6
+Precision=0.62
+Recall=0.42
+Aux F1 - ConfusionMatrix:
+18.0  5.0  
+11.0  8.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.35|grimmmond source mutation environment mutagen erroneous dna repair pathogen
+0.49|ourocean state arctic update drill past week deliver environment ocean
+0.39|reuters oslo aim make city center within four year
+0.47|follow want curated list climate sustainability activism
+0.35|diesel nox level match regulatory test carmaker join vw
+0.28|obama sue state coal rule hill
+0.49|connect community environment public art sxsweco
+0.26|golden gate hunter jam ivey bag first black bear first day florida bear hunt golden gate hunter
+0.52|soccer game like becoz give concentration thing environment stadium simply awesome swiftplayer
+0.24|sixteenth century church water drought
+0.46|bank canada commit enhance diverse inclusive work
+0.49|please follow environment
+0.32|probability equivalent apple fall tree hit thank nasa
+0.39|aquapendulum argument improve instance ghetto city live
+0.49|electric environment sun earth connect way similar electrical equipment
+0.5|hate environment play game human tragic many minimax
+0.35|industry responsible bee listen discussion bee loss pesticide
+0.54|reason every day go green clean environment
+0.32|great chat personal brand podcast
+0.45|app give health advice base air quality health healthtech travel
+Retrieved 8 new auxiliary tweets.
+0.0|sixteenth century church water drought
+0.0|great chat personal brand podcast
+0.0|industry responsible bee listen discussion bee loss pesticide
+0.0|probability equivalent apple fall tree hit thank nasa
+0.0|obama sue state coal rule hill
+0.0|diesel nox level match regulatory test carmaker join vw
+0.0|grimmmond source mutation environment mutagen erroneous dna repair pathogen
+0.0|golden gate hunter jam ivey bag first black bear first day florida bear hunt golden gate hunter
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=721966eb-a589-4c31-af05-d465da2e03b6-environment-Iteration-6&ngram=1
+
+Aux F1 - Iteration-6=0.56
+Precision=0.53
+Recall=0.42
+Aux F1 - ConfusionMatrix:
+16.0  7.0  
+11.0  8.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.51|nprhealth renewable energy business strategy destroy environment
+0.37|profit die agriculture poison soil human health
+0.29|article dolphin behave thecove
+0.45|greghuntmp sell moronic odious cruel joke clearly give damn environment
+0.38|nickatfp crocodile sleep one eye open accord study australia
+0.47|environment canada say centimeter snow already fall pretty river valley provincial
+0.35|polar bear new enemy italian oil giant vow drill arctic alternet
+0.52|human animal plant asaram bapu ji take care society environment every saintforhumanity
+0.4|retweeted organic view independent research use determine
+0.23|chinese charge smuggle elephant tusk
+0.49|hunt say australian coalition effort climate change climatechange
+0.41|scientist south china discover teeth belong modern human date least year
+0.35|scary truth face paint uniteblue
+0.56|dyk pr important role play help explain issue tolerance environment
+0.49|burgeon environmental movement news environment climatechange
+0.58|victoria provide warm accept environment ideal make large sustainable
+0.43|environment increasingly bombard electromagnetic frequency
+0.34|exxon know melt arctic
+0.56|thewfot healthyageing priority action ensure everyone grow old age friendly environment
+0.55|find matter nscorp community safety csr environment
+Retrieved 8 new auxiliary tweets.
+1.0|victoria provide warm accept environment ideal make large sustainable
+0.0|exxon know melt arctic
+1.0|dyk pr important role play help explain issue tolerance environment
+0.0|polar bear new enemy italian oil giant vow drill arctic alternet
+0.0|article dolphin behave thecove
+0.0|chinese charge smuggle elephant tusk
+0.0|scary truth face paint uniteblue
+1.0|thewfot healthyageing priority action ensure everyone grow old age friendly environment
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=e74802f0-0ca7-461d-9246-533b1fdadbe8-environment-Iteration-7&ngram=1
+
+Aux F1 - Iteration-7=0.61
+Precision=0.59
+Recall=0.53
+Aux F1 - ConfusionMatrix:
+16.0  7.0   
+9.0   10.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.28|corpdelta buy bc tomato chance deltabc deltafarmers
+0.38|hurricane patricia hit pacific coast mph wind nhc environment
+0.58|examine review procedure initiative create best work environment ensure right behavior happen every
+0.51|environment agency pension decision invest line degree world
+0.47|despite complex regulatory environment investment scope iraq
+0.36|caribbean cultural heritage unique closely tie drum example
+0.41|snow leopard risk himalaya face climate change mountain
+0.32|benthic invertebrate indicator water quality via theorganicview
+0.39|indonesia fire emission one day entire independent
+0.23|chinese charge smuggle elephant tusk
+0.29|romaniannews romania romania end dependence russian christian science monitor
+0.41|education department education release report school environment listen tour
+0.48|god damn reptile try ruin environment ill tell ya hwhat
+0.42|space create turlington
+0.42|activist promise large climate civil disobedience ever paris summit keepitintheground
+0.45|merrill matthew say remove crude oil export ban sure way dramatically low balance
+0.44|natural gas state play card naturalgas environment oilandgas fracking
+0.55|thank retweets view riversdrinage put effort environment make river state
+0.46|product smoke environment
+0.23|wildlife photographer year winner picture
+Retrieved 6 new auxiliary tweets.
+0.0|benthic invertebrate indicator water quality via theorganicview
+0.0|romaniannews romania romania end dependence russian christian science monitor
+0.0|corpdelta buy bc tomato chance deltabc deltafarmers
+0.0|chinese charge smuggle elephant tusk
+0.0|wildlife photographer year winner picture
+1.0|examine review procedure initiative create best work environment ensure right behavior happen every
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=a4410a7a-e48f-4346-a6d4-b97d6aefe290-environment-Iteration-8&ngram=1
+
+Aux F1 - Iteration-8=0.61
+Precision=0.59
+Recall=0.53
+Aux F1 - ConfusionMatrix:
+16.0  7.0   
+9.0   10.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.3|wildlife photographer year war fox take prize photography wildlifephotographeroftheyear
+0.46|one world one take care quote nature
+0.44|good reader young environment dystopian humor satire free kindleunlimited humanity
+0.25|graduate sustainability recruitment consultant london supergrad
+0.45|ocean need protection tpp read former governor
+0.39|bbc news fossil teeth place ancient human asia year ago yr early prev think
+0.46|go see wknd besides huff think environment thischanges doc bell lightbox planetinfocus film fest
+0.5|surround within green environment tau campus equip different facility support academic
+0.27|bernie sander want doj investigate exxon uniteblue
+0.36|europe russia plan moon mission european russian space agency send first spacecraft
+0.47|eurekamag environment disease land use settlement apurimac department peru
+0.6|see new environment
+0.41|bring every protect protect
+0.21|terrible
+0.52|indoresmartcity provide clean environment people away insect mosquito indoresmartcity
+0.34|flood disaster flood fire slide expert seattle summit brace disaster seattle time
+0.38|please help rescue poor cat stick folk music
+0.45|eurekamag effect environment growth survival transplant
+0.48|whole environment sadly oh
+0.5|sirzaidhamid madhukishwar modi govt make bad environment secular speak freely
+Retrieved 6 new auxiliary tweets.
+0.0|flood disaster flood fire slide expert seattle summit brace disaster seattle time
+0.0|terrible
+0.0|wildlife photographer year war fox take prize photography wildlifephotographeroftheyear
+0.0|graduate sustainability recruitment consultant london supergrad
+1.0|see new environment
+0.0|bernie sander want doj investigate exxon uniteblue
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=ae353d4b-4acf-4489-85bd-c3a1f7b22516-environment-Iteration-9&ngram=1
+
+Aux F1 - Iteration-9=0.58
+Precision=0.56
+Recall=0.47
+Aux F1 - ConfusionMatrix:
+16.0  7.0  
+10.0  9.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.4|bsburks leave beaver california join state embrace rodent
+0.52|beef eat bad environment expert economic time
+0.45|world pas crucial global warm limit expert warn
+0.27|video energy store october via mikejulietbravo
+0.28|joycecaroloates amandafortini montana bear roam hall bozeman high school
+0.46|certainly gp towards office environment untidy scruffy
+0.39|asbestos rule lag behind rest country federal minimum standard
+0.36|eu beat emission target raise without via euractiv eupol
+0.04|watchmaking
+0.42|nealmcquaid well starter secure environment fingerprint scanner mobile device
+0.21|pilgrim walk popular
+0.45|retweeted guardian environment bank pledge extra poor nation
+0.4|glasgow lead way energy save lead light
+0.27|crown shred amp recycle morefunz page
+0.59|yogye arunjaitley sushmaswaraj zeenews create environment law make country come stand
+0.25|rare footage endanger snow leopard release
+0.43|crowd place bother auspicious environment rank joyhojomerjoy enofastrelief
+0.4|think dairy farm tax dollar pay animal abuse environmental destruction vegan
+0.48|outofgotze care environment weirdo
+0.43|ministry environment mary polak reinstate conservation officer bryce casavant sign via cdnchange
+Retrieved 7 new auxiliary tweets.
+0.0|rare footage endanger snow leopard release
+0.0|watchmaking
+0.0|pilgrim walk popular
+0.0|crown shred amp recycle morefunz page
+0.0|joycecaroloates amandafortini montana bear roam hall bozeman high school
+0.0|video energy store october via mikejulietbravo
+1.0|yogye arunjaitley sushmaswaraj zeenews create environment law make country come stand
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=ab9be00b-d457-493b-9fc0-35202da8d022-environment-Iteration-10&ngram=1
+
+Aux F1 - Iteration-10=0.61
+Precision=0.59
+Recall=0.53
+Aux F1 - ConfusionMatrix:
+16.0  7.0   
+9.0   10.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.45|kill shark bad news impact environment loss predator
+0.5|immigration environment four thing know canadian election
+0.49|nro biofuels terrible environment
+0.3|rush solar power buy late
+0.54|isteconnects brainstorm way transform classroom activelearning environment weekendpd
+0.45|benthic community structure assessment valuable tool evaluate sediment quality via theorganicview
+0.28|simonlporter hybrid cloud optimize cloud msp smb
+0.62|need create environment collaboration thrive
+0.3|two dozen state sue obama coal plant emission rule
+0.54|create spiritual work environment consciousness
+0.47|watch true trend follow legend summarize current trade environment trade forex
+0.41|middlesex county resident think local food take
+0.45|toddbbatesapp strong gusty wind possible nj today via asburyparkpress weather nj njwx environment
+0.43|bird soar high soar wing blake nature environment
+0.38|ni awr design environment update available niawrsoftware
+0.45|climatehour cash question dominate climate talk climatehour
+0.45|vic vicfire advice advice message issue department environment land water plan
+0.54|arvindkejriwal political dance front medium good sud provide safe environment
+0.41|bbcworld crocodile sleep one eye open tend around human
+0.43|master fact fracking kvcclibrary newbooks oilandgas petroleum environment fossilfuel
+Retrieved 4 new auxiliary tweets.
+0.0|rush solar power buy late
+0.0|two dozen state sue obama coal plant emission rule
+0.0|simonlporter hybrid cloud optimize cloud msp smb
+1.0|need create environment collaboration thrive
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=2fd0f2f5-1627-4a36-bd72-890ab7327c41-environment-Iteration-11&ngram=1
+
+Aux F1 - Iteration-11=0.58
+Precision=0.56
+Recall=0.47
+Aux F1 - ConfusionMatrix:
+16.0  7.0  
+10.0  9.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.31|look
+0.55|proper live good environment protect environmental hazard like chemical smoke
+0.41|kirwangamestore give aways always glad part kirwan
+0.55|put end toxic export develop country ghanaian journo winner africanjournoawards environment category say
+0.44|cbcnews next tory environment right harper ally
+0.39|theweathernetuk hubble reveal cloud storm like never richard
+0.6|state health disease really reflection environment live environment
+0.58|robinage bring easy way go projecthelper environment
+0.25|drop new mixtape philly pa
+0.43|world pas crucial global warm limit expert
+0.23|wildlife photographer year winner picture
+0.52|methoswolf exxcee yes post thing like lead dangerous environment cyclist like
+0.42|government finally admit subsidise nuclear cut help renewables
+0.55|engineer nature help reduce flood environment
+0.28|video wolf introduce
+0.35|year great indian bustard population fall rajasthan edit rachnasingh
+0.38|cameron craig hire director health safety environment chicago il job chicago
+0.42|warmists use word would nothing
+0.5|student rediscover relationship human environment wildlife week ru daily targum
+0.4|smh asleep patchy military response climate change
+Retrieved 7 new auxiliary tweets.
+0.0|video wolf introduce
+1.0|robinage bring easy way go projecthelper environment
+0.0|drop new mixtape philly pa
+0.0|wildlife photographer year winner picture
+1.0|state health disease really reflection environment live environment
+0.0|year great indian bustard population fall rajasthan edit rachnasingh
+0.0|look
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=46716626-8268-4a36-82a3-41d4045eb1c9-environment-Iteration-12&ngram=1
+
+Aux F1 - Iteration-12=0.61
+Precision=0.59
+Recall=0.53
+Aux F1 - ConfusionMatrix:
+16.0  7.0   
+9.0   10.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.55|roudhamohd deal bad environment ever
+0.31|carbonfeet solarenergy rush solar power buy late guardian
+0.34|apple announce dramatic new solar plan china office store china
+0.32|judy chu want expand san gabriel mountain national monument
+0.3|thank everyone special
+0.42|environment venture launch villaments entryway bangalore ofetzg
+0.19|four carmaker join diesel emission row honda mazda mitsubishi
+0.5|need help life cycle help protect
+0.3|guardianeco week wildlife picture
+0.48|earthquake readiness time bayarea environment
+0.58|knicks try model stability professional work environment really mess
+0.37|kudos justintrudeau give canadian benefit resource elizabethmay cdnpoli
+0.55|go try relax stable environment right
+0.44|climate finance global north fail via euractiv eupol
+0.48|amazon ask employee speak work environment
+0.48|jobsearch human resource generalist entry level recruiter environment control kent wa find job
+0.47|australia must double decarbonisation rate meet goal report find coalition claim nation
+0.6|change environment need
+0.37|cagbc gala event sponsor brookfieldgis keynote speaker glen murray minister environment climate
+0.41|black cab go green little help china
+Retrieved 8 new auxiliary tweets.
+1.0|knicks try model stability professional work environment really mess
+0.0|judy chu want expand san gabriel mountain national monument
+1.0|change environment need
+0.0|apple announce dramatic new solar plan china office store china
+0.0|thank everyone special
+0.0|carbonfeet solarenergy rush solar power buy late guardian
+0.0|guardianeco week wildlife picture
+0.0|four carmaker join diesel emission row honda mazda mitsubishi
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=73e9e50b-dd6d-45f9-9d5b-fd22fd903e22-environment-Iteration-13&ngram=1
+
+Aux F1 - Iteration-13=0.58
+Precision=0.56
+Recall=0.47
+Aux F1 - ConfusionMatrix:
+16.0  7.0  
+10.0  9.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.5|school environment society fuck mess reason many teen experience depression mental issue
+0.21|lahi njud ang environment karon maski way ah na dayon ka
+0.28|poland go climatepolicy backtothefuture
+0.42|clock tick bid block epa water rule ever rule deserve kill new water rule
+0.47|bbc news northern ireland bath water quality best record level water environment green
+0.38|csmonitor wildlife advocate decry kill mature bull elephant another
+0.48|great panel political environment migration narrative consulmexhou anoorani natimmforum julianescutia
+0.28|energy minister uk solar subsidy
+0.5|bolivia last solution climate crisis must destroy
+0.33|bear cub jordan athena via please help donation
+0.47|lplindz ive attend port huron school know difference environment soo different
+0.44|orgone radionics reiki wellness yoga read live feng shui lifestyle create harmonious environment
+0.56|culture environment always say dim light talentconnect
+0.5|gregorymckenna domaincomau purchase mill riskeee environment although someone gotta buy top
+0.42|justin trudeau elizabeth may minister environment via cdnchange
+0.31|bbc news mysterious ripple discover around nearby star
+0.41|potus scotus flotus business million find dead ontario canada plant large gmo corn field
+0.28|amaze image wildlife photographer year winner
+0.28|reuters wildfire central texas percent contain
+0.43|get back track mind body spirit healthy exercise expertadvice
+Retrieved 8 new auxiliary tweets.
+0.0|lahi njud ang environment karon maski way ah na dayon ka
+0.0|reuters wildfire central texas percent contain
+0.0|amaze image wildlife photographer year winner
+0.0|bbc news mysterious ripple discover around nearby star
+0.0|energy minister uk solar subsidy
+0.0|poland go climatepolicy backtothefuture
+1.0|culture environment always say dim light talentconnect
+0.0|bear cub jordan athena via please help donation
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=d97b42cd-826e-41b0-95bb-3078692a0ea7-environment-Iteration-14&ngram=1
+
+Aux F1 - Iteration-14=0.56
+Precision=0.53
+Recall=0.42
+Aux F1 - ConfusionMatrix:
+16.0  7.0  
+11.0  8.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.48|guardianeco story hope guardian launch phase ii climate change campaign
+0.43|world pas crucial global warm limit expert
+0.52|kinda hurt get legal environment business essay heal pain
+0.24|exomars rover land preference oxia planum
+0.34|comradebornath google authenticator get free pc app
+0.38|scotus invalidate one big electricity innovation tef
+0.51|impose ce environment common ppl punish treat opportunity reduce cost people rail terminal ppp project
+0.37|national geographic roundup endocrine disruptor cost gmo via natgeo
+0.3|thousand exotic animal ship seattle year
+0.25|bbcscienceclub ancient foetus discover
+0.51|librathatsme libra know roll change situation really able adapt
+0.55|tomorrow ukhouseoflords select policy build environment discus role build
+0.51|hey environment artist work mad render town suikoden
+0.46|caliph take land produce rich caliph muslim kingdom harm environment
+0.36|drink cooper much care cooper product ban house auspol
+0.54|femijacobs god graciously plant someone immediate environment consistently produce result study bebig
+0.38|north yorkshire face new pressure reject late fracking bid
+0.49|push legal right regain power fracking via desmogblog environment
+0.27|adorably cute froggy rl earthjustice frog extinction due pesticide log
+0.51|environment dozen company sign pledge climate change white house
+Retrieved 5 new auxiliary tweets.
+0.0|exomars rover land preference oxia planum
+0.0|bbcscienceclub ancient foetus discover
+0.0|comradebornath google authenticator get free pc app
+0.0|adorably cute froggy rl earthjustice frog extinction due pesticide log
+0.0|thousand exotic animal ship seattle year
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=02f1bd2d-de45-4a37-b7a1-93246db58e5d-environment-Iteration-15&ngram=1
+
+Aux F1 - Iteration-15=0.61
+Precision=0.59
+Recall=0.53
+Aux F1 - ConfusionMatrix:
+16.0  7.0   
+9.0   10.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.45|katatachii streak individual head straight towards freeze flash brighten light fill environment joy
+0.43|release man hold peaceful demonstration exxonmobil drop charge environment oil
+0.47|thebellaguy format environment present
+0.53|job economy environment end canadian value mean
+0.34|carlsiegrist california lead quiet revolution via nytimes renewableenergy climatechange
+0.5|go good climateangels six hour occupy roof australian environment
+0.53|macdailynews yardstick people use environment excellence job
+0.51|need system feed everyone nutritiously steward get
+0.48|greenlibdems imagine exxon tell truth climate change bill
+0.31|war fox take top photo prize
+0.55|green environment raban podi rasulgarh due environment concern time wild planet earth
+0.44|avoid want keep thyroid healthy via mercola
+0.54|difference life city human live environment extremely
+0.27|oxfordclassics dna reveal origin ancient minoan culture
+0.39|awesome bbc news europe russia mission ass moon settlement space exploration politics technology
+0.44|video energy store sustainable energy project northern ireland prove
+0.39|million wipe uk local government pension due coal crash analysis show keepitintheground
+0.49|watchdogsniffer nobody respect environment back prejudice
+0.41|native environment foreign loan agent wherefore service la mode fukmvyzg
+0.33|bbc news coral worldwide threaten bleach noaa
+Retrieved 4 new auxiliary tweets.
+0.0|war fox take top photo prize
+0.0|bbc news coral worldwide threaten bleach noaa
+0.0|oxfordclassics dna reveal origin ancient minoan culture
+0.0|carlsiegrist california lead quiet revolution via nytimes renewableenergy climatechange
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=ff79dacb-94bd-4cf6-a3dd-baa044b20f8d-environment-Iteration-16&ngram=1
+
+Aux F1 - Iteration-16=0.58
+Precision=0.56
+Recall=0.47
+Aux F1 - ConfusionMatrix:
+16.0  7.0  
+10.0  9.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.47|warm water terrorize coral reef science monitor environment
+0.48|hey business owner planet business lawsuit pile climate rule news climatechange
+0.24|bbc news activate brain cell
+0.49|stephanievasqu please dispose nonsense nudity allow environment
+0.45|pregnancy early postpartum life baby program nutritionally adapt environment laurel wilson
+0.25|colorado hot via theorganicview pesticide neonicotinoids
+0.4|giant squid writ small juvenile monster deep capture japan environment guardian
+0.29|pack europe russia mission ass moon settlement
+0.54|hate go uncomfortable environment
+0.44|manager ishymullerrrr take create fun
+0.23|game dan team para peserta dapat memilih kategori pembuatan proposal ide dan pembuatan aplikasi lewat cod
+0.45|climatenexus antarctic ice melt fast whole continent may risk
+0.39|inland empire water district try save endanger fish
+0.28|climaterealists alex newman climate alarmist cheer ouster canada pm
+0.34|low water level reservoir chiapas mexico reveal ruin century temple
+0.44|occurrence diversity clinically important vibrio specie aquatic environment georgia tamar
+0.16|bbc news ancestor le
+0.44|davidcoltart mismanagement go thing wild life
+0.42|one climatejustice milestone pakistani court accept petition climate inaction
+0.09|ancestor le
+Retrieved 8 new auxiliary tweets.
+0.0|colorado hot via theorganicview pesticide neonicotinoids
+0.0|climaterealists alex newman climate alarmist cheer ouster canada pm
+0.0|bbc news activate brain cell
+0.0|bbc news ancestor le
+0.0|low water level reservoir chiapas mexico reveal ruin century temple
+0.0|game dan team para peserta dapat memilih kategori pembuatan proposal ide dan pembuatan aplikasi lewat cod
+0.0|ancestor le
+0.0|pack europe russia mission ass moon settlement
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=7bc64747-cc52-42f2-a171-2c32b2dc2bbb-environment-Iteration-17&ngram=1
+
+Aux F1 - Iteration-17=0.53
+Precision=0.55
+Recall=0.32
+Aux F1 - ConfusionMatrix:
+18.0  5.0  
+13.0  6.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.33|neonicotinoids divert attention profit via theorganicview garden
+0.47|sampottorff love sam care environment
+0.52|altravelproject effort worth help save environment happy anniversaryyy
+0.43|jonahpmix english learn specific language grow certain social
+0.37|codydavis one favorite place gotta love hostile good luck red raider wreckou
+0.51|theywillgo friend inform watch stable environment also scar
+0.36|sweetharturbald grow violence product grow gay
+0.55|nixon use improve international environment address topic nuclear
+0.42|new york job entry level sale market fun
+0.54|sure break change relationship environment change people
+0.56|people think actually care people work clandestine environment think day meet
+0.4|white house put hfc crosshairs new initiative
+0.42|ggod relationship wivh printer invaluable help save money
+0.44|lovewhitefield sad see people little regard hall lane early
+0.44|storm water pollution prevention plan water environment green
+0.46|flower bloom fix environment grow
+0.54|policelawprof current environment disincentivizes see people advocate police use fire dept model
+0.55|qt look seriously hardcore climate mentality fit environment
+0.55|world pas crucial global warm limit expert warn carbon pledge nation environment
+0.45|wish mean concert focus effective union doubt
+Retrieved 2 new auxiliary tweets.
+0.0|neonicotinoids divert attention profit via theorganicview garden
+1.0|people think actually care people work clandestine environment think day meet
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=8e376dd4-32fd-4102-be7c-1b2599f76f30-environment-Iteration-18&ngram=1
+
+Aux F1 - Iteration-18=0.61
+Precision=0.59
+Recall=0.53
+Aux F1 - ConfusionMatrix:
+16.0  7.0   
+9.0   10.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.38|tetchy tweet suggest fray temper uk energy department andrealeadsom reminder
+0.5|sad mentality environment
+0.57|fly bathroom mean insect survive dynamic environment
+0.49|connect community environment public art sxsweco
+0.54|jackwallington jack hugely damage environment many good way genuinely green
+0.33|thechinagap china visit seal deal project via bbcworld
+0.41|congressional skeptic global warm demand record climate scientist
+0.22|video track wolf french alp
+0.49|nigga stupid say multiple factor cause harm environment one
+0.27|big monkey voice le
+0.34|zip line cloud forest save orangutan via motherjones
+0.45|web developer role warwick hire superb developer role vibrant work environment itjob
+0.27|shayla lecture good bad
+0.48|thegooglecar china step effort tackle curtailment renewable energy environment
+0.48|delicate staff would always talk universe milky way galaxy
+0.41|mikebellwrites live near ouse read weep get thirsty get lewes uckfield
+0.36|content write ashwinivachakal slogan save writingjobs
+0.55|environment believer world grow together knowledge
+0.54|berniesanders environment self correct mechanism inherent meteor crash kill everything come back
+0.57|olivianuzzi sure party top candidate get secret service make sense environment live
+Retrieved 7 new auxiliary tweets.
+0.0|thechinagap china visit seal deal project via bbcworld
+0.0|big monkey voice le
+1.0|olivianuzzi sure party top candidate get secret service make sense environment live
+0.0|shayla lecture good bad
+1.0|fly bathroom mean insect survive dynamic environment
+0.0|video track wolf french alp
+0.0|zip line cloud forest save orangutan via motherjones
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=1fe8b5ff-ad0f-4756-bb10-cedbc31fa696-environment-Iteration-19&ngram=1
+
+Aux F1 - Iteration-19=0.64
+Precision=0.61
+Recall=0.58
+Aux F1 - ConfusionMatrix:
+16.0  7.0   
+8.0   11.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+0.49|diannelwatts call question student environment highly load whiterock
+0.36|oteachjohn ddt go away next gen pesticide head fda epafor approval
+0.44|marine food chain risk collapse extensive study ocean find
+0.42|young professional keen break mould come work
+0.38|sac bee health official warn people pet away water
+0.54|anyone ask pipeline diversity film production class environment may inclusive
+0.18|reward mar instantfollow autofollowback ifollowback instantfollowback
+0.52|vanguardngrnews provide enable environment growth tennis san advise govt
+0.56|kidzone compel provide learn environment stimulate
+0.41|consumer prevent food euronews consumer food environment
+0.5|study abroad japanese learn environment almost
+0.49|glad think problem adapt new
+0.54|explore complex change relationship mineral company community environment
+0.18|theburnageblue call cunt
+0.34|wail height feature transmorphing hipster vampire hipster bat change see
+0.44|tobiasmenzies victim ttip agriculture water public service environment
+0.4|winner photo contest theme new art environment
+0.49|clear skin tip part environment
+0.24|bbbt unique
+0.35|bear hunt prove boon wildlife commission coffer
+Retrieved 6 new auxiliary tweets.
+1.0|kidzone compel provide learn environment stimulate
+0.0|reward mar instantfollow autofollowback ifollowback instantfollowback
+0.0|bear hunt prove boon wildlife commission coffer
+0.0|theburnageblue call cunt
+0.0|wail height feature transmorphing hipster vampire hipster bat change see
+0.0|bbbt unique
+()Getting CNN classification labels from http://localhost:5000/cnn_train_and_get_prediction_labels?trainingFolder=4173308f-de55-45c1-a619-4b4993d042ac-environment-Iteration-20&ngram=1
+
+Aux F1 - Iteration-20=0.61
+Precision=0.59
+Recall=0.53
+Aux F1 - ConfusionMatrix:
+16.0  7.0   
+9.0   10.0  
+
+Best F1 so far - 0.66 at iteration:0
+
+
+Total time taken for experiment:510.006 seconds.
+				************* SAVE THE RESULTS ******************
+Ending experiment at 2017-04-08T15:59:52.444-04:00

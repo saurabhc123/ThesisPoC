@@ -1,0 +1,970 @@
+Starting experiment at 2017-04-07T19:40:35.532-04:00
+Reset successful
+***************** Parameters used for EXPERIMENT *****************
+	filterToUse = CosineSim
+	minSimilarityThreshold = 0.5
+	cosineSimilarityWindowSize= 0.2
+	minWmDistanceThreshold = 0.49
+	vectorType= local
+	webWord2VecBaseUri = http://localhost:5000/file_model/getvector/
+	cnnClassifierBaseUri = http://localhost:5000/cnn_train_and_get_prediction_labels_local
+	maxFpmWordsToPick = 35
+	minFpmWordsDetected = 0
+	refreshLocalWordVectors = false
+	maxExperimentIterations = 20
+	maxAuxTweetsToAddEachIteration = 20
+	thresholdF1 = 0.98
+	classifierType = LogisticRegression
+	folderNameForCnnClassifier = 
+	auxiliaryThresholdExpectation = 0.01
+	fileDelimiter = ,
+	experimentSet = greece
+	experimentSetNumber = 
+	trainingDataFile = data/final/greece_training_data.txt
+	validationDataFile = data/final/greece_validation_data.txt
+	auxiliaryDataFile = data/final/greece_auxiliary_data.txt
+	supplementedCleanAuxiliaryFile = data/final/greece_auxiliary_data.txt
+
+***************** Parameters used for EXPERIMENT *****************
+
+
+Initial F1=0.42
+Precision=0.36
+Recall=1.0
+Initial - ConfusionMatrix:
+7.0  32.0  
+0.0  18.0  
+
+0.58|greece may miss ecb payment germany say bailout timeline unrealistic
+0.45|wish goin spain greece witness cottoncandyleto live promise save cash next tour instead
+0.53|leave greece tomorrow gonna keep everything let know
+0.5|greece greek sc postally use olympic commemorative single stamp
+0.48|sunset castle monolithos rhodes greece
+0.51|kimolos island cyclades greece welovegreece
+0.5|future slip care greece
+0.58|greece clinch third bailout worth billion euro euronews world
+0.51|varoufakis approval last december plan parallel bank system get final syriza greece
+0.28|theweirdworld amaze cinema athens
+0.48|greek govt say discus draft third bailout
+0.55|vegan dish miss greece travel
+0.35|sadly lpc ndpc look previous socialist govts track record greece ca ab sk qb
+0.49|financialpost greece halt activity trouble eldorado gold corp mine
+0.54|greece reopen stock exchange week
+0.47|skynewsbreak eurogroup president jeroen dijsselbloem say greece talk
+0.49|syrian man picture cry family land greece find refuge germany
+0.54|ya miss greece forever goal
+0.45|greek leader make deal europe face revolt home
+0.52|greece pmi manuf fall
+Retrieved 10 new auxiliary tweets.
+1.0|vegan dish miss greece travel
+1.0|kimolos island cyclades greece welovegreece
+1.0|greece clinch third bailout worth billion euro euronews world
+1.0|varoufakis approval last december plan parallel bank system get final syriza greece
+1.0|ya miss greece forever goal
+1.0|greece pmi manuf fall
+0.0|theweirdworld amaze cinema athens
+1.0|greece reopen stock exchange week
+1.0|leave greece tomorrow gonna keep everything let know
+1.0|greece may miss ecb payment germany say bailout timeline unrealistic
+()
+Aux F1 - Iteration-1=0.4
+Precision=0.35
+Recall=0.94
+Aux F1 - ConfusionMatrix:
+7.0  32.0  
+1.0  17.0  
+
+Best F1 so far - 0.42 at iteration:0
+
+
+0.51|pack dinghy skynews afp ap izmir turkey lesbos greece saverefugees
+0.12|privilege threaten day may number farmer
+0.57|greece brace migrant arrive aegean via wsj
+0.55|russia cant save greece even try
+0.58|syriza rebel split tsipras greece head new election
+0.55|still santorini greece fuck country
+0.06|wonderful
+0.46|new election mean bailout
+0.59|video greece prepare bailout greek parliament due meet thursday vote
+0.6|take greece
+0.19|head allianz global assistance offer traveller tip safe enjoyable journey
+0.58|see miss greece already back day
+0.47|greece expert caution early celebration say soon maybe want rig
+0.3|greek government roll guarantee minimum income ubi via basicincomeorg basicincome
+0.51|obsession athens greece ga amazon amazonus
+0.07|hdpdemirtas well
+0.52|greek crisis time new deal debt
+0.37|eth syriza party win vote count leftist syriza party alexis tsipras
+0.32|mailonline egyptian billionaire offer buy island flee migrant new
+0.5|france spain greece latvia advance eurobasket
+Retrieved 15 new auxiliary tweets.
+1.0|pack dinghy skynews afp ap izmir turkey lesbos greece saverefugees
+0.0|hdpdemirtas well
+1.0|greek crisis time new deal debt
+0.0|greek government roll guarantee minimum income ubi via basicincomeorg basicincome
+1.0|obsession athens greece ga amazon amazonus
+1.0|russia cant save greece even try
+1.0|syriza rebel split tsipras greece head new election
+1.0|still santorini greece fuck country
+0.0|wonderful
+0.0|head allianz global assistance offer traveller tip safe enjoyable journey
+1.0|see miss greece already back day
+0.0|privilege threaten day may number farmer
+1.0|greece brace migrant arrive aegean via wsj
+1.0|video greece prepare bailout greek parliament due meet thursday vote
+1.0|take greece
+()
+Aux F1 - Iteration-2=0.36
+Precision=0.33
+Recall=0.94
+Aux F1 - ConfusionMatrix:
+5.0  34.0  
+1.0  17.0  
+
+Best F1 so far - 0.42 at iteration:0
+
+
+0.53|long first european country deploy army martial greece
+0.6|greece miss much
+0.54|late greece probe report boat stop migrant
+0.41|lagarde say debt become call debt relief well beyond
+0.22|lea michele nude photo watch fappening bikini leamichele la msleamichele
+0.4|syriza party project election confidence despite split athens aug radical
+0.5|greece ready danielsahyounie brooksbeau janoskians
+0.48|veria paok greece super league
+0.51|new article german finance ministry favour bridge loan greece paper read
+0.15|wdejager lesvosnet lesvosgreecegr check drone video lesvos
+0.43|complete relaxation enjoyment vivid memory hotel kefalonia greece
+0.48|greek god part one two box set greece titan god zeus hercules percy plesiotis
+0.55|austinmahone alexconstancio greece
+0.41|eu official review progress greek bailout talk brussels senior eu official confer
+0.53|nowplaying greece trancefamily edm ahfm
+0.18|visualise debt owe si unit lorry full
+0.55|frickowiak santorini greece
+0.52|baby girl nowhere go migrant baby bear greece hungary border
+0.6|olympiakos people need bailout greece
+0.37|update lender lock marathon talk bailout deal
+Retrieved 12 new auxiliary tweets.
+1.0|nowplaying greece trancefamily edm ahfm
+0.0|visualise debt owe si unit lorry full
+1.0|long first european country deploy army martial greece
+1.0|greece miss much
+1.0|late greece probe report boat stop migrant
+1.0|frickowiak santorini greece
+0.0|lea michele nude photo watch fappening bikini leamichele la msleamichele
+1.0|austinmahone alexconstancio greece
+1.0|baby girl nowhere go migrant baby bear greece hungary border
+1.0|olympiakos people need bailout greece
+1.0|new article german finance ministry favour bridge loan greece paper read
+0.0|wdejager lesvosnet lesvosgreecegr check drone video lesvos
+()
+Aux F1 - Iteration-3=0.42
+Precision=0.35
+Recall=0.94
+Aux F1 - ConfusionMatrix:
+8.0  31.0  
+1.0  17.0  
+
+Best F1 so far - 0.42 at iteration:0
+
+
+0.23|vladimirvano varoufakis abc tv interview election
+0.47|holiday greece amaze sun corfu summer girl groupselfie friend
+0.48|elektra greece todayescort escort escortgreece
+0.52|greece final beat belgium ease
+0.61|hotspot greece
+0.49|visscher original antique map middle east turkey cyprus greece ect
+0.54|greece catch annita gr show
+0.54|syrianrefugees assad eu greece shame unhcr
+0.68|greece
+0.54|ibnlive check information travel greece
+0.54|bday even greece holiday miss
+0.55|melissani kefaonia greece beautif
+0.34|macedonia police use gas desperate migrant attempt cross border
+0.48|endeavorgr greality endeavor survey business greece
+0.29|picture shock europe via politicoeurope
+0.05|jennifer lawrence leak jenniferlawrence miami la
+0.52|guardian year nazi break fascism cent edition back annihilate greece next keep calm stop
+0.51|greece enjoy day sunshine year
+0.51|ten thousand company fear closure come month greece
+0.34|migrant drown boat capsize aegean niki kitsantonis via nyt
+Retrieved 14 new auxiliary tweets.
+1.0|bday even greece holiday miss
+1.0|melissani kefaonia greece beautif
+0.0|picture shock europe via politicoeurope
+1.0|greece catch annita gr show
+1.0|syrianrefugees assad eu greece shame unhcr
+0.0|jennifer lawrence leak jenniferlawrence miami la
+1.0|guardian year nazi break fascism cent edition back annihilate greece next keep calm stop
+1.0|greece
+1.0|ibnlive check information travel greece
+0.0|vladimirvano varoufakis abc tv interview election
+1.0|greece enjoy day sunshine year
+1.0|ten thousand company fear closure come month greece
+1.0|greece final beat belgium ease
+1.0|hotspot greece
+()
+Aux F1 - Iteration-4=0.37
+Precision=0.33
+Recall=0.89
+Aux F1 - ConfusionMatrix:
+6.0  33.0  
+2.0  16.0  
+
+Best F1 so far - 0.42 at iteration:0
+
+
+0.45|uniteblue ariadnejackson lapavitsas tratar de dar voz la persona que votaron greece
+0.53|philluza hear see hydra via amuselife greece travel art
+0.45|malcolmite sectarian shia war criminal flee greece
+0.03|vaporware tide turn ship industry
+0.55|introduce kid greece
+0.53|national bank greece adr nbg another interest week ahead athens market open
+0.45|tucglobal democracy tomorrow greece solidarity meet tuc francesogrady
+0.48|spain greece game light right fiba
+0.54|cortomaltese relax greece
+0.45|uniteblue terrydemetriou round round go greece greececrisis greeceelection
+0.5|uni day next week already look flight price come home greece game priority
+0.32|guardian painful lesson must learn europe always need america clean mess
+0.49|trauma syrian child reach greece rubber excellent piece sirenaassir afp
+0.45|economy employment rise recession continue greece employment skyrocket
+0.5|hellas greece santorini thira griechenland aegeansea
+0.53|popular rhodes island greece georgepapapostolou
+0.55|see picture poor boy die try make greece see greek navy burst boat
+0.6|greece say russia pick syria aid flight route east greece athens russia plan use
+0.3|wow summer sc story make realize need go
+0.5|greece eu afghan army launch taliban kunduz hungary iceland
+Retrieved 9 new auxiliary tweets.
+1.0|cortomaltese relax greece
+1.0|national bank greece adr nbg another interest week ahead athens market open
+1.0|introduce kid greece
+0.0|vaporware tide turn ship industry
+1.0|greece say russia pick syria aid flight route east greece athens russia plan use
+0.0|wow summer sc story make realize need go
+1.0|see picture poor boy die try make greece see greek navy burst boat
+1.0|philluza hear see hydra via amuselife greece travel art
+1.0|popular rhodes island greece georgepapapostolou
+()
+Aux F1 - Iteration-5=0.39
+Precision=0.35
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+6.0  33.0  
+0.0  18.0  
+
+Best F1 so far - 0.42 at iteration:0
+
+
+0.5|ask greece deny russian flight syria assad
+0.53|iheartshawnmendes iheartradio shawnmendes like greece
+0.5|newborn abandon turkish hospital syrian en route greece migrantcrisis
+0.63|long greece default gdp within year greece debt
+0.45|drone show beach land hop make new life new country thousand migrant journey
+0.44|thousand migrant reach athens boat carry thousand migrant arrive overnight mainland
+0.62|bye greece
+0.34|get druggist would ancient let know formally begin ancient greek
+0.53|dear junckereu message madam lagarde greece need debt restructure
+0.46|could discus greek debt change review new reuters via nyt
+0.52|greece say greek program cap bln could low
+0.51|cimorelliband greece european tour nearly fan
+0.36|confuse make safety turkey risk life try get
+0.13|maisonette sale athos many extra interest feature bedroom price
+0.57|swear greek restaurant go tonight back greece athens
+0.18|proud jackjackjohnson calibraskaep need gil
+0.57|whatafuckis plan varoufakis greece
+0.54|new post stock mix amid greece
+0.54|greece best tho thankyoujanoskiansfromgreece
+0.52|break sky source confirm greece proper
+Retrieved 13 new auxiliary tweets.
+1.0|dear junckereu message madam lagarde greece need debt restructure
+1.0|long greece default gdp within year greece debt
+1.0|bye greece
+0.0|proud jackjackjohnson calibraskaep need gil
+1.0|greece say greek program cap bln could low
+1.0|cimorelliband greece european tour nearly fan
+1.0|greece best tho thankyoujanoskiansfromgreece
+1.0|break sky source confirm greece proper
+0.0|maisonette sale athos many extra interest feature bedroom price
+1.0|swear greek restaurant go tonight back greece athens
+1.0|iheartshawnmendes iheartradio shawnmendes like greece
+1.0|whatafuckis plan varoufakis greece
+1.0|new post stock mix amid greece
+()
+Aux F1 - Iteration-6=0.39
+Precision=0.35
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+6.0  33.0  
+0.0  18.0  
+
+Best F1 so far - 0.42 at iteration:0
+
+
+0.58|hot thousand migrant arrive mainland greece prebreak best
+0.18|proud jackjackjohnson calibraskaep need gil
+0.16|nicole scherzinger show amaze bikini body photo nicolescherzinger london
+0.51|gazgshore ryanjmoorex gary visit greece dude love please follow
+0.49|deadmousesqueak home sweet home miss greece poland lot though chicago family athens krakow
+0.46|video giannis antetokounmpo greece start slow finish strong blow
+0.46|lialkayed take greece color bright water blue
+0.56|troika want discredit really greece
+0.62|greece still party realblackcoffee wrap greece blackcoffeesummertour
+0.35|greek bank deposit flight slow july amid capital control
+0.47|syriza new democracy still hard separate poll show via reuters
+0.55|greece bank set reopen monday almost three week close
+0.62|aapantazi greece
+0.27|ornos beach mykonos gdmsummeredition gdmthegoodlife gentleman traveldiary
+0.57|greek election golden dawn rise greece europe refugeescrisis
+0.2|sputnikint popular unityparty push grexit euro
+0.53|time tension flare among migrant greece struggle keep move
+0.48|eurobasket quarterfinal set france spain greece latvia
+0.68|greece
+0.05|notice angpoetnyo jakodeleon aldub hellas aldubmostawaiteddate
+Retrieved 14 new auxiliary tweets.
+1.0|greece
+0.0|notice angpoetnyo jakodeleon aldub hellas aldubmostawaiteddate
+1.0|hot thousand migrant arrive mainland greece prebreak best
+0.0|proud jackjackjohnson calibraskaep need gil
+0.0|nicole scherzinger show amaze bikini body photo nicolescherzinger london
+0.0|ornos beach mykonos gdmsummeredition gdmthegoodlife gentleman traveldiary
+1.0|greek election golden dawn rise greece europe refugeescrisis
+1.0|aapantazi greece
+0.0|sputnikint popular unityparty push grexit euro
+1.0|time tension flare among migrant greece struggle keep move
+1.0|gazgshore ryanjmoorex gary visit greece dude love please follow
+1.0|troika want discredit really greece
+1.0|greece still party realblackcoffee wrap greece blackcoffeesummertour
+1.0|greece bank set reopen monday almost three week close
+()Adding 14 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-7=0.44
+Precision=0.37
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+8.0  31.0  
+0.0  18.0  
+
+Best F1 so far - 0.44 at iteration:7
+
+
+0.22|koufonisia cyclades vorrei via youtube
+0.56|schuldensuehner german govt quick unsolid greece
+0.52|greece classical greek tragedy contribution toward understand news truegreece
+0.29|start greek bank test aim speedy capital boost money
+0.24|ayegela santorini one day
+0.46|greek leftist syriza slightly ahead conservative poll
+0.56|well want go greece travel greekyogurt bergamot essentialoils doterra
+0.55|still greece time write apology research usual win pt stake
+0.55|stock plunge greece athens exchange reopen bank share particularly vulnerable trade
+0.56|athens greece ga humanlyhabits sexy hot woman babe
+0.62|reuters germany concede greece need debt relief
+0.61|helloow santorini greece
+0.52|uniteblue jpegios greekanalyst ionian island hold plebiscite airport privatization greece
+0.55|greece battle huge wildfire athens peloponnese recipe news startup howto
+0.51|korean true finland canada greece taiwan turkey thailand singapore
+0.58|miss punk sotired lastday greece selfiesticks
+0.68|auntie pretzel time town greece greece
+0.6|abcnews ecb boost cash lifeline greece follow athens vote
+0.18|parker france set showdown spain
+0.58|theaceofspuds always yes way greece treat realise eu organise across vote
+Retrieved 19 new auxiliary tweets.
+1.0|miss punk sotired lastday greece selfiesticks
+1.0|auntie pretzel time town greece greece
+1.0|abcnews ecb boost cash lifeline greece follow athens vote
+0.0|parker france set showdown spain
+1.0|theaceofspuds always yes way greece treat realise eu organise across vote
+1.0|stock plunge greece athens exchange reopen bank share particularly vulnerable trade
+1.0|athens greece ga humanlyhabits sexy hot woman babe
+1.0|reuters germany concede greece need debt relief
+1.0|helloow santorini greece
+0.0|ayegela santorini one day
+1.0|well want go greece travel greekyogurt bergamot essentialoils doterra
+1.0|still greece time write apology research usual win pt stake
+1.0|greece classical greek tragedy contribution toward understand news truegreece
+0.0|start greek bank test aim speedy capital boost money
+0.0|koufonisia cyclades vorrei via youtube
+1.0|schuldensuehner german govt quick unsolid greece
+1.0|uniteblue jpegios greekanalyst ionian island hold plebiscite airport privatization greece
+1.0|greece battle huge wildfire athens peloponnese recipe news startup howto
+1.0|korean true finland canada greece taiwan turkey thailand singapore
+()
+Aux F1 - Iteration-8=0.4
+Precision=0.35
+Recall=0.94
+Aux F1 - ConfusionMatrix:
+7.0  32.0  
+1.0  17.0  
+
+Best F1 so far - 0.44 at iteration:7
+
+
+0.36|vote way general election tcot news
+0.41|greek stock market open percent shutdown athens
+0.6|greece say cannot handle migrant unhcr call crisis
+0.49|break syriza new democracy still hard separate poll show athens khaatumo
+0.55|euro minister give bless greek bailout woo imf debt
+0.57|greece jul manufacture pmi point jun economy eu euro
+0.57|chinastock greece dash oil market
+0.53|fliesser cr take many refugee military dictatorship greece vietnam live ten thou ukraine
+0.32|give thumb lot love please would dream come mikeymurphy
+0.1|nukehoax pakistan gdp half many nuke china
+0.01|giannis antetokounmpo block shot knock three
+0.48|greek vote whether give leftist another chance athens alexis tsipras firebrand
+0.55|fantastic furkankorkmazfk point lead turkey win greece bronze medal
+0.52|sailinghq sail sail greece
+0.59|late lagarde say imf ready help greece ask
+0.13|kim kardashian leak watch kimkardashian kimkardashian la fappening
+0.65|greece june
+0.59|meeshcoiro want buy one way ticket greece never come back
+0.17|tour cyclades island
+0.61|eurozone resume greece talk
+Retrieved 15 new auxiliary tweets.
+1.0|euro minister give bless greek bailout woo imf debt
+1.0|greece jul manufacture pmi point jun economy eu euro
+1.0|late lagarde say imf ready help greece ask
+0.0|kim kardashian leak watch kimkardashian kimkardashian la fappening
+1.0|greece june
+1.0|meeshcoiro want buy one way ticket greece never come back
+0.0|tour cyclades island
+1.0|eurozone resume greece talk
+1.0|greece say cannot handle migrant unhcr call crisis
+1.0|fantastic furkankorkmazfk point lead turkey win greece bronze medal
+1.0|sailinghq sail sail greece
+1.0|chinastock greece dash oil market
+1.0|fliesser cr take many refugee military dictatorship greece vietnam live ten thou ukraine
+0.0|nukehoax pakistan gdp half many nuke china
+0.0|giannis antetokounmpo block shot knock three
+()
+Aux F1 - Iteration-9=0.35
+Precision=0.34
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+4.0  35.0  
+0.0  18.0  
+
+Best F1 so far - 0.44 at iteration:7
+
+
+0.55|photo corfu greece really like corfu ionian island
+0.74|greece
+0.48|deadmousesqueak deadmousesqueak rapidis konstantopoulou candidate popularunity first prefecture greece
+0.06|kaso anlaki ng problema nila dun ngayon
+0.33|dozen migrant drown boat capsize aegean sea
+0.59|eu appeal asset greece hungary migrant operation
+0.61|one step greece dignity tsipras syriza troika
+0.49|antique book history engrave ancient greece rome english text leather
+0.54|etmarkets greece index crack closure
+0.54|yanisvaroufakis way greece jeff sachs
+0.44|thomas piketty cesconf argue expel greece destabilize eurozone rather stabilize
+0.42|fco update travel advice ecuador burundi greece cameroon malawi chad armenia japan iceland
+0.55|special report greece go bust
+0.25|ffenolena knee beg please come home
+0.6|btbreakingnews greece bailout talk halt deadline loom
+0.52|brooksbeau cant greece part jahoo jahaa
+0.59|break greece lender lock marathon talk bailout deal read
+0.55|randahabib syrian migrant watch arrival eleftherios venizelos ferry greece island ko
+0.59|wsj macedonia police fire stun grenade migrant border greece
+0.2|news brief fri aug gmt news brief fri aug gmt
+Retrieved 15 new auxiliary tweets.
+1.0|break greece lender lock marathon talk bailout deal read
+1.0|randahabib syrian migrant watch arrival eleftherios venizelos ferry greece island ko
+1.0|wsj macedonia police fire stun grenade migrant border greece
+0.0|news brief fri aug gmt news brief fri aug gmt
+1.0|eu appeal asset greece hungary migrant operation
+1.0|one step greece dignity tsipras syriza troika
+1.0|etmarkets greece index crack closure
+1.0|yanisvaroufakis way greece jeff sachs
+1.0|special report greece go bust
+0.0|ffenolena knee beg please come home
+1.0|btbreakingnews greece bailout talk halt deadline loom
+1.0|brooksbeau cant greece part jahoo jahaa
+1.0|photo corfu greece really like corfu ionian island
+1.0|greece
+0.0|kaso anlaki ng problema nila dun ngayon
+()
+Aux F1 - Iteration-10=0.35
+Precision=0.34
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+4.0  35.0  
+0.0  18.0  
+
+Best F1 so far - 0.44 at iteration:7
+
+
+0.09|kayoazul german radioactive waste store super
+0.59|dtn greece greek election confusion raise fresh fear ability pay debt political mood become
+0.58|greece eu minastampede hajjstampede hungary iceland
+0.56|brooksbeau ill go even though live greece
+0.3|cut greek exit odds hold back
+0.63|greece receive bailout fund
+0.63|greece calais migrant trail across europe via
+0.6|migrant turkey flood greece scuffle boat new york time
+0.63|greece greececrisis greek greekcrisis
+0.58|know greece need right third nationwide vote eight month
+0.58|like youtube video ancientlyre music ancient greece
+0.68|greece move refugee mainland crush build border athens greece ferry hundred
+0.56|greece drachmai lot banknote
+0.46|mzotasocialist social policy dig greece grind healthcare pension system insane socialism
+0.46|downtownball nbl davidbarlow sure johnrillie disagree love time greece much play
+0.56|love beautiful video film annazorzouyoga teach greece
+0.26|emerge market suffer shadow news tech football
+0.5|arm jihadis greece seize ship allegedly load weapon head turkey libya via middleeasteye
+0.58|deadmousesqueak uniteblue deadmousesqueak dalaie athens greece
+0.51|graysondolan greece awake follow spree night followmedolantwins ethandolan
+Retrieved 17 new auxiliary tweets.
+1.0|greece eu minastampede hajjstampede hungary iceland
+1.0|brooksbeau ill go even though live greece
+0.0|kayoazul german radioactive waste store super
+1.0|dtn greece greek election confusion raise fresh fear ability pay debt political mood become
+1.0|greece drachmai lot banknote
+1.0|love beautiful video film annazorzouyoga teach greece
+0.0|cut greek exit odds hold back
+1.0|greece receive bailout fund
+1.0|like youtube video ancientlyre music ancient greece
+1.0|greece move refugee mainland crush build border athens greece ferry hundred
+0.0|emerge market suffer shadow news tech football
+1.0|deadmousesqueak uniteblue deadmousesqueak dalaie athens greece
+1.0|graysondolan greece awake follow spree night followmedolantwins ethandolan
+1.0|greece calais migrant trail across europe via
+1.0|migrant turkey flood greece scuffle boat new york time
+1.0|greece greececrisis greek greekcrisis
+1.0|know greece need right third nationwide vote eight month
+()
+Aux F1 - Iteration-11=0.33
+Precision=0.33
+Recall=0.94
+Aux F1 - ConfusionMatrix:
+4.0  35.0  
+1.0  17.0  
+
+Best F1 so far - 0.44 at iteration:7
+
+
+0.51|welcome dear kallirroi patraswonderful greece
+0.14|kaletsky evidence deficit finance essential
+0.35|srbijadanas greek village struggle migrant outnumber
+0.05|nigel lawson urge david cameron kill eurozone
+0.66|greece stun
+0.52|alannahcampion starwars irishtimes fotoole want mount olympus greece let
+0.24|wake see calibraskaep trend
+0.59|current kill migrant greece border xenophobia south african
+0.5|head final period lithuania lead greece beliauskas still top scorer point
+0.56|beltway insider obama isi iran deal greece vietnam cyber security stone exhibition via sharethis
+0.02|athnico skopelos
+0.09|permanent residence schengen visa property iliaspsinakis
+0.54|northerntrust greece china janet important watch ntmarketscape
+0.52|industrial giant mire corruption scandal greece
+0.65|greece worry
+0.51|greek parliament vote bailout minister
+0.62|video greece prepare bailout greek parliament due meet thursday vote
+0.58|greece eu minastampede hajjstampede hungary iceland
+0.58|migrant drown greece germany start border check coast guard say die
+0.56|drownedsyrianboy happen bodrum turkey syrian fail reach greece syria
+Retrieved 18 new auxiliary tweets.
+1.0|greece eu minastampede hajjstampede hungary iceland
+1.0|migrant drown greece germany start border check coast guard say die
+1.0|drownedsyrianboy happen bodrum turkey syrian fail reach greece syria
+1.0|greek parliament vote bailout minister
+1.0|video greece prepare bailout greek parliament due meet thursday vote
+1.0|alannahcampion starwars irishtimes fotoole want mount olympus greece let
+0.0|wake see calibraskaep trend
+0.0|permanent residence schengen visa property iliaspsinakis
+1.0|northerntrust greece china janet important watch ntmarketscape
+1.0|industrial giant mire corruption scandal greece
+1.0|greece worry
+1.0|welcome dear kallirroi patraswonderful greece
+0.0|kaletsky evidence deficit finance essential
+1.0|current kill migrant greece border xenophobia south african
+1.0|beltway insider obama isi iran deal greece vietnam cyber security stone exhibition via sharethis
+0.0|athnico skopelos
+0.0|nigel lawson urge david cameron kill eurozone
+1.0|greece stun
+()
+Aux F1 - Iteration-12=0.39
+Precision=0.35
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+6.0  33.0  
+0.0  18.0  
+
+Best F1 so far - 0.44 at iteration:7
+
+
+0.46|greece point night decision parliament night relate article
+0.53|see conflict migrant police greek border via
+0.5|en route dus dusseldorf skg makedonia greece fanforceone
+0.61|parthenon athens greece via kostas kastrinakis
+0.54|new poll show syriza narrowly ahead greek election
+0.6|astonish greece insightgreece
+0.56|brooksbeau liquorjai te amo greece drive inspain see
+0.65|greece vote painful new bailout deal today
+0.54|love greece magical santorinian sunset lovingreece
+0.35|jokpeme prime minister alexis tsipras snap election
+0.54|role poseidon favor ancient greece yurn
+0.54|timemaps history ancient greece historical atlas
+0.52|haha yes im greece wow really want visit canada someday xx
+0.43|two heavyweight deadlocked poll seek election soundbite athens two
+0.62|migrant head turkey greece scuffle boat
+0.58|afp least migrant include four child try reach greece drown boat turkey sink international water
+0.11|nothing beach umbrella elafonisos laconia
+0.27|one reason may weak tax desire control
+0.45|official review progress greek bailout reuters via nyt
+0.53|thisisacoup essential article understand situation greece share via tysm
+Retrieved 15 new auxiliary tweets.
+1.0|parthenon athens greece via kostas kastrinakis
+1.0|new poll show syriza narrowly ahead greek election
+1.0|greece vote painful new bailout deal today
+1.0|love greece magical santorinian sunset lovingreece
+1.0|astonish greece insightgreece
+1.0|brooksbeau liquorjai te amo greece drive inspain see
+1.0|see conflict migrant police greek border via
+1.0|afp least migrant include four child try reach greece drown boat turkey sink international water
+0.0|nothing beach umbrella elafonisos laconia
+0.0|one reason may weak tax desire control
+1.0|thisisacoup essential article understand situation greece share via tysm
+1.0|haha yes im greece wow really want visit canada someday xx
+1.0|migrant head turkey greece scuffle boat
+1.0|role poseidon favor ancient greece yurn
+1.0|timemaps history ancient greece historical atlas
+()
+Aux F1 - Iteration-13=0.37
+Precision=0.35
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+5.0  34.0  
+0.0  18.0  
+
+Best F1 so far - 0.44 at iteration:7
+
+
+0.43|since economy greece suck hotel refuse put ac unless degree today put
+0.28|alexis tsipras rise alexis tsipras surge
+0.2|stewhiley look nothing like lol
+0.6|afina akropolis greece
+0.71|greece bailout
+0.23|whens next direct flight im go back chios
+0.36|buffett say report buy greek island total
+0.64|damn live greece
+0.61|hillaryclinton say work great look greece trillion debt dems want keep spend
+0.65|greferendum greece ecb
+0.48|fascinatingpics spectacular town parga greece
+0.03|exclusive luxury concierge service vip high net worth
+0.48|congrats muserobotics finalist mitef greece startup competition
+0.54|greece iraq set promote bilateral strategic
+0.39|greek opposition party leader get mandate form government friday
+0.5|idea greece london business school
+0.53|millionaire naguibsawiris buy greece island set installation asylumseekers
+0.34|live tsipras swear prime minister
+0.61|greece syriza win election mandate austerity
+0.29|many live venezuela population irrelevant matter
+Retrieved 13 new auxiliary tweets.
+1.0|greece bailout
+1.0|greece iraq set promote bilateral strategic
+1.0|millionaire naguibsawiris buy greece island set installation asylumseekers
+0.0|exclusive luxury concierge service vip high net worth
+1.0|greece syriza win election mandate austerity
+0.0|many live venezuela population irrelevant matter
+1.0|hillaryclinton say work great look greece trillion debt dems want keep spend
+1.0|greferendum greece ecb
+0.0|alexis tsipras rise alexis tsipras surge
+0.0|stewhiley look nothing like lol
+1.0|afina akropolis greece
+0.0|whens next direct flight im go back chios
+1.0|damn live greece
+()
+Aux F1 - Iteration-14=0.38
+Precision=0.34
+Recall=0.94
+Aux F1 - ConfusionMatrix:
+6.0  33.0  
+1.0  17.0  
+
+Best F1 so far - 0.44 at iteration:7
+
+
+0.14|evaluate hear ability neonate without risk factor hear
+0.08|many stereotype emos
+0.61|fastft iraq greece say fitch
+0.49|greece reject euro would term painful eye corruption evasion blind grexit responsible
+0.66|ajenglish greece
+0.6|miss opportunity greece euro zone irish time
+0.44|greek bailout talk push back day logistics
+0.7|greece greece host first mediterranean gemmological athens greece host news truegreece
+0.43|early election plan hit greek bond ecb qe see delay
+0.58|greek offciers open greece cityfacezcom
+0.55|notvsco akropolis greece justalexsofia
+0.58|greece tour bring saint ministry life priest
+0.49|kate hudson tiny bikini vacation greece photo katehudson bikini
+0.53|ancient greece political social cultural history edition pomeroy
+0.46|video raw thousand migrant refugee rush past police across border
+0.48|recommend lisadialogue greece radical change capitulation discussion wharfchamberscc
+0.59|greece news live alexis tsipras face showdown syriza rebel news telegraph
+0.12|new snapshot minecraft come minecraft excitement
+0.53|ready emergency communication delegate greece federation
+0.59|lagarde eye new act greek drama imf role greece crisis
+Retrieved 14 new auxiliary tweets.
+1.0|greece tour bring saint ministry life priest
+1.0|ancient greece political social cultural history edition pomeroy
+1.0|ajenglish greece
+1.0|miss opportunity greece euro zone irish time
+0.0|evaluate hear ability neonate without risk factor hear
+1.0|ready emergency communication delegate greece federation
+1.0|lagarde eye new act greek drama imf role greece crisis
+1.0|notvsco akropolis greece justalexsofia
+0.0|many stereotype emos
+1.0|fastft iraq greece say fitch
+1.0|greece greece host first mediterranean gemmological athens greece host news truegreece
+1.0|greek offciers open greece cityfacezcom
+1.0|greece news live alexis tsipras face showdown syriza rebel news telegraph
+0.0|new snapshot minecraft come minecraft excitement
+()
+Aux F1 - Iteration-15=0.39
+Precision=0.35
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+6.0  33.0  
+0.0  18.0  
+
+Best F1 so far - 0.44 at iteration:7
+
+
+0.56|break least migrantsincluding child try reach greece drown boat turkey sink water report
+0.48|byzantinephil saint cosmas damian greece byzantium
+0.62|greece secure third bailout germany back opposition
+0.27|role debt crisis atlantic
+0.54|yada yi yanni take greece
+0.44|new job sap ui developer location greece job itjobs recruitment
+0.57|greece might good outside eurozone german finance minister say
+0.56|europe without greece like party without
+0.25|economy economic consequence syriza party syntagma nbsp celebrate
+0.59|brazil bahammas greece
+0.46|late political drama put brazil path become latin greece
+0.56|claes visscher middle east turkey cyprus greece ect
+0.58|un agency refugee call greece take control island
+0.55|one talk lmfao upgradeyourworld greece backtoback cecilthelion
+0.42|varoufakis un discus greek debt restructure
+0.58|democracy heart fight greece
+0.27|un demand evacuation thousand refugee lesbos refugeecrisis sigmalivecom
+0.12|shipwreck bc yield trove ancient luxury good sf gate
+0.48|rent moto motorbike rental company chios work info greece turkey summer
+0.34|jacobinmag view leave wing leave party dielinke alternative eu
+Retrieved 14 new auxiliary tweets.
+1.0|break least migrantsincluding child try reach greece drown boat turkey sink water report
+1.0|yada yi yanni take greece
+1.0|greece might good outside eurozone german finance minister say
+1.0|claes visscher middle east turkey cyprus greece ect
+1.0|un agency refugee call greece take control island
+1.0|europe without greece like party without
+0.0|economy economic consequence syriza party syntagma nbsp celebrate
+1.0|one talk lmfao upgradeyourworld greece backtoback cecilthelion
+1.0|democracy heart fight greece
+1.0|greece secure third bailout germany back opposition
+0.0|role debt crisis atlantic
+1.0|brazil bahammas greece
+0.0|un demand evacuation thousand refugee lesbos refugeecrisis sigmalivecom
+0.0|shipwreck bc yield trove ancient luxury good sf gate
+()
+Aux F1 - Iteration-16=0.38
+Precision=0.34
+Recall=0.94
+Aux F1 - ConfusionMatrix:
+6.0  33.0  
+1.0  17.0  
+
+Best F1 so far - 0.44 at iteration:7
+
+
+0.36|greek bank share
+0.69|greek american continue fight greece debt deal greece may headline
+0.65|csevastou greece
+0.51|kumpulan berita camp take slim lead greek bailout referendum poll supporter via yahoo news
+0.54|jake liddell follow thank athens ga oh greece
+0.58|greece debt crisis pm tsipras defiant bank control bite
+0.58|gazgshore ryanjmoorex gary day visit greece dude love please follow
+0.05|baby mom boyfriend custody boston shore tot find june identify bella bond
+0.58|greece crisis syriza rebel form new popular unity party
+0.59|jennablan greece say cannot handle migrant unhcr call crisis
+0.2|never hear look fascinate forget temple lysistrata
+-0.04|harryxarisharry usgayboy
+0.29|tsipras admit mistake debate ahead poll tsipras seek
+0.39|syria refugee bomb arrive refugee bomb nato arrive
+0.34|new update post scotland refugee
+0.52|gop tsipras greece convince eu free ride leftist need learn tppatriots petefrt nobamachat
+0.37|greek ship ferry hundred migrant
+0.45|photoset caramelisedfruits nafplio autumn nafplio greece
+0.49|frankish greece philippe de savoie prince achaea denier tournois
+0.36|new government need miracle prosper euro
+Retrieved 13 new auxiliary tweets.
+0.0|never hear look fascinate forget temple lysistrata
+0.0|harryxarisharry usgayboy
+1.0|jake liddell follow thank athens ga oh greece
+0.0|tsipras admit mistake debate ahead poll tsipras seek
+1.0|gop tsipras greece convince eu free ride leftist need learn tppatriots petefrt nobamachat
+1.0|jennablan greece say cannot handle migrant unhcr call crisis
+0.0|baby mom boyfriend custody boston shore tot find june identify bella bond
+1.0|greece crisis syriza rebel form new popular unity party
+1.0|csevastou greece
+1.0|kumpulan berita camp take slim lead greek bailout referendum poll supporter via yahoo news
+1.0|greek american continue fight greece debt deal greece may headline
+1.0|greece debt crisis pm tsipras defiant bank control bite
+1.0|gazgshore ryanjmoorex gary day visit greece dude love please follow
+()
+Aux F1 - Iteration-17=0.42
+Precision=0.36
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+7.0  32.0  
+0.0  18.0  
+
+Best F1 so far - 0.44 at iteration:7
+
+
+0.63|euro member approve greece bailout package
+0.66|ambrose greece ask scientifically via telegraph greece
+0.47|one want violent refugee riot greek
+0.38|breakingnews late france hold emergency meet migrant late thursday via townhallcom
+0.57|old condor express knot greece
+0.06|gettinggroovy truly show ignorancegreece issue auspol
+0.61|greece hellas athens athina greekflag
+0.06|jbcrewdotcom justinbieber smallzyandjustin frosogreece emabiggestfansjustinbieber
+0.66|pythagoras greece
+0.49|walk migrant diary journey greece berlin magdy samaan egyptian journalist work
+0.48|silmjim denisejpage realdonaldtrump foxnews yes despise lie socialist piece move greece
+0.06|entirely consistent german political attitude toward
+0.58|giselleandcody vegan dish miss greece travel
+0.55|greece pm alexis change rhetoric
+-0.05|dimflo googlefacts
+0.64|justinbieber greece need
+0.52|yes finally tay mtvhottest taylor love greece
+0.46|eurozone agree third greek bailout
+0.61|dailymirror greece refugee crisis migrant swim holidaymaker
+0.5|tabletennis table tennis train camp greece
+Retrieved 14 new auxiliary tweets.
+1.0|euro member approve greece bailout package
+1.0|yes finally tay mtvhottest taylor love greece
+1.0|dailymirror greece refugee crisis migrant swim holidaymaker
+0.0|gettinggroovy truly show ignorancegreece issue auspol
+1.0|greece hellas athens athina greekflag
+0.0|dimflo googlefacts
+1.0|justinbieber greece need
+1.0|ambrose greece ask scientifically via telegraph greece
+1.0|old condor express knot greece
+0.0|entirely consistent german political attitude toward
+1.0|giselleandcody vegan dish miss greece travel
+1.0|greece pm alexis change rhetoric
+0.0|jbcrewdotcom justinbieber smallzyandjustin frosogreece emabiggestfansjustinbieber
+1.0|pythagoras greece
+()
+Aux F1 - Iteration-18=0.39
+Precision=0.35
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+6.0  33.0  
+0.0  18.0  
+
+Best F1 so far - 0.44 at iteration:7
+
+
+0.63|greece receive bailout fund
+0.53|greece name top judge caretaker pm ahead snap vote channel news asia
+0.45|aristoleo greece scientific innovation change healthy evoo quality
+0.2|christina hendricks nude photo watch fappening christinahendricks bikini london
+0.51|boofboofhead evidence refugee men land greece plan arm kill theymustbestoped
+0.56|usgs ierapetra greece sm
+0.24|ah leave fate country hand people even though illusion grexit
+0.57|deadmousesqueak athens greece ga shinykirito shinyhentai wiggle sexy
+0.42|daniel chapter reply chapter transition medium persia unto medium greece
+0.51|au greece small feathery fast coyote germany wily
+0.55|ggevirtz real problem eu much big greece via voxdotcom
+0.06|shaymitch come
+0.54|greece cyprus represent one person un cyprusisgreek
+0.47|senglert na dann los mit oxiaction greece oxi
+0.62|akaraett turkey greece macedonia hungary
+0.28|alexis tsipras rise alexis tsipras surge
+0.44|run away high sally possible norn despite pot course towards greece cwxpr
+0.68|hour athens greece everything need know via acruisingcouple greece travel ttot
+0.52|terrify swim two journey dark water greece cnn international
+0.27|read many point view allow find truth within hear short one line
+Retrieved 16 new auxiliary tweets.
+1.0|greece receive bailout fund
+1.0|greece name top judge caretaker pm ahead snap vote channel news asia
+1.0|terrify swim two journey dark water greece cnn international
+0.0|read many point view allow find truth within hear short one line
+0.0|alexis tsipras rise alexis tsipras surge
+1.0|hour athens greece everything need know via acruisingcouple greece travel ttot
+1.0|usgs ierapetra greece sm
+0.0|ah leave fate country hand people even though illusion grexit
+1.0|ggevirtz real problem eu much big greece via voxdotcom
+0.0|shaymitch come
+0.0|christina hendricks nude photo watch fappening christinahendricks bikini london
+1.0|boofboofhead evidence refugee men land greece plan arm kill theymustbestoped
+1.0|greece cyprus represent one person un cyprusisgreek
+1.0|akaraett turkey greece macedonia hungary
+1.0|deadmousesqueak athens greece ga shinykirito shinyhentai wiggle sexy
+1.0|au greece small feathery fast coyote germany wily
+()Adding 16 auxiliary tweets to the training data.
+
+Aux F1 - Iteration-19=0.46
+Precision=0.38
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+9.0  30.0  
+0.0  18.0  
+
+Best F1 so far - 0.46 at iteration:19
+
+
+0.6|news greece greek leftist tsipras return unexpectedly decisive vote win
+0.3|sullablack turkey border riffotronic
+0.05|eurobank report high earn
+0.51|woman ring airport greece survey buy tobacco
+0.74|greece
+0.55|uk take yr number refugee arrive greece shameful abdication
+0.54|greece syriza think recover anyone charge unless get
+0.1|varoufakis master game theory wittingly concept never bring greferendum
+0.55|pm finland want screw greece wall happily embrace fuck world
+0.53|amay greece suffer moonshine blue eu demand tax hike
+0.57|travel morea edition volume greece
+0.48|kittycatboyd private central bank carve greece sell job
+0.61|warm wish greece
+0.63|greece prepare bailout vote marathon talk bbc news
+0.59|punch rival group migrant greece via mailonline
+0.6|walk migrant diary journey greece berlin via telegraph
+0.57|endless first impression drive kavala greece greecemenow love
+0.66|santorini greece
+0.53|tsipras continue minority work backup end summer shall greece
+0.34|share hugo opinion debt relief new
+Retrieved 18 new auxiliary tweets.
+1.0|warm wish greece
+1.0|greece prepare bailout vote marathon talk bbc news
+1.0|amay greece suffer moonshine blue eu demand tax hike
+1.0|travel morea edition volume greece
+1.0|endless first impression drive kavala greece greecemenow love
+1.0|santorini greece
+1.0|tsipras continue minority work backup end summer shall greece
+1.0|news greece greek leftist tsipras return unexpectedly decisive vote win
+0.0|sullablack turkey border riffotronic
+1.0|greece
+1.0|uk take yr number refugee arrive greece shameful abdication
+1.0|punch rival group migrant greece via mailonline
+1.0|walk migrant diary journey greece berlin via telegraph
+1.0|greece syriza think recover anyone charge unless get
+0.0|varoufakis master game theory wittingly concept never bring greferendum
+1.0|pm finland want screw greece wall happily embrace fuck world
+0.0|eurobank report high earn
+1.0|woman ring airport greece survey buy tobacco
+()
+Aux F1 - Iteration-20=0.37
+Precision=0.35
+Recall=1.0
+Aux F1 - ConfusionMatrix:
+5.0  34.0  
+0.0  18.0  
+
+Best F1 so far - 0.46 at iteration:19
+
+
+Total time taken for experiment:190.742 seconds.
+				************* SAVE THE RESULTS ******************
+Ending experiment at 2017-04-07T19:43:46.309-04:00
